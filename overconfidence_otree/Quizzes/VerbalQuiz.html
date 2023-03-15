@@ -1,0 +1,270 @@
+{{ block title }}
+    {{player.topic}} Quiz
+{{ endblock }}
+
+{{ block content }}
+
+
+<style>
+
+</style>
+
+
+
+
+    <div id="q1" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:block">{{ formfield 'verbal0' }}</div>
+    <div id="q2" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal1' }}</div>
+    <div id="q3" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal2' }}</div>
+    <div id="q4" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal3' }}</div>
+    <div id="q5" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal4' }}</div>
+    <div id="q6" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal5' }}</div>
+    <div id="q7" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal6' }}</div>
+    <div id="q8" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal7' }}</div>
+    <div id="q9" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal8' }}</div>
+    <div id="q10" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal9' }}</div>
+    <div id="q11" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal10' }}</div>
+    <div id="q12" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal11' }}</div>
+    <div id="q13" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal12' }}</div>
+    <div id="q14" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal13' }}</div>
+    <div id="q15" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal14' }}</div>
+    <div id="q16" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal15' }}</div>
+    <div id="q17" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal16' }}</div>
+    <div id="q18" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal17' }}</div>
+    <div id="q19" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal18' }}</div>
+    <div id="q20" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal19' }}</div>
+
+    
+  </ul>
+
+
+  <button type="button" onclick="nextPage1()" id="btn_next1" style="position: relative;top: 50px; left: 900px; display: block;">Next</button>
+  <button type="button" onclick="nextPage2()" id="btn_next2" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage3()" id="btn_next3" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage4()" id="btn_next4" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage5()" id="btn_next5" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage6()" id="btn_next6" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage7()" id="btn_next7" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage8()" id="btn_next8" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage9()" id="btn_next9" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage10()" id="btn_next10" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage11()" id="btn_next11" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage12()" id="btn_next12" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage13()" id="btn_next13" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage14()" id="btn_next14" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage15()" id="btn_next15" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage16()" id="btn_next16" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage17()" id="btn_next17" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage18()" id="btn_next18" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage19()" id="btn_next19" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+    
+
+
+   <script>
+
+
+        var q1 = document.getElementById("q1");
+        var q2 = document.getElementById("q2");
+        var q3 = document.getElementById("q3");
+        var q4 = document.getElementById("q4");
+        var q5 = document.getElementById("q5");
+        var q6 = document.getElementById("q6");
+        var q7 = document.getElementById("q7");
+        var q8 = document.getElementById("q8");
+        var q9 = document.getElementById("q9");
+        var q10 = document.getElementById("q10");
+        var q11 = document.getElementById("q11");
+        var q12 = document.getElementById("q12");
+        var q13 = document.getElementById("q13");
+        var q14 = document.getElementById("q14");
+        var q15 = document.getElementById("q15");
+        var q16 = document.getElementById("q16");
+        var q17 = document.getElementById("q17");
+        var q18 = document.getElementById("q18");
+        var q19 = document.getElementById("q19");
+        var q20 = document.getElementById("q20");
+
+        var btn_next1 = document.getElementById("btn_next1");
+        var btn_next2 = document.getElementById("btn_next2");
+        var btn_next3 = document.getElementById("btn_next3");
+        var btn_next4 = document.getElementById("btn_next4");
+        var btn_next5 = document.getElementById("btn_next5");
+        var btn_next6 = document.getElementById("btn_next6");
+        var btn_next7 = document.getElementById("btn_next7");
+        var btn_next8 = document.getElementById("btn_next8");
+        var btn_next9 = document.getElementById("btn_next9");
+        var btn_next10 = document.getElementById("btn_next10");
+        var btn_next11 = document.getElementById("btn_next11");
+        var btn_next12 = document.getElementById("btn_next12");
+        var btn_next13 = document.getElementById("btn_next13");
+        var btn_next14 = document.getElementById("btn_next14");
+        var btn_next15 = document.getElementById("btn_next15");
+        var btn_next16 = document.getElementById("btn_next16");
+        var btn_next17 = document.getElementById("btn_next17");
+        var btn_next18 = document.getElementById("btn_next18");
+        var btn_next19 = document.getElementById("btn_next19");
+ 
+
+        function nextPage1()
+        {
+            q1.style.display = "none";
+            q2.style.display = "block";  
+            
+            btn_next1.style.display = "none";
+            btn_next2.style.display = "block";
+        }
+
+        function nextPage2()
+        {
+            q2.style.display = "none";
+            q3.style.display = "block";  
+            
+            btn_next2.style.display = "none";
+            btn_next3.style.display = "block";
+        }
+
+
+        function nextPage3()
+        {
+            q3.style.display = "none";
+            q4.style.display = "block";  
+            
+            btn_next3.style.display = "none";
+            btn_next4.style.display = "block";
+        }
+        function nextPage4()
+        {
+            q4.style.display = "none";
+            q5.style.display = "block";  
+            
+            btn_next4.style.display = "none";
+            btn_next5.style.display = "block";
+        }
+        function nextPage5()
+        {
+            q5.style.display = "none";
+            q6.style.display = "block";  
+            
+            btn_next5.style.display = "none";
+            btn_next6.style.display = "block";
+        }
+        function nextPage6()
+        {
+            q6.style.display = "none";
+            q7.style.display = "block";  
+            
+            btn_next6.style.display = "none";
+            btn_next7.style.display = "block";
+        }
+
+        function nextPage7()
+        {
+            q7.style.display = "none";
+            q8.style.display = "block";  
+            
+            btn_next7.style.display = "none";
+            btn_next8.style.display = "block";
+        }
+        function nextPage8()
+        {
+            q8.style.display = "none";
+            q9.style.display = "block";  
+            
+            btn_next8.style.display = "none";
+            btn_next9.style.display = "block";
+        }
+        function nextPage9()
+        {
+            q9.style.display = "none";
+            q10.style.display = "block";  
+            
+            btn_next9.style.display = "none";
+            btn_next10.style.display = "block";
+        }
+
+        function nextPage10()
+        {
+            q10.style.display = "none";
+            q11.style.display = "block";  
+            
+            btn_next10.style.display = "none";
+            btn_next11.style.display = "block";
+        }
+        function nextPage11()
+        {
+            q11.style.display = "none";
+            q12.style.display = "block";  
+            
+            btn_next11.style.display = "none";
+            btn_next12.style.display = "block";
+        }
+        function nextPage12()
+        {
+            q12.style.display = "none";
+            q13.style.display = "block";  
+            
+            btn_next12.style.display = "none";
+            btn_next13.style.display = "block";
+        }
+        function nextPage13()
+        {
+            q13.style.display = "none";
+            q14.style.display = "block";  
+            
+            btn_next13.style.display = "none";
+            btn_next14.style.display = "block";
+        }
+        function nextPage14()
+        {
+            q14.style.display = "none";
+            q15.style.display = "block";  
+            
+            btn_next14.style.display = "none";
+            btn_next15.style.display = "block";
+        }
+        function nextPage15()
+        {
+            q15.style.display = "none";
+            q16.style.display = "block";  
+            
+            btn_next15.style.display = "none";
+            btn_next16.style.display = "block";
+        }
+        function nextPage16()
+        {
+            q16.style.display = "none";
+            q17.style.display = "block";  
+            
+            btn_next16.style.display = "none";
+            btn_next17.style.display = "block";
+        }
+        function nextPage17()
+        {
+            q17.style.display = "none";
+            q18.style.display = "block";  
+            
+            btn_next17.style.display = "none";
+            btn_next18.style.display = "block";
+        }
+        function nextPage18()
+        {
+            q18.style.display = "none";
+            q19.style.display = "block";  
+            
+            btn_next18.style.display = "none";
+            btn_next19.style.display = "block";
+        }
+        function nextPage19()
+        {
+            q19.style.display = "none";
+            q20.style.display = "block";  
+            
+            btn_next19.style.display = "none";
+            btn_next20.style.display = "block";
+        }
+
+
+   </script>
+
+    
+    
+{{endblock}} 

@@ -24,7 +24,14 @@ SESSION_CONFIG_DEFAULTS = dict(
     real_world_currency_per_point=1.00, participation_fee=0.00, doc=""
 )
 
-PARTICIPANT_FIELDS = []
+PARTICIPANT_FIELDS = [
+    'task_rounds',
+    'verbal_score',
+    'math_score',
+    'science_score',
+    'pop_score',
+    'us_score',
+    'sports_score']
 
 SESSION_FIELDS = []
 
@@ -54,3 +61,6 @@ DEMO_PAGE_INTRO_HTML = """
 SECRET_KEY = '2516807391076'
 
 INSTALLED_APPS = ['otree']
+
+
+

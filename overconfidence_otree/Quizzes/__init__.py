@@ -1,6 +1,7 @@
 from otree.api import *
 import numpy as np
 import pandas as pd
+import random
 from pathlib import Path
 
 
@@ -24,13 +25,17 @@ science = science.to_numpy()
 pop = pd.read_csv(Path.cwd().joinpath('Quiz questions/Trivia - Pop Culture and Art.csv'))
 pop = pop.to_numpy()
 
-us = pd.read_csv(Path.cwd().joinpath('Quiz questions/Trivia - u Geography.csv'))
+us = pd.read_csv(Path.cwd().joinpath('Quiz questions/Trivia - US Geography.csv'))
 us = us.to_numpy()
 
 
 def make_field(topic, q_number):
     return models.StringField(
-        choices=[['a', topic[q_number, 1]], ['b', topic[q_number, 2]], ['c', topic[q_number, 3]], ['d', topic[q_number, 4]]],
+        choices=[['a', topic[q_number, 1]],
+                 ['b', topic[q_number, 2]],
+                 ['c', topic[q_number, 3]],
+                 ['d', topic[q_number, 4]]
+                 ],
         label=topic[q_number, 0],
         widget=widgets.RadioSelect,
         blank=True
@@ -40,7 +45,9 @@ def make_field(topic, q_number):
 class C(BaseConstants):
     NAME_IN_URL = 'Quizzes'
     PLAYERS_PER_GROUP = None
-    NUM_ROUNDS = 1
+    TIME = 120
+    TASKS = ['Math', 'Verbal', 'Science and Technology', 'Sports and Videogames', 'US Geography', 'Pop-Culture and Art']
+    NUM_ROUNDS = len(TASKS)
 
 
 class Subsession(BaseSubsession):
@@ -52,6 +59,7 @@ class Group(BaseGroup):
 
 
 class Player(BasePlayer):
+    topic = models.StringField()
     math0 = make_field(math, 0)
     math1 = make_field(math, 1)
     math2 = make_field(math, 2)
@@ -178,10 +186,55 @@ class Player(BasePlayer):
     sports18 = make_field(sports, 18)
     sports19 = make_field(sports, 19)
 
+    verbal_score = models.IntegerField(initial=0)
+    math_score = models.IntegerField(initial=0)
+    pop_score = models.IntegerField(initial=0)
+    science_score = models.IntegerField(initial=0)
+    us_score = models.IntegerField(initial=0)
+    sports_score = models.IntegerField(initial=0)
+
+    math_belief=models.IntegerField(min=0, max=20,
+                                    label='How many questions do you think you answered correctly in the Math Quiz')
+    verbal_belief = models.IntegerField(min=0, max=20,
+                                      label='How many questions do you think you answered correctly in the Verbal Quiz')
+    pop_belief = models.IntegerField(min=0, max=20,
+                                        label='How many questions do you think you answered correctly in the Pop Culture and Art Quiz')
+    science_belief = models.IntegerField(min=0, max=20,
+                                        label='How many questions do you think you answered correctly in the Science and Technology Quiz')
+    us_belief = models.IntegerField(min=0, max=20,
+                                        label='How many questions do you think you answered correctly in the US Geography Quiz')
+    sports_belief = models.IntegerField(min=0, max=20,
+                                        label='How many questions do you think you answered correctly in the Sports and Videogames Quiz')
 
 
-# PAGES
+# FUNCTIONS
+def creating_session(subsession: Subsession):
+    if subsession.round_number == 1:
+        for p in subsession.get_players():
+            round_numbers = list(range(1, C.NUM_ROUNDS + 1))
+            random.shuffle(round_numbers)
+            task_rounds = dict(zip(C.TASKS, round_numbers))
+            p.participant.task_rounds = task_rounds
+
+
+#PAGES
+class Start(Page):
+    @staticmethod
+    def vars_for_template(player):
+        participant = player.participant
+        key_list = list(participant.task_rounds.keys())
+        val_list = list(participant.task_rounds.values())
+        position = val_list.index(player.round_number)
+        player.topic = key_list[position]
+        return dict(topic=player.topic)
+
 class VerbalQuiz(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number == participant.task_rounds['Verbal']
+
+    timeout_seconds = C.TIME
     form_model = 'player'
     form_fields = ['verbal0', 
                    'verbal1', 
@@ -205,8 +258,48 @@ class VerbalQuiz(Page):
                    'verbal19', 
                    ]
 
+    @staticmethod
+    def before_next_page(player, timeout_happened):
+        correct_ans = verbal[:, 5]
+
+        ans = [player.field_maybe_none('verbal0'),
+               player.field_maybe_none('verbal1'),
+               player.field_maybe_none('verbal2'),
+               player.field_maybe_none('verbal3'),
+               player.field_maybe_none('verbal4'),
+               player.field_maybe_none('verbal5'),
+               player.field_maybe_none('verbal6'),
+               player.field_maybe_none('verbal7'),
+               player.field_maybe_none('verbal8'),
+               player.field_maybe_none('verbal9'),
+               player.field_maybe_none('verbal10'),
+               player.field_maybe_none('verbal11'),
+               player.field_maybe_none('verbal12'),
+               player.field_maybe_none('verbal13'),
+               player.field_maybe_none('verbal14'),
+               player.field_maybe_none('verbal15'),
+               player.field_maybe_none('verbal16'),
+               player.field_maybe_none('verbal17'),
+               player.field_maybe_none('verbal18'),
+               player.field_maybe_none('verbal19'),
+               ]
+
+        check = [ans[i] == correct_ans[i] for i in range(len(ans))]
+
+        player.verbal_score = sum(check)
+        participant = player.participant
+        participant.verbal_score = player.verbal_score
+
+        player.payoff += player.verbal_score
+
 
 class MathQuiz(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number == participant.task_rounds['Math']
+
+    timeout_seconds = C.TIME
     form_model = 'player'
     form_fields = ['math0', 
                    'math1', 
@@ -229,9 +322,49 @@ class MathQuiz(Page):
                    'math18',
                    'math19', 
                    ]
+
+    @staticmethod
+    def before_next_page(player, timeout_happened):
+        correct_ans = math[:, 5]
+
+        ans = [player.field_maybe_none('math0'),
+               player.field_maybe_none('math1'),
+               player.field_maybe_none('math2'),
+               player.field_maybe_none('math3'),
+               player.field_maybe_none('math4'),
+               player.field_maybe_none('math5'),
+               player.field_maybe_none('math6'),
+               player.field_maybe_none('math7'),
+               player.field_maybe_none('math8'),
+               player.field_maybe_none('math9'),
+               player.field_maybe_none('math10'),
+               player.field_maybe_none('math11'),
+               player.field_maybe_none('math12'),
+               player.field_maybe_none('math13'),
+               player.field_maybe_none('math14'),
+               player.field_maybe_none('math15'),
+               player.field_maybe_none('math16'),
+               player.field_maybe_none('math17'),
+               player.field_maybe_none('math18'),
+               player.field_maybe_none('math19'),
+               ]
+
+        check = [ans[i] == correct_ans[i] for i in range(len(ans))]
+
+        player.math_score = sum(check)
+        participant = player.participant
+        participant.math_score = player.math_score
+
+        player.payoff += player.math_score
     
 
 class PopQuiz(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number == participant.task_rounds['Pop-Culture and Art']
+
+    timeout_seconds = C.TIME
     form_model = 'player'
     form_fields = ['pop0', 
                    'pop1', 
@@ -254,9 +387,49 @@ class PopQuiz(Page):
                    'pop18',
                    'pop19', 
                    ]
-    
+
+    @staticmethod
+    def before_next_page(player, timeout_happened):
+        correct_ans = pop[:, 5]
+
+        ans = [player.field_maybe_none('pop0'),
+               player.field_maybe_none('pop1'),
+               player.field_maybe_none('pop2'),
+               player.field_maybe_none('pop3'),
+               player.field_maybe_none('pop4'),
+               player.field_maybe_none('pop5'),
+               player.field_maybe_none('pop6'),
+               player.field_maybe_none('pop7'),
+               player.field_maybe_none('pop8'),
+               player.field_maybe_none('pop9'),
+               player.field_maybe_none('pop10'),
+               player.field_maybe_none('pop11'),
+               player.field_maybe_none('pop12'),
+               player.field_maybe_none('pop13'),
+               player.field_maybe_none('pop14'),
+               player.field_maybe_none('pop15'),
+               player.field_maybe_none('pop16'),
+               player.field_maybe_none('pop17'),
+               player.field_maybe_none('pop18'),
+               player.field_maybe_none('pop19'),
+               ]
+
+        check = [ans[i] == correct_ans[i] for i in range(len(ans))]
+
+        player.pop_score = sum(check)
+        participant = player.participant
+        participant.pop_score = player.pop_score
+
+        player.payoff += player.pop_score
+
 
 class SportsQuiz(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number == participant.task_rounds['Sports and Videogames']
+
+    timeout_seconds = C.TIME
     form_model = 'player'
     form_fields = ['sports0', 
                    'sports1', 
@@ -279,9 +452,49 @@ class SportsQuiz(Page):
                    'sports18',
                    'sports19', 
                    ]
-    
+
+    @staticmethod
+    def before_next_page(player, timeout_happened):
+        correct_ans = sports[:, 5]
+
+        ans = [player.field_maybe_none('sports0'),
+               player.field_maybe_none('sports1'),
+               player.field_maybe_none('sports2'),
+               player.field_maybe_none('sports3'),
+               player.field_maybe_none('sports4'),
+               player.field_maybe_none('sports5'),
+               player.field_maybe_none('sports6'),
+               player.field_maybe_none('sports7'),
+               player.field_maybe_none('sports8'),
+               player.field_maybe_none('sports9'),
+               player.field_maybe_none('sports10'),
+               player.field_maybe_none('sports11'),
+               player.field_maybe_none('sports12'),
+               player.field_maybe_none('sports13'),
+               player.field_maybe_none('sports14'),
+               player.field_maybe_none('sports15'),
+               player.field_maybe_none('sports16'),
+               player.field_maybe_none('sports17'),
+               player.field_maybe_none('sports18'),
+               player.field_maybe_none('sports19'),
+               ]
+
+        check = [ans[i] == correct_ans[i] for i in range(len(ans))]
+
+        player.sports_score = sum(check)
+        participant = player.participant
+        participant.sports_score = player.sports_score
+
+        player.payoff += player.sports_score
+
 
 class ScienceQuiz(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number == participant.task_rounds['Science and Technology']
+
+    timeout_seconds = C.TIME
     form_model = 'player'
     form_fields = ['science0', 
                    'science1', 
@@ -305,8 +518,48 @@ class ScienceQuiz(Page):
                    'science19', 
                    ]
 
+    @staticmethod
+    def before_next_page(player, timeout_happened):
+        correct_ans = science[:, 5]
+
+        ans = [player.field_maybe_none('science0'),
+               player.field_maybe_none('science1'),
+               player.field_maybe_none('science2'),
+               player.field_maybe_none('science3'),
+               player.field_maybe_none('science4'),
+               player.field_maybe_none('science5'),
+               player.field_maybe_none('science6'),
+               player.field_maybe_none('science7'),
+               player.field_maybe_none('science8'),
+               player.field_maybe_none('science9'),
+               player.field_maybe_none('science10'),
+               player.field_maybe_none('science11'),
+               player.field_maybe_none('science12'),
+               player.field_maybe_none('science13'),
+               player.field_maybe_none('science14'),
+               player.field_maybe_none('science15'),
+               player.field_maybe_none('science16'),
+               player.field_maybe_none('science17'),
+               player.field_maybe_none('science18'),
+               player.field_maybe_none('science19'),
+               ]
+
+        check = [ans[i] == correct_ans[i] for i in range(len(ans))]
+
+        player.science_score = sum(check)
+        participant = player.participant
+        participant.science_score = player.science_score
+
+        player.payoff += player.science_score
+
 
 class USQuiz(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number == participant.task_rounds['US Geography']
+
+    timeout_seconds = C.TIME
     form_model = 'player'
     form_fields = ['us0', 
                    'us1', 
@@ -330,9 +583,43 @@ class USQuiz(Page):
                    'us19', 
                    ]
 
+    @staticmethod
+    def before_next_page(player, timeout_happened):
+        correct_ans = us[:, 5]
+
+        ans = [player.field_maybe_none('us0'),
+               player.field_maybe_none('us1'),
+               player.field_maybe_none('us2'),
+               player.field_maybe_none('us3'),
+               player.field_maybe_none('us4'),
+               player.field_maybe_none('us5'),
+               player.field_maybe_none('us6'),
+               player.field_maybe_none('us7'),
+               player.field_maybe_none('us8'),
+               player.field_maybe_none('us9'),
+               player.field_maybe_none('us10'),
+               player.field_maybe_none('us11'),
+               player.field_maybe_none('us12'),
+               player.field_maybe_none('us13'),
+               player.field_maybe_none('us14'),
+               player.field_maybe_none('us15'),
+               player.field_maybe_none('us16'),
+               player.field_maybe_none('us17'),
+               player.field_maybe_none('us18'),
+               player.field_maybe_none('us19'),
+               ]
+
+        check = [ans[i] == correct_ans[i] for i in range(len(ans))]
+
+        player.us_score = sum(check)
+        participant = player.participant
+        participant.us_score = player.us_score
+
+        player.payoff += player.us_score
+
 
 class ResultsWaitPage(WaitPage):
     pass
 
 
-page_sequence = [MathQuiz, VerbalQuiz, PopQuiz, SportsQuiz, ScienceQuiz, USQuiz]
+page_sequence = [Start, VerbalQuiz, MathQuiz, PopQuiz, SportsQuiz, ScienceQuiz, USQuiz]

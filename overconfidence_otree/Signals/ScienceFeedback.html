@@ -1,0 +1,16 @@
+{{ block title }}
+    Based on your {{ topic }} Quiz results
+{{ endblock }}
+
+{{ block content }}
+
+    <p>
+        The outcome of your gamble is:
+    </p>
+    {{ if signal == 1}}
+        <h1>Success</h1>
+    {{ else }}
+        <h1>Failure</h1>
+    {{endif}}
+<div style="float: right">{{next_button}}</div>
+{{ endblock }}

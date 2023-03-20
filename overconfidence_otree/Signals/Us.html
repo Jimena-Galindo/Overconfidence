@@ -1,0 +1,113 @@
+{{ block title }}
+    Based on your {{player.topic}} Quiz results
+{{ endblock }}
+
+{{ block content }}
+
+  <div style="width: 100%;">
+        <div style="width: 65%; height: 200px; float: left;">
+            <p> Make your choice: </p>
+            {{ formfields }}
+        </div>
+
+        <div id="History" style="margin-left: 65%; height: 200px; display:none">
+            <h4> Your Previous Outcomes</h4>
+
+            <table>
+            <tr>
+                <th> Round </th>
+                <th> Choice </th>
+                <th> Outcome </th>
+
+
+            </tr>
+                {{ if rounds == 0 }}
+                <tr>
+                    <td colspan="3"> You have no data for this task yet </td></tr>
+                {{ else }}
+                {{ for p in rounds }}
+                <tr>
+                    <td>
+                        {{p.round_number}}
+                    </td>
+                    <td>
+                        {{p.effort}}
+                    </td>
+                    <td>
+                        {{p.signal}}
+                    </td>
+                </tr>
+                {{endfor}}
+
+                {{ endif }}
+            </table>
+
+            <button type="button" onclick="to_summary()" id="toS" style="margin-top: 50px;"> See Summary </button>
+            {{next_button}}
+        </div>
+
+        <div id="Summary" style="margin-left: 65%; height: 200px; display:block">
+            <h4> Your Previous Outcomes</h4>
+
+            <table>
+            <tr>
+                <th> Choice </th>
+                <th> Successes </th>
+                <th> Failures </th>
+
+
+            </tr>
+                {{ if rounds == 0 }}
+                <tr>
+                    <td colspan="2"> You have no data for this task yet </td></tr>
+                {{ else }}
+                <tr>
+                    <td>Low</td> <td> {{ sL }} </td><td> {{ fL}} </td>
+                </tr>
+                <tr>
+                    <td>Medium</td> <td> {{ sM }} </td><td> {{ fM }} </td>
+                </tr>
+                <tr>
+                    <td>High</td> <td> {{ sH }} </td><td> {{ fH }} </td>
+                </tr>
+                {{ endif }}
+            </table>
+
+            <button type="button" onclick="to_history()" id="toH" style="margin-top: 50px;"> See History </button>
+            {{next_button}}
+        </div>
+
+
+
+    </div>
+
+
+<script>
+    var H = document.getElementById("History");
+    var S = document.getElementById("Summary");
+    var toH = document.getElementById("toH");
+    var toS = document.getElementById("toS");
+
+
+    function to_summary()
+        {
+            H.style.display = "none";
+            S.style.display = "block";
+
+            toS.style.display = "none";
+            toH.style.display = "block";
+        }
+
+    function to_history()
+        {
+            H.style.display = "block";
+            S.style.display = "none";
+
+            toS.style.display = "block";
+            toH.style.display = "none";
+        }
+
+</script>
+
+
+{{ endblock }}

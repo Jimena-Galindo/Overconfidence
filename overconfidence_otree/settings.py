@@ -5,12 +5,12 @@ SESSION_CONFIGS = [
     dict(
         name='Control',
         num_demo_participants=2,
-        app_sequence=['Quizzes']
+        app_sequence=['Quizzes', 'Signals']
     ),
     dict(
         name='Treatment',
         num_demo_participants=2,
-        app_sequence=['Quizzes']
+        app_sequence=['Quizzes', 'Signals']
     ),
 ]
 
@@ -33,7 +33,19 @@ PARTICIPANT_FIELDS = [
     'us_score',
     'sports_score']
 
-SESSION_FIELDS = []
+SESSION_FIELDS = ['seed',
+                  'w_verbal',
+                  'w_math',
+                  'w_pop',
+                  'w_science',
+                  'w_sports',
+                  'w_us',
+                  'outcomes_verbal',
+                  'outcomes_math',
+                  'outcomes_sports',
+                  'outcomes_science',
+                  'outcomes_pop',
+                  'outcomes_us']
 
 # ISO-639 code
 # for example: de, fr, ja, ko, zh-hans

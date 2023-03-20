@@ -28,7 +28,8 @@ pop = pop.to_numpy()
 us = pd.read_csv(Path.cwd().joinpath('Quiz questions/Trivia - US Geography.csv'))
 us = us.to_numpy()
 
-
+# a function that takes the questions matrix and turns them into form fields
+# (need to deal with the questions that have fewer than 4 options)
 def make_field(topic, q_number):
     return models.StringField(
         choices=[['a', topic[q_number, 1]],
@@ -45,7 +46,9 @@ def make_field(topic, q_number):
 class C(BaseConstants):
     NAME_IN_URL = 'Quizzes'
     PLAYERS_PER_GROUP = None
-    TIME = 120
+    # time limit for each quiz. the form submits when time runs out
+    TIME = 15
+    # List of the quizz titles
     TASKS = ['Math', 'Verbal', 'Science and Technology', 'Sports and Videogames', 'US Geography', 'Pop-Culture and Art']
     NUM_ROUNDS = len(TASKS)
 
@@ -209,6 +212,7 @@ class Player(BasePlayer):
 
 # FUNCTIONS
 def creating_session(subsession: Subsession):
+    # randomize the order of quizzes
     if subsession.round_number == 1:
         for p in subsession.get_players():
             round_numbers = list(range(1, C.NUM_ROUNDS + 1))
@@ -221,12 +225,84 @@ def creating_session(subsession: Subsession):
 class Start(Page):
     @staticmethod
     def vars_for_template(player):
+        # get the topic for the current round to pass for page titles
         participant = player.participant
         key_list = list(participant.task_rounds.keys())
         val_list = list(participant.task_rounds.values())
         position = val_list.index(player.round_number)
         player.topic = key_list[position]
         return dict(topic=player.topic)
+
+class MathQuiz(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number == participant.task_rounds['Math']
+
+    timeout_seconds = C.TIME
+    form_model = 'player'
+    form_fields = ['math0',
+                   'math1',
+                   'math2',
+                   'math3',
+                   'math4',
+                   'math5',
+                   'math6',
+                   'math7',
+                   'math8',
+                   'math9',
+                   'math10',
+                   'math11',
+                   'math12',
+                   'math13',
+                   'math14',
+                   'math15',
+                   'math16',
+                   'math17',
+                   'math18',
+                   'math19',
+                   ]
+
+    @staticmethod
+    def before_next_page(player, timeout_happened):
+        # check which answers were correct and compute the score for the quiz
+
+        # load the answers from the data
+        correct_ans = math[:, 5]
+
+        # get the subject's answers
+        ans = [player.field_maybe_none('math0'),
+               player.field_maybe_none('math1'),
+               player.field_maybe_none('math2'),
+               player.field_maybe_none('math3'),
+               player.field_maybe_none('math4'),
+               player.field_maybe_none('math5'),
+               player.field_maybe_none('math6'),
+               player.field_maybe_none('math7'),
+               player.field_maybe_none('math8'),
+               player.field_maybe_none('math9'),
+               player.field_maybe_none('math10'),
+               player.field_maybe_none('math11'),
+               player.field_maybe_none('math12'),
+               player.field_maybe_none('math13'),
+               player.field_maybe_none('math14'),
+               player.field_maybe_none('math15'),
+               player.field_maybe_none('math16'),
+               player.field_maybe_none('math17'),
+               player.field_maybe_none('math18'),
+               player.field_maybe_none('math19'),
+               ]
+
+        # check if they are the same
+        check = [ans[i] == correct_ans[i] for i in range(len(ans))]
+
+        # compute the score
+        player.math_score = sum(check)
+        participant = player.participant
+        participant.math_score = player.math_score
+
+        player.payoff += player.math_score
+
 
 class VerbalQuiz(Page):
     @staticmethod
@@ -236,13 +312,13 @@ class VerbalQuiz(Page):
 
     timeout_seconds = C.TIME
     form_model = 'player'
-    form_fields = ['verbal0', 
-                   'verbal1', 
+    form_fields = ['verbal0',
+                   'verbal1',
                    'verbal2',
-                   'verbal3', 
-                   'verbal4', 
-                   'verbal5', 
-                   'verbal6', 
+                   'verbal3',
+                   'verbal4',
+                   'verbal5',
+                   'verbal6',
                    'verbal7',
                    'verbal8',
                    'verbal9',
@@ -255,7 +331,7 @@ class VerbalQuiz(Page):
                    'verbal16',
                    'verbal17',
                    'verbal18',
-                   'verbal19', 
+                   'verbal19',
                    ]
 
     @staticmethod
@@ -291,71 +367,6 @@ class VerbalQuiz(Page):
         participant.verbal_score = player.verbal_score
 
         player.payoff += player.verbal_score
-
-
-class MathQuiz(Page):
-    @staticmethod
-    def is_displayed(player: Player):
-        participant = player.participant
-        return player.round_number == participant.task_rounds['Math']
-
-    timeout_seconds = C.TIME
-    form_model = 'player'
-    form_fields = ['math0', 
-                   'math1', 
-                   'math2',
-                   'math3', 
-                   'math4', 
-                   'math5', 
-                   'math6', 
-                   'math7',
-                   'math8',
-                   'math9',
-                   'math10',
-                   'math11',
-                   'math12',
-                   'math13',
-                   'math14',
-                   'math15',
-                   'math16',
-                   'math17',
-                   'math18',
-                   'math19', 
-                   ]
-
-    @staticmethod
-    def before_next_page(player, timeout_happened):
-        correct_ans = math[:, 5]
-
-        ans = [player.field_maybe_none('math0'),
-               player.field_maybe_none('math1'),
-               player.field_maybe_none('math2'),
-               player.field_maybe_none('math3'),
-               player.field_maybe_none('math4'),
-               player.field_maybe_none('math5'),
-               player.field_maybe_none('math6'),
-               player.field_maybe_none('math7'),
-               player.field_maybe_none('math8'),
-               player.field_maybe_none('math9'),
-               player.field_maybe_none('math10'),
-               player.field_maybe_none('math11'),
-               player.field_maybe_none('math12'),
-               player.field_maybe_none('math13'),
-               player.field_maybe_none('math14'),
-               player.field_maybe_none('math15'),
-               player.field_maybe_none('math16'),
-               player.field_maybe_none('math17'),
-               player.field_maybe_none('math18'),
-               player.field_maybe_none('math19'),
-               ]
-
-        check = [ans[i] == correct_ans[i] for i in range(len(ans))]
-
-        player.math_score = sum(check)
-        participant = player.participant
-        participant.math_score = player.math_score
-
-        player.payoff += player.math_score
     
 
 class PopQuiz(Page):

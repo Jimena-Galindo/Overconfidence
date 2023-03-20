@@ -1,0 +1,729 @@
+from otree.api import *
+import numpy as np
+import pandas as pd
+import random
+from pathlib import Path
+
+doc = """
+Belief Updating 
+"""
+
+
+class C(BaseConstants):
+    NAME_IN_URL = 'Gambles'
+    PLAYERS_PER_GROUP = None
+    TASKS = ['Math', 'Verbal', 'Science and Technology', 'Sports and Videogames', 'US Geography', 'Pop-Culture and Art']
+    # number of effort/signal realizations per quizz
+    N = 2
+    # total number of rounds
+    NUM_ROUNDS = len(TASKS)*N
+    # the matrices for the DGP
+    ml = np.array([[.20, .25, .40], [.07, .30, .45], [.02, .20, .50]])
+    mm = np.array([[.40, .45, .65], [.30, .65, .69], [.05, .50, .80]])
+    mh = np.array([[.45, .55, .75], [.35, .69, .80], [.25, .65, .98]])
+    M = [ml, mm, mh]
+    SEED = 3821
+    T1 = 10
+    T2 = 15
+
+
+class Subsession(BaseSubsession):
+    pass
+
+
+class Group(BaseGroup):
+    pass
+
+
+class Player(BasePlayer):
+    topic = models.StringField()
+
+    math_belief = models.IntegerField(choices=[[0, 'between 0 and 9'], [1, 'between 10 and 14'], [2, '15 or more']],
+                                      widget=widgets.RadioSelect,
+                                      label='How many questions do you think you answered correctly in the Math Quiz')
+    verbal_belief = models.IntegerField(choices=[[0, 'between 0 and 9'], [1, 'between 10 and 14'], [2, '15 or more']],
+                                        widget=widgets.RadioSelect,
+                                        label='How many questions do you think you answered correctly in the Verbal Quiz')
+    pop_belief = models.IntegerField(choices=[[0, 'between 0 and 9'], [1, 'between 10 and 14'], [2, '15 or more']],
+                                     widget=widgets.RadioSelect,
+                                     label='How many questions do you think you answered correctly in the Pop Culture and Art Quiz')
+    science_belief = models.IntegerField(choices=[[0, 'between 0 and 9'], [1, 'between 10 and 14'], [2, '15 or more']],
+                                         widget=widgets.RadioSelect,
+                                         label='How many questions do you think you answered correctly in the Science and Technology Quiz')
+    us_belief = models.IntegerField(choices=[[0, 'between 0 and 9'], [1, 'between 10 and 14'], [2, '15 or more']],
+                                    widget=widgets.RadioSelect,
+                                    label='How many questions do you think you answered correctly in the US Geography Quiz')
+    sports_belief = models.IntegerField(choices=[[0, 'between 0 and 9'], [1, 'between 10 and 14'], [2, '15 or more']],
+                                        widget=widgets.RadioSelect,
+                                        label='How many questions do you think you answered correctly in the Sports and Videogames Quiz')
+
+    effort = models.IntegerField(label='Choose one',
+                                choices=[[0, 'low'], [1, 'medium'], [2, 'high']],
+                                widget=widgets.RadioSelect,)
+    signal = models.IntegerField()
+
+# FUNCTIONS
+
+
+# PAGES
+class Performance(Page):
+    def is_displayed(player: Player):
+        return player.round_number == 1
+
+    form_model = 'player'
+    form_fields = ['math_belief',
+                   'us_belief',
+                   'verbal_belief',
+                   'science_belief',
+                   'pop_belief',
+                   'sports_belief'
+                   ]
+
+    @staticmethod
+    def before_next_page(player, timeout_happened):
+        session = player.session
+        # set the seed for the session
+        random.seed(C.SEED)
+        # draw the exogenous parameter for each task. It is 0, 1 or 2.
+        # These are the same for all players and are saved at the session level
+        # we want them to stay the same across sessions as well which is why a seed was set in advance
+        session.w_verbal = random.randint(0, 2)
+        session.w_math = random.randint(0, 2)
+        session.w_science = random.randint(0, 2)
+        session.w_sports = random.randint(0, 2)
+        session.w_pop = random.randint(0, 2)
+        session.w_us = random.randint(0, 2)
+
+        if player.round_number == 1:
+            session = player.session
+            w = session.w_verbal
+            m = C.M
+
+            T = C.N
+
+            # Generate the sequences of outcomes that subjects will see
+            # true high types
+            rng = np.random.default_rng(seed=C.SEED)
+
+            # outcomes after choosing L
+            outcome_H_L = rng.binomial(1, m[2][0, w], size=T)
+            # outcomes after choosing M
+            outcome_H_M = rng.binomial(1, m[2][1, w], size=T)
+            # outcomes after choosing H
+            outcome_H_H = rng.binomial(1, m[2][2, w], size=T)
+
+            outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
+
+            # true mid types
+            outcome_M_H = rng.binomial(1, m[1][0, w], size=T)
+            outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][2, w], size=T)
+
+            outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
+
+            # true low types
+            outcome_L_H = rng.binomial(1, m[0][0, w], size=T)
+            outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][2, w], size=T)
+
+            outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
+
+            session.outcomes_verbal = np.stack((outcomes_L, outcomes_M, outcomes_H))
+
+            w = session.w_math
+            m = C.M
+
+            T = C.N
+
+            # outcomes after choosing L
+            outcome_H_L = rng.binomial(1, m[2][0, w], size=T)
+            # outcomes after choosing M
+            outcome_H_M = rng.binomial(1, m[2][1, w], size=T)
+            # outcomes after choosing H
+            outcome_H_H = rng.binomial(1, m[2][2, w], size=T)
+
+            outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
+
+            # true mid types
+            outcome_M_H = rng.binomial(1, m[1][0, w], size=T)
+            outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][2, w], size=T)
+
+            outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
+
+            # true low types
+            outcome_L_H = rng.binomial(1, m[0][0, w], size=T)
+            outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][2, w], size=T)
+
+            outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
+
+            session.outcomes_math = np.stack((outcomes_L, outcomes_M, outcomes_H))
+
+            w = session.w_sports
+            m = C.M
+
+            T = C.N
+
+            # Generate the sequences of outcomes that subjects will see
+            # true high types
+            rng = np.random.default_rng(seed=C.SEED)
+
+            # outcomes after choosing L
+            outcome_H_L = rng.binomial(1, m[2][0, w], size=T)
+            # outcomes after choosing M
+            outcome_H_M = rng.binomial(1, m[2][1, w], size=T)
+            # outcomes after choosing H
+            outcome_H_H = rng.binomial(1, m[2][2, w], size=T)
+
+            outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
+
+            # true mid types
+            outcome_M_H = rng.binomial(1, m[1][0, w], size=T)
+            outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][2, w], size=T)
+
+            outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
+
+            # true low types
+            outcome_L_H = rng.binomial(1, m[0][0, w], size=T)
+            outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][2, w], size=T)
+
+            outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
+
+            session.outcomes_sports = np.stack((outcomes_L, outcomes_M, outcomes_H))
+
+            w = session.w_science
+            m = C.M
+
+            T = C.N
+
+            # Generate the sequences of outcomes that subjects will see
+            # true high types
+            rng = np.random.default_rng(seed=C.SEED)
+
+            # outcomes after choosing L
+            outcome_H_L = rng.binomial(1, m[2][0, w], size=T)
+            # outcomes after choosing M
+            outcome_H_M = rng.binomial(1, m[2][1, w], size=T)
+            # outcomes after choosing H
+            outcome_H_H = rng.binomial(1, m[2][2, w], size=T)
+
+            outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
+
+            # true mid types
+            outcome_M_H = rng.binomial(1, m[1][0, w], size=T)
+            outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][2, w], size=T)
+
+            outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
+
+            # true low types
+            outcome_L_H = rng.binomial(1, m[0][0, w], size=T)
+            outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][2, w], size=T)
+
+            outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
+
+            session.outcomes_science = np.stack((outcomes_L, outcomes_M, outcomes_H))
+
+            w = session.w_pop
+            m = C.M
+
+            T = C.N
+
+            # Generate the sequences of outcomes that subjects will see
+            # true high types
+            rng = np.random.default_rng(seed=C.SEED)
+
+            # outcomes after choosing L
+            outcome_H_L = rng.binomial(1, m[2][0, w], size=T)
+            # outcomes after choosing M
+            outcome_H_M = rng.binomial(1, m[2][1, w], size=T)
+            # outcomes after choosing H
+            outcome_H_H = rng.binomial(1, m[2][2, w], size=T)
+
+            outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
+
+            # true mid types
+            outcome_M_H = rng.binomial(1, m[1][0, w], size=T)
+            outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][2, w], size=T)
+
+            outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
+
+            # true low types
+            outcome_L_H = rng.binomial(1, m[0][0, w], size=T)
+            outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][2, w], size=T)
+
+            outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
+
+            session.outcomes_pop = np.stack((outcomes_L, outcomes_M, outcomes_H))
+
+            w = session.w_us
+            m = C.M
+
+            T = C.N
+
+            # Generate the sequences of outcomes that subjects will see
+            # true high types
+            rng = np.random.default_rng(seed=C.SEED)
+
+            # outcomes after choosing L
+            outcome_H_L = rng.binomial(1, m[2][0, w], size=T)
+            # outcomes after choosing M
+            outcome_H_M = rng.binomial(1, m[2][1, w], size=T)
+            # outcomes after choosing H
+            outcome_H_H = rng.binomial(1, m[2][2, w], size=T)
+
+            outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
+
+            # true mid types
+            outcome_M_H = rng.binomial(1, m[1][0, w], size=T)
+            outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][2, w], size=T)
+
+            outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
+
+            # true low types
+            outcome_L_H = rng.binomial(1, m[0][0, w], size=T)
+            outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][2, w], size=T)
+
+            outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
+
+            session.outcomes_us = np.stack((outcomes_L, outcomes_M, outcomes_H))
+
+
+class Verbal(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number > (participant.task_rounds['Verbal'] - 1) * C.N and player.round_number <= (participant.task_rounds['Verbal']) * C.N
+
+    form_model = 'player'
+    form_fields = ['effort']
+
+    @staticmethod
+    def vars_for_template(player):
+        player.topic = 'Verbal'
+        participant = player.participant
+        succes_L = 0
+        succes_M = 0
+        succes_H = 0
+
+        fail_L = 0
+        fail_M = 0
+        fail_H = 0
+
+        if player.round_number > (participant.task_rounds[player.topic]-1)*C.N+1:
+            previous_rounds = player.in_rounds(1+(player.participant.task_rounds[player.topic]-1)*C.N, player.round_number-1)
+            for p in previous_rounds:
+                if p.signal == 1 & p.effort == 0:
+                    succes_L += 1
+                elif p.signal == 1 & p.effort == 1:
+                    succes_M += 1
+                elif p.signal == 1 & p.effort == 2:
+                    succes_H += 1
+                elif p.signal == 0 & p.effort == 0:
+                    fail_L += 1
+                elif p.signal == 0 & p.effort == 1:
+                    fail_M += 1
+                else:
+                    fail_H += 1
+
+        else:
+            previous_rounds = 0
+
+        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L)
+
+
+class VerbalFeedback(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number > (participant.task_rounds['Verbal'] - 1) * C.N and player.round_number <= (
+        participant.task_rounds['Verbal']) * C.N
+
+    @staticmethod
+    def vars_for_template(player):
+        participant = player.participant
+        score = player.participant.verbal_score
+        session = player.session
+        e = player.effort
+        if score < C.T1:
+            type = 0
+        elif score >= C.T1 & score < C.T2:
+            type = 1
+        else:
+            type = 2
+
+        round = player.round_number - 1 - C.N*participant.task_rounds['Verbal']
+        player.signal = int(session.outcomes_verbal[type][e, round])
+        return dict(signal=player.signal, topic=player.topic)
+
+
+class Math(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number > (participant.task_rounds['Math'] - 1) * C.N and player.round_number <= (
+        participant.task_rounds['Math']) * C.N
+
+    form_model = 'player'
+    form_fields = ['effort']
+
+    @staticmethod
+    def vars_for_template(player):
+        player.topic = 'Math'
+        participant = player.participant
+
+        succes_L = 0
+        succes_M = 0
+        succes_H = 0
+
+        fail_L = 0
+        fail_M = 0
+        fail_H = 0
+
+        if player.round_number > (participant.task_rounds[player.topic] - 1) * C.N + 1:
+            previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
+                                               player.round_number - 1)
+            for p in previous_rounds:
+                if p.signal == 1 & p.effort == 0:
+                    succes_L += 1
+                elif p.signal == 1 & p.effort == 1:
+                    succes_M += 1
+                elif p.signal == 1 & p.effort == 2:
+                    succes_H += 1
+                elif p.signal == 0 & p.effort == 0:
+                    fail_L += 1
+                elif p.signal == 0 & p.effort == 1:
+                    fail_M += 1
+                else:
+                    fail_H += 1
+        else:
+            previous_rounds = 0
+
+        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L)
+
+
+class MathFeedback(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number > (participant.task_rounds['Math'] - 1) * C.N and player.round_number <= (
+            participant.task_rounds['Math']) * C.N
+
+    @staticmethod
+    def vars_for_template(player):
+        participant = player.participant
+        score = player.participant.math_score
+        e = player.effort
+        session = player.session
+
+        if score < C.T1:
+            type = 0
+        elif score >= C.T1 & score < C.T2:
+            type = 1
+        else:
+            type = 2
+
+        round = player.round_number - 1 - C.N*participant.task_rounds['Math']
+
+        player.signal = int(session.outcomes_math[type][e, round])
+        return dict(signal=player.signal, topic=player.topic)
+
+
+class Pop(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number > (participant.task_rounds['Pop-Culture and Art'] - 1) * C.N and player.round_number <= (
+            participant.task_rounds['Pop-Culture and Art']) * C.N
+
+    form_model = 'player'
+    form_fields = ['effort']
+
+    @staticmethod
+    def vars_for_template(player):
+        player.topic = 'Pop-Culture and Art'
+        participant = player.participant
+        succes_L = 0
+        succes_M = 0
+        succes_H = 0
+
+        fail_L = 0
+        fail_M = 0
+        fail_H = 0
+
+        if player.round_number > (participant.task_rounds[player.topic] - 1) * C.N + 1:
+            previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
+                                               player.round_number - 1)
+            for p in previous_rounds:
+                if p.signal == 1 & p.effort == 0:
+                    succes_L += 1
+                elif p.signal == 1 & p.effort == 1:
+                    succes_M += 1
+                elif p.signal == 1 & p.effort == 2:
+                    succes_H += 1
+                elif p.signal == 0 & p.effort == 0:
+                    fail_L += 1
+                elif p.signal == 0 & p.effort == 1:
+                    fail_M += 1
+                else:
+                    fail_H += 1
+        else:
+            previous_rounds = 0
+
+        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L)
+
+
+class PopFeedback(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number > (participant.task_rounds['Pop-Culture and Art'] - 1) * C.N and player.round_number <= (
+            participant.task_rounds['Pop-Culture and Art']) * C.N
+
+    @staticmethod
+    def vars_for_template(player):
+        participant = player.participant
+        score = player.participant.pop_score
+        session = player.session
+        e = player.effort
+        if score < C.T1:
+            type = 0
+        elif score >= C.T1 & score < C.T2:
+            type = 1
+        else:
+            type = 2
+
+        round = player.round_number - 1 - C.N*participant.task_rounds['Pop-Culture and Art']
+        player.signal = int(session.outcomes_pop[type][e, round])
+        return dict(signal=player.signal, topic=player.topic)
+
+
+class Science(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number > (participant.task_rounds['Science and Technology'] - 1) * C.N and player.round_number <= (
+            participant.task_rounds['Science and Technology']) * C.N
+
+    form_model = 'player'
+    form_fields = ['effort']
+
+    @staticmethod
+    def vars_for_template(player):
+        player.topic = 'Science and Technology'
+        participant = player.participant
+        succes_L = 0
+        succes_M = 0
+        succes_H = 0
+
+        fail_L = 0
+        fail_M = 0
+        fail_H = 0
+
+        if player.round_number > (participant.task_rounds[player.topic] - 1) * C.N + 1:
+            previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
+                                               player.round_number - 1)
+            for p in previous_rounds:
+                if p.signal == 1 & p.effort == 0:
+                    succes_L += 1
+                elif p.signal == 1 & p.effort == 1:
+                    succes_M += 1
+                elif p.signal == 1 & p.effort == 2:
+                    succes_H += 1
+                elif p.signal == 0 & p.effort == 0:
+                    fail_L += 1
+                elif p.signal == 0 & p.effort == 1:
+                    fail_M += 1
+                else:
+                    fail_H += 1
+        else:
+            previous_rounds = 0
+
+        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L)
+
+
+class ScienceFeedback(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number > (participant.task_rounds['Science and Technology'] - 1) * C.N and player.round_number <= (
+            participant.task_rounds['Science and Technology']) * C.N
+
+    @staticmethod
+    def vars_for_template(player):
+        participant = player.participant
+        session = player.session
+        score = player.participant.science_score
+        e = player.effort
+        if score < C.T1:
+            type = 0
+        elif score >= C.T1 & score < C.T2:
+            type = 1
+        else:
+            type = 2
+
+        round = player.round_number - 1 - C.N*participant.task_rounds['Science and Technology']
+        player.signal = int(session.outcomes_science[type][e, round])
+        return dict(signal=player.signal, topic=player.topic)
+
+
+class Sports(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number > (participant.task_rounds['Sports and Videogames'] - 1) * C.N and player.round_number <= (
+            participant.task_rounds['Sports and Videogames']) * C.N
+
+    form_model = 'player'
+    form_fields = ['effort']
+
+    @staticmethod
+    def vars_for_template(player):
+        player.topic = 'Sports and Videogames'
+        participant = player.participant
+        succes_L = 0
+        succes_M = 0
+        succes_H = 0
+
+        fail_L = 0
+        fail_M = 0
+        fail_H = 0
+
+        if player.round_number > (participant.task_rounds[player.topic] - 1) * C.N + 1:
+            previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
+                                               player.round_number - 1)
+            for p in previous_rounds:
+                if p.signal == 1 & p.effort == 0:
+                    succes_L += 1
+                elif p.signal == 1 & p.effort == 1:
+                    succes_M += 1
+                elif p.signal == 1 & p.effort == 2:
+                    succes_H += 1
+                elif p.signal == 0 & p.effort == 0:
+                    fail_L += 1
+                elif p.signal == 0 & p.effort == 1:
+                    fail_M += 1
+                else:
+                    fail_H += 1
+        else:
+            previous_rounds = 0
+
+        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L)
+
+
+class SportsFeedback(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number > (
+                    participant.task_rounds['Sports and Videogames'] - 1) * C.N and player.round_number <= (
+                   participant.task_rounds['Sports and Videogames']) * C.N
+
+    @staticmethod
+    def vars_for_template(player):
+        participant = player.participant
+        session = player.session
+        score = player.participant.sports_score
+        e = player.effort
+        if score < C.T1:
+            type = 0
+        elif score >= C.T1 & score < C.T2:
+            type = 1
+        else:
+            type = 2
+
+        round = player.round_number - 1 - C.N*participant.task_rounds['Sports and Videogames']
+        player.signal = int(session.outcomes_sports[type][e, round])
+        return dict(signal=player.signal, topic=player.topic)
+
+
+class Us(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number > (
+                participant.task_rounds['US Geography'] - 1) * C.N and player.round_number <= (
+                   participant.task_rounds['US Geography']) * C.N
+
+    form_model = 'player'
+    form_fields = ['effort']
+
+    @staticmethod
+    def vars_for_template(player):
+        player.topic = 'US Geography'
+        participant = player.participant
+        succes_L = 0
+        succes_M = 0
+        succes_H = 0
+
+        fail_L = 0
+        fail_M = 0
+        fail_H = 0
+
+        if player.round_number > (participant.task_rounds[player.topic] - 1) * C.N + 1:
+            previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
+                                               player.round_number - 1)
+            for p in previous_rounds:
+                if p.signal == 1 & p.effort == 0:
+                    succes_L += 1
+                elif p.signal == 1 & p.effort == 1:
+                    succes_M += 1
+                elif p.signal == 1 & p.effort == 2:
+                    succes_H += 1
+                elif p.signal == 0 & p.effort == 0:
+                    fail_L += 1
+                elif p.signal == 0 & p.effort == 1:
+                    fail_M += 1
+                else:
+                    fail_H += 1
+        else:
+            previous_rounds = 0
+
+        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L)
+
+
+class UsFeedback(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number > (
+                    participant.task_rounds['US Geography'] - 1) * C.N and player.round_number <= (
+                   participant.task_rounds['US Geography']) * C.N
+
+    @staticmethod
+    def vars_for_template(player):
+        participant = player.participant
+        session = player.session
+        score = player.participant.us_score
+        e = player.effort
+        if score < C.T1:
+            type = 0
+        elif score >= C.T1 & score < C.T2:
+            type = 1
+        else:
+            type = 2
+
+        round = player.round_number - 1 - C.N*participant.task_rounds['US Geography']
+        player.signal = int(session.outcomes_us[type][e, round])
+        return dict(signal=player.signal, topic=player.topic)
+
+
+class ResultsWaitPage(WaitPage):
+    pass
+
+
+page_sequence = [Performance,
+                 Verbal, VerbalFeedback,
+                 Math, MathFeedback,
+                 Pop, PopFeedback,
+                 Science, ScienceFeedback,
+                 Sports, SportsFeedback,
+                 Us, UsFeedback]

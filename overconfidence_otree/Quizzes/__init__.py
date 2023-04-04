@@ -11,21 +11,27 @@ Quizzes
 
 # FUNCTIONS
 math = pd.read_csv(Path.cwd().joinpath('Quiz questions/Trivia - Math.csv'))
+math = math.sample(frac=1)
 math = math.to_numpy()
 
 verbal = pd.read_csv(Path.cwd().joinpath('Quiz questions/Trivia - Verbal.csv'))
+verbal = verbal.sample(frac=1)
 verbal = verbal.to_numpy()
 
 sports = pd.read_csv(Path.cwd().joinpath('Quiz questions/Trivia - Sports and Videogames.csv'))
+sports = sports.sample(frac=1)
 sports = sports.to_numpy()
 
 science = pd.read_csv(Path.cwd().joinpath('Quiz questions/Trivia - Science and Technology.csv'))
+science = science.sample(frac=1)
 science = science.to_numpy()
 
 pop = pd.read_csv(Path.cwd().joinpath('Quiz questions/Trivia - Pop Culture and Art.csv'))
+pop = pop.sample(frac=1)
 pop = pop.to_numpy()
 
 us = pd.read_csv(Path.cwd().joinpath('Quiz questions/Trivia - US Geography.csv'))
+us = us.sample(frac=1)
 us = us.to_numpy()
 
 # a function that takes the questions matrix and turns them into form fields
@@ -42,14 +48,13 @@ def make_field(topic, q_number):
         blank=True
     )
 
-
 class C(BaseConstants):
     NAME_IN_URL = 'Quizzes'
     PLAYERS_PER_GROUP = None
     # time limit for each quiz. the form submits when time runs out
     TIME = 15
     # List of the quizz titles
-    TASKS = ['Math', 'Verbal', 'Science and Technology', 'Sports and Videogames', 'US Geography', 'Pop-Culture and Art']
+    TASKS = ['Math', 'Verbal', 'Science and Technology', 'Sports and Video Games', 'US Geography', 'Pop-Culture and Art']
     NUM_ROUNDS = len(TASKS)
 
 
@@ -365,6 +370,8 @@ class VerbalQuiz(Page):
         player.verbal_score = sum(check)
         participant = player.participant
         participant.verbal_score = player.verbal_score
+        
+        participant.verbal_questions = verbal[:, 0]
 
         player.payoff += player.verbal_score
     
@@ -431,6 +438,8 @@ class PopQuiz(Page):
         participant = player.participant
         participant.pop_score = player.pop_score
 
+        participant.pop_questions = pop[:, 0]
+
         player.payoff += player.pop_score
 
 
@@ -438,7 +447,7 @@ class SportsQuiz(Page):
     @staticmethod
     def is_displayed(player: Player):
         participant = player.participant
-        return player.round_number == participant.task_rounds['Sports and Videogames']
+        return player.round_number == participant.task_rounds['Sports and Video Games']
 
     timeout_seconds = C.TIME
     form_model = 'player'
@@ -495,6 +504,8 @@ class SportsQuiz(Page):
         player.sports_score = sum(check)
         participant = player.participant
         participant.sports_score = player.sports_score
+
+        participant.sports_questions = sports[:, 0]
 
         player.payoff += player.sports_score
 
@@ -561,6 +572,8 @@ class ScienceQuiz(Page):
         participant = player.participant
         participant.science_score = player.science_score
 
+        participant.science_questions = science[:, 0]
+
         player.payoff += player.science_score
 
 
@@ -625,6 +638,8 @@ class USQuiz(Page):
         player.us_score = sum(check)
         participant = player.participant
         participant.us_score = player.us_score
+
+        participant.us_questions = us[:, 0]
 
         player.payoff += player.us_score
 

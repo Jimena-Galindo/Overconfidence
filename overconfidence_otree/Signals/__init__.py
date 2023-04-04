@@ -14,7 +14,7 @@ class C(BaseConstants):
     PLAYERS_PER_GROUP = None
     TASKS = ['Math', 'Verbal', 'Science and Technology', 'Sports and Videogames', 'US Geography', 'Pop-Culture and Art']
     # number of effort/signal realizations per quizz
-    N = 2
+    N = 5
     # total number of rounds
     NUM_ROUNDS = len(TASKS)*N
     # the matrices for the DGP
@@ -55,12 +55,20 @@ class Player(BasePlayer):
                                     label='How many questions do you think you answered correctly in the US Geography Quiz')
     sports_belief = models.IntegerField(choices=[[0, 'between 0 and 9'], [1, 'between 10 and 14'], [2, '15 or more']],
                                         widget=widgets.RadioSelect,
-                                        label='How many questions do you think you answered correctly in the Sports and Videogames Quiz')
+                                        label='How many questions do you think you answered correctly in the Sports and Video Games Quiz')
 
-    effort = models.IntegerField(label='Choose one',
-                                choices=[[0, 'low'], [1, 'medium'], [2, 'high']],
+    effort = models.StringField(label='Choose a gamble',
+                                choices=[[0,'A'], [1, 'B'], [2,'C']],
                                 widget=widgets.RadioSelect,)
+
     signal = models.IntegerField()
+    
+    low_button = models.IntegerField(initial=0)
+    mid_button = models.IntegerField(initial=0)
+    high_button = models.IntegerField(initial=0)
+    
+    last_button = models.StringField(initial='none')
+    
 
 # FUNCTIONS
 
@@ -297,6 +305,25 @@ class Performance(Page):
             session.outcomes_us = np.stack((outcomes_L, outcomes_M, outcomes_H))
 
 
+class VerbalStart(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number == (participant.task_rounds['Verbal'] - 1) * C.N + 1
+
+    @staticmethod
+    def vars_for_template(player):
+        player.topic = 'Verbal'
+        belief = player.participant.verbal_belief
+        if belief == 0:
+            belief_text = 'between 0 and 9'
+        elif belief == 1:
+            belief_text = 'between 10 and 14'
+        else:
+            belief_text = '15 or more'
+        return dict(topic=player.topic, belief=belief_text)
+
+
 class Verbal(Page):
     @staticmethod
     def is_displayed(player: Player):
@@ -321,15 +348,15 @@ class Verbal(Page):
         if player.round_number > (participant.task_rounds[player.topic]-1)*C.N+1:
             previous_rounds = player.in_rounds(1+(player.participant.task_rounds[player.topic]-1)*C.N, player.round_number-1)
             for p in previous_rounds:
-                if p.signal == 1 & p.effort == 0:
+                if p.signal == 1 and p.effort == 0:
                     succes_L += 1
-                elif p.signal == 1 & p.effort == 1:
+                elif p.signal == 1 and p.effort == 1:
                     succes_M += 1
-                elif p.signal == 1 & p.effort == 2:
+                elif p.signal == 1 and p.effort == 2:
                     succes_H += 1
-                elif p.signal == 0 & p.effort == 0:
+                elif p.signal == 0 and p.effort == 0:
                     fail_L += 1
-                elif p.signal == 0 & p.effort == 1:
+                elif p.signal == 0 and p.effort == 1:
                     fail_M += 1
                 else:
                     fail_H += 1
@@ -337,7 +364,24 @@ class Verbal(Page):
         else:
             previous_rounds = 0
 
-        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L)
+        session = player.session
+        w = session.w_verbal
+
+        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
+
+    @staticmethod
+    def live_method(player: Player, data):
+        if data == 'clicked-low':
+            player.low_button += 1
+            player.last_button = 'low'
+        elif data == 'clicked_mid':
+            player.mid_button += 1
+            player.last_button = 'mid'
+        elif data == 'clicked_high':
+            player.high_button += 1
+            player.last_button = 'high'
+        else:
+            player.last_button = 'none'
 
 
 class VerbalFeedback(Page):
@@ -362,7 +406,27 @@ class VerbalFeedback(Page):
 
         round = player.round_number - 1 - C.N*participant.task_rounds['Verbal']
         player.signal = int(session.outcomes_verbal[type][e, round])
+
         return dict(signal=player.signal, topic=player.topic)
+
+
+class MathStart(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number == (participant.task_rounds['Math'] - 1) * C.N + 1
+
+    @staticmethod
+    def vars_for_template(player):
+        player.topic = 'Math'
+        belief = player.participant.math_belief
+        if belief == 0:
+            belief_text = 'between 0 and 9'
+        elif belief == 1:
+            belief_text = 'between 10 and 14'
+        else:
+            belief_text = '15 or more'
+        return dict(topic=player.topic, belief=belief_text)
 
 
 class Math(Page):
@@ -392,22 +456,39 @@ class Math(Page):
             previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
                                                player.round_number - 1)
             for p in previous_rounds:
-                if p.signal == 1 & p.effort == 0:
+                if p.signal == 1 and p.effort == 0:
                     succes_L += 1
-                elif p.signal == 1 & p.effort == 1:
+                elif p.signal == 1 and p.effort == 1:
                     succes_M += 1
-                elif p.signal == 1 & p.effort == 2:
+                elif p.signal == 1 and p.effort == 2:
                     succes_H += 1
-                elif p.signal == 0 & p.effort == 0:
+                elif p.signal == 0 and p.effort == 0:
                     fail_L += 1
-                elif p.signal == 0 & p.effort == 1:
+                elif p.signal == 0 and p.effort == 1:
                     fail_M += 1
                 else:
                     fail_H += 1
         else:
             previous_rounds = 0
 
-        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L)
+        session = player.session
+        w = session.w_math
+
+        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
+
+    @staticmethod
+    def live_method(player: Player, data):
+        if data == 'clicked-low':
+            player.low_button += 1
+            player.last_button = 'low'
+        elif data == 'clicked-mid':
+            player.mid_button += 1
+            player.last_button = 'mid'
+        elif data == 'clicked-high':
+            player.high_button += 1
+            player.last_button = 'high'
+        else:
+            player.last_button = 'none'
 
 
 class MathFeedback(Page):
@@ -437,6 +518,25 @@ class MathFeedback(Page):
         return dict(signal=player.signal, topic=player.topic)
 
 
+class PopStart(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number == (participant.task_rounds['Pop-Culture and Art'] - 1) * C.N + 1
+
+    @staticmethod
+    def vars_for_template(player):
+        player.topic = 'Pop-Culture and Art'
+        belief = player.participant.pop_belief
+        if belief == 0:
+            belief_text = 'between 0 and 9'
+        elif belief == 1:
+            belief_text = 'between 10 and 14'
+        else:
+            belief_text = '15 or more'
+        return dict(topic=player.topic, belief=belief_text)
+
+
 class Pop(Page):
     @staticmethod
     def is_displayed(player: Player):
@@ -463,22 +563,25 @@ class Pop(Page):
             previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
                                                player.round_number - 1)
             for p in previous_rounds:
-                if p.signal == 1 & p.effort == 0:
+                if p.signal == 1 and p.effort == 0:
                     succes_L += 1
-                elif p.signal == 1 & p.effort == 1:
+                elif p.signal == 1 and p.effort == 1:
                     succes_M += 1
-                elif p.signal == 1 & p.effort == 2:
+                elif p.signal == 1 and p.effort == 2:
                     succes_H += 1
-                elif p.signal == 0 & p.effort == 0:
+                elif p.signal == 0 and p.effort == 0:
                     fail_L += 1
-                elif p.signal == 0 & p.effort == 1:
+                elif p.signal == 0 and p.effort == 1:
                     fail_M += 1
                 else:
                     fail_H += 1
         else:
             previous_rounds = 0
 
-        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L)
+        session = player.session
+        w = session.w_pop
+
+        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
 
 class PopFeedback(Page):
@@ -504,6 +607,19 @@ class PopFeedback(Page):
         round = player.round_number - 1 - C.N*participant.task_rounds['Pop-Culture and Art']
         player.signal = int(session.outcomes_pop[type][e, round])
         return dict(signal=player.signal, topic=player.topic)
+
+
+class ScienceStart(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number == (participant.task_rounds['Science and Technology'] - 1) * C.N + 1
+
+    @staticmethod
+    def vars_for_template(player):
+        player.topic = 'Science and Technology'
+        belief = player.participant.science_belief
+        return dict(topic=player.topic, belief=belief)
 
 
 class Science(Page):
@@ -532,22 +648,39 @@ class Science(Page):
             previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
                                                player.round_number - 1)
             for p in previous_rounds:
-                if p.signal == 1 & p.effort == 0:
+                if p.signal == 1 and p.effort == 0:
                     succes_L += 1
-                elif p.signal == 1 & p.effort == 1:
+                elif p.signal == 1 and p.effort == 1:
                     succes_M += 1
-                elif p.signal == 1 & p.effort == 2:
+                elif p.signal == 1 and p.effort == 2:
                     succes_H += 1
-                elif p.signal == 0 & p.effort == 0:
+                elif p.signal == 0 and p.effort == 0:
                     fail_L += 1
-                elif p.signal == 0 & p.effort == 1:
+                elif p.signal == 0 and p.effort == 1:
                     fail_M += 1
                 else:
                     fail_H += 1
         else:
             previous_rounds = 0
 
-        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L)
+        session = player.session
+        w = session.w_science
+
+        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
+
+    @staticmethod
+    def live_method(player: Player, data):
+        if data == 'clicked-low':
+            player.low_button += 1
+            player.last_button = 'low'
+        elif data == 'clicked_mid':
+            player.mid_button += 1
+            player.last_button = 'mid'
+        elif data == 'clicked_high':
+            player.high_button += 1
+            player.last_button = 'high'
+        else:
+            player.last_button = 'none'
 
 
 class ScienceFeedback(Page):
@@ -575,19 +708,38 @@ class ScienceFeedback(Page):
         return dict(signal=player.signal, topic=player.topic)
 
 
+class SportsStart(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number == (participant.task_rounds['Sports and Video Games'] - 1) * C.N + 1
+
+    @staticmethod
+    def vars_for_template(player):
+        player.topic = 'Sports and Video Games'
+        belief = player.participant.sports_belief
+        if belief == 0:
+            belief_text = 'between 0 and 9'
+        elif belief == 1:
+            belief_text = 'between 10 and 14'
+        else:
+            belief_text = '15 or more'
+        return dict(topic=player.topic, belief=belief_text)
+
+
 class Sports(Page):
     @staticmethod
     def is_displayed(player: Player):
         participant = player.participant
-        return player.round_number > (participant.task_rounds['Sports and Videogames'] - 1) * C.N and player.round_number <= (
-            participant.task_rounds['Sports and Videogames']) * C.N
+        return player.round_number > (participant.task_rounds['Sports and Video Games'] - 1) * C.N and player.round_number <= (
+            participant.task_rounds['Sports and Video Games']) * C.N
 
     form_model = 'player'
     form_fields = ['effort']
 
     @staticmethod
     def vars_for_template(player):
-        player.topic = 'Sports and Videogames'
+        player.topic = 'Sports and Video Games'
         participant = player.participant
         succes_L = 0
         succes_M = 0
@@ -601,22 +753,39 @@ class Sports(Page):
             previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
                                                player.round_number - 1)
             for p in previous_rounds:
-                if p.signal == 1 & p.effort == 0:
+                if p.signal == 1 and p.effort == 0:
                     succes_L += 1
-                elif p.signal == 1 & p.effort == 1:
+                elif p.signal == 1 and p.effort == 1:
                     succes_M += 1
-                elif p.signal == 1 & p.effort == 2:
+                elif p.signal == 1 and p.effort == 2:
                     succes_H += 1
-                elif p.signal == 0 & p.effort == 0:
+                elif p.signal == 0 and p.effort == 0:
                     fail_L += 1
-                elif p.signal == 0 & p.effort == 1:
+                elif p.signal == 0 and p.effort == 1:
                     fail_M += 1
                 else:
                     fail_H += 1
         else:
             previous_rounds = 0
 
-        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L)
+        session = player.session
+        w = session.w_sports
+
+        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
+
+    @staticmethod
+    def live_method(player: Player, data):
+        if data == 'clicked-low':
+            player.low_button += 1
+            player.last_button = 'low'
+        elif data == 'clicked_mid':
+            player.mid_button += 1
+            player.last_button = 'mid'
+        elif data == 'clicked_high':
+            player.high_button += 1
+            player.last_button = 'high'
+        else:
+            player.last_button = 'none'
 
 
 class SportsFeedback(Page):
@@ -624,8 +793,8 @@ class SportsFeedback(Page):
     def is_displayed(player: Player):
         participant = player.participant
         return player.round_number > (
-                    participant.task_rounds['Sports and Videogames'] - 1) * C.N and player.round_number <= (
-                   participant.task_rounds['Sports and Videogames']) * C.N
+                    participant.task_rounds['Sports and Video Games'] - 1) * C.N and player.round_number <= (
+                   participant.task_rounds['Sports and Video Games']) * C.N
 
     @staticmethod
     def vars_for_template(player):
@@ -640,9 +809,28 @@ class SportsFeedback(Page):
         else:
             type = 2
 
-        round = player.round_number - 1 - C.N*participant.task_rounds['Sports and Videogames']
+        round = player.round_number - 1 - C.N*participant.task_rounds['Sports and Video Games']
         player.signal = int(session.outcomes_sports[type][e, round])
         return dict(signal=player.signal, topic=player.topic)
+
+
+class UsStart(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        participant = player.participant
+        return player.round_number == (participant.task_rounds['US Geography'] - 1) * C.N + 1
+
+    @staticmethod
+    def vars_for_template(player):
+        player.topic = 'US Geography'
+        belief = player.participant.us_belief
+        if belief == 0:
+            belief_text = 'between 0 and 9'
+        elif belief == 1:
+            belief_text = 'between 10 and 14'
+        else:
+            belief_text = '15 or more'
+        return dict(topic=player.topic, belief=belief_text)
 
 
 class Us(Page):
@@ -668,26 +856,43 @@ class Us(Page):
         fail_M = 0
         fail_H = 0
 
-        if player.round_number > (participant.task_rounds[player.topic] - 1) * C.N + 1:
-            previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
+        if player.round_number > (participant.task_rounds['US Geography'] - 1) * C.N + 1:
+            previous_rounds = player.in_rounds((participant.task_rounds['US Geography'] - 1) * C.N + 1,
                                                player.round_number - 1)
             for p in previous_rounds:
-                if p.signal == 1 & p.effort == 0:
+                if p.signal == 1 and p.effort == 0:
                     succes_L += 1
-                elif p.signal == 1 & p.effort == 1:
+                elif p.signal == 1 and p.effort == 1:
                     succes_M += 1
-                elif p.signal == 1 & p.effort == 2:
+                elif p.signal == 1 and p.effort == 2:
                     succes_H += 1
-                elif p.signal == 0 & p.effort == 0:
+                elif p.signal == 0 and p.effort == 0:
                     fail_L += 1
-                elif p.signal == 0 & p.effort == 1:
+                elif p.signal == 0 and p.effort == 1:
                     fail_M += 1
                 else:
                     fail_H += 1
         else:
             previous_rounds = 0
 
-        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L)
+        session = player.session
+        w = session.w_us
+
+        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
+
+    @staticmethod
+    def live_method(player: Player, data):
+        if data == 'clicked-low':
+            player.low_button += 1
+            player.last_button = 'low'
+        elif data == 'clicked_mid':
+            player.mid_button += 1
+            player.last_button = 'mid'
+        elif data == 'clicked_high':
+            player.high_button += 1
+            player.last_button = 'high'
+        else:
+            player.last_button = 'none'
 
 
 class UsFeedback(Page):
@@ -721,9 +926,9 @@ class ResultsWaitPage(WaitPage):
 
 
 page_sequence = [Performance,
-                 Verbal, VerbalFeedback,
-                 Math, MathFeedback,
-                 Pop, PopFeedback,
-                 Science, ScienceFeedback,
-                 Sports, SportsFeedback,
-                 Us, UsFeedback]
+                 VerbalStart, Verbal, VerbalFeedback,
+                 MathStart, Math, MathFeedback,
+                 PopStart, Pop, PopFeedback,
+                 ScienceStart, Science, ScienceFeedback,
+                 SportsStart, Sports, SportsFeedback,
+                 UsStart, Us, UsFeedback]

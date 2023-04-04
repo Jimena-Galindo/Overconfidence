@@ -6,16 +6,123 @@
 
   <div style="width: 100%;">
         <div style="width: 65%; height: 200px; float: left;">
-            <p> Make your choice: </p>
-            {{ formfields }}
+
+            <div style="width: 25%; height: 200px; float: left;">
+
+                <table class="table" style="position: relative; top: 50px; left: 20px; background-color: #EBEBEB;">
+
+                        <tr>
+                            <th colspan="2" style="white-space: nowrap;">
+                                {{ form.effort.label }}
+
+                            </th>
+                        </tr>
+
+                        <tr style="text-align: right">
+                            <td>A</td>
+                        </tr>
+                    <tr style="text-align: right">
+                            <td>B</td>
+                        </tr>
+                    <tr style="text-align: right">
+                            <td>C</td>
+                        </tr>
+
+
+
+                </table>
+
+            </div>
+            <div style="width: 10%; height: 200px; float: left;">
+
+                <table class="table" style="position: relative; top: 50px; left: 20px; background-color: #EBEBEB;">
+
+                        <tr>
+                            <th>:</th>
+
+                        </tr>
+                    {{ for choice in form.effort }}
+                        <tr >
+                            <td>{{ choice }}</td>
+                        </tr>
+
+                    {{ endfor }}
+
+                </table>
+
+
+            </div>
+
+            <div style="width: 55%; height: 200px; float: left;">
+
+                <table class="table" id="Low" style="position: relative; top: 50px; left: 20px; background-color: #EBEBEB; display:none">
+
+                        <tr style="text-align: center">
+                            <th>Rate A</th><th>Rate B</th><th>Rate C</th>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td>20</td><td>25</td><td>40</td>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td>7</td><td>30</td><td>45</td>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td>2</td><td>20</td><td>50</td>
+                        </tr>
+
+                </table>
+
+                <table class="table" id="Mid" style="position: relative; top: 50px; left: 20px; background-color: #EBEBEB; display:none">
+
+                        <tr style="text-align: center">
+                            <th>Rate A</th><th>Rate B</th><th>Rate C</th>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td>40</td><td>45</td><td>65</td>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td>30</td><td>65</td><td>69</td>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td>5</td><td>50</td><td>80</td>
+                        </tr>
+
+                </table>
+
+                <table class="table" id="High" style="position: relative; top: 50px; left: 20px; background-color: #EBEBEB; display:none">
+
+                        <tr style="text-align: center">
+                            <th>Rate A</th><th>Rate B</th><th>Rate C</th>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td>45</td><td>55</td><td>75</td>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td>35</td><td>69</td><td>80</td>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td>25</td><td>65</td><td>98</td>
+                        </tr>
+
+                </table>
+
+                <div style="width: 100%; height: 200px; float: left; position: relative;top: 50px; left: 30px;">
+                    <p> Which probability matrix would you like to see?</p>
+
+                    <button type="button" onclick="Low()" id="btn_low" style="position: relative;top: 10px; left: 10px;">Low Score</button>
+                    <button type="button" onclick="Mid()" id="btn_mid" style="position: relative;top: 10px; left: 10px;">Mid Score</button>
+                    <button type="button" onclick="High()" id="btn_high" style="position: relative;top: 10px; left: 10px;">High Score</button>
+                </div>
+            </div>
+
         </div>
 
         <div id="History" style="margin-left: 65%; height: 200px; display:none">
             <h4> Your Previous Outcomes</h4>
 
-            <table>
+            <table class="table">
             <tr>
-                <th> Round </th>
+
                 <th> Choice </th>
                 <th> Outcome </th>
 
@@ -27,14 +134,24 @@
                 {{ else }}
                 {{ for p in rounds }}
                 <tr>
+
                     <td>
-                        {{p.round_number}}
+                        {{ if p.effort == 0 }}
+                        Low
+                        {{else}}
+                        {{if p.effort == 1}}
+                        Medium
+                        {{ else }}
+                         High
+                        {{endif }}
+                        {{ endif }}
                     </td>
                     <td>
-                        {{p.effort}}
-                    </td>
-                    <td>
-                        {{p.signal}}
+                        {{if p.signal == 0}}
+                        Failure
+                        {{else}}
+                        Success
+                        {{endif}}
                     </td>
                 </tr>
                 {{endfor}}
@@ -49,7 +166,7 @@
         <div id="Summary" style="margin-left: 65%; height: 200px; display:block">
             <h4> Your Previous Outcomes</h4>
 
-            <table>
+            <table class="table">
             <tr>
                 <th> Choice </th>
                 <th> Successes </th>
@@ -59,10 +176,10 @@
             </tr>
                 {{ if rounds == 0 }}
                 <tr>
-                    <td colspan="2"> You have no data for this task yet </td></tr>
+                    <td colspan="3"> You have no data for this task yet </td></tr>
                 {{ else }}
                 <tr>
-                    <td>Low</td> <td> {{ sL }} </td><td> {{ fL}} </td>
+                    <td>Low</td> <td> {{ sL }} </td><td> {{ fL }} </td>
                 </tr>
                 <tr>
                     <td>Medium</td> <td> {{ sM }} </td><td> {{ fM }} </td>
@@ -87,6 +204,9 @@
     var S = document.getElementById("Summary");
     var toH = document.getElementById("toH");
     var toS = document.getElementById("toS");
+    var low = document.getElementById("Low");
+    var mid = document.getElementById("Mid");
+    var high = document.getElementById("High");
 
 
     function to_summary()
@@ -107,6 +227,30 @@
             toH.style.display = "none";
         }
 
+
+    function Low()
+        {
+            liveSend('clicked-low')
+            low.style.display = "block";
+            mid.style.display = "none";
+            high.style.display = "none";
+        }
+
+    function Mid()
+        {
+            liveSend('clicked-mid')
+            low.style.display = "none";
+            mid.style.display = "block";
+            high.style.display = "none";
+        }
+
+    function High()
+        {
+            liveSend('clicked-high')
+            low.style.display = "none";
+            mid.style.display = "none";
+            high.style.display = "block";
+        }
 </script>
 
 

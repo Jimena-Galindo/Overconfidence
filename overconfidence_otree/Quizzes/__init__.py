@@ -227,6 +227,10 @@ def creating_session(subsession: Subsession):
 
 
 #PAGES
+class Instructions(Page):
+    pass
+
+
 class Start(Page):
     @staticmethod
     def vars_for_template(player):
@@ -648,4 +652,4 @@ class ResultsWaitPage(WaitPage):
     pass
 
 
-page_sequence = [Start, VerbalQuiz, MathQuiz, PopQuiz, SportsQuiz, ScienceQuiz, USQuiz]
+page_sequence = [Instructions, Start, VerbalQuiz, MathQuiz, PopQuiz, SportsQuiz, ScienceQuiz, USQuiz]

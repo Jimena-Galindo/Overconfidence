@@ -5,7 +5,7 @@ SESSION_CONFIGS = [
     dict(
         name='Control',
         num_demo_participants=2,
-        app_sequence=['Quizzes', 'Signals']
+        app_sequence=['Questionnaire', 'Quizzes', 'Signals']
     )
 ]
 
@@ -32,7 +32,11 @@ PARTICIPANT_FIELDS = [
     'science_questions',
     'pop_questions',
     'us_questions',
-    'sports_questions']
+    'sports_questions',
+    'age',
+    'gender',
+    'major',
+    'nationality']
 
 SESSION_FIELDS = ['seed',
                   'w_verbal',

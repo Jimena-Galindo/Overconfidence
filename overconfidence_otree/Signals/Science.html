@@ -7,7 +7,7 @@
   <div style="width: 100%;">
         <div style="width: 65%; height: 200px; float: left;">
 
-            <div style="width: 25%; height: 200px; float: left;">
+            <div id="options" style="width: 25%; height: 200px; float: left; display:none;">
 
                 <table class="table" style="position: relative; top: 50px; left: 20px; background-color: #EBEBEB;">
 
@@ -33,7 +33,7 @@
                 </table>
 
             </div>
-            <div style="width: 10%; height: 200px; float: left;">
+            <div id="choices" style="width: 10%; height: 200px; float: left; display:none;">
 
                 <table class="table" style="position: relative; top: 50px; left: 20px; background-color: #EBEBEB;">
 
@@ -137,12 +137,12 @@
 
                     <td>
                         {{ if p.effort == 0 }}
-                        Low
+                        A
                         {{else}}
                         {{if p.effort == 1}}
-                        Medium
+                        B
                         {{ else }}
-                         High
+                        C
                         {{endif }}
                         {{ endif }}
                     </td>
@@ -179,13 +179,13 @@
                     <td colspan="3"> You have no data for this task yet </td></tr>
                 {{ else }}
                 <tr>
-                    <td>Low</td> <td> {{ sL }} </td><td> {{ fL }} </td>
+                    <td>A</td> <td> {{ sL }} </td><td> {{ fL }} </td>
                 </tr>
                 <tr>
-                    <td>Medium</td> <td> {{ sM }} </td><td> {{ fM }} </td>
+                    <td>B</td> <td> {{ sM }} </td><td> {{ fM }} </td>
                 </tr>
                 <tr>
-                    <td>High</td> <td> {{ sH }} </td><td> {{ fH }} </td>
+                    <td>C</td> <td> {{ sH }} </td><td> {{ fH }} </td>
                 </tr>
                 {{ endif }}
             </table>
@@ -207,6 +207,8 @@
     var low = document.getElementById("Low");
     var mid = document.getElementById("Mid");
     var high = document.getElementById("High");
+    var choices = document.getElementById("choices");
+    var options = document.getElementById("options");
 
 
     function to_summary()
@@ -234,6 +236,8 @@
             low.style.display = "block";
             mid.style.display = "none";
             high.style.display = "none";
+            choices.style.display = "block";
+            options.style.display = "block";
         }
 
     function Mid()
@@ -242,6 +246,8 @@
             low.style.display = "none";
             mid.style.display = "block";
             high.style.display = "none";
+            choices.style.display = "block";
+            options.style.display = "block";
         }
 
     function High()
@@ -250,6 +256,8 @@
             low.style.display = "none";
             mid.style.display = "none";
             high.style.display = "block";
+            choices.style.display = "block";
+            options.style.display = "block";
         }
 </script>
 

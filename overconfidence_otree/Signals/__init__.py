@@ -38,27 +38,39 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     topic = models.StringField()
 
-    math_belief = models.IntegerField(choices=[[0, 'between 0 and 9'], [1, 'between 10 and 14'], [2, '15 or more']],
+    math_belief = models.IntegerField(choices=[[0, 'Low Score: between 0 and 9'],
+                                               [1, 'Mid Score: between 10 and 14'],
+                                               [2, 'High Score: 15 or more']],
                                       widget=widgets.RadioSelect,
                                       label='How many questions do you think you answered correctly in the Math Quiz')
-    verbal_belief = models.IntegerField(choices=[[0, 'between 0 and 9'], [1, 'between 10 and 14'], [2, '15 or more']],
+    verbal_belief = models.IntegerField(choices=[[0, 'Low Score: between 0 and 9'],
+                                                 [1, 'Mid Score: between 10 and 14'],
+                                                 [2, 'High Score: 15 or more']],
                                         widget=widgets.RadioSelect,
                                         label='How many questions do you think you answered correctly in the Verbal Quiz')
-    pop_belief = models.IntegerField(choices=[[0, 'between 0 and 9'], [1, 'between 10 and 14'], [2, '15 or more']],
+    pop_belief = models.IntegerField(choices=[[0, 'Low Score: between 0 and 9'],
+                                              [1, 'Mid Score: between 10 and 14'],
+                                              [2, 'High Score: 15 or more']],
                                      widget=widgets.RadioSelect,
                                      label='How many questions do you think you answered correctly in the Pop Culture and Art Quiz')
-    science_belief = models.IntegerField(choices=[[0, 'between 0 and 9'], [1, 'between 10 and 14'], [2, '15 or more']],
+    science_belief = models.IntegerField(choices=[[0, 'Low Score: between 0 and 9'],
+                                                  [1, 'Mid Score: between 10 and 14'],
+                                                  [2, 'High Score: 15 or more']],
                                          widget=widgets.RadioSelect,
                                          label='How many questions do you think you answered correctly in the Science and Technology Quiz')
-    us_belief = models.IntegerField(choices=[[0, 'between 0 and 9'], [1, 'between 10 and 14'], [2, '15 or more']],
+    us_belief = models.IntegerField(choices=[[0, 'Low Score: between 0 and 9'],
+                                             [1, 'Mid Score: between 10 and 14'],
+                                             [2, 'High Score: 15 or more']],
                                     widget=widgets.RadioSelect,
                                     label='How many questions do you think you answered correctly in the US Geography Quiz')
-    sports_belief = models.IntegerField(choices=[[0, 'between 0 and 9'], [1, 'between 10 and 14'], [2, '15 or more']],
+    sports_belief = models.IntegerField(choices=[[0, 'Low Score: between 0 and 9'],
+                                                 [1, 'Mid Score: between 10 and 14'],
+                                                 [2, 'High Score: 15 or more']],
                                         widget=widgets.RadioSelect,
                                         label='How many questions do you think you answered correctly in the Sports and Video Games Quiz')
 
-    effort = models.StringField(label='Choose a gamble',
-                                choices=[[0,'A'], [1, 'B'], [2,'C']],
+    effort = models.IntegerField(label='Choose a gamble',
+                                choices=[[0, 'A'], [1, 'B'], [2, 'C']],
                                 widget=widgets.RadioSelect,)
 
     signal = models.IntegerField()
@@ -305,6 +317,10 @@ class Performance(Page):
             session.outcomes_us = np.stack((outcomes_L, outcomes_M, outcomes_H))
 
 
+class Instructions(Page):
+    pass
+
+
 class VerbalStart(Page):
     @staticmethod
     def is_displayed(player: Player):
@@ -314,7 +330,7 @@ class VerbalStart(Page):
     @staticmethod
     def vars_for_template(player):
         player.topic = 'Verbal'
-        belief = player.participant.verbal_belief
+        belief = player.in_round(1).verbal_belief
         if belief == 0:
             belief_text = 'between 0 and 9'
         elif belief == 1:
@@ -419,7 +435,7 @@ class MathStart(Page):
     @staticmethod
     def vars_for_template(player):
         player.topic = 'Math'
-        belief = player.participant.math_belief
+        belief = player.in_round(1).math_belief
         if belief == 0:
             belief_text = 'between 0 and 9'
         elif belief == 1:
@@ -527,7 +543,7 @@ class PopStart(Page):
     @staticmethod
     def vars_for_template(player):
         player.topic = 'Pop-Culture and Art'
-        belief = player.participant.pop_belief
+        belief = player.in_round(1).pop_belief
         if belief == 0:
             belief_text = 'between 0 and 9'
         elif belief == 1:
@@ -618,7 +634,7 @@ class ScienceStart(Page):
     @staticmethod
     def vars_for_template(player):
         player.topic = 'Science and Technology'
-        belief = player.participant.science_belief
+        belief = player.in_round(1).science_belief
         return dict(topic=player.topic, belief=belief)
 
 
@@ -717,7 +733,7 @@ class SportsStart(Page):
     @staticmethod
     def vars_for_template(player):
         player.topic = 'Sports and Video Games'
-        belief = player.participant.sports_belief
+        belief = player.in_round(1).sports_belief
         if belief == 0:
             belief_text = 'between 0 and 9'
         elif belief == 1:
@@ -823,7 +839,7 @@ class UsStart(Page):
     @staticmethod
     def vars_for_template(player):
         player.topic = 'US Geography'
-        belief = player.participant.us_belief
+        belief = player.in_round(1).us_belief
         if belief == 0:
             belief_text = 'between 0 and 9'
         elif belief == 1:
@@ -925,7 +941,7 @@ class ResultsWaitPage(WaitPage):
     pass
 
 
-page_sequence = [Performance,
+page_sequence = [Performance, Instructions,
                  VerbalStart, Verbal, VerbalFeedback,
                  MathStart, Math, MathFeedback,
                  PopStart, Pop, PopFeedback,

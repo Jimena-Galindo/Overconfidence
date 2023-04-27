@@ -1,0 +1,25 @@
+{{ block title }}
+    Results
+{{ endblock }}
+
+{{ block content }}
+
+<table class="table">
+    <tr>
+        <th> Part </th><th> Topic </th><th> Points </th>
+    </tr>
+    <tr>
+        <td> Part 1 (Quizzes)</td><td> {{ part1_topic }} </td><td> {{ part1_score }} </td>
+    </tr>
+    <tr>
+        <td> Part 2 (Gambles)</td><td> {{ part2_topic }} </td><td> {{ part2_score }} </td>
+    </tr>
+
+    <tr>
+        <td> TOTAL </td><td>  </td><td> {{ total }} </td>
+    </tr>
+</table>
+
+
+
+{{ endblock }}

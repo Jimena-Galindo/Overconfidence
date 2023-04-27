@@ -52,7 +52,7 @@ class C(BaseConstants):
     NAME_IN_URL = 'Quizzes'
     PLAYERS_PER_GROUP = None
     # time limit for each quiz. the form submits when time runs out
-    TIME = 15
+    TIME = 120
     # List of the quizz titles
     TASKS = ['Math', 'Verbal', 'Science and Technology', 'Sports and Video Games', 'US Geography', 'Pop-Culture and Art']
     NUM_ROUNDS = len(TASKS)
@@ -194,12 +194,7 @@ class Player(BasePlayer):
     sports18 = make_field(sports, 18)
     sports19 = make_field(sports, 19)
 
-    verbal_score = models.IntegerField(initial=0)
-    math_score = models.IntegerField(initial=0)
-    pop_score = models.IntegerField(initial=0)
-    science_score = models.IntegerField(initial=0)
-    us_score = models.IntegerField(initial=0)
-    sports_score = models.IntegerField(initial=0)
+    score = models.IntegerField(initial=0)
 
     math_belief=models.IntegerField(min=0, max=20,
                                     label='How many questions do you think you answered correctly in the Math Quiz')
@@ -228,7 +223,9 @@ def creating_session(subsession: Subsession):
 
 #PAGES
 class Instructions(Page):
-    pass
+    @staticmethod
+    def is_displayed(player):
+        return player.round_number == 1
 
 
 class Start(Page):
@@ -306,11 +303,9 @@ class MathQuiz(Page):
         check = [ans[i] == correct_ans[i] for i in range(len(ans))]
 
         # compute the score
-        player.math_score = sum(check)
+        player.score = sum(check)
         participant = player.participant
-        participant.math_score = player.math_score
-
-        player.payoff += player.math_score
+        participant.math_score = player.score
 
 
 class VerbalQuiz(Page):
@@ -371,13 +366,11 @@ class VerbalQuiz(Page):
 
         check = [ans[i] == correct_ans[i] for i in range(len(ans))]
 
-        player.verbal_score = sum(check)
+        player.score = sum(check)
         participant = player.participant
-        participant.verbal_score = player.verbal_score
+        participant.verbal_score = player.score
         
         participant.verbal_questions = verbal[:, 0]
-
-        player.payoff += player.verbal_score
     
 
 class PopQuiz(Page):
@@ -438,13 +431,11 @@ class PopQuiz(Page):
 
         check = [ans[i] == correct_ans[i] for i in range(len(ans))]
 
-        player.pop_score = sum(check)
+        player.score = sum(check)
         participant = player.participant
-        participant.pop_score = player.pop_score
+        participant.pop_score = player.score
 
         participant.pop_questions = pop[:, 0]
-
-        player.payoff += player.pop_score
 
 
 class SportsQuiz(Page):
@@ -505,13 +496,11 @@ class SportsQuiz(Page):
 
         check = [ans[i] == correct_ans[i] for i in range(len(ans))]
 
-        player.sports_score = sum(check)
+        player.score = sum(check)
         participant = player.participant
-        participant.sports_score = player.sports_score
+        participant.sports_score = player.score
 
         participant.sports_questions = sports[:, 0]
-
-        player.payoff += player.sports_score
 
 
 class ScienceQuiz(Page):
@@ -572,13 +561,11 @@ class ScienceQuiz(Page):
 
         check = [ans[i] == correct_ans[i] for i in range(len(ans))]
 
-        player.science_score = sum(check)
+        player.score = sum(check)
         participant = player.participant
-        participant.science_score = player.science_score
+        participant.science_score = player.score
 
         participant.science_questions = science[:, 0]
-
-        player.payoff += player.science_score
 
 
 class USQuiz(Page):
@@ -639,17 +626,30 @@ class USQuiz(Page):
 
         check = [ans[i] == correct_ans[i] for i in range(len(ans))]
 
-        player.us_score = sum(check)
+        player.score = sum(check)
         participant = player.participant
-        participant.us_score = player.us_score
+        participant.us_score = player.score
 
         participant.us_questions = us[:, 0]
 
-        player.payoff += player.us_score
+
+class Transition(Page):
+    @staticmethod
+    def is_displayed(player: Player):
+        return player.round_number == C.NUM_ROUNDS
+
+    @staticmethod
+    def vars_for_template(player):
+        participant = player.participant
+        random_round = random.randint(1, C.NUM_ROUNDS)
+        player_in_selected_round = player.in_round(random_round)
+        player.payoff = player_in_selected_round.score
+        participant.part1_score = player_in_selected_round.score
+        participant.part1_topic = C.TASKS[random_round - 1]
 
 
 class ResultsWaitPage(WaitPage):
     pass
 
 
-page_sequence = [Instructions, Start, VerbalQuiz, MathQuiz, PopQuiz, SportsQuiz, ScienceQuiz, USQuiz]
+page_sequence = [Instructions, Start, VerbalQuiz, MathQuiz, PopQuiz, SportsQuiz, ScienceQuiz, USQuiz, Transition]

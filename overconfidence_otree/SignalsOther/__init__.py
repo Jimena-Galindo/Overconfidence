@@ -10,8 +10,8 @@ Belief Updating
 
 
 class C(BaseConstants):
-    NAME_IN_URL = 'Gambles'
-    PLAYERS_PER_GROUP = None
+    NAME_IN_URL = 'GamblesOther'
+    PLAYERS_PER_GROUP = 2
     TASKS = ['Math', 'Verbal', 'Science and Technology', 'Sports and Video Games', 'US Geography', 'Pop-Culture and Art']
     # number of effort/signal realizations per quizz
     N = 5
@@ -42,32 +42,32 @@ class Player(BasePlayer):
                                               'Mid Score: between 10 and 14',
                                               'High Score: 15 or more'],
                                      widget=widgets.RadioSelect,
-                                     label='How many questions do you think you answered correctly in the Math Quiz')
+                                     label='How many questions do you think this person answered correctly in the Math Quiz')
     verbal_belief = models.StringField(choices=['Low Score: between 0 and 9',
                                                 'Mid Score: between 10 and 14',
                                                 'High Score: 15 or more'],
                                        widget=widgets.RadioSelect,
-                                       label='How many questions do you think you answered correctly in the Verbal Quiz')
+                                       label='How many questions do you think this person answered correctly in the Verbal Quiz')
     pop_belief = models.StringField(choices=['Low Score: between 0 and 9',
                                              'Mid Score: between 10 and 14',
                                              'High Score: 15 or more'],
                                     widget=widgets.RadioSelect,
-                                    label='How many questions do you think you answered correctly in the Pop Culture and Art Quiz')
+                                    label='How many questions do you think this person answered correctly in the Pop Culture and Art Quiz')
     science_belief = models.StringField(choices=['Low Score: between 0 and 9',
                                                  'Mid Score: between 10 and 14',
                                                  'High Score: 15 or more'],
                                         widget=widgets.RadioSelect,
-                                        label='How many questions do you think you answered correctly in the Science and Technology Quiz')
+                                        label='How many questions do you think this person answered correctly in the Science and Technology Quiz')
     us_belief = models.StringField(choices=['Low Score: between 0 and 9',
                                             'Mid Score: between 10 and 14',
                                             'High Score: 15 or more'],
                                    widget=widgets.RadioSelect,
-                                   label='How many questions do you think you answered correctly in the US Geography Quiz')
+                                   label='How many questions do you think this person answered correctly in the US Geography Quiz')
     sports_belief = models.StringField(choices=['Low Score: between 0 and 9',
                                                 'Mid Score: between 10 and 14',
                                                 'High Score: 15 or more'],
                                        widget=widgets.RadioSelect,
-                                       label='How many questions do you think you answered correctly in the Sports and Video Games Quiz')
+                                       label='How many questions do you think this person answered correctly in the Sports and Video Games Quiz')
 
     effort = models.IntegerField(label='Choose a gamble',
                                  choices=[[0, 'A'], [1, 'B'], [2, 'C']],
@@ -83,7 +83,8 @@ class Player(BasePlayer):
     
 
 # FUNCTIONS
-
+def creating_session(subsession):
+    subsession.group_randomly()
 
 # PAGES
 class Performance(Page):
@@ -98,6 +99,16 @@ class Performance(Page):
                    'pop_belief',
                    'sports_belief'
                    ]
+
+    @staticmethod
+    def vars_for_template(player):
+        other = player.get_others_in_group()
+        other = other[0].participant
+        gender = other.gender
+        major = other.major
+        nationality = other.nationality
+
+        return dict(gender=gender, major=major, nationality=nationality)
 
     @staticmethod
     def before_next_page(player, timeout_happened):
@@ -419,8 +430,9 @@ class VerbalFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        participant = player.participant
-        score = player.participant.verbal_score
+        other = player.get_others_in_group()
+        other = other.participant
+        score = other.verbal_score
         session = player.session
         e = player.effort
         if score < C.T1:
@@ -526,8 +538,9 @@ class MathFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        participant = player.participant
-        score = player.participant.math_score
+        other = player.get_others_in_group()
+        other = other.participant
+        score = other.verbal_score
         e = player.effort
         session = player.session
 
@@ -632,8 +645,9 @@ class PopFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        participant = player.participant
-        score = participant.pop_score
+        other = player.get_others_in_group()
+        other = other.participant
+        score = other.verbal_score
         session = player.session
         e = player.effort
         if score < C.T1:
@@ -731,9 +745,10 @@ class ScienceFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        participant = player.participant
+        other = player.get_others_in_group()
+        other = other.participant
+        score = other.verbal_score
         session = player.session
-        score = player.participant.science_score
         e = player.effort
         if score < C.T1:
             type = 0
@@ -837,9 +852,11 @@ class SportsFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        participant = player.participant
+        other = player.get_others_in_group()
+        other = other.participant
+        score = other.verbal_score
         session = player.session
-        score = player.participant.sports_score
+
         e = player.effort
         if score < C.T1:
             type = 0
@@ -944,9 +961,11 @@ class UsFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        participant = player.participant
+        other = player.get_others_in_group()
+        other = other.participant
+        score = other.verbal_score
         session = player.session
-        score = player.participant.us_score
+
         e = player.effort
         if score < C.T1:
             type = 0

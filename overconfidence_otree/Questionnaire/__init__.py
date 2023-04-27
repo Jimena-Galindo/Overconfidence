@@ -109,10 +109,11 @@ class Questionnaire(Page):
         participant = player.participant
         participant.gender = player.gender
         participant.nationality = player.nationality
+        participant.major = player.major
 
 
 class ResultsWaitPage(WaitPage):
     pass
 
 
-page_sequence = [Questions, Instructions]
+page_sequence = [Questionnaire, Instructions]

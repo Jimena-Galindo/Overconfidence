@@ -3,9 +3,14 @@ from os import environ
 
 SESSION_CONFIGS = [
     dict(
-        name='Control',
+        name='Ego',
         num_demo_participants=2,
         app_sequence=['Questionnaire', 'Quizzes', 'Signals']
+    ),
+    dict(
+        name='Stereotype',
+        num_demo_participants=2,
+        app_sequence=['Questionnaire', 'Quizzes', 'SignalsOther']
     )
 ]
 
@@ -36,7 +41,9 @@ PARTICIPANT_FIELDS = [
     'age',
     'gender',
     'major',
-    'nationality']
+    'nationality',
+    'part1_score',
+    'part1_topic']
 
 SESSION_FIELDS = ['seed',
                   'w_verbal',

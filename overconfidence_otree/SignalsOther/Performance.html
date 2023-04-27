@@ -1,0 +1,21 @@
+{{ block title }}
+    Please give us your best guess for your performance in each of the Quizzes
+{{ endblock }}
+
+{{ block content }}
+
+<p> Another participant in the experiment has the following characteristics:</p>
+
+<table>
+    <tr>
+        <th>Gender Identity</th><th>Major</th><th>Nationality</th>
+    </tr>
+    <tr>
+        <td> {{ gender }} </td> <td> {{ major }} </td> <td> {{ nationality }} </td>
+    </tr>
+</table>
+
+{{ formfields }}
+
+<div style="float: right">{{next_button}}</div>
+{{endblock}}

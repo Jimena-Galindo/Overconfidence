@@ -502,17 +502,15 @@ class Math(Page):
 
     @staticmethod
     def live_method(player, data):
-        if data == 'clicked-low':
+        if data == 0:
             player.low_button += 1
-            player.last_button = 'low'
-        elif data == 'clicked-mid':
+            player.last_button = 0
+        elif data == 1:
             player.mid_button += 1
-            player.last_button = 'mid'
-        elif data == 'clicked-high':
+            player.last_button = 1
+        elif data == 2:
             player.high_button += 1
-            player.last_button = 'high'
-        else:
-            player.last_button = 'none'
+            player.last_button = 2
 
 
 class MathFeedback(Page):
@@ -608,17 +606,15 @@ class Pop(Page):
 
     @staticmethod
     def live_method(player, data):
-        if data == 'clicked-low':
+        if data == 0:
             player.low_button += 1
-            player.last_button = 'low'
-        elif data == 'clicked_mid':
+            player.last_button = 0
+        elif data == 1:
             player.mid_button += 1
-            player.last_button = 'mid'
-        elif data == 'clicked_high':
+            player.last_button = 1
+        elif data == 2:
             player.high_button += 1
-            player.last_button = 'high'
-        else:
-            player.last_button = 'none'
+            player.last_button = 2
 
 
 class PopFeedback(Page):
@@ -707,17 +703,15 @@ class Science(Page):
 
     @staticmethod
     def live_method(player, data):
-        if data == 'clicked-low':
+        if data == 0:
             player.low_button += 1
-            player.last_button = 'low'
-        elif data == 'clicked_mid':
+            player.last_button = 0
+        elif data == 1:
             player.mid_button += 1
-            player.last_button = 'mid'
-        elif data == 'clicked_high':
+            player.last_button = 1
+        elif data == 2:
             player.high_button += 1
-            player.last_button = 'high'
-        else:
-            player.last_button = 'none'
+            player.last_button = 2
 
 
 class ScienceFeedback(Page):
@@ -812,17 +806,15 @@ class Sports(Page):
 
     @staticmethod
     def live_method(player, data):
-        if data == 'clicked-low':
+        if data == 0:
             player.low_button += 1
-            player.last_button = 'low'
-        elif data == 'clicked_mid':
+            player.last_button = 0
+        elif data == 1:
             player.mid_button += 1
-            player.last_button = 'mid'
-        elif data == 'clicked_high':
+            player.last_button = 1
+        elif data == 2:
             player.high_button += 1
-            player.last_button = 'high'
-        else:
-            player.last_button = 'none'
+            player.last_button = 2
 
 
 class SportsFeedback(Page):
@@ -919,17 +911,15 @@ class Us(Page):
 
     @staticmethod
     def live_method(player, data):
-        if data == 'clicked-low':
+        if data == 0:
             player.low_button += 1
-            player.last_button = 'low'
-        elif data == 'clicked_mid':
+            player.last_button = 0
+        elif data == 1:
             player.mid_button += 1
-            player.last_button = 'mid'
-        elif data == 'clicked_high':
+            player.last_button = 1
+        elif data == 2:
             player.high_button += 1
-            player.last_button = 'high'
-        else:
-            player.last_button = 'none'
+            player.last_button = 2
 
 
 class UsFeedback(Page):

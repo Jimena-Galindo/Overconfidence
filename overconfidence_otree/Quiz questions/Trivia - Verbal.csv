@@ -7,9 +7,9 @@ question,a,b,c,d,answer
 "Choose a pair of words that, when used to complete the sentence, fit the meaning of the sentence as a whole and produce completed sentences that are alike in meaning: The increasing interactivity emerging in the latest computer systems means that the traditional view of the computer as a ____ of information now unduly limiting.","gleaner, cache","transformer, gleaner","processor, producer","repository, cache",d
 "As a result of his regimented upbringing, that left him unable to see the nuances of complex situations, he was often accused of being ____ .","indecisive, imperceptive","tyrannical, xenophobic","obtuse, imperceptive","boorish, obtuse",c
 "Which of the words below is least like the others? The difference has nothing to do with vowels, consonants or syllables.",MORE,PAIRS,ETCHERS,ZIPPER,d
-"Tabitha likes cookies but not cake. She likes mutton but not lamb, and she likes okra but not squash. Following the same rule, will she like cherries or pears?",cherries,pears,,,a
+"Tabitha likes cookies but not cake. She likes mutton but not lamb, and she likes okra but not squash. Following the same rule, will she like cherries or pears?",cherries,pears,Neither,Both,a
 Forest is to tree as tree is to ?,plant,leaf,branch,mangrove,b
-"""Senile Felines"" is a palindrome.",TRUE,FALSE,,,
+"Arrange the words in a meaningful sequence: 1.poverty, 2.population, 3.death, 4.unemployment, 5.disease","2,3,4,5,1","3,4,2,5,1","2,4,1,5,3","1,2,3,4,5",c
 Which of the five is least like the other four?,Eel,Shark,Dolphin,Turtle,d
 "While alcohol causes obvious and immediate changes in moods and behaviours, nicotine has ________ effects, but is equally deleterious to health over prolonged periods of time.",more pronounced,less harmful,less conspicuous,similar,c
 "In an effort to _______ the orbits of planets in class, the Professor created a motorized replica of the solar system.",confound,expound,corroborate,extenuate,b

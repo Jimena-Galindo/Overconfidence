@@ -38,34 +38,34 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     topic = models.StringField()
 
-    math_belief = models.StringField(choices=['Low Score: between 0 and 9',
-                                              'Mid Score: between 10 and 14',
-                                              'High Score: 15 or more'],
+    math_belief = models.StringField(choices=[[0, 'Low Score: between 0 and 9'],
+                                                [1, 'Mid Score: between 10 and 14'],
+                                                [2, 'High Score: 15 or more']],
                                      widget=widgets.RadioSelect,
                                      label='How many questions do you think you answered correctly in the Math Quiz')
-    verbal_belief = models.StringField(choices=['Low Score: between 0 and 9',
-                                                'Mid Score: between 10 and 14',
-                                                'High Score: 15 or more'],
+    verbal_belief = models.StringField(choices=[[0, 'Low Score: between 0 and 9'],
+                                                [1, 'Mid Score: between 10 and 14'],
+                                                [2, 'High Score: 15 or more']],
                                        widget=widgets.RadioSelect,
                                        label='How many questions do you think you answered correctly in the Verbal Quiz')
-    pop_belief = models.StringField(choices=['Low Score: between 0 and 9',
-                                             'Mid Score: between 10 and 14',
-                                             'High Score: 15 or more'],
+    pop_belief = models.StringField(choices=[[0, 'Low Score: between 0 and 9'],
+                                                [1, 'Mid Score: between 10 and 14'],
+                                                [2, 'High Score: 15 or more']],
                                     widget=widgets.RadioSelect,
                                     label='How many questions do you think you answered correctly in the Pop Culture and Art Quiz')
-    science_belief = models.StringField(choices=['Low Score: between 0 and 9',
-                                                 'Mid Score: between 10 and 14',
-                                                 'High Score: 15 or more'],
+    science_belief = models.StringField(choices=[[0, 'Low Score: between 0 and 9'],
+                                                [1, 'Mid Score: between 10 and 14'],
+                                                [2, 'High Score: 15 or more']],
                                         widget=widgets.RadioSelect,
                                         label='How many questions do you think you answered correctly in the Science and Technology Quiz')
-    us_belief = models.StringField(choices=['Low Score: between 0 and 9',
-                                            'Mid Score: between 10 and 14',
-                                            'High Score: 15 or more'],
+    us_belief = models.StringField(choices=[[0, 'Low Score: between 0 and 9'],
+                                                [1, 'Mid Score: between 10 and 14'],
+                                                [2, 'High Score: 15 or more']],
                                    widget=widgets.RadioSelect,
                                    label='How many questions do you think you answered correctly in the US Geography Quiz')
-    sports_belief = models.StringField(choices=['Low Score: between 0 and 9',
-                                                'Mid Score: between 10 and 14',
-                                                'High Score: 15 or more'],
+    sports_belief = models.StringField(choices=[[0, 'Low Score: between 0 and 9'],
+                                                [1, 'Mid Score: between 10 and 14'],
+                                                [2, 'High Score: 15 or more']],
                                        widget=widgets.RadioSelect,
                                        label='How many questions do you think you answered correctly in the Sports and Video Games Quiz')
 
@@ -79,7 +79,7 @@ class Player(BasePlayer):
     mid_button = models.IntegerField(initial=0)
     high_button = models.IntegerField(initial=0)
     
-    last_button = models.StringField(initial='none')
+    last_button = models.IntegerField()
     
 
 # FUNCTIONS
@@ -397,18 +397,16 @@ class Verbal(Page):
         return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
     @staticmethod
-    def live_method(player: Player, data):
-        if data == 'clicked-low':
+    def live_method(player, data):
+        if data == 0:
             player.low_button += 1
-            player.last_button = 'low'
-        elif data == 'clicked_mid':
+            player.last_button = 0
+        elif data == 1:
             player.mid_button += 1
-            player.last_button = 'mid'
-        elif data == 'clicked_high':
+            player.last_button = 1
+        elif data == 2:
             player.high_button += 1
-            player.last_button = 'high'
-        else:
-            player.last_button = 'none'
+            player.last_button = 2
 
 
 class VerbalFeedback(Page):
@@ -503,7 +501,7 @@ class Math(Page):
         return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
     @staticmethod
-    def live_method(player: Player, data):
+    def live_method(player, data):
         if data == 'clicked-low':
             player.low_button += 1
             player.last_button = 'low'
@@ -609,7 +607,7 @@ class Pop(Page):
         return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
     @staticmethod
-    def live_method(player: Player, data):
+    def live_method(player, data):
         if data == 'clicked-low':
             player.low_button += 1
             player.last_button = 'low'
@@ -708,7 +706,7 @@ class Science(Page):
         return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
     @staticmethod
-    def live_method(player: Player, data):
+    def live_method(player, data):
         if data == 'clicked-low':
             player.low_button += 1
             player.last_button = 'low'
@@ -813,7 +811,7 @@ class Sports(Page):
         return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
     @staticmethod
-    def live_method(player: Player, data):
+    def live_method(player, data):
         if data == 'clicked-low':
             player.low_button += 1
             player.last_button = 'low'
@@ -920,7 +918,7 @@ class Us(Page):
         return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
     @staticmethod
-    def live_method(player: Player, data):
+    def live_method(player, data):
         if data == 'clicked-low':
             player.low_button += 1
             player.last_button = 'low'
@@ -970,10 +968,9 @@ class Results(Page):
         participant = player.participant
         random_round = random.randint(1, len(C.TASKS))
         task = C.TASKS[random_round-1]
-        round = (participant.task_rounds[task]) * C.N
 
-        in_task_rounds = player.in_rounds((participant.task_rounds[task] - 1) * C.N,  (
-                   participant.task_rounds[task]) * C.N)
+        in_task_rounds = player.in_rounds((random_round-1) * C.N,  (
+                   random_round) * C.N)
 
         score = 0
         for p in in_task_rounds:

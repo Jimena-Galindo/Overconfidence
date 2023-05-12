@@ -32,7 +32,9 @@
     <div id="q18" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal17' }}</div>
     <div id="q19" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal18' }}</div>
     <div id="q20" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">{{ formfield 'verbal19' }}</div>
-
+    <div id="end" style="position: relative; top: 50px; left: 0px; background-color: #EBEBEB; display:none">
+        <p>You have answered all the questions, you will be allowed to proceed when the time runs out</p>
+    </div>
     
   </ul>
 
@@ -56,6 +58,7 @@
   <button type="button" onclick="nextPage17()" id="btn_next17" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
   <button type="button" onclick="nextPage18()" id="btn_next18" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
   <button type="button" onclick="nextPage19()" id="btn_next19" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
+  <button type="button" onclick="nextPage20()" id="btn_next20" style="position: relative;top: 50px; left: 900px; display: none;">Next</button>
     
 
 
@@ -82,6 +85,7 @@
         var q18 = document.getElementById("q18");
         var q19 = document.getElementById("q19");
         var q20 = document.getElementById("q20");
+        var end = document.getElementById("end")
 
         var btn_next1 = document.getElementById("btn_next1");
         var btn_next2 = document.getElementById("btn_next2");
@@ -102,6 +106,7 @@
         var btn_next17 = document.getElementById("btn_next17");
         var btn_next18 = document.getElementById("btn_next18");
         var btn_next19 = document.getElementById("btn_next19");
+        var btn_next20 = document.getElementById("btn_next20")
  
 
         function nextPage1()
@@ -262,6 +267,13 @@
             btn_next20.style.display = "block";
         }
 
+        function nextPage20()
+        {
+            q20.style.display = "none";
+            end.style.display = "block";
+
+            btn_next20.style.display = "none";
+        }
 
    </script>
 

@@ -109,9 +109,9 @@
                 <div style="width: 100%; height: 200px; float: left; position: relative;top: 50px; left: 30px;">
                     <p> Which probability matrix would you like to see?</p>
 
-                    <button type="button" onclick="Low()" id="btn_low" style="position: relative;top: 10px; left: 10px;">score: 0 to 9</button>
-                    <button type="button" onclick="Mid()" id="btn_mid" style="position: relative;top: 10px; left: 10px;">score: 10 to 14</button>
-                    <button type="button" onclick="High()" id="btn_high" style="position: relative;top: 10px; left: 10px;">score: 15 or more</button>
+                    <button type="button" onclick="lowF()" id="btn_low" style="position: relative;top: 10px; left: 10px;" >Low Score</button>
+                    <button type="button" onclick="midF()" id="btn_mid" style="position: relative;top: 10px; left: 10px;">Mid Score</button>
+                    <button type="button" onclick="myFunction2()" id="btn_high" style="position: relative;top: 10px; left: 10px;">High Score</button>
                 </div>
             </div>
 
@@ -230,9 +230,9 @@
         }
 
 
-    function Low()
+    function lowF()
         {
-            liveSend('clicked-low')
+            liveSend(0);
             low.style.display = "block";
             mid.style.display = "none";
             high.style.display = "none";
@@ -240,9 +240,9 @@
             options.style.display = "block";
         }
 
-    function Mid()
+    function midF()
         {
-            liveSend('clicked-mid')
+            liveSend(1);
             low.style.display = "none";
             mid.style.display = "block";
             high.style.display = "none";
@@ -250,15 +250,16 @@
             options.style.display = "block";
         }
 
-    function High()
+    function myFunction2()
         {
-            liveSend('clicked-high')
+            liveSend(2);
             low.style.display = "none";
             mid.style.display = "none";
             high.style.display = "block";
             choices.style.display = "block";
             options.style.display = "block";
         }
+
 </script>
 
 

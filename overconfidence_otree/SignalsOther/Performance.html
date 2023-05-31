@@ -1,21 +1,73 @@
 {{ block title }}
-    Please give us your best guess for your performance in each of the Quizzes
+    Performance
 {{ endblock }}
 
 {{ block content }}
 
-<p> Another participant in the experiment has the following characteristics:</p>
+<p> You have been paired with another participant. Please provide your best guess of how they scored in each quiz.
+    If the quiz is selected for payment, and you guessed the correct score for yourself, you will earn 1 point.
+    If you guessed the correct score for the other participant, you will earn 1 point. </p>
+<div style="width: 100%;">
+        <div style="width: 50%; float: left; border-color: gray; border-right-width: 2px; border-right-style: dashed; ">
 
-<table>
-    <tr>
-        <th>Gender Identity</th><th>Major</th><th>Nationality</th>
-    </tr>
-    <tr>
-        <td> {{ gender }} </td> <td> {{ major }} </td> <td> {{ nationality }} </td>
-    </tr>
-</table>
+            <h5> You: </h5>
 
-{{ formfields }}
+            <table style="margin-left: 30px; margin-bottom: 10px;">
+                <tr>
+                    <th style="padding-right: 3px">Gender:</th><td> {{ gender_self }}</td>
+                </tr>
+                <tr>
+                    <th style="padding-right: 3px">Nationality: </th><td>{{ nationality_self}}</td>
+                </tr>
+                <tr>
+                    <th style="padding-right: 3px">Major:</th><td> {{ major_self }}</td>
+                </tr>
+            </table>
+            <h6> Guess your own scores:
+            </h6>
 
-<div style="float: right">{{next_button}}</div>
+                {{ formfield 'math_belief_self' }}
+                {{ formfield 'us_belief_self' }}
+                {{ formfield 'verbal_belief_self' }}
+                {{ formfield 'science_belief_self' }}
+                {{ formfield 'pop_belief_self' }}
+                {{ formfield 'sports_belief_self' }}
+
+        </div>
+
+        <div style="width: 50%; float: right; padding-left: 25px;">
+
+            <h5> Other Participant: </h5>
+
+            <table style="margin-left: 30px; margin-bottom: 10px;">
+                <tr>
+                    <th>Gender:</th><td> {{ gender }}</td>
+                </tr>
+                <tr>
+                    <th>Nationality: </th><td>{{ nationality}}</td>
+                </tr>
+                <tr>
+                    <th>Major:</th><td> {{ major }}</td>
+                </tr>
+            </table>
+            <h6> Guess the scores of the other participant: </h6>
+
+                {{ formfield 'math_pt_belief' }}
+                {{ formfield 'us_pt_belief' }}
+                {{ formfield 'verbal_pt_belief' }}
+                {{ formfield 'science_pt_belief' }}
+                {{ formfield 'pop_pt_belief' }}
+                {{ formfield 'sports_pt_belief' }}
+
+            <div style="float: right">{{next_button}}</div>
+
+        </div>
+
+
+
+
+
+
+
+</div>
 {{endblock}}

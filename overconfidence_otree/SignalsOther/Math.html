@@ -1,15 +1,22 @@
 {{ block title }}
-    Based on your {{player.topic}} Quiz results
+    Based on the other participant's {{player.topic}} Quiz results
 {{ endblock }}
 
 {{ block content }}
 
   <div style="width: 100%;">
         <div style="width: 65%; height: 200px; float: left;">
+             <div style="width: 100%; height: 100px; float: left; position: relative;top: 10px; left: 30px;">
+                    <p> Which probability matrix would you like to see?</p>
+
+                    <button type="button" onclick="lowF()" id="btn_low" style="position: relative;top: 10px; left: 10px;" >Low Score</button>
+                    <button type="button" onclick="midF()" id="btn_mid" style="position: relative;top: 10px; left: 10px;">Mid Score</button>
+                    <button type="button" onclick="highF()" id="btn_high" style="position: relative;top: 10px; left: 10px;">High Score</button>
+             </div>
 
             <div id="options" style="width: 25%; height: 200px; float: left; display:none;">
 
-                <table class="table" style="position: relative; top: 50px; left: 20px; background-color: #EBEBEB;">
+                <table class="table" style="position: relative; top: 10px; left: 20px; background-color: #EBEBEB;">
 
                         <tr>
                             <th colspan="2" style="white-space: nowrap;">
@@ -33,9 +40,10 @@
                 </table>
 
             </div>
+
             <div id="choices" style="width: 10%; height: 200px; float: left; display:none;">
 
-                <table class="table" style="position: relative; top: 50px; left: 20px; background-color: #EBEBEB;">
+                <table class="table" style="position: relative; top: 10px; left: 20px; background-color: #EBEBEB;">
 
                         <tr>
                             <th>:</th>
@@ -55,7 +63,9 @@
 
             <div style="width: 55%; height: 200px; float: left;">
 
-                <table class="table" id="Low" style="position: relative; top: 50px; left: 20px; background-color: #EBEBEB; display:none">
+
+
+                <table class="table" id="Low" style="position: relative; top: 10px; left: 20px; background-color: #EBEBEB; display:none">
 
                         <tr style="text-align: center">
                             <th>Rate A</th><th>Rate B</th><th>Rate C</th>
@@ -72,7 +82,7 @@
 
                 </table>
 
-                <table class="table" id="Mid" style="position: relative; top: 50px; left: 20px; background-color: #EBEBEB; display:none">
+                <table class="table" id="Mid" style="position: relative; top: 10px; left: 20px; background-color: #EBEBEB; display:none">
 
                         <tr style="text-align: center">
                             <th>Rate A</th><th>Rate B</th><th>Rate C</th>
@@ -89,7 +99,7 @@
 
                 </table>
 
-                <table class="table" id="High" style="position: relative; top: 50px; left: 20px; background-color: #EBEBEB; display:none">
+                <table class="table" id="High" style="position: relative; top: 10px; left: 20px; background-color: #EBEBEB; display:none">
 
                         <tr style="text-align: center">
                             <th>Rate A</th><th>Rate B</th><th>Rate C</th>
@@ -106,13 +116,7 @@
 
                 </table>
 
-                <div style="width: 100%; height: 200px; float: left; position: relative;top: 50px; left: 30px;">
-                    <p> Which probability matrix would you like to see?</p>
 
-                    <button type="button" id="btn_low" style="position: relative;top: 10px; left: 10px;" onclick="Low()">Low Score</button>
-                    <button type="button" onclick="Mid()" id="btn_mid" style="position: relative;top: 10px; left: 10px;">Score: 10 to 14</button>
-                    <button type="button" onclick="High()" id="btn_high" style="position: relative;top: 10px; left: 10px;">Score: 15 or more</button>
-                </div>
             </div>
 
         </div>
@@ -160,7 +164,7 @@
             </table>
 
             <button type="button" onclick="to_summary()" id="toS" style="margin-top: 50px;"> See Summary </button>
-            {{next_button}}
+            <div style="margin-top: 10px;"> {{next_button}} </div>
         </div>
 
         <div id="Summary" style="margin-left: 65%; height: 200px; display:block">
@@ -191,7 +195,8 @@
             </table>
 
             <button type="button" onclick="to_history()" id="toH" style="margin-top: 50px;"> See History </button>
-            {{next_button}}
+
+            <div style="margin-top: 10px;"> {{next_button}} </div>
         </div>
 
 
@@ -230,9 +235,9 @@
         }
 
 
-    function Low()
+    function lowF()
         {
-            liveSend('clicked-low');
+            liveSend(0)
             low.style.display = "block";
             mid.style.display = "none";
             high.style.display = "none";
@@ -240,9 +245,9 @@
             options.style.display = "block";
         }
 
-    function Mid()
+    function midF()
         {
-            liveSend('clicked-mid');
+            liveSend(1)
             low.style.display = "none";
             mid.style.display = "block";
             high.style.display = "none";
@@ -250,15 +255,16 @@
             options.style.display = "block";
         }
 
-    function High()
+    function highF()
         {
-            liveSend('clicked-high');
+            liveSend(2)
             low.style.display = "none";
             mid.style.display = "none";
             high.style.display = "block";
             choices.style.display = "block";
             options.style.display = "block";
         }
+
 </script>
 
 

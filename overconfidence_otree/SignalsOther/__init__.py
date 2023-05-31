@@ -38,48 +38,38 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     topic = models.StringField()
 
-    math_belief = models.StringField(choices=['Low Score: between 0 and 9',
-                                              'Mid Score: between 10 and 14',
-                                              'High Score: 15 or more'],
-                                     widget=widgets.RadioSelect,
-                                     label='How many questions do you think this person answered correctly in the Math Quiz')
-    verbal_belief = models.StringField(choices=['Low Score: between 0 and 9',
-                                                'Mid Score: between 10 and 14',
-                                                'High Score: 15 or more'],
-                                       widget=widgets.RadioSelect,
-                                       label='How many questions do you think this person answered correctly in the Verbal Quiz')
-    pop_belief = models.StringField(choices=['Low Score: between 0 and 9',
-                                             'Mid Score: between 10 and 14',
-                                             'High Score: 15 or more'],
-                                    widget=widgets.RadioSelect,
-                                    label='How many questions do you think this person answered correctly in the Pop Culture and Art Quiz')
-    science_belief = models.StringField(choices=['Low Score: between 0 and 9',
-                                                 'Mid Score: between 10 and 14',
-                                                 'High Score: 15 or more'],
-                                        widget=widgets.RadioSelect,
-                                        label='How many questions do you think this person answered correctly in the Science and Technology Quiz')
-    us_belief = models.StringField(choices=['Low Score: between 0 and 9',
-                                            'Mid Score: between 10 and 14',
-                                            'High Score: 15 or more'],
-                                   widget=widgets.RadioSelect,
-                                   label='How many questions do you think this person answered correctly in the US Geography Quiz')
-    sports_belief = models.StringField(choices=['Low Score: between 0 and 9',
-                                                'Mid Score: between 10 and 14',
-                                                'High Score: 15 or more'],
-                                       widget=widgets.RadioSelect,
-                                       label='How many questions do you think this person answered correctly in the Sports and Video Games Quiz')
+    math_belief = models.IntegerField()
+    verbal_belief = models.IntegerField()
+    pop_belief = models.IntegerField()
+    science_belief = models.IntegerField()
+    us_belief = models.IntegerField()
+    sports_belief = models.IntegerField()
+
+    math_pt_belief = models.IntegerField(min=0, label='Math')
+    verbal_pt_belief = models.IntegerField(min=0, label='Verbal Reasoning')
+    pop_pt_belief = models.IntegerField(min=0, label='Pop-Culture and Art')
+    science_pt_belief = models.IntegerField(min=0, label='Science and Technology')
+    us_pt_belief = models.IntegerField(min=0, label='US Geography')
+    sports_pt_belief = models.IntegerField(min=0, label='Sports and Video-games')
+
+    math_belief_self = models.IntegerField(min=0, label='Math')
+    verbal_belief_self = models.IntegerField(min=0, label='Verbal Reasoning')
+    pop_belief_self = models.IntegerField(min=0, label='Pop-Culture and Art')
+    science_belief_self = models.IntegerField(min=0, label='Science and Technology')
+    us_belief_self = models.IntegerField(min=0, label='US Geography')
+    sports_belief_self = models.IntegerField(min=0, label='Sports and Video-games')
 
     effort = models.IntegerField(label='Choose a gamble',
                                  choices=[[0, 'A'], [1, 'B'], [2, 'C']],
-                                 widget=widgets.RadioSelect,)
+                                 widget=widgets.RadioSelect, )
 
     signal = models.IntegerField()
-    
+
     low_button = models.IntegerField(initial=0)
     mid_button = models.IntegerField(initial=0)
     high_button = models.IntegerField(initial=0)
-    
-    last_button = models.StringField(initial='none')
+
+    last_button = models.IntegerField()
     
 
 # FUNCTIONS
@@ -92,12 +82,18 @@ class Performance(Page):
         return player.round_number == 1
 
     form_model = 'player'
-    form_fields = ['math_belief',
-                   'us_belief',
-                   'verbal_belief',
-                   'science_belief',
-                   'pop_belief',
-                   'sports_belief'
+    form_fields = ['math_pt_belief',
+                   'us_pt_belief',
+                   'verbal_pt_belief',
+                   'science_pt_belief',
+                   'pop_pt_belief',
+                   'sports_pt_belief',
+                   'math_belief_self',
+                   'us_belief_self',
+                   'verbal_belief_self',
+                   'science_belief_self',
+                   'pop_belief_self',
+                   'sports_belief_self'
                    ]
 
     @staticmethod
@@ -108,7 +104,13 @@ class Performance(Page):
         major = other.major
         nationality = other.nationality
 
-        return dict(gender=gender, major=major, nationality=nationality)
+        me = player.participant
+        gender_self = me.gender
+        major_self = me.major
+        nationality_self = me.nationality
+
+        return dict(gender=gender, major=major, nationality=nationality,
+                    gender_self=gender_self, major_self=major_self, nationality_self=nationality_self)
 
     @staticmethod
     def before_next_page(player, timeout_happened):
@@ -327,6 +329,48 @@ class Performance(Page):
 
             session.outcomes_us = np.stack((outcomes_L, outcomes_M, outcomes_H))
 
+            if player.math_pt_belief <= C.T1:
+                player.math_belief = 0
+            elif C.T1 < player.math_pt_belief <= C.T2:
+                player.math_belief = 1
+            elif player.math_pt_belief > C.T2:
+                player.math_belief = 2
+
+            if player.verbal_pt_belief <= C.T1:
+                player.verbal_belief = 0
+            elif C.T1 < player.verbal_pt_belief <= C.T2:
+                player.verbal_belief = 1
+            elif player.verbal_pt_belief > C.T2:
+                player.verbal_belief = 2
+
+            if player.pop_pt_belief <= C.T1:
+                player.pop_belief = 0
+            elif C.T1 < player.pop_pt_belief <= C.T2:
+                player.pop_belief = 1
+            elif player.pop_pt_belief > C.T2:
+                player.pop_belief = 2
+
+            if player.us_pt_belief <= C.T1:
+                player.us_belief = 0
+            elif C.T1 < player.us_pt_belief <= C.T2:
+                player.us_belief = 1
+            elif player.us_pt_belief > C.T2:
+                player.us_belief = 2
+
+            if player.science_pt_belief <= C.T1:
+                player.science_belief = 0
+            elif C.T1 < player.science_pt_belief <= C.T2:
+                player.science_belief = 1
+            elif player.science_pt_belief > C.T2:
+                player.science_belief = 2
+
+            if player.sports_pt_belief <= C.T1:
+                player.sports_belief = 0
+            elif C.T1 < player.sports_pt_belief <= C.T2:
+                player.sports_belief = 1
+            elif player.sports_pt_belief > C.T2:
+                player.sports_belief = 2
+
 
 class MyWaitPage(WaitPage):
     title_text = "End of Part 1"
@@ -353,13 +397,8 @@ class VerbalStart(Page):
     def vars_for_template(player):
         player.topic = 'Verbal'
         belief = player.in_round(1).verbal_belief
-        if belief == 0:
-            belief_text = 'between 0 and 9'
-        elif belief == 1:
-            belief_text = 'between 10 and 14'
-        else:
-            belief_text = '15 or more'
-        return dict(topic=player.topic, belief=belief_text)
+        point_belief = player.in_round(1).verbal_pt_belief
+        return dict(topic=player.topic, belief=belief, point=point_belief)
 
 
 class Verbal(Page):
@@ -409,17 +448,15 @@ class Verbal(Page):
 
     @staticmethod
     def live_method(player: Player, data):
-        if data == 'clicked-low':
+        if data == 0:
             player.low_button += 1
-            player.last_button = 'low'
-        elif data == 'clicked_mid':
+            player.last_button = 0
+        elif data == 1:
             player.mid_button += 1
-            player.last_button = 'mid'
-        elif data == 'clicked_high':
+            player.last_button = 1
+        elif data == 2:
             player.high_button += 1
-            player.last_button = 'high'
-        else:
-            player.last_button = 'none'
+            player.last_button = 2
 
 
 class VerbalFeedback(Page):
@@ -430,7 +467,7 @@ class VerbalFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        other = player.get_others_in_group()
+        other = player.get_others_in_group()[0]
         other = other.participant
         score = other.verbal_score
         session = player.session
@@ -442,7 +479,7 @@ class VerbalFeedback(Page):
         else:
             type = 2
 
-        round = player.round_number - 1 - C.N*participant.task_rounds['Verbal']
+        round = player.round_number - 1 - C.N*player.participant.task_rounds['Verbal']
         player.signal = int(session.outcomes_verbal[type][e, round])
 
         return dict(signal=player.signal, topic=player.topic)
@@ -458,13 +495,8 @@ class MathStart(Page):
     def vars_for_template(player):
         player.topic = 'Math'
         belief = player.in_round(1).math_belief
-        if belief == 0:
-            belief_text = 'between 0 and 9'
-        elif belief == 1:
-            belief_text = 'between 10 and 14'
-        else:
-            belief_text = '15 or more'
-        return dict(topic=player.topic, belief=belief_text)
+        point_belief = player.in_round(1).math_pt_belief
+        return dict(topic=player.topic, belief=belief, point=point_belief)
 
 
 class Math(Page):
@@ -516,17 +548,15 @@ class Math(Page):
 
     @staticmethod
     def live_method(player: Player, data):
-        if data == 'clicked-low':
+        if data == 0:
             player.low_button += 1
-            player.last_button = 'low'
-        elif data == 'clicked-mid':
+            player.last_button = 0
+        elif data == 1:
             player.mid_button += 1
-            player.last_button = 'mid'
-        elif data == 'clicked-high':
+            player.last_button = 1
+        elif data == 2:
             player.high_button += 1
-            player.last_button = 'high'
-        else:
-            player.last_button = 'none'
+            player.last_button = 2
 
 
 class MathFeedback(Page):
@@ -538,7 +568,7 @@ class MathFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        other = player.get_others_in_group()
+        other = player.get_others_in_group()[0]
         other = other.participant
         score = other.verbal_score
         e = player.effort
@@ -567,13 +597,8 @@ class PopStart(Page):
     def vars_for_template(player):
         player.topic = 'Pop-Culture and Art'
         belief = player.in_round(1).pop_belief
-        if belief == 0:
-            belief_text = 'between 0 and 9'
-        elif belief == 1:
-            belief_text = 'between 10 and 14'
-        else:
-            belief_text = '15 or more'
-        return dict(topic=player.topic, belief=belief_text)
+        point_belief = player.in_round(1).pop_pt_belief
+        return dict(topic=player.topic, belief=belief, point=point_belief)
 
 
 class Pop(Page):
@@ -623,17 +648,15 @@ class Pop(Page):
 
     @staticmethod
     def live_method(player: Player, data):
-        if data == 'clicked-low':
+        if data == 0:
             player.low_button += 1
-            player.last_button = 'low'
-        elif data == 'clicked_mid':
+            player.last_button = 0
+        elif data == 1:
             player.mid_button += 1
-            player.last_button = 'mid'
-        elif data == 'clicked_high':
+            player.last_button = 1
+        elif data == 2:
             player.high_button += 1
-            player.last_button = 'high'
-        else:
-            player.last_button = 'none'
+            player.last_button = 2
 
 
 class PopFeedback(Page):
@@ -645,7 +668,7 @@ class PopFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        other = player.get_others_in_group()
+        other = player.get_others_in_group()[0]
         other = other.participant
         score = other.verbal_score
         session = player.session
@@ -672,7 +695,8 @@ class ScienceStart(Page):
     def vars_for_template(player):
         player.topic = 'Science and Technology'
         belief = player.in_round(1).science_belief
-        return dict(topic=player.topic, belief=belief)
+        point_belief = player.in_round(1).science_pt_belief
+        return dict(topic=player.topic, belief=belief, point=point_belief)
 
 
 class Science(Page):
@@ -723,17 +747,15 @@ class Science(Page):
 
     @staticmethod
     def live_method(player: Player, data):
-        if data == 'clicked-low':
+        if data == 0:
             player.low_button += 1
-            player.last_button = 'low'
-        elif data == 'clicked_mid':
+            player.last_button = 0
+        elif data == 1:
             player.mid_button += 1
-            player.last_button = 'mid'
-        elif data == 'clicked_high':
+            player.last_button = 1
+        elif data == 2:
             player.high_button += 1
-            player.last_button = 'high'
-        else:
-            player.last_button = 'none'
+            player.last_button = 2
 
 
 class ScienceFeedback(Page):
@@ -745,7 +767,7 @@ class ScienceFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        other = player.get_others_in_group()
+        other = player.get_others_in_group()[0]
         other = other.participant
         score = other.verbal_score
         session = player.session
@@ -772,13 +794,8 @@ class SportsStart(Page):
     def vars_for_template(player):
         player.topic = 'Sports and Video Games'
         belief = player.in_round(1).sports_belief
-        if belief == 0:
-            belief_text = 'between 0 and 9'
-        elif belief == 1:
-            belief_text = 'between 10 and 14'
-        else:
-            belief_text = '15 or more'
-        return dict(topic=player.topic, belief=belief_text)
+        point_belief = player.in_round(1).sports_pt_belief
+        return dict(topic=player.topic, belief=belief, point=point_belief)
 
 
 class Sports(Page):
@@ -829,17 +846,15 @@ class Sports(Page):
 
     @staticmethod
     def live_method(player: Player, data):
-        if data == 'clicked-low':
+        if data == 0:
             player.low_button += 1
-            player.last_button = 'low'
-        elif data == 'clicked_mid':
+            player.last_button = 0
+        elif data == 1:
             player.mid_button += 1
-            player.last_button = 'mid'
-        elif data == 'clicked_high':
+            player.last_button = 1
+        elif data == 2:
             player.high_button += 1
-            player.last_button = 'high'
-        else:
-            player.last_button = 'none'
+            player.last_button = 2
 
 
 class SportsFeedback(Page):
@@ -852,7 +867,7 @@ class SportsFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        other = player.get_others_in_group()
+        other = player.get_others_in_group()[0]
         other = other.participant
         score = other.verbal_score
         session = player.session
@@ -880,13 +895,8 @@ class UsStart(Page):
     def vars_for_template(player):
         player.topic = 'US Geography'
         belief = player.in_round(1).us_belief
-        if belief == 0:
-            belief_text = 'between 0 and 9'
-        elif belief == 1:
-            belief_text = 'between 10 and 14'
-        else:
-            belief_text = '15 or more'
-        return dict(topic=player.topic, belief=belief_text)
+        point_belief = player.in_round(1).us_pt_belief
+        return dict(topic=player.topic, belief=belief, point=point_belief)
 
 
 class Us(Page):
@@ -938,17 +948,15 @@ class Us(Page):
 
     @staticmethod
     def live_method(player: Player, data):
-        if data == 'clicked-low':
+        if data == 0:
             player.low_button += 1
-            player.last_button = 'low'
-        elif data == 'clicked_mid':
+            player.last_button = 0
+        elif data == 1:
             player.mid_button += 1
-            player.last_button = 'mid'
-        elif data == 'clicked_high':
+            player.last_button = 1
+        elif data == 2:
             player.high_button += 1
-            player.last_button = 'high'
-        else:
-            player.last_button = 'none'
+            player.last_button = 2
 
 
 class UsFeedback(Page):
@@ -961,7 +969,7 @@ class UsFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        other = player.get_others_in_group()
+        other = player.get_others_in_group()[0]
         other = other.participant
         score = other.verbal_score
         session = player.session

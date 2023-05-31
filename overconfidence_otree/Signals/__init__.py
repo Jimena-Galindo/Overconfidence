@@ -23,7 +23,7 @@ class C(BaseConstants):
     mh = np.array([[.45, .55, .75], [.35, .69, .80], [.25, .65, .98]])
     M = [ml, mm, mh]
     SEED = 3821
-    T1 = 10
+    T1 = 5
     T2 = 15
 
 
@@ -38,36 +38,19 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     topic = models.StringField()
 
-    math_belief = models.StringField(choices=[[0, 'Low Score: between 0 and 9'],
-                                                [1, 'Mid Score: between 10 and 14'],
-                                                [2, 'High Score: 15 or more']],
-                                     widget=widgets.RadioSelect,
-                                     label='How many questions do you think you answered correctly in the Math Quiz')
-    verbal_belief = models.StringField(choices=[[0, 'Low Score: between 0 and 9'],
-                                                [1, 'Mid Score: between 10 and 14'],
-                                                [2, 'High Score: 15 or more']],
-                                       widget=widgets.RadioSelect,
-                                       label='How many questions do you think you answered correctly in the Verbal Quiz')
-    pop_belief = models.StringField(choices=[[0, 'Low Score: between 0 and 9'],
-                                                [1, 'Mid Score: between 10 and 14'],
-                                                [2, 'High Score: 15 or more']],
-                                    widget=widgets.RadioSelect,
-                                    label='How many questions do you think you answered correctly in the Pop Culture and Art Quiz')
-    science_belief = models.StringField(choices=[[0, 'Low Score: between 0 and 9'],
-                                                [1, 'Mid Score: between 10 and 14'],
-                                                [2, 'High Score: 15 or more']],
-                                        widget=widgets.RadioSelect,
-                                        label='How many questions do you think you answered correctly in the Science and Technology Quiz')
-    us_belief = models.StringField(choices=[[0, 'Low Score: between 0 and 9'],
-                                                [1, 'Mid Score: between 10 and 14'],
-                                                [2, 'High Score: 15 or more']],
-                                   widget=widgets.RadioSelect,
-                                   label='How many questions do you think you answered correctly in the US Geography Quiz')
-    sports_belief = models.StringField(choices=[[0, 'Low Score: between 0 and 9'],
-                                                [1, 'Mid Score: between 10 and 14'],
-                                                [2, 'High Score: 15 or more']],
-                                       widget=widgets.RadioSelect,
-                                       label='How many questions do you think you answered correctly in the Sports and Video Games Quiz')
+    math_belief = models.IntegerField()
+    verbal_belief = models.IntegerField()
+    pop_belief = models.IntegerField()
+    science_belief = models.IntegerField()
+    us_belief = models.IntegerField()
+    sports_belief = models.IntegerField()
+
+    math_pt_belief = models.IntegerField(min=0, label='Math')
+    verbal_pt_belief = models.IntegerField(min=0, label='Verbal Reasoning')
+    pop_pt_belief = models.IntegerField(min=0, label='Pop-Culture and Art')
+    science_pt_belief = models.IntegerField(min=0, label='Science and Technology')
+    us_pt_belief = models.IntegerField(min=0, label='US Geography')
+    sports_pt_belief = models.IntegerField(min=0, label='Sports and Video-games')
 
     effort = models.IntegerField(label='Choose a gamble',
                                  choices=[[0, 'A'], [1, 'B'], [2, 'C']],
@@ -91,12 +74,12 @@ class Performance(Page):
         return player.round_number == 1
 
     form_model = 'player'
-    form_fields = ['math_belief',
-                   'us_belief',
-                   'verbal_belief',
-                   'science_belief',
-                   'pop_belief',
-                   'sports_belief'
+    form_fields = ['math_pt_belief',
+                   'us_pt_belief',
+                   'verbal_pt_belief',
+                   'science_pt_belief',
+                   'pop_pt_belief',
+                   'sports_pt_belief'
                    ]
 
     @staticmethod
@@ -316,6 +299,48 @@ class Performance(Page):
 
             session.outcomes_us = np.stack((outcomes_L, outcomes_M, outcomes_H))
 
+            if player.math_pt_belief <= C.T1:
+                player.math_belief = 0
+            elif C.T1 < player.math_pt_belief <= C.T2:
+                player.math_belief = 1
+            elif player.math_pt_belief > C.T2:
+                player.math_belief = 2
+
+            if player.verbal_pt_belief <= C.T1:
+                player.verbal_belief = 0
+            elif C.T1 < player.verbal_pt_belief <= C.T2:
+                player.verbal_belief = 1
+            elif player.verbal_pt_belief > C.T2:
+                player.verbal_belief = 2
+
+            if player.pop_pt_belief <= C.T1:
+                player.pop_belief = 0
+            elif C.T1 < player.pop_pt_belief <= C.T2:
+                player.pop_belief = 1
+            elif player.pop_pt_belief > C.T2:
+                player.pop_belief = 2
+
+            if player.us_pt_belief <= C.T1:
+                player.us_belief = 0
+            elif C.T1 < player.us_pt_belief <= C.T2:
+                player.us_belief = 1
+            elif player.us_pt_belief > C.T2:
+                player.us_belief = 2
+
+            if player.science_pt_belief <= C.T1:
+                player.science_belief = 0
+            elif C.T1 < player.science_pt_belief <= C.T2:
+                player.science_belief = 1
+            elif player.science_pt_belief > C.T2:
+                player.science_belief = 2
+
+            if player.sports_pt_belief <= C.T1:
+                player.sports_belief = 0
+            elif C.T1 < player.sports_pt_belief <= C.T2:
+                player.sports_belief = 1
+            elif player.sports_pt_belief > C.T2:
+                player.sports_belief = 2
+
 
 class MyWaitPage(WaitPage):
     title_text = "End of Part 1"
@@ -342,13 +367,8 @@ class VerbalStart(Page):
     def vars_for_template(player):
         player.topic = 'Verbal'
         belief = player.in_round(1).verbal_belief
-        if belief == 0:
-            belief_text = 'between 0 and 9'
-        elif belief == 1:
-            belief_text = 'between 10 and 14'
-        else:
-            belief_text = '15 or more'
-        return dict(topic=player.topic, belief=belief_text)
+        point_belief = player.in_round(1).verbal_pt_belief
+        return dict(topic=player.topic, belief=belief, point=point_belief)
 
 
 class Verbal(Page):
@@ -444,13 +464,8 @@ class MathStart(Page):
     def vars_for_template(player):
         player.topic = 'Math'
         belief = player.in_round(1).math_belief
-        if belief == 0:
-            belief_text = 'between 0 and 9'
-        elif belief == 1:
-            belief_text = 'between 10 and 14'
-        else:
-            belief_text = '15 or more'
-        return dict(topic=player.topic, belief=belief_text)
+        point_belief = player.in_round(1).math_pt_belief
+        return dict(topic=player.topic, belief=belief, point=point_belief)
 
 
 class Math(Page):
@@ -550,13 +565,8 @@ class PopStart(Page):
     def vars_for_template(player):
         player.topic = 'Pop-Culture and Art'
         belief = player.in_round(1).pop_belief
-        if belief == 0:
-            belief_text = 'between 0 and 9'
-        elif belief == 1:
-            belief_text = 'between 10 and 14'
-        else:
-            belief_text = '15 or more'
-        return dict(topic=player.topic, belief=belief_text)
+        point_belief = player.in_round(1).pop_pt_belief
+        return dict(topic=player.topic, belief=belief, point=point_belief)
 
 
 class Pop(Page):
@@ -652,7 +662,8 @@ class ScienceStart(Page):
     def vars_for_template(player):
         player.topic = 'Science and Technology'
         belief = player.in_round(1).science_belief
-        return dict(topic=player.topic, belief=belief)
+        point_belief = player.in_round(1).science_pt_belief
+        return dict(topic=player.topic, belief=belief, point=point_belief)
 
 
 class Science(Page):
@@ -749,13 +760,8 @@ class SportsStart(Page):
     def vars_for_template(player):
         player.topic = 'Sports and Video Games'
         belief = player.in_round(1).sports_belief
-        if belief == 0:
-            belief_text = 'between 0 and 9'
-        elif belief == 1:
-            belief_text = 'between 10 and 14'
-        else:
-            belief_text = '15 or more'
-        return dict(topic=player.topic, belief=belief_text)
+        point_belief = player.in_round(1).sports_pt_belief
+        return dict(topic=player.topic, belief=belief, point=point_belief)
 
 
 class Sports(Page):
@@ -853,13 +859,8 @@ class UsStart(Page):
     def vars_for_template(player):
         player.topic = 'US Geography'
         belief = player.in_round(1).us_belief
-        if belief == 0:
-            belief_text = 'between 0 and 9'
-        elif belief == 1:
-            belief_text = 'between 10 and 14'
-        else:
-            belief_text = '15 or more'
-        return dict(topic=player.topic, belief=belief_text)
+        point_belief = player.in_round(1).us_pt_belief
+        return dict(topic=player.topic, belief=belief, point=point_belief)
 
 
 class Us(Page):

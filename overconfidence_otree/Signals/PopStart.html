@@ -3,11 +3,25 @@
 {{ endblock }}
 
 {{ block content }}
-<p> 
+<p>
     The next 25 rounds will be based on your {{topic}} quiz results.
 </p>
 <p>
-    You guessed that your score was {{belief}}.
+    You guessed that your score was {{point}}.
+</p>
+<p> If your guess was accurate, it
+    would mean that you got a
+    <b>
+    {{ if belief == 0 }} Low-Score
+    {{ else }}
+     {{ if belief == 1}}
+        Mid-Score
+    {{ else }}
+        High-Score
+    {{ endif }}
+    {{ endif }}
+    .
+        </b>
 </p>
 
 <div style="float: right">{{next_button}}</div>

@@ -11,7 +11,7 @@ Belief Updating
 
 class C(BaseConstants):
     NAME_IN_URL = 'GamblesOther'
-    PLAYERS_PER_GROUP = 2
+    PLAYERS_PER_GROUP = 1
     TASKS = ['Math', 'Verbal', 'Science and Technology', 'Sports and Video Games', 'US Geography', 'Pop-Culture and Art']
     # number of effort/signal realizations per quizz
     N = 5
@@ -70,11 +70,15 @@ class Player(BasePlayer):
     high_button = models.IntegerField(initial=0)
 
     last_button = models.IntegerField()
+
+    score_other = models.IntegerField()
+    gender_other = models.StringField()
+    nationality_other = models.StringField()
+    major_other = models.StringField()
     
 
 # FUNCTIONS
-def creating_session(subsession):
-    subsession.group_randomly()
+
 
 # PAGES
 class Performance(Page):
@@ -98,18 +102,19 @@ class Performance(Page):
 
     @staticmethod
     def vars_for_template(player):
-        other = player.get_others_in_group()
-        other = other[0].participant
-        gender = other.gender
-        major = other.major
-        nationality = other.nationality
+        others = pd.read_csv(Path.cwd().joinpath('others.csv'))
+        index = random.randint(0, len(others))
+        other = others.iloc[index]
+        player.gender_other = other['participant.gender']
+        player.nationality_other = other['participant.nationality']
+        player.major_other = other['participant.major']
 
         me = player.participant
         gender_self = me.gender
         major_self = me.major
         nationality_self = me.nationality
 
-        return dict(gender=gender, major=major, nationality=nationality,
+        return dict(gender=player.gender_other, major=player.major, nationality=player.nationality,
                     gender_self=gender_self, major_self=major_self, nationality_self=nationality_self)
 
     @staticmethod

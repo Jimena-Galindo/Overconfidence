@@ -26,7 +26,7 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
     gender = models.StringField(label='What best describes your gender identity: Male, Female, Other?',
-                                choices=['Male', 'Female', 'Other'])
+                                choices=['Male', 'Female', 'Non-binary'])
     nationality = models.StringField(label='What is your nationality?')
     major = models.StringField(label='What best describes your major?',
                                choices=['Anthropology',

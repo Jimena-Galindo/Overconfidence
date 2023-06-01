@@ -12,7 +12,8 @@ Belief Updating
 class C(BaseConstants):
     NAME_IN_URL = 'GamblesOther'
     PLAYERS_PER_GROUP = 1
-    TASKS = ['Math', 'Verbal', 'Science and Technology', 'Sports and Video Games', 'US Geography', 'Pop-Culture and Art']
+    TASKS = ['Math', 'Verbal',
+             'Science and Technology', 'Sports and Video Games', 'US Geography', 'Pop-Culture and Art']
     # number of effort/signal realizations per quizz
     N = 5
     # total number of rounds
@@ -71,13 +72,20 @@ class Player(BasePlayer):
 
     last_button = models.IntegerField()
 
-    score_other = models.IntegerField()
+    math_other = models.IntegerField()
+    verbal_other = models.IntegerField()
+    science_other = models.IntegerField()
+    pop_other = models.IntegerField()
+    us_other = models.IntegerField()
+    sports_other = models.IntegerField()
+
     gender_other = models.StringField()
     nationality_other = models.StringField()
     major_other = models.StringField()
     
 
 # FUNCTIONS
+others = pd.read_csv(Path.cwd().joinpath('others.csv'))
 
 
 # PAGES
@@ -102,12 +110,17 @@ class Performance(Page):
 
     @staticmethod
     def vars_for_template(player):
-        others = pd.read_csv(Path.cwd().joinpath('others.csv'))
         index = random.randint(0, len(others))
         other = others.iloc[index]
         player.gender_other = other['participant.gender']
         player.nationality_other = other['participant.nationality']
         player.major_other = other['participant.major']
+        player.math_other = other['participant.math_score']
+        player.verbal_other = other['participant.verbal_score']
+        player.us_other = other['participant.us_score']
+        player.pop_other = other['participant.pop_score']
+        player.science_other = other['participant.science_score']
+        player.sports_other = other['participant.sports_score']
 
         me = player.participant
         gender_self = me.gender
@@ -410,7 +423,8 @@ class Verbal(Page):
     @staticmethod
     def is_displayed(player: Player):
         participant = player.participant
-        return player.round_number > (participant.task_rounds['Verbal'] - 1) * C.N and player.round_number <= (participant.task_rounds['Verbal']) * C.N
+        return (participant.task_rounds['Verbal'] - 1) * C.N < player.round_number <= (
+            participant.task_rounds['Verbal']) * C.N
 
     form_model = 'player'
     form_fields = ['effort']
@@ -428,7 +442,8 @@ class Verbal(Page):
         fail_H = 0
 
         if player.round_number > (participant.task_rounds[player.topic]-1)*C.N+1:
-            previous_rounds = player.in_rounds(1+(player.participant.task_rounds[player.topic]-1)*C.N, player.round_number-1)
+            previous_rounds = player.in_rounds(1+(
+                    player.participant.task_rounds[player.topic]-1)*C.N, player.round_number-1)
             for p in previous_rounds:
                 if p.signal == 1 and p.effort == 0:
                     succes_L += 1
@@ -468,24 +483,23 @@ class VerbalFeedback(Page):
     @staticmethod
     def is_displayed(player: Player):
         participant = player.participant
-        return player.round_number > (participant.task_rounds['Verbal'] - 1) * C.N and player.round_number <= (participant.task_rounds['Verbal']) * C.N
+        return (participant.task_rounds['Verbal'] - 1) * C.N < player.round_number <= (
+            participant.task_rounds['Verbal']) * C.N
 
     @staticmethod
     def vars_for_template(player):
-        other = player.get_others_in_group()[0]
-        other = other.participant
-        score = other.verbal_score
+        score = player.verbal_other
         session = player.session
         e = player.effort
         if score < C.T1:
-            type = 0
+            t = 0
         elif score >= C.T1 & score < C.T2:
-            type = 1
+            t = 1
         else:
-            type = 2
+            t = 2
 
-        round = player.round_number - 1 - C.N*player.participant.task_rounds['Verbal']
-        player.signal = int(session.outcomes_verbal[type][e, round])
+        r = player.round_number - 1 - C.N*player.participant.task_rounds['Verbal']
+        player.signal = int(session.outcomes_verbal[t][e, r])
 
         return dict(signal=player.signal, topic=player.topic)
 
@@ -508,7 +522,7 @@ class Math(Page):
     @staticmethod
     def is_displayed(player: Player):
         participant = player.participant
-        return player.round_number > (participant.task_rounds['Math'] - 1) * C.N and player.round_number <= (
+        return (participant.task_rounds['Math'] - 1) * C.N < player.round_number <= (
             participant.task_rounds['Math']) * C.N
 
     form_model = 'player'
@@ -568,27 +582,26 @@ class MathFeedback(Page):
     @staticmethod
     def is_displayed(player: Player):
         participant = player.participant
-        return player.round_number > (participant.task_rounds['Math'] - 1) * C.N and player.round_number <= (
+        return (participant.task_rounds['Math'] - 1) * C.N < player.round_number <= (
             participant.task_rounds['Math']) * C.N
 
     @staticmethod
     def vars_for_template(player):
-        other = player.get_others_in_group()[0]
-        other = other.participant
-        score = other.verbal_score
+        score = player.math_other
         e = player.effort
         session = player.session
+        participant = player.participant
 
         if score < C.T1:
-            type = 0
+            t = 0
         elif score >= C.T1 & score < C.T2:
-            type = 1
+            t = 1
         else:
-            type = 2
+            t = 2
 
-        round = player.round_number - 1 - C.N*participant.task_rounds['Math']
+        r = player.round_number - 1 - C.N*participant.task_rounds['Math']
 
-        player.signal = int(session.outcomes_math[type][e, round])
+        player.signal = int(session.outcomes_math[t][e, r])
         return dict(signal=player.signal, topic=player.topic)
 
 
@@ -610,7 +623,8 @@ class Pop(Page):
     @staticmethod
     def is_displayed(player: Player):
         participant = player.participant
-        return player.round_number > (participant.task_rounds['Pop-Culture and Art'] - 1) * C.N and player.round_number <= (participant.task_rounds['Pop-Culture and Art']) * C.N
+        return (participant.task_rounds['Pop-Culture and Art'] - 1) * C.N < player.round_number <= (
+            participant.task_rounds['Pop-Culture and Art']) * C.N
 
     form_model = 'player'
     form_fields = ['effort']
@@ -668,25 +682,24 @@ class PopFeedback(Page):
     @staticmethod
     def is_displayed(player: Player):
         participant = player.participant
-        return player.round_number > (participant.task_rounds['Pop-Culture and Art'] - 1) * C.N and player.round_number <= (
+        return (participant.task_rounds['Pop-Culture and Art'] - 1) * C.N < player.round_number <= (
             participant.task_rounds['Pop-Culture and Art']) * C.N
 
     @staticmethod
     def vars_for_template(player):
-        other = player.get_others_in_group()[0]
-        other = other.participant
-        score = other.verbal_score
+        score = player.pop_other
         session = player.session
+        participant = player.participant
         e = player.effort
         if score < C.T1:
-            type = 0
+            t = 0
         elif score >= C.T1 & score < C.T2:
-            type = 1
+            t = 1
         else:
-            type = 2
+            t = 2
 
-        round = player.round_number - 1 - C.N*participant.task_rounds['Pop-Culture and Art']
-        player.signal = int(session.outcomes_pop[type][e, round])
+        r = player.round_number - 1 - C.N*participant.task_rounds['Pop-Culture and Art']
+        player.signal = int(session.outcomes_pop[t][e, r])
         return dict(signal=player.signal, topic=player.topic)
 
 
@@ -708,7 +721,7 @@ class Science(Page):
     @staticmethod
     def is_displayed(player: Player):
         participant = player.participant
-        return player.round_number > (participant.task_rounds['Science and Technology'] - 1) * C.N and player.round_number <= (
+        return (participant.task_rounds['Science and Technology'] - 1) * C.N < player.round_number <= (
             participant.task_rounds['Science and Technology']) * C.N
 
     form_model = 'player'
@@ -767,25 +780,23 @@ class ScienceFeedback(Page):
     @staticmethod
     def is_displayed(player: Player):
         participant = player.participant
-        return player.round_number > (participant.task_rounds['Science and Technology'] - 1) * C.N and player.round_number <= (
+        return (participant.task_rounds['Science and Technology'] - 1) * C.N < player.round_number <= (
             participant.task_rounds['Science and Technology']) * C.N
 
     @staticmethod
     def vars_for_template(player):
-        other = player.get_others_in_group()[0]
-        other = other.participant
-        score = other.verbal_score
+        score = player.science_other
         session = player.session
         e = player.effort
         if score < C.T1:
-            type = 0
+            t = 0
         elif score >= C.T1 & score < C.T2:
-            type = 1
+            t = 1
         else:
-            type = 2
+            t = 2
 
-        round = player.round_number - 1 - C.N*participant.task_rounds['Science and Technology']
-        player.signal = int(session.outcomes_science[type][e, round])
+        r = player.round_number - 1 - C.N*participant.task_rounds['Science and Technology']
+        player.signal = int(session.outcomes_science[t][e, r])
         return dict(signal=player.signal, topic=player.topic)
 
 
@@ -807,7 +818,7 @@ class Sports(Page):
     @staticmethod
     def is_displayed(player: Player):
         participant = player.participant
-        return player.round_number > (participant.task_rounds['Sports and Video Games'] - 1) * C.N and player.round_number <= (
+        return (participant.task_rounds['Sports and Video Games'] - 1) * C.N < player.round_number <= (
             participant.task_rounds['Sports and Video Games']) * C.N
 
     form_model = 'player'
@@ -817,37 +828,38 @@ class Sports(Page):
     def vars_for_template(player):
         player.topic = 'Sports and Video Games'
         participant = player.participant
-        succes_L = 0
-        succes_M = 0
-        succes_H = 0
+        succes_l = 0
+        succes_m = 0
+        succes_h = 0
 
-        fail_L = 0
-        fail_M = 0
-        fail_H = 0
+        fail_l = 0
+        fail_m = 0
+        fail_h = 0
 
         if player.round_number > (participant.task_rounds[player.topic] - 1) * C.N + 1:
             previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
                                                player.round_number - 1)
             for p in previous_rounds:
                 if p.signal == 1 and p.effort == 0:
-                    succes_L += 1
+                    succes_l += 1
                 elif p.signal == 1 and p.effort == 1:
-                    succes_M += 1
+                    succes_m += 1
                 elif p.signal == 1 and p.effort == 2:
-                    succes_H += 1
+                    succes_h += 1
                 elif p.signal == 0 and p.effort == 0:
-                    fail_L += 1
+                    fail_l += 1
                 elif p.signal == 0 and p.effort == 1:
-                    fail_M += 1
+                    fail_m += 1
                 else:
-                    fail_H += 1
+                    fail_h += 1
         else:
             previous_rounds = 0
 
         session = player.session
         w = session.w_sports
 
-        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
+        return dict(rounds=previous_rounds, sH=succes_h, sM=succes_m, sL=succes_l,
+                    fH=fail_h, fM=fail_m, fL=fail_l, w=w)
 
     @staticmethod
     def live_method(player: Player, data):
@@ -866,27 +878,24 @@ class SportsFeedback(Page):
     @staticmethod
     def is_displayed(player: Player):
         participant = player.participant
-        return player.round_number > (
-                    participant.task_rounds['Sports and Video Games'] - 1) * C.N and player.round_number <= (
+        return (participant.task_rounds['Sports and Video Games'] - 1) * C.N < player.round_number <= (
                    participant.task_rounds['Sports and Video Games']) * C.N
 
     @staticmethod
     def vars_for_template(player):
-        other = player.get_others_in_group()[0]
-        other = other.participant
-        score = other.verbal_score
+        score = player.sports_other
         session = player.session
 
         e = player.effort
         if score < C.T1:
-            type = 0
+            t = 0
         elif score >= C.T1 & score < C.T2:
-            type = 1
+            t = 1
         else:
-            type = 2
+            t = 2
 
-        round = player.round_number - 1 - C.N*participant.task_rounds['Sports and Video Games']
-        player.signal = int(session.outcomes_sports[type][e, round])
+        r = player.round_number - 1 - C.N*participant.task_rounds['Sports and Video Games']
+        player.signal = int(session.outcomes_sports[t][e, r])
         return dict(signal=player.signal, topic=player.topic)
 
 
@@ -908,8 +917,7 @@ class Us(Page):
     @staticmethod
     def is_displayed(player: Player):
         participant = player.participant
-        return player.round_number > (
-                participant.task_rounds['US Geography'] - 1) * C.N and player.round_number <= (
+        return (participant.task_rounds['US Geography'] - 1) * C.N < player.round_number <= (
                    participant.task_rounds['US Geography']) * C.N
 
     form_model = 'player'
@@ -919,37 +927,37 @@ class Us(Page):
     def vars_for_template(player):
         player.topic = 'US Geography'
         participant = player.participant
-        succes_L = 0
-        succes_M = 0
-        succes_H = 0
+        succes_l = 0
+        succes_m = 0
+        succes_h = 0
 
-        fail_L = 0
-        fail_M = 0
-        fail_H = 0
+        fail_l = 0
+        fail_m = 0
+        fail_h = 0
 
         if player.round_number > (participant.task_rounds['US Geography'] - 1) * C.N + 1:
             previous_rounds = player.in_rounds((participant.task_rounds['US Geography'] - 1) * C.N + 1,
                                                player.round_number - 1)
             for p in previous_rounds:
                 if p.signal == 1 and p.effort == 0:
-                    succes_L += 1
+                    succes_l += 1
                 elif p.signal == 1 and p.effort == 1:
-                    succes_M += 1
+                    succes_m += 1
                 elif p.signal == 1 and p.effort == 2:
-                    succes_H += 1
+                    succes_h += 1
                 elif p.signal == 0 and p.effort == 0:
-                    fail_L += 1
+                    fail_l += 1
                 elif p.signal == 0 and p.effort == 1:
-                    fail_M += 1
+                    fail_m += 1
                 else:
-                    fail_H += 1
+                    fail_h += 1
         else:
             previous_rounds = 0
 
         session = player.session
         w = session.w_us
 
-        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
+        return dict(rounds=previous_rounds, sH=succes_h, sM=succes_m, sL=succes_l, fH=fail_h, fM=fail_m, fL=fail_l, w=w)
 
     @staticmethod
     def live_method(player: Player, data):
@@ -968,27 +976,24 @@ class UsFeedback(Page):
     @staticmethod
     def is_displayed(player: Player):
         participant = player.participant
-        return player.round_number > (
-                    participant.task_rounds['US Geography'] - 1) * C.N and player.round_number <= (
+        return (participant.task_rounds['US Geography'] - 1) * C.N < player.round_number <= (
                    participant.task_rounds['US Geography']) * C.N
 
     @staticmethod
     def vars_for_template(player):
-        other = player.get_others_in_group()[0]
-        other = other.participant
-        score = other.verbal_score
+        score = player.us_other
         session = player.session
-
+        participant = player.participant
         e = player.effort
         if score < C.T1:
-            type = 0
+            t = 0
         elif score >= C.T1 & score < C.T2:
-            type = 1
+            t = 1
         else:
-            type = 2
+            t = 2
 
-        round = player.round_number - 1 - C.N*participant.task_rounds['US Geography']
-        player.signal = int(session.outcomes_us[type][e, round])
+        r = player.round_number - 1 - C.N*participant.task_rounds['US Geography']
+        player.signal = int(session.outcomes_us[t][e, r])
         return dict(signal=player.signal, topic=player.topic)
 
 
@@ -1002,7 +1007,6 @@ class Results(Page):
         participant = player.participant
         random_round = random.randint(1, len(C.TASKS))
         task = C.TASKS[random_round-1]
-        round = (participant.task_rounds[task]) * C.N
 
         in_task_rounds = player.in_rounds((participant.task_rounds[task] - 1) * C.N,  (
                    participant.task_rounds[task]) * C.N)
@@ -1013,11 +1017,11 @@ class Results(Page):
 
         player.payoff = score
 
-        return dict( part1_topic=participant.part1_topic,
-                     part1_score=participant.part1_score,
-                     part2_topic=task,
-                     part2_score=score,
-                     total=(score+participant.part1_score))
+        return dict(part1_topic=participant.part1_topic,
+                    part1_score=participant.part1_score,
+                    part2_topic=task,
+                    part2_score=score,
+                    total=(score+participant.part1_score))
 
 
 class ResultsWaitPage(WaitPage):

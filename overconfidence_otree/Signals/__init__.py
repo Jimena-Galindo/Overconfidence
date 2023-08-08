@@ -83,6 +83,7 @@ class Player(BasePlayer):
                                  widget=widgets.RadioSelect,)
 
     signal = models.IntegerField()
+    fails = models.IntegerField()
     
     low_button = models.IntegerField(initial=0)
     mid_button = models.IntegerField(initial=0)
@@ -248,9 +249,9 @@ class Performance(Page):
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_H = rng.binomial(1, m[1][0, w], size=T)
-            outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
-            outcome_M_L = rng.binomial(1, m[1][2, w], size=T)
+            outcome_M_H = rng.binomial(1, m[1][0, w], size=(T, C.trials))
+            outcome_M_M = rng.binomial(1, m[1][1, w], size=(T, C.trials))
+            outcome_M_L = rng.binomial(1, m[1][2, w], size=(T, C.trials))
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
@@ -436,8 +437,8 @@ class VerbalFeedback(Page):
         round = player.round_number - 1 - C.N*participant.task_rounds['Verbal']
         signal_realiz = session.outcomes_verbal[type][e, round]
         player.signal = int(sum(signal_realiz))
-
-        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz)
+        player.fails = C.trials - player.signal
+        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz, fails=player.fails)
 
 
 class MathStart(Page):
@@ -534,7 +535,8 @@ class MathFeedback(Page):
         round = player.round_number - 1 - C.N*participant.task_rounds['Math']
         signal_realiz = session.outcomes_math[type][e, round]
         player.signal = int(sum(signal_realiz))
-        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz)
+        player.fails = C.trials - player.signal
+        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz, fails=player.fails)
 
 
 class PopStart(Page):
@@ -630,7 +632,8 @@ class PopFeedback(Page):
         round = player.round_number - 1 - C.N*participant.task_rounds['Pop-Culture and Art']
         signal_realiz = session.outcomes_pop[type][e, round]
         player.signal = int(sum(signal_realiz))
-        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz)
+        player.fails = C.trials - player.signal
+        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz, fails=player.fails)
 
 
 class ScienceStart(Page):
@@ -725,7 +728,8 @@ class ScienceFeedback(Page):
         round = player.round_number - 1 - C.N*participant.task_rounds['Science and Technology']
         signal_realiz = session.outcomes_science[type][e, round]
         player.signal = int(sum(signal_realiz))
-        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz)
+        player.fails = C.trials-player.signal
+        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz, fails=player.fails)
 
 
 class SportsStart(Page):
@@ -821,7 +825,8 @@ class SportsFeedback(Page):
         round = player.round_number - 1 - C.N*participant.task_rounds['Sports and Video Games']
         signal_realiz = session.outcomes_sports[type][e, round]
         player.signal = int(sum(signal_realiz))
-        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz)
+        player.fails = C.trials - player.signal
+        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz, fails=player.fails)
 
 
 class UsStart(Page):
@@ -918,7 +923,8 @@ class UsFeedback(Page):
         round = player.round_number - 1 - C.N*participant.task_rounds['US Geography']
         signal_realiz = session.outcomes_us[type][e, round]
         player.signal = int(sum(signal_realiz))
-        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz)
+        player.fails = C.trials - player.signal
+        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz, fails=player.fails)
 
 
 class Results(Page):

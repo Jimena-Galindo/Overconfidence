@@ -1,8 +1,7 @@
 from otree.api import *
 import numpy as np
-import pandas as pd
 import random
-from pathlib import Path
+
 
 doc = """
 Belief Updating 
@@ -14,7 +13,7 @@ class C(BaseConstants):
     PLAYERS_PER_GROUP = None
     TASKS = ['Math', 'Verbal', 'Science and Technology', 'Sports and Video Games', 'US Geography', 'Pop-Culture and Art']
     # number of effort/signal realizations per quizz
-    N = 5
+    N = 15
     # total number of rounds
     NUM_ROUNDS = len(TASKS)*N
     # the matrices for the DGP
@@ -23,8 +22,10 @@ class C(BaseConstants):
     mh = np.array([[.45, .55, .75], [.35, .69, .80], [.25, .65, .98]])
     M = [ml, mm, mh]
     SEED = 3821
-    T1 = 5
-    T2 = 15
+    # first value of bucket 2
+    T1 = 6
+    # first value of bucket 3
+    T2 = 16
 
 
 class Subsession(BaseSubsession):
@@ -38,19 +39,37 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     topic = models.StringField()
 
-    math_belief = models.IntegerField()
-    verbal_belief = models.IntegerField()
-    pop_belief = models.IntegerField()
-    science_belief = models.IntegerField()
-    us_belief = models.IntegerField()
-    sports_belief = models.IntegerField()
+    math_belief = models.IntegerField(label='Guess your score', choices=[[0, 'Between 0 and ' + str(C.T1-1)],
+                                                             [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2-1)],
+                                                             [2, str(C.T2)+ ' or more']],
+                                      widget=widgets.RadioSelectHorizontal)
+    verbal_belief = models.IntegerField(label='Guess your score', choices=[[0, 'Between 0 and ' + str(C.T1-1)],
+                                                             [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2-1)],
+                                                             [2, str(C.T2)+ ' or more']],
+                                        widget=widgets.RadioSelectHorizontal)
+    pop_belief = models.IntegerField(label='Guess your score', choices=[[0, 'Between 0 and ' + str(C.T1-1)],
+                                                             [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2-1)],
+                                                             [2, str(C.T2)+ ' or more']],
+                                     widget=widgets.RadioSelectHorizontal)
+    science_belief = models.IntegerField(label='Guess your score', choices=[[0, 'Between 0 and ' + str(C.T1-1)],
+                                                             [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2-1)],
+                                                             [2, str(C.T2)+ ' or more']],
+                                         widget=widgets.RadioSelectHorizontal)
+    us_belief = models.IntegerField(label='Guess your score', choices=[[0, 'Between 0 and ' + str(C.T1-1)],
+                                                             [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2-1)],
+                                                             [2, str(C.T2)+ ' or more']],
+                                    widget=widgets.RadioSelectHorizontal)
+    sports_belief = models.IntegerField(label='Guess your score', choices=[[0, 'Between 0 and ' + str(C.T1-1)],
+                                                             [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2-1)],
+                                                             [2, str(C.T2)+ ' or more']],
+                                        widget=widgets.RadioSelectHorizontal)
 
-    math_pt_belief = models.IntegerField(min=0, label='Math')
-    verbal_pt_belief = models.IntegerField(min=0, label='Verbal Reasoning')
-    pop_pt_belief = models.IntegerField(min=0, label='Pop-Culture and Art')
-    science_pt_belief = models.IntegerField(min=0, label='Science and Technology')
-    us_pt_belief = models.IntegerField(min=0, label='US Geography')
-    sports_pt_belief = models.IntegerField(min=0, label='Sports and Video-games')
+    math_certainty = models.IntegerField(min=0, max=100, label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+    verbal_certainty = models.IntegerField(min=0, max=100, label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+    pop_certainty = models.IntegerField(min=0, max=100, label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+    science_certainty = models.IntegerField(min=0, max=100, label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+    us_certainty = models.IntegerField(min=0, max=100, label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+    sports_certainty = models.IntegerField(min=0, max=100, label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
 
     effort = models.IntegerField(label='Choose a gamble',
                                  choices=[[0, 'A'], [1, 'B'], [2, 'C']],
@@ -74,12 +93,18 @@ class Performance(Page):
         return player.round_number == 1
 
     form_model = 'player'
-    form_fields = ['math_pt_belief',
-                   'us_pt_belief',
-                   'verbal_pt_belief',
-                   'science_pt_belief',
-                   'pop_pt_belief',
-                   'sports_pt_belief'
+    form_fields = ['math_belief',
+                   'us_belief',
+                   'verbal_belief',
+                   'science_belief',
+                   'pop_belief',
+                   'sports_belief',
+                   'math_certainty',
+                   'us_certainty',
+                   'verbal_certainty',
+                   'science_certainty',
+                   'pop_certainty',
+                   'sports_certainty'
                    ]
 
     @staticmethod

@@ -5,12 +5,12 @@ SESSION_CONFIGS = [
     dict(
         name='Ego',
         num_demo_participants=2,
-        app_sequence=['Questionnaire', 'Quizzes', 'Signals']
+        app_sequence=['Quizzes', 'Signals', 'Questionnaire']
     ),
     dict(
         name='Stereotype',
         num_demo_participants=2,
-        app_sequence=['Questionnaire', 'Quizzes', 'SignalsOther']
+        app_sequence=['Quizzes', 'SignalsOther', 'Questionnaire']
     )
 ]
 

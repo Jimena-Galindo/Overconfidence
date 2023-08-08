@@ -11,7 +11,7 @@ Belief Updating
 
 class C(BaseConstants):
     NAME_IN_URL = 'GamblesOther'
-    PLAYERS_PER_GROUP = 1
+    PLAYERS_PER_GROUP = None
     TASKS = ['Math', 'Verbal',
              'Science and Technology', 'Sports and Video Games', 'US Geography', 'Pop-Culture and Art']
     # number of effort/signal realizations per quizz
@@ -24,8 +24,8 @@ class C(BaseConstants):
     mh = np.array([[.45, .55, .75], [.35, .69, .80], [.25, .65, .98]])
     M = [ml, mm, mh]
     SEED = 3821
-    T1 = 10
-    T2 = 15
+    T1 = 6
+    T2 = 16
 
 
 class Subsession(BaseSubsession):
@@ -85,7 +85,7 @@ class Player(BasePlayer):
     
 
 # FUNCTIONS
-others = pd.read_csv(Path.cwd().joinpath('others.csv'))
+others = pd.read_csv(Path.cwd().joinpath('Others_data/others.csv'))
 
 
 # PAGES
@@ -111,7 +111,7 @@ class Performance(Page):
     @staticmethod
     def vars_for_template(player):
         index = random.randint(0, len(others))
-        other = others.iloc[index]
+        other = others.iloc[index-1]
         player.gender_other = other['participant.gender']
         player.nationality_other = other['participant.nationality']
         player.major_other = other['participant.major']
@@ -127,7 +127,7 @@ class Performance(Page):
         major_self = me.major
         nationality_self = me.nationality
 
-        return dict(gender=player.gender_other, major=player.major, nationality=player.nationality,
+        return dict(gender=player.gender_other, major=player.major_other, nationality=player.nationality_other,
                     gender_self=gender_self, major_self=major_self, nationality_self=nationality_self)
 
     @staticmethod

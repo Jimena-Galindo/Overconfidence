@@ -51,8 +51,8 @@ def make_field(topic, q_number):
 class C(BaseConstants):
     NAME_IN_URL = 'Quizzes'
     PLAYERS_PER_GROUP = None
-    # time limit for each quiz. the form submits when time runs out
-    TIME = 10
+    # time limit for each quiz in seconds. the form submits when time runs out
+    TIME = 5
     # List of the quizz titles
     TASKS = ['Math', 'Verbal', 'Science and Technology', 'Sports and Video Games', 'US Geography', 'Pop-Culture and Art']
     NUM_ROUNDS = len(TASKS)

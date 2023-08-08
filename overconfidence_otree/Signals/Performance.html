@@ -5,7 +5,30 @@
 {{ block content }}
 
 <p> How many questions do you think you answered correctly in each of the quizzes? </p>
-{{ formfields }}
+
+<h5> Math </h5>
+{{ formfield 'math_belief' }}
+{{ formfield 'math_certainty'}}
+
+<h5> Verbal Reasoning </h5>
+{{ formfield 'verbal_belief'}}
+{{ formfield 'verbal_certainty'}}
+
+<h5> US Geography </h5>
+{{ formfield 'us_belief'}}
+{{ formfield 'us_certainty'}}
+
+<h5> Science and Technology </h5>
+{{ formfield 'science_belief'}}
+{{ formfield 'science_certainty'}}
+
+<h5> Sports and Video-games </h5>
+{{ formfield 'sports_belief'}}
+{{ formfield 'sports_certainty'}}
+
+<h5> Pop Culture </h5>
+{{ formfield 'pop_belief'}}
+{{ formfield 'pop_certainty'}}
 
 <div style="float: right">{{next_button}}</div>
 {{endblock}}

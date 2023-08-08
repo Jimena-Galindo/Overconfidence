@@ -324,48 +324,6 @@ class Performance(Page):
 
             session.outcomes_us = np.stack((outcomes_L, outcomes_M, outcomes_H))
 
-            if player.math_pt_belief <= C.T1:
-                player.math_belief = 0
-            elif C.T1 < player.math_pt_belief <= C.T2:
-                player.math_belief = 1
-            elif player.math_pt_belief > C.T2:
-                player.math_belief = 2
-
-            if player.verbal_pt_belief <= C.T1:
-                player.verbal_belief = 0
-            elif C.T1 < player.verbal_pt_belief <= C.T2:
-                player.verbal_belief = 1
-            elif player.verbal_pt_belief > C.T2:
-                player.verbal_belief = 2
-
-            if player.pop_pt_belief <= C.T1:
-                player.pop_belief = 0
-            elif C.T1 < player.pop_pt_belief <= C.T2:
-                player.pop_belief = 1
-            elif player.pop_pt_belief > C.T2:
-                player.pop_belief = 2
-
-            if player.us_pt_belief <= C.T1:
-                player.us_belief = 0
-            elif C.T1 < player.us_pt_belief <= C.T2:
-                player.us_belief = 1
-            elif player.us_pt_belief > C.T2:
-                player.us_belief = 2
-
-            if player.science_pt_belief <= C.T1:
-                player.science_belief = 0
-            elif C.T1 < player.science_pt_belief <= C.T2:
-                player.science_belief = 1
-            elif player.science_pt_belief > C.T2:
-                player.science_belief = 2
-
-            if player.sports_pt_belief <= C.T1:
-                player.sports_belief = 0
-            elif C.T1 < player.sports_pt_belief <= C.T2:
-                player.sports_belief = 1
-            elif player.sports_pt_belief > C.T2:
-                player.sports_belief = 2
-
 
 class MyWaitPage(WaitPage):
     title_text = "End of Part 1"

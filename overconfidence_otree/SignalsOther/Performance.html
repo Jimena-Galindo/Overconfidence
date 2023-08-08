@@ -23,15 +23,32 @@
                     <th style="padding-right: 3px">Major:</th><td> {{ major_self }}</td>
                 </tr>
             </table>
-            <h6> Guess your own scores:
+            <h6> How many questions do you think you answered correctly:
             </h6>
 
-                {{ formfield 'math_belief_self' }}
-                {{ formfield 'us_belief_self' }}
-                {{ formfield 'verbal_belief_self' }}
-                {{ formfield 'science_belief_self' }}
-                {{ formfield 'pop_belief_self' }}
-                {{ formfield 'sports_belief_self' }}
+                <h5> Math </h5>
+                    {{ formfield 'math_belief_self' }}
+                    {{ formfield 'math_certainty_self'}}
+
+            <h5> Verbal Reasoning </h5>
+                    {{ formfield 'verbal_belief_self'}}
+                    {{ formfield 'verbal_certainty_self'}}
+
+            <h5> US Geography </h5>
+                    {{ formfield 'us_belief_self'}}
+                    {{ formfield 'us_certainty_self'}}
+
+            <h5> Science and Technology </h5>
+                    {{ formfield 'science_belief_self'}}
+                    {{ formfield 'science_certainty_self'}}
+
+            <h5> Sports and Video-games </h5>
+                    {{ formfield 'sports_belief_self'}}
+                    {{ formfield 'sports_certainty_self'}}
+
+            <h5> Pop Culture </h5>
+                    {{ formfield 'pop_belief_self'}}
+                    {{ formfield 'pop_certainty_self'}}
 
         </div>
 
@@ -52,12 +69,29 @@
             </table>
             <h6> Guess the scores of the other participant: </h6>
 
-                {{ formfield 'math_pt_belief' }}
-                {{ formfield 'us_pt_belief' }}
-                {{ formfield 'verbal_pt_belief' }}
-                {{ formfield 'science_pt_belief' }}
-                {{ formfield 'pop_pt_belief' }}
-                {{ formfield 'sports_pt_belief' }}
+                <h5> Math </h5>
+                    {{ formfield 'math_belief_other' }}
+                    {{ formfield 'math_certainty_other'}}
+
+                <h5> Verbal Reasoning </h5>
+                    {{ formfield 'verbal_belief_other'}}
+                    {{ formfield 'verbal_certainty_other'}}
+
+                <h5> US Geography </h5>
+                    {{ formfield 'us_belief_other'}}
+                    {{ formfield 'us_certainty_other'}}
+
+                <h5> Science and Technology </h5>
+                    {{ formfield 'science_belief_other'}}
+                    {{ formfield 'science_certainty_other'}}
+
+                <h5> Sports and Video-games </h5>
+                    {{ formfield 'sports_belief_other'}}
+                    {{ formfield 'sports_certainty_other'}}
+
+                <h5> Pop Culture </h5>
+                    {{ formfield 'pop_belief_other'}}
+                    {{ formfield 'pop_certainty_other'}}
 
             <div style="float: right">{{next_button}}</div>
 

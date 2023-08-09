@@ -5,12 +5,115 @@
 {{ block content }}
 
     <p>
-        The outcome of your gamble is: <b>{{signals}}</b> successes and <b>{{fails}}</b> failures
+        The outcome of your gamble is: <b>{{signal}}</b> successes and <b>{{fails}}</b> failures
     </p>
-    {{ if signal == 1}}
-        <h1>Success</h1>
-    {{ else }}
-        <h1>Failure</h1>
-    {{endif}}
+
+<table class="table">
+    <tr>
+        {{ if s1 == 1}}
+            <td style="color: green">
+                <h5>Success</h5>
+            </td>
+         {{ else }}
+            <td style="color: red">
+                <h5>Failure</h5>
+            </td>
+         {{endif}}
+        {{ if s2 == 1}}
+            <td style="color: green">
+                <h5>Success</h5>
+            </td>
+         {{ else }}
+            <td style="color: red">
+                <h5>Failure</h5>
+            </td>
+         {{endif}}
+        {{ if s3 == 1}}
+            <td style="color: green">
+                <h5>Success</h5>
+            </td>
+         {{ else }}
+            <td style="color: red">
+                <h5>Failure</h5>
+            </td>
+         {{endif}}
+
+            {{ if s4 == 1}}
+            <td style="color: green">
+                <h5>Success</h5>
+            </td>
+            {{ else }}
+         <td style="color: red">
+                <h5>Failure</h5>
+             </td>
+            {{endif}}
+
+        {{ if s5 == 1}}
+            <td style="color: green">
+                <h5>Success</h5>
+            </td>
+         {{ else }}
+            <td style="color: red">
+                <h5>Failure</h5>
+            </td>
+         {{endif}}
+
+    </tr>
+     <tr>
+        {{ if s6 == 1}}
+            <td style="color: green">
+                <h5>Success</h5>
+            </td>
+         {{ else }}
+            <td style="color: red">
+                <h5>Failure</h5>
+            </td>
+         {{endif}}
+        {{ if s7 == 1}}
+            <td style="color: green">
+                <h5>Success</h5>
+            </td>
+         {{ else }}
+            <td style="color: red">
+                <h5>Failure</h5>
+            </td>
+         {{endif}}
+        {{ if s8 == 1}}
+            <td style="color: green">
+                <h5>Success</h5>
+            </td>
+         {{ else }}
+            <td style="color: red">
+                <h5>Failure</h5>
+            </td>
+         {{endif}}
+
+            {{ if s9 == 1}}
+            <td style="color: green">
+                <h5>Success</h5>
+            </td>
+            {{ else }}
+         <td style="color: red">
+                <h5>Failure</h5>
+             </td>
+            {{endif}}
+
+        {{ if s10 == 1}}
+            <td style="color: green">
+                <h5>Success</h5>
+            </td>
+         {{ else }}
+            <td style="color: red">
+                <h5>Failure</h5>
+            </td>
+         {{endif}}
+
+    </tr>
+
+</table>
+
+
+
+
 <div style="float: right">{{next_button}}</div>
 {{ endblock }}

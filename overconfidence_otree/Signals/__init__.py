@@ -438,7 +438,19 @@ class VerbalFeedback(Page):
         signal_realiz = session.outcomes_verbal[type][e, round]
         player.signal = int(sum(signal_realiz))
         player.fails = C.trials - player.signal
-        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz, fails=player.fails)
+        return dict(signal=player.signal,
+                    topic=player.topic,
+                    fails=player.fails,
+                    s1=signal_realiz[0],
+                    s2=signal_realiz[1],
+                    s3=signal_realiz[2],
+                    s4=signal_realiz[3],
+                    s5=signal_realiz[4],
+                    s6=signal_realiz[5],
+                    s7=signal_realiz[6],
+                    s8=signal_realiz[7],
+                    s9=signal_realiz[8],
+                    s10=signal_realiz[9],)
 
 
 class MathStart(Page):
@@ -536,8 +548,19 @@ class MathFeedback(Page):
         signal_realiz = session.outcomes_math[type][e, round]
         player.signal = int(sum(signal_realiz))
         player.fails = C.trials - player.signal
-        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz, fails=player.fails)
-
+        return dict(signal=player.signal,
+                    topic=player.topic,
+                    fails=player.fails,
+                    s1=signal_realiz[0],
+                    s2=signal_realiz[1],
+                    s3=signal_realiz[2],
+                    s4=signal_realiz[3],
+                    s5=signal_realiz[4],
+                    s6=signal_realiz[5],
+                    s7=signal_realiz[6],
+                    s8=signal_realiz[7],
+                    s9=signal_realiz[8],
+                    s10=signal_realiz[9],)
 
 class PopStart(Page):
     @staticmethod
@@ -633,7 +656,19 @@ class PopFeedback(Page):
         signal_realiz = session.outcomes_pop[type][e, round]
         player.signal = int(sum(signal_realiz))
         player.fails = C.trials - player.signal
-        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz, fails=player.fails)
+        return dict(signal=player.signal,
+                    topic=player.topic,
+                    fails=player.fails,
+                    s1=signal_realiz[0],
+                    s2=signal_realiz[1],
+                    s3=signal_realiz[2],
+                    s4=signal_realiz[3],
+                    s5=signal_realiz[4],
+                    s6=signal_realiz[5],
+                    s7=signal_realiz[6],
+                    s8=signal_realiz[7],
+                    s9=signal_realiz[8],
+                    s10=signal_realiz[9],)
 
 
 class ScienceStart(Page):
@@ -729,7 +764,19 @@ class ScienceFeedback(Page):
         signal_realiz = session.outcomes_science[type][e, round]
         player.signal = int(sum(signal_realiz))
         player.fails = C.trials-player.signal
-        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz, fails=player.fails)
+        return dict(signal=player.signal,
+                    topic=player.topic,
+                    fails=player.fails,
+                    s1=signal_realiz[0],
+                    s2=signal_realiz[1],
+                    s3=signal_realiz[2],
+                    s4=signal_realiz[3],
+                    s5=signal_realiz[4],
+                    s6=signal_realiz[5],
+                    s7=signal_realiz[6],
+                    s8=signal_realiz[7],
+                    s9=signal_realiz[8],
+                    s10=signal_realiz[9],)
 
 
 class SportsStart(Page):
@@ -779,7 +826,7 @@ class Sports(Page):
                     fail_M += C.trials - p.signal
                 else:
                     succes_H += p.signal
-                    fail_H += C.trial - p.signal
+                    fail_H += C.trials - p.signal
         else:
             previous_rounds = 0
 
@@ -826,7 +873,19 @@ class SportsFeedback(Page):
         signal_realiz = session.outcomes_sports[type][e, round]
         player.signal = int(sum(signal_realiz))
         player.fails = C.trials - player.signal
-        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz, fails=player.fails)
+        return dict(signal=player.signal,
+                    topic=player.topic,
+                    fails=player.fails,
+                    s1=signal_realiz[0],
+                    s2=signal_realiz[1],
+                    s3=signal_realiz[2],
+                    s4=signal_realiz[3],
+                    s5=signal_realiz[4],
+                    s6=signal_realiz[5],
+                    s7=signal_realiz[6],
+                    s8=signal_realiz[7],
+                    s9=signal_realiz[8],
+                    s10=signal_realiz[9],)
 
 
 class UsStart(Page):
@@ -924,7 +983,19 @@ class UsFeedback(Page):
         signal_realiz = session.outcomes_us[type][e, round]
         player.signal = int(sum(signal_realiz))
         player.fails = C.trials - player.signal
-        return dict(signal=player.signal, topic=player.topic, signal_realiz=signal_realiz, fails=player.fails)
+        return dict(signal=player.signal,
+                    topic=player.topic,
+                    fails=player.fails,
+                    s1=signal_realiz[0],
+                    s2=signal_realiz[1],
+                    s3=signal_realiz[2],
+                    s4=signal_realiz[3],
+                    s5=signal_realiz[4],
+                    s6=signal_realiz[5],
+                    s7=signal_realiz[6],
+                    s8=signal_realiz[7],
+                    s9=signal_realiz[8],
+                    s10=signal_realiz[9],)
 
 
 class Results(Page):

@@ -138,7 +138,7 @@ class Performance(Page):
             T = C.N
 
             # Generate the sequences of outcomes that subjects will see
-            # true high types
+            # true high types in the verbal task
             rng = np.random.default_rng(seed=C.SEED)
 
             # outcomes after choosing L
@@ -151,21 +151,22 @@ class Performance(Page):
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_H = rng.binomial(1, m[1][0, w], size=(T, C.trials))
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=(T, C.trials))
             outcome_M_M = rng.binomial(1, m[1][1, w], size=(T, C.trials))
-            outcome_M_L = rng.binomial(1, m[1][2, w], size=(T, C.trials))
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=(T, C.trials))
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_H = rng.binomial(1, m[0][0, w], size=(T, C.trials))
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=(T, C.trials))
             outcome_L_M = rng.binomial(1, m[0][1, w], size=(T, C.trials))
-            outcome_L_L = rng.binomial(1, m[0][2, w], size=(T, C.trials))
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=(T, C.trials))
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
             session.outcomes_verbal = np.stack((outcomes_L, outcomes_M, outcomes_H))
 
+            # outcomes in the math task
             w = session.w_math
             m = C.M
 
@@ -181,21 +182,22 @@ class Performance(Page):
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_H = rng.binomial(1, m[1][0, w], size=(T, C.trials))
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=(T, C.trials))
             outcome_M_M = rng.binomial(1, m[1][1, w], size=(T, C.trials))
-            outcome_M_L = rng.binomial(1, m[1][2, w], size=(T, C.trials))
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=(T, C.trials))
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_H = rng.binomial(1, m[0][0, w], size=(T, C.trials))
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=(T, C.trials))
             outcome_L_M = rng.binomial(1, m[0][1, w], size=(T, C.trials))
-            outcome_L_L = rng.binomial(1, m[0][2, w], size=(T, C.trials))
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=(T, C.trials))
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
             session.outcomes_math = np.stack((outcomes_L, outcomes_M, outcomes_H))
 
+            # outcomes in the sports task
             w = session.w_sports
             m = C.M
 
@@ -215,21 +217,22 @@ class Performance(Page):
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_H = rng.binomial(1, m[1][0, w], size=(T, C.trials))
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=(T, C.trials))
             outcome_M_M = rng.binomial(1, m[1][1, w], size=(T, C.trials))
-            outcome_M_L = rng.binomial(1, m[1][2, w], size=(T, C.trials))
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=(T, C.trials))
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_H = rng.binomial(1, m[0][0, w], size=(T, C.trials))
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=(T, C.trials))
             outcome_L_M = rng.binomial(1, m[0][1, w], size=(T, C.trials))
-            outcome_L_L = rng.binomial(1, m[0][2, w], size=(T, C.trials))
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=(T, C.trials))
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
             session.outcomes_sports = np.stack((outcomes_L, outcomes_M, outcomes_H))
 
+            # outcomes in the science task
             w = session.w_science
             m = C.M
 
@@ -249,21 +252,22 @@ class Performance(Page):
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_H = rng.binomial(1, m[1][0, w], size=(T, C.trials))
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=(T, C.trials))
             outcome_M_M = rng.binomial(1, m[1][1, w], size=(T, C.trials))
-            outcome_M_L = rng.binomial(1, m[1][2, w], size=(T, C.trials))
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=(T, C.trials))
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_H = rng.binomial(1, m[0][0, w], size=(T, C.trials))
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=(T, C.trials))
             outcome_L_M = rng.binomial(1, m[0][1, w], size=(T, C.trials))
-            outcome_L_L = rng.binomial(1, m[0][2, w], size=(T, C.trials))
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=(T, C.trials))
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
             session.outcomes_science = np.stack((outcomes_L, outcomes_M, outcomes_H))
 
+            # outcomes in the pop culture task
             w = session.w_pop
             m = C.M
 
@@ -283,21 +287,22 @@ class Performance(Page):
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_H = rng.binomial(1, m[1][0, w], size=(T, C.trials))
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=(T, C.trials))
             outcome_M_M = rng.binomial(1, m[1][1, w], size=(T, C.trials))
-            outcome_M_L = rng.binomial(1, m[1][2, w], size=(T, C.trials))
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=(T, C.trials))
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_H = rng.binomial(1, m[0][0, w], size=(T, C.trials))
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=(T, C.trials))
             outcome_L_M = rng.binomial(1, m[0][1, w], size=(T, C.trials))
-            outcome_L_L = rng.binomial(1, m[0][2, w], size=(T, C.trials))
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=(T, C.trials))
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
             session.outcomes_pop = np.stack((outcomes_L, outcomes_M, outcomes_H))
 
+            # outcomes in the us geography task
             w = session.w_us
             m = C.M
 
@@ -317,16 +322,16 @@ class Performance(Page):
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_H = rng.binomial(1, m[1][0, w], size=(T, C.trials))
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=(T, C.trials))
             outcome_M_M = rng.binomial(1, m[1][1, w], size=(T, C.trials))
-            outcome_M_L = rng.binomial(1, m[1][2, w], size=(T, C.trials))
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=(T, C.trials))
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_H = rng.binomial(1, m[0][0, w], size=(T, C.trials))
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=(T, C.trials))
             outcome_L_M = rng.binomial(1, m[0][1, w], size=(T, C.trials))
-            outcome_L_L = rng.binomial(1, m[0][2, w], size=(T, C.trials))
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=(T, C.trials))
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
@@ -668,7 +673,8 @@ class PopFeedback(Page):
                     s7=signal_realiz[6],
                     s8=signal_realiz[7],
                     s9=signal_realiz[8],
-                    s10=signal_realiz[9],)
+                    s10=signal_realiz[9],
+                    type=type)
 
 
 class ScienceStart(Page):

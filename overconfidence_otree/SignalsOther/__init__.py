@@ -133,6 +133,7 @@ class Player(BasePlayer):
                                  widget=widgets.RadioSelect, )
 
     signal = models.IntegerField()
+    fails = models.IntegerField()
 
     low_button = models.IntegerField(initial=0)
     mid_button = models.IntegerField(initial=0)
@@ -162,18 +163,18 @@ class Performance(Page):
         return player.round_number == 1
 
     form_model = 'player'
-    form_fields = ['math_pt_belief',
-                   'us_pt_belief',
-                   'verbal_pt_belief',
-                   'science_pt_belief',
-                   'pop_pt_belief',
-                   'sports_pt_belief',
-                   'math_belief_self',
+    form_fields = ['math_belief_self',
                    'us_belief_self',
                    'verbal_belief_self',
                    'science_belief_self',
                    'pop_belief_self',
-                   'sports_belief_self'
+                   'sports_belief_self',
+                   'math_belief_self_other',
+                   'us_belief_other',
+                   'verbal_belief_other',
+                   'science_belief_other',
+                   'pop_belief_other',
+                   'sports_belief_other'
                    ]
 
     @staticmethod
@@ -234,16 +235,16 @@ class Performance(Page):
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_H = rng.binomial(1, m[1][0, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=T)
             outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
-            outcome_M_L = rng.binomial(1, m[1][2, w], size=T)
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=T)
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_H = rng.binomial(1, m[0][0, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=T)
             outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
-            outcome_L_L = rng.binomial(1, m[0][2, w], size=T)
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=T)
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
@@ -264,16 +265,16 @@ class Performance(Page):
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_H = rng.binomial(1, m[1][0, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=T)
             outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
-            outcome_M_L = rng.binomial(1, m[1][2, w], size=T)
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=T)
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_H = rng.binomial(1, m[0][0, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=T)
             outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
-            outcome_L_L = rng.binomial(1, m[0][2, w], size=T)
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=T)
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
@@ -298,16 +299,16 @@ class Performance(Page):
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_H = rng.binomial(1, m[1][0, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=T)
             outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
-            outcome_M_L = rng.binomial(1, m[1][2, w], size=T)
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=T)
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_H = rng.binomial(1, m[0][0, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=T)
             outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
-            outcome_L_L = rng.binomial(1, m[0][2, w], size=T)
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=T)
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
@@ -332,16 +333,16 @@ class Performance(Page):
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_H = rng.binomial(1, m[1][0, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=T)
             outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
-            outcome_M_L = rng.binomial(1, m[1][2, w], size=T)
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=T)
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_H = rng.binomial(1, m[0][0, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=T)
             outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
-            outcome_L_L = rng.binomial(1, m[0][2, w], size=T)
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=T)
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
@@ -366,16 +367,16 @@ class Performance(Page):
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_H = rng.binomial(1, m[1][0, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=T)
             outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
-            outcome_M_L = rng.binomial(1, m[1][2, w], size=T)
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=T)
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_H = rng.binomial(1, m[0][0, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=T)
             outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
-            outcome_L_L = rng.binomial(1, m[0][2, w], size=T)
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=T)
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
@@ -400,16 +401,16 @@ class Performance(Page):
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_H = rng.binomial(1, m[1][0, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=T)
             outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
-            outcome_M_L = rng.binomial(1, m[1][2, w], size=T)
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=T)
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_H = rng.binomial(1, m[0][0, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=T)
             outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
-            outcome_L_L = rng.binomial(1, m[0][2, w], size=T)
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=T)
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
@@ -440,9 +441,9 @@ class VerbalStart(Page):
     @staticmethod
     def vars_for_template(player):
         player.topic = 'Verbal'
-        belief = player.in_round(1).verbal_belief
-        point_belief = player.in_round(1).verbal_pt_belief
-        return dict(topic=player.topic, belief=belief, point=point_belief)
+        belief_self = player.in_round(1).verbal_belief_self
+        belief_other = player.in_round(1).verbal_belief_other
+        return dict(topic=player.topic, self=belief_self, other=belief_other)
 
 
 class Verbal(Page):
@@ -467,23 +468,19 @@ class Verbal(Page):
         fail_M = 0
         fail_H = 0
 
-        if player.round_number > (participant.task_rounds[player.topic]-1)*C.N+1:
-            previous_rounds = player.in_rounds(1+(
-                    player.participant.task_rounds[player.topic]-1)*C.N, player.round_number-1)
+        if player.round_number > (participant.task_rounds[player.topic] - 1) * C.N + 1:
+            previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
+                                               player.round_number - 1)
             for p in previous_rounds:
-                if p.signal == 1 and p.effort == 0:
-                    succes_L += 1
-                elif p.signal == 1 and p.effort == 1:
-                    succes_M += 1
-                elif p.signal == 1 and p.effort == 2:
-                    succes_H += 1
-                elif p.signal == 0 and p.effort == 0:
-                    fail_L += 1
-                elif p.signal == 0 and p.effort == 1:
-                    fail_M += 1
+                if p.effort == 0:
+                    succes_L += p.signal
+                    fail_L += C.trials - p.signal
+                elif p.effort == 1:
+                    succes_M += p.signal
+                    fail_M += C.trials - p.signal
                 else:
-                    fail_H += 1
-
+                    succes_H += p.signal
+                    fail_H += C.trials - p.signal
         else:
             previous_rounds = 0
 
@@ -524,10 +521,23 @@ class VerbalFeedback(Page):
         else:
             t = 2
 
-        r = player.round_number - 1 - C.N*player.participant.task_rounds['Verbal']
-        player.signal = int(session.outcomes_verbal[t][e, r])
-
-        return dict(signal=player.signal, topic=player.topic)
+        round = player.round_number - 1 - C.N*player.participant.task_rounds['Verbal']
+        signal_realiz = session.outcomes_verbal[type][e, round]
+        player.signal = int(sum(signal_realiz))
+        player.fails = C.trials - player.signal
+        return dict(signal=player.signal,
+                    topic=player.topic,
+                    fails=player.fails,
+                    s1=signal_realiz[0],
+                    s2=signal_realiz[1],
+                    s3=signal_realiz[2],
+                    s4=signal_realiz[3],
+                    s5=signal_realiz[4],
+                    s6=signal_realiz[5],
+                    s7=signal_realiz[6],
+                    s8=signal_realiz[7],
+                    s9=signal_realiz[8],
+                    s10=signal_realiz[9], )
 
 
 class MathStart(Page):
@@ -539,9 +549,9 @@ class MathStart(Page):
     @staticmethod
     def vars_for_template(player):
         player.topic = 'Math'
-        belief = player.in_round(1).math_belief
-        point_belief = player.in_round(1).math_pt_belief
-        return dict(topic=player.topic, belief=belief, point=point_belief)
+        belief_self = player.in_round(1).math_belief_self
+        belief_other = player.in_round(1).math_belief_other
+        return dict(topic=player.topic, self=belief_self, other=belief_other)
 
 
 class Math(Page):
@@ -556,9 +566,8 @@ class Math(Page):
 
     @staticmethod
     def vars_for_template(player):
-        player.topic = 'Math'
+        player.topic = 'Verbal'
         participant = player.participant
-
         succes_L = 0
         succes_M = 0
         succes_H = 0
@@ -571,23 +580,20 @@ class Math(Page):
             previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
                                                player.round_number - 1)
             for p in previous_rounds:
-                if p.signal == 1 and p.effort == 0:
-                    succes_L += 1
-                elif p.signal == 1 and p.effort == 1:
-                    succes_M += 1
-                elif p.signal == 1 and p.effort == 2:
-                    succes_H += 1
-                elif p.signal == 0 and p.effort == 0:
-                    fail_L += 1
-                elif p.signal == 0 and p.effort == 1:
-                    fail_M += 1
+                if p.effort == 0:
+                    succes_L += p.signal
+                    fail_L += C.trials - p.signal
+                elif p.effort == 1:
+                    succes_M += p.signal
+                    fail_M += C.trials - p.signal
                 else:
-                    fail_H += 1
+                    succes_H += p.signal
+                    fail_H += C.trials - p.signal
         else:
             previous_rounds = 0
 
         session = player.session
-        w = session.w_math
+        w = session.w_verbal
 
         return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
@@ -625,10 +631,23 @@ class MathFeedback(Page):
         else:
             t = 2
 
-        r = player.round_number - 1 - C.N*participant.task_rounds['Math']
-
-        player.signal = int(session.outcomes_math[t][e, r])
-        return dict(signal=player.signal, topic=player.topic)
+        round = player.round_number - 1 - C.N*participant.task_rounds['Math']
+        signal_realiz = session.outcomes_math[type][e, round]
+        player.signal = int(sum(signal_realiz))
+        player.fails = C.trials - player.signal
+        return dict(signal=player.signal,
+                    topic=player.topic,
+                    fails=player.fails,
+                    s1=signal_realiz[0],
+                    s2=signal_realiz[1],
+                    s3=signal_realiz[2],
+                    s4=signal_realiz[3],
+                    s5=signal_realiz[4],
+                    s6=signal_realiz[5],
+                    s7=signal_realiz[6],
+                    s8=signal_realiz[7],
+                    s9=signal_realiz[8],
+                    s10=signal_realiz[9], )
 
 
 class PopStart(Page):
@@ -640,9 +659,9 @@ class PopStart(Page):
     @staticmethod
     def vars_for_template(player):
         player.topic = 'Pop-Culture and Art'
-        belief = player.in_round(1).pop_belief
-        point_belief = player.in_round(1).pop_pt_belief
-        return dict(topic=player.topic, belief=belief, point=point_belief)
+        belief_self = player.in_round(1).pop_belief_self
+        belief_other = player.in_round(1).pop_belief_other
+        return dict(topic=player.topic, self=belief_self, other=belief_other)
 
 
 class Pop(Page):
@@ -657,7 +676,7 @@ class Pop(Page):
 
     @staticmethod
     def vars_for_template(player):
-        player.topic = 'Pop-Culture and Art'
+        player.topic = 'Verbal'
         participant = player.participant
         succes_L = 0
         succes_M = 0
@@ -671,23 +690,20 @@ class Pop(Page):
             previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
                                                player.round_number - 1)
             for p in previous_rounds:
-                if p.signal == 1 and p.effort == 0:
-                    succes_L += 1
-                elif p.signal == 1 and p.effort == 1:
-                    succes_M += 1
-                elif p.signal == 1 and p.effort == 2:
-                    succes_H += 1
-                elif p.signal == 0 and p.effort == 0:
-                    fail_L += 1
-                elif p.signal == 0 and p.effort == 1:
-                    fail_M += 1
+                if p.effort == 0:
+                    succes_L += p.signal
+                    fail_L += C.trials - p.signal
+                elif p.effort == 1:
+                    succes_M += p.signal
+                    fail_M += C.trials - p.signal
                 else:
-                    fail_H += 1
+                    succes_H += p.signal
+                    fail_H += C.trials - p.signal
         else:
             previous_rounds = 0
 
         session = player.session
-        w = session.w_pop
+        w = session.w_verbal
 
         return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
@@ -724,9 +740,23 @@ class PopFeedback(Page):
         else:
             t = 2
 
-        r = player.round_number - 1 - C.N*participant.task_rounds['Pop-Culture and Art']
-        player.signal = int(session.outcomes_pop[t][e, r])
-        return dict(signal=player.signal, topic=player.topic)
+        round = player.round_number - 1 - C.N*participant.task_rounds['Pop-Culture and Art']
+        signal_realiz = session.outcomes_pop[type][e, round]
+        player.signal = int(sum(signal_realiz))
+        player.fails = C.trials - player.signal
+        return dict(signal=player.signal,
+                    topic=player.topic,
+                    fails=player.fails,
+                    s1=signal_realiz[0],
+                    s2=signal_realiz[1],
+                    s3=signal_realiz[2],
+                    s4=signal_realiz[3],
+                    s5=signal_realiz[4],
+                    s6=signal_realiz[5],
+                    s7=signal_realiz[6],
+                    s8=signal_realiz[7],
+                    s9=signal_realiz[8],
+                    s10=signal_realiz[9], )
 
 
 class ScienceStart(Page):
@@ -738,9 +768,9 @@ class ScienceStart(Page):
     @staticmethod
     def vars_for_template(player):
         player.topic = 'Science and Technology'
-        belief = player.in_round(1).science_belief
-        point_belief = player.in_round(1).science_pt_belief
-        return dict(topic=player.topic, belief=belief, point=point_belief)
+        belief_self = player.in_round(1).science_belief_self
+        belief_other = player.in_round(1).science_belief_other
+        return dict(topic=player.topic, self=belief_self, other=belief_other)
 
 
 class Science(Page):
@@ -755,7 +785,7 @@ class Science(Page):
 
     @staticmethod
     def vars_for_template(player):
-        player.topic = 'Science and Technology'
+        player.topic = 'Verbal'
         participant = player.participant
         succes_L = 0
         succes_M = 0
@@ -769,23 +799,20 @@ class Science(Page):
             previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
                                                player.round_number - 1)
             for p in previous_rounds:
-                if p.signal == 1 and p.effort == 0:
-                    succes_L += 1
-                elif p.signal == 1 and p.effort == 1:
-                    succes_M += 1
-                elif p.signal == 1 and p.effort == 2:
-                    succes_H += 1
-                elif p.signal == 0 and p.effort == 0:
-                    fail_L += 1
-                elif p.signal == 0 and p.effort == 1:
-                    fail_M += 1
+                if p.effort == 0:
+                    succes_L += p.signal
+                    fail_L += C.trials - p.signal
+                elif p.effort == 1:
+                    succes_M += p.signal
+                    fail_M += C.trials - p.signal
                 else:
-                    fail_H += 1
+                    succes_H += p.signal
+                    fail_H += C.trials - p.signal
         else:
             previous_rounds = 0
 
         session = player.session
-        w = session.w_science
+        w = session.w_verbal
 
         return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
@@ -821,9 +848,23 @@ class ScienceFeedback(Page):
         else:
             t = 2
 
-        r = player.round_number - 1 - C.N*participant.task_rounds['Science and Technology']
-        player.signal = int(session.outcomes_science[t][e, r])
-        return dict(signal=player.signal, topic=player.topic)
+        round = player.round_number - 1 - C.N*participant.task_rounds['Science and Technology']
+        signal_realiz = session.outcomes_science[type][e, round]
+        player.signal = int(sum(signal_realiz))
+        player.fails = C.trials - player.signal
+        return dict(signal=player.signal,
+                    topic=player.topic,
+                    fails=player.fails,
+                    s1=signal_realiz[0],
+                    s2=signal_realiz[1],
+                    s3=signal_realiz[2],
+                    s4=signal_realiz[3],
+                    s5=signal_realiz[4],
+                    s6=signal_realiz[5],
+                    s7=signal_realiz[6],
+                    s8=signal_realiz[7],
+                    s9=signal_realiz[8],
+                    s10=signal_realiz[9], )
 
 
 class SportsStart(Page):
@@ -835,9 +876,9 @@ class SportsStart(Page):
     @staticmethod
     def vars_for_template(player):
         player.topic = 'Sports and Video Games'
-        belief = player.in_round(1).sports_belief
-        point_belief = player.in_round(1).sports_pt_belief
-        return dict(topic=player.topic, belief=belief, point=point_belief)
+        belief_self = player.in_round(1).sports_belief_self
+        belief_other = player.in_round(1).sports_belief_other
+        return dict(topic=player.topic, self=belief_self, other=belief_other)
 
 
 class Sports(Page):
@@ -852,40 +893,36 @@ class Sports(Page):
 
     @staticmethod
     def vars_for_template(player):
-        player.topic = 'Sports and Video Games'
+        player.topic = 'Verbal'
         participant = player.participant
-        succes_l = 0
-        succes_m = 0
-        succes_h = 0
+        succes_L = 0
+        succes_M = 0
+        succes_H = 0
 
-        fail_l = 0
-        fail_m = 0
-        fail_h = 0
+        fail_L = 0
+        fail_M = 0
+        fail_H = 0
 
         if player.round_number > (participant.task_rounds[player.topic] - 1) * C.N + 1:
             previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
                                                player.round_number - 1)
             for p in previous_rounds:
-                if p.signal == 1 and p.effort == 0:
-                    succes_l += 1
-                elif p.signal == 1 and p.effort == 1:
-                    succes_m += 1
-                elif p.signal == 1 and p.effort == 2:
-                    succes_h += 1
-                elif p.signal == 0 and p.effort == 0:
-                    fail_l += 1
-                elif p.signal == 0 and p.effort == 1:
-                    fail_m += 1
+                if p.effort == 0:
+                    succes_L += p.signal
+                    fail_L += C.trials - p.signal
+                elif p.effort == 1:
+                    succes_M += p.signal
+                    fail_M += C.trials - p.signal
                 else:
-                    fail_h += 1
+                    succes_H += p.signal
+                    fail_H += C.trials - p.signal
         else:
             previous_rounds = 0
 
         session = player.session
-        w = session.w_sports
+        w = session.w_verbal
 
-        return dict(rounds=previous_rounds, sH=succes_h, sM=succes_m, sL=succes_l,
-                    fH=fail_h, fM=fail_m, fL=fail_l, w=w)
+        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
     @staticmethod
     def live_method(player: Player, data):
@@ -920,9 +957,23 @@ class SportsFeedback(Page):
         else:
             t = 2
 
-        r = player.round_number - 1 - C.N*participant.task_rounds['Sports and Video Games']
-        player.signal = int(session.outcomes_sports[t][e, r])
-        return dict(signal=player.signal, topic=player.topic)
+        round = player.round_number - 1 - C.N*participant.task_rounds['Sports and Video Games']
+        signal_realiz = session.outcomes_sports[type][e, round]
+        player.signal = int(sum(signal_realiz))
+        player.fails = C.trials - player.signal
+        return dict(signal=player.signal,
+                    topic=player.topic,
+                    fails=player.fails,
+                    s1=signal_realiz[0],
+                    s2=signal_realiz[1],
+                    s3=signal_realiz[2],
+                    s4=signal_realiz[3],
+                    s5=signal_realiz[4],
+                    s6=signal_realiz[5],
+                    s7=signal_realiz[6],
+                    s8=signal_realiz[7],
+                    s9=signal_realiz[8],
+                    s10=signal_realiz[9], )
 
 
 class UsStart(Page):
@@ -934,9 +985,9 @@ class UsStart(Page):
     @staticmethod
     def vars_for_template(player):
         player.topic = 'US Geography'
-        belief = player.in_round(1).us_belief
-        point_belief = player.in_round(1).us_pt_belief
-        return dict(topic=player.topic, belief=belief, point=point_belief)
+        belief_self = player.in_round(1).us_belief_self
+        belief_other = player.in_round(1).us_belief_other
+        return dict(topic=player.topic, self=belief_self, other=belief_other)
 
 
 class Us(Page):
@@ -951,39 +1002,36 @@ class Us(Page):
 
     @staticmethod
     def vars_for_template(player):
-        player.topic = 'US Geography'
+        player.topic = 'Verbal'
         participant = player.participant
-        succes_l = 0
-        succes_m = 0
-        succes_h = 0
+        succes_L = 0
+        succes_M = 0
+        succes_H = 0
 
-        fail_l = 0
-        fail_m = 0
-        fail_h = 0
+        fail_L = 0
+        fail_M = 0
+        fail_H = 0
 
-        if player.round_number > (participant.task_rounds['US Geography'] - 1) * C.N + 1:
-            previous_rounds = player.in_rounds((participant.task_rounds['US Geography'] - 1) * C.N + 1,
+        if player.round_number > (participant.task_rounds[player.topic] - 1) * C.N + 1:
+            previous_rounds = player.in_rounds(1 + (player.participant.task_rounds[player.topic] - 1) * C.N,
                                                player.round_number - 1)
             for p in previous_rounds:
-                if p.signal == 1 and p.effort == 0:
-                    succes_l += 1
-                elif p.signal == 1 and p.effort == 1:
-                    succes_m += 1
-                elif p.signal == 1 and p.effort == 2:
-                    succes_h += 1
-                elif p.signal == 0 and p.effort == 0:
-                    fail_l += 1
-                elif p.signal == 0 and p.effort == 1:
-                    fail_m += 1
+                if p.effort == 0:
+                    succes_L += p.signal
+                    fail_L += C.trials - p.signal
+                elif p.effort == 1:
+                    succes_M += p.signal
+                    fail_M += C.trials - p.signal
                 else:
-                    fail_h += 1
+                    succes_H += p.signal
+                    fail_H += C.trials - p.signal
         else:
             previous_rounds = 0
 
         session = player.session
-        w = session.w_us
+        w = session.w_verbal
 
-        return dict(rounds=previous_rounds, sH=succes_h, sM=succes_m, sL=succes_l, fH=fail_h, fM=fail_m, fL=fail_l, w=w)
+        return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
     @staticmethod
     def live_method(player: Player, data):
@@ -1018,9 +1066,23 @@ class UsFeedback(Page):
         else:
             t = 2
 
-        r = player.round_number - 1 - C.N*participant.task_rounds['US Geography']
-        player.signal = int(session.outcomes_us[t][e, r])
-        return dict(signal=player.signal, topic=player.topic)
+        round = player.round_number - 1 - C.N*participant.task_rounds['US Geography']
+        signal_realiz = session.outcomes_us[type][e, round]
+        player.signal = int(sum(signal_realiz))
+        player.fails = C.trials - player.signal
+        return dict(signal=player.signal,
+                    topic=player.topic,
+                    fails=player.fails,
+                    s1=signal_realiz[0],
+                    s2=signal_realiz[1],
+                    s3=signal_realiz[2],
+                    s4=signal_realiz[3],
+                    s5=signal_realiz[4],
+                    s6=signal_realiz[5],
+                    s7=signal_realiz[6],
+                    s8=signal_realiz[7],
+                    s9=signal_realiz[8],
+                    s10=signal_realiz[9], )
 
 
 class Results(Page):

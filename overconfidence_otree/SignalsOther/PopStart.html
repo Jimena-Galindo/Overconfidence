@@ -6,15 +6,12 @@
 <p>
     The next 25 rounds will be based on the {{topic}} quiz results for the other participant.
 </p>
-<p>
-    You guessed that their score was {{point}}.
-</p>
-<p> If your guess was accurate, it
-    would mean that they got a
+
+<p> you guessed that their score was
     <b>
-    {{ if belief == 0 }} Low-Score
+    {{ if  other == 0 }} Low-Score
     {{ else }}
-     {{ if belief == 1}}
+     {{ if other == 1}}
         Mid-Score
     {{ else }}
         High-Score

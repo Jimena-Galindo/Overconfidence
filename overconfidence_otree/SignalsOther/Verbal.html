@@ -128,13 +128,14 @@
             <tr>
 
                 <th> Choice </th>
-                <th> Outcome </th>
+                <th> Successes </th>
+                <th>Failures</th>
 
 
             </tr>
                 {{ if rounds == 0 }}
                 <tr>
-                    <td colspan="3"> You have no data for this task yet </td></tr>
+                    <td colspan="4"> You have no data for this task yet </td></tr>
                 {{ else }}
                 {{ for p in rounds }}
                 <tr>
@@ -151,11 +152,11 @@
                         {{ endif }}
                     </td>
                     <td>
-                        {{if p.signal == 0}}
-                        Failure
-                        {{else}}
-                        Success
-                        {{endif}}
+                        {{p.signal}}
+
+                    </td>
+                    <td>
+                        {{p.fails}}
                     </td>
                 </tr>
                 {{endfor}}
@@ -269,6 +270,5 @@
 
 
 {{ endblock }}
-
 
 

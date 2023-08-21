@@ -21,7 +21,7 @@ class C(BaseConstants):
     mm = np.array([[.40, .45, .65], [.30, .65, .69], [.05, .50, .80]])
     mh = np.array([[.45, .55, .75], [.35, .69, .80], [.25, .65, .98]])
     M = [ml, mm, mh]
-    SEED = 388
+    SEED = 3452
     trials = 10
     # first value of bucket 2
     T1 = 6

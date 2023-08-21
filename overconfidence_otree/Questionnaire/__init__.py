@@ -48,7 +48,6 @@ class Questionnaire(Page):
         participant = player.participant
         participant.gender = player.gender
         participant.nationality = player.nationality
-        participant.major = player.major
 
 
 class ResultsWaitPage(WaitPage):

@@ -21,7 +21,7 @@ SESSION_CONFIGS = [
 # e.g. self.session.config['participation_fee']
 
 SESSION_CONFIG_DEFAULTS = dict(
-    real_world_currency_per_point=1.00, participation_fee=0.00, doc=""
+    real_world_currency_per_point=.20, participation_fee=10.00, doc=""
 )
 
 PARTICIPANT_FIELDS = [
@@ -43,7 +43,15 @@ PARTICIPANT_FIELDS = [
     'major',
     'nationality',
     'part1_score',
-    'part1_topic']
+    'part1_topic',
+    'part2_score',
+    'part2_topic',
+    'math_other',
+    'verbal_other',
+    'science_other',
+    'sports_other',
+    'us_other',
+    'pop_other']
 
 SESSION_FIELDS = ['seed',
                   'w_verbal',

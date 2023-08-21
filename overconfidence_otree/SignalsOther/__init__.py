@@ -15,7 +15,8 @@ class C(BaseConstants):
     TASKS = ['Math', 'Verbal',
              'Science and Technology', 'Sports and Video Games', 'US Geography', 'Pop-Culture and Art']
     # number of effort/signal realizations per quizz
-    N = 5
+    N = 10
+    trials = 10
     # total number of rounds
     NUM_ROUNDS = len(TASKS)*N
     # the matrices for the DGP
@@ -23,7 +24,7 @@ class C(BaseConstants):
     mm = np.array([[.40, .45, .65], [.30, .65, .69], [.05, .50, .80]])
     mh = np.array([[.45, .55, .75], [.35, .69, .80], [.25, .65, .98]])
     M = [ml, mm, mh]
-    SEED = 3821
+    SEED = 388
     T1 = 6
     T2 = 16
 
@@ -39,27 +40,27 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     topic = models.StringField()
 
-    math_belief_self = models.IntegerField(label='Guess your score',
+    math_belief_self = models.IntegerField(label='',
                                            choices=[[0, 'Between 0 and ' + str(C.T1 - 1)],
                                                     [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2 - 1)],
                                                     [2, str(C.T2) + ' or more']],
                                            widget=widgets.RadioSelectHorizontal)
-    verbal_belief_self = models.IntegerField(label='Guess your score',
+    verbal_belief_self = models.IntegerField(label='',
                                              choices=[[0, 'Between 0 and ' + str(C.T1 - 1)],
                                                       [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2 - 1)],
                                                       [2, str(C.T2) + ' or more']],
                                              widget=widgets.RadioSelectHorizontal)
-    pop_belief_self = models.IntegerField(label='Guess your score',
+    pop_belief_self = models.IntegerField(label='',
                                      choices=[[0, 'Between 0 and ' + str(C.T1 - 1)],
                                               [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2 - 1)],
                                               [2, str(C.T2) + ' or more']],
                                      widget=widgets.RadioSelectHorizontal)
-    science_belief_self = models.IntegerField(label='Guess your score',
+    science_belief_self = models.IntegerField(label='',
                                          choices=[[0, 'Between 0 and ' + str(C.T1 - 1)],
                                                   [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2 - 1)],
                                                   [2, str(C.T2) + ' or more']],
                                          widget=widgets.RadioSelectHorizontal)
-    us_belief_self = models.IntegerField(label='Guess your score',
+    us_belief_self = models.IntegerField(label='',
                                     choices=[[0, 'Between 0 and ' + str(C.T1 - 1)],
                                              [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2 - 1)],
                                              [2, str(C.T2) + ' or more']],
@@ -71,61 +72,61 @@ class Player(BasePlayer):
                                         widget=widgets.RadioSelectHorizontal)
 
     math_certainty_self = models.IntegerField(min=0, max=100,
-                                         label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                         label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
     verbal_certainty_self = models.IntegerField(min=0, max=100,
-                                           label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                           label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
     pop_certainty_self = models.IntegerField(min=0, max=100,
-                                        label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                        label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
     science_certainty_self = models.IntegerField(min=0, max=100,
-                                            label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                            label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
     us_certainty_self = models.IntegerField(min=0, max=100,
-                                       label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                       label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
     sports_certainty_self = models.IntegerField(min=0, max=100,
-                                           label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                           label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
 
-    math_belief_other = models.IntegerField(label='Guess the score of the other participant',
+    math_belief_other = models.IntegerField(label='',
                                            choices=[[0, 'Between 0 and ' + str(C.T1 - 1)],
                                                     [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2 - 1)],
                                                     [2, str(C.T2) + ' or more']],
                                            widget=widgets.RadioSelectHorizontal)
-    verbal_belief_other = models.IntegerField(label='Guess the score of the other participant',
+    verbal_belief_other = models.IntegerField(label='',
                                              choices=[[0, 'Between 0 and ' + str(C.T1 - 1)],
                                                       [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2 - 1)],
                                                       [2, str(C.T2) + ' or more']],
                                              widget=widgets.RadioSelectHorizontal)
-    pop_belief_other = models.IntegerField(label='Guess the score of the other participant',
+    pop_belief_other = models.IntegerField(label='',
                                           choices=[[0, 'Between 0 and ' + str(C.T1 - 1)],
                                                    [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2 - 1)],
                                                    [2, str(C.T2) + ' or more']],
                                           widget=widgets.RadioSelectHorizontal)
-    science_belief_other = models.IntegerField(label='Guess the score of the other participant',
+    science_belief_other = models.IntegerField(label='',
                                               choices=[[0, 'Between 0 and ' + str(C.T1 - 1)],
                                                        [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2 - 1)],
                                                        [2, str(C.T2) + ' or more']],
                                               widget=widgets.RadioSelectHorizontal)
-    us_belief_other = models.IntegerField(label='Guess the score of the other participant',
+    us_belief_other = models.IntegerField(label='',
                                          choices=[[0, 'Between 0 and ' + str(C.T1 - 1)],
                                                   [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2 - 1)],
                                                   [2, str(C.T2) + ' or more']],
                                          widget=widgets.RadioSelectHorizontal)
-    sports_belief_other = models.IntegerField(label='Guess the score of the other participant',
+    sports_belief_other = models.IntegerField(label='',
                                              choices=[[0, 'Between 0 and ' + str(C.T1 - 1)],
                                                       [1, 'Between ' + str(C.T1) + ' and ' + str(C.T2 - 1)],
                                                       [2, str(C.T2) + ' or more']],
                                              widget=widgets.RadioSelectHorizontal)
 
     math_certainty_other = models.IntegerField(min=0, max=100,
-                                              label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                              label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
     verbal_certainty_other = models.IntegerField(min=0, max=100,
-                                                label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                                label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
     pop_certainty_other = models.IntegerField(min=0, max=100,
-                                             label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                             label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
     science_certainty_other = models.IntegerField(min=0, max=100,
-                                                 label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                                 label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
     us_certainty_other = models.IntegerField(min=0, max=100,
-                                            label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                            label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
     sports_certainty_other = models.IntegerField(min=0, max=100,
-                                                label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                                label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
 
 
     effort = models.IntegerField(label='Choose a gamble',
@@ -150,7 +151,6 @@ class Player(BasePlayer):
 
     gender_other = models.StringField()
     nationality_other = models.StringField()
-    major_other = models.StringField()
     
 
 # FUNCTIONS
@@ -169,21 +169,34 @@ class Performance(Page):
                    'science_belief_self',
                    'pop_belief_self',
                    'sports_belief_self',
-                   'math_belief_self_other',
+                   'math_certainty_self',
+                   'us_certainty_self',
+                   'verbal_certainty_self',
+                   'science_certainty_self',
+                   'pop_certainty_self',
+                   'sports_certainty_self',
+                   'math_belief_other',
                    'us_belief_other',
                    'verbal_belief_other',
                    'science_belief_other',
                    'pop_belief_other',
-                   'sports_belief_other'
+                   'sports_belief_other',
+                   'math_certainty_other',
+                   'us_certainty_other',
+                   'verbal_certainty_other',
+                   'science_certainty_other',
+                   'pop_certainty_other',
+                   'sports_certainty_other'
                    ]
 
     @staticmethod
     def vars_for_template(player):
         index = random.randint(0, len(others))
         other = others.iloc[index-1]
+
         player.gender_other = other['participant.gender']
         player.nationality_other = other['participant.nationality']
-        player.major_other = other['participant.major']
+
         player.math_other = other['participant.math_score']
         player.verbal_other = other['participant.verbal_score']
         player.us_other = other['participant.us_score']
@@ -191,13 +204,17 @@ class Performance(Page):
         player.science_other = other['participant.science_score']
         player.sports_other = other['participant.sports_score']
 
-        me = player.participant
-        gender_self = me.gender
-        major_self = me.major
-        nationality_self = me.nationality
+        participant = player.participant
 
-        return dict(gender=player.gender_other, major=player.major_other, nationality=player.nationality_other,
-                    gender_self=gender_self, major_self=major_self, nationality_self=nationality_self)
+        participant.math_other = other['participant.math_score']
+        participant.verbal_other = other['participant.verbal_score']
+        participant.us_other = other['participant.us_score']
+        participant.pop_other = other['participant.pop_score']
+        participant.science_other = other['participant.science_score']
+        participant.sports_other = other['participant.sports_score']
+
+
+        return dict(gender=player.gender_other, nationality=player.nationality_other)
 
     @staticmethod
     def before_next_page(player, timeout_happened):
@@ -211,10 +228,13 @@ class Performance(Page):
         session.w_math = random.randint(0, 2)
         session.w_science = random.randint(0, 2)
         session.w_sports = random.randint(0, 2)
-        session.w_pop = random.randint(0, 2)
         session.w_us = random.randint(0, 2)
+        session.w_pop = random.randint(0, 2)
+
 
         if player.round_number == 1:
+
+            #### verbal
             session = player.session
             w = session.w_verbal
             m = C.M
@@ -226,60 +246,61 @@ class Performance(Page):
             rng = np.random.default_rng(seed=C.SEED)
 
             # outcomes after choosing L
-            outcome_H_L = rng.binomial(1, m[2][0, w], size=T)
+            outcome_H_L = rng.binomial(1, m[2][0, w], size=(T, C.trials))
             # outcomes after choosing M
-            outcome_H_M = rng.binomial(1, m[2][1, w], size=T)
+            outcome_H_M = rng.binomial(1, m[2][1, w], size=(T, C.trials))
             # outcomes after choosing H
-            outcome_H_H = rng.binomial(1, m[2][2, w], size=T)
+            outcome_H_H = rng.binomial(1, m[2][2, w], size=(T, C.trials))
 
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_L = rng.binomial(1, m[1][0, w], size=T)
-            outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
-            outcome_M_H = rng.binomial(1, m[1][2, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=(T, C.trials))
+            outcome_M_M = rng.binomial(1, m[1][1, w], size=(T, C.trials))
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=(T, C.trials))
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_L = rng.binomial(1, m[0][0, w], size=T)
-            outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
-            outcome_L_H = rng.binomial(1, m[0][2, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=(T, C.trials))
+            outcome_L_M = rng.binomial(1, m[0][1, w], size=(T, C.trials))
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=(T, C.trials))
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
             session.outcomes_verbal = np.stack((outcomes_L, outcomes_M, outcomes_H))
 
+            ###### math
             w = session.w_math
             m = C.M
 
             T = C.N
-
+            # True high types
             # outcomes after choosing L
-            outcome_H_L = rng.binomial(1, m[2][0, w], size=T)
+            outcome_H_L = rng.binomial(1, m[2][0, w], size=(T, C.trials))
             # outcomes after choosing M
-            outcome_H_M = rng.binomial(1, m[2][1, w], size=T)
+            outcome_H_M = rng.binomial(1, m[2][1, w], size=(T, C.trials))
             # outcomes after choosing H
-            outcome_H_H = rng.binomial(1, m[2][2, w], size=T)
+            outcome_H_H = rng.binomial(1, m[2][2, w], size=(T, C.trials))
 
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_L = rng.binomial(1, m[1][0, w], size=T)
-            outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
-            outcome_M_H = rng.binomial(1, m[1][2, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=(T, C.trials))
+            outcome_M_M = rng.binomial(1, m[1][1, w], size=(T, C.trials))
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=(T, C.trials))
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_L = rng.binomial(1, m[0][0, w], size=T)
-            outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
-            outcome_L_H = rng.binomial(1, m[0][2, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=(T, C.trials))
+            outcome_L_M = rng.binomial(1, m[0][1, w], size=(T, C.trials))
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=(T, C.trials))
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
             session.outcomes_math = np.stack((outcomes_L, outcomes_M, outcomes_H))
-
+            ##### sports
             w = session.w_sports
             m = C.M
 
@@ -290,30 +311,31 @@ class Performance(Page):
             rng = np.random.default_rng(seed=C.SEED)
 
             # outcomes after choosing L
-            outcome_H_L = rng.binomial(1, m[2][0, w], size=T)
+            outcome_H_L = rng.binomial(1, m[2][0, w], size=(T, C.trials))
             # outcomes after choosing M
-            outcome_H_M = rng.binomial(1, m[2][1, w], size=T)
+            outcome_H_M = rng.binomial(1, m[2][1, w], size=(T, C.trials))
             # outcomes after choosing H
-            outcome_H_H = rng.binomial(1, m[2][2, w], size=T)
+            outcome_H_H = rng.binomial(1, m[2][2, w], size=(T, C.trials))
 
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_L = rng.binomial(1, m[1][0, w], size=T)
-            outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
-            outcome_M_H = rng.binomial(1, m[1][2, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=(T, C.trials))
+            outcome_M_M = rng.binomial(1, m[1][1, w], size=(T, C.trials))
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=(T, C.trials))
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_L = rng.binomial(1, m[0][0, w], size=T)
-            outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
-            outcome_L_H = rng.binomial(1, m[0][2, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=(T, C.trials))
+            outcome_L_M = rng.binomial(1, m[0][1, w], size=(T, C.trials))
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=(T, C.trials))
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
             session.outcomes_sports = np.stack((outcomes_L, outcomes_M, outcomes_H))
 
+            ###### science
             w = session.w_science
             m = C.M
 
@@ -324,30 +346,32 @@ class Performance(Page):
             rng = np.random.default_rng(seed=C.SEED)
 
             # outcomes after choosing L
-            outcome_H_L = rng.binomial(1, m[2][0, w], size=T)
+            outcome_H_L = rng.binomial(1, m[2][0, w], size=(T, C.trials))
             # outcomes after choosing M
-            outcome_H_M = rng.binomial(1, m[2][1, w], size=T)
+            outcome_H_M = rng.binomial(1, m[2][1, w], size=(T, C.trials))
             # outcomes after choosing H
-            outcome_H_H = rng.binomial(1, m[2][2, w], size=T)
+            outcome_H_H = rng.binomial(1, m[2][2, w], size=(T, C.trials))
 
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_L = rng.binomial(1, m[1][0, w], size=T)
-            outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
-            outcome_M_H = rng.binomial(1, m[1][2, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=(T, C.trials))
+            outcome_M_M = rng.binomial(1, m[1][1, w], size=(T, C.trials))
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=(T, C.trials))
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_L = rng.binomial(1, m[0][0, w], size=T)
-            outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
-            outcome_L_H = rng.binomial(1, m[0][2, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=(T, C.trials))
+            outcome_L_M = rng.binomial(1, m[0][1, w], size=(T, C.trials))
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=(T, C.trials))
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
             session.outcomes_science = np.stack((outcomes_L, outcomes_M, outcomes_H))
 
+
+            ##### pop culture
             w = session.w_pop
             m = C.M
 
@@ -358,30 +382,32 @@ class Performance(Page):
             rng = np.random.default_rng(seed=C.SEED)
 
             # outcomes after choosing L
-            outcome_H_L = rng.binomial(1, m[2][0, w], size=T)
+            outcome_H_L = rng.binomial(1, m[2][0, w], size=(T, C.trials))
             # outcomes after choosing M
-            outcome_H_M = rng.binomial(1, m[2][1, w], size=T)
+            outcome_H_M = rng.binomial(1, m[2][1, w], size=(T, C.trials))
             # outcomes after choosing H
-            outcome_H_H = rng.binomial(1, m[2][2, w], size=T)
+            outcome_H_H = rng.binomial(1, m[2][2, w], size=(T, C.trials))
 
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_L = rng.binomial(1, m[1][0, w], size=T)
-            outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
-            outcome_M_H = rng.binomial(1, m[1][2, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=(T, C.trials))
+            outcome_M_M = rng.binomial(1, m[1][1, w], size=(T, C.trials))
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=(T, C.trials))
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_L = rng.binomial(1, m[0][0, w], size=T)
-            outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
-            outcome_L_H = rng.binomial(1, m[0][2, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=(T, C.trials))
+            outcome_L_M = rng.binomial(1, m[0][1, w], size=(T, C.trials))
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=(T, C.trials))
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
             session.outcomes_pop = np.stack((outcomes_L, outcomes_M, outcomes_H))
 
+
+            ###### US Geography
             w = session.w_us
             m = C.M
 
@@ -392,25 +418,25 @@ class Performance(Page):
             rng = np.random.default_rng(seed=C.SEED)
 
             # outcomes after choosing L
-            outcome_H_L = rng.binomial(1, m[2][0, w], size=T)
+            outcome_H_L = rng.binomial(1, m[2][0, w], size=(T, C.trials))
             # outcomes after choosing M
-            outcome_H_M = rng.binomial(1, m[2][1, w], size=T)
+            outcome_H_M = rng.binomial(1, m[2][1, w], size=(T, C.trials))
             # outcomes after choosing H
-            outcome_H_H = rng.binomial(1, m[2][2, w], size=T)
+            outcome_H_H = rng.binomial(1, m[2][2, w], size=(T, C.trials))
 
             outcomes_H = np.stack((outcome_H_L, outcome_H_M, outcome_H_H))
 
             # true mid types
-            outcome_M_L = rng.binomial(1, m[1][0, w], size=T)
-            outcome_M_M = rng.binomial(1, m[1][1, w], size=T)
-            outcome_M_H = rng.binomial(1, m[1][2, w], size=T)
+            outcome_M_L = rng.binomial(1, m[1][0, w], size=(T, C.trials))
+            outcome_M_M = rng.binomial(1, m[1][1, w], size=(T, C.trials))
+            outcome_M_H = rng.binomial(1, m[1][2, w], size=(T, C.trials))
 
             outcomes_M = np.stack((outcome_M_L, outcome_M_M, outcome_M_H))
 
             # true low types
-            outcome_L_L = rng.binomial(1, m[0][0, w], size=T)
-            outcome_L_M = rng.binomial(1, m[0][1, w], size=T)
-            outcome_L_H = rng.binomial(1, m[0][2, w], size=T)
+            outcome_L_L = rng.binomial(1, m[0][0, w], size=(T, C.trials))
+            outcome_L_M = rng.binomial(1, m[0][1, w], size=(T, C.trials))
+            outcome_L_H = rng.binomial(1, m[0][2, w], size=(T, C.trials))
 
             outcomes_L = np.stack((outcome_L_L, outcome_L_M, outcome_L_H))
 
@@ -511,7 +537,9 @@ class VerbalFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        score = player.verbal_other
+        participant = player.participant
+        score = participant.verbal_other
+        player.verbal_other = score
         session = player.session
         e = player.effort
         if score < C.T1:
@@ -522,7 +550,7 @@ class VerbalFeedback(Page):
             t = 2
 
         round = player.round_number - 1 - C.N*player.participant.task_rounds['Verbal']
-        signal_realiz = session.outcomes_verbal[type][e, round]
+        signal_realiz = session.outcomes_verbal[t][e, round]
         player.signal = int(sum(signal_realiz))
         player.fails = C.trials - player.signal
         return dict(signal=player.signal,
@@ -566,7 +594,7 @@ class Math(Page):
 
     @staticmethod
     def vars_for_template(player):
-        player.topic = 'Verbal'
+        player.topic = 'Math'
         participant = player.participant
         succes_L = 0
         succes_M = 0
@@ -593,7 +621,7 @@ class Math(Page):
             previous_rounds = 0
 
         session = player.session
-        w = session.w_verbal
+        w = session.w_math
 
         return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
@@ -619,10 +647,12 @@ class MathFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        score = player.math_other
+
         e = player.effort
         session = player.session
         participant = player.participant
+        score = participant.math_other
+        player.math_other = score
 
         if score < C.T1:
             t = 0
@@ -632,7 +662,7 @@ class MathFeedback(Page):
             t = 2
 
         round = player.round_number - 1 - C.N*participant.task_rounds['Math']
-        signal_realiz = session.outcomes_math[type][e, round]
+        signal_realiz = session.outcomes_math[t][e, round]
         player.signal = int(sum(signal_realiz))
         player.fails = C.trials - player.signal
         return dict(signal=player.signal,
@@ -676,7 +706,7 @@ class Pop(Page):
 
     @staticmethod
     def vars_for_template(player):
-        player.topic = 'Verbal'
+        player.topic = 'Pop-Culture and Art'
         participant = player.participant
         succes_L = 0
         succes_M = 0
@@ -703,7 +733,7 @@ class Pop(Page):
             previous_rounds = 0
 
         session = player.session
-        w = session.w_verbal
+        w = session.w_pop
 
         return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
@@ -729,9 +759,11 @@ class PopFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        score = player.pop_other
+
         session = player.session
         participant = player.participant
+        score = participant.pop_other
+        player.pop_other = score
         e = player.effort
         if score < C.T1:
             t = 0
@@ -741,7 +773,7 @@ class PopFeedback(Page):
             t = 2
 
         round = player.round_number - 1 - C.N*participant.task_rounds['Pop-Culture and Art']
-        signal_realiz = session.outcomes_pop[type][e, round]
+        signal_realiz = session.outcomes_pop[t][e, round]
         player.signal = int(sum(signal_realiz))
         player.fails = C.trials - player.signal
         return dict(signal=player.signal,
@@ -785,7 +817,7 @@ class Science(Page):
 
     @staticmethod
     def vars_for_template(player):
-        player.topic = 'Verbal'
+        player.topic = 'Science and Technology'
         participant = player.participant
         succes_L = 0
         succes_M = 0
@@ -812,7 +844,7 @@ class Science(Page):
             previous_rounds = 0
 
         session = player.session
-        w = session.w_verbal
+        w = session.w_science
 
         return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
@@ -838,7 +870,9 @@ class ScienceFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        score = player.science_other
+        participant = player.participant
+        score = participant.science_other
+        player.science_other = score
         session = player.session
         e = player.effort
         if score < C.T1:
@@ -849,7 +883,7 @@ class ScienceFeedback(Page):
             t = 2
 
         round = player.round_number - 1 - C.N*participant.task_rounds['Science and Technology']
-        signal_realiz = session.outcomes_science[type][e, round]
+        signal_realiz = session.outcomes_science[t][e, round]
         player.signal = int(sum(signal_realiz))
         player.fails = C.trials - player.signal
         return dict(signal=player.signal,
@@ -893,7 +927,7 @@ class Sports(Page):
 
     @staticmethod
     def vars_for_template(player):
-        player.topic = 'Verbal'
+        player.topic = 'Sports and Video Games'
         participant = player.participant
         succes_L = 0
         succes_M = 0
@@ -920,7 +954,7 @@ class Sports(Page):
             previous_rounds = 0
 
         session = player.session
-        w = session.w_verbal
+        w = session.w_sports
 
         return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
@@ -946,7 +980,9 @@ class SportsFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        score = player.sports_other
+        participant = player.participant
+        score = participant.sports_other
+        player.sports_other = score
         session = player.session
 
         e = player.effort
@@ -958,7 +994,7 @@ class SportsFeedback(Page):
             t = 2
 
         round = player.round_number - 1 - C.N*participant.task_rounds['Sports and Video Games']
-        signal_realiz = session.outcomes_sports[type][e, round]
+        signal_realiz = session.outcomes_sports[t][e, round]
         player.signal = int(sum(signal_realiz))
         player.fails = C.trials - player.signal
         return dict(signal=player.signal,
@@ -1002,7 +1038,7 @@ class Us(Page):
 
     @staticmethod
     def vars_for_template(player):
-        player.topic = 'Verbal'
+        player.topic = 'US Geography'
         participant = player.participant
         succes_L = 0
         succes_M = 0
@@ -1029,7 +1065,7 @@ class Us(Page):
             previous_rounds = 0
 
         session = player.session
-        w = session.w_verbal
+        w = session.w_us
 
         return dict(rounds=previous_rounds, sH=succes_H, sM=succes_M, sL=succes_L, fH=fail_H, fM=fail_M, fL=fail_L, w=w)
 
@@ -1055,9 +1091,11 @@ class UsFeedback(Page):
 
     @staticmethod
     def vars_for_template(player):
-        score = player.us_other
+
         session = player.session
         participant = player.participant
+        score = participant.us_other
+        player.us_other = score
         e = player.effort
         if score < C.T1:
             t = 0
@@ -1067,7 +1105,7 @@ class UsFeedback(Page):
             t = 2
 
         round = player.round_number - 1 - C.N*participant.task_rounds['US Geography']
-        signal_realiz = session.outcomes_us[type][e, round]
+        signal_realiz = session.outcomes_us[t][e, round]
         player.signal = int(sum(signal_realiz))
         player.fails = C.trials - player.signal
         return dict(signal=player.signal,
@@ -1085,19 +1123,21 @@ class UsFeedback(Page):
                     s10=signal_realiz[9], )
 
 
-class Results(Page):
+class Load(Page):
+    timeout_seconds = 2
+
     @staticmethod
     def is_displayed(player: Player):
         return player.round_number == C.NUM_ROUNDS
 
     @staticmethod
-    def vars_for_template(player):
+    def before_next_page(player, timeout_happened):
         participant = player.participant
         random_round = random.randint(1, len(C.TASKS))
-        task = C.TASKS[random_round-1]
+        task = C.TASKS[random_round - 1]
 
-        in_task_rounds = player.in_rounds((participant.task_rounds[task] - 1) * C.N,  (
-                   participant.task_rounds[task]) * C.N)
+        in_task_rounds = player.in_rounds((random_round - 1) * C.N, (
+            random_round) * C.N)
 
         score = 0
         for p in in_task_rounds:
@@ -1105,11 +1145,8 @@ class Results(Page):
 
         player.payoff = score
 
-        return dict(part1_topic=participant.part1_topic,
-                    part1_score=participant.part1_score,
-                    part2_topic=task,
-                    part2_score=score,
-                    total=(score+participant.part1_score))
+        participant.part2_topic = task
+        participant.part2_score = score
 
 
 class ResultsWaitPage(WaitPage):
@@ -1122,4 +1159,4 @@ page_sequence = [Performance, MyWaitPage, Instructions,
                  PopStart, Pop, PopFeedback,
                  ScienceStart, Science, ScienceFeedback,
                  SportsStart, Sports, SportsFeedback,
-                 UsStart, Us, UsFeedback, Results]
+                 UsStart, Us, UsFeedback, Load]

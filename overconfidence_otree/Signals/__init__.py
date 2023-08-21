@@ -13,7 +13,7 @@ class C(BaseConstants):
     PLAYERS_PER_GROUP = None
     TASKS = ['Math', 'Verbal', 'Science and Technology', 'Sports and Video Games', 'US Geography', 'Pop-Culture and Art']
     # number of effort/signal realizations per quizz
-    N = 15
+    N = 10
     # total number of rounds
     NUM_ROUNDS = len(TASKS)*N
     # the matrices for the DGP
@@ -21,7 +21,7 @@ class C(BaseConstants):
     mm = np.array([[.40, .45, .65], [.30, .65, .69], [.05, .50, .80]])
     mh = np.array([[.45, .55, .75], [.35, .69, .80], [.25, .65, .98]])
     M = [ml, mm, mh]
-    SEED = 3821
+    SEED = 388
     trials = 10
     # first value of bucket 2
     T1 = 6
@@ -66,17 +66,17 @@ class Player(BasePlayer):
                                         widget=widgets.RadioSelectHorizontal)
 
     math_certainty = models.IntegerField(min=0, max=100,
-                                         label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                         label='From 0 to 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
     verbal_certainty = models.IntegerField(min=0, max=100,
-                                           label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                           label='From 0 to 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
     pop_certainty = models.IntegerField(min=0, max=100,
-                                        label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                        label='From 0 to 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
     science_certainty = models.IntegerField(min=0, max=100,
-                                            label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                            label='From 0 to 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
     us_certainty = models.IntegerField(min=0, max=100,
-                                       label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                       label='From 0 to 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
     sports_certainty = models.IntegerField(min=0, max=100,
-                                           label='Between 0 and 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
+                                           label='From 0 to 100 how sure are you of your answer? (100 you are completely sure and 0 means your answer was a random guess)')
 
     effort = models.IntegerField(label='Choose a gamble',
                                  choices=[[0, 'A'], [1, 'B'], [2, 'C']],
@@ -90,6 +90,13 @@ class Player(BasePlayer):
     high_button = models.IntegerField(initial=0)
     
     last_button = models.IntegerField()
+
+    math_score = models.IntegerField()
+    verbal_score = models.IntegerField()
+    science_score = models.IntegerField()
+    pop_score = models.IntegerField()
+    us_score = models.IntegerField()
+    sports_score = models.IntegerField()
     
 
 # FUNCTIONS
@@ -127,8 +134,9 @@ class Performance(Page):
         session.w_math = random.randint(0, 2)
         session.w_science = random.randint(0, 2)
         session.w_sports = random.randint(0, 2)
-        session.w_pop = random.randint(0, 2)
         session.w_us = random.randint(0, 2)
+        session.w_pop = random.randint(0, 2)
+
 
         if player.round_number == 1:
             session = player.session
@@ -171,6 +179,9 @@ class Performance(Page):
             m = C.M
 
             T = C.N
+
+            # true high types
+            rng = np.random.default_rng(seed=C.SEED)
 
             # outcomes after choosing L
             outcome_H_L = rng.binomial(1, m[2][0, w], size=(T, C.trials))
@@ -430,6 +441,7 @@ class VerbalFeedback(Page):
     def vars_for_template(player):
         participant = player.participant
         score = player.participant.verbal_score
+        player.verbal_score = score
         session = player.session
         e = player.effort
         if score < C.T1:
@@ -539,6 +551,7 @@ class MathFeedback(Page):
     def vars_for_template(player):
         participant = player.participant
         score = player.participant.math_score
+        player.math_score = score
         e = player.effort
         session = player.session
 
@@ -648,6 +661,7 @@ class PopFeedback(Page):
     def vars_for_template(player):
         participant = player.participant
         score = participant.pop_score
+        player.pop_score = score
         session = player.session
         e = player.effort
         if score < C.T1:
@@ -758,6 +772,7 @@ class ScienceFeedback(Page):
         participant = player.participant
         session = player.session
         score = player.participant.science_score
+        player.science_score = score
         e = player.effort
         if score < C.T1:
             type = 0
@@ -867,6 +882,7 @@ class SportsFeedback(Page):
         participant = player.participant
         session = player.session
         score = player.participant.sports_score
+        player.sports_score = score
         e = player.effort
         if score < C.T1:
             type = 0
@@ -977,6 +993,7 @@ class UsFeedback(Page):
         participant = player.participant
         session = player.session
         score = player.participant.us_score
+        player.us_score = score
         e = player.effort
         if score < C.T1:
             type = 0
@@ -1004,19 +1021,21 @@ class UsFeedback(Page):
                     s10=signal_realiz[9],)
 
 
-class Results(Page):
-    @staticmethod
+class Load(Page):
+    timeout_seconds = 2
+
+    @ staticmethod
     def is_displayed(player: Player):
         return player.round_number == C.NUM_ROUNDS
 
     @staticmethod
-    def vars_for_template(player):
+    def before_next_page(player, timeout_happened):
         participant = player.participant
         random_round = random.randint(1, len(C.TASKS))
-        task = C.TASKS[random_round-1]
+        task = C.TASKS[random_round - 1]
 
-        in_task_rounds = player.in_rounds((random_round-1) * C.N,  (
-                   random_round) * C.N)
+        in_task_rounds = player.in_rounds((random_round - 1) * C.N, (
+            random_round) * C.N)
 
         score = 0
         for p in in_task_rounds:
@@ -1024,11 +1043,8 @@ class Results(Page):
 
         player.payoff = score
 
-        return dict( part1_topic=participant.part1_topic,
-                     part1_score=participant.part1_score,
-                     part2_topic=task,
-                     part2_score=score,
-                     total=(score+participant.part1_score))
+        participant.part2_topic = task
+        participant.part2_score = score
 
 
 class ResultsWaitPage(WaitPage):
@@ -1041,4 +1057,4 @@ page_sequence = [Performance, MyWaitPage, Instructions,
                  PopStart, Pop, PopFeedback,
                  ScienceStart, Science, ScienceFeedback,
                  SportsStart, Sports, SportsFeedback,
-                 UsStart, Us, UsFeedback, Results]
+                 UsStart, Us, UsFeedback, Load]

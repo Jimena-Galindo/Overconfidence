@@ -1,0 +1,17 @@
+,index,participant.code,participant.verbal_score,participant.math_score,participant.us_score,participant.science_score,participant.pop_score,participant.sports_score,participant.gender,participant.major,participant.nationality
+0,0,o212fxea,6.0,10.0,11.0,14.0,18.0,10.0,Female,Economics,Mexican
+1,1,ijvbr5s9,11.0,11.0,13.0,15.0,7.0,14.0,Male,Anthropology,mexican
+2,2,3r0v7xjz,8.0,12.0,11.0,13.0,17.0,9.0,Female,Chemistry,American
+3,3,u3ikcihg,2.0,1.0,2.0,2.0,3.0,2.0,Male,Anthropology,ss
+4,4,vqw6kifp,2.0,1.0,3.0,4.0,1.0,2.0,Male,Art,fds
+5,5,a9kwmasn,1.0,0.0,1.0,2.0,4.0,4.0,Male,Art,dsa
+6,6,gtsnvd9i,0.0,0.0,0.0,0.0,0.0,0.0,Male,Anthropology,sa
+7,7,st5u748s,0.0,0.0,0.0,0.0,0.0,0.0,Female,Art,dsfds
+8,8,zkscrmzh,1.0,1.0,1.0,2.0,3.0,2.0,Male,Biomolecular Science,mexican
+9,9,5ll1k2k0,3.0,0.0,2.0,2.0,1.0,2.0,Female,Religious Studies,Russian
+10,10,amaa8f2f,2.0,2.0,2.0,2.0,3.0,3.0,Male,Mathematics,Russian
+11,11,lnewzum5,0.0,3.0,2.0,1.0,0.0,4.0,Female,Psychology,Mexican
+12,12,pq3cpo3j,4.0,2.0,3.0,4.0,1.0,1.0,Male,Mathematics,Russian
+13,13,455vrslm,2.0,3.0,3.0,4.0,4.0,3.0,Female,Sociology,Mexican
+14,14,ggzrbnmx,2.0,1.0,1.0,3.0,2.0,2.0,Male,Public Policy,Russian
+15,15,0rly4r6a,2.0,0.0,1.0,2.0,1.0,2.0,Female,Art History,mexican

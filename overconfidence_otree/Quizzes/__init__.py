@@ -52,7 +52,7 @@ class C(BaseConstants):
     NAME_IN_URL = 'Quizzes'
     PLAYERS_PER_GROUP = None
     # time limit for each quiz in seconds. the form submits when time runs out
-    TIME = 5
+    TIME = 120
     # List of the quizz titles
     TASKS = ['Math', 'Verbal', 'Science and Technology', 'Sports and Video Games', 'US Geography', 'Pop-Culture and Art']
     NUM_ROUNDS = len(TASKS)

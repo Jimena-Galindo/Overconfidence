@@ -4,104 +4,86 @@
 
 {{ block content }}
 
-<p> You have been paired with another participant. Please provide your best guess of how they scored in each quiz.
-    If the quiz is selected for payment, and you guessed the correct score for yourself, you will earn 1 point.
-    If you guessed the correct score for the other participant, you will earn 1 point. </p>
-<div style="width: 100%;">
-        <div style="width: 50%; float: left; border-color: gray; border-right-width: 2px; border-right-style: dashed; ">
+<style>
+    .otree-body{
+        padding: 0px;
+    }
+</style>
 
-            <h5> You: </h5>
+<p> Below you are asked to make some guesses about your scores and the scores of a participant form a previous
+session. Your answers will not affect your payment directly, but accurate answers might help you achieve a higher payment in the
+    next part of the experiment.</p>
 
-            <table style="margin-left: 30px; margin-bottom: 10px;">
+            <table class="table">
                 <tr>
-                    <th style="padding-right: 3px">Gender:</th><td> {{ gender_self }}</td>
+                    <td><h3> You: </h3></td><td> <h3> Other Participant: </h3> </td>
                 </tr>
                 <tr>
-                    <th style="padding-right: 3px">Nationality: </th><td>{{ nationality_self}}</td>
+                    <td></td><td><b> Gender:</b> {{gender}}</td>
                 </tr>
                 <tr>
-                    <th style="padding-right: 3px">Major:</th><td> {{ major_self }}</td>
+                    <td></td><td><b> Nationality:</b> {{nationality}}</td>
                 </tr>
-            </table>
-            <h6> How many questions do you think you answered correctly:
-            </h6>
 
-                <h5> Math </h5>
+
+                <tr>
+                    <td>How many questions do you think you answered correctly?</td>
+                    <td> How many questions do you think the other participant answered correctly?</td>
+                </tr>
+
+                <tr>
+                    <td><h5> Math </h5>
                     {{ formfield 'math_belief_self' }}
-                    {{ formfield 'math_certainty_self'}}
-
-            <h5> Verbal Reasoning </h5>
+                    {{ formfield 'math_certainty_self'}}</td>
+                    <td><h5> Math </h5>
+                    {{ formfield 'math_belief_other' }}
+                    {{ formfield 'math_certainty_other'}}</td>
+                </tr>
+                <tr><td><h5> Verbal Reasoning </h5>
                     {{ formfield 'verbal_belief_self'}}
-                    {{ formfield 'verbal_certainty_self'}}
-
-            <h5> US Geography </h5>
+                    {{ formfield 'verbal_certainty_self'}}</td>
+                    <td><h5> Verbal Reasoning </h5>
+                    {{ formfield 'verbal_belief_other'}}
+                    {{ formfield 'verbal_certainty_other'}}</td>
+                </tr>
+                <tr>
+                    <td> <h5> US Geography </h5>
                     {{ formfield 'us_belief_self'}}
-                    {{ formfield 'us_certainty_self'}}
+                    {{ formfield 'us_certainty_self'}}</td>
+                    <td> <h5> US Geography </h5>
+                    {{ formfield 'us_belief_other'}}
+                    {{ formfield 'us_certainty_other'}}</td>
 
-            <h5> Science and Technology </h5>
+                </tr>
+                <tr>
+                    <td><h5> Science and Technology </h5>
                     {{ formfield 'science_belief_self'}}
-                    {{ formfield 'science_certainty_self'}}
-
-            <h5> Sports and Video-games </h5>
+                    {{ formfield 'science_certainty_self'}}</td>
+                    <td><h5> Science and Technology </h5>
+                    {{ formfield 'science_belief_other'}}
+                    {{ formfield 'science_certainty_other'}}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5> Sports and Video-games </h5>
                     {{ formfield 'sports_belief_self'}}
                     {{ formfield 'sports_certainty_self'}}
-
-            <h5> Pop Culture </h5>
-                    {{ formfield 'pop_belief_self'}}
-                    {{ formfield 'pop_certainty_self'}}
-
-        </div>
-
-        <div style="width: 50%; float: right; padding-left: 25px;">
-
-            <h5> Other Participant: </h5>
-
-            <table style="margin-left: 30px; margin-bottom: 10px;">
-                <tr>
-                    <th>Gender:</th><td> {{ gender }}</td>
-                </tr>
-                <tr>
-                    <th>Nationality: </th><td>{{ nationality}}</td>
-                </tr>
-                <tr>
-                    <th>Major:</th><td> {{ major }}</td>
-                </tr>
-            </table>
-            <h6> Guess the scores of the other participant: </h6>
-
-                <h5> Math </h5>
-                    {{ formfield 'math_belief_other' }}
-                    {{ formfield 'math_certainty_other'}}
-
-                <h5> Verbal Reasoning </h5>
-                    {{ formfield 'verbal_belief_other'}}
-                    {{ formfield 'verbal_certainty_other'}}
-
-                <h5> US Geography </h5>
-                    {{ formfield 'us_belief_other'}}
-                    {{ formfield 'us_certainty_other'}}
-
-                <h5> Science and Technology </h5>
-                    {{ formfield 'science_belief_other'}}
-                    {{ formfield 'science_certainty_other'}}
-
-                <h5> Sports and Video-games </h5>
+                    </td>
+                    <td><h5> Sports and Video-games </h5>
                     {{ formfield 'sports_belief_other'}}
-                    {{ formfield 'sports_certainty_other'}}
-
-                <h5> Pop Culture </h5>
+                    {{ formfield 'sports_certainty_other'}}</td>
+                </tr>
+                <tr>
+                    <td><h5> Pop Culture </h5>
+                    {{ formfield 'pop_belief_self'}}
+                    {{ formfield 'pop_certainty_self'}}</td>
+                    <td><h5> Pop Culture </h5>
                     {{ formfield 'pop_belief_other'}}
-                    {{ formfield 'pop_certainty_other'}}
+                    {{ formfield 'pop_certainty_other'}}</td>
+                </tr>
 
-            <div style="float: right">{{next_button}}</div>
+            </table>
 
-        </div>
+<div style="float: right">{{next_button}}</div>
 
-
-
-
-
-
-
-</div>
 {{endblock}}

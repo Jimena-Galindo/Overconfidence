@@ -1,0 +1,119 @@
+---
+title: "Learning from Data Through Models"
+date: '`r format(Sys.time(), "%B %d, %Y")`'
+author: "Alberto Bisin, Guillaume Frechette and Jimena Galindo"
+abstract: "TBW"
+#classoption: pagebackref # passes pagebackref=true to hyperref before it is loaded, allowing backreferencing
+output: 
+    pdf_document:
+        citation_package: natbib
+        fig_width: 7
+        fig_height: 6
+        fig_caption: true
+        number_sections: true
+        
+        template: NULL
+        keep_tex: true
+        extra_dependencies:
+            footmisc: ["bottom"] # footnote management
+            setspace: ["doublespacing"] # spacing of the paper
+            caption: ["normal"]
+            dsfont: null # indicator function 1
+            booktabs: null
+            makecell: null
+            hyperref: null
+        includes:
+          in_header: extra_header.tex
+
+bibliography: bibliography.bib
+fontsize: 12pt
+geometry: margin=2.5cm
+---
+
+```{r dependencies, include=FALSE}
+source("../parameters_and_packages.R")
+```
+
+# Introduction
+
+
+# Literature Review
+
+
+# Framework
+An agent is of type $\theta \in \{\theta_L, \theta_M, \theta_H\}$  with $\theta_H > \theta_M > \theta_L$ and they face an unknown 
+exogenous state
+$\omega \in \{\omega_L, \omega_M, \omega_H\}$ with $\omega_H>\omega_M>\omega_L$. 
+Each of the values of $\omega$ is realized with equal probability. The agent knows the distribution of $\omega$ but not its value. 
+They also hold some prior belief about $\theta$ which is potentially misspecified.\footnote{The particular types of misspecification
+that are allowed are discussed below.}
+The agent chooses a binary gamble $e in \{e_L, e_M, e_H\}$ and and observes whether the gamble is a success or a failure. '
+If it is a success,
+the agent gets a payoff of $1$ and if it is a failure, the agent gets a payoff of $0$. The probability of success is increasing in
+both $\theta$ and $\omega$ and is fully described in the following table:
+
+\begin{tabular}{ c|c|c|c|}
+  
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{$\omega_M$} & \multicolumn{1}{c}{$\omega_L$}\\
+  \cline{2-4}
+  $e_H$ & 50 & 20 & 2 \\
+  \cline{2-4}
+  $e_M$ & 45 & 30 & 7 \\
+  \cline{2-4}
+  $e_L$ & 40 & 25 & 20 \\
+  \cline{2-4}
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_L$} & \multicolumn{1}{c}{}\\
+\end{tabular}
+\hspace{.3cm} % adjust this value to set the space between tables
+\begin{tabular}{ c|c|c|c|}
+  
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{$\omega_M$} & \multicolumn{1}{c}{$\omega_L$}\\
+  \cline{2-4}
+  $e_H$ & 80 & 50 & 5 \\
+  \cline{2-4}
+  $e_M$ & 69 & 65 & 30 \\
+  \cline{2-4}
+  $e_L$ & 65 & 45 & 40 \\
+  \cline{2-4}
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_M$} & \multicolumn{1}{c}{}\\
+\end{tabular}
+\hspace{.3cm} % adjust this value to set the space between tables
+\begin{tabular}{ c|c|c|c|}
+  
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{$\omega_M$} & \multicolumn{1}{c}{$\omega_L$}\\
+  \cline{2-4}
+  $e_H$ & 98 & 65 & 25 \\
+  \cline{2-4}
+  $e_M$ & 80 & 69 & 35 \\
+  \cline{2-4}
+  $e_L$ & 75 & 55 & 45 \\
+  \cline{2-4}
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_H$} & \multicolumn{1}{c}{}\\
+\end{tabular}
+
+Conditional on a type, the agent's flow payoff is maximized by choosing the gamble that 
+matches the state. For example, if the value of $\omega$ is $\omega_H$, the agent's flow payoff is maximized by 
+choosing $e_H$ and if the state is $\omega_L$ the flow payoff is maximized by choosing gamble $e_L$. The agent myopically chooses
+gambles every period to maximize the flow payoff for $T<\infty$ periods, and the agent's payoff is the sum of the payoffs from 
+each period. 
+
+After observing the aoutcome of each gamble, the agent updates their beliefs of both theta and omega in one of 4 differente ways: 
+As a \emph{dogmatic} as in \cite ; as a \emph{switcher} as in \cite ; as a \emph{self-attribution} updater as in \cite ; 
+or as a fully Bayesian agent. Each of these updating rules is described in detail in what follows.
+
+## A Biased Agent
+An agent that updates their beliefs with self-attribution bias will update their beliefs about the state $\omega$ and their type $\theta$
+by over-attributing successes to a high value of $\theta$ and under-estimating the role of higher $\omega$. Similarly, after a 
+failure, they will attribute it to a low state more than an unbiased agent would. The exact updating rule is as follows:
+\begin{equation}
+
+\end{equation}
+
+
+# Experimental Design
+
+
+# Analysis
+
+
+# Conclusion

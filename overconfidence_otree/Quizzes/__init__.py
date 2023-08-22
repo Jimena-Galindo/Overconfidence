@@ -196,19 +196,6 @@ class Player(BasePlayer):
 
     score = models.IntegerField(initial=0)
 
-    math_belief=models.IntegerField(min=0, max=20,
-                                    label='How many questions do you think you answered correctly in the Math Quiz')
-    verbal_belief = models.IntegerField(min=0, max=20,
-                                      label='How many questions do you think you answered correctly in the Verbal Quiz')
-    pop_belief = models.IntegerField(min=0, max=20,
-                                        label='How many questions do you think you answered correctly in the Pop Culture and Art Quiz')
-    science_belief = models.IntegerField(min=0, max=20,
-                                        label='How many questions do you think you answered correctly in the Science and Technology Quiz')
-    us_belief = models.IntegerField(min=0, max=20,
-                                        label='How many questions do you think you answered correctly in the US Geography Quiz')
-    sports_belief = models.IntegerField(min=0, max=20,
-                                        label='How many questions do you think you answered correctly in the Sports and Videogames Quiz')
-
 
 # FUNCTIONS
 def creating_session(subsession: Subsession):

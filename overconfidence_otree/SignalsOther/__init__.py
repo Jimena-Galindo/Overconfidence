@@ -71,18 +71,36 @@ class Player(BasePlayer):
                                                  [2, str(C.T2) + ' or more']],
                                         widget=widgets.RadioSelectHorizontal)
 
-    math_certainty_self = models.IntegerField(min=0, max=100,
-                                         label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
-    verbal_certainty_self = models.IntegerField(min=0, max=100,
-                                           label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
-    pop_certainty_self = models.IntegerField(min=0, max=100,
-                                        label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
-    science_certainty_self = models.IntegerField(min=0, max=100,
-                                            label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
-    us_certainty_self = models.IntegerField(min=0, max=100,
-                                       label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
-    sports_certainty_self = models.IntegerField(min=0, max=100,
-                                           label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
+    math_certainty_self = models.IntegerField(label='How sure are you of your answer?',
+                                              choices=[[33, 'It is a random guess'],
+                                                       [50, 'There is another choice that is equally likely'],
+                                                       [75, 'Somewhat sure'],
+                                                       [100, 'Completely sure']])
+    verbal_certainty_self = models.IntegerField(label='How sure are you of your answer?',
+                                              choices=[[33, 'It is a random guess'],
+                                                       [50, 'There is another choice that is equally likely'],
+                                                       [75, 'Somewhat sure'],
+                                                       [100, 'Completely sure']])
+    pop_certainty_self = models.IntegerField(label='how sure are you of your answer?',
+                                              choices=[[33, 'It is a random guess'],
+                                                       [50, 'There is another choice that is equally likely'],
+                                                       [75, 'Somewhat sure'],
+                                                       [100, 'Completely sure']])
+    science_certainty_self = models.IntegerField(label='how sure are you of your answer?',
+                                              choices=[[33, 'It is a random guess'],
+                                                       [50, 'There is another choice that is equally likely'],
+                                                       [75, 'Somewhat sure'],
+                                                       [100, 'Completely sure']])
+    us_certainty_self = models.IntegerField(label='how sure are you of your answer?',
+                                              choices=[[33, 'It is a random guess'],
+                                                       [50, 'There is another choice that is equally likely'],
+                                                       [75, 'Somewhat sure'],
+                                                       [100, 'Completely sure']])
+    sports_certainty_self = models.IntegerField(label='how sure are you of your answer?',
+                                              choices=[[33, 'It is a random guess'],
+                                                       [50, 'There is another choice that is equally likely'],
+                                                       [75, 'Somewhat sure'],
+                                                       [100, 'Completely sure']])
 
     math_belief_other = models.IntegerField(label='',
                                            choices=[[0, 'Between 0 and ' + str(C.T1 - 1)],

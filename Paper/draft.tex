@@ -1,0 +1,217 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  12pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Learning from Data Through Models},
+  pdfauthor={Jimena Galindo},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=2.5cm]{geometry}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+
+\setlength{\parindent}{25pt}
+\setlength{\parskip}{0pt}
+\setlength{\skip\footins}{0.25cm} % margin before footnotes
+\definecolor{myblue}{RGB}{31, 61, 122}
+\definecolor{mypink}{RGB}{204, 0, 82}
+\newtheorem{assumption}{Assumption}
+\newtheorem{proposition}{Proposition} % Use the 'proposition' counter for numbering
+
+\newcommand{\EE}[1]{\mathbb{E}\left[#1\right]}
+\newcommand{\PP}[1]{\mathbb{P}\left(#1\right)}
+\newcommand{\CP}[2]{\mathbb{P}\left(#1 \,| \, #2 \right)}
+\newcommand{\CE}[2]{\mathbb{E}\left[#1\,|\,#2 \right]}
+\usepackage[bottom]{footmisc}
+\usepackage[doublespacing]{setspace}
+\usepackage[normal]{caption}
+\usepackage{dsfont}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{hyperref}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+
+\title{Learning from Data Through Models}
+\author{Jimena Galindo}
+\date{August 28, 2023}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+TBW
+\end{abstract}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\hypertarget{framework}{%
+\section{Framework}\label{framework}}
+
+An agent is of type \(\theta \in \{\theta_L, \theta_M, \theta_H\}\) with
+\(\theta_H > \theta_M > \theta_L\) and they face an unknown exogenous
+state \(\omega \in \{\omega_L, \omega_M, \omega_H\}\) with
+\(\omega_H>\omega_M>\omega_L\). Each of the values of \(\omega\) is
+realized with equal probability. The agent knows the distribution of
+\(\omega\) but not its value. They also hold some prior belief about
+\(\theta\) which is potentially
+misspecified.\footnote{The particular types of misspecification
+that are allowed are discussed below.} The agent chooses a binary gamble
+\(e in \{e_L, e_M, e_H\}\) and and observes whether the gamble is a
+success or a failure. ' If it is a success, the agent gets a payoff of
+\(1\) and if it is a failure, the agent gets a payoff of \(0\). The
+probability of success is increasing in both \(\theta\) and \(\omega\)
+and is fully described in the following table:
+
+\begin{tabular}{ c|c|c|c|}
+  
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{$\omega_M$} & \multicolumn{1}{c}{$\omega_L$}\\
+  \cline{2-4}
+  $e_H$ & 50 & 20 & 2 \\
+  \cline{2-4}
+  $e_M$ & 45 & 30 & 7 \\
+  \cline{2-4}
+  $e_L$ & 40 & 25 & 20 \\
+  \cline{2-4}
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_L$} & \multicolumn{1}{c}{}\\
+\end{tabular}
+\hspace{.3cm}
+
+\% adjust this value to set the space between tables
+
+\begin{tabular}{ c|c|c|c|}
+  
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{$\omega_M$} & \multicolumn{1}{c}{$\omega_L$}\\
+  \cline{2-4}
+  $e_H$ & 80 & 50 & 5 \\
+  \cline{2-4}
+  $e_M$ & 69 & 65 & 30 \\
+  \cline{2-4}
+  $e_L$ & 65 & 45 & 40 \\
+  \cline{2-4}
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_M$} & \multicolumn{1}{c}{}\\
+\end{tabular}
+\hspace{.3cm}
+
+\% adjust this value to set the space between tables
+
+\begin{tabular}{ c|c|c|c|}
+  
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{$\omega_M$} & \multicolumn{1}{c}{$\omega_L$}\\
+  \cline{2-4}
+  $e_H$ & 98 & 65 & 25 \\
+  \cline{2-4}
+  $e_M$ & 80 & 69 & 35 \\
+  \cline{2-4}
+  $e_L$ & 75 & 55 & 45 \\
+  \cline{2-4}
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_H$} & \multicolumn{1}{c}{}\\
+\end{tabular}
+
+Conditional on a type, the agent's flow payoff is maximized by choosing
+the gamble that matches the state. For example, if the value of
+\(\omega\) is \(\omega_H\), the agent's flow payoff is maximized by
+choosing \(e_H\) and if the state is \(\omega_L\) the flow payoff is
+maximized by choosing gamble \(e_L\). The agent myopically chooses
+gambles every period to maximize the flow payoff for \(T<\infty\)
+periods, and the agent's payoff is the sum of the payoffs from each
+period.
+
+After observing the outcome of each gamble, the agent updates their
+beliefs of both theta and omega in one of 4 differente ways: As a
+\emph{dogmatic} as in \citet{Heidhues2018} ; as a \emph{switcher} as in
+\citet{Ba2023} ; as a \emph{self-attribution} updater as in
+\citet{Coutts2020}; or as a fully Bayesian agent. Each of these updating
+rules is described in detail below.
+
+Notice that both \theta and \omega can be identified from the outcomes.
+However, under the assumption that the agent is myopic, the choices
+might not gererate sufficient variation in effort to identify both. Such
+cases arise when the agent is either overconfident or underconfident
+about their type and the combination of their choices with the exogenous
+state are such that the data observed is consistent with the erroneous
+beliefs. Each of the updating mecahnisms above will make different
+predicitons about the cases in which the agent is able to learn their
+true type and when the misspecification persists.
+
+\hypertarget{the-bayesian-benchmark}{%
+\subsection{The Bayesian Benchmark}\label{the-bayesian-benchmark}}
+
+A fully rational agent updates their beliefs about \(\theta\) and
+\(\omega\) simultaneously by using Bayes' rule. The agent's posterior
+beliefs about \(\theta\) and \(\omega\) after observing a success are
+given by: \begin{equation}
+p[\theta_j|\text{success}] = \frac{p[\text{success}|\theta_j]p[\theta_j]}{\sum_{k=1}^3 p[\text{success}|\theta_k]p[\theta_k]}
+\end{equation} and \begin{equation}
+p[\omega_i|\text{success}] = \frac{p[\text{success}|\omega_i]p[\omega_i]}{\sum_{k=1}^3 p[\text{success}|\omega_k]p[\omega_k]}
+\end{equation}
+
+where \(p[\text{success}|\theta_j]\) is the probability of success
+conditional on type \(\theta_j\) and \(p[\text{success}|\omega_i]\) is
+the probability of success conditional on state \(\omega_i\).
+
+Notice that since
+
+\hypertarget{a-biased-agent}{%
+\subsection{A Biased Agent}\label{a-biased-agent}}
+
+An agent that updates their beliefs with self-attribution bias will
+update their beliefs about the state \(\omega\) and their type
+\(\theta\) by over-attributing successes to a high value of \(\theta\)
+and under-estimating the role of higher \(\omega\). Similarly, after a
+failure, they will attribute it to a low state more than an unbiased
+agent would. The exact updating rule is as follows: \begin{equation}
+
+\end{equation}
+
+\hypertarget{experimental-design}{%
+\section{Experimental Design}\label{experimental-design}}
+
+\hypertarget{analysis}{%
+\section{Analysis}\label{analysis}}
+
+\renewcommand\refname{Conclusion}
+  \bibliography{references.bib}
+
+\end{document}

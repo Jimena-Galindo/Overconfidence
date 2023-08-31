@@ -13,7 +13,7 @@ class C(BaseConstants):
     PLAYERS_PER_GROUP = None
     TASKS = ['Math', 'Verbal', 'Science and Technology', 'Sports and Video Games', 'US Geography', 'Pop-Culture and Art']
     # number of effort/signal realizations per quizz
-    N = 10
+    N = 11
     # total number of rounds
     NUM_ROUNDS = len(TASKS)*N
     # the matrices for the DGP

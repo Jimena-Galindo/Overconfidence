@@ -15,7 +15,7 @@ class C(BaseConstants):
     TASKS = ['Math', 'Verbal',
              'Science and Technology', 'Sports and Video Games', 'US Geography', 'Pop-Culture and Art']
     # number of effort/signal realizations per quizz
-    N = 10
+    N = 11
     trials = 10
     # total number of rounds
     NUM_ROUNDS = len(TASKS)*N

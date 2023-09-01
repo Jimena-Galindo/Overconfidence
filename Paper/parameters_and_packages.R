@@ -10,7 +10,8 @@ library(car) # for linearHypothesis
 library(lmtest) # for coefTest
 library(sandwich) # for clustering errors
 
-invisible(capture.output(renv::snapshot())) # keep the packages synced with the lockfile
+# keep the packages synced with the lockfile
+invisible(capture.output(renv::snapshot()))
 
 # parameters
-params = list(date_of_exp = '2023-04-01')
+params <- list(date_of_exp = "2023-04-01")

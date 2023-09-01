@@ -1,5 +1,5 @@
 ---
-title: "Learning from Data Through Models"
+title: "Learning from Data Through Models"  # nolint: Grammarly.
 date: '`r format(Sys.time(), "%B %d, %Y")`'
 author: "Jimena Galindo"
 abstract: "TBW"
@@ -15,18 +15,18 @@ output:
         template: NULL
         keep_tex: true
         extra_dependencies:
-            footmisc: ["bottom"] # footnote management
-            setspace: ["doublespacing"] # spacing of the paper
-            caption: ["normal"]
+            footmisc: ["bottom"] # footnote management 
+            setspace: ["doublespacing"] # spacing of the paper 
+            caption: ["normal"] 
             dsfont: null # indicator function 1
-            booktabs: null
-            makecell: null
-            hyperref: null
+            booktabs: null 
+            makecell: null 
+            hyperref: null 
         includes:
           in_header: extra_header.tex
 
 bibliography: references.bib
-fontsize: 12pt
+fontsize: 12pt 
 geometry: margin=2.5cm
 ---
 
@@ -44,7 +44,7 @@ $\omega \in \{\omega_L, \omega_M, \omega_H\}$ with $\omega_H>\omega_M>\omega_L$.
 Each of the values of $\omega$ is realized with equal probability. The agent knows the distribution of $\omega$ but not its value. 
 They also hold some prior belief about $\theta$ which is potentially misspecified.\footnote{The particular types of misspecification
 that are allowed are discussed below.}
-The agent chooses a binary gamble $e in \{e_L, e_M, e_H\}$ and and observes whether the gamble is a success or a failure. '
+The agent chooses a binary gamble $e in \{e_L, e_M, e_H\}$ and observes whether the gamble is a success or a failure. '
 If it is a success,
 the agent gets a payoff of $1$ and if it is a failure, the agent gets a payoff of $0$. The probability of success is increasing in
 both $\theta$ and $\omega$ and is fully described in the following table:
@@ -94,15 +94,15 @@ choosing $e_H$ and if the state is $\omega_L$ the flow payoff is maximized by ch
 gambles every period to maximize the flow payoff for $T<\infty$ periods, and the agent's payoff is the sum of the payoffs from 
 each period. 
 
-After observing the outcome of each gamble, the agent updates their beliefs of both theta and omega in one of 4 differente ways: 
+After observing the outcome of each gamble, the agent updates their beliefs of both theta and omega in one of 4 different ways: 
 As a \emph{dogmatic} as in @Heidhues2018 ; as a \emph{switcher} as in @Ba2023 ; as a \emph{self-attribution} updater as in @Coutts2020; 
 or as a fully Bayesian agent. Each of these updating rules is described in detail below.
 
 Notice that both \theta and \omega can be identified from the outcomes.
-However, under the assumption that the agent is myopic, the choices might not gererate sufficient variation in effort to 
+However, under the assumption that the agent is myopic, the choices might not generate sufficient variation in effort to 
 identify both. Such cases arise when the agent is either overconfident or underconfident about their type and the combination
-of their choices with the exogenous state are such that the data observed is consistent with the erroneous beliefs. Each of 
-the updating mecahnisms above will make different predicitons about the cases in which the agent is able to learn their true 
+of their choices with the exogenous state is such that the data observed is consistent with the erroneous beliefs. Each of 
+the updating mechanisms above will make different predictions about the cases in which the agent can learn their true 
 type and when the misspecification persists. 
 
 ## The Bayesian Benchmark

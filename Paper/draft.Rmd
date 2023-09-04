@@ -40,11 +40,37 @@ source("../Paper/parameters_and_packages.R")
 # Related Literature
 
 
+
 # Framework
 
-REWRITE IN GENERAL TERMS WITH THE PROBABILITY BEING GIVEN BY A FUNCTION THAT SATIEFIES ALL THE PROPERTIES IN BA SO THAT I CAN 
-REFER TO HER RESULTS.
-THEN EXPAND ON THE EXAMPLE FOR THE LAB AND SAY WHY IT CAPTURES ALL THE FORCES WE WANT.
+
+An agent is of type $\theta \in \Theta$ and faces an unknown exogenous state $\omega$ drawn from some 
+density $f$ over $\Omega$. The agent knows the 
+distribution of $\omega$ but not its realized value. His prior belief about his type is $p_0(\theta)$ and his belief about the state
+state $p_0(\omega)$ coincides with the true distribution $f$. Let the agent's type be $\theta^*$ and the realized state be $\omega^*$.
+
+An agent has a \emph{misspecified} belief if the prior assigns probability zero to their true type. Furthermore, the agent is 
+\emph{dogmatic} if he holds a degenerate belief that places probability one on being a particular type, $\hat{\theta}$. A dogmatic 
+agent can be dogmatic and misspecified. That means that $\hat{\theta} \neq \theta^*$ and $p_0(\hat{\theta}) = 1$.
+
+The agent chooses an action $a\in A$ and observes an outcome $h\in H$. 
+The outcome is a function of the agent's type, the state, and
+the action. In particular $h(\theta^*, \omega^*, a)$ is increasing in both $\theta^*$ and $\omega^*$. And is such that Conditional
+on a pair of parameters $(\theta, \omega)$, there is a unique optimal action.
+
+## Example 
+
+Set $A = \Omega = $ and $H = [0, \infty)$ and consider a student with intrinsic ability $\theta^*\geq 0$ who faces a grading procedure $\omega^*$ that is unknown to them. However, 
+they know that a higher $\omega^*$ is more likely to yield a higher grade. In particular, assume the grade is given by 
+$(\theta^*+a)\omega^*$.
+
+The student must choose an effort level $a$ which will
+determine their grade. For whatever the chosen effort level is, the agent must pay a cost $c(a) = \frac{1}{2}a^2$. Therefore, the 
+student's payoff is given by 
+
+\begin{equation}
+u(a; \theta^*, \omega^*) = (\theta^*+a)\omega^* - \frac{1}{2}a^2
+\end{equation}
 
 
 
@@ -224,7 +250,7 @@ chooses an effort level that, under the true $\theta$, yields a frequency of suc
 misspecified belief. That is, the observed rate of success under the true type and the effort level chosen, 
 $P[\text{sucess}|\theta^*, e]$ is the same as the probability of success under the agent's belief, $P[\text{sucess}|\hat{\theta}, e]$.
 
-In the data-generating process described above, there are six such equilibria. For example, if the agent is of type $\theta_M$  but
+In the data-generating process described above, there are five such equilibria. For example, if the agent is of type $\theta_M$  but
 mistakenly believes that he is of type $\hat{\theta}=\theta_H$ and the 
 and $\omega^* = \omega_M$, when the effort chosen is $e_L$, the agent will observe a success with 45% chance. Because the agent 
 dogmatically believes that their type is high, they will erroneously conclude that the rate is $\omega_L$. Under this belief,

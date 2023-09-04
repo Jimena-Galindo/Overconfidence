@@ -37,6 +37,9 @@ source("../Paper/parameters_and_packages.R")
 # Introduction
 
 
+# Related Literature
+
+
 # Framework
 
 REWRITE IN GENERAL TERMS WITH THE PROBABILITY BEING GIVEN BY A FUNCTION THAT SATIEFIES ALL THE PROPERTIES IN BA SO THAT I CAN 
@@ -122,6 +125,8 @@ misspecified.
 the outcomes they observe reinforce their belief on $\omega$ in such a way that as $t\to\infty$ the agent will be certain that
 the state is some $\omega^*$ consistent with their believed type and the observed data.
 
+EXPLAIN WHY THEY ARE ALWAYS DISAPPOINTED AND UPDATE DOWNWARDS ON OMEGA UNTIL THEY FALL INTO THE TRAP.
+
 ## The Switcher 
 
 An agent is a \emph{switcher} if they behave as a dogmatic but is willing to entertain the possibility that they are of a different type.
@@ -136,7 +141,7 @@ and behave as if they are dogmatic about the new type.
 In particular, for an agent that starts off with a dogmatic belief that they are of type $\hat{\theta}$ but is willing to consider
 the alternative explanation that they are of type $\tilde{\theta}$, the agent will switch to the alternative if:
 
-$$\frac{p[h^t|\tilde{\theta}}{p[h^t|\hat{\theta}]} > \alpha$$
+$$\frac{p[h^t|\tilde{\theta}]}{p[h^t|\hat{\theta}]} > \alpha$$
 
 Where $h^t$ is the history of outcomes up to time $t$ and $\alpha \geq 1$ is a threshold that determines how convincing the data needs to be
 for the agent to change their belief. Notice that if $\alpha \to \infty$, we get the dogmatic agent. In this sense, the 
@@ -145,6 +150,8 @@ switcher is a generalization of the dogmatic type, just as the self-attribution 
 By allowing the agent to keep track of the likelihoods and switching to an alternative type, the switcher can avoid the 
 self-confirming equilibrium the dogmatic agent falls into. However, if the prior belief on $theta$ is sufficiently tight around
 a self-confirming equilibrium, the switcher might look identical to the dogmatic even in a case where $\alpha$ is not too large.
+
+EXPLAIN HOW THEY MIGHT GET OUT OF THE TRAP.
 
 # A Simple Example
 The agent can be of one of 3 types: $\theta \in \{\theta_L, \theta_M, \theta_H\}$  with $\theta_H > \theta_M > \theta_L$.
@@ -236,7 +243,7 @@ trap whereas the switcher will be able to escape it. Similarly, an agent with se
 them to choose different gambles. I exploit such cases in order to test which model is a better fit for how subjects behave in a 
 laboratory experiment.
 
-
+ILLUSTRATE THE DIFFERENT PATHS WITH THE SIMULATION.
 
 # Experimental Design
 
@@ -263,6 +270,11 @@ They were also asked to say how confident they felt about their choices with 4 o
 were not incentivized, but subjects were told that providing an accurate answer would increase their chances of earning more money in 
 the last part of the experiment.
 
+The answers of part 2 allow me to classify subjects into overconfident, underconfident and correctly specified. If a subject 
+guesses their score to be in a higher category than their true score, they are overconfident. On the contrary, if they guess their
+score to be in a lower category than their true score, they are underconfident. Finally, if they guess their score to be in the same
+category as their true score, they are correctly specified. This classification is done for each of the 6 topics separately.
+
 In part 3 subjects completed a belief updating task for each of the quizzes. Before starting the task they were reminded of their guess
 for the score. In the ego treatment they were reminded of their guess about themselves and in the stereotype treatment they were reminded
 of their guess about the other participant. In the stereotype treatment, they were also reminded of the characteristics of the other participant.
@@ -282,6 +294,10 @@ the next topic and repeated the same procedure. They all did so for all 6 topics
 
 At the end of the experiment, one of the 6 topics was randomly selected to determine the payment. They earned $\$.20$ for each 
 correct answer in the quiz and for each success in part 3.
+
+The randomness is controlled throughout the experiment and sessions by setting a seed drawn randomly before the
+first session. By doing this I ensure that any two subjects who have the same type and face the same exogenous rate will observe
+the same outcomes and thus, if they use the same updating procedure, they should be choosing the same gambles. This design feature allows me to identify differences in updating procedures across subjects. 
 
 # Analysis
 

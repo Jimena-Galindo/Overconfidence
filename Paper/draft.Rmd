@@ -43,69 +43,7 @@ REWRITE IN GENERAL TERMS WITH THE PROBABILITY BEING GIVEN BY A FUNCTION THAT SAT
 REFER TO HER RESULTS.
 THEN EXPAND ON THE EXAMPLE FOR THE LAB AND SAY WHY IT CAPTURES ALL THE FORCES WE WANT.
 
-An agent is of type $\theta \in \{\theta_L, \theta_M, \theta_H\}$  with $\theta_H > \theta_M > \theta_L$ and they face an unknown 
-exogenous state
-$\omega \in \{\omega_L, \omega_M, \omega_H\}$ with $\omega_H>\omega_M>\omega_L$. 
-Each of the values of $\omega$ is realized with equal probability. The agent knows the distribution of $\omega$ but not its value. 
-They also hold some prior belief about $\theta$ which is potentially misspecified.\footnote{The particular types of misspecification
-that are allowed are discussed below.}
-The agent chooses a binary gamble $e in \{e_L, e_M, e_H\}$ and observes whether the gamble is a success or a failure. '
-If it is a success,
-the agent gets a payoff of $1$ and if it is a failure, the agent gets a payoff of $0$. The probability of success is increasing in
-both $\theta$ and $\omega$ and is fully described in the following table:
 
-\begin{tabular}{ c|c|c|c|}
-  
-  \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{$\omega_M$} & \multicolumn{1}{c}{$\omega_L$}\\
-  \cline{2-4}
-  $e_H$ & 50 & 20 & 2 \\
-  \cline{2-4}
-  $e_M$ & 45 & 30 & 7 \\
-  \cline{2-4}
-  $e_L$ & 40 & 25 & 20 \\
-  \cline{2-4}
-  \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_L$} & \multicolumn{1}{c}{}\\
-\end{tabular}
-\hspace{.3cm} 
-\begin{tabular}{ c|c|c|c|}
-  
-  \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{$\omega_M$} & \multicolumn{1}{c}{$\omega_L$}\\
-  \cline{2-4}
-  $e_H$ & 80 & 50 & 5 \\
-  \cline{2-4}
-  $e_M$ & 69 & 65 & 30 \\
-  \cline{2-4}
-  $e_L$ & 65 & 45 & 40 \\
-  \cline{2-4}
-  \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_M$} & \multicolumn{1}{c}{}\\
-\end{tabular}
-\hspace{.3cm} 
-\begin{tabular}{ c|c|c|c|}
-  
-  \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{$\omega_M$} & \multicolumn{1}{c}{$\omega_L$}\\
-  \cline{2-4}
-  $e_H$ & 98 & 65 & 25 \\
-  \cline{2-4}
-  $e_M$ & 80 & 69 & 35 \\
-  \cline{2-4}
-  $e_L$ & 75 & 55 & 45 \\
-  \cline{2-4}
-  \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_H$} & \multicolumn{1}{c}{}\\
-\end{tabular}
-
-Conditional on a type, the agent's flow payoff is maximized by choosing the gamble that 
-matches the state. For example, if the value of $\omega$ is $\omega_H$, the agent's flow payoff is maximized by 
-choosing $e_H$ and if the state is $\omega_L$ the flow payoff is maximized by choosing gamble $e_L$. The agent myopically chooses
-gambles every period to maximize the flow payoff for $T<\infty$ periods, and the agent's payoff is the sum of the payoffs from 
-each period. 
-
-After observing the outcome of each gamble, the agent updates their beliefs of both theta and omega in one of 4 different ways: 
-As a \emph{dogmatic} as in @Heidhues2018 ; as a \emph{switcher} as in @Ba2023 ; as a \emph{self-attribution} updater as in @Coutts2020; 
-or as a fully Bayesian agent. Each of these updating rules is described in detail below.
-
-Notice that both $\theta$ and $\omega$ can be identified from the outcomes if enough variation in the effort choices exists.
-This can be seen by confirming that no two columns are the same. Therefore, the agent can learn both their type and the 
-state by observing enough outcomes of the gambles for different effort choices.
 
 ## The Bayesian Benchmark
 
@@ -198,7 +136,7 @@ and behave as if they are dogmatic about the new type.
 In particular, for an agent that starts off with a dogmatic belief that they are of type $\hat{\theta}$ but is willing to consider
 the alternative explanation that they are of type $\tilde{\theta}$, the agent will switch to the alternative if:
 
-$$\frac{p[h^t|\tilde{\theta}]}{p[h^t|\hat{\theta}]} > \alpha$$
+$$\frac{p[h^t|\tilde{\theta}}{p[h^t|\hat{\theta}]} > \alpha$$
 
 Where $h^t$ is the history of outcomes up to time $t$ and $\alpha \geq 1$ is a threshold that determines how convincing the data needs to be
 for the agent to change their belief. Notice that if $\alpha \to \infty$, we get the dogmatic agent. In this sense, the 
@@ -208,10 +146,142 @@ By allowing the agent to keep track of the likelihoods and switching to an alter
 self-confirming equilibrium the dogmatic agent falls into. However, if the prior belief on $theta$ is sufficiently tight around
 a self-confirming equilibrium, the switcher might look identical to the dogmatic even in a case where $\alpha$ is not too large.
 
+# A Simple Example
+The agent can be of one of 3 types: $\theta \in \{\theta_L, \theta_M, \theta_H\}$  with $\theta_H > \theta_M > \theta_L$.
+They face an unknown exogenous success rate
+$\omega \in \{\omega_L, \omega_M, \omega_H\}$ with $\omega_H>\omega_M>\omega_L$. Each of the values of $\omega$ is realized with equal probability. 
+The agent knows the distribution of $\omega$ but not its realized value. Let the true type be $\theta^*$ 
+and the true state be $\omega^*$.
+
+
+The agent holds some prior belief about $\theta$ \footnote{which is potentially misspecified as in the dogmatic and switcher cases discussed} 
+and chooses a binary gamble $e in \{e_L, e_M, e_H\}$. The agent observes whether the gamble is a success or a failure and 
+gets a payoff of $1$ and if it is a success. They get $0$ otherwise. 
+
+The probability of success is increasing in
+both $\theta$ and $\omega$ and is fully described in the following table:
+
+\begin{tabular}{ c|c|c|c|}
+  
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{$\omega_M$} & \multicolumn{1}{c}{$\omega_L$}\\
+  \cline{2-4}
+  $e_H$ & 50 & 20 & 2 \\
+  \cline{2-4}
+  $e_M$ & 45 & 30 & 7 \\
+  \cline{2-4}
+  $e_L$ & 40 & 25 & 20 \\
+
+  \cline{2-4}
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_L$} & \multicolumn{1}{c}{}\\
+\end{tabular}
+\hspace{.3cm} 
+\begin{tabular}{ c|c|c|c|}
+  
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{$\omega_M$} & \multicolumn{1}{c}{$\omega_L$}\\
+  \cline{2-4}
+  $e_H$ & 80 & 50 & 5 \\
+  \cline{2-4}
+  $e_M$ & 69 & 65 & 30 \\
+  \cline{2-4}
+  $e_L$ & 65 & 45 & 40 \\
+  \cline{2-4}
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_M$} & \multicolumn{1}{c}{}\\
+\end{tabular}
+\hspace{.3cm} 
+\begin{tabular}{ c|c|c|c|}
+  
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{$\omega_M$} & \multicolumn{1}{c}{$\omega_L$}\\
+  \cline{2-4}
+  $e_H$ & 98 & 65 & 25 \\
+  \cline{2-4}
+  $e_M$ & 80 & 69 & 35 \\
+  \cline{2-4}
+  $e_L$ & 75 & 55 & 45 \\
+  \cline{2-4}
+  \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_H$} & \multicolumn{1}{c}{}\\
+\end{tabular}
+
+Conditional on a type, the agent's flow payoff is maximized by choosing the gamble that 
+matches the state. For example, if the value of $\omega$ is $\omega_H$, the agent's flow payoff is maximized by 
+choosing $e_H$ and if the state is $\omega_L$ the flow payoff is maximized by choosing gamble $e_L$. The agent myopically chooses
+gambles every period to maximize the flow payoff for $T$ periods. 
+
+After observing the outcome of each gamble, the agent updates their beliefs using some algorithm and moves on to the next period.
+
+Notice that both $\theta$ and $\omega$ can be identified from the outcomes if enough variation in the effort choices exists.
+This can be seen by confirming there is no pair of $\theta$ and $\omega$ such that the probability of success is the same for all effort 
+choices. Therefore, by changing the effort choice, the agent can learn both their type and the state if they observe enough outcomes.
+
+In this example, for an agent with a dogmatic belief about their type, a self-defeating equilibrium is one in which the agent 
+chooses an effort level that, under the true $\theta$, yields a frequency of success that is consistent with the agent's 
+misspecified belief. That is, the observed rate of success under the true type and the effort level chosen, 
+$P[\text{sucess}|\theta^*, e]$ is the same as the probability of success under the agent's belief, $P[\text{sucess}|\hat{\theta}, e]$.
+
+In the data-generating process described above, there are six such equilibria. For example, if the agent is of type $\theta_M$  but
+mistakenly believes that he is of type $\hat{\theta}=\theta_H$ and the 
+and $\omega^* = \omega_M$, when the effort chosen is $e_L$, the agent will observe a success with 45% chance. Because the agent 
+dogmatically believes that their type is high, they will erroneously conclude that the rate is $\omega_L$. Under this belief,
+the optimal action is $e_L$ which will continue to generate successes with $45%$ probability, further reinforcing
+the incorrect belief. If the agent were to learn the true type and rate, they would instead choose $e_M$, yielding a 
+success with $65%$ probability and strictly higher expected payoffs.
+
+From @Heidhues2018, we know that if $\theta^*$ and $\omega^*$ are such that there is a self-confirming equilibrium, a dogmatic agent will always
+fall into the trap and continue to make sub-optimal choices. On the other hand, a switcher will be able to learn the true type and state
+as long as their prior is diffused enough and their switching threshold is low enough as in @Ba2023.
+
+By including self-confirming equilibria, the example captures the forces from each of the updating mechanisms discussed in the 
+previous section and allows for direct comparison of all the theories. For realizations of $(\theta, \omega)$ for which there are 
+self-confirming equilibria, the dogmatic agent will fall into the 
+trap whereas the switcher will be able to escape it. Similarly, an agent with self-attribution bias will update their beliefs differently from an unbiased Bayesian, leading
+them to choose different gambles. I exploit such cases in order to test which model is a better fit for how subjects behave in a 
+laboratory experiment.
+
+
+
 # Experimental Design
 
+I recruited XXX undergraduate subjects from the CESS lab at NYU who participated in an in-person experiment. Sessions lasted approximately 
+XXX hours and subjects earned an average payment of XXX. The experiment was programmed using oTree [@chen2016otree].
 
+The experiment consisted of 2 treatments: the ego-relevant condition and the stereotype condition. Subjects participated in only one
+of them. Treatments were randomly assigned at the session level. The tasks were identical across treatments, but in the ego condition
+the probability of success was based on the subject's own performance in a quiz, while in the stereotype condition, the probability
+od success was based on the performance of a randomly selected subject from another session.
 
+The experiment had 3 parts. In Part 1 subjects had 2 minutes to answer as many multiple-choice questions as they could from a 
+20 question quiz in a particular topic. They did this for 6 different topics, one after the other. The topics were: Math, Verbal 
+Reasoning, Pop-culture and Art, Science and Technology, US Geography, and Sports and Video Games. The maximum number of questions 
+they could answer correctly was 20. However, they did not know how many questions were available and they were given no feedback.
+
+After taking all 6 quizzes, they proceeded to part 2 where they were asked to guess their score on each of them. In the stereotype 
+treatment they were additionally asked to guess the score of another participant. All they knew about the other participant was their
+gender identity and whether they were US nationals or not.
+For each guess they had three score options: 5 or fewer, between 6 and 15, 
+16 or more. Each of these correspond to $\theta_L$, $\theta_M$, and $\theta_H$ respectively. 
+They were also asked to say how confident they felt about their choices with 4 options: it was a random guess, there is another equally likely score, I am pretty sure, I am completely sure. These 4 answers are mapped to priors that place probabilities 
+.33, .50, .75, and 1 to the chosen type. The remaining probability is split equally among the other two types. Questions in part 2
+were not incentivized, but subjects were told that providing an accurate answer would increase their chances of earning more money in 
+the last part of the experiment.
+
+In part 3 subjects completed a belief updating task for each of the quizzes. Before starting the task they were reminded of their guess
+for the score. In the ego treatment they were reminded of their guess about themselves and in the stereotype treatment they were reminded
+of their guess about the other participant. In the stereotype treatment, they were also reminded of the characteristics of the other participant.
+
+For one topic at a time and in random order,
+they were presented with the three gambles from the example and were asked to choose one of them. The probability of success was 
+determined by their own score in the ego-relevant condition and by the score of the other participant in the stereotype condition. 
+Subjects had access to the three probability
+tables in the printout on the instructions at all times and the meaning of each cell was explained in detail in the instructions. However, 
+on the screen they had to choose which of the 3 tables they wanted to see before entering their choice in it. This was done as 
+an alternative to a belief elicitation in each round. I take their choice of table to be a noisy measure of their beliefs about
+the underlying type. 
+
+Once they have entered their choice, they observe a sample of 10 outcomes from the gamble they chose. After observing the outcomes, they returned to the choice screen and entered a new choice. In the choice screen 
+subjects had access to the entire history of gambles and outcomes for that task. Once they entered 11 gambles (and observed 110 outcomes), they moved on to 
+the next topic and repeated the same procedure. They all did so for all 6 topics. 
+
+At the end of the experiment, one of the 6 topics was randomly selected to determine the payment. They earned $\$.20$ for each 
+correct answer in the quiz and for each success in part 3.
 
 # Analysis
 

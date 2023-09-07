@@ -1,5 +1,5 @@
 ---
-title: "Learning from Data Through Models"  # nolint: Grammarly.
+title: "Learning with misspecified models: Overconfidence and Stereotypes"  # nolint: Grammarly.
 date: '`r format(Sys.time(), "%B %d, %Y")`'
 author: "Jimena Galindo"
 abstract: "TBW"
@@ -38,7 +38,6 @@ source("../Paper/parameters_and_packages.R")
 
 
 # Related Literature
-
 
 
 # Framework 1
@@ -93,7 +92,7 @@ a dogmatic modeler will inevitably fall into a self-defeating equilibrium. The e
 the outcomes they observe reinforce their belief on $\omega$ in such a way that as $t\to\infty$ the agent will be sure that
 the state is some $\omega^{'}$ consistent with their believed type and the observed data. In other words, 
 they will be in a self-defeating equilibrium whith a stable belief that places probability one on the incorrect
-parameters $(\hat{theta}, \omega_\infty)$
+parameters $(\hat{\theta}, \omega_{\infty})$
 
 The mechanism by which the dogmatic agent falls into the self-defeating equilibrium is the following: Suppose the agent holds the 
 misspecified belief that they are type $\hat{\theta}>\theta^*$. For any prior over $\omega$, the agent will be disappointed by the outcome.
@@ -112,30 +111,30 @@ This mechanism is further illustrated in Example 1.
 _Set $A = \Omega$ and $H = [0, \infty)$ and consider a student with intrinsic ability $\theta^*\geq 0$ who faces a grading procedure 
 $\omega^*$ that is unknown to them. However, 
 they know that a higher $\omega^*$ is more likely to yield a higher grade. In particular, assume the grade is given by 
-$(\theta^*+a)\omega^*$.
+$(\theta^*+a)\omega^*$._
 
-The student must choose an effort level $a$, which determines their grade. For whatever the chosen effort level, 
+_The student must choose an effort level $a$, which determines their grade. For whatever the chosen effort level, 
 the agent must pay a cost $c(a) = \frac{1}{2}a^2$. And he repeats this process for infinitely many periods. 
 Assume also that the student's prior is such that $mathbb{E}[\omega]= \omega^*$ and he is dogmatic about being of 
-type $\hat{\theta}>\theta^*. \footnote{The example is illustrated for an overconfident agent but the results are symmetric for a digmatic agent who initially 
+type $\hat{\theta}>\theta^*$. \footnote{The example is illustrated for an overconfident agent but the results are symmetric for a digmatic agent who initially 
 places probability one on some $\tilde{\theta}<\theta^*$.}
-Therefore, the student's payoff in period $t$ is given by 
+Therefore, the student's payoff in period $t$ is given by _
 
 \begin{equation}
 u_t(a_t; \theta^*, \omega^*) = (\theta^*+a_t)\omega^* - \frac{1}{2}a^2 + \varepsilon_t
 \end{equation}
 
-Under this specification, the myopic optimal effort level is $a_t^* = \omega^*$. Nonetheless, because the agent does not know $\omega^*$,
+_Under this specification, the myopic optimal effort level is $a_t^* = \omega^*$. Nonetheless, because the agent does not know $\omega^*$,
 he will choose $a_t = \mathbb{E}_t(\omega)$ where the expectation is taken with respect to the agent's belief at the beginning of
 period $t$. If he does not revise his effort choice for $k$ periods, he will receive 
 an average utility of 
 $(\theta^*+a_t^*)\omega^* - \frac{1}{2}a_t^{*2}$ but he was expecting an average utility of 
 $(\hat{\theta}\theta+a_t^*)\omega^* - \frac{1}{2}a_t^{*2}$. In response, he will apply bayes rule to update his beliefs about
-$\omega$ to get the posterior belief with $\mathbb_{t+k}[\omega] = \frac{(\theta^* + \omega^*)\omega^*}{(\hat{\theta} + \omega^*)}$
+$\omega$ to get the posterior belief with $\mathbb{E}_{t+k}[\omega] = \frac{(\theta^{*} + \omega^{*})\omega^{*}}{\hat{\theta} + \omega^{*}}$
 which is lower than the initial belief. This will cause the agent to choose a lower effort at $t+k$. As a result, he will again
 receive an average utlitity that is lower than what he expected which will cause his belief to drift further down. This process will
 continue until the average utility equals his expected utility under the dogmatic belief that assigns probability 1 to $\hat{\theta}$. 
-At that point, the stundent will have reached a self-defeating equilibrium and he will continue to choose sub-optimal effort forever._
+At that point, the stundent will have reached a self-defeating equilibrium and he will continue to choose sub-optimal effort forever. _
 
 Although the model of a dogmatic modeler is able to rationalize the prevalence of overconfident (underconfident) beliefs, the
 assumption that the agent has a degenerate belief and no mechanism through which he can update such belief is very restrictive. An
@@ -162,8 +161,8 @@ $$\frac{p[h^t|\tilde{\theta}]}{p[h^t|\hat{\theta}]} > \alpha\geq 1$$
 
 Where $h^t$ is the history of outcomes up to time $t$ and $\alpha$ is the switching threshold. By keeping track of the 
 likelihood ratio, the agent can perform a \emph{Bayesian hypothesis test} and adopt the Dogmatic belief that best fits 
-the data.\footnote{In a related problem @schwarstein proposes a similar updating procedure wich relies on the Bayesian 
-hypothesis test and results in similar updating outcomes.}
+the data.\footnote{In a related problem @Schwarstein2021 proposes a similar updating procedure wich relies on the Bayesian 
+hypothesis test.}
 Notice that if $\alpha \to \infty$, the behavior of the switcher will be indistinguishable from that of the Dogmatic modeler. 
 In this sense, the switcher is a generalization of the dogmatic type.
 
@@ -178,19 +177,30 @@ the self-defeating equilibrium would not persist.
 
 # Framework 2
 
+The agent is still of some type $\theta^* \in \Theta$ and the state is $\omega \sim F$. In this case the agent chooses an action 
+$a\in A$
+and observes a binary outcome that is either a success or a failure. Denote the outcome by $o \in {s,f}$. The probability of 
+observing a success is ingreasing in $\theta^*$ and in $\omega$. Whenever the agent observes a succes, he gets a payoff $v>0$ and
+whenever the outcome is a failure, normalize the payoff to 0.  In addition, the probability of success is such that for each state, 
+there is a unique optimal action that maximizes the agent's expected payoff.
+
+Two nested theories that have been widely studied fall within this framework: Fully Bayesian updating and self-serving attribution 
+bias. I explain each of these classical models of belief updating in what follows
+
+
 ## The Bayesian
 
 A Bayesian agent simultaneously updates their beliefs about $\theta$ and $\omega$ by using Bayes' rule. 
 The posterior odds at period t about $\theta$ after observing an outcome are given by:
-\begin{equation}
+$$
 \frac{p_{t}[\theta_H|\text{outcome}]}{p_{t}[\theta_M|\text{outcome}]} = 
       \frac{p[\text{outcome}|\theta_H]p_{t-1}[\theta_H]}{p[\text{outcome}|\theta_M]p_{t-1}[\theta_M]}
-\end{equation}
+$$
 and
-\begin{equation}
+$$
 \frac{p_{t}[\theta_M|\text{outcome}]}{p_{t}[\theta_L|\text{outcome}]} = 
       \frac{p[\text{outcome}|\theta_M]p_{t-1}[\theta_M]}{p[\text{outcome}|\theta_L]p_{t-1}[\theta_L]}
-\end{equation}
+$$
 
 Where $p_{t-1}$ is the prior at period $t$ and 
 $p[\text{outcome}|\theta] = \sum_{\omega} p[\text{outcome}|\theta, \omega, e]p_{t-1}(\omega)$
@@ -198,25 +208,24 @@ is the probability of observing the outcome given the agent's type and the effor
 
 Bayesian agents always choose the effort level that maximizes their flow payoff by taking expectations over
 their prior beliefs about $\theta$ and $\omega$. Since agents are myopic, even though all the parameters 
-could be identified with enough variation in choices, a fully Bayesian agent might not learn their true type. This happens because they do not internalize the tradeoff between flow payoff
-and learning and thus might not experiment enough to learn their type. An alternative to this approach is given 
+could be identified with enough variation in choices, although the Bayesian agent is the closest to a fully rational agent discussed here, 
+they might not learn their true type. This happens because, by being myopic, they do not internalize the tradeoff between flow payoff
+and learning. This can result in too little experimentation to learn their true type. An alternative to this approach is given 
 by @Hestermann2021 and is discussed with the results.
 
-## The Biased Agent
-An agent that updates their beliefs with self-attribution bias will update their beliefs about the state $\omega$ and their type $\theta$
-by over-attributing successes to a high value of $\theta$ and under-estimating the role of higher $\omega$. Similarly,
-they will attribute failure to a low state more than an unbiased agent would. 
-To model the self-serving attribution bias, I take the approach of @benjamin2019, where a generalization of the Bayes rule above gives the update.
+## The Self-Serving Bayesian
 
-\begin{equation}
-\frac{p_{t}[\theta_H|\text{outcome}]}{p_{t}[\theta_M|\text{outcome}]} = 
-      \left(\frac{p[\text{outcome}|\theta_H]}{p[\text{outcome}|\theta_M]}\right)^{c_s^{\theta}\mathbb{I}\{\text{success}\}+c_f^{\theta}\mathbb{I}\{\text{failure}\}}\frac{p_{t-1}[\theta_H]}{p_{t-1}[\theta_M]}
-\end{equation}
-and
-\begin{equation}
-\frac{p_{t}[\theta_M|\text{outcome}]}{p_{t}[\theta_L|\text{outcome}]} = 
-      \left(\frac{p[\text{outcome}|\theta_M]}{p[\text{outcome}|\theta_L]}\right)^{c_s^{\theta}\mathbb{I}\{\text{success}\}+c_f^{\theta}\mathbb{I}\{\text{failure}\}}\frac{p_{t-1}[\theta_M]}{p_{t-1}[\theta_L]}
-\end{equation}
+A self-serving bayesian is an agent who uses a biased version of Bayes rule to update his beliefs.He will update his beliefs 
+about the state $\omega$ and his type $\theta$
+by over-attributing successes to a high value of $\theta$ and under-estimating the role of higher $\omega$. Similarly,
+he will attribute failure to a low state to a greter degree than an unbiased agent would. 
+To model the self-serving attribution bias, I take the approach of @benjamin2019, where the posterior is given by:
+
+$$
+p_{t}[\theta_H|\text{outcome}] = 
+\frac{p[\text{outcome}|\theta]^{c_s^{\theta}\mathbb{I}\{\text{success}\}+c_f^{\theta}\mathbb{I}\{\text{failure}\}}p_{t-1}[\theta]}
+{\sum_{\theta'\in\Theta}p[\text{outcome}|\theta']^{c_s^{\theta}\mathbb{I}\{\text{success}\}+c_f^{\theta}\mathbb{I}\{\text{failure}\}}p_{t-1}[\theta']}
+$$
 
 $c_s^{\theta}$ and $c_f^{\theta}$ are the self-serving attribution bias parameters for the agent's type $\theta$. 
 If $c_s^{\theta} = c_f^{\theta} = 1$, the agent is unbiased and the update is the same as the Bayesian update. On the other hand, 
@@ -312,9 +321,9 @@ self-confirming equilibria, the dogmatic agent will fall into the
 trap whereas the switcher will be able to escape it. Similarly, an agent with self-attribution bias will update their beliefs differently from an unbiased Bayesian, leading
 them to choose different gambles. I exploit such cases in order to test which model is a better fit for how subjects behave in a 
 laboratory experiment. \footnote{because the setting does not match that of @Heidhues2018, there will be situationf for which the theory 
-does not provie a prediction. If such cases arise in the lab, they will not be used for the analysis.}
-
-For this particular example, 
+does not provie a prediction. If such cases arise in the lab, they will not be used for the analysis. However, whether a misspecified 
+belief persists or not for the switcher, depends highly on the realized history of signals that he gets.} In what follows I explain 
+the details of how this example was implemented in the lab.
 
 
 # Experimental Design
@@ -322,54 +331,63 @@ For this particular example,
 I recruited XXX undergraduate subjects from the CESS lab at NYU who participated in an in-person experiment. Sessions lasted approximately 
 XXX hours and subjects earned an average payment of XXX. The experiment was programmed using oTree [@chen2016otree].
 
-The experiment consisted of 2 treatments: the ego-relevant condition and the stereotype condition. Subjects participated in only one
-of them. Treatments were randomly assigned at the session level. The tasks were identical across treatments, but in the ego condition
-the probability of success was based on the subject's own performance in a quiz, while in the stereotype condition, the probability
-od success was based on the performance of a randomly selected subject from another session.
+The experiment consisted of 2 treatments: the \emph{ego-relevant} condition and the \emph{stereotype} condition. Subjects participated 
+in only one of the treatments. Treatments were randomly assigned at the session level. The tasks were identical across treatments, 
+except for parameter $\theta$. In the ego-relevant condition $\theta$ is the subject's own performance in a quiz, while in the 
+stereotype condition, it is the performance of a randomly selected subject from another session.
 
 The experiment had 3 parts. In Part 1 subjects had 2 minutes to answer as many multiple-choice questions as they could from a 
-20 question quiz in a particular topic. They did this for 6 different topics, one after the other. The topics were: Math, Verbal 
-Reasoning, Pop-culture and Art, Science and Technology, US Geography, and Sports and Video Games. The maximum number of questions 
-they could answer correctly was 20. However, they did not know how many questions were available and they were given no feedback.
+20-question quiz. They did this for quizzes on 6 different topics. The topics were: Math, Verbal 
+Reasoning, Pop-culture and Art, Science and Technology, US Geography, and Sports and Video Games. 
+In this part, they did not know how many questions were available and they were given no feedback.
 
 After taking all 6 quizzes, they proceeded to part 2 where they were asked to guess their score on each of them. In the stereotype 
-treatment they were additionally asked to guess the score of another participant. All they knew about the other participant was their
-gender identity and whether they were US nationals or not.
-For each guess they had three score options: 5 or fewer, between 6 and 15, 
-16 or more. Each of these correspond to $\theta_L$, $\theta_M$, and $\theta_H$ respectively. 
-They were also asked to say how confident they felt about their choices with 4 options: it was a random guess, there is another equally likely score, I am pretty sure, I am completely sure. These 4 answers are mapped to priors that place probabilities 
-.33, .50, .75, and 1 to the chosen type. The remaining probability is split equally among the other two types. Questions in part 2
+treatment they were additionally asked to guess the score of a randomly drawn participant from a previous session. 
+All they knew about the other participant was their gender identity and whether they were US nationals or not.
+For each guess they had three score options: Low-Score (5 or fewer correct answers), Mid-Score (between 6 and 15 correct answers), 
+High-Score (16 or more). Each of the score categories correspond to $\theta_L$, $\theta_M$, and $\theta_H$ respectively. 
+They were also asked to say how confident they felt about their choices. They had 4 possible answers: "it was a random guess", 
+"there is another equally likely score", "I am pretty sure", "I am completely sure". 
+These 4 answers are mapped to priors that place probabilities 
+.33, .50, .75, and 1 to the chosen type. The remaining probability is split equally among the other two types. 
+Questions in part 2
 were not incentivized, but subjects were told that providing an accurate answer would increase their chances of earning more money in 
 the last part of the experiment.
 
-The answers of part 2 allow me to classify subjects into overconfident, underconfident and correctly specified. If a subject 
-guesses their score to be in a higher category than their true score, they are overconfident. On the contrary, if they guess their
-score to be in a lower category than their true score, they are underconfident. Finally, if they guess their score to be in the same
-category as their true score, they are correctly specified. This classification is done for each of the 6 topics separately.
+The purpose of part 2 is to classify subjects into overconfident, underconfident and correctly specified. If a subject 
+guesses their score to be in a higher (lower) category than their true score, they are overconfident (underconfident); if they 
+guess their score to be in the same category as their true score, they are correctly specified. 
+This classification is done for each of the 6 topics separately.
 
-In part 3 subjects completed a belief updating task for each of the quizzes. Before starting the task they were reminded of their guess
+Finally, in part 3 subjects completed a belief updating task for each of the quizzes. Before starting the task they were reminded of their guess
 for the score. In the ego treatment they were reminded of their guess about themselves and in the stereotype treatment they were reminded
 of their guess about the other participant. In the stereotype treatment, they were also reminded of the characteristics of the other participant.
 
 For one topic at a time and in random order,
-they were presented with the three gambles from the example and were asked to choose one of them. The probability of success was 
-determined by their own score in the ego-relevant condition and by the score of the other participant in the stereotype condition. 
+they were presented with the three gambles from the example above, and were asked to choose one of them. 
+The probability of success was 
+determined by their own score in the ego-relevant condition, and by the score of the other participant in the stereotype condition. 
 Subjects had access to the three probability
-tables in the printout on the instructions at all times and the meaning of each cell was explained in detail in the instructions. However, 
-on the screen they had to choose which of the 3 tables they wanted to see before entering their choice in it. This was done as 
-an alternative to a belief elicitation in each round. I take their choice of table to be a noisy measure of their beliefs about
-the underlying type. 
+tables in the printout of the instructions at all times and the meaning of each cell was explained in detail. 
 
-Once they have entered their choice, they observe a sample of 10 outcomes from the gamble they chose. After observing the outcomes, they returned to the choice screen and entered a new choice. In the choice screen 
-subjects had access to the entire history of gambles and outcomes for that task. Once they entered 11 gambles (and observed 110 outcomes), they moved on to 
-the next topic and repeated the same procedure. They all did so for all 6 topics. 
+In the interphase, they had to choose which of the 3 tables they wanted to see before entering their choice in it. This was done as 
+an alternative to a belief elicitation in each round. I take their choice of table to be a signal for their beliefs about
+the underlying type. I chose not to elicit the beliefs at each round to stay true to the forces in framework 1.
 
-At the end of the experiment, one of the 6 topics was randomly selected to determine the payment. They earned $\$.20$ for each 
-correct answer in the quiz and for each success in part 3.
+Once they have entered their choice, they observe a sample of 10 outcomes from the gamble they chose. After observing the outcomes, 
+they returned to the choice screen and entered a new choice. In the choice screen 
+subjects had access to the entire history of gambles and outcomes for that task as well as a summary of the outcomes so far. 
+Once they entered 11 gambles (and observed 110 outcomes), they moved on to 
+the next topic and repeated the same procedure. They all did this for all 6 topics. 
 
-The randomness is controlled throughout the experiment and sessions by setting a seed drawn randomly before the
-first session. By doing this I ensure that any two subjects who have the same type and face the same exogenous rate will observe
-the same outcomes and thus, if they use the same updating procedure, they should be choosing the same gambles. This design feature allows me to identify differences in updating procedures across subjects. 
+At the end of the experiment, one of the 6 topics was randomly selected to determine the payment. They earned $\$0.20$ for each 
+correct answer in the quiz, and for each success in part 3.
+
+Randomness is controlled throughout the experiment and sessions by setting a seed at the beggining of the
+first session. The seed was drawn at random and remained fixed for all sessions. 
+By doing this I ensure that any two subjects who have the same type and face the same exogenous rate will observe
+the same outcomes and thus, if they use the same updating procedure, they should be choosing the same gambles. 
+This design feature allows me to identify differences in updating procedures across subjects. 
 
 # Analysis
 

@@ -209,6 +209,11 @@ def creating_session(subsession: Subsession):
 
 
 #PAGES
+class Welcome(Page):
+    @staticmethod
+    def is_displayed(player):
+        return player.round_number == 1
+
 class Instructions(Page):
     @staticmethod
     def is_displayed(player):
@@ -225,6 +230,7 @@ class Start(Page):
         position = val_list.index(player.round_number)
         player.topic = key_list[position]
         return dict(topic=player.topic)
+
 
 class MathQuiz(Page):
     @staticmethod
@@ -639,4 +645,4 @@ class ResultsWaitPage(WaitPage):
     pass
 
 
-page_sequence = [Instructions, Start, VerbalQuiz, MathQuiz, PopQuiz, SportsQuiz, ScienceQuiz, USQuiz, Transition]
+page_sequence = [Welcome, Instructions, Start, VerbalQuiz, MathQuiz, PopQuiz, SportsQuiz, ScienceQuiz, USQuiz, Transition]

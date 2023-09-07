@@ -458,7 +458,7 @@ class VerbalFeedback(Page):
     @staticmethod
     def vars_for_template(player):
         participant = player.participant
-        score = player.participant.verbal_score
+        score = int(player.participant.verbal_score)
         player.verbal_score = score
         session = player.session
         e = player.effort
@@ -568,7 +568,7 @@ class MathFeedback(Page):
     @staticmethod
     def vars_for_template(player):
         participant = player.participant
-        score = player.participant.math_score
+        score = int(player.participant.math_score)
         player.math_score = score
         e = player.effort
         session = player.session
@@ -678,7 +678,7 @@ class PopFeedback(Page):
     @staticmethod
     def vars_for_template(player):
         participant = player.participant
-        score = participant.pop_score
+        score = int(participant.pop_score)
         player.pop_score = score
         session = player.session
         e = player.effort
@@ -789,7 +789,7 @@ class ScienceFeedback(Page):
     def vars_for_template(player):
         participant = player.participant
         session = player.session
-        score = player.participant.science_score
+        score = int(player.participant.science_score)
         player.science_score = score
         e = player.effort
         if score < C.T1:
@@ -899,7 +899,7 @@ class SportsFeedback(Page):
     def vars_for_template(player):
         participant = player.participant
         session = player.session
-        score = player.participant.sports_score
+        score = int(player.participant.sports_score)
         player.sports_score = score
         e = player.effort
         if score < C.T1:
@@ -1010,7 +1010,7 @@ class UsFeedback(Page):
     def vars_for_template(player):
         participant = player.participant
         session = player.session
-        score = player.participant.us_score
+        score = int(player.participant.us_score)
         player.us_score = score
         e = player.effort
         if score < C.T1:

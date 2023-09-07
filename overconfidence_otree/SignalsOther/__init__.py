@@ -133,18 +133,36 @@ class Player(BasePlayer):
                                                       [2, str(C.T2) + ' or more']],
                                              widget=widgets.RadioSelectHorizontal)
 
-    math_certainty_other = models.IntegerField(min=0, max=100,
-                                              label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
-    verbal_certainty_other = models.IntegerField(min=0, max=100,
-                                                label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
-    pop_certainty_other = models.IntegerField(min=0, max=100,
-                                             label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
-    science_certainty_other = models.IntegerField(min=0, max=100,
-                                                 label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
-    us_certainty_other = models.IntegerField(min=0, max=100,
-                                            label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
-    sports_certainty_other = models.IntegerField(min=0, max=100,
-                                                label='From 0 to 100 how sure are you of your answer? (100 means you are completely sure and 0 means your answer was a random guess)')
+    math_certainty_other = models.IntegerField(label='How sure are you of your answer?',
+                                              choices=[[33, 'It is a random guess'],
+                                                       [50, 'There is another choice that is equally likely'],
+                                                       [75, 'Somewhat sure'],
+                                                       [100, 'Completely sure']])
+    verbal_certainty_other = models.IntegerField(label='How sure are you of your answer?',
+                                                choices=[[33, 'It is a random guess'],
+                                                         [50, 'There is another choice that is equally likely'],
+                                                         [75, 'Somewhat sure'],
+                                                         [100, 'Completely sure']])
+    pop_certainty_other = models.IntegerField(label='how sure are you of your answer?',
+                                             choices=[[33, 'It is a random guess'],
+                                                      [50, 'There is another choice that is equally likely'],
+                                                      [75, 'Somewhat sure'],
+                                                      [100, 'Completely sure']])
+    science_certainty_other = models.IntegerField(label='how sure are you of your answer?',
+                                                 choices=[[33, 'It is a random guess'],
+                                                          [50, 'There is another choice that is equally likely'],
+                                                          [75, 'Somewhat sure'],
+                                                          [100, 'Completely sure']])
+    us_certainty_other = models.IntegerField(label='how sure are you of your answer?',
+                                            choices=[[33, 'It is a random guess'],
+                                                     [50, 'There is another choice that is equally likely'],
+                                                     [75, 'Somewhat sure'],
+                                                     [100, 'Completely sure']])
+    sports_certainty_other = models.IntegerField(label='how sure are you of your answer?',
+                                                choices=[[33, 'It is a random guess'],
+                                                         [50, 'There is another choice that is equally likely'],
+                                                         [75, 'Somewhat sure'],
+                                                         [100, 'Completely sure']])
 
 
     effort = models.IntegerField(label='Choose a gamble',
@@ -556,7 +574,7 @@ class VerbalFeedback(Page):
     @staticmethod
     def vars_for_template(player):
         participant = player.participant
-        score = participant.verbal_other
+        score = int(participant.verbal_other)
         player.verbal_other = score
         session = player.session
         e = player.effort
@@ -669,7 +687,7 @@ class MathFeedback(Page):
         e = player.effort
         session = player.session
         participant = player.participant
-        score = participant.math_other
+        score = int(participant.math_other)
         player.math_other = score
 
         if score < C.T1:
@@ -780,7 +798,7 @@ class PopFeedback(Page):
 
         session = player.session
         participant = player.participant
-        score = participant.pop_other
+        score = int(participant.pop_other)
         player.pop_other = score
         e = player.effort
         if score < C.T1:
@@ -889,7 +907,7 @@ class ScienceFeedback(Page):
     @staticmethod
     def vars_for_template(player):
         participant = player.participant
-        score = participant.science_other
+        score = int(participant.science_other)
         player.science_other = score
         session = player.session
         e = player.effort
@@ -999,7 +1017,7 @@ class SportsFeedback(Page):
     @staticmethod
     def vars_for_template(player):
         participant = player.participant
-        score = participant.sports_other
+        score = int(participant.sports_other)
         player.sports_other = score
         session = player.session
 
@@ -1112,7 +1130,7 @@ class UsFeedback(Page):
 
         session = player.session
         participant = player.participant
-        score = participant.us_other
+        score = int(participant.us_other)
         player.us_other = score
         e = player.effort
         if score < C.T1:

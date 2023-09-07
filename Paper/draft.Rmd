@@ -41,7 +41,7 @@ source("../Paper/parameters_and_packages.R")
 
 
 
-# Setting 1
+# Framework 1
 
 An agent is of type $\theta \in \Theta$ and faces an unknown exogenous state $\omega$ drawn from some 
 density $f$ over $\Omega$. The agent knows the 
@@ -158,21 +158,25 @@ and behave as if they are dogmatic about the new type.
 In particular, for an agent that starts off with a dogmatic belief that they are of type $\hat{\theta}$ but is willing to consider
 the alternative explanation that they are of type $\tilde{\theta}$, the agent will switch to the alternative if:
 
-$$\frac{p[h^t|\tilde{\theta}]}{p[h^t|\hat{\theta}]} > \alpha$$
+$$\frac{p[h^t|\tilde{\theta}]}{p[h^t|\hat{\theta}]} > \alpha\geq 1$$
 
-Where $h^t$ is the history of outcomes up to time $t$ and $\alpha \geq 1$ is a threshold that determines how convincing the data needs to be
-for the agent to change their belief. Notice that if $\alpha \to \infty$, we get the dogmatic agent. In this sense, the 
-switcher is a generalization of the dogmatic type, just as the self-attribution agent is a generalization of the Bayesian agent.
+Where $h^t$ is the history of outcomes up to time $t$ and $\alpha$ is the switching threshold. By keeping track of the 
+likelihood ratio, the agent can perform a \emph{Bayesian hypothesis test} and adopt the Dogmatic belief that best fits 
+the data.\footnote{In a related problem @schwarstein proposes a similar updating procedure wich relies on the Bayesian 
+hypothesis test and results in similar updating outcomes.}
+Notice that if $\alpha \to \infty$, the behavior of the switcher will be indistinguishable from that of the Dogmatic modeler. 
+In this sense, the switcher is a generalization of the dogmatic type.
 
 By allowing the agent to keep track of the likelihoods and switching to an alternative type, the switcher can avoid the 
-self-confirming equilibrium the dogmatic agent falls into. However, if the prior belief on $theta$ is sufficiently tight around
-a self-confirming equilibrium, the switcher might look identical to the dogmatic even in a case where $\alpha$ is not too large.
+self-confirming equilibrium. However, if the prior belief on $omega$ is sufficiently tight around
+a self-defeating equilibrium, the switcher might look identical to the dogmatic even in a case where $\alpha$ is not too large.
+This happens because under the agent's prior, the likelihood ratio is unlikely to grow as fast as it is needed to escape 
+the self-defeating equilibrium. In this cases we say that the misspecified belief is persistent. Hence, in order to be able 
+to determine which of these two models provides a better explanation of the observed behaviors, we must focus on cases 
+in which the prior is diffused enough and the sequence of realized outcomes is such that
+the self-defeating equilibrium would not persist.
 
-** Example 1 (continued)** 
-_ Take the same student from the example and now add the possibility of switching beliefs. _
-
-
-# Seting 2
+# Framework 2
 
 ## The Bayesian
 
@@ -193,9 +197,8 @@ $p[\text{outcome}|\theta] = \sum_{\omega} p[\text{outcome}|\theta, \omega, e]p_{
 is the probability of observing the outcome given the agent's type and the effort chosen. The update is symmetric for $\omega$.
 
 Bayesian agents always choose the effort level that maximizes their flow payoff by taking expectations over
-their prior beliefs about $\theta$ and $\omega$. Since agents are myopic, even though all the parameters could be identified with enough variation in choices, 
-
-a fully Bayesian agent might not learn their true type. This happens because they do not internalize the tradeoff between flow payoff
+their prior beliefs about $\theta$ and $\omega$. Since agents are myopic, even though all the parameters 
+could be identified with enough variation in choices, a fully Bayesian agent might not learn their true type. This happens because they do not internalize the tradeoff between flow payoff
 and learning and thus might not experiment enough to learn their type. An alternative to this approach is given 
 by @Hestermann2021 and is discussed with the results.
 
@@ -222,25 +225,23 @@ if $c_s^{\theta} > c_f{\theta}$ the agent over-attributes success to their type 
   each other but less (more) than one, then the bias is simply underinference (overinference).}.
 
 The update for $\omega$ is analogous but with $c_f^{\omega}$ and $c_s^{\omega}$ instead of $c_f^{\theta}$ and $c_s^{\theta}$ and
- the bias is present whenever $c_f^{\omega} > c_s^{\omega}$. That is, the agent over-attributes failure to a low state relative the 
+the bias is present whenever $c_f^{\omega} > c_s^{\omega}$. That is, the agent over-attributes failure to a low state relative the 
 higher states and under-attributes success to a low state relative to the higher states.
 
 
-
-# A Unifying Framework
+# A Unifying Example
 The agent can be of one of 3 types: $\theta \in \{\theta_L, \theta_M, \theta_H\}$  with $\theta_H > \theta_M > \theta_L$.
 They face an unknown exogenous success rate
-$\omega \in \{\omega_L, \omega_M, \omega_H\}$ with $\omega_H>\omega_M>\omega_L$. Each of the values of $\omega$ is realized with equal probability. 
-The agent knows the distribution of $\omega$ but not its realized value. Let the true type be $\theta^*$ 
-and let the true state be $\omega^*$.
+$\omega \in \{\omega_L, \omega_M, \omega_H\}$ with $\omega_H>\omega_M>\omega_L$. Each of the values of $\omega$ is realized with 
+equal probability. 
+The agent knows the distribution of $\omega$ but not its realized value.
 
-
-The agent holds some prior belief about $\theta$ \footnote{which is potentially misspecified as in the dogmatic and switcher cases discussed} 
+Denote the true type by $\theta^*$ and the true state by $\omega^*$. The agent holds some prior belief about $\theta$ 
+\footnote{which is potentially misspecified as in the dogmatic and switcher cases discussed above} 
 and chooses a binary gamble $e in \{e_L, e_M, e_H\}$. The agent observes whether the gamble is a success or a failure and 
-gets a payoff of $1$ and if it is a success. They get $0$ otherwise. 
+gets a payoff of $1$ and if it is a success; they get $0$ otherwise. 
 
-The probability of success is increasing in
-both $\theta$ and $\omega$ and is fully described in the following table:
+The probability of success is increasing in both $\theta$ and $\omega$ and is fully described by the following table:
 
 \begin{tabular}{ c|c|c|c|}
   
@@ -284,55 +285,37 @@ both $\theta$ and $\omega$ and is fully described in the following table:
 
 Conditional on a type, the agent's flow payoff is maximized by choosing the gamble that 
 matches the state. For example, if the value of $\omega$ is $\omega_H$, the agent's flow payoff is maximized by 
-choosing $e_H$ and if the state is $\omega_L$ the flow payoff is maximized by choosing gamble $e_L$. The agent myopically chooses
-gambles every period to maximize the flow payoff for $T$ periods. 
+choosing $e_H$ and if the state is $\omega_L$ the flow payoff is maximized by choosing gamble $e_L$, regardless of the value of $\theta$. 
+The agent myopically chooses gambles every period to maximize the flow payoff for $T<\infty$ periods. 
 
-After observing the outcome of each gamble, the agent updates their beliefs using some algorithm and moves on to the next period.
+After observing the outcome of each gamble, the agent updates their beliefs using some procedure and moves on to the next period.
 
 Notice that both $\theta$ and $\omega$ can be identified from the outcomes if enough variation in the effort choices exists.
-This can be seen by confirming there is no pair of $\theta$ and $\omega$ such that the probability of success is the same for all effort 
-choices. Therefore, by changing the effort choice, the agent can learn both their type and the state if they observe enough outcomes.
+This can be seen by confirming that there is no pair of $\theta$ and $\omega$ such that the probability of success is the same for all effort 
+choices. Thus, by changing the effort choice, the agent can learn both their type and the state if they observe enough outcomes.
 
 In this example, for an agent with a dogmatic belief about their type, a self-defeating equilibrium is one in which the agent 
 chooses an effort level that, under the true $\theta$, yields a frequency of success that is consistent with the agent's 
-misspecified belief. That is, the observed rate of success under the true type and the effort level chosen, 
-$P[\text{sucess}|\theta^*, e]$ is the same as the probability of success under the agent's belief, $P[\text{sucess}|\hat{\theta}, e]$.
+misspecified belief. That is $P[\text{sucess}|\theta^*, e^*] = P[\text{sucess}|\hat{\theta}, e^*]$ where $e^*$ is the agent's 
+myopic optimal choice.
 
 In the data-generating process described above, there are five such equilibria. For example, if the agent is of type $\theta_M$  but
 mistakenly believes that he is of type $\hat{\theta}=\theta_H$ and the 
 and $\omega^* = \omega_M$, when the effort chosen is $e_L$, the agent will observe a success with 45% chance. Because the agent 
 dogmatically believes that their type is high, they will erroneously conclude that the rate is $\omega_L$. Under this belief,
 the optimal action is $e_L$ which will continue to generate successes with $45%$ probability, further reinforcing
-the incorrect belief. If the agent were to learn the true type and rate, they would instead choose $e_M$, yielding a 
-success with $65%$ probability and strictly higher expected payoffs.
-
-From @Heidhues2018, we know that if $\theta^*$ and $\omega^*$ are such that there is a self-confirming equilibrium, a dogmatic agent will always
-fall into the trap and continue to make sub-optimal choices. On the other hand, a switcher will be able to learn the true type and state
-as long as their prior is diffused enough and their switching threshold is low enough as in @Ba2023.
+the incorrect belief. By doing so, the agent forgoes the payoff from gamble $e_M$ which would yield a success with $65\%$ chance.
 
 By including self-confirming equilibria, the example captures the forces from each of the updating mechanisms discussed in the 
 previous section and allows for direct comparison of all the theories. For realizations of $(\theta, \omega)$ for which there are 
 self-confirming equilibria, the dogmatic agent will fall into the 
 trap whereas the switcher will be able to escape it. Similarly, an agent with self-attribution bias will update their beliefs differently from an unbiased Bayesian, leading
 them to choose different gambles. I exploit such cases in order to test which model is a better fit for how subjects behave in a 
-laboratory experiment.
+laboratory experiment. \footnote{because the setting does not match that of @Heidhues2018, there will be situationf for which the theory 
+does not provie a prediction. If such cases arise in the lab, they will not be used for the analysis.}
 
-ILLUSTRATE THE DIFFERENT PATHS WITH THE SIMULATION.
+For this particular example, 
 
-## The Dogmatic Modeler
-
-A dogmatic modeler updates their beliefs about omega by using bayes rule. For the example, that means he ends up with the following
-posterior odds ratios:
-
-\begin{equation}
-\frac{p_{t}[\omega_H|\text{outcome}]}{p_{t}[\omega_M|\text{outcome}]} = 
-      \frac{p[\text{outcome}|\omega_H, \hat{\theta}, e]p_{t-1}[\omega_H]}{p[\text{outcome}|\omega_M, \hat{\theta}, e]p_{t-1}[\omega_M]}
-\end{equation}
-and
-\begin{equation}
-\frac{p_{t}[\omega_M|\text{outcome}]}{p_{t}[\omega_L|\text{outcome}]} = 
-      \frac{p[\text{outcome}|\omega_M, \hat{\theta}, e]p_{t-1}[\omega_M]}{p[\text{outcome}|\omega_L, \hat{\theta}, e]p_{t-1}[\omega_L]}
-\end{equation}
 
 # Experimental Design
 

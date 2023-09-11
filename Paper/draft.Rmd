@@ -7,7 +7,7 @@ abstract: "TBW"
 output: 
     pdf_document:
         citation_package: natbib
-        fig_width: 7
+        fig_width: 7  
         fig_height: 6
         fig_caption: true
         number_sections: true
@@ -320,7 +320,7 @@ previous section and allows for direct comparison of all the theories. For reali
 self-confirming equilibria, the dogmatic agent will fall into the 
 trap whereas the switcher will be able to escape it. Similarly, an agent with self-attribution bias will update their beliefs differently from an unbiased Bayesian, leading
 them to choose different gambles. I exploit such cases in order to test which model is a better fit for how subjects behave in a 
-laboratory experiment. \footnote{because the setting does not match that of @Heidhues2018, there will be situationf for which the theory 
+laboratory experiment. \footnote{because the setting does not match that of Heidhues et al. [2018], there will be situationf for which the theory 
 does not provie a prediction. If such cases arise in the lab, they will not be used for the analysis. However, whether a misspecified 
 belief persists or not for the switcher, depends highly on the realized history of signals that he gets.} In what follows I explain 
 the details of how this example was implemented in the lab.
@@ -388,6 +388,10 @@ first session. The seed was drawn at random and remained fixed for all sessions.
 By doing this I ensure that any two subjects who have the same type and face the same exogenous rate will observe
 the same outcomes and thus, if they use the same updating procedure, they should be choosing the same gambles. 
 This design feature allows me to identify differences in updating procedures across subjects. 
+
+# Predictions
+
+In the example and for the seed that was drawn and fixed throughout, the models make different predictions.
 
 # Analysis
 

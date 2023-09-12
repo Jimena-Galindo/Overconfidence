@@ -76,7 +76,7 @@
 \title{Learning with misspecified models: Overconfidence and
 Stereotypes}
 \author{Jimena Galindo}
-\date{September 07, 2023}
+\date{September 12, 2023}
 
 \begin{document}
 \maketitle
@@ -339,8 +339,8 @@ learning. This can result in too little experimentation to learn their
 true type. An alternative to this approach is given by
 \citet{Hestermann2021} and is discussed with the results.
 
-\hypertarget{the-self-serving-bayesian}{%
-\subsection{The Self-Serving Bayesian}\label{the-self-serving-bayesian}}
+\hypertarget{the-self-serving-updater}{%
+\subsection{The Self-Serving Updater}\label{the-self-serving-updater}}
 
 A self-serving bayesian is an agent who uses a biased version of Bayes
 rule to update his beliefs.He will update his beliefs about the state
@@ -481,7 +481,7 @@ update their beliefs differently from an unbiased Bayesian, leading them
 to choose different gambles. I exploit such cases in order to test which
 model is a better fit for how subjects behave in a laboratory
 experiment.
-\footnote{because the setting does not match that of @Heidhues2018, there will be situationf for which the theory 
+\footnote{because the setting does not match that of Heidhues et al. [2018], there will be situationf for which the theory 
 does not provie a prediction. If such cases arise in the lab, they will not be used for the analysis. However, whether a misspecified 
 belief persists or not for the switcher, depends highly on the realized history of signals that he gets.}
 In what follows I explain the details of how this example was
@@ -580,6 +580,45 @@ rate will observe the same outcomes and thus, if they use the same
 updating procedure, they should be choosing the same gambles. This
 design feature allows me to identify differences in updating procedures
 across subjects.
+
+\hypertarget{predictions}{%
+\section{Predictions}\label{predictions}}
+
+Because the different models apply only under certain conditions, I
+split the predictions into two groups; the dogmatic and the switcher
+constitute the first group, and the bayesian and self-serving updater
+are the second group. the predictions of group 1 apply only in cases
+where \((\theta, \omega)\) are such that there is a self-defeating
+equilibrium. This is because whenever there is no self defeating
+equilibria, the dogmatic model does not apply. On the other hand, the
+theories of group 2 apply to all possible combinations of the
+parameters. Hence, these theories can be tested and differentiated
+within a broader set of observations.
+
+It is also important to note that since the predictions of the model are
+asymptotic and probabilistic, the predictions that are made for the
+particular example that was taken to the lab depend strongly on the
+realized sequence of signals. Because the randomness has been controlled
+for and kept fixed across sessions, for every parametrization
+\((\theta, \omega)\) there is a unique optimal path for each of the
+models. I present the predictions made by this particular realization of
+the seed.\footnote{The seed that was drawn 
+at the beginning of session 1 was 3452. The same seed was used for all sessions. It is used both for drawing $\omega$ for each of 
+the tasks in the experiment, as well as for drawing the outcomes from the gambles.}
+
+\hypertarget{dogmatic-and-switcher}{%
+\subsection{Dogmatic and Switcher}\label{dogmatic-and-switcher}}
+
+The cases in which we can apply these two theories are the five
+self-defeating equilibria from the data generating process in the
+example. From these and with the seed that was drawn, the models make
+different predictions in 4 cases. \footnote{the fifth 
+self-defeating equilibrum is such that the likelihood ratio does not go above 1 and thus the switcher is indistinguishable from 
+the dogmatic agent.}
+
+\hypertarget{bayesian-and-self-attribution-updater}{%
+\subsection{Bayesian and self-attribution
+updater}\label{bayesian-and-self-attribution-updater}}
 
 \hypertarget{analysis}{%
 \section{Analysis}\label{analysis}}

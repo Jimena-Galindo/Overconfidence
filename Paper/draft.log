@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.4)  7 SEP 2023 17:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.4)  12 SEP 2023 09:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -474,26 +474,32 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 Package natbib Warning: Citation `chen2016otree' on page 10 undefined on input line 496.
 
-[10] [11] (./draft.bbl [12])
+[10] [11] [12] (./draft.bbl [13])
 
 Package natbib Warning: There were undefined citations.
 
-[13] (./draft.aux)
+[14] (./draft.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `draft.out' has not changed.
-(rerunfilecheck)             Checksum: 9C39F16473E54B225447ADC1EEF15AF0;1397.
+(rerunfilecheck)             Checksum: BDA02CAF262DE7F7427436F32560A6EB;1912.
  ) 
 Here is how much of TeX's memory you used:
- 12565 strings out of 476894
- 196219 string characters out of 5807699
+ 12580 strings out of 476894
+ 196470 string characters out of 5807699
  1936807 words of memory out of 5000000
- 33626 multiletter control sequences out of 15000+600000
+ 33632 multiletter control sequences out of 15000+600000
  629906 words of font info for 87 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,8n,79p,243b,545s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,297b,547s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist, replaced by a fixed one
 
@@ -516,10 +522,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on draft.pdf (13 pages, 309882 bytes).
+Output written on draft.pdf (14 pages, 314938 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 300 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

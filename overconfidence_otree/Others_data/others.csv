@@ -1,5 +1,46 @@
-,index,participant.code,participant.verbal_score,participant.math_score,participant.us_score,participant.science_score,participant.pop_score,participant.sports_score,participant.gender,participant.major,participant.nationality
-0,0,o212fxea,6.0,10.0,11.0,14.0,18.0,10.0,Female,Economics,Mexican
-1,1,ijvbr5s9,11.0,11.0,13.0,15.0,7.0,14.0,Male,Anthropology,mexican
-2,2,3r0v7xjz,18,12.0,11.0,13.0,17.0,9.0,Female,Chemistry,American
-3,3,u3ikcihg,2.0,10,12,20,3.0,2.0,Male,Anthropology,ss
+participant.code,participant.verbal_score,participant.math_score,participant.science_score,participant.sports_score,participant.us_score,participant.pop_score,participant.gender,participant.nationality
+inak0r18,5,4,9,4,6,7,Female,non-US National
+z6bycrw5,6,13,13,7,7,11,Female,non-US National
+72o8c5bk,4,6,8,6,9,8,Male,non-US National
+9rpnegmp,5,11,17,11,11,11,Male,non-US National
+78jeza78,3,9,4,5,4,6,Female,non-US National
+p1b4dbgv,3,5,5,8,8,12,Female,non-US National
+9w15nflu,7,13,14,11,10,12,Male,non-US National
+szq917jn,4,3,5,4,6,7,Female,US National
+d37p2ydy,2,13,7,5,9,6,Male,non-US National
+xvmd7coq,7,11,10,7,7,4,Female,non-US National
+49lqkk00,8,9,12,12,9,10,Female,US National
+hp19zqeh,5,9,7,4,5,4,Female,non-US National
+q9icrsb2,4,8,4,4,4,3,Female,non-US National
+7ebbfqqg,5,13,13,13,12,12,Male,US National
+28arcsnx,6,9,6,7,8,7,Male,non-US National
+1c7v4nh9,8,11,14,14,9,17,Male,US National
+j6ftwuzj,4,3,10,9,5,8,Female,US National
+13f4qqvo,6,11,13,9,10,12,Male,non-US National
+dxfg6c2i,4,9,8,12,11,9,Male,US National
+bj048c8i,8,10,11,13,11,11,Female,US National
+0zs7j0mw,3,10,16,7,10,7,Male,non-US National
+32k6klan,3,7,9,1,2,3,Female,non-US National
+vybvjxs2,10,14,15,14,13,10,Male,US National
+qoio0y3d,7,8,15,9,8,12,Female,US National
+9om8jvev,2,16,8,8,11,3,Male,non-US National
+su9at1s5,4,5,12,15,9,15,Female,US National
+1yeajno3,6,7,13,8,8,12,Female,non-US National
+y71ca1at,4,9,12,7,8,5,Female,non-US National
+0m2xzxgv,2,7,9,5,4,3,Male,non-US National
+pxz3760k,8,7,13,15,11,9,Female,US National
+e44vpjp5,6,5,9,8,7,9,Male,non-US National
+73pn8n63,4,6,14,7,5,7,Female,non-US National
+zap4p51l,2,5,6,3,5,6,Female,non-US National
+g2yvlu4k,7,11,13,16,16,7,Male,US National
+8yvmba6x,2,13,9,12,11,9,Male,US National
+nxd05o0f,5,11,14,11,14,11,Male,US National
+p1k5rpou,2,6,10,7,2,2,Female,non-US National
+rp5nv7ut,4,11,6,9,4,8,Male,non-US National
+9lzz0jai,2,5,4,5,7,9,Female,non-US National
+sfi4nrq8,4,11,12,14,13,10,Male,US National
+1gu1vzgk,4,13,11,11,11,10,Female,US National
+fpvdnkq8,2,6,11,9,13,7,Female,US National
+83tbxcch,3,15,8,15,11,9,Female,US National
+iomh77xp,2,6,12,9,11,9,Female,non-US National
+7h604tn3,4,13,13,15,9,12,Male,non-US National

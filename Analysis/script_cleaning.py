@@ -590,6 +590,8 @@ updates.to_csv('Clean/updates.csv', index=False)
 
 ego_updates.to_csv('Clean/ego_updates.csv', index=False)
 
+st_updates.to_csv('Clean/stereo_updates.csv', index=False)
+
 
 
 

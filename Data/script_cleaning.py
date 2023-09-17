@@ -10,9 +10,11 @@ import seaborn as sns
 # import the data in wide format for each session
 session1 = pd.read_csv("Data/session1_ego.csv")
 session2 = pd.read_csv("Data/session2_ego.csv")
+session3 = pd.read_csv("Data/session3_ego.csv")
+session4 = pd.read_csv("Data/session4_ego.csv")
 
 # concatenate the sessions
-ego_wide = pd.concat([session1, session2], axis=0, sort=False)
+ego_wide = pd.concat([session1, session2, session3, session4], axis=0, sort=False)
 
 ego_wide['treatment'] = 'ego'
 ego_wide.reset_index(inplace=True)

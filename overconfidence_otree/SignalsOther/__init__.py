@@ -233,21 +233,21 @@ class Performance(Page):
         player.gender_other = other['participant.gender']
         player.nationality_other = other['participant.nationality']
 
-        player.math_other = other['participant.math_score']
-        player.verbal_other = other['participant.verbal_score']
-        player.us_other = other['participant.us_score']
-        player.pop_other = other['participant.pop_score']
-        player.science_other = other['participant.science_score']
-        player.sports_other = other['participant.sports_score']
+        player.math_other = int(other['participant.math_score'])
+        player.verbal_other = int(other['participant.verbal_score'])
+        player.us_other = int(other['participant.us_score'])
+        player.pop_other = int(other['participant.pop_score'])
+        player.science_other = int(other['participant.science_score'])
+        player.sports_other = int(other['participant.sports_score'])
 
         participant = player.participant
 
-        participant.math_other = other['participant.math_score']
-        participant.verbal_other = other['participant.verbal_score']
-        participant.us_other = other['participant.us_score']
-        participant.pop_other = other['participant.pop_score']
-        participant.science_other = other['participant.science_score']
-        participant.sports_other = other['participant.sports_score']
+        participant.math_other = int(other['participant.math_score'])
+        participant.verbal_other = int(other['participant.verbal_score'])
+        participant.us_other = int(other['participant.us_score'])
+        participant.pop_other = int(other['participant.pop_score'])
+        participant.science_other = int(other['participant.science_score'])
+        participant.sports_other = int(other['participant.sports_score'])
 
 
         return dict(gender=player.gender_other, nationality=player.nationality_other)

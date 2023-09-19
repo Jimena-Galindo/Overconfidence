@@ -43,6 +43,17 @@ code,round_number,effort,fails,last_button,score,topic,signal,belief,certainty,t
 1c7v4nh9,9,0,6,1,14.0,Science and Technology,4,1,75,1,0,ego,0,0,1,correct
 1c7v4nh9,10,1,7,1,14.0,Science and Technology,3,1,75,1,0,ego,0,0,1,correct
 1c7v4nh9,11,1,8,1,14.0,Science and Technology,2,1,75,1,0,ego,0,0,1,correct
+1gu1vzgk,1,2,9,1,11.0,Science and Technology,1,1,75,1,0,ego,0,0,1,correct
+1gu1vzgk,2,0,4,1,11.0,Science and Technology,6,1,75,1,0,ego,0,0,1,correct
+1gu1vzgk,3,0,5,2,11.0,Science and Technology,5,1,75,1,0,ego,0,0,1,correct
+1gu1vzgk,4,0,7,2,11.0,Science and Technology,3,1,75,1,0,ego,0,0,1,correct
+1gu1vzgk,5,0,8,1,11.0,Science and Technology,2,1,75,1,0,ego,0,0,1,correct
+1gu1vzgk,6,1,8,1,11.0,Science and Technology,2,1,75,1,0,ego,0,0,1,correct
+1gu1vzgk,7,0,3,1,11.0,Science and Technology,7,1,75,1,0,ego,0,0,1,correct
+1gu1vzgk,8,0,5,1,11.0,Science and Technology,5,1,75,1,0,ego,0,0,1,correct
+1gu1vzgk,9,0,6,1,11.0,Science and Technology,4,1,75,1,0,ego,0,0,1,correct
+1gu1vzgk,10,0,8,1,11.0,Science and Technology,2,1,75,1,0,ego,0,0,1,correct
+1gu1vzgk,11,0,6,1,11.0,Science and Technology,4,1,75,1,0,ego,0,0,1,correct
 1yeajno3,1,0,8,0,13.0,Science and Technology,2,0,75,1,0,ego,0,1,0,under
 1yeajno3,2,0,4,1,13.0,Science and Technology,6,0,75,1,0,ego,0,1,0,under
 1yeajno3,3,1,7,1,13.0,Science and Technology,3,0,75,1,0,ego,0,1,0,under
@@ -131,6 +142,50 @@ code,round_number,effort,fails,last_button,score,topic,signal,belief,certainty,t
 7ebbfqqg,9,0,6,1,13.0,Science and Technology,4,1,75,1,0,ego,0,0,1,correct
 7ebbfqqg,10,0,8,1,13.0,Science and Technology,2,1,75,1,0,ego,0,0,1,correct
 7ebbfqqg,11,0,6,1,13.0,Science and Technology,4,1,75,1,0,ego,0,0,1,correct
+7h604tn3,1,0,8,1,13.0,Science and Technology,2,1,50,1,0,ego,0,0,1,correct
+7h604tn3,2,1,7,1,13.0,Science and Technology,3,1,50,1,0,ego,0,0,1,correct
+7h604tn3,3,2,10,1,13.0,Science and Technology,0,1,50,1,0,ego,0,0,1,correct
+7h604tn3,4,2,10,1,13.0,Science and Technology,0,1,50,1,0,ego,0,0,1,correct
+7h604tn3,5,2,10,2,13.0,Science and Technology,0,1,50,1,0,ego,0,0,1,correct
+7h604tn3,6,0,2,2,13.0,Science and Technology,8,1,50,1,0,ego,0,0,1,correct
+7h604tn3,7,0,3,2,13.0,Science and Technology,7,1,50,1,0,ego,0,0,1,correct
+7h604tn3,8,1,6,2,13.0,Science and Technology,4,1,50,1,0,ego,0,0,1,correct
+7h604tn3,9,0,6,2,13.0,Science and Technology,4,1,50,1,0,ego,0,0,1,correct
+7h604tn3,10,0,8,1,13.0,Science and Technology,2,1,50,1,0,ego,0,0,1,correct
+7h604tn3,11,0,6,2,13.0,Science and Technology,4,1,50,1,0,ego,0,0,1,correct
+83tbxcch,1,0,8,1,8.0,Science and Technology,2,1,33,1,0,ego,0,0,1,correct
+83tbxcch,2,1,7,1,8.0,Science and Technology,3,1,33,1,0,ego,0,0,1,correct
+83tbxcch,3,2,10,1,8.0,Science and Technology,0,1,33,1,0,ego,0,0,1,correct
+83tbxcch,4,0,7,0,8.0,Science and Technology,3,1,33,1,0,ego,0,0,1,correct
+83tbxcch,5,1,8,0,8.0,Science and Technology,2,1,33,1,0,ego,0,0,1,correct
+83tbxcch,6,2,10,0,8.0,Science and Technology,0,1,33,1,0,ego,0,0,1,correct
+83tbxcch,7,0,3,2,8.0,Science and Technology,7,1,33,1,0,ego,0,0,1,correct
+83tbxcch,8,1,6,2,8.0,Science and Technology,4,1,33,1,0,ego,0,0,1,correct
+83tbxcch,9,2,9,2,8.0,Science and Technology,1,1,33,1,0,ego,0,0,1,correct
+83tbxcch,10,0,8,2,8.0,Science and Technology,2,1,33,1,0,ego,0,0,1,correct
+83tbxcch,11,1,8,1,8.0,Science and Technology,2,1,33,1,0,ego,0,0,1,correct
+8yvmba6x,1,1,9,2,9.0,Science and Technology,1,1,75,1,0,ego,0,0,1,correct
+8yvmba6x,2,2,8,2,9.0,Science and Technology,2,1,75,1,0,ego,0,0,1,correct
+8yvmba6x,3,0,5,2,9.0,Science and Technology,5,1,75,1,0,ego,0,0,1,correct
+8yvmba6x,4,0,7,2,9.0,Science and Technology,3,1,75,1,0,ego,0,0,1,correct
+8yvmba6x,5,2,10,2,9.0,Science and Technology,0,1,75,1,0,ego,0,0,1,correct
+8yvmba6x,6,0,2,2,9.0,Science and Technology,8,1,75,1,0,ego,0,0,1,correct
+8yvmba6x,7,0,3,1,9.0,Science and Technology,7,1,75,1,0,ego,0,0,1,correct
+8yvmba6x,8,0,5,1,9.0,Science and Technology,5,1,75,1,0,ego,0,0,1,correct
+8yvmba6x,9,0,6,1,9.0,Science and Technology,4,1,75,1,0,ego,0,0,1,correct
+8yvmba6x,10,0,8,0,9.0,Science and Technology,2,1,75,1,0,ego,0,0,1,correct
+8yvmba6x,11,0,6,1,9.0,Science and Technology,4,1,75,1,0,ego,0,0,1,correct
+9lzz0jai,1,2,10,1,4.0,Science and Technology,0,1,75,0,0,ego,1,0,0,over
+9lzz0jai,10,2,10,2,4.0,Science and Technology,0,1,75,0,0,ego,1,0,0,over
+9lzz0jai,11,0,7,0,4.0,Science and Technology,3,1,75,0,0,ego,1,0,0,over
+9lzz0jai,2,2,10,0,4.0,Science and Technology,0,1,75,0,0,ego,1,0,0,over
+9lzz0jai,3,0,9,0,4.0,Science and Technology,1,1,75,0,0,ego,1,0,0,over
+9lzz0jai,4,0,10,0,4.0,Science and Technology,0,1,75,0,0,ego,1,0,0,over
+9lzz0jai,5,1,10,0,4.0,Science and Technology,0,1,75,0,0,ego,1,0,0,over
+9lzz0jai,6,2,10,0,4.0,Science and Technology,0,1,75,0,0,ego,1,0,0,over
+9lzz0jai,7,1,10,1,4.0,Science and Technology,0,1,75,0,0,ego,1,0,0,over
+9lzz0jai,8,2,10,1,4.0,Science and Technology,0,1,75,0,0,ego,1,0,0,over
+9lzz0jai,9,0,9,1,4.0,Science and Technology,1,1,75,0,0,ego,1,0,0,over
 9om8jvev,1,1,9,1,8.0,Science and Technology,1,1,75,1,0,ego,0,0,1,correct
 9om8jvev,10,1,7,1,8.0,Science and Technology,3,1,75,1,0,ego,0,0,1,correct
 9om8jvev,11,0,6,1,8.0,Science and Technology,4,1,75,1,0,ego,0,0,1,correct
@@ -208,6 +263,28 @@ e44vpjp5,6,2,10,0,9.0,Science and Technology,0,2,33,1,0,ego,1,0,0,over
 e44vpjp5,7,1,5,0,9.0,Science and Technology,5,2,33,1,0,ego,1,0,0,over
 e44vpjp5,8,1,6,1,9.0,Science and Technology,4,2,33,1,0,ego,1,0,0,over
 e44vpjp5,9,1,5,1,9.0,Science and Technology,5,2,33,1,0,ego,1,0,0,over
+fpvdnkq8,1,1,9,0,11.0,Science and Technology,1,0,75,1,0,ego,0,1,0,under
+fpvdnkq8,2,0,4,0,11.0,Science and Technology,6,0,75,1,0,ego,0,1,0,under
+fpvdnkq8,3,2,10,0,11.0,Science and Technology,0,0,75,1,0,ego,0,1,0,under
+fpvdnkq8,4,0,7,0,11.0,Science and Technology,3,0,75,1,0,ego,0,1,0,under
+fpvdnkq8,5,0,8,0,11.0,Science and Technology,2,0,75,1,0,ego,0,1,0,under
+fpvdnkq8,6,0,2,1,11.0,Science and Technology,8,0,75,1,0,ego,0,1,0,under
+fpvdnkq8,7,0,3,1,11.0,Science and Technology,7,0,75,1,0,ego,0,1,0,under
+fpvdnkq8,8,1,6,1,11.0,Science and Technology,4,0,75,1,0,ego,0,1,0,under
+fpvdnkq8,9,0,6,2,11.0,Science and Technology,4,0,75,1,0,ego,0,1,0,under
+fpvdnkq8,10,1,7,2,11.0,Science and Technology,3,0,75,1,0,ego,0,1,0,under
+fpvdnkq8,11,1,8,1,11.0,Science and Technology,2,0,75,1,0,ego,0,1,0,under
+g2yvlu4k,1,0,8,2,13.0,Science and Technology,2,2,75,1,0,ego,1,0,0,over
+g2yvlu4k,10,0,8,2,13.0,Science and Technology,2,2,75,1,0,ego,1,0,0,over
+g2yvlu4k,11,1,8,2,13.0,Science and Technology,2,2,75,1,0,ego,1,0,0,over
+g2yvlu4k,2,1,7,2,13.0,Science and Technology,3,2,75,1,0,ego,1,0,0,over
+g2yvlu4k,3,2,10,2,13.0,Science and Technology,0,2,75,1,0,ego,1,0,0,over
+g2yvlu4k,4,0,7,2,13.0,Science and Technology,3,2,75,1,0,ego,1,0,0,over
+g2yvlu4k,5,1,8,2,13.0,Science and Technology,2,2,75,1,0,ego,1,0,0,over
+g2yvlu4k,6,2,10,2,13.0,Science and Technology,0,2,75,1,0,ego,1,0,0,over
+g2yvlu4k,7,2,10,0,13.0,Science and Technology,0,2,75,1,0,ego,1,0,0,over
+g2yvlu4k,8,1,6,2,13.0,Science and Technology,4,2,75,1,0,ego,1,0,0,over
+g2yvlu4k,9,0,6,2,13.0,Science and Technology,4,2,75,1,0,ego,1,0,0,over
 hp19zqeh,1,2,9,2,7.0,Science and Technology,1,0,50,1,0,ego,0,1,0,under
 hp19zqeh,2,1,7,2,7.0,Science and Technology,3,0,50,1,0,ego,0,1,0,under
 hp19zqeh,3,1,7,2,7.0,Science and Technology,3,0,50,1,0,ego,0,1,0,under
@@ -230,6 +307,17 @@ inak0r18,6,1,8,1,9.0,Science and Technology,2,2,100,1,0,ego,1,0,0,over
 inak0r18,7,0,3,1,9.0,Science and Technology,7,2,100,1,0,ego,1,0,0,over
 inak0r18,8,2,10,0,9.0,Science and Technology,0,2,100,1,0,ego,1,0,0,over
 inak0r18,9,2,9,0,9.0,Science and Technology,1,2,100,1,0,ego,1,0,0,over
+iomh77xp,1,1,9,1,12.0,Science and Technology,1,1,33,1,0,ego,0,0,1,correct
+iomh77xp,10,0,8,0,12.0,Science and Technology,2,1,33,1,0,ego,0,0,1,correct
+iomh77xp,11,1,8,0,12.0,Science and Technology,2,1,33,1,0,ego,0,0,1,correct
+iomh77xp,2,0,4,0,12.0,Science and Technology,6,1,33,1,0,ego,0,0,1,correct
+iomh77xp,3,1,7,0,12.0,Science and Technology,3,1,33,1,0,ego,0,0,1,correct
+iomh77xp,4,0,7,1,12.0,Science and Technology,3,1,33,1,0,ego,0,0,1,correct
+iomh77xp,5,2,10,0,12.0,Science and Technology,0,1,33,1,0,ego,0,0,1,correct
+iomh77xp,6,2,10,2,12.0,Science and Technology,0,1,33,1,0,ego,0,0,1,correct
+iomh77xp,7,2,10,1,12.0,Science and Technology,0,1,33,1,0,ego,0,0,1,correct
+iomh77xp,8,0,5,2,12.0,Science and Technology,5,1,33,1,0,ego,0,0,1,correct
+iomh77xp,9,2,9,2,12.0,Science and Technology,1,1,33,1,0,ego,0,0,1,correct
 j6ftwuzj,1,2,9,2,10.0,Science and Technology,1,0,33,1,0,ego,0,1,0,under
 j6ftwuzj,2,1,7,1,10.0,Science and Technology,3,0,33,1,0,ego,0,1,0,under
 j6ftwuzj,3,0,5,0,10.0,Science and Technology,5,0,33,1,0,ego,0,1,0,under
@@ -241,6 +329,17 @@ j6ftwuzj,8,0,5,0,10.0,Science and Technology,5,0,33,1,0,ego,0,1,0,under
 j6ftwuzj,9,0,6,0,10.0,Science and Technology,4,0,33,1,0,ego,0,1,0,under
 j6ftwuzj,10,0,8,0,10.0,Science and Technology,2,0,33,1,0,ego,0,1,0,under
 j6ftwuzj,11,0,6,0,10.0,Science and Technology,4,0,33,1,0,ego,0,1,0,under
+nxd05o0f,1,1,9,2,14.0,Science and Technology,1,1,100,1,0,ego,0,0,1,correct
+nxd05o0f,10,0,8,1,14.0,Science and Technology,2,1,100,1,0,ego,0,0,1,correct
+nxd05o0f,11,1,8,1,14.0,Science and Technology,2,1,100,1,0,ego,0,0,1,correct
+nxd05o0f,2,0,4,1,14.0,Science and Technology,6,1,100,1,0,ego,0,0,1,correct
+nxd05o0f,3,0,5,1,14.0,Science and Technology,5,1,100,1,0,ego,0,0,1,correct
+nxd05o0f,4,0,7,1,14.0,Science and Technology,3,1,100,1,0,ego,0,0,1,correct
+nxd05o0f,5,1,8,2,14.0,Science and Technology,2,1,100,1,0,ego,0,0,1,correct
+nxd05o0f,6,0,2,1,14.0,Science and Technology,8,1,100,1,0,ego,0,0,1,correct
+nxd05o0f,7,0,3,1,14.0,Science and Technology,7,1,100,1,0,ego,0,0,1,correct
+nxd05o0f,8,0,5,1,14.0,Science and Technology,5,1,100,1,0,ego,0,0,1,correct
+nxd05o0f,9,0,6,1,14.0,Science and Technology,4,1,100,1,0,ego,0,0,1,correct
 p1b4dbgv,1,0,9,2,5.0,Science and Technology,1,0,75,0,0,ego,0,0,1,correct
 p1b4dbgv,2,1,9,2,5.0,Science and Technology,1,0,75,0,0,ego,0,0,1,correct
 p1b4dbgv,3,2,9,2,5.0,Science and Technology,1,0,75,0,0,ego,0,0,1,correct
@@ -252,6 +351,17 @@ p1b4dbgv,8,1,9,0,5.0,Science and Technology,1,0,75,0,0,ego,0,0,1,correct
 p1b4dbgv,9,2,10,0,5.0,Science and Technology,0,0,75,0,0,ego,0,0,1,correct
 p1b4dbgv,10,0,9,1,5.0,Science and Technology,1,0,75,0,0,ego,0,0,1,correct
 p1b4dbgv,11,1,9,1,5.0,Science and Technology,1,0,75,0,0,ego,0,0,1,correct
+p1k5rpou,1,0,8,1,10.0,Science and Technology,2,1,50,1,0,ego,0,0,1,correct
+p1k5rpou,2,1,7,1,10.0,Science and Technology,3,1,50,1,0,ego,0,0,1,correct
+p1k5rpou,3,2,10,1,10.0,Science and Technology,0,1,50,1,0,ego,0,0,1,correct
+p1k5rpou,4,0,7,0,10.0,Science and Technology,3,1,50,1,0,ego,0,0,1,correct
+p1k5rpou,5,1,8,0,10.0,Science and Technology,2,1,50,1,0,ego,0,0,1,correct
+p1k5rpou,6,2,10,0,10.0,Science and Technology,0,1,50,1,0,ego,0,0,1,correct
+p1k5rpou,7,0,3,2,10.0,Science and Technology,7,1,50,1,0,ego,0,0,1,correct
+p1k5rpou,8,0,5,2,10.0,Science and Technology,5,1,50,1,0,ego,0,0,1,correct
+p1k5rpou,9,1,5,2,10.0,Science and Technology,5,1,50,1,0,ego,0,0,1,correct
+p1k5rpou,10,2,10,2,10.0,Science and Technology,0,1,50,1,0,ego,0,0,1,correct
+p1k5rpou,11,1,8,2,10.0,Science and Technology,2,1,50,1,0,ego,0,0,1,correct
 pxz3760k,1,2,9,1,13.0,Science and Technology,1,0,75,1,0,ego,0,1,0,under
 pxz3760k,2,1,7,1,13.0,Science and Technology,3,0,75,1,0,ego,0,1,0,under
 pxz3760k,3,0,5,0,13.0,Science and Technology,5,0,75,1,0,ego,0,1,0,under
@@ -285,6 +395,28 @@ qoio0y3d,8,0,5,1,15.0,Science and Technology,5,2,75,1,0,ego,1,0,0,over
 qoio0y3d,9,2,9,0,15.0,Science and Technology,1,2,75,1,0,ego,1,0,0,over
 qoio0y3d,10,0,8,2,15.0,Science and Technology,2,2,75,1,0,ego,1,0,0,over
 qoio0y3d,11,1,8,2,15.0,Science and Technology,2,2,75,1,0,ego,1,0,0,over
+rp5nv7ut,1,1,9,0,6.0,Science and Technology,1,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,2,0,4,0,6.0,Science and Technology,6,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,3,0,5,0,6.0,Science and Technology,5,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,4,0,7,0,6.0,Science and Technology,3,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,5,0,8,0,6.0,Science and Technology,2,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,6,0,2,0,6.0,Science and Technology,8,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,7,0,3,0,6.0,Science and Technology,7,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,8,2,10,0,6.0,Science and Technology,0,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,9,0,6,0,6.0,Science and Technology,4,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,10,0,8,0,6.0,Science and Technology,2,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,11,0,6,0,6.0,Science and Technology,4,0,33,1,0,ego,0,1,0,under
+sfi4nrq8,1,1,9,1,12.0,Science and Technology,1,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,2,1,7,1,12.0,Science and Technology,3,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,3,1,7,1,12.0,Science and Technology,3,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,4,0,7,1,12.0,Science and Technology,3,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,5,1,8,2,12.0,Science and Technology,2,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,6,2,10,2,12.0,Science and Technology,0,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,7,0,3,1,12.0,Science and Technology,7,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,8,0,5,2,12.0,Science and Technology,5,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,9,0,6,2,12.0,Science and Technology,4,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,10,0,8,1,12.0,Science and Technology,2,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,11,0,6,2,12.0,Science and Technology,4,1,100,1,0,ego,0,0,1,correct
 su9at1s5,1,0,8,1,12.0,Science and Technology,2,1,100,1,0,ego,0,0,1,correct
 su9at1s5,10,1,7,2,12.0,Science and Technology,3,1,100,1,0,ego,0,0,1,correct
 su9at1s5,11,2,9,0,12.0,Science and Technology,1,1,100,1,0,ego,0,0,1,correct
@@ -406,6 +538,17 @@ zap4p51l,11,0,6,0,6.0,Science and Technology,4,0,75,1,0,ego,0,1,0,under
 1c7v4nh9,9,1,5,1,11.0,Math,5,1,75,1,1,ego,0,0,1,correct
 1c7v4nh9,10,0,8,1,11.0,Math,2,1,75,1,1,ego,0,0,1,correct
 1c7v4nh9,11,2,5,1,11.0,Math,5,1,75,1,1,ego,0,0,1,correct
+1gu1vzgk,1,1,1,1,13.0,Math,9,1,75,1,1,ego,0,0,1,correct
+1gu1vzgk,2,2,4,1,13.0,Math,6,1,75,1,1,ego,0,0,1,correct
+1gu1vzgk,3,1,3,1,13.0,Math,7,1,75,1,1,ego,0,0,1,correct
+1gu1vzgk,4,1,4,2,13.0,Math,6,1,75,1,1,ego,0,0,1,correct
+1gu1vzgk,5,1,4,2,13.0,Math,6,1,75,1,1,ego,0,0,1,correct
+1gu1vzgk,6,1,3,2,13.0,Math,7,1,75,1,1,ego,0,0,1,correct
+1gu1vzgk,7,1,5,2,13.0,Math,5,1,75,1,1,ego,0,0,1,correct
+1gu1vzgk,8,1,4,2,13.0,Math,6,1,75,1,1,ego,0,0,1,correct
+1gu1vzgk,9,1,5,2,13.0,Math,5,1,75,1,1,ego,0,0,1,correct
+1gu1vzgk,10,1,3,1,13.0,Math,7,1,75,1,1,ego,0,0,1,correct
+1gu1vzgk,11,1,3,1,13.0,Math,7,1,75,1,1,ego,0,0,1,correct
 1yeajno3,1,0,6,1,7.0,Math,4,1,50,1,1,ego,0,0,1,correct
 1yeajno3,2,1,3,1,7.0,Math,7,1,50,1,1,ego,0,0,1,correct
 1yeajno3,3,2,3,1,7.0,Math,7,1,50,1,1,ego,0,0,1,correct
@@ -494,6 +637,50 @@ zap4p51l,11,0,6,0,6.0,Science and Technology,4,0,75,1,0,ego,0,1,0,under
 7ebbfqqg,9,1,5,2,13.0,Math,5,2,100,1,1,ego,1,0,0,over
 7ebbfqqg,10,1,3,2,13.0,Math,7,2,100,1,1,ego,1,0,0,over
 7ebbfqqg,11,1,3,2,13.0,Math,7,2,100,1,1,ego,1,0,0,over
+7h604tn3,1,2,3,2,13.0,Math,7,2,100,1,1,ego,1,0,0,over
+7h604tn3,2,1,3,2,13.0,Math,7,2,100,1,1,ego,1,0,0,over
+7h604tn3,3,0,4,2,13.0,Math,6,2,100,1,1,ego,1,0,0,over
+7h604tn3,4,2,9,2,13.0,Math,1,2,100,1,1,ego,1,0,0,over
+7h604tn3,5,1,4,2,13.0,Math,6,2,100,1,1,ego,1,0,0,over
+7h604tn3,6,1,3,2,13.0,Math,7,2,100,1,1,ego,1,0,0,over
+7h604tn3,7,1,5,2,13.0,Math,5,2,100,1,1,ego,1,0,0,over
+7h604tn3,8,1,4,2,13.0,Math,6,2,100,1,1,ego,1,0,0,over
+7h604tn3,9,0,6,2,13.0,Math,4,2,100,1,1,ego,1,0,0,over
+7h604tn3,10,1,3,2,13.0,Math,7,2,100,1,1,ego,1,0,0,over
+7h604tn3,11,1,3,2,13.0,Math,7,2,100,1,1,ego,1,0,0,over
+83tbxcch,1,1,1,1,15.0,Math,9,1,75,1,1,ego,0,0,1,correct
+83tbxcch,2,0,4,1,15.0,Math,6,1,75,1,1,ego,0,0,1,correct
+83tbxcch,3,0,4,0,15.0,Math,6,1,75,1,1,ego,0,0,1,correct
+83tbxcch,4,0,7,2,15.0,Math,3,1,75,1,1,ego,0,0,1,correct
+83tbxcch,5,1,4,2,15.0,Math,6,1,75,1,1,ego,0,0,1,correct
+83tbxcch,6,2,4,2,15.0,Math,6,1,75,1,1,ego,0,0,1,correct
+83tbxcch,7,1,5,1,15.0,Math,5,1,75,1,1,ego,0,0,1,correct
+83tbxcch,8,0,5,1,15.0,Math,5,1,75,1,1,ego,0,0,1,correct
+83tbxcch,9,1,5,2,15.0,Math,5,1,75,1,1,ego,0,0,1,correct
+83tbxcch,10,0,8,2,15.0,Math,2,1,75,1,1,ego,0,0,1,correct
+83tbxcch,11,1,3,1,15.0,Math,7,1,75,1,1,ego,0,0,1,correct
+8yvmba6x,1,2,3,2,13.0,Math,7,1,100,1,1,ego,0,0,1,correct
+8yvmba6x,2,2,4,2,13.0,Math,6,1,100,1,1,ego,0,0,1,correct
+8yvmba6x,3,1,3,2,13.0,Math,7,1,100,1,1,ego,0,0,1,correct
+8yvmba6x,4,1,4,2,13.0,Math,6,1,100,1,1,ego,0,0,1,correct
+8yvmba6x,5,0,8,2,13.0,Math,2,1,100,1,1,ego,0,0,1,correct
+8yvmba6x,6,1,3,1,13.0,Math,7,1,100,1,1,ego,0,0,1,correct
+8yvmba6x,7,1,5,2,13.0,Math,5,1,100,1,1,ego,0,0,1,correct
+8yvmba6x,8,2,6,2,13.0,Math,4,1,100,1,1,ego,0,0,1,correct
+8yvmba6x,9,1,5,2,13.0,Math,5,1,100,1,1,ego,0,0,1,correct
+8yvmba6x,10,1,3,2,13.0,Math,7,1,100,1,1,ego,0,0,1,correct
+8yvmba6x,11,1,3,2,13.0,Math,7,1,100,1,1,ego,0,0,1,correct
+9lzz0jai,1,0,9,0,5.0,Math,1,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,2,1,8,0,5.0,Math,2,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,3,2,5,0,5.0,Math,5,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,4,2,7,0,5.0,Math,3,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,5,0,6,0,5.0,Math,4,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,6,1,7,0,5.0,Math,3,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,7,0,5,0,5.0,Math,5,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,8,0,9,0,5.0,Math,1,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,9,2,10,0,5.0,Math,0,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,10,1,5,0,5.0,Math,5,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,11,1,5,0,5.0,Math,5,0,75,0,1,ego,0,0,1,correct
 9om8jvev,1,0,6,2,16.0,Math,4,2,75,2,1,ego,0,0,1,correct
 9om8jvev,2,1,3,2,16.0,Math,7,2,75,2,1,ego,0,0,1,correct
 9om8jvev,3,2,3,2,16.0,Math,7,2,75,2,1,ego,0,0,1,correct
@@ -571,6 +758,28 @@ e44vpjp5,8,2,9,2,5.0,Math,1,1,33,0,1,ego,1,0,0,over
 e44vpjp5,9,2,10,1,5.0,Math,0,1,33,0,1,ego,1,0,0,over
 e44vpjp5,10,1,5,1,5.0,Math,5,1,33,0,1,ego,1,0,0,over
 e44vpjp5,11,1,5,1,5.0,Math,5,1,33,0,1,ego,1,0,0,over
+fpvdnkq8,1,0,6,1,6.0,Math,4,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,2,1,3,1,6.0,Math,7,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,3,2,3,1,6.0,Math,7,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,4,2,9,1,6.0,Math,1,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,5,1,4,1,6.0,Math,6,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,6,1,3,0,6.0,Math,7,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,7,2,6,0,6.0,Math,4,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,8,0,5,1,6.0,Math,5,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,9,1,5,1,6.0,Math,5,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,10,1,3,0,6.0,Math,7,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,11,0,6,1,6.0,Math,4,0,75,1,1,ego,0,1,0,under
+g2yvlu4k,1,0,6,0,11.0,Math,4,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,2,2,4,2,11.0,Math,6,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,3,2,3,1,11.0,Math,7,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,4,2,9,2,11.0,Math,1,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,5,1,4,1,11.0,Math,6,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,6,1,3,2,11.0,Math,7,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,7,2,6,1,11.0,Math,4,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,8,0,5,1,11.0,Math,5,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,9,1,5,1,11.0,Math,5,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,10,1,3,1,11.0,Math,7,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,11,0,6,2,11.0,Math,4,1,75,1,1,ego,0,0,1,correct
 hp19zqeh,1,0,6,1,9.0,Math,4,1,100,1,1,ego,0,0,1,correct
 hp19zqeh,2,2,4,2,9.0,Math,6,1,100,1,1,ego,0,0,1,correct
 hp19zqeh,3,2,3,2,9.0,Math,7,1,100,1,1,ego,0,0,1,correct
@@ -593,6 +802,17 @@ inak0r18,8,1,7,0,4.0,Math,3,0,100,0,1,ego,0,0,1,correct
 inak0r18,9,1,8,0,4.0,Math,2,0,100,0,1,ego,0,0,1,correct
 inak0r18,10,0,9,0,4.0,Math,1,0,100,0,1,ego,0,0,1,correct
 inak0r18,11,1,5,0,4.0,Math,5,0,100,0,1,ego,0,0,1,correct
+iomh77xp,1,0,6,1,6.0,Math,4,1,33,1,1,ego,0,0,1,correct
+iomh77xp,2,0,4,0,6.0,Math,6,1,33,1,1,ego,0,0,1,correct
+iomh77xp,3,1,3,0,6.0,Math,7,1,33,1,1,ego,0,0,1,correct
+iomh77xp,4,2,9,0,6.0,Math,1,1,33,1,1,ego,0,0,1,correct
+iomh77xp,5,0,8,2,6.0,Math,2,1,33,1,1,ego,0,0,1,correct
+iomh77xp,6,2,4,1,6.0,Math,6,1,33,1,1,ego,0,0,1,correct
+iomh77xp,7,1,5,0,6.0,Math,5,1,33,1,1,ego,0,0,1,correct
+iomh77xp,8,0,5,1,6.0,Math,5,1,33,1,1,ego,0,0,1,correct
+iomh77xp,9,2,5,2,6.0,Math,5,1,33,1,1,ego,0,0,1,correct
+iomh77xp,10,2,3,1,6.0,Math,7,1,33,1,1,ego,0,0,1,correct
+iomh77xp,11,0,6,1,6.0,Math,4,1,33,1,1,ego,0,0,1,correct
 j6ftwuzj,1,2,9,0,3.0,Math,1,0,50,0,1,ego,0,0,1,correct
 j6ftwuzj,2,1,8,0,3.0,Math,2,0,50,0,1,ego,0,0,1,correct
 j6ftwuzj,3,0,8,0,3.0,Math,2,0,50,0,1,ego,0,0,1,correct
@@ -604,6 +824,17 @@ j6ftwuzj,8,2,9,2,3.0,Math,1,0,50,0,1,ego,0,0,1,correct
 j6ftwuzj,9,0,8,1,3.0,Math,2,0,50,0,1,ego,0,0,1,correct
 j6ftwuzj,10,2,10,0,3.0,Math,0,0,50,0,1,ego,0,0,1,correct
 j6ftwuzj,11,0,6,0,3.0,Math,4,0,50,0,1,ego,0,0,1,correct
+nxd05o0f,1,1,1,1,11.0,Math,9,1,100,1,1,ego,0,0,1,correct
+nxd05o0f,2,1,3,1,11.0,Math,7,1,100,1,1,ego,0,0,1,correct
+nxd05o0f,3,0,4,1,11.0,Math,6,1,100,1,1,ego,0,0,1,correct
+nxd05o0f,4,0,7,1,11.0,Math,3,1,100,1,1,ego,0,0,1,correct
+nxd05o0f,5,0,8,2,11.0,Math,2,1,100,1,1,ego,0,0,1,correct
+nxd05o0f,6,1,3,1,11.0,Math,7,1,100,1,1,ego,0,0,1,correct
+nxd05o0f,7,1,5,1,11.0,Math,5,1,100,1,1,ego,0,0,1,correct
+nxd05o0f,8,1,4,1,11.0,Math,6,1,100,1,1,ego,0,0,1,correct
+nxd05o0f,9,1,5,1,11.0,Math,5,1,100,1,1,ego,0,0,1,correct
+nxd05o0f,10,0,8,1,11.0,Math,2,1,100,1,1,ego,0,0,1,correct
+nxd05o0f,11,1,3,1,11.0,Math,7,1,100,1,1,ego,0,0,1,correct
 p1b4dbgv,1,2,9,1,5.0,Math,1,1,50,0,1,ego,1,0,0,over
 p1b4dbgv,2,1,8,1,5.0,Math,2,1,50,0,1,ego,1,0,0,over
 p1b4dbgv,3,0,8,1,5.0,Math,2,1,50,0,1,ego,1,0,0,over
@@ -615,6 +846,17 @@ p1b4dbgv,8,1,7,0,5.0,Math,3,1,50,0,1,ego,1,0,0,over
 p1b4dbgv,9,0,8,0,5.0,Math,2,1,50,0,1,ego,1,0,0,over
 p1b4dbgv,10,2,10,2,5.0,Math,0,1,50,0,1,ego,1,0,0,over
 p1b4dbgv,11,2,6,2,5.0,Math,4,1,50,0,1,ego,1,0,0,over
+p1k5rpou,1,0,6,2,6.0,Math,4,1,75,1,1,ego,0,0,1,correct
+p1k5rpou,2,1,3,2,6.0,Math,7,1,75,1,1,ego,0,0,1,correct
+p1k5rpou,3,2,3,2,6.0,Math,7,1,75,1,1,ego,0,0,1,correct
+p1k5rpou,4,1,4,2,6.0,Math,6,1,75,1,1,ego,0,0,1,correct
+p1k5rpou,5,2,6,2,6.0,Math,4,1,75,1,1,ego,0,0,1,correct
+p1k5rpou,6,1,3,2,6.0,Math,7,1,75,1,1,ego,0,0,1,correct
+p1k5rpou,7,2,6,2,6.0,Math,4,1,75,1,1,ego,0,0,1,correct
+p1k5rpou,8,1,4,2,6.0,Math,6,1,75,1,1,ego,0,0,1,correct
+p1k5rpou,9,0,6,1,6.0,Math,4,1,75,1,1,ego,0,0,1,correct
+p1k5rpou,10,1,3,1,6.0,Math,7,1,75,1,1,ego,0,0,1,correct
+p1k5rpou,11,1,3,1,6.0,Math,7,1,75,1,1,ego,0,0,1,correct
 pxz3760k,1,1,1,1,7.0,Math,9,0,75,1,1,ego,0,1,0,under
 pxz3760k,10,1,3,1,7.0,Math,7,0,75,1,1,ego,0,1,0,under
 pxz3760k,11,1,3,2,7.0,Math,7,0,75,1,1,ego,0,1,0,under
@@ -648,6 +890,28 @@ qoio0y3d,8,1,4,2,8.0,Math,6,1,50,1,1,ego,0,0,1,correct
 qoio0y3d,9,0,6,1,8.0,Math,4,1,50,1,1,ego,0,0,1,correct
 qoio0y3d,10,1,3,2,8.0,Math,7,1,50,1,1,ego,0,0,1,correct
 qoio0y3d,11,1,3,2,8.0,Math,7,1,50,1,1,ego,0,0,1,correct
+rp5nv7ut,1,2,3,2,11.0,Math,7,1,75,1,1,ego,0,0,1,correct
+rp5nv7ut,2,1,3,2,11.0,Math,7,1,75,1,1,ego,0,0,1,correct
+rp5nv7ut,3,1,3,2,11.0,Math,7,1,75,1,1,ego,0,0,1,correct
+rp5nv7ut,4,2,9,2,11.0,Math,1,1,75,1,1,ego,0,0,1,correct
+rp5nv7ut,5,1,4,2,11.0,Math,6,1,75,1,1,ego,0,0,1,correct
+rp5nv7ut,6,2,4,2,11.0,Math,6,1,75,1,1,ego,0,0,1,correct
+rp5nv7ut,7,1,5,2,11.0,Math,5,1,75,1,1,ego,0,0,1,correct
+rp5nv7ut,8,1,4,2,11.0,Math,6,1,75,1,1,ego,0,0,1,correct
+rp5nv7ut,9,1,5,2,11.0,Math,5,1,75,1,1,ego,0,0,1,correct
+rp5nv7ut,10,1,3,2,11.0,Math,7,1,75,1,1,ego,0,0,1,correct
+rp5nv7ut,11,1,3,2,11.0,Math,7,1,75,1,1,ego,0,0,1,correct
+sfi4nrq8,1,1,1,1,11.0,Math,9,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,2,1,3,1,11.0,Math,7,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,3,1,3,1,11.0,Math,7,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,4,1,4,1,11.0,Math,6,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,5,1,4,1,11.0,Math,6,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,6,1,3,1,11.0,Math,7,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,7,1,5,1,11.0,Math,5,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,8,1,4,1,11.0,Math,6,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,9,1,5,1,11.0,Math,5,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,10,1,3,1,11.0,Math,7,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,11,1,3,1,11.0,Math,7,1,100,1,1,ego,0,0,1,correct
 su9at1s5,1,2,9,0,5.0,Math,1,0,75,0,1,ego,0,0,1,correct
 su9at1s5,2,1,8,1,5.0,Math,2,0,75,0,1,ego,0,0,1,correct
 su9at1s5,3,2,5,1,5.0,Math,5,0,75,0,1,ego,0,0,1,correct
@@ -769,6 +1033,17 @@ zap4p51l,9,1,8,1,5.0,Math,2,0,33,0,1,ego,0,0,1,correct
 1c7v4nh9,9,1,5,1,8.0,Verbal,5,1,100,1,1,ego,0,0,1,correct
 1c7v4nh9,10,1,3,1,8.0,Verbal,7,1,100,1,1,ego,0,0,1,correct
 1c7v4nh9,11,1,3,1,8.0,Verbal,7,1,100,1,1,ego,0,0,1,correct
+1gu1vzgk,1,0,9,0,4.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+1gu1vzgk,10,1,5,1,4.0,Verbal,5,0,75,0,1,ego,0,0,1,correct
+1gu1vzgk,11,1,5,1,4.0,Verbal,5,0,75,0,1,ego,0,0,1,correct
+1gu1vzgk,2,0,9,0,4.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+1gu1vzgk,3,0,8,1,4.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
+1gu1vzgk,4,1,3,1,4.0,Verbal,7,0,75,0,1,ego,0,0,1,correct
+1gu1vzgk,5,1,9,1,4.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+1gu1vzgk,6,0,8,2,4.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
+1gu1vzgk,7,0,5,1,4.0,Verbal,5,0,75,0,1,ego,0,0,1,correct
+1gu1vzgk,8,0,9,1,4.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+1gu1vzgk,9,0,8,1,4.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
 1yeajno3,1,0,6,1,6.0,Verbal,4,1,33,1,1,ego,0,0,1,correct
 1yeajno3,2,1,3,1,6.0,Verbal,7,1,33,1,1,ego,0,0,1,correct
 1yeajno3,3,1,3,0,6.0,Verbal,7,1,33,1,1,ego,0,0,1,correct
@@ -857,6 +1132,50 @@ zap4p51l,9,1,8,1,5.0,Math,2,0,33,0,1,ego,0,0,1,correct
 7ebbfqqg,9,0,8,0,5.0,Verbal,2,1,75,0,1,ego,1,0,0,over
 7ebbfqqg,10,0,9,0,5.0,Verbal,1,1,75,0,1,ego,1,0,0,over
 7ebbfqqg,11,0,6,0,5.0,Verbal,4,1,75,0,1,ego,1,0,0,over
+7h604tn3,1,2,9,1,4.0,Verbal,1,1,50,0,1,ego,1,0,0,over
+7h604tn3,2,2,5,1,4.0,Verbal,5,1,50,0,1,ego,1,0,0,over
+7h604tn3,3,2,5,1,4.0,Verbal,5,1,50,0,1,ego,1,0,0,over
+7h604tn3,4,0,9,1,4.0,Verbal,1,1,50,0,1,ego,1,0,0,over
+7h604tn3,5,1,9,1,4.0,Verbal,1,1,50,0,1,ego,1,0,0,over
+7h604tn3,6,0,8,0,4.0,Verbal,2,1,50,0,1,ego,1,0,0,over
+7h604tn3,7,2,9,1,4.0,Verbal,1,1,50,0,1,ego,1,0,0,over
+7h604tn3,8,1,7,1,4.0,Verbal,3,1,50,0,1,ego,1,0,0,over
+7h604tn3,9,0,8,1,4.0,Verbal,2,1,50,0,1,ego,1,0,0,over
+7h604tn3,10,1,5,0,4.0,Verbal,5,1,50,0,1,ego,1,0,0,over
+7h604tn3,11,2,6,0,4.0,Verbal,4,1,50,0,1,ego,1,0,0,over
+83tbxcch,1,0,9,0,3.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+83tbxcch,10,2,10,0,3.0,Verbal,0,0,75,0,1,ego,0,0,1,correct
+83tbxcch,11,1,5,1,3.0,Verbal,5,0,75,0,1,ego,0,0,1,correct
+83tbxcch,2,1,8,0,3.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
+83tbxcch,3,2,5,0,3.0,Verbal,5,0,75,0,1,ego,0,0,1,correct
+83tbxcch,4,2,7,1,3.0,Verbal,3,0,75,0,1,ego,0,0,1,correct
+83tbxcch,5,1,9,1,3.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+83tbxcch,6,0,8,1,3.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
+83tbxcch,7,2,9,0,3.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+83tbxcch,8,0,9,0,3.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+83tbxcch,9,1,8,0,3.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
+8yvmba6x,1,2,9,2,2.0,Verbal,1,1,75,0,1,ego,1,0,0,over
+8yvmba6x,2,0,9,0,2.0,Verbal,1,1,75,0,1,ego,1,0,0,over
+8yvmba6x,3,0,8,0,2.0,Verbal,2,1,75,0,1,ego,1,0,0,over
+8yvmba6x,4,0,9,0,2.0,Verbal,1,1,75,0,1,ego,1,0,0,over
+8yvmba6x,5,0,6,2,2.0,Verbal,4,1,75,0,1,ego,1,0,0,over
+8yvmba6x,6,0,8,1,2.0,Verbal,2,1,75,0,1,ego,1,0,0,over
+8yvmba6x,7,0,5,2,2.0,Verbal,5,1,75,0,1,ego,1,0,0,over
+8yvmba6x,8,0,9,1,2.0,Verbal,1,1,75,0,1,ego,1,0,0,over
+8yvmba6x,9,1,8,2,2.0,Verbal,2,1,75,0,1,ego,1,0,0,over
+8yvmba6x,10,0,9,0,2.0,Verbal,1,1,75,0,1,ego,1,0,0,over
+8yvmba6x,11,1,5,1,2.0,Verbal,5,1,75,0,1,ego,1,0,0,over
+9lzz0jai,1,2,9,0,2.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,2,0,9,0,2.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,3,1,6,0,2.0,Verbal,4,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,4,0,9,1,2.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,5,1,9,0,2.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,6,0,8,2,2.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,7,2,9,2,2.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,8,1,7,0,2.0,Verbal,3,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,9,2,10,0,2.0,Verbal,0,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,10,1,5,0,2.0,Verbal,5,0,75,0,1,ego,0,0,1,correct
+9lzz0jai,11,1,5,0,2.0,Verbal,5,0,75,0,1,ego,0,0,1,correct
 9om8jvev,1,0,9,0,2.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
 9om8jvev,2,1,8,0,2.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
 9om8jvev,3,2,5,0,2.0,Verbal,5,0,75,0,1,ego,0,0,1,correct
@@ -934,6 +1253,28 @@ e44vpjp5,8,2,6,0,6.0,Verbal,4,1,33,1,1,ego,0,0,1,correct
 e44vpjp5,9,0,6,0,6.0,Verbal,4,1,33,1,1,ego,0,0,1,correct
 e44vpjp5,10,2,3,1,6.0,Verbal,7,1,33,1,1,ego,0,0,1,correct
 e44vpjp5,11,2,5,1,6.0,Verbal,5,1,33,1,1,ego,0,0,1,correct
+fpvdnkq8,1,0,9,0,2.0,Verbal,1,0,100,0,1,ego,0,0,1,correct
+fpvdnkq8,2,2,5,0,2.0,Verbal,5,0,100,0,1,ego,0,0,1,correct
+fpvdnkq8,3,1,6,0,2.0,Verbal,4,0,100,0,1,ego,0,0,1,correct
+fpvdnkq8,4,2,7,0,2.0,Verbal,3,0,100,0,1,ego,0,0,1,correct
+fpvdnkq8,5,0,6,1,2.0,Verbal,4,0,100,0,1,ego,0,0,1,correct
+fpvdnkq8,6,1,7,1,2.0,Verbal,3,0,100,0,1,ego,0,0,1,correct
+fpvdnkq8,7,0,5,0,2.0,Verbal,5,0,100,0,1,ego,0,0,1,correct
+fpvdnkq8,8,1,7,0,2.0,Verbal,3,0,100,0,1,ego,0,0,1,correct
+fpvdnkq8,9,0,8,0,2.0,Verbal,2,0,100,0,1,ego,0,0,1,correct
+fpvdnkq8,10,2,10,0,2.0,Verbal,0,0,100,0,1,ego,0,0,1,correct
+fpvdnkq8,11,1,5,1,2.0,Verbal,5,0,100,0,1,ego,0,0,1,correct
+g2yvlu4k,1,2,3,0,7.0,Verbal,7,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,2,2,4,1,7.0,Verbal,6,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,3,2,3,1,7.0,Verbal,7,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,4,0,7,1,7.0,Verbal,3,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,5,0,8,1,7.0,Verbal,2,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,6,0,2,1,7.0,Verbal,8,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,7,2,6,1,7.0,Verbal,4,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,8,2,6,1,7.0,Verbal,4,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,9,0,6,2,7.0,Verbal,4,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,10,0,8,1,7.0,Verbal,2,1,75,1,1,ego,0,0,1,correct
+g2yvlu4k,11,1,3,1,7.0,Verbal,7,1,75,1,1,ego,0,0,1,correct
 hp19zqeh,1,1,7,2,5.0,Verbal,3,0,33,0,1,ego,0,0,1,correct
 hp19zqeh,2,1,8,2,5.0,Verbal,2,0,33,0,1,ego,0,0,1,correct
 hp19zqeh,3,2,5,2,5.0,Verbal,5,0,33,0,1,ego,0,0,1,correct
@@ -956,6 +1297,17 @@ inak0r18,8,2,9,2,5.0,Verbal,1,1,100,0,1,ego,1,0,0,over
 inak0r18,9,0,8,2,5.0,Verbal,2,1,100,0,1,ego,1,0,0,over
 inak0r18,10,1,5,0,5.0,Verbal,5,1,100,0,1,ego,1,0,0,over
 inak0r18,11,2,6,0,5.0,Verbal,4,1,100,0,1,ego,1,0,0,over
+iomh77xp,1,1,7,1,2.0,Verbal,3,1,33,0,1,ego,1,0,0,over
+iomh77xp,2,1,8,2,2.0,Verbal,2,1,33,0,1,ego,1,0,0,over
+iomh77xp,3,2,5,2,2.0,Verbal,5,1,33,0,1,ego,1,0,0,over
+iomh77xp,4,0,9,1,2.0,Verbal,1,1,33,0,1,ego,1,0,0,over
+iomh77xp,5,1,9,0,2.0,Verbal,1,1,33,0,1,ego,1,0,0,over
+iomh77xp,6,2,7,2,2.0,Verbal,3,1,33,0,1,ego,1,0,0,over
+iomh77xp,7,2,9,1,2.0,Verbal,1,1,33,0,1,ego,1,0,0,over
+iomh77xp,8,0,9,2,2.0,Verbal,1,1,33,0,1,ego,1,0,0,over
+iomh77xp,9,1,8,1,2.0,Verbal,2,1,33,0,1,ego,1,0,0,over
+iomh77xp,10,1,5,2,2.0,Verbal,5,1,33,0,1,ego,1,0,0,over
+iomh77xp,11,1,5,0,2.0,Verbal,5,1,33,0,1,ego,1,0,0,over
 j6ftwuzj,1,0,9,0,4.0,Verbal,1,0,33,0,1,ego,0,0,1,correct
 j6ftwuzj,2,2,5,0,4.0,Verbal,5,0,33,0,1,ego,0,0,1,correct
 j6ftwuzj,3,1,6,0,4.0,Verbal,4,0,33,0,1,ego,0,0,1,correct
@@ -967,6 +1319,17 @@ j6ftwuzj,8,0,9,0,4.0,Verbal,1,0,33,0,1,ego,0,0,1,correct
 j6ftwuzj,9,2,10,0,4.0,Verbal,0,0,33,0,1,ego,0,0,1,correct
 j6ftwuzj,10,1,5,0,4.0,Verbal,5,0,33,0,1,ego,0,0,1,correct
 j6ftwuzj,11,1,5,0,4.0,Verbal,5,0,33,0,1,ego,0,0,1,correct
+nxd05o0f,1,0,9,1,5.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+nxd05o0f,2,1,8,1,5.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
+nxd05o0f,3,0,8,0,5.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
+nxd05o0f,4,0,9,0,5.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+nxd05o0f,5,0,6,0,5.0,Verbal,4,0,75,0,1,ego,0,0,1,correct
+nxd05o0f,6,0,8,0,5.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
+nxd05o0f,7,1,9,0,5.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+nxd05o0f,8,2,9,0,5.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+nxd05o0f,9,0,8,0,5.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
+nxd05o0f,10,0,9,0,5.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+nxd05o0f,11,0,6,0,5.0,Verbal,4,0,75,0,1,ego,0,0,1,correct
 p1b4dbgv,1,2,9,1,3.0,Verbal,1,1,75,0,1,ego,1,0,0,over
 p1b4dbgv,10,1,5,2,3.0,Verbal,5,1,75,0,1,ego,1,0,0,over
 p1b4dbgv,11,0,6,2,3.0,Verbal,4,1,75,0,1,ego,1,0,0,over
@@ -978,6 +1341,17 @@ p1b4dbgv,6,1,7,1,3.0,Verbal,3,1,75,0,1,ego,1,0,0,over
 p1b4dbgv,7,0,5,0,3.0,Verbal,5,1,75,0,1,ego,1,0,0,over
 p1b4dbgv,8,1,7,1,3.0,Verbal,3,1,75,0,1,ego,1,0,0,over
 p1b4dbgv,9,2,10,2,3.0,Verbal,0,1,75,0,1,ego,1,0,0,over
+p1k5rpou,1,0,9,2,2.0,Verbal,1,1,50,0,1,ego,1,0,0,over
+p1k5rpou,2,1,8,2,2.0,Verbal,2,1,50,0,1,ego,1,0,0,over
+p1k5rpou,3,2,5,2,2.0,Verbal,5,1,50,0,1,ego,1,0,0,over
+p1k5rpou,4,1,3,1,2.0,Verbal,7,1,50,0,1,ego,1,0,0,over
+p1k5rpou,5,1,9,1,2.0,Verbal,1,1,50,0,1,ego,1,0,0,over
+p1k5rpou,6,0,8,1,2.0,Verbal,2,1,50,0,1,ego,1,0,0,over
+p1k5rpou,7,2,9,0,2.0,Verbal,1,1,50,0,1,ego,1,0,0,over
+p1k5rpou,8,1,7,0,2.0,Verbal,3,1,50,0,1,ego,1,0,0,over
+p1k5rpou,9,0,8,0,2.0,Verbal,2,1,50,0,1,ego,1,0,0,over
+p1k5rpou,10,2,10,2,2.0,Verbal,0,1,50,0,1,ego,1,0,0,over
+p1k5rpou,11,0,6,2,2.0,Verbal,4,1,50,0,1,ego,1,0,0,over
 pxz3760k,1,0,6,1,8.0,Verbal,4,0,50,1,1,ego,0,1,0,under
 pxz3760k,2,0,4,1,8.0,Verbal,6,0,50,1,1,ego,0,1,0,under
 pxz3760k,3,1,3,2,8.0,Verbal,7,0,50,1,1,ego,0,1,0,under
@@ -1011,6 +1385,28 @@ qoio0y3d,6,1,3,2,7.0,Verbal,7,1,75,1,1,ego,0,0,1,correct
 qoio0y3d,7,0,2,2,7.0,Verbal,8,1,75,1,1,ego,0,0,1,correct
 qoio0y3d,8,0,5,1,7.0,Verbal,5,1,75,1,1,ego,0,0,1,correct
 qoio0y3d,9,0,6,2,7.0,Verbal,4,1,75,1,1,ego,0,0,1,correct
+rp5nv7ut,1,2,9,1,4.0,Verbal,1,1,50,0,1,ego,1,0,0,over
+rp5nv7ut,2,1,8,1,4.0,Verbal,2,1,50,0,1,ego,1,0,0,over
+rp5nv7ut,3,0,8,1,4.0,Verbal,2,1,50,0,1,ego,1,0,0,over
+rp5nv7ut,4,1,3,1,4.0,Verbal,7,1,50,0,1,ego,1,0,0,over
+rp5nv7ut,5,2,9,0,4.0,Verbal,1,1,50,0,1,ego,1,0,0,over
+rp5nv7ut,6,1,7,0,4.0,Verbal,3,1,50,0,1,ego,1,0,0,over
+rp5nv7ut,7,1,9,1,4.0,Verbal,1,1,50,0,1,ego,1,0,0,over
+rp5nv7ut,8,0,9,0,4.0,Verbal,1,1,50,0,1,ego,1,0,0,over
+rp5nv7ut,9,1,8,0,4.0,Verbal,2,1,50,0,1,ego,1,0,0,over
+rp5nv7ut,10,1,5,0,4.0,Verbal,5,1,50,0,1,ego,1,0,0,over
+rp5nv7ut,11,1,5,1,4.0,Verbal,5,1,50,0,1,ego,1,0,0,over
+sfi4nrq8,1,0,9,0,4.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+sfi4nrq8,2,0,9,1,4.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+sfi4nrq8,3,1,6,0,4.0,Verbal,4,0,75,0,1,ego,0,0,1,correct
+sfi4nrq8,4,2,7,0,4.0,Verbal,3,0,75,0,1,ego,0,0,1,correct
+sfi4nrq8,5,0,6,0,4.0,Verbal,4,0,75,0,1,ego,0,0,1,correct
+sfi4nrq8,6,0,8,0,4.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
+sfi4nrq8,7,0,5,0,4.0,Verbal,5,0,75,0,1,ego,0,0,1,correct
+sfi4nrq8,8,0,9,0,4.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+sfi4nrq8,9,0,8,1,4.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
+sfi4nrq8,10,0,9,0,4.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
+sfi4nrq8,11,2,6,0,4.0,Verbal,4,0,75,0,1,ego,0,0,1,correct
 su9at1s5,1,2,9,1,4.0,Verbal,1,0,75,0,1,ego,0,0,1,correct
 su9at1s5,2,1,8,0,4.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
 su9at1s5,3,0,8,0,4.0,Verbal,2,0,75,0,1,ego,0,0,1,correct
@@ -1132,6 +1528,17 @@ zap4p51l,11,0,6,0,2.0,Verbal,4,0,75,0,1,ego,0,0,1,correct
 1c7v4nh9,7,2,1,1,17.0,Pop-Culture and Art,9,1,75,2,2,ego,0,1,0,under
 1c7v4nh9,8,2,2,2,17.0,Pop-Culture and Art,8,1,75,2,2,ego,0,1,0,under
 1c7v4nh9,9,2,1,1,17.0,Pop-Culture and Art,9,1,75,2,2,ego,0,1,0,under
+1gu1vzgk,1,1,1,1,10.0,Pop-Culture and Art,9,0,50,1,2,ego,0,1,0,under
+1gu1vzgk,2,1,3,1,10.0,Pop-Culture and Art,7,0,50,1,2,ego,0,1,0,under
+1gu1vzgk,3,2,2,1,10.0,Pop-Culture and Art,8,0,50,1,2,ego,0,1,0,under
+1gu1vzgk,4,2,0,1,10.0,Pop-Culture and Art,10,0,50,1,2,ego,0,1,0,under
+1gu1vzgk,5,2,0,1,10.0,Pop-Culture and Art,10,0,50,1,2,ego,0,1,0,under
+1gu1vzgk,6,2,1,1,10.0,Pop-Culture and Art,9,0,50,1,2,ego,0,1,0,under
+1gu1vzgk,7,2,1,1,10.0,Pop-Culture and Art,9,0,50,1,2,ego,0,1,0,under
+1gu1vzgk,8,2,2,1,10.0,Pop-Culture and Art,8,0,50,1,2,ego,0,1,0,under
+1gu1vzgk,9,2,1,1,10.0,Pop-Culture and Art,9,0,50,1,2,ego,0,1,0,under
+1gu1vzgk,10,2,3,1,10.0,Pop-Culture and Art,7,0,50,1,2,ego,0,1,0,under
+1gu1vzgk,11,2,2,1,10.0,Pop-Culture and Art,8,0,50,1,2,ego,0,1,0,under
 1yeajno3,1,0,2,1,12.0,Pop-Culture and Art,8,1,50,1,2,ego,0,0,1,correct
 1yeajno3,2,1,3,1,12.0,Pop-Culture and Art,7,1,50,1,2,ego,0,0,1,correct
 1yeajno3,3,2,2,1,12.0,Pop-Culture and Art,8,1,50,1,2,ego,0,0,1,correct
@@ -1220,6 +1627,50 @@ zap4p51l,11,0,6,0,2.0,Verbal,4,0,75,0,1,ego,0,0,1,correct
 7ebbfqqg,9,2,1,2,12.0,Pop-Culture and Art,9,0,50,1,2,ego,0,1,0,under
 7ebbfqqg,10,2,3,2,12.0,Pop-Culture and Art,7,0,50,1,2,ego,0,1,0,under
 7ebbfqqg,11,2,2,2,12.0,Pop-Culture and Art,8,0,50,1,2,ego,0,1,0,under
+7h604tn3,1,0,2,1,12.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
+7h604tn3,2,0,6,1,12.0,Pop-Culture and Art,4,0,33,1,2,ego,0,1,0,under
+7h604tn3,3,0,5,1,12.0,Pop-Culture and Art,5,0,33,1,2,ego,0,1,0,under
+7h604tn3,4,0,3,2,12.0,Pop-Culture and Art,7,0,33,1,2,ego,0,1,0,under
+7h604tn3,5,1,3,2,12.0,Pop-Culture and Art,7,0,33,1,2,ego,0,1,0,under
+7h604tn3,6,1,3,2,12.0,Pop-Culture and Art,7,0,33,1,2,ego,0,1,0,under
+7h604tn3,7,1,5,2,12.0,Pop-Culture and Art,5,0,33,1,2,ego,0,1,0,under
+7h604tn3,8,2,2,2,12.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
+7h604tn3,9,2,1,2,12.0,Pop-Culture and Art,9,0,33,1,2,ego,0,1,0,under
+7h604tn3,10,2,3,2,12.0,Pop-Culture and Art,7,0,33,1,2,ego,0,1,0,under
+7h604tn3,11,2,2,2,12.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
+83tbxcch,1,1,1,0,9.0,Pop-Culture and Art,9,0,100,1,2,ego,0,1,0,under
+83tbxcch,2,2,2,0,9.0,Pop-Culture and Art,8,0,100,1,2,ego,0,1,0,under
+83tbxcch,3,0,5,0,9.0,Pop-Culture and Art,5,0,100,1,2,ego,0,1,0,under
+83tbxcch,4,2,0,1,9.0,Pop-Culture and Art,10,0,100,1,2,ego,0,1,0,under
+83tbxcch,5,1,3,1,9.0,Pop-Culture and Art,7,0,100,1,2,ego,0,1,0,under
+83tbxcch,6,0,8,1,9.0,Pop-Culture and Art,2,0,100,1,2,ego,0,1,0,under
+83tbxcch,7,2,1,2,9.0,Pop-Culture and Art,9,0,100,1,2,ego,0,1,0,under
+83tbxcch,8,1,4,2,9.0,Pop-Culture and Art,6,0,100,1,2,ego,0,1,0,under
+83tbxcch,9,0,4,2,9.0,Pop-Culture and Art,6,0,100,1,2,ego,0,1,0,under
+83tbxcch,10,2,3,0,9.0,Pop-Culture and Art,7,0,100,1,2,ego,0,1,0,under
+83tbxcch,11,2,2,0,9.0,Pop-Culture and Art,8,0,100,1,2,ego,0,1,0,under
+8yvmba6x,1,0,2,0,9.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
+8yvmba6x,10,2,3,2,9.0,Pop-Culture and Art,7,0,33,1,2,ego,0,1,0,under
+8yvmba6x,11,2,2,1,9.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
+8yvmba6x,2,1,3,2,9.0,Pop-Culture and Art,7,0,33,1,2,ego,0,1,0,under
+8yvmba6x,3,0,5,0,9.0,Pop-Culture and Art,5,0,33,1,2,ego,0,1,0,under
+8yvmba6x,4,0,3,1,9.0,Pop-Culture and Art,7,0,33,1,2,ego,0,1,0,under
+8yvmba6x,5,2,0,0,9.0,Pop-Culture and Art,10,0,33,1,2,ego,0,1,0,under
+8yvmba6x,6,1,3,1,9.0,Pop-Culture and Art,7,0,33,1,2,ego,0,1,0,under
+8yvmba6x,7,2,1,0,9.0,Pop-Culture and Art,9,0,33,1,2,ego,0,1,0,under
+8yvmba6x,8,2,2,2,9.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
+8yvmba6x,9,2,1,2,9.0,Pop-Culture and Art,9,0,33,1,2,ego,0,1,0,under
+9lzz0jai,1,0,2,1,9.0,Pop-Culture and Art,8,1,75,1,2,ego,0,0,1,correct
+9lzz0jai,2,1,3,1,9.0,Pop-Culture and Art,7,1,75,1,2,ego,0,0,1,correct
+9lzz0jai,3,2,2,1,9.0,Pop-Culture and Art,8,1,75,1,2,ego,0,0,1,correct
+9lzz0jai,4,0,3,1,9.0,Pop-Culture and Art,7,1,75,1,2,ego,0,0,1,correct
+9lzz0jai,5,1,3,1,9.0,Pop-Culture and Art,7,1,75,1,2,ego,0,0,1,correct
+9lzz0jai,6,2,1,1,9.0,Pop-Culture and Art,9,1,75,1,2,ego,0,0,1,correct
+9lzz0jai,7,2,1,1,9.0,Pop-Culture and Art,9,1,75,1,2,ego,0,0,1,correct
+9lzz0jai,8,2,2,1,9.0,Pop-Culture and Art,8,1,75,1,2,ego,0,0,1,correct
+9lzz0jai,9,2,1,1,9.0,Pop-Culture and Art,9,1,75,1,2,ego,0,0,1,correct
+9lzz0jai,10,2,3,1,9.0,Pop-Culture and Art,7,1,75,1,2,ego,0,0,1,correct
+9lzz0jai,11,2,2,1,9.0,Pop-Culture and Art,8,1,75,1,2,ego,0,0,1,correct
 9om8jvev,1,0,5,0,3.0,Pop-Culture and Art,5,0,100,0,2,ego,0,0,1,correct
 9om8jvev,2,1,5,0,3.0,Pop-Culture and Art,5,0,100,0,2,ego,0,0,1,correct
 9om8jvev,3,2,3,0,3.0,Pop-Culture and Art,7,0,100,0,2,ego,0,0,1,correct
@@ -1297,6 +1748,28 @@ e44vpjp5,8,2,2,1,9.0,Pop-Culture and Art,8,0,100,1,2,ego,0,1,0,under
 e44vpjp5,9,2,1,1,9.0,Pop-Culture and Art,9,0,100,1,2,ego,0,1,0,under
 e44vpjp5,10,2,3,1,9.0,Pop-Culture and Art,7,0,100,1,2,ego,0,1,0,under
 e44vpjp5,11,2,2,1,9.0,Pop-Culture and Art,8,0,100,1,2,ego,0,1,0,under
+fpvdnkq8,1,0,2,0,7.0,Pop-Culture and Art,8,0,100,1,2,ego,0,1,0,under
+fpvdnkq8,10,0,2,0,7.0,Pop-Culture and Art,8,0,100,1,2,ego,0,1,0,under
+fpvdnkq8,11,2,2,0,7.0,Pop-Culture and Art,8,0,100,1,2,ego,0,1,0,under
+fpvdnkq8,2,0,6,0,7.0,Pop-Culture and Art,4,0,100,1,2,ego,0,1,0,under
+fpvdnkq8,3,2,2,0,7.0,Pop-Culture and Art,8,0,100,1,2,ego,0,1,0,under
+fpvdnkq8,4,2,0,0,7.0,Pop-Culture and Art,10,0,100,1,2,ego,0,1,0,under
+fpvdnkq8,5,2,0,0,7.0,Pop-Culture and Art,10,0,100,1,2,ego,0,1,0,under
+fpvdnkq8,6,2,1,0,7.0,Pop-Culture and Art,9,0,100,1,2,ego,0,1,0,under
+fpvdnkq8,7,2,1,0,7.0,Pop-Culture and Art,9,0,100,1,2,ego,0,1,0,under
+fpvdnkq8,8,2,2,0,7.0,Pop-Culture and Art,8,0,100,1,2,ego,0,1,0,under
+fpvdnkq8,9,2,1,0,7.0,Pop-Culture and Art,9,0,100,1,2,ego,0,1,0,under
+g2yvlu4k,1,2,4,1,7.0,Pop-Culture and Art,6,1,75,1,2,ego,0,0,1,correct
+g2yvlu4k,2,2,2,1,7.0,Pop-Culture and Art,8,1,75,1,2,ego,0,0,1,correct
+g2yvlu4k,3,2,2,1,7.0,Pop-Culture and Art,8,1,75,1,2,ego,0,0,1,correct
+g2yvlu4k,4,2,0,1,7.0,Pop-Culture and Art,10,1,75,1,2,ego,0,0,1,correct
+g2yvlu4k,5,2,0,1,7.0,Pop-Culture and Art,10,1,75,1,2,ego,0,0,1,correct
+g2yvlu4k,6,1,3,1,7.0,Pop-Culture and Art,7,1,75,1,2,ego,0,0,1,correct
+g2yvlu4k,7,0,6,2,7.0,Pop-Culture and Art,4,1,75,1,2,ego,0,0,1,correct
+g2yvlu4k,8,0,5,2,7.0,Pop-Culture and Art,5,1,75,1,2,ego,0,0,1,correct
+g2yvlu4k,9,1,5,2,7.0,Pop-Culture and Art,5,1,75,1,2,ego,0,0,1,correct
+g2yvlu4k,10,1,3,2,7.0,Pop-Culture and Art,7,1,75,1,2,ego,0,0,1,correct
+g2yvlu4k,11,1,2,2,7.0,Pop-Culture and Art,8,1,75,1,2,ego,0,0,1,correct
 hp19zqeh,1,2,9,2,4.0,Pop-Culture and Art,1,0,33,0,2,ego,0,0,1,correct
 hp19zqeh,2,1,5,2,4.0,Pop-Culture and Art,5,0,33,0,2,ego,0,0,1,correct
 hp19zqeh,3,1,6,2,4.0,Pop-Culture and Art,4,0,33,0,2,ego,0,0,1,correct
@@ -1319,6 +1792,17 @@ inak0r18,8,2,2,2,7.0,Pop-Culture and Art,8,2,100,1,2,ego,1,0,0,over
 inak0r18,9,0,4,2,7.0,Pop-Culture and Art,6,2,100,1,2,ego,1,0,0,over
 inak0r18,10,1,3,2,7.0,Pop-Culture and Art,7,2,100,1,2,ego,1,0,0,over
 inak0r18,11,2,2,2,7.0,Pop-Culture and Art,8,2,100,1,2,ego,1,0,0,over
+iomh77xp,1,1,1,1,9.0,Pop-Culture and Art,9,1,75,1,2,ego,0,0,1,correct
+iomh77xp,2,0,6,1,9.0,Pop-Culture and Art,4,1,75,1,2,ego,0,0,1,correct
+iomh77xp,3,1,3,2,9.0,Pop-Culture and Art,7,1,75,1,2,ego,0,0,1,correct
+iomh77xp,4,0,3,0,9.0,Pop-Culture and Art,7,1,75,1,2,ego,0,0,1,correct
+iomh77xp,5,1,3,1,9.0,Pop-Culture and Art,7,1,75,1,2,ego,0,0,1,correct
+iomh77xp,6,1,3,2,9.0,Pop-Culture and Art,7,1,75,1,2,ego,0,0,1,correct
+iomh77xp,7,2,1,2,9.0,Pop-Culture and Art,9,1,75,1,2,ego,0,0,1,correct
+iomh77xp,8,2,2,2,9.0,Pop-Culture and Art,8,1,75,1,2,ego,0,0,1,correct
+iomh77xp,9,2,1,2,9.0,Pop-Culture and Art,9,1,75,1,2,ego,0,0,1,correct
+iomh77xp,10,2,3,2,9.0,Pop-Culture and Art,7,1,75,1,2,ego,0,0,1,correct
+iomh77xp,11,1,2,1,9.0,Pop-Culture and Art,8,1,75,1,2,ego,0,0,1,correct
 j6ftwuzj,1,0,2,0,8.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
 j6ftwuzj,2,0,6,0,8.0,Pop-Culture and Art,4,0,33,1,2,ego,0,1,0,under
 j6ftwuzj,3,2,2,0,8.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
@@ -1330,6 +1814,17 @@ j6ftwuzj,8,2,2,2,8.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
 j6ftwuzj,9,2,1,2,8.0,Pop-Culture and Art,9,0,33,1,2,ego,0,1,0,under
 j6ftwuzj,10,2,3,2,8.0,Pop-Culture and Art,7,0,33,1,2,ego,0,1,0,under
 j6ftwuzj,11,2,2,2,8.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
+nxd05o0f,1,1,1,2,11.0,Pop-Culture and Art,9,1,100,1,2,ego,0,0,1,correct
+nxd05o0f,2,1,3,1,11.0,Pop-Culture and Art,7,1,100,1,2,ego,0,0,1,correct
+nxd05o0f,3,1,3,1,11.0,Pop-Culture and Art,7,1,100,1,2,ego,0,0,1,correct
+nxd05o0f,4,1,4,1,11.0,Pop-Culture and Art,6,1,100,1,2,ego,0,0,1,correct
+nxd05o0f,5,1,3,1,11.0,Pop-Culture and Art,7,1,100,1,2,ego,0,0,1,correct
+nxd05o0f,6,1,3,1,11.0,Pop-Culture and Art,7,1,100,1,2,ego,0,0,1,correct
+nxd05o0f,7,1,5,1,11.0,Pop-Culture and Art,5,1,100,1,2,ego,0,0,1,correct
+nxd05o0f,8,1,4,1,11.0,Pop-Culture and Art,6,1,100,1,2,ego,0,0,1,correct
+nxd05o0f,9,1,5,1,11.0,Pop-Culture and Art,5,1,100,1,2,ego,0,0,1,correct
+nxd05o0f,10,1,3,1,11.0,Pop-Culture and Art,7,1,100,1,2,ego,0,0,1,correct
+nxd05o0f,11,1,2,1,11.0,Pop-Culture and Art,8,1,100,1,2,ego,0,0,1,correct
 p1b4dbgv,1,0,2,2,12.0,Pop-Culture and Art,8,1,75,1,2,ego,0,0,1,correct
 p1b4dbgv,2,1,3,2,12.0,Pop-Culture and Art,7,1,75,1,2,ego,0,0,1,correct
 p1b4dbgv,3,2,2,2,12.0,Pop-Culture and Art,8,1,75,1,2,ego,0,0,1,correct
@@ -1341,6 +1836,17 @@ p1b4dbgv,8,2,2,2,12.0,Pop-Culture and Art,8,1,75,1,2,ego,0,0,1,correct
 p1b4dbgv,9,2,1,2,12.0,Pop-Culture and Art,9,1,75,1,2,ego,0,0,1,correct
 p1b4dbgv,10,2,3,2,12.0,Pop-Culture and Art,7,1,75,1,2,ego,0,0,1,correct
 p1b4dbgv,11,2,2,2,12.0,Pop-Culture and Art,8,1,75,1,2,ego,0,0,1,correct
+p1k5rpou,1,1,6,0,2.0,Pop-Culture and Art,4,0,33,0,2,ego,0,0,1,correct
+p1k5rpou,10,2,5,0,2.0,Pop-Culture and Art,5,0,33,0,2,ego,0,0,1,correct
+p1k5rpou,11,0,4,0,2.0,Pop-Culture and Art,6,0,33,0,2,ego,0,0,1,correct
+p1k5rpou,2,1,5,1,2.0,Pop-Culture and Art,5,0,33,0,2,ego,0,0,1,correct
+p1k5rpou,3,0,7,0,2.0,Pop-Culture and Art,3,0,33,0,2,ego,0,0,1,correct
+p1k5rpou,4,2,5,2,2.0,Pop-Culture and Art,5,0,33,0,2,ego,0,0,1,correct
+p1k5rpou,5,2,3,2,2.0,Pop-Culture and Art,7,0,33,0,2,ego,0,0,1,correct
+p1k5rpou,6,0,4,0,2.0,Pop-Culture and Art,6,0,33,0,2,ego,0,0,1,correct
+p1k5rpou,7,2,4,2,2.0,Pop-Culture and Art,6,0,33,0,2,ego,0,0,1,correct
+p1k5rpou,8,1,4,1,2.0,Pop-Culture and Art,6,0,33,0,2,ego,0,0,1,correct
+p1k5rpou,9,0,6,0,2.0,Pop-Culture and Art,4,0,33,0,2,ego,0,0,1,correct
 pxz3760k,1,0,2,0,9.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
 pxz3760k,2,0,6,0,9.0,Pop-Culture and Art,4,0,33,1,2,ego,0,1,0,under
 pxz3760k,3,2,2,2,9.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
@@ -1374,6 +1880,28 @@ qoio0y3d,8,1,4,2,12.0,Pop-Culture and Art,6,1,75,1,2,ego,0,0,1,correct
 qoio0y3d,9,0,4,2,12.0,Pop-Culture and Art,6,1,75,1,2,ego,0,0,1,correct
 qoio0y3d,10,1,3,2,12.0,Pop-Culture and Art,7,1,75,1,2,ego,0,0,1,correct
 qoio0y3d,11,1,2,2,12.0,Pop-Culture and Art,8,1,75,1,2,ego,0,0,1,correct
+rp5nv7ut,1,0,2,0,8.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
+rp5nv7ut,2,2,2,0,8.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
+rp5nv7ut,3,2,2,0,8.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
+rp5nv7ut,4,2,0,0,8.0,Pop-Culture and Art,10,0,33,1,2,ego,0,1,0,under
+rp5nv7ut,5,2,0,1,8.0,Pop-Culture and Art,10,0,33,1,2,ego,0,1,0,under
+rp5nv7ut,6,2,1,1,8.0,Pop-Culture and Art,9,0,33,1,2,ego,0,1,0,under
+rp5nv7ut,7,2,1,1,8.0,Pop-Culture and Art,9,0,33,1,2,ego,0,1,0,under
+rp5nv7ut,8,2,2,1,8.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
+rp5nv7ut,9,2,1,1,8.0,Pop-Culture and Art,9,0,33,1,2,ego,0,1,0,under
+rp5nv7ut,10,2,3,1,8.0,Pop-Culture and Art,7,0,33,1,2,ego,0,1,0,under
+rp5nv7ut,11,2,2,1,8.0,Pop-Culture and Art,8,0,33,1,2,ego,0,1,0,under
+sfi4nrq8,1,1,1,1,10.0,Pop-Culture and Art,9,1,100,1,2,ego,0,0,1,correct
+sfi4nrq8,10,1,3,1,10.0,Pop-Culture and Art,7,1,100,1,2,ego,0,0,1,correct
+sfi4nrq8,11,1,2,1,10.0,Pop-Culture and Art,8,1,100,1,2,ego,0,0,1,correct
+sfi4nrq8,2,0,6,1,10.0,Pop-Culture and Art,4,1,100,1,2,ego,0,0,1,correct
+sfi4nrq8,3,1,3,1,10.0,Pop-Culture and Art,7,1,100,1,2,ego,0,0,1,correct
+sfi4nrq8,4,1,4,1,10.0,Pop-Culture and Art,6,1,100,1,2,ego,0,0,1,correct
+sfi4nrq8,5,1,3,1,10.0,Pop-Culture and Art,7,1,100,1,2,ego,0,0,1,correct
+sfi4nrq8,6,1,3,1,10.0,Pop-Culture and Art,7,1,100,1,2,ego,0,0,1,correct
+sfi4nrq8,7,1,5,1,10.0,Pop-Culture and Art,5,1,100,1,2,ego,0,0,1,correct
+sfi4nrq8,8,1,4,1,10.0,Pop-Culture and Art,6,1,100,1,2,ego,0,0,1,correct
+sfi4nrq8,9,1,5,1,10.0,Pop-Culture and Art,5,1,100,1,2,ego,0,0,1,correct
 su9at1s5,1,0,2,1,15.0,Pop-Culture and Art,8,1,100,1,2,ego,0,0,1,correct
 su9at1s5,2,1,3,2,15.0,Pop-Culture and Art,7,1,100,1,2,ego,0,0,1,correct
 su9at1s5,3,0,5,2,15.0,Pop-Culture and Art,5,1,100,1,2,ego,0,0,1,correct
@@ -1495,6 +2023,17 @@ zap4p51l,11,0,2,0,6.0,Pop-Culture and Art,8,0,75,1,2,ego,0,1,0,under
 1c7v4nh9,9,0,6,1,14.0,Sports and Video Games,4,1,75,1,0,ego,0,0,1,correct
 1c7v4nh9,10,0,8,1,14.0,Sports and Video Games,2,1,75,1,0,ego,0,0,1,correct
 1c7v4nh9,11,1,8,1,14.0,Sports and Video Games,2,1,75,1,0,ego,0,0,1,correct
+1gu1vzgk,1,2,9,1,11.0,Sports and Video Games,1,0,75,1,0,ego,0,1,0,under
+1gu1vzgk,2,2,8,0,11.0,Sports and Video Games,2,0,75,1,0,ego,0,1,0,under
+1gu1vzgk,3,0,5,1,11.0,Sports and Video Games,5,0,75,1,0,ego,0,1,0,under
+1gu1vzgk,4,0,7,2,11.0,Sports and Video Games,3,0,75,1,0,ego,0,1,0,under
+1gu1vzgk,5,1,8,1,11.0,Sports and Video Games,2,0,75,1,0,ego,0,1,0,under
+1gu1vzgk,6,0,2,1,11.0,Sports and Video Games,8,0,75,1,0,ego,0,1,0,under
+1gu1vzgk,7,0,3,1,11.0,Sports and Video Games,7,0,75,1,0,ego,0,1,0,under
+1gu1vzgk,8,0,5,1,11.0,Sports and Video Games,5,0,75,1,0,ego,0,1,0,under
+1gu1vzgk,9,0,6,1,11.0,Sports and Video Games,4,0,75,1,0,ego,0,1,0,under
+1gu1vzgk,10,0,8,1,11.0,Sports and Video Games,2,0,75,1,0,ego,0,1,0,under
+1gu1vzgk,11,0,6,0,11.0,Sports and Video Games,4,0,75,1,0,ego,0,1,0,under
 1yeajno3,1,2,9,2,8.0,Sports and Video Games,1,0,75,1,0,ego,0,1,0,under
 1yeajno3,10,2,10,2,8.0,Sports and Video Games,0,0,75,1,0,ego,0,1,0,under
 1yeajno3,11,0,6,1,8.0,Sports and Video Games,4,0,75,1,0,ego,0,1,0,under
@@ -1583,6 +2122,50 @@ zap4p51l,11,0,2,0,6.0,Pop-Culture and Art,8,0,75,1,2,ego,0,1,0,under
 7ebbfqqg,7,0,3,2,13.0,Sports and Video Games,7,2,75,1,0,ego,1,0,0,over
 7ebbfqqg,8,0,5,2,13.0,Sports and Video Games,5,2,75,1,0,ego,1,0,0,over
 7ebbfqqg,9,0,6,2,13.0,Sports and Video Games,4,2,75,1,0,ego,1,0,0,over
+7h604tn3,1,1,9,0,15.0,Sports and Video Games,1,0,33,1,0,ego,0,1,0,under
+7h604tn3,2,2,8,0,15.0,Sports and Video Games,2,0,33,1,0,ego,0,1,0,under
+7h604tn3,3,0,5,0,15.0,Sports and Video Games,5,0,33,1,0,ego,0,1,0,under
+7h604tn3,4,0,7,2,15.0,Sports and Video Games,3,0,33,1,0,ego,0,1,0,under
+7h604tn3,5,0,8,1,15.0,Sports and Video Games,2,0,33,1,0,ego,0,1,0,under
+7h604tn3,6,0,2,0,15.0,Sports and Video Games,8,0,33,1,0,ego,0,1,0,under
+7h604tn3,7,0,3,0,15.0,Sports and Video Games,7,0,33,1,0,ego,0,1,0,under
+7h604tn3,8,0,5,0,15.0,Sports and Video Games,5,0,33,1,0,ego,0,1,0,under
+7h604tn3,9,0,6,0,15.0,Sports and Video Games,4,0,33,1,0,ego,0,1,0,under
+7h604tn3,10,0,8,0,15.0,Sports and Video Games,2,0,33,1,0,ego,0,1,0,under
+7h604tn3,11,1,8,0,15.0,Sports and Video Games,2,0,33,1,0,ego,0,1,0,under
+83tbxcch,1,0,8,0,15.0,Sports and Video Games,2,0,75,1,0,ego,0,1,0,under
+83tbxcch,2,1,7,0,15.0,Sports and Video Games,3,0,75,1,0,ego,0,1,0,under
+83tbxcch,3,2,10,0,15.0,Sports and Video Games,0,0,75,1,0,ego,0,1,0,under
+83tbxcch,4,0,7,1,15.0,Sports and Video Games,3,0,75,1,0,ego,0,1,0,under
+83tbxcch,5,1,8,1,15.0,Sports and Video Games,2,0,75,1,0,ego,0,1,0,under
+83tbxcch,6,2,10,1,15.0,Sports and Video Games,0,0,75,1,0,ego,0,1,0,under
+83tbxcch,7,0,3,2,15.0,Sports and Video Games,7,0,75,1,0,ego,0,1,0,under
+83tbxcch,8,1,6,2,15.0,Sports and Video Games,4,0,75,1,0,ego,0,1,0,under
+83tbxcch,9,2,9,2,15.0,Sports and Video Games,1,0,75,1,0,ego,0,1,0,under
+83tbxcch,10,0,8,2,15.0,Sports and Video Games,2,0,75,1,0,ego,0,1,0,under
+83tbxcch,11,1,8,2,15.0,Sports and Video Games,2,0,75,1,0,ego,0,1,0,under
+8yvmba6x,1,1,9,1,12.0,Sports and Video Games,1,1,50,1,0,ego,0,0,1,correct
+8yvmba6x,2,0,4,2,12.0,Sports and Video Games,6,1,50,1,0,ego,0,0,1,correct
+8yvmba6x,3,2,10,2,12.0,Sports and Video Games,0,1,50,1,0,ego,0,0,1,correct
+8yvmba6x,4,0,7,0,12.0,Sports and Video Games,3,1,50,1,0,ego,0,0,1,correct
+8yvmba6x,5,0,8,1,12.0,Sports and Video Games,2,1,50,1,0,ego,0,0,1,correct
+8yvmba6x,6,1,8,1,12.0,Sports and Video Games,2,1,50,1,0,ego,0,0,1,correct
+8yvmba6x,7,1,5,2,12.0,Sports and Video Games,5,1,50,1,0,ego,0,0,1,correct
+8yvmba6x,8,2,10,1,12.0,Sports and Video Games,0,1,50,1,0,ego,0,0,1,correct
+8yvmba6x,9,1,5,0,12.0,Sports and Video Games,5,1,50,1,0,ego,0,0,1,correct
+8yvmba6x,10,1,7,0,12.0,Sports and Video Games,3,1,50,1,0,ego,0,0,1,correct
+8yvmba6x,11,0,6,0,12.0,Sports and Video Games,4,1,50,1,0,ego,0,0,1,correct
+9lzz0jai,1,1,10,0,5.0,Sports and Video Games,0,0,75,0,0,ego,0,0,1,correct
+9lzz0jai,2,2,10,0,5.0,Sports and Video Games,0,0,75,0,0,ego,0,0,1,correct
+9lzz0jai,3,0,9,0,5.0,Sports and Video Games,1,0,75,0,0,ego,0,0,1,correct
+9lzz0jai,4,0,10,1,5.0,Sports and Video Games,0,0,75,0,0,ego,0,0,1,correct
+9lzz0jai,5,2,10,1,5.0,Sports and Video Games,0,0,75,0,0,ego,0,0,1,correct
+9lzz0jai,6,0,8,0,5.0,Sports and Video Games,2,0,75,0,0,ego,0,0,1,correct
+9lzz0jai,7,0,7,0,5.0,Sports and Video Games,3,0,75,0,0,ego,0,0,1,correct
+9lzz0jai,8,0,9,0,5.0,Sports and Video Games,1,0,75,0,0,ego,0,0,1,correct
+9lzz0jai,9,0,9,0,5.0,Sports and Video Games,1,0,75,0,0,ego,0,0,1,correct
+9lzz0jai,10,0,9,0,5.0,Sports and Video Games,1,0,75,0,0,ego,0,0,1,correct
+9lzz0jai,11,0,7,0,5.0,Sports and Video Games,3,0,75,0,0,ego,0,0,1,correct
 9om8jvev,1,0,8,1,8.0,Sports and Video Games,2,1,75,1,0,ego,0,0,1,correct
 9om8jvev,2,1,7,1,8.0,Sports and Video Games,3,1,75,1,0,ego,0,0,1,correct
 9om8jvev,3,2,10,1,8.0,Sports and Video Games,0,1,75,1,0,ego,0,0,1,correct
@@ -1660,6 +2243,28 @@ e44vpjp5,8,0,5,2,8.0,Sports and Video Games,5,0,33,1,0,ego,0,1,0,under
 e44vpjp5,9,1,5,2,8.0,Sports and Video Games,5,0,33,1,0,ego,0,1,0,under
 e44vpjp5,10,2,10,2,8.0,Sports and Video Games,0,0,33,1,0,ego,0,1,0,under
 e44vpjp5,11,1,8,0,8.0,Sports and Video Games,2,0,33,1,0,ego,0,1,0,under
+fpvdnkq8,1,0,8,1,9.0,Sports and Video Games,2,0,100,1,0,ego,0,1,0,under
+fpvdnkq8,2,1,7,0,9.0,Sports and Video Games,3,0,100,1,0,ego,0,1,0,under
+fpvdnkq8,3,0,5,0,9.0,Sports and Video Games,5,0,100,1,0,ego,0,1,0,under
+fpvdnkq8,4,2,10,0,9.0,Sports and Video Games,0,0,100,1,0,ego,0,1,0,under
+fpvdnkq8,5,1,8,1,9.0,Sports and Video Games,2,0,100,1,0,ego,0,1,0,under
+fpvdnkq8,6,2,10,1,9.0,Sports and Video Games,0,0,100,1,0,ego,0,1,0,under
+fpvdnkq8,7,0,3,0,9.0,Sports and Video Games,7,0,100,1,0,ego,0,1,0,under
+fpvdnkq8,8,0,5,0,9.0,Sports and Video Games,5,0,100,1,0,ego,0,1,0,under
+fpvdnkq8,9,0,6,0,9.0,Sports and Video Games,4,0,100,1,0,ego,0,1,0,under
+fpvdnkq8,10,0,8,0,9.0,Sports and Video Games,2,0,100,1,0,ego,0,1,0,under
+fpvdnkq8,11,1,8,0,9.0,Sports and Video Games,2,0,100,1,0,ego,0,1,0,under
+g2yvlu4k,1,2,9,2,16.0,Sports and Video Games,1,1,75,2,0,ego,0,1,0,under
+g2yvlu4k,2,2,8,1,16.0,Sports and Video Games,2,1,75,2,0,ego,0,1,0,under
+g2yvlu4k,3,2,10,1,16.0,Sports and Video Games,0,1,75,2,0,ego,0,1,0,under
+g2yvlu4k,4,2,10,1,16.0,Sports and Video Games,0,1,75,2,0,ego,0,1,0,under
+g2yvlu4k,5,0,8,1,16.0,Sports and Video Games,2,1,75,2,0,ego,0,1,0,under
+g2yvlu4k,6,0,2,0,16.0,Sports and Video Games,8,1,75,2,0,ego,0,1,0,under
+g2yvlu4k,7,0,3,1,16.0,Sports and Video Games,7,1,75,2,0,ego,0,1,0,under
+g2yvlu4k,8,2,10,1,16.0,Sports and Video Games,0,1,75,2,0,ego,0,1,0,under
+g2yvlu4k,9,0,6,1,16.0,Sports and Video Games,4,1,75,2,0,ego,0,1,0,under
+g2yvlu4k,10,0,8,1,16.0,Sports and Video Games,2,1,75,2,0,ego,0,1,0,under
+g2yvlu4k,11,1,8,1,16.0,Sports and Video Games,2,1,75,2,0,ego,0,1,0,under
 hp19zqeh,1,0,9,0,4.0,Sports and Video Games,1,0,33,0,0,ego,0,0,1,correct
 hp19zqeh,10,2,10,2,4.0,Sports and Video Games,0,0,33,0,0,ego,0,0,1,correct
 hp19zqeh,11,2,9,2,4.0,Sports and Video Games,1,0,33,0,0,ego,0,0,1,correct
@@ -1682,6 +2287,17 @@ inak0r18,8,2,10,0,4.0,Sports and Video Games,0,0,75,0,0,ego,0,0,1,correct
 inak0r18,9,0,9,0,4.0,Sports and Video Games,1,0,75,0,0,ego,0,0,1,correct
 inak0r18,10,1,10,0,4.0,Sports and Video Games,0,0,75,0,0,ego,0,0,1,correct
 inak0r18,11,2,9,2,4.0,Sports and Video Games,1,0,75,0,0,ego,0,0,1,correct
+iomh77xp,1,1,9,0,9.0,Sports and Video Games,1,0,75,1,0,ego,0,1,0,under
+iomh77xp,2,1,7,1,9.0,Sports and Video Games,3,0,75,1,0,ego,0,1,0,under
+iomh77xp,3,2,10,1,9.0,Sports and Video Games,0,0,75,1,0,ego,0,1,0,under
+iomh77xp,4,0,7,0,9.0,Sports and Video Games,3,0,75,1,0,ego,0,1,0,under
+iomh77xp,5,2,10,2,9.0,Sports and Video Games,0,0,75,1,0,ego,0,1,0,under
+iomh77xp,6,0,2,2,9.0,Sports and Video Games,8,0,75,1,0,ego,0,1,0,under
+iomh77xp,7,1,5,2,9.0,Sports and Video Games,5,0,75,1,0,ego,0,1,0,under
+iomh77xp,8,0,5,1,9.0,Sports and Video Games,5,0,75,1,0,ego,0,1,0,under
+iomh77xp,9,0,6,2,9.0,Sports and Video Games,4,0,75,1,0,ego,0,1,0,under
+iomh77xp,10,0,8,1,9.0,Sports and Video Games,2,0,75,1,0,ego,0,1,0,under
+iomh77xp,11,1,8,2,9.0,Sports and Video Games,2,0,75,1,0,ego,0,1,0,under
 j6ftwuzj,1,2,9,1,9.0,Sports and Video Games,1,1,75,1,0,ego,0,0,1,correct
 j6ftwuzj,2,1,7,1,9.0,Sports and Video Games,3,1,75,1,0,ego,0,0,1,correct
 j6ftwuzj,3,0,5,1,9.0,Sports and Video Games,5,1,75,1,0,ego,0,0,1,correct
@@ -1693,6 +2309,17 @@ j6ftwuzj,8,0,5,2,9.0,Sports and Video Games,5,1,75,1,0,ego,0,0,1,correct
 j6ftwuzj,9,1,5,2,9.0,Sports and Video Games,5,1,75,1,0,ego,0,0,1,correct
 j6ftwuzj,10,1,7,2,9.0,Sports and Video Games,3,1,75,1,0,ego,0,0,1,correct
 j6ftwuzj,11,1,8,2,9.0,Sports and Video Games,2,1,75,1,0,ego,0,0,1,correct
+nxd05o0f,1,1,9,1,11.0,Sports and Video Games,1,1,75,1,0,ego,0,0,1,correct
+nxd05o0f,2,2,8,1,11.0,Sports and Video Games,2,1,75,1,0,ego,0,0,1,correct
+nxd05o0f,3,0,5,1,11.0,Sports and Video Games,5,1,75,1,0,ego,0,0,1,correct
+nxd05o0f,4,0,7,1,11.0,Sports and Video Games,3,1,75,1,0,ego,0,0,1,correct
+nxd05o0f,5,0,8,1,11.0,Sports and Video Games,2,1,75,1,0,ego,0,0,1,correct
+nxd05o0f,6,0,2,1,11.0,Sports and Video Games,8,1,75,1,0,ego,0,0,1,correct
+nxd05o0f,7,0,3,1,11.0,Sports and Video Games,7,1,75,1,0,ego,0,0,1,correct
+nxd05o0f,8,0,5,1,11.0,Sports and Video Games,5,1,75,1,0,ego,0,0,1,correct
+nxd05o0f,9,0,6,1,11.0,Sports and Video Games,4,1,75,1,0,ego,0,0,1,correct
+nxd05o0f,10,0,8,1,11.0,Sports and Video Games,2,1,75,1,0,ego,0,0,1,correct
+nxd05o0f,11,0,6,1,11.0,Sports and Video Games,4,1,75,1,0,ego,0,0,1,correct
 p1b4dbgv,1,0,8,0,8.0,Sports and Video Games,2,0,33,1,0,ego,0,1,0,under
 p1b4dbgv,2,1,7,1,8.0,Sports and Video Games,3,0,33,1,0,ego,0,1,0,under
 p1b4dbgv,3,1,7,1,8.0,Sports and Video Games,3,0,33,1,0,ego,0,1,0,under
@@ -1704,6 +2331,17 @@ p1b4dbgv,8,1,6,1,8.0,Sports and Video Games,4,0,33,1,0,ego,0,1,0,under
 p1b4dbgv,9,1,5,2,8.0,Sports and Video Games,5,0,33,1,0,ego,0,1,0,under
 p1b4dbgv,10,1,7,2,8.0,Sports and Video Games,3,0,33,1,0,ego,0,1,0,under
 p1b4dbgv,11,1,8,2,8.0,Sports and Video Games,2,0,33,1,0,ego,0,1,0,under
+p1k5rpou,1,0,8,0,7.0,Sports and Video Games,2,0,33,1,0,ego,0,1,0,under
+p1k5rpou,2,2,8,1,7.0,Sports and Video Games,2,0,33,1,0,ego,0,1,0,under
+p1k5rpou,3,1,7,0,7.0,Sports and Video Games,3,0,33,1,0,ego,0,1,0,under
+p1k5rpou,4,0,7,0,7.0,Sports and Video Games,3,0,33,1,0,ego,0,1,0,under
+p1k5rpou,5,2,10,2,7.0,Sports and Video Games,0,0,33,1,0,ego,0,1,0,under
+p1k5rpou,6,1,8,1,7.0,Sports and Video Games,2,0,33,1,0,ego,0,1,0,under
+p1k5rpou,7,2,10,0,7.0,Sports and Video Games,0,0,33,1,0,ego,0,1,0,under
+p1k5rpou,8,0,5,1,7.0,Sports and Video Games,5,0,33,1,0,ego,0,1,0,under
+p1k5rpou,9,0,6,1,7.0,Sports and Video Games,4,0,33,1,0,ego,0,1,0,under
+p1k5rpou,10,0,8,2,7.0,Sports and Video Games,2,0,33,1,0,ego,0,1,0,under
+p1k5rpou,11,2,9,2,7.0,Sports and Video Games,1,0,33,1,0,ego,0,1,0,under
 pxz3760k,1,1,9,2,15.0,Sports and Video Games,1,0,50,1,0,ego,0,1,0,under
 pxz3760k,2,0,4,0,15.0,Sports and Video Games,6,0,50,1,0,ego,0,1,0,under
 pxz3760k,3,1,7,0,15.0,Sports and Video Games,3,0,50,1,0,ego,0,1,0,under
@@ -1737,6 +2375,28 @@ qoio0y3d,8,0,5,2,9.0,Sports and Video Games,5,1,75,1,0,ego,0,0,1,correct
 qoio0y3d,9,0,6,1,9.0,Sports and Video Games,4,1,75,1,0,ego,0,0,1,correct
 qoio0y3d,10,0,8,1,9.0,Sports and Video Games,2,1,75,1,0,ego,0,0,1,correct
 qoio0y3d,11,1,8,1,9.0,Sports and Video Games,2,1,75,1,0,ego,0,0,1,correct
+rp5nv7ut,1,1,9,1,9.0,Sports and Video Games,1,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,2,0,4,0,9.0,Sports and Video Games,6,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,3,0,5,0,9.0,Sports and Video Games,5,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,4,0,7,0,9.0,Sports and Video Games,3,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,5,0,8,0,9.0,Sports and Video Games,2,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,6,2,10,0,9.0,Sports and Video Games,0,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,7,0,3,0,9.0,Sports and Video Games,7,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,8,0,5,0,9.0,Sports and Video Games,5,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,9,0,6,0,9.0,Sports and Video Games,4,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,10,0,8,0,9.0,Sports and Video Games,2,0,33,1,0,ego,0,1,0,under
+rp5nv7ut,11,0,6,0,9.0,Sports and Video Games,4,0,33,1,0,ego,0,1,0,under
+sfi4nrq8,1,1,9,1,14.0,Sports and Video Games,1,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,2,0,4,1,14.0,Sports and Video Games,6,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,3,0,5,1,14.0,Sports and Video Games,5,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,4,0,7,0,14.0,Sports and Video Games,3,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,5,1,8,1,14.0,Sports and Video Games,2,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,6,0,2,1,14.0,Sports and Video Games,8,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,7,0,3,1,14.0,Sports and Video Games,7,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,8,0,5,1,14.0,Sports and Video Games,5,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,9,0,6,1,14.0,Sports and Video Games,4,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,10,0,8,1,14.0,Sports and Video Games,2,1,100,1,0,ego,0,0,1,correct
+sfi4nrq8,11,0,6,1,14.0,Sports and Video Games,4,1,100,1,0,ego,0,0,1,correct
 su9at1s5,1,0,8,2,15.0,Sports and Video Games,2,2,100,1,0,ego,1,0,0,over
 su9at1s5,2,1,7,2,15.0,Sports and Video Games,3,2,100,1,0,ego,1,0,0,over
 su9at1s5,3,1,7,1,15.0,Sports and Video Games,3,2,100,1,0,ego,1,0,0,over
@@ -1858,6 +2518,17 @@ zap4p51l,11,0,7,0,3.0,Sports and Video Games,3,0,75,0,0,ego,0,0,1,correct
 1c7v4nh9,9,2,5,1,9.0,US Geography,5,1,75,1,1,ego,0,0,1,correct
 1c7v4nh9,10,2,3,1,9.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
 1c7v4nh9,11,1,3,1,9.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
+1gu1vzgk,1,2,3,0,11.0,US Geography,7,0,75,1,1,ego,0,1,0,under
+1gu1vzgk,2,2,4,0,11.0,US Geography,6,0,75,1,1,ego,0,1,0,under
+1gu1vzgk,3,2,3,1,11.0,US Geography,7,0,75,1,1,ego,0,1,0,under
+1gu1vzgk,4,2,9,1,11.0,US Geography,1,0,75,1,1,ego,0,1,0,under
+1gu1vzgk,5,2,6,0,11.0,US Geography,4,0,75,1,1,ego,0,1,0,under
+1gu1vzgk,6,0,2,1,11.0,US Geography,8,0,75,1,1,ego,0,1,0,under
+1gu1vzgk,7,0,2,1,11.0,US Geography,8,0,75,1,1,ego,0,1,0,under
+1gu1vzgk,8,0,5,1,11.0,US Geography,5,0,75,1,1,ego,0,1,0,under
+1gu1vzgk,9,1,5,1,11.0,US Geography,5,0,75,1,1,ego,0,1,0,under
+1gu1vzgk,10,0,8,1,11.0,US Geography,2,0,75,1,1,ego,0,1,0,under
+1gu1vzgk,11,0,6,1,11.0,US Geography,4,0,75,1,1,ego,0,1,0,under
 1yeajno3,1,0,6,1,8.0,US Geography,4,1,75,1,1,ego,0,0,1,correct
 1yeajno3,2,1,3,1,8.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
 1yeajno3,3,1,3,2,8.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
@@ -1946,6 +2617,50 @@ zap4p51l,11,0,7,0,3.0,Sports and Video Games,3,0,75,0,0,ego,0,0,1,correct
 7ebbfqqg,9,1,5,1,12.0,US Geography,5,1,75,1,1,ego,0,0,1,correct
 7ebbfqqg,10,1,3,1,12.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
 7ebbfqqg,11,1,3,1,12.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
+7h604tn3,1,0,6,1,9.0,US Geography,4,1,50,1,1,ego,0,0,1,correct
+7h604tn3,10,1,3,2,9.0,US Geography,7,1,50,1,1,ego,0,0,1,correct
+7h604tn3,11,2,5,2,9.0,US Geography,5,1,50,1,1,ego,0,0,1,correct
+7h604tn3,2,1,3,1,9.0,US Geography,7,1,50,1,1,ego,0,0,1,correct
+7h604tn3,3,1,3,1,9.0,US Geography,7,1,50,1,1,ego,0,0,1,correct
+7h604tn3,4,1,4,1,9.0,US Geography,6,1,50,1,1,ego,0,0,1,correct
+7h604tn3,5,2,6,1,9.0,US Geography,4,1,50,1,1,ego,0,0,1,correct
+7h604tn3,6,0,2,1,9.0,US Geography,8,1,50,1,1,ego,0,0,1,correct
+7h604tn3,7,0,2,1,9.0,US Geography,8,1,50,1,1,ego,0,0,1,correct
+7h604tn3,8,0,5,1,9.0,US Geography,5,1,50,1,1,ego,0,0,1,correct
+7h604tn3,9,0,6,2,9.0,US Geography,4,1,50,1,1,ego,0,0,1,correct
+83tbxcch,1,0,6,0,11.0,US Geography,4,0,75,1,1,ego,0,1,0,under
+83tbxcch,2,1,3,0,11.0,US Geography,7,0,75,1,1,ego,0,1,0,under
+83tbxcch,3,2,3,0,11.0,US Geography,7,0,75,1,1,ego,0,1,0,under
+83tbxcch,4,2,9,1,11.0,US Geography,1,0,75,1,1,ego,0,1,0,under
+83tbxcch,5,1,4,1,11.0,US Geography,6,0,75,1,1,ego,0,1,0,under
+83tbxcch,6,0,2,1,11.0,US Geography,8,0,75,1,1,ego,0,1,0,under
+83tbxcch,7,0,2,2,11.0,US Geography,8,0,75,1,1,ego,0,1,0,under
+83tbxcch,8,1,4,2,11.0,US Geography,6,0,75,1,1,ego,0,1,0,under
+83tbxcch,9,2,5,2,11.0,US Geography,5,0,75,1,1,ego,0,1,0,under
+83tbxcch,10,0,8,2,11.0,US Geography,2,0,75,1,1,ego,0,1,0,under
+83tbxcch,11,0,6,1,11.0,US Geography,4,0,75,1,1,ego,0,1,0,under
+8yvmba6x,1,2,3,1,11.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
+8yvmba6x,2,1,3,2,11.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
+8yvmba6x,3,1,3,2,11.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
+8yvmba6x,4,2,9,1,11.0,US Geography,1,1,75,1,1,ego,0,0,1,correct
+8yvmba6x,5,1,4,1,11.0,US Geography,6,1,75,1,1,ego,0,0,1,correct
+8yvmba6x,6,0,2,1,11.0,US Geography,8,1,75,1,1,ego,0,0,1,correct
+8yvmba6x,7,0,2,1,11.0,US Geography,8,1,75,1,1,ego,0,0,1,correct
+8yvmba6x,8,0,5,1,11.0,US Geography,5,1,75,1,1,ego,0,0,1,correct
+8yvmba6x,9,0,6,1,11.0,US Geography,4,1,75,1,1,ego,0,0,1,correct
+8yvmba6x,10,1,3,2,11.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
+8yvmba6x,11,1,3,1,11.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
+9lzz0jai,1,2,3,0,7.0,US Geography,7,0,75,1,1,ego,0,1,0,under
+9lzz0jai,2,1,3,0,7.0,US Geography,7,0,75,1,1,ego,0,1,0,under
+9lzz0jai,3,0,4,0,7.0,US Geography,6,0,75,1,1,ego,0,1,0,under
+9lzz0jai,4,0,7,1,7.0,US Geography,3,0,75,1,1,ego,0,1,0,under
+9lzz0jai,5,2,6,0,7.0,US Geography,4,0,75,1,1,ego,0,1,0,under
+9lzz0jai,6,1,3,0,7.0,US Geography,7,0,75,1,1,ego,0,1,0,under
+9lzz0jai,7,1,5,0,7.0,US Geography,5,0,75,1,1,ego,0,1,0,under
+9lzz0jai,8,1,4,0,7.0,US Geography,6,0,75,1,1,ego,0,1,0,under
+9lzz0jai,9,1,5,0,7.0,US Geography,5,0,75,1,1,ego,0,1,0,under
+9lzz0jai,10,1,3,0,7.0,US Geography,7,0,75,1,1,ego,0,1,0,under
+9lzz0jai,11,1,3,0,7.0,US Geography,7,0,75,1,1,ego,0,1,0,under
 9om8jvev,1,0,6,2,11.0,US Geography,4,2,100,1,1,ego,1,0,0,over
 9om8jvev,2,1,3,2,11.0,US Geography,7,2,100,1,1,ego,1,0,0,over
 9om8jvev,3,2,3,2,11.0,US Geography,7,2,100,1,1,ego,1,0,0,over
@@ -2023,6 +2738,28 @@ e44vpjp5,8,1,4,1,7.0,US Geography,6,0,75,1,1,ego,0,1,0,under
 e44vpjp5,9,2,5,1,7.0,US Geography,5,0,75,1,1,ego,0,1,0,under
 e44vpjp5,10,0,8,1,7.0,US Geography,2,0,75,1,1,ego,0,1,0,under
 e44vpjp5,11,2,5,0,7.0,US Geography,5,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,1,0,6,1,13.0,US Geography,4,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,2,2,4,1,13.0,US Geography,6,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,3,1,3,1,13.0,US Geography,7,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,4,1,4,1,13.0,US Geography,6,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,5,2,6,1,13.0,US Geography,4,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,6,0,2,0,13.0,US Geography,8,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,7,2,6,1,13.0,US Geography,4,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,8,1,4,1,13.0,US Geography,6,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,9,0,6,0,13.0,US Geography,4,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,10,2,3,0,13.0,US Geography,7,0,75,1,1,ego,0,1,0,under
+fpvdnkq8,11,1,3,0,13.0,US Geography,7,0,75,1,1,ego,0,1,0,under
+g2yvlu4k,1,2,3,2,16.0,US Geography,7,2,75,2,1,ego,0,0,1,correct
+g2yvlu4k,2,1,3,2,16.0,US Geography,7,2,75,2,1,ego,0,0,1,correct
+g2yvlu4k,3,0,4,2,16.0,US Geography,6,2,75,2,1,ego,0,0,1,correct
+g2yvlu4k,4,2,9,2,16.0,US Geography,1,2,75,2,1,ego,0,0,1,correct
+g2yvlu4k,5,1,4,2,16.0,US Geography,6,2,75,2,1,ego,0,0,1,correct
+g2yvlu4k,6,0,2,2,16.0,US Geography,8,2,75,2,1,ego,0,0,1,correct
+g2yvlu4k,7,2,6,2,16.0,US Geography,4,2,75,2,1,ego,0,0,1,correct
+g2yvlu4k,8,2,6,2,16.0,US Geography,4,2,75,2,1,ego,0,0,1,correct
+g2yvlu4k,9,1,5,2,16.0,US Geography,5,2,75,2,1,ego,0,0,1,correct
+g2yvlu4k,10,1,3,2,16.0,US Geography,7,2,75,2,1,ego,0,0,1,correct
+g2yvlu4k,11,0,6,2,16.0,US Geography,4,2,75,2,1,ego,0,0,1,correct
 hp19zqeh,1,0,9,0,5.0,US Geography,1,0,33,0,1,ego,0,0,1,correct
 hp19zqeh,2,1,8,0,5.0,US Geography,2,0,33,0,1,ego,0,0,1,correct
 hp19zqeh,3,2,5,0,5.0,US Geography,5,0,33,0,1,ego,0,0,1,correct
@@ -2045,6 +2782,17 @@ inak0r18,8,1,4,0,6.0,US Geography,6,1,75,1,1,ego,0,0,1,correct
 inak0r18,9,2,5,0,6.0,US Geography,5,1,75,1,1,ego,0,0,1,correct
 inak0r18,10,2,3,2,6.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
 inak0r18,11,0,6,1,6.0,US Geography,4,1,75,1,1,ego,0,0,1,correct
+iomh77xp,1,1,1,0,11.0,US Geography,9,1,75,1,1,ego,0,0,1,correct
+iomh77xp,2,2,4,0,11.0,US Geography,6,1,75,1,1,ego,0,0,1,correct
+iomh77xp,3,2,3,1,11.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
+iomh77xp,4,1,4,1,11.0,US Geography,6,1,75,1,1,ego,0,0,1,correct
+iomh77xp,5,1,4,0,11.0,US Geography,6,1,75,1,1,ego,0,0,1,correct
+iomh77xp,6,0,2,0,11.0,US Geography,8,1,75,1,1,ego,0,0,1,correct
+iomh77xp,7,1,5,2,11.0,US Geography,5,1,75,1,1,ego,0,0,1,correct
+iomh77xp,8,2,6,1,11.0,US Geography,4,1,75,1,1,ego,0,0,1,correct
+iomh77xp,9,0,6,1,11.0,US Geography,4,1,75,1,1,ego,0,0,1,correct
+iomh77xp,10,1,3,0,11.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
+iomh77xp,11,0,6,0,11.0,US Geography,4,1,75,1,1,ego,0,0,1,correct
 j6ftwuzj,1,0,9,0,5.0,US Geography,1,0,33,0,1,ego,0,0,1,correct
 j6ftwuzj,10,0,9,2,5.0,US Geography,1,0,33,0,1,ego,0,0,1,correct
 j6ftwuzj,11,0,6,0,5.0,US Geography,4,0,33,0,1,ego,0,0,1,correct
@@ -2056,6 +2804,17 @@ j6ftwuzj,6,2,7,1,5.0,US Geography,3,0,33,0,1,ego,0,0,1,correct
 j6ftwuzj,7,1,9,1,5.0,US Geography,1,0,33,0,1,ego,0,0,1,correct
 j6ftwuzj,8,1,7,0,5.0,US Geography,3,0,33,0,1,ego,0,0,1,correct
 j6ftwuzj,9,1,8,0,5.0,US Geography,2,0,33,0,1,ego,0,0,1,correct
+nxd05o0f,1,0,6,1,14.0,US Geography,4,0,100,1,1,ego,0,1,0,under
+nxd05o0f,2,2,4,1,14.0,US Geography,6,0,100,1,1,ego,0,1,0,under
+nxd05o0f,3,1,3,1,14.0,US Geography,7,0,100,1,1,ego,0,1,0,under
+nxd05o0f,4,1,4,1,14.0,US Geography,6,0,100,1,1,ego,0,1,0,under
+nxd05o0f,5,1,4,1,14.0,US Geography,6,0,100,1,1,ego,0,1,0,under
+nxd05o0f,6,1,3,1,14.0,US Geography,7,0,100,1,1,ego,0,1,0,under
+nxd05o0f,7,1,5,1,14.0,US Geography,5,0,100,1,1,ego,0,1,0,under
+nxd05o0f,8,2,6,1,14.0,US Geography,4,0,100,1,1,ego,0,1,0,under
+nxd05o0f,9,1,5,1,14.0,US Geography,5,0,100,1,1,ego,0,1,0,under
+nxd05o0f,10,1,3,1,14.0,US Geography,7,0,100,1,1,ego,0,1,0,under
+nxd05o0f,11,1,3,1,14.0,US Geography,7,0,100,1,1,ego,0,1,0,under
 p1b4dbgv,1,2,3,2,8.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
 p1b4dbgv,2,2,4,2,8.0,US Geography,6,1,75,1,1,ego,0,0,1,correct
 p1b4dbgv,3,2,3,2,8.0,US Geography,7,1,75,1,1,ego,0,0,1,correct
@@ -2067,6 +2826,17 @@ p1b4dbgv,8,1,4,2,8.0,US Geography,6,1,75,1,1,ego,0,0,1,correct
 p1b4dbgv,9,1,5,2,8.0,US Geography,5,1,75,1,1,ego,0,0,1,correct
 p1b4dbgv,10,0,8,2,8.0,US Geography,2,1,75,1,1,ego,0,0,1,correct
 p1b4dbgv,11,2,5,2,8.0,US Geography,5,1,75,1,1,ego,0,0,1,correct
+p1k5rpou,1,0,9,0,2.0,US Geography,1,0,33,0,1,ego,0,0,1,correct
+p1k5rpou,2,1,8,0,2.0,US Geography,2,0,33,0,1,ego,0,0,1,correct
+p1k5rpou,3,2,5,0,2.0,US Geography,5,0,33,0,1,ego,0,0,1,correct
+p1k5rpou,4,0,9,1,2.0,US Geography,1,0,33,0,1,ego,0,0,1,correct
+p1k5rpou,5,1,9,1,2.0,US Geography,1,0,33,0,1,ego,0,0,1,correct
+p1k5rpou,6,2,7,1,2.0,US Geography,3,0,33,0,1,ego,0,0,1,correct
+p1k5rpou,7,0,5,2,2.0,US Geography,5,0,33,0,1,ego,0,0,1,correct
+p1k5rpou,8,1,7,2,2.0,US Geography,3,0,33,0,1,ego,0,0,1,correct
+p1k5rpou,9,2,10,2,2.0,US Geography,0,0,33,0,1,ego,0,0,1,correct
+p1k5rpou,10,2,10,0,2.0,US Geography,0,0,33,0,1,ego,0,0,1,correct
+p1k5rpou,11,2,6,1,2.0,US Geography,4,0,33,0,1,ego,0,0,1,correct
 pxz3760k,1,0,6,2,11.0,US Geography,4,0,33,1,1,ego,0,1,0,under
 pxz3760k,2,1,3,1,11.0,US Geography,7,0,33,1,1,ego,0,1,0,under
 pxz3760k,3,1,3,1,11.0,US Geography,7,0,33,1,1,ego,0,1,0,under
@@ -2100,6 +2870,28 @@ qoio0y3d,8,1,4,1,8.0,US Geography,6,0,33,1,1,ego,0,1,0,under
 qoio0y3d,9,1,5,1,8.0,US Geography,5,0,33,1,1,ego,0,1,0,under
 qoio0y3d,10,0,8,1,8.0,US Geography,2,0,33,1,1,ego,0,1,0,under
 qoio0y3d,11,1,3,1,8.0,US Geography,7,0,33,1,1,ego,0,1,0,under
+rp5nv7ut,1,0,9,0,4.0,US Geography,1,0,33,0,1,ego,0,0,1,correct
+rp5nv7ut,10,1,5,0,4.0,US Geography,5,0,33,0,1,ego,0,0,1,correct
+rp5nv7ut,11,1,5,0,4.0,US Geography,5,0,33,0,1,ego,0,0,1,correct
+rp5nv7ut,2,1,8,0,4.0,US Geography,2,0,33,0,1,ego,0,0,1,correct
+rp5nv7ut,3,2,5,0,4.0,US Geography,5,0,33,0,1,ego,0,0,1,correct
+rp5nv7ut,4,1,3,2,4.0,US Geography,7,0,33,0,1,ego,0,0,1,correct
+rp5nv7ut,5,1,9,0,4.0,US Geography,1,0,33,0,1,ego,0,0,1,correct
+rp5nv7ut,6,0,8,0,4.0,US Geography,2,0,33,0,1,ego,0,0,1,correct
+rp5nv7ut,7,1,9,0,4.0,US Geography,1,0,33,0,1,ego,0,0,1,correct
+rp5nv7ut,8,1,7,0,4.0,US Geography,3,0,33,0,1,ego,0,0,1,correct
+rp5nv7ut,9,1,8,1,4.0,US Geography,2,0,33,0,1,ego,0,0,1,correct
+sfi4nrq8,1,1,1,1,13.0,US Geography,9,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,2,1,3,1,13.0,US Geography,7,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,3,1,3,1,13.0,US Geography,7,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,4,1,4,1,13.0,US Geography,6,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,5,1,4,1,13.0,US Geography,6,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,6,1,3,1,13.0,US Geography,7,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,7,1,5,1,13.0,US Geography,5,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,8,1,4,1,13.0,US Geography,6,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,9,1,5,1,13.0,US Geography,5,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,10,1,3,1,13.0,US Geography,7,1,100,1,1,ego,0,0,1,correct
+sfi4nrq8,11,1,3,1,13.0,US Geography,7,1,100,1,1,ego,0,0,1,correct
 su9at1s5,1,0,6,1,9.0,US Geography,4,1,100,1,1,ego,0,0,1,correct
 su9at1s5,2,0,4,0,9.0,US Geography,6,1,100,1,1,ego,0,0,1,correct
 su9at1s5,3,1,3,0,9.0,US Geography,7,1,100,1,1,ego,0,0,1,correct

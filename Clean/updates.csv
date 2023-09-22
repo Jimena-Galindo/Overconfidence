@@ -2969,6 +2969,72 @@ zap4p51l,8,0,9,0,5.0,US Geography,1,0,75,0,1,ego,0,0,1,correct,Female,non-US Nat
 zap4p51l,9,2,10,0,5.0,US Geography,0,0,75,0,1,ego,0,0,1,correct,Female,non-US National,0
 zap4p51l,10,1,5,0,5.0,US Geography,5,0,75,0,1,ego,0,0,1,correct,Female,non-US National,0
 zap4p51l,11,1,5,0,5.0,US Geography,5,0,75,0,1,ego,0,0,1,correct,Female,non-US National,0
+0kxsrg73,1,0,8,2,11,Science and Technology,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,10,0,8,0,11.0,Science and Technology,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,11,0,6,2,11.0,Science and Technology,4,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,2,0,4,0,11.0,Science and Technology,6,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,3,2,10,0,11.0,Science and Technology,0,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,4,1,6,2,11.0,Science and Technology,4,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,5,1,8,2,11.0,Science and Technology,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,6,1,8,0,11.0,Science and Technology,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,7,0,3,0,11.0,Science and Technology,7,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,8,0,5,0,11.0,Science and Technology,5,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,9,0,6,1,11.0,Science and Technology,4,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+1zb27tea,1,1,9,0,12.0,Science and Technology,1,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,2,0,4,1,12.0,Science and Technology,6,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,3,2,10,2,12.0,Science and Technology,0,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,4,1,6,1,12.0,Science and Technology,4,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,5,0,8,2,12.0,Science and Technology,2,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,6,0,2,0,12.0,Science and Technology,8,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,7,0,3,0,12.0,Science and Technology,7,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,8,0,5,0,12.0,Science and Technology,5,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,9,0,6,0,12.0,Science and Technology,4,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,10,1,7,0,12.0,Science and Technology,3,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,11,0,6,0,12.0,Science and Technology,4,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+36b7nxpg,1,0,8,0,12,Science and Technology,2,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,10,1,7,1,12.0,Science and Technology,3,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,11,1,8,1,12.0,Science and Technology,2,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,2,0,4,0,12.0,Science and Technology,6,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,3,2,10,2,12.0,Science and Technology,0,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,4,1,6,1,12.0,Science and Technology,4,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,5,0,8,0,12.0,Science and Technology,2,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,6,1,8,1,12.0,Science and Technology,2,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,7,1,5,2,12.0,Science and Technology,5,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,8,1,6,1,12.0,Science and Technology,4,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,9,0,6,0,12.0,Science and Technology,4,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+3cv0gsso,1,1,9,1,15.0,Science and Technology,1,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,2,0,4,0,15.0,Science and Technology,6,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,3,2,10,2,15.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,4,1,6,0,15.0,Science and Technology,4,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,5,0,8,0,15.0,Science and Technology,2,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,6,2,10,0,15.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,7,2,10,1,15.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,8,1,6,0,15.0,Science and Technology,4,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,9,0,6,0,15.0,Science and Technology,4,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,10,2,10,0,15.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,11,0,6,0,15.0,Science and Technology,4,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+4d7lvql9,1,1,9,1,7.0,Science and Technology,1,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+4d7lvql9,2,0,4,2,7.0,Science and Technology,6,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+4d7lvql9,3,1,7,2,7.0,Science and Technology,3,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+4d7lvql9,4,2,10,2,7.0,Science and Technology,0,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+4d7lvql9,5,2,10,1,7.0,Science and Technology,0,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+4d7lvql9,6,0,2,1,7.0,Science and Technology,8,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+4d7lvql9,7,0,3,1,7.0,Science and Technology,7,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+4d7lvql9,8,0,5,1,7.0,Science and Technology,5,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+4d7lvql9,9,0,6,0,7.0,Science and Technology,4,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+4d7lvql9,10,0,8,1,7.0,Science and Technology,2,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+4d7lvql9,11,0,6,2,7.0,Science and Technology,4,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+4kecnisx,1,0,8,0,12,Science and Technology,2,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,10,1,7,2,12.0,Science and Technology,3,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,11,0,6,1,12.0,Science and Technology,4,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,2,1,7,1,12.0,Science and Technology,3,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,3,0,5,1,12.0,Science and Technology,5,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,4,2,10,2,12.0,Science and Technology,0,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,5,0,8,0,12.0,Science and Technology,2,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,6,1,8,1,12.0,Science and Technology,2,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,7,0,3,2,12.0,Science and Technology,7,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,8,0,5,2,12.0,Science and Technology,5,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,9,0,6,0,12.0,Science and Technology,4,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
 56op1uib,1,0,8,1,12,Science and Technology,2,1,50,1,0,stereotype,0,0,1,correct,Male,non-US National,0
 56op1uib,10,1,7,1,12.0,Science and Technology,3,1,50,1,0,stereotype,0,0,1,correct,Male,non-US National,0
 56op1uib,11,0,6,2,12.0,Science and Technology,4,1,50,1,0,stereotype,0,0,1,correct,Male,non-US National,0
@@ -2980,6 +3046,105 @@ zap4p51l,11,1,5,0,5.0,US Geography,5,0,75,0,1,ego,0,0,1,correct,Female,non-US Na
 56op1uib,7,2,10,0,12.0,Science and Technology,0,1,50,1,0,stereotype,0,0,1,correct,Male,non-US National,0
 56op1uib,8,1,6,0,12.0,Science and Technology,4,1,50,1,0,stereotype,0,0,1,correct,Male,non-US National,0
 56op1uib,9,0,6,0,12.0,Science and Technology,4,1,50,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,1,0,8,1,13.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,2,1,7,2,13.0,Science and Technology,3,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,3,2,10,0,13.0,Science and Technology,0,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,4,2,10,2,13.0,Science and Technology,0,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,5,1,8,2,13.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,6,1,8,1,13.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,7,0,3,2,13.0,Science and Technology,7,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,8,1,6,1,13.0,Science and Technology,4,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,9,2,9,0,13.0,Science and Technology,1,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,10,0,8,2,13.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,11,0,6,1,13.0,Science and Technology,4,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6zd6yym2,1,0,8,1,7,Science and Technology,2,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,10,0,8,1,7.0,Science and Technology,2,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,11,0,6,1,7.0,Science and Technology,4,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,2,0,4,1,7.0,Science and Technology,6,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,3,0,5,1,7.0,Science and Technology,5,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,4,0,7,1,7.0,Science and Technology,3,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,5,0,8,1,7.0,Science and Technology,2,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,6,0,2,1,7.0,Science and Technology,8,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,7,0,3,1,7.0,Science and Technology,7,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,8,0,5,1,7.0,Science and Technology,5,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,9,0,6,1,7.0,Science and Technology,4,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,1,0,8,1,8,Science and Technology,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,10,0,8,0,8.0,Science and Technology,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,11,0,6,1,8.0,Science and Technology,4,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,2,1,7,2,8.0,Science and Technology,3,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,3,2,10,0,8.0,Science and Technology,0,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,4,0,7,0,8.0,Science and Technology,3,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,5,0,8,1,8.0,Science and Technology,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,6,1,8,1,8.0,Science and Technology,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,7,2,10,2,8.0,Science and Technology,0,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,8,1,6,0,8.0,Science and Technology,4,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,9,0,6,0,8.0,Science and Technology,4,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,1,1,9,1,13.0,Science and Technology,1,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,2,0,4,1,13.0,Science and Technology,6,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,3,0,5,0,13.0,Science and Technology,5,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,4,0,7,1,13.0,Science and Technology,3,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,5,0,8,1,13.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,6,2,10,1,13.0,Science and Technology,0,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,7,0,3,0,13.0,Science and Technology,7,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,8,0,5,0,13.0,Science and Technology,5,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,9,0,6,0,13.0,Science and Technology,4,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,10,0,8,0,13.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,11,1,8,0,13.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,1,2,9,1,8.0,Science and Technology,1,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,2,0,4,1,8.0,Science and Technology,6,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,3,1,7,1,8.0,Science and Technology,3,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,4,0,7,1,8.0,Science and Technology,3,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,5,0,8,2,8.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,6,0,2,0,8.0,Science and Technology,8,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,7,0,3,0,8.0,Science and Technology,7,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,8,0,5,0,8.0,Science and Technology,5,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,9,0,6,0,8.0,Science and Technology,4,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,10,0,8,0,8.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,11,0,6,1,8.0,Science and Technology,4,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,1,0,8,0,9.0,Science and Technology,2,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,2,1,7,1,9.0,Science and Technology,3,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,3,0,5,1,9.0,Science and Technology,5,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,4,0,7,2,9.0,Science and Technology,3,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,5,2,10,1,9.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,6,2,10,0,9.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,7,0,3,2,9.0,Science and Technology,7,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,8,0,5,1,9.0,Science and Technology,5,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,9,0,6,0,9.0,Science and Technology,4,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,10,0,8,2,9.0,Science and Technology,2,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,11,1,8,1,9.0,Science and Technology,2,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cl0818oa,1,0,9,1,5.0,Science and Technology,1,1,100,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,2,2,10,0,5.0,Science and Technology,0,1,100,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,3,2,9,1,5.0,Science and Technology,1,1,100,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,4,0,10,2,5.0,Science and Technology,0,1,100,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,5,2,10,1,5.0,Science and Technology,0,1,100,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,6,1,9,1,5.0,Science and Technology,1,1,100,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,7,0,7,1,5.0,Science and Technology,3,1,100,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,8,2,10,0,5.0,Science and Technology,0,1,100,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,9,2,10,1,5.0,Science and Technology,0,1,100,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,10,1,10,1,5.0,Science and Technology,0,1,100,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,11,0,7,1,5.0,Science and Technology,3,1,100,0,0,stereotype,1,0,0,over,Male,non-US National,1
+dk93ewke,1,0,8,1,7.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,2,1,7,2,7.0,Science and Technology,3,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,3,2,10,1,7.0,Science and Technology,0,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,4,0,7,1,7.0,Science and Technology,3,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,5,1,8,0,7.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,6,1,8,2,7.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,7,0,3,2,7.0,Science and Technology,7,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,8,1,6,0,7.0,Science and Technology,4,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,9,2,9,0,7.0,Science and Technology,1,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,10,2,10,2,7.0,Science and Technology,0,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,11,2,9,1,7.0,Science and Technology,1,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ffd2bxk4,1,0,8,2,12.0,Science and Technology,2,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,2,1,7,2,12.0,Science and Technology,3,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,3,1,7,2,12.0,Science and Technology,3,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,4,2,10,1,12.0,Science and Technology,0,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,5,0,8,0,12.0,Science and Technology,2,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,6,1,8,1,12.0,Science and Technology,2,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,7,1,5,1,12.0,Science and Technology,5,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,8,1,6,1,12.0,Science and Technology,4,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,9,1,5,1,12.0,Science and Technology,5,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,10,1,7,1,12.0,Science and Technology,3,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,11,1,8,0,12.0,Science and Technology,2,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
 g2p53iqv,1,0,8,2,15.0,Science and Technology,2,0,75,1,0,stereotype,0,1,0,under,Female,non-US National,-1
 g2p53iqv,2,0,4,0,15.0,Science and Technology,6,0,75,1,0,stereotype,0,1,0,under,Female,non-US National,-1
 g2p53iqv,3,1,7,0,15.0,Science and Technology,3,0,75,1,0,stereotype,0,1,0,under,Female,non-US National,-1
@@ -2991,6 +3156,17 @@ g2p53iqv,8,0,5,0,15.0,Science and Technology,5,0,75,1,0,stereotype,0,1,0,under,F
 g2p53iqv,9,0,6,2,15.0,Science and Technology,4,0,75,1,0,stereotype,0,1,0,under,Female,non-US National,-1
 g2p53iqv,10,0,8,0,15.0,Science and Technology,2,0,75,1,0,stereotype,0,1,0,under,Female,non-US National,-1
 g2p53iqv,11,0,6,2,15.0,Science and Technology,4,0,75,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,1,0,8,2,13.0,Science and Technology,2,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,2,1,7,1,13.0,Science and Technology,3,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,3,2,10,0,13.0,Science and Technology,0,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,4,0,7,0,13.0,Science and Technology,3,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,5,2,10,2,13.0,Science and Technology,0,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,6,2,10,1,13.0,Science and Technology,0,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,7,0,3,1,13.0,Science and Technology,7,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,8,1,6,2,13.0,Science and Technology,4,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,9,0,6,0,13.0,Science and Technology,4,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,10,0,8,1,13.0,Science and Technology,2,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,11,0,6,0,13.0,Science and Technology,4,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
 ilooy3i8,1,0,8,1,8.0,Science and Technology,2,1,33,1,0,stereotype,0,0,1,correct,Female,US National,0
 ilooy3i8,2,2,8,2,8.0,Science and Technology,2,1,33,1,0,stereotype,0,0,1,correct,Female,US National,0
 ilooy3i8,3,1,7,2,8.0,Science and Technology,3,1,33,1,0,stereotype,0,0,1,correct,Female,US National,0
@@ -3013,6 +3189,28 @@ j3r6tuv8,8,2,10,1,14.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correc
 j3r6tuv8,9,1,5,2,14.0,Science and Technology,5,1,33,1,0,stereotype,0,0,1,correct,Female,US National,0
 j3r6tuv8,10,2,10,2,14.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correct,Female,US National,0
 j3r6tuv8,11,0,6,1,14.0,Science and Technology,4,1,33,1,0,stereotype,0,0,1,correct,Female,US National,0
+jk70axat,1,1,9,1,8.0,Science and Technology,1,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,2,0,4,1,8.0,Science and Technology,6,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,3,2,10,1,8.0,Science and Technology,0,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,4,0,7,1,8.0,Science and Technology,3,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,5,2,10,0,8.0,Science and Technology,0,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,6,0,2,2,8.0,Science and Technology,8,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,7,0,3,2,8.0,Science and Technology,7,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,8,0,5,2,8.0,Science and Technology,5,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,9,0,6,2,8.0,Science and Technology,4,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,10,1,7,2,8.0,Science and Technology,3,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,11,2,9,2,8.0,Science and Technology,1,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,1,0,8,1,9.0,Science and Technology,2,1,100,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,2,1,7,2,9.0,Science and Technology,3,1,100,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,3,2,10,1,9.0,Science and Technology,0,1,100,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,4,1,6,0,9.0,Science and Technology,4,1,100,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,5,2,10,0,9.0,Science and Technology,0,1,100,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,6,0,2,0,9.0,Science and Technology,8,1,100,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,7,1,5,1,9.0,Science and Technology,5,1,100,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,8,2,10,2,9.0,Science and Technology,0,1,100,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,9,1,5,1,9.0,Science and Technology,5,1,100,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,10,0,8,0,9.0,Science and Technology,2,1,100,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,11,1,8,0,9.0,Science and Technology,2,1,100,1,0,stereotype,0,0,1,correct,Female,non-US National,0
 k43107gm,1,1,9,1,9,Science and Technology,1,1,100,1,0,stereotype,0,0,1,correct,,,0
 k43107gm,10,0,8,0,9.0,Science and Technology,2,1,100,1,0,stereotype,0,0,1,correct,,,0
 k43107gm,11,0,6,2,9.0,Science and Technology,4,1,100,1,0,stereotype,0,0,1,correct,,,0
@@ -3024,6 +3222,17 @@ k43107gm,6,1,8,1,9.0,Science and Technology,2,1,100,1,0,stereotype,0,0,1,correct
 k43107gm,7,0,3,1,9.0,Science and Technology,7,1,100,1,0,stereotype,0,0,1,correct,,,0
 k43107gm,8,0,5,1,9.0,Science and Technology,5,1,100,1,0,stereotype,0,0,1,correct,,,0
 k43107gm,9,0,6,1,9.0,Science and Technology,4,1,100,1,0,stereotype,0,0,1,correct,,,0
+ko3jhnbj,1,1,9,2,11.0,Science and Technology,1,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,2,1,7,1,11.0,Science and Technology,3,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,3,0,5,1,11.0,Science and Technology,5,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,4,2,10,1,11.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,5,0,8,1,11.0,Science and Technology,2,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,6,0,2,0,11.0,Science and Technology,8,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,7,0,3,0,11.0,Science and Technology,7,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,8,0,5,0,11.0,Science and Technology,5,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,9,1,5,0,11.0,Science and Technology,5,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,10,2,10,0,11.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,11,0,6,0,11.0,Science and Technology,4,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,1,1,9,1,8.0,Science and Technology,1,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,2,2,8,2,8.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,3,0,5,2,8.0,Science and Technology,5,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
@@ -3035,6 +3244,17 @@ lmiiifw0,8,0,5,0,8.0,Science and Technology,5,1,75,1,0,stereotype,0,0,1,correct,
 lmiiifw0,9,0,6,0,8.0,Science and Technology,4,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,10,1,7,1,8.0,Science and Technology,3,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,11,0,6,0,8.0,Science and Technology,4,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+n86dcmzu,1,0,8,2,13.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,2,0,4,1,13.0,Science and Technology,6,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,3,1,7,1,13.0,Science and Technology,3,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,4,0,7,1,13.0,Science and Technology,3,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,5,1,8,0,13.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,6,2,10,0,13.0,Science and Technology,0,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,7,0,3,0,13.0,Science and Technology,7,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,8,0,5,0,13.0,Science and Technology,5,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,9,0,6,0,13.0,Science and Technology,4,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,10,0,8,1,13.0,Science and Technology,2,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,11,2,9,2,13.0,Science and Technology,1,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
 ncvtgyzn,1,1,9,2,6.0,Science and Technology,1,1,50,1,0,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,2,0,4,0,6.0,Science and Technology,6,1,50,1,0,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,3,2,10,0,6.0,Science and Technology,0,1,50,1,0,stereotype,0,0,1,correct,Female,US National,0
@@ -3046,6 +3266,138 @@ ncvtgyzn,8,0,5,0,6.0,Science and Technology,5,1,50,1,0,stereotype,0,0,1,correct,
 ncvtgyzn,9,0,6,0,6.0,Science and Technology,4,1,50,1,0,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,10,0,8,0,6.0,Science and Technology,2,1,50,1,0,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,11,0,6,0,6.0,Science and Technology,4,1,50,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,1,2,9,1,8.0,Science and Technology,1,1,100,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,2,0,4,1,8.0,Science and Technology,6,1,100,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,3,0,5,2,8.0,Science and Technology,5,1,100,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,4,0,7,2,8.0,Science and Technology,3,1,100,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,5,0,8,1,8.0,Science and Technology,2,1,100,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,6,0,2,0,8.0,Science and Technology,8,1,100,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,7,0,3,0,8.0,Science and Technology,7,1,100,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,8,0,5,0,8.0,Science and Technology,5,1,100,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,9,0,6,0,8.0,Science and Technology,4,1,100,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,10,0,8,0,8.0,Science and Technology,2,1,100,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,11,0,6,0,8.0,Science and Technology,4,1,100,1,0,stereotype,0,0,1,correct,Female,US National,0
+q9jar1of,1,2,9,1,14,Science and Technology,1,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,10,2,10,1,14.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,11,2,9,1,14.0,Science and Technology,1,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,2,2,8,2,14.0,Science and Technology,2,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,3,0,5,2,14.0,Science and Technology,5,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,4,1,6,2,14.0,Science and Technology,4,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,5,2,10,1,14.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,6,2,10,0,14.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,7,1,5,0,14.0,Science and Technology,5,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,8,0,5,0,14.0,Science and Technology,5,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,9,0,6,1,14.0,Science and Technology,4,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,1,2,9,2,13.0,Science and Technology,1,2,75,1,0,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,2,2,8,2,13.0,Science and Technology,2,2,75,1,0,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,3,2,10,1,13.0,Science and Technology,0,2,75,1,0,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,4,2,10,0,13.0,Science and Technology,0,2,75,1,0,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,5,0,8,2,13.0,Science and Technology,2,2,75,1,0,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,6,1,8,2,13.0,Science and Technology,2,2,75,1,0,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,7,2,10,2,13.0,Science and Technology,0,2,75,1,0,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,8,2,10,2,13.0,Science and Technology,0,2,75,1,0,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,9,2,9,0,13.0,Science and Technology,1,2,75,1,0,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,10,0,8,0,13.0,Science and Technology,2,2,75,1,0,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,11,1,8,1,13.0,Science and Technology,2,2,75,1,0,stereotype,1,0,0,over,Male,non-US National,1
+v3yunf9n,1,1,9,1,9,Science and Technology,1,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,10,0,8,2,9.0,Science and Technology,2,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,11,0,6,1,9.0,Science and Technology,4,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,2,0,4,1,9.0,Science and Technology,6,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,3,2,10,1,9.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,4,0,7,1,9.0,Science and Technology,3,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,5,1,8,1,9.0,Science and Technology,2,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,6,0,2,2,9.0,Science and Technology,8,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,7,0,3,2,9.0,Science and Technology,7,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,8,0,5,2,9.0,Science and Technology,5,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,9,0,6,2,9.0,Science and Technology,4,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,1,0,8,0,6.0,Science and Technology,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,2,1,7,1,6.0,Science and Technology,3,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,3,0,5,1,6.0,Science and Technology,5,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,4,2,10,1,6.0,Science and Technology,0,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,5,1,8,2,6.0,Science and Technology,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,6,0,2,2,6.0,Science and Technology,8,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,7,0,3,2,6.0,Science and Technology,7,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,8,0,5,2,6.0,Science and Technology,5,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,9,2,9,0,6.0,Science and Technology,1,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,10,0,8,0,6.0,Science and Technology,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,11,0,6,2,6.0,Science and Technology,4,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+zwzznpo6,1,0,8,1,14.0,Science and Technology,2,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,2,0,4,2,14.0,Science and Technology,6,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,3,0,5,2,14.0,Science and Technology,5,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,4,2,10,2,14.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,5,1,8,1,14.0,Science and Technology,2,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,6,2,10,0,14.0,Science and Technology,0,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,7,0,3,2,14.0,Science and Technology,7,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,8,0,5,2,14.0,Science and Technology,5,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,9,0,6,2,14.0,Science and Technology,4,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,10,1,7,1,14.0,Science and Technology,3,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,11,0,6,1,14.0,Science and Technology,4,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+0kxsrg73,1,2,4,2,13.0,Math,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,2,2,3,2,13.0,Math,7,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,3,2,2,2,13.0,Math,8,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,4,1,4,2,13.0,Math,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,5,0,4,2,13.0,Math,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,6,2,4,2,13.0,Math,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,7,2,6,2,13.0,Math,4,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,8,1,4,2,13.0,Math,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,9,0,6,2,13.0,Math,4,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,10,1,6,1,13.0,Math,4,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,11,2,6,2,13.0,Math,4,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+1zb27tea,1,0,5,2,9.0,Math,5,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,2,1,5,2,9.0,Math,5,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,3,0,4,2,9.0,Math,6,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,4,0,4,2,9.0,Math,6,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,5,0,4,2,9.0,Math,6,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,6,0,5,2,9.0,Math,5,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,7,0,5,2,9.0,Math,5,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,8,1,4,2,9.0,Math,6,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,9,0,6,2,9.0,Math,4,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,10,0,5,2,9.0,Math,5,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,11,0,5,2,9.0,Math,5,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+36b7nxpg,1,1,3,1,9.0,Math,7,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,2,0,5,2,9.0,Math,5,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,3,1,4,1,9.0,Math,6,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,4,0,4,0,9.0,Math,6,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,5,1,6,1,9.0,Math,4,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,6,1,5,2,9.0,Math,5,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,7,1,2,1,9.0,Math,8,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,8,0,5,2,9.0,Math,5,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,9,1,1,1,9.0,Math,9,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,10,0,5,0,9.0,Math,5,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,11,1,4,2,9.0,Math,6,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+3cv0gsso,1,0,5,1,8.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,2,1,5,2,8.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,3,0,4,2,8.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,4,2,4,2,8.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,5,0,4,2,8.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,6,1,5,2,8.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,7,1,2,2,8.0,Math,8,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,8,1,4,2,8.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,9,1,1,2,8.0,Math,9,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,10,1,6,2,8.0,Math,4,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,11,0,5,2,8.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+4d7lvql9,1,0,5,1,9,Math,5,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,10,0,5,0,9.0,Math,5,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,11,1,4,0,9.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,2,1,5,1,9.0,Math,5,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,3,1,4,2,9.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,4,2,4,2,9.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,5,1,6,2,9.0,Math,4,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,6,2,4,1,9.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,7,0,5,2,9.0,Math,5,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,8,2,4,2,9.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,9,2,8,1,9.0,Math,2,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+4kecnisx,1,0,5,2,9.0,Math,5,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,2,1,5,2,9.0,Math,5,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,3,2,2,2,9.0,Math,8,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,4,1,4,2,9.0,Math,6,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,5,0,4,2,9.0,Math,6,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,6,2,4,2,9.0,Math,6,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,7,2,6,2,9.0,Math,4,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,8,1,4,1,9.0,Math,6,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,9,0,6,1,9.0,Math,4,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,10,0,5,0,9.0,Math,5,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,11,1,4,2,9.0,Math,6,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
 56op1uib,1,0,5,2,11.0,Math,5,2,75,1,1,stereotype,1,0,0,over,Male,non-US National,1
 56op1uib,2,0,5,2,11.0,Math,5,2,75,1,1,stereotype,1,0,0,over,Male,non-US National,1
 56op1uib,3,0,4,2,11.0,Math,6,2,75,1,1,stereotype,1,0,0,over,Male,non-US National,1
@@ -3057,6 +3409,105 @@ ncvtgyzn,11,0,6,0,6.0,Science and Technology,4,1,50,1,0,stereotype,0,0,1,correct
 56op1uib,9,0,6,2,11.0,Math,4,2,75,1,1,stereotype,1,0,0,over,Male,non-US National,1
 56op1uib,10,0,5,2,11.0,Math,5,2,75,1,1,stereotype,1,0,0,over,Male,non-US National,1
 56op1uib,11,0,5,2,11.0,Math,5,2,75,1,1,stereotype,1,0,0,over,Male,non-US National,1
+6sybrxjn,1,1,3,2,13,Math,7,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,10,1,6,2,13.0,Math,4,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,11,1,4,1,13.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,2,0,5,1,13.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,3,2,2,2,13.0,Math,8,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,4,2,4,2,13.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,5,1,6,1,13.0,Math,4,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,6,0,5,0,13.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,7,1,2,0,13.0,Math,8,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,8,2,4,0,13.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,9,0,6,2,13.0,Math,4,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+6zd6yym2,1,0,5,1,13.0,Math,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,2,0,5,1,13.0,Math,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,3,2,2,1,13.0,Math,8,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,4,2,4,1,13.0,Math,6,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,5,2,5,1,13.0,Math,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,6,2,4,1,13.0,Math,6,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,7,2,6,1,13.0,Math,4,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,8,2,4,1,13.0,Math,6,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,9,2,8,1,13.0,Math,2,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,10,2,7,1,13.0,Math,3,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,11,2,6,1,13.0,Math,4,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,1,0,5,2,6.0,Math,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,2,1,5,2,6.0,Math,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,3,2,2,2,6.0,Math,8,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,4,2,4,2,6.0,Math,6,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,5,1,6,2,6.0,Math,4,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,6,0,5,2,6.0,Math,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,7,2,6,2,6.0,Math,4,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,8,1,4,2,6.0,Math,6,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,9,0,6,2,6.0,Math,4,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,10,0,5,2,6.0,Math,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,11,1,4,2,6.0,Math,6,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,1,0,5,1,11.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,2,1,5,1,11.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,3,1,4,1,11.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,4,1,4,1,11.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,5,1,6,1,11.0,Math,4,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,6,1,5,1,11.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,7,1,2,1,11.0,Math,8,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,8,1,4,1,11.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,9,1,1,1,11.0,Math,9,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,10,1,6,1,11.0,Math,4,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,11,1,4,1,11.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,1,0,5,2,9,Math,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,10,1,6,2,9.0,Math,4,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,11,0,5,2,9.0,Math,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,2,0,5,1,9.0,Math,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,3,1,4,2,9.0,Math,6,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,4,0,4,1,9.0,Math,6,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,5,0,4,1,9.0,Math,6,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,6,2,4,2,9.0,Math,6,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,7,0,5,1,9.0,Math,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,8,2,4,2,9.0,Math,6,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,9,1,1,2,9.0,Math,9,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,1,1,3,1,13,Math,7,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,10,1,6,2,13.0,Math,4,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,11,1,4,0,13.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,2,0,5,1,13.0,Math,5,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,3,0,4,2,13.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,4,2,4,2,13.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,5,0,4,0,13.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,6,0,5,1,13.0,Math,5,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,7,1,2,1,13.0,Math,8,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,8,2,4,1,13.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,9,1,1,2,13.0,Math,9,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+cl0818oa,1,0,9,0,3.0,Math,1,0,75,0,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,2,1,8,0,3.0,Math,2,0,75,0,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,3,2,10,0,3.0,Math,0,0,75,0,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,4,2,6,1,3.0,Math,4,0,75,0,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,5,0,7,2,3.0,Math,3,0,75,0,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,6,1,7,2,3.0,Math,3,0,75,0,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,7,2,7,2,3.0,Math,3,0,75,0,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,8,1,10,0,3.0,Math,0,0,75,0,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,9,2,8,1,3.0,Math,2,0,75,0,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,10,1,7,1,3.0,Math,3,0,75,0,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,11,0,6,1,3.0,Math,4,0,75,0,1,stereotype,0,0,1,correct,Male,non-US National,0
+dk93ewke,1,0,5,2,13,Math,5,2,100,1,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,10,0,5,0,13.0,Math,5,2,100,1,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,11,0,5,2,13.0,Math,5,2,100,1,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,2,1,5,1,13.0,Math,5,2,100,1,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,3,2,2,2,13.0,Math,8,2,100,1,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,4,0,4,0,13.0,Math,6,2,100,1,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,5,1,6,2,13.0,Math,4,2,100,1,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,6,0,5,2,13.0,Math,5,2,100,1,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,7,1,2,2,13.0,Math,8,2,100,1,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,8,2,4,2,13.0,Math,6,2,100,1,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,9,1,1,1,13.0,Math,9,2,100,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ffd2bxk4,1,1,3,0,11.0,Math,7,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,2,1,5,1,11.0,Math,5,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,3,0,4,0,11.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,4,2,4,2,11.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,5,1,6,1,11.0,Math,4,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,6,1,5,1,11.0,Math,5,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,7,1,2,1,11.0,Math,8,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,8,1,4,1,11.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,9,1,1,1,11.0,Math,9,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,10,0,5,1,11.0,Math,5,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,11,1,4,1,11.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
 g2p53iqv,1,0,5,1,14.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 g2p53iqv,2,0,5,0,14.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 g2p53iqv,3,1,4,0,14.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
@@ -3068,6 +3519,17 @@ g2p53iqv,8,1,4,1,14.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US Nat
 g2p53iqv,9,0,6,2,14.0,Math,4,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 g2p53iqv,10,0,5,0,14.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 g2p53iqv,11,1,4,0,14.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+idzf7yro,1,0,5,0,7.0,Math,5,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,2,1,5,1,7.0,Math,5,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,3,2,2,2,7.0,Math,8,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,4,0,4,2,7.0,Math,6,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,5,1,6,2,7.0,Math,4,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,6,2,4,2,7.0,Math,6,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,7,0,5,2,7.0,Math,5,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,8,1,4,2,7.0,Math,6,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,9,2,8,2,7.0,Math,2,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,10,0,5,2,7.0,Math,5,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,11,2,6,0,7.0,Math,4,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
 ilooy3i8,1,2,4,1,9.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,US National,0
 ilooy3i8,2,2,3,1,9.0,Math,7,1,75,1,1,stereotype,0,0,1,correct,Female,US National,0
 ilooy3i8,3,2,2,2,9.0,Math,8,1,75,1,1,stereotype,0,0,1,correct,Female,US National,0
@@ -3090,6 +3552,28 @@ j3r6tuv8,8,2,4,0,11.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,US Nationa
 j3r6tuv8,9,2,8,2,11.0,Math,2,1,75,1,1,stereotype,0,0,1,correct,Female,US National,0
 j3r6tuv8,10,2,7,1,11.0,Math,3,1,75,1,1,stereotype,0,0,1,correct,Female,US National,0
 j3r6tuv8,11,2,6,0,11.0,Math,4,1,75,1,1,stereotype,0,0,1,correct,Female,US National,0
+jk70axat,1,1,3,2,16,Math,7,2,75,2,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,10,1,6,1,16.0,Math,4,2,75,2,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,11,2,6,2,16.0,Math,4,2,75,2,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,2,2,3,2,16.0,Math,7,2,75,2,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,3,2,2,2,16.0,Math,8,2,75,2,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,4,1,4,2,16.0,Math,6,2,75,2,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,5,2,5,2,16.0,Math,5,2,75,2,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,6,2,4,2,16.0,Math,6,2,75,2,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,7,0,5,2,16.0,Math,5,2,75,2,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,8,1,4,1,16.0,Math,6,2,75,2,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,9,1,1,1,16.0,Math,9,2,75,2,1,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,1,1,7,2,5,Math,3,1,100,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,10,0,9,1,5.0,Math,1,1,100,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,11,1,4,2,5.0,Math,6,1,100,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,2,2,7,1,5.0,Math,3,1,100,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,3,1,7,0,5.0,Math,3,1,100,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,4,0,8,0,5.0,Math,2,1,100,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,5,2,5,2,5.0,Math,5,1,100,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,6,1,7,2,5.0,Math,3,1,100,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,7,2,7,1,5.0,Math,3,1,100,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,8,0,8,2,5.0,Math,2,1,100,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,9,2,8,2,5.0,Math,2,1,100,0,1,stereotype,1,0,0,over,Female,non-US National,1
 k43107gm,1,2,9,1,5.0,Math,1,1,50,0,1,stereotype,1,0,0,over,,,1
 k43107gm,2,0,9,1,5.0,Math,1,1,50,0,1,stereotype,1,0,0,over,,,1
 k43107gm,3,1,7,1,5.0,Math,3,1,50,0,1,stereotype,1,0,0,over,,,1
@@ -3101,6 +3585,17 @@ k43107gm,8,2,8,0,5.0,Math,2,1,50,0,1,stereotype,1,0,0,over,,,1
 k43107gm,9,2,8,1,5.0,Math,2,1,50,0,1,stereotype,1,0,0,over,,,1
 k43107gm,10,0,9,1,5.0,Math,1,1,50,0,1,stereotype,1,0,0,over,,,1
 k43107gm,11,1,4,1,5.0,Math,6,1,50,0,1,stereotype,1,0,0,over,,,1
+ko3jhnbj,1,0,5,2,13.0,Math,5,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,2,1,5,2,13.0,Math,5,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,3,2,2,2,13.0,Math,8,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,4,2,4,2,13.0,Math,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,5,1,6,2,13.0,Math,4,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,6,0,5,2,13.0,Math,5,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,7,1,2,2,13.0,Math,8,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,8,1,4,2,13.0,Math,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,9,1,1,2,13.0,Math,9,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,10,1,6,2,13.0,Math,4,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,11,1,4,2,13.0,Math,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
 lmiiifw0,1,2,4,1,15.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,2,1,5,1,15.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,3,1,4,2,15.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
@@ -3112,6 +3607,17 @@ lmiiifw0,8,1,4,1,15.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US Nat
 lmiiifw0,9,1,1,1,15.0,Math,9,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,10,1,6,1,15.0,Math,4,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,11,1,4,1,15.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+n86dcmzu,1,1,3,1,11.0,Math,7,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,2,1,5,2,11.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,3,2,2,1,11.0,Math,8,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,4,2,4,1,11.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,5,2,5,1,11.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,6,1,5,1,11.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,7,0,5,1,11.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,8,1,4,1,11.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,9,2,8,2,11.0,Math,2,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,10,1,6,1,11.0,Math,4,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,11,1,4,1,11.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
 ncvtgyzn,1,2,4,2,9.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,2,1,5,2,9.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,3,0,4,2,9.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,US National,0
@@ -3123,6 +3629,138 @@ ncvtgyzn,8,1,4,1,9.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,US National
 ncvtgyzn,9,1,1,1,9.0,Math,9,1,75,1,1,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,10,1,6,1,9.0,Math,4,1,75,1,1,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,11,1,4,1,9.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,1,1,3,2,16,Math,7,1,100,2,1,stereotype,0,1,0,under,Female,US National,-1
+oqf1d07l,10,1,6,2,16.0,Math,4,1,100,2,1,stereotype,0,1,0,under,Female,US National,-1
+oqf1d07l,11,1,4,2,16.0,Math,6,1,100,2,1,stereotype,0,1,0,under,Female,US National,-1
+oqf1d07l,2,1,5,2,16.0,Math,5,1,100,2,1,stereotype,0,1,0,under,Female,US National,-1
+oqf1d07l,3,1,4,1,16.0,Math,6,1,100,2,1,stereotype,0,1,0,under,Female,US National,-1
+oqf1d07l,4,2,4,2,16.0,Math,6,1,100,2,1,stereotype,0,1,0,under,Female,US National,-1
+oqf1d07l,5,0,4,2,16.0,Math,6,1,100,2,1,stereotype,0,1,0,under,Female,US National,-1
+oqf1d07l,6,0,5,2,16.0,Math,5,1,100,2,1,stereotype,0,1,0,under,Female,US National,-1
+oqf1d07l,7,2,6,1,16.0,Math,4,1,100,2,1,stereotype,0,1,0,under,Female,US National,-1
+oqf1d07l,8,1,4,2,16.0,Math,6,1,100,2,1,stereotype,0,1,0,under,Female,US National,-1
+oqf1d07l,9,1,1,2,16.0,Math,9,1,100,2,1,stereotype,0,1,0,under,Female,US National,-1
+q9jar1of,1,1,3,0,11.0,Math,7,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,2,0,5,0,11.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,3,1,4,0,11.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,4,2,4,0,11.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,5,0,4,0,11.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,6,1,5,0,11.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,7,2,6,2,11.0,Math,4,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,8,1,4,1,11.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,9,0,6,0,11.0,Math,4,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,10,2,7,0,11.0,Math,3,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,11,0,5,0,11.0,Math,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,1,2,4,2,13.0,Math,6,2,100,1,1,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,2,2,3,1,13.0,Math,7,2,100,1,1,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,3,2,2,0,13.0,Math,8,2,100,1,1,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,4,1,4,1,13.0,Math,6,2,100,1,1,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,5,0,4,1,13.0,Math,6,2,100,1,1,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,6,1,5,2,13.0,Math,5,2,100,1,1,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,7,2,6,2,13.0,Math,4,2,100,1,1,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,8,0,5,2,13.0,Math,5,2,100,1,1,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,9,2,8,2,13.0,Math,2,2,100,1,1,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,10,2,7,1,13.0,Math,3,2,100,1,1,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,11,0,5,0,13.0,Math,5,2,100,1,1,stereotype,1,0,0,over,Male,non-US National,1
+v3yunf9n,1,0,9,1,5.0,Math,1,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,2,0,9,2,5.0,Math,1,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,3,2,10,1,5.0,Math,0,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,4,0,8,2,5.0,Math,2,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,5,0,7,0,5.0,Math,3,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,6,2,10,0,5.0,Math,0,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,7,1,9,1,5.0,Math,1,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,8,2,8,1,5.0,Math,2,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,9,2,8,2,5.0,Math,2,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,10,0,9,1,5.0,Math,1,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,11,2,8,1,5.0,Math,2,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,1,0,5,2,11.0,Math,5,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,2,1,5,2,11.0,Math,5,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,3,2,2,2,11.0,Math,8,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,4,2,4,2,11.0,Math,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,5,2,5,2,11.0,Math,5,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,6,2,4,2,11.0,Math,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,7,2,6,2,11.0,Math,4,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,8,2,4,1,11.0,Math,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,9,0,6,1,11.0,Math,4,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,10,1,6,1,11.0,Math,4,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,11,2,6,2,11.0,Math,4,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+zwzznpo6,1,0,5,1,13.0,Math,5,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,2,2,3,2,13.0,Math,7,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,3,1,4,2,13.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,4,1,4,1,13.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,5,0,4,1,13.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,6,2,4,1,13.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,7,0,5,0,13.0,Math,5,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,8,2,4,0,13.0,Math,6,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,9,2,8,2,13.0,Math,2,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,10,1,6,2,13.0,Math,4,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,11,0,5,1,13.0,Math,5,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+0kxsrg73,1,0,9,1,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,2,0,9,0,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,3,1,6,0,4.0,Verbal,4,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,4,2,7,0,4.0,Verbal,3,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,5,0,6,0,4.0,Verbal,4,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,6,0,8,2,4.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,7,1,9,1,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,8,1,7,0,4.0,Verbal,3,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,9,2,10,0,4.0,Verbal,0,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,10,2,10,1,4.0,Verbal,0,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+0kxsrg73,11,0,6,0,4.0,Verbal,4,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+1zb27tea,1,0,9,0,4.0,Verbal,1,0,33,0,1,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,2,0,9,1,4.0,Verbal,1,0,33,0,1,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,3,2,5,0,4.0,Verbal,5,0,33,0,1,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,4,2,7,2,4.0,Verbal,3,0,33,0,1,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,5,2,9,1,4.0,Verbal,1,0,33,0,1,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,6,2,7,0,4.0,Verbal,3,0,33,0,1,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,7,1,9,1,4.0,Verbal,1,0,33,0,1,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,8,0,9,0,4.0,Verbal,1,0,33,0,1,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,9,2,10,0,4.0,Verbal,0,0,33,0,1,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,10,1,5,0,4.0,Verbal,5,0,33,0,1,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,11,1,5,2,4.0,Verbal,5,0,33,0,1,stereotype,0,0,1,correct,Female,US National,0
+36b7nxpg,1,2,9,0,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+36b7nxpg,2,0,9,0,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+36b7nxpg,3,0,8,2,4.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+36b7nxpg,4,0,9,1,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+36b7nxpg,5,0,6,0,4.0,Verbal,4,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+36b7nxpg,6,1,7,0,4.0,Verbal,3,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+36b7nxpg,7,2,9,0,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+36b7nxpg,8,2,9,1,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+36b7nxpg,9,1,8,0,4.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+36b7nxpg,10,0,9,0,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+36b7nxpg,11,1,5,0,4.0,Verbal,5,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+3cv0gsso,1,0,6,0,7.0,Verbal,4,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,2,2,4,1,7.0,Verbal,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,3,2,3,1,7.0,Verbal,7,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,4,2,9,1,7.0,Verbal,1,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,5,2,6,0,7.0,Verbal,4,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,6,2,4,1,7.0,Verbal,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,7,2,6,1,7.0,Verbal,4,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,8,2,6,1,7.0,Verbal,4,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,9,2,5,2,7.0,Verbal,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,10,2,3,1,7.0,Verbal,7,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,11,0,6,0,7.0,Verbal,4,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+4d7lvql9,1,0,9,1,5.0,Verbal,1,0,50,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,2,0,9,0,5.0,Verbal,1,0,50,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,3,0,8,2,5.0,Verbal,2,0,50,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,4,2,7,0,5.0,Verbal,3,0,50,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,5,1,9,0,5.0,Verbal,1,0,50,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,6,2,7,2,5.0,Verbal,3,0,50,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,7,1,9,2,5.0,Verbal,1,0,50,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,8,1,7,1,5.0,Verbal,3,0,50,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,9,2,10,1,5.0,Verbal,0,0,50,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,10,1,5,2,5.0,Verbal,5,0,50,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,11,0,6,2,5.0,Verbal,4,0,50,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+4kecnisx,1,1,7,1,4.0,Verbal,3,0,0,0,1,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,2,0,9,0,4.0,Verbal,1,0,0,0,1,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,3,0,8,2,4.0,Verbal,2,0,0,0,1,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,4,1,3,2,4.0,Verbal,7,0,0,0,1,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,5,2,9,2,4.0,Verbal,1,0,0,0,1,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,6,1,7,2,4.0,Verbal,3,0,0,0,1,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,7,1,9,1,4.0,Verbal,1,0,0,0,1,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,8,1,7,0,4.0,Verbal,3,0,0,0,1,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,9,0,8,0,4.0,Verbal,2,0,0,0,1,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,10,0,9,2,4.0,Verbal,1,0,0,0,1,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,11,2,6,0,4.0,Verbal,4,0,0,0,1,stereotype,0,0,1,correct,Female,US National,0
 56op1uib,1,1,7,1,4.0,Verbal,3,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
 56op1uib,2,2,5,1,4.0,Verbal,5,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
 56op1uib,3,0,8,1,4.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
@@ -3134,6 +3772,105 @@ ncvtgyzn,11,1,4,1,9.0,Math,6,1,75,1,1,stereotype,0,0,1,correct,Female,US Nationa
 56op1uib,9,2,10,2,4.0,Verbal,0,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
 56op1uib,10,1,5,1,4.0,Verbal,5,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
 56op1uib,11,1,5,1,4.0,Verbal,5,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+6sybrxjn,1,0,9,2,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+6sybrxjn,2,1,8,1,4.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+6sybrxjn,3,2,5,0,4.0,Verbal,5,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+6sybrxjn,4,0,9,0,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+6sybrxjn,5,1,9,2,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+6sybrxjn,6,1,7,1,4.0,Verbal,3,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+6sybrxjn,7,1,9,0,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+6sybrxjn,8,1,7,2,4.0,Verbal,3,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+6sybrxjn,9,1,8,1,4.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+6sybrxjn,10,0,9,2,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+6sybrxjn,11,2,6,0,4.0,Verbal,4,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+6zd6yym2,1,0,9,1,2.0,Verbal,1,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,2,0,9,0,2.0,Verbal,1,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,3,0,8,0,2.0,Verbal,2,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,4,0,9,0,2.0,Verbal,1,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,5,1,9,1,2.0,Verbal,1,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,6,1,7,1,2.0,Verbal,3,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,7,1,9,1,2.0,Verbal,1,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,8,1,7,1,2.0,Verbal,3,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,9,1,8,1,2.0,Verbal,2,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,10,1,5,1,2.0,Verbal,5,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,11,1,5,1,2.0,Verbal,5,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,1,0,9,2,4.0,Verbal,1,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+78sdphga,2,0,9,1,4.0,Verbal,1,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+78sdphga,3,0,8,0,4.0,Verbal,2,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+78sdphga,4,1,3,0,4.0,Verbal,7,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+78sdphga,5,1,9,0,4.0,Verbal,1,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+78sdphga,6,2,7,0,4.0,Verbal,3,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+78sdphga,7,2,9,0,4.0,Verbal,1,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+78sdphga,8,0,9,0,4.0,Verbal,1,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+78sdphga,9,1,8,1,4.0,Verbal,2,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+78sdphga,10,0,9,1,4.0,Verbal,1,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+78sdphga,11,2,6,1,4.0,Verbal,4,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+a22g0du7,1,1,1,1,7.0,Verbal,9,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,2,1,3,1,7.0,Verbal,7,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,3,1,3,1,7.0,Verbal,7,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,4,2,9,1,7.0,Verbal,1,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,5,1,4,1,7.0,Verbal,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,6,1,3,1,7.0,Verbal,7,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,7,1,5,1,7.0,Verbal,5,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,8,1,4,1,7.0,Verbal,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,9,1,5,1,7.0,Verbal,5,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,10,1,3,1,7.0,Verbal,7,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,11,1,3,1,7.0,Verbal,7,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,1,0,9,1,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,2,1,8,1,4.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,3,0,8,0,4.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,4,1,3,0,4.0,Verbal,7,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,5,2,9,0,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,6,1,7,0,4.0,Verbal,3,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,7,1,9,1,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,8,2,9,1,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,9,0,8,2,4.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,10,1,5,2,4.0,Verbal,5,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,11,2,6,2,4.0,Verbal,4,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,1,1,7,2,2.0,Verbal,3,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,2,0,9,1,2.0,Verbal,1,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,3,1,6,0,2.0,Verbal,4,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,4,2,7,0,2.0,Verbal,3,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,5,2,9,1,2.0,Verbal,1,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,6,1,7,2,2.0,Verbal,3,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,7,2,9,2,2.0,Verbal,1,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,8,0,9,0,2.0,Verbal,1,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,9,1,8,1,2.0,Verbal,2,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,10,0,9,2,2.0,Verbal,1,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,11,2,6,1,2.0,Verbal,4,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+cl0818oa,1,2,9,2,4,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,10,0,9,2,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,11,2,6,0,4.0,Verbal,4,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,2,1,8,1,4.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,3,0,8,0,4.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,4,2,7,1,4.0,Verbal,3,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,5,2,9,1,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,6,0,8,2,4.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,7,2,9,0,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,8,1,7,1,4.0,Verbal,3,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,9,0,8,1,4.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Male,non-US National,1
+dk93ewke,1,1,7,1,2.0,Verbal,3,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,2,2,5,0,2.0,Verbal,5,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,3,1,6,2,2.0,Verbal,4,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,4,0,9,2,2.0,Verbal,1,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,5,0,6,0,2.0,Verbal,4,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,6,1,7,1,2.0,Verbal,3,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,7,2,9,2,2.0,Verbal,1,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,8,2,9,0,2.0,Verbal,1,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,9,2,10,1,2.0,Verbal,0,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,10,0,9,2,2.0,Verbal,1,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,11,1,5,2,2.0,Verbal,5,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+ffd2bxk4,1,0,9,1,4.0,Verbal,1,1,33,0,1,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,2,0,9,1,4.0,Verbal,1,1,33,0,1,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,3,2,5,0,4.0,Verbal,5,1,33,0,1,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,4,0,9,2,4.0,Verbal,1,1,33,0,1,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,5,2,9,2,4.0,Verbal,1,1,33,0,1,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,6,1,7,2,4.0,Verbal,3,1,33,0,1,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,7,1,9,1,4.0,Verbal,1,1,33,0,1,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,8,0,9,1,4.0,Verbal,1,1,33,0,1,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,9,0,8,0,4.0,Verbal,2,1,33,0,1,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,10,2,10,1,4.0,Verbal,0,1,33,0,1,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,11,1,5,2,4.0,Verbal,5,1,33,0,1,stereotype,1,0,0,over,Female,US National,1
 g2p53iqv,1,0,6,2,10.0,Verbal,4,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
 g2p53iqv,2,0,4,1,10.0,Verbal,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
 g2p53iqv,3,1,3,2,10.0,Verbal,7,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
@@ -3145,6 +3882,17 @@ g2p53iqv,8,0,5,0,10.0,Verbal,5,2,75,1,1,stereotype,1,0,0,over,Female,non-US Nati
 g2p53iqv,9,0,6,0,10.0,Verbal,4,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
 g2p53iqv,10,0,8,0,10.0,Verbal,2,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
 g2p53iqv,11,1,3,2,10.0,Verbal,7,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+idzf7yro,1,2,3,0,6.0,Verbal,7,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,2,1,3,1,6.0,Verbal,7,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,3,0,4,2,6.0,Verbal,6,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,4,2,9,0,6.0,Verbal,1,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,5,2,6,0,6.0,Verbal,4,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,6,0,2,0,6.0,Verbal,8,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,7,0,2,2,6.0,Verbal,8,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,8,0,5,0,6.0,Verbal,5,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,9,0,6,1,6.0,Verbal,4,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,10,1,3,2,6.0,Verbal,7,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,11,1,3,0,6.0,Verbal,7,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
 ilooy3i8,1,2,9,2,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,US National,1
 ilooy3i8,2,0,9,1,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,US National,1
 ilooy3i8,3,0,8,0,4.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Female,US National,1
@@ -3167,6 +3915,28 @@ j3r6tuv8,6,0,2,2,8.0,Verbal,8,1,50,1,1,stereotype,0,0,1,correct,Female,US Nation
 j3r6tuv8,7,0,2,2,8.0,Verbal,8,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
 j3r6tuv8,8,0,5,2,8.0,Verbal,5,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
 j3r6tuv8,9,0,6,2,8.0,Verbal,4,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
+jk70axat,1,1,7,1,2.0,Verbal,3,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,2,0,9,1,2.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,3,2,5,1,2.0,Verbal,5,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,4,0,9,2,2.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,5,2,9,2,2.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,6,1,7,2,2.0,Verbal,3,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,7,0,5,0,2.0,Verbal,5,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,8,0,9,0,2.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,9,1,8,0,2.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,10,2,10,0,2.0,Verbal,0,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,11,1,5,2,2.0,Verbal,5,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,1,0,6,0,6.0,Verbal,4,0,75,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+jka2nr9v,2,1,3,1,6.0,Verbal,7,0,75,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+jka2nr9v,3,1,3,1,6.0,Verbal,7,0,75,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+jka2nr9v,4,2,9,1,6.0,Verbal,1,0,75,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+jka2nr9v,5,1,4,1,6.0,Verbal,6,0,75,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+jka2nr9v,6,1,3,2,6.0,Verbal,7,0,75,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+jka2nr9v,7,2,6,2,6.0,Verbal,4,0,75,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+jka2nr9v,8,0,5,2,6.0,Verbal,5,0,75,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+jka2nr9v,9,0,6,0,6.0,Verbal,4,0,75,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+jka2nr9v,10,1,3,1,6.0,Verbal,7,0,75,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+jka2nr9v,11,1,3,2,6.0,Verbal,7,0,75,1,1,stereotype,0,1,0,under,Female,non-US National,-1
 k43107gm,1,0,6,0,6.0,Verbal,4,1,75,1,1,stereotype,0,0,1,correct,,,0
 k43107gm,2,1,3,0,6.0,Verbal,7,1,75,1,1,stereotype,0,0,1,correct,,,0
 k43107gm,3,1,3,0,6.0,Verbal,7,1,75,1,1,stereotype,0,0,1,correct,,,0
@@ -3178,6 +3948,17 @@ k43107gm,8,2,6,0,6.0,Verbal,4,1,75,1,1,stereotype,0,0,1,correct,,,0
 k43107gm,9,1,5,1,6.0,Verbal,5,1,75,1,1,stereotype,0,0,1,correct,,,0
 k43107gm,10,2,3,1,6.0,Verbal,7,1,75,1,1,stereotype,0,0,1,correct,,,0
 k43107gm,11,0,6,2,6.0,Verbal,4,1,75,1,1,stereotype,0,0,1,correct,,,0
+ko3jhnbj,1,0,9,1,4.0,Verbal,1,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,2,0,9,2,4.0,Verbal,1,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,3,0,8,0,4.0,Verbal,2,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,4,2,7,2,4.0,Verbal,3,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,5,2,9,0,4.0,Verbal,1,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,6,1,7,1,4.0,Verbal,3,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,7,2,9,1,4.0,Verbal,1,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,8,1,7,0,4.0,Verbal,3,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,9,0,8,0,4.0,Verbal,2,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,10,0,9,0,4.0,Verbal,1,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,11,1,5,2,4.0,Verbal,5,1,50,0,1,stereotype,1,0,0,over,Female,non-US National,1
 lmiiifw0,1,0,9,0,3,Verbal,1,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,10,0,9,1,3.0,Verbal,1,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,11,2,6,1,3.0,Verbal,4,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
@@ -3189,6 +3970,17 @@ lmiiifw0,6,2,7,0,3.0,Verbal,3,0,75,0,1,stereotype,0,0,1,correct,Female,non-US Na
 lmiiifw0,7,1,9,1,3.0,Verbal,1,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,8,2,9,2,3.0,Verbal,1,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,9,0,8,0,3.0,Verbal,2,0,75,0,1,stereotype,0,0,1,correct,Female,non-US National,0
+n86dcmzu,1,1,1,1,7,Verbal,9,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,10,1,3,2,7.0,Verbal,7,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,11,1,3,2,7.0,Verbal,7,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,2,1,3,2,7.0,Verbal,7,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,3,2,3,2,7.0,Verbal,7,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,4,2,9,2,7.0,Verbal,1,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,5,1,4,1,7.0,Verbal,6,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,6,0,2,1,7.0,Verbal,8,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,7,0,2,2,7.0,Verbal,8,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,8,0,5,2,7.0,Verbal,5,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+n86dcmzu,9,1,5,2,7.0,Verbal,5,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
 ncvtgyzn,1,0,6,1,6,Verbal,4,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,10,2,3,2,6.0,Verbal,7,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,11,2,5,2,6.0,Verbal,5,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
@@ -3200,6 +3992,138 @@ ncvtgyzn,6,1,3,2,6.0,Verbal,7,1,50,1,1,stereotype,0,0,1,correct,Female,US Nation
 ncvtgyzn,7,1,5,2,6.0,Verbal,5,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,8,1,4,2,6.0,Verbal,6,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,9,1,5,2,6.0,Verbal,5,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,1,2,9,0,2.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,2,0,9,0,2.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,3,1,6,1,2.0,Verbal,4,1,75,0,1,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,4,1,3,2,2.0,Verbal,7,1,75,0,1,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,5,1,9,2,2.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,6,2,7,2,2.0,Verbal,3,1,75,0,1,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,7,0,5,2,2.0,Verbal,5,1,75,0,1,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,8,0,9,2,2.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,9,1,8,1,2.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,10,2,10,1,2.0,Verbal,0,1,75,0,1,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,11,0,6,2,2.0,Verbal,4,1,75,0,1,stereotype,1,0,0,over,Female,US National,1
+q9jar1of,1,0,9,1,5.0,Verbal,1,1,33,0,1,stereotype,1,0,0,over,Male,non-US National,1
+q9jar1of,2,1,8,1,5.0,Verbal,2,1,33,0,1,stereotype,1,0,0,over,Male,non-US National,1
+q9jar1of,3,2,5,1,5.0,Verbal,5,1,33,0,1,stereotype,1,0,0,over,Male,non-US National,1
+q9jar1of,4,0,9,0,5.0,Verbal,1,1,33,0,1,stereotype,1,0,0,over,Male,non-US National,1
+q9jar1of,5,1,9,0,5.0,Verbal,1,1,33,0,1,stereotype,1,0,0,over,Male,non-US National,1
+q9jar1of,6,2,7,0,5.0,Verbal,3,1,33,0,1,stereotype,1,0,0,over,Male,non-US National,1
+q9jar1of,7,2,9,2,5.0,Verbal,1,1,33,0,1,stereotype,1,0,0,over,Male,non-US National,1
+q9jar1of,8,1,7,2,5.0,Verbal,3,1,33,0,1,stereotype,1,0,0,over,Male,non-US National,1
+q9jar1of,9,0,8,2,5.0,Verbal,2,1,33,0,1,stereotype,1,0,0,over,Male,non-US National,1
+q9jar1of,10,1,5,1,5.0,Verbal,5,1,33,0,1,stereotype,1,0,0,over,Male,non-US National,1
+q9jar1of,11,0,6,1,5.0,Verbal,4,1,33,0,1,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,1,1,1,1,6.0,Verbal,9,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,2,2,4,1,6.0,Verbal,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,3,0,4,1,6.0,Verbal,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,4,1,4,2,6.0,Verbal,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,5,1,4,0,6.0,Verbal,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,6,1,3,1,6.0,Verbal,7,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,7,1,5,1,6.0,Verbal,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,8,1,4,0,6.0,Verbal,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,9,1,5,2,6.0,Verbal,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,10,1,3,1,6.0,Verbal,7,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,11,1,3,1,6.0,Verbal,7,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+v3yunf9n,1,2,3,1,6.0,Verbal,7,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,2,2,4,1,6.0,Verbal,6,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,3,2,3,1,6.0,Verbal,7,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,4,2,9,1,6.0,Verbal,1,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,5,2,6,0,6.0,Verbal,4,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,6,1,3,0,6.0,Verbal,7,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,7,1,5,0,6.0,Verbal,5,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,8,0,5,0,6.0,Verbal,5,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,9,0,6,0,6.0,Verbal,4,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,10,1,3,1,6.0,Verbal,7,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,11,1,3,1,6.0,Verbal,7,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,1,1,7,1,4,Verbal,3,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,10,1,5,0,4.0,Verbal,5,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,11,1,5,0,4.0,Verbal,5,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,2,0,9,2,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,3,2,5,1,4.0,Verbal,5,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,4,0,9,2,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,5,0,6,2,4.0,Verbal,4,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,6,0,8,2,4.0,Verbal,2,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,7,1,9,2,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,8,2,9,1,4.0,Verbal,1,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,9,2,10,2,4.0,Verbal,0,1,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+zwzznpo6,1,0,6,2,7,Verbal,4,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,10,0,8,1,7.0,Verbal,2,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,11,0,6,0,7.0,Verbal,4,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,2,1,3,1,7.0,Verbal,7,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,3,1,3,1,7.0,Verbal,7,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,4,2,9,2,7.0,Verbal,1,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,5,2,6,0,7.0,Verbal,4,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,6,1,3,0,7.0,Verbal,7,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,7,0,2,0,7.0,Verbal,8,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,8,0,5,1,7.0,Verbal,5,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,9,1,5,2,7.0,Verbal,5,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+0kxsrg73,1,0,2,1,10.0,Pop-Culture and Art,8,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,2,1,3,1,10.0,Pop-Culture and Art,7,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,3,2,2,1,10.0,Pop-Culture and Art,8,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,4,2,0,1,10.0,Pop-Culture and Art,10,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,5,1,3,1,10.0,Pop-Culture and Art,7,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,6,0,8,1,10.0,Pop-Culture and Art,2,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,7,1,5,1,10.0,Pop-Culture and Art,5,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,8,0,5,1,10.0,Pop-Culture and Art,5,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,9,1,5,2,10.0,Pop-Culture and Art,5,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,10,0,2,2,10.0,Pop-Culture and Art,8,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,11,2,2,2,10.0,Pop-Culture and Art,8,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+1zb27tea,1,0,5,2,5.0,Pop-Culture and Art,5,0,33,0,2,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,2,0,7,2,5.0,Pop-Culture and Art,3,0,33,0,2,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,3,0,7,2,5.0,Pop-Culture and Art,3,0,33,0,2,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,4,1,0,2,5.0,Pop-Culture and Art,10,0,33,0,2,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,5,0,5,2,5.0,Pop-Culture and Art,5,0,33,0,2,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,6,0,4,2,5.0,Pop-Culture and Art,6,0,33,0,2,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,7,0,4,2,5.0,Pop-Culture and Art,6,0,33,0,2,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,8,0,7,2,5.0,Pop-Culture and Art,3,0,33,0,2,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,9,1,7,2,5.0,Pop-Culture and Art,3,0,33,0,2,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,10,0,9,2,5.0,Pop-Culture and Art,1,0,33,0,2,stereotype,0,0,1,correct,Female,US National,0
+1zb27tea,11,0,4,0,5.0,Pop-Culture and Art,6,0,33,0,2,stereotype,0,0,1,correct,Female,US National,0
+36b7nxpg,1,1,6,1,5.0,Pop-Culture and Art,4,0,50,0,2,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,2,0,7,0,5.0,Pop-Culture and Art,3,0,50,0,2,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,3,1,6,0,5.0,Pop-Culture and Art,4,0,50,0,2,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,4,2,5,1,5.0,Pop-Culture and Art,5,0,50,0,2,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,5,2,3,2,5.0,Pop-Culture and Art,7,0,50,0,2,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,6,1,4,2,5.0,Pop-Culture and Art,6,0,50,0,2,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,7,0,4,2,5.0,Pop-Culture and Art,6,0,50,0,2,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,8,2,8,2,5.0,Pop-Culture and Art,2,0,50,0,2,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,9,2,7,1,5.0,Pop-Culture and Art,3,0,50,0,2,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,10,0,9,1,5.0,Pop-Culture and Art,1,0,50,0,2,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,11,1,3,0,5.0,Pop-Culture and Art,7,0,50,0,2,stereotype,0,0,1,correct,Female,non-US National,0
+3cv0gsso,1,0,2,1,12.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,2,1,3,1,12.0,Pop-Culture and Art,7,1,50,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,3,1,3,1,12.0,Pop-Culture and Art,7,1,50,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,4,1,4,1,12.0,Pop-Culture and Art,6,1,50,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,5,1,3,1,12.0,Pop-Culture and Art,7,1,50,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,6,1,3,1,12.0,Pop-Culture and Art,7,1,50,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,7,1,5,1,12.0,Pop-Culture and Art,5,1,50,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,8,1,4,1,12.0,Pop-Culture and Art,6,1,50,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,9,1,5,1,12.0,Pop-Culture and Art,5,1,50,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,10,1,3,1,12.0,Pop-Culture and Art,7,1,50,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,11,1,2,1,12.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+4d7lvql9,1,1,6,1,4.0,Pop-Culture and Art,4,1,33,0,2,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,2,0,7,2,4.0,Pop-Culture and Art,3,1,33,0,2,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,3,0,7,0,4.0,Pop-Culture and Art,3,1,33,0,2,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,4,1,0,0,4.0,Pop-Culture and Art,10,1,33,0,2,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,5,1,8,0,4.0,Pop-Culture and Art,2,1,33,0,2,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,6,2,3,0,4.0,Pop-Culture and Art,7,1,33,0,2,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,7,0,4,0,4.0,Pop-Culture and Art,6,1,33,0,2,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,8,1,4,0,4.0,Pop-Culture and Art,6,1,33,0,2,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,9,1,7,0,4.0,Pop-Culture and Art,3,1,33,0,2,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,10,2,5,0,4.0,Pop-Culture and Art,5,1,33,0,2,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,11,1,3,1,4.0,Pop-Culture and Art,7,1,33,0,2,stereotype,1,0,0,over,Female,non-US National,1
+4kecnisx,1,1,6,0,5.0,Pop-Culture and Art,4,0,0,0,2,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,2,0,7,1,5.0,Pop-Culture and Art,3,0,0,0,2,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,3,1,6,2,5.0,Pop-Culture and Art,4,0,0,0,2,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,4,0,6,0,5.0,Pop-Culture and Art,4,0,0,0,2,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,5,2,3,2,5.0,Pop-Culture and Art,7,0,0,0,2,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,6,2,3,1,5.0,Pop-Culture and Art,7,0,0,0,2,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,7,2,4,0,5.0,Pop-Culture and Art,6,0,0,0,2,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,8,2,8,1,5.0,Pop-Culture and Art,2,0,0,0,2,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,9,2,7,2,5.0,Pop-Culture and Art,3,0,0,0,2,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,10,2,5,0,5.0,Pop-Culture and Art,5,0,0,0,2,stereotype,0,0,1,correct,Female,US National,0
+4kecnisx,11,1,3,0,5.0,Pop-Culture and Art,7,0,0,0,2,stereotype,0,0,1,correct,Female,US National,0
 56op1uib,1,2,4,0,10.0,Pop-Culture and Art,6,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
 56op1uib,2,2,2,0,10.0,Pop-Culture and Art,8,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
 56op1uib,3,2,2,0,10.0,Pop-Culture and Art,8,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
@@ -3211,6 +4135,105 @@ ncvtgyzn,9,1,5,2,6.0,Verbal,5,1,50,1,1,stereotype,0,0,1,correct,Female,US Nation
 56op1uib,9,2,1,0,10.0,Pop-Culture and Art,9,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
 56op1uib,10,2,3,0,10.0,Pop-Culture and Art,7,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
 56op1uib,11,2,2,0,10.0,Pop-Culture and Art,8,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+6sybrxjn,1,0,2,2,12.0,Pop-Culture and Art,8,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,2,0,6,2,12.0,Pop-Culture and Art,4,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,3,0,5,2,12.0,Pop-Culture and Art,5,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,4,0,3,2,12.0,Pop-Culture and Art,7,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,5,1,3,1,12.0,Pop-Culture and Art,7,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,6,0,8,2,12.0,Pop-Culture and Art,2,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,7,2,1,0,12.0,Pop-Culture and Art,9,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,8,2,2,0,12.0,Pop-Culture and Art,8,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,9,1,5,1,12.0,Pop-Culture and Art,5,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,10,2,3,0,12.0,Pop-Culture and Art,7,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,11,0,2,2,12.0,Pop-Culture and Art,8,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+6zd6yym2,1,0,2,0,6.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+6zd6yym2,2,0,6,0,6.0,Pop-Culture and Art,4,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+6zd6yym2,3,0,5,0,6.0,Pop-Culture and Art,5,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+6zd6yym2,4,0,3,0,6.0,Pop-Culture and Art,7,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+6zd6yym2,5,0,2,0,6.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+6zd6yym2,6,0,8,0,6.0,Pop-Culture and Art,2,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+6zd6yym2,7,0,6,0,6.0,Pop-Culture and Art,4,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+6zd6yym2,8,0,5,0,6.0,Pop-Culture and Art,5,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+6zd6yym2,9,0,4,0,6.0,Pop-Culture and Art,6,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+6zd6yym2,10,0,2,0,6.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+6zd6yym2,11,0,2,0,6.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+78sdphga,1,0,2,0,8.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,2,0,6,0,8.0,Pop-Culture and Art,4,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,3,1,3,0,8.0,Pop-Culture and Art,7,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,4,1,4,0,8.0,Pop-Culture and Art,6,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,5,2,0,0,8.0,Pop-Culture and Art,10,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,6,2,1,0,8.0,Pop-Culture and Art,9,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,7,2,1,0,8.0,Pop-Culture and Art,9,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,8,2,2,0,8.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,9,2,1,0,8.0,Pop-Culture and Art,9,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,10,2,3,0,8.0,Pop-Culture and Art,7,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,11,0,2,0,8.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,1,0,2,0,7.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,2,0,6,0,7.0,Pop-Culture and Art,4,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,3,0,5,0,7.0,Pop-Culture and Art,5,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,4,0,3,0,7.0,Pop-Culture and Art,7,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,5,0,2,0,7.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,6,0,8,0,7.0,Pop-Culture and Art,2,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,7,0,6,0,7.0,Pop-Culture and Art,4,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,8,0,5,0,7.0,Pop-Culture and Art,5,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,9,0,4,0,7.0,Pop-Culture and Art,6,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,10,0,2,0,7.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,11,0,2,0,7.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,1,0,2,0,9.0,Pop-Culture and Art,8,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+byf6tjt0,2,0,6,1,9.0,Pop-Culture and Art,4,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+byf6tjt0,3,0,5,2,9.0,Pop-Culture and Art,5,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+byf6tjt0,4,0,3,0,9.0,Pop-Culture and Art,7,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+byf6tjt0,5,0,2,0,9.0,Pop-Culture and Art,8,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+byf6tjt0,6,0,8,0,9.0,Pop-Culture and Art,2,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+byf6tjt0,7,1,5,0,9.0,Pop-Culture and Art,5,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+byf6tjt0,8,2,2,0,9.0,Pop-Culture and Art,8,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+byf6tjt0,9,2,1,0,9.0,Pop-Culture and Art,9,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+byf6tjt0,10,2,3,0,9.0,Pop-Culture and Art,7,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+byf6tjt0,11,2,2,0,9.0,Pop-Culture and Art,8,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+cioxyqvq,1,2,4,2,9.0,Pop-Culture and Art,6,2,75,1,2,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,2,1,3,2,9.0,Pop-Culture and Art,7,2,75,1,2,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,3,2,2,1,9.0,Pop-Culture and Art,8,2,75,1,2,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,4,0,3,2,9.0,Pop-Culture and Art,7,2,75,1,2,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,5,0,2,0,9.0,Pop-Culture and Art,8,2,75,1,2,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,6,1,3,0,9.0,Pop-Culture and Art,7,2,75,1,2,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,7,2,1,1,9.0,Pop-Culture and Art,9,2,75,1,2,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,8,0,5,2,9.0,Pop-Culture and Art,5,2,75,1,2,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,9,2,1,1,9.0,Pop-Culture and Art,9,2,75,1,2,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,10,2,3,1,9.0,Pop-Culture and Art,7,2,75,1,2,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,11,1,2,1,9.0,Pop-Culture and Art,8,2,75,1,2,stereotype,1,0,0,over,Female,non-US National,1
+cl0818oa,1,1,1,2,7.0,Pop-Culture and Art,9,1,100,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,2,0,6,2,7.0,Pop-Culture and Art,4,1,100,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,3,2,2,1,7.0,Pop-Culture and Art,8,1,100,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,4,0,3,1,7.0,Pop-Culture and Art,7,1,100,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,5,1,3,1,7.0,Pop-Culture and Art,7,1,100,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,6,2,1,1,7.0,Pop-Culture and Art,9,1,100,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,7,0,6,2,7.0,Pop-Culture and Art,4,1,100,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,8,2,2,1,7.0,Pop-Culture and Art,8,1,100,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,9,1,5,1,7.0,Pop-Culture and Art,5,1,100,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,10,2,3,1,7.0,Pop-Culture and Art,7,1,100,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,11,2,2,1,7.0,Pop-Culture and Art,8,1,100,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+dk93ewke,1,1,1,2,6.0,Pop-Culture and Art,9,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,2,1,3,2,6.0,Pop-Culture and Art,7,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,3,0,5,1,6.0,Pop-Culture and Art,5,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,4,2,0,1,6.0,Pop-Culture and Art,10,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,5,2,0,0,6.0,Pop-Culture and Art,10,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,6,2,1,1,6.0,Pop-Culture and Art,9,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,7,2,1,2,6.0,Pop-Culture and Art,9,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,8,0,5,1,6.0,Pop-Culture and Art,5,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,9,0,4,2,6.0,Pop-Culture and Art,6,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,10,0,2,0,6.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+dk93ewke,11,1,2,1,6.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+ffd2bxk4,1,2,4,0,10.0,Pop-Culture and Art,6,0,75,1,2,stereotype,0,1,0,under,Female,US National,-1
+ffd2bxk4,2,2,2,0,10.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Female,US National,-1
+ffd2bxk4,3,2,2,0,10.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Female,US National,-1
+ffd2bxk4,4,1,4,1,10.0,Pop-Culture and Art,6,0,75,1,2,stereotype,0,1,0,under,Female,US National,-1
+ffd2bxk4,5,0,2,2,10.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Female,US National,-1
+ffd2bxk4,6,0,8,2,10.0,Pop-Culture and Art,2,0,75,1,2,stereotype,0,1,0,under,Female,US National,-1
+ffd2bxk4,7,0,6,2,10.0,Pop-Culture and Art,4,0,75,1,2,stereotype,0,1,0,under,Female,US National,-1
+ffd2bxk4,8,1,4,1,10.0,Pop-Culture and Art,6,0,75,1,2,stereotype,0,1,0,under,Female,US National,-1
+ffd2bxk4,9,1,5,1,10.0,Pop-Culture and Art,5,0,75,1,2,stereotype,0,1,0,under,Female,US National,-1
+ffd2bxk4,10,0,2,1,10.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Female,US National,-1
+ffd2bxk4,11,1,2,1,10.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Female,US National,-1
 g2p53iqv,1,0,2,0,10.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
 g2p53iqv,2,0,6,0,10.0,Pop-Culture and Art,4,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
 g2p53iqv,3,0,5,0,10.0,Pop-Culture and Art,5,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
@@ -3222,6 +4245,17 @@ g2p53iqv,8,0,5,1,10.0,Pop-Culture and Art,5,0,75,1,2,stereotype,0,1,0,under,Fema
 g2p53iqv,9,0,4,1,10.0,Pop-Culture and Art,6,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
 g2p53iqv,10,0,2,1,10.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
 g2p53iqv,11,0,2,1,10.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,1,0,2,1,12,Pop-Culture and Art,8,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,10,1,3,0,12.0,Pop-Culture and Art,7,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,11,1,2,2,12.0,Pop-Culture and Art,8,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,2,2,2,2,12.0,Pop-Culture and Art,8,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,3,1,3,1,12.0,Pop-Culture and Art,7,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,4,2,0,0,12.0,Pop-Culture and Art,10,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,5,2,0,0,12.0,Pop-Culture and Art,10,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,6,2,1,0,12.0,Pop-Culture and Art,9,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,7,2,1,0,12.0,Pop-Culture and Art,9,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,8,2,2,0,12.0,Pop-Culture and Art,8,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,9,2,1,1,12.0,Pop-Culture and Art,9,0,33,1,2,stereotype,0,1,0,under,Female,non-US National,-1
 ilooy3i8,1,0,2,1,9.0,Pop-Culture and Art,8,1,33,1,2,stereotype,0,0,1,correct,Female,US National,0
 ilooy3i8,2,0,6,0,9.0,Pop-Culture and Art,4,1,33,1,2,stereotype,0,0,1,correct,Female,US National,0
 ilooy3i8,3,0,5,2,9.0,Pop-Culture and Art,5,1,33,1,2,stereotype,0,0,1,correct,Female,US National,0
@@ -3244,6 +4278,28 @@ j3r6tuv8,8,2,2,0,17.0,Pop-Culture and Art,8,0,50,2,2,stereotype,0,1,0,under,Fema
 j3r6tuv8,9,2,1,0,17.0,Pop-Culture and Art,9,0,50,2,2,stereotype,0,1,0,under,Female,US National,-1
 j3r6tuv8,10,2,3,0,17.0,Pop-Culture and Art,7,0,50,2,2,stereotype,0,1,0,under,Female,US National,-1
 j3r6tuv8,11,2,2,0,17.0,Pop-Culture and Art,8,0,50,2,2,stereotype,0,1,0,under,Female,US National,-1
+jk70axat,1,1,6,1,3.0,Pop-Culture and Art,4,1,75,0,2,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,2,1,5,2,3.0,Pop-Culture and Art,5,1,75,0,2,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,3,0,7,2,3.0,Pop-Culture and Art,3,1,75,0,2,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,4,2,5,1,3.0,Pop-Culture and Art,5,1,75,0,2,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,5,1,8,1,3.0,Pop-Culture and Art,2,1,75,0,2,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,6,0,4,1,3.0,Pop-Culture and Art,6,1,75,0,2,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,7,2,4,2,3.0,Pop-Culture and Art,6,1,75,0,2,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,8,2,8,2,3.0,Pop-Culture and Art,2,1,75,0,2,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,9,1,7,2,3.0,Pop-Culture and Art,3,1,75,0,2,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,10,1,3,1,3.0,Pop-Culture and Art,7,1,75,0,2,stereotype,1,0,0,over,Female,non-US National,1
+jk70axat,11,1,3,1,3.0,Pop-Culture and Art,7,1,75,0,2,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,1,1,1,2,9.0,Pop-Culture and Art,9,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,2,1,3,2,9.0,Pop-Culture and Art,7,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,3,1,3,2,9.0,Pop-Culture and Art,7,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,4,1,4,2,9.0,Pop-Culture and Art,6,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,5,1,3,2,9.0,Pop-Culture and Art,7,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,6,2,1,2,9.0,Pop-Culture and Art,9,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,7,0,6,2,9.0,Pop-Culture and Art,4,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,8,1,4,2,9.0,Pop-Culture and Art,6,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,9,2,1,2,9.0,Pop-Culture and Art,9,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,10,1,3,2,9.0,Pop-Culture and Art,7,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,11,1,2,2,9.0,Pop-Culture and Art,8,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
 k43107gm,1,0,2,1,9.0,Pop-Culture and Art,8,1,33,1,2,stereotype,0,0,1,correct,,,0
 k43107gm,2,0,6,0,9.0,Pop-Culture and Art,4,1,33,1,2,stereotype,0,0,1,correct,,,0
 k43107gm,3,0,5,1,9.0,Pop-Culture and Art,5,1,33,1,2,stereotype,0,0,1,correct,,,0
@@ -3255,6 +4311,17 @@ k43107gm,8,2,2,1,9.0,Pop-Culture and Art,8,1,33,1,2,stereotype,0,0,1,correct,,,0
 k43107gm,9,2,1,1,9.0,Pop-Culture and Art,9,1,33,1,2,stereotype,0,0,1,correct,,,0
 k43107gm,10,2,3,1,9.0,Pop-Culture and Art,7,1,33,1,2,stereotype,0,0,1,correct,,,0
 k43107gm,11,2,2,1,9.0,Pop-Culture and Art,8,1,33,1,2,stereotype,0,0,1,correct,,,0
+ko3jhnbj,1,0,2,2,10.0,Pop-Culture and Art,8,2,33,1,2,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,2,1,3,2,10.0,Pop-Culture and Art,7,2,33,1,2,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,3,2,2,2,10.0,Pop-Culture and Art,8,2,33,1,2,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,4,0,3,2,10.0,Pop-Culture and Art,7,2,33,1,2,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,5,2,0,2,10.0,Pop-Culture and Art,10,2,33,1,2,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,6,2,1,2,10.0,Pop-Culture and Art,9,2,33,1,2,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,7,1,5,2,10.0,Pop-Culture and Art,5,2,33,1,2,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,8,2,2,2,10.0,Pop-Culture and Art,8,2,33,1,2,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,9,0,4,2,10.0,Pop-Culture and Art,6,2,33,1,2,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,10,2,3,2,10.0,Pop-Culture and Art,7,2,33,1,2,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,11,1,2,2,10.0,Pop-Culture and Art,8,2,33,1,2,stereotype,1,0,0,over,Female,non-US National,1
 lmiiifw0,1,1,1,1,9.0,Pop-Culture and Art,9,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
 lmiiifw0,2,1,3,1,9.0,Pop-Culture and Art,7,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
 lmiiifw0,3,1,3,1,9.0,Pop-Culture and Art,7,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
@@ -3266,6 +4333,17 @@ lmiiifw0,8,1,4,1,9.0,Pop-Culture and Art,6,0,75,1,2,stereotype,0,1,0,under,Femal
 lmiiifw0,9,1,5,1,9.0,Pop-Culture and Art,5,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
 lmiiifw0,10,1,3,1,9.0,Pop-Culture and Art,7,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
 lmiiifw0,11,1,2,1,9.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Female,non-US National,-1
+n86dcmzu,1,0,2,0,7.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,2,1,3,0,7.0,Pop-Culture and Art,7,0,75,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,3,1,3,0,7.0,Pop-Culture and Art,7,0,75,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,4,1,4,0,7.0,Pop-Culture and Art,6,0,75,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,5,1,3,1,7.0,Pop-Culture and Art,7,0,75,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,6,1,3,1,7.0,Pop-Culture and Art,7,0,75,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,7,1,5,1,7.0,Pop-Culture and Art,5,0,75,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,8,2,2,1,7.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,9,2,1,1,7.0,Pop-Culture and Art,9,0,75,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,10,2,3,1,7.0,Pop-Culture and Art,7,0,75,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,11,2,2,1,7.0,Pop-Culture and Art,8,0,75,1,2,stereotype,0,1,0,under,Male,non-US National,-1
 ncvtgyzn,1,2,4,0,7.0,Pop-Culture and Art,6,1,50,1,2,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,2,2,2,0,7.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,3,2,2,2,7.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Female,US National,0
@@ -3277,6 +4355,138 @@ ncvtgyzn,8,2,2,1,7.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Fem
 ncvtgyzn,9,2,1,1,7.0,Pop-Culture and Art,9,1,50,1,2,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,10,2,3,1,7.0,Pop-Culture and Art,7,1,50,1,2,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,11,2,2,1,7.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,1,2,9,1,3.0,Pop-Culture and Art,1,1,75,0,2,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,2,0,7,2,3.0,Pop-Culture and Art,3,1,75,0,2,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,3,0,7,1,3.0,Pop-Culture and Art,3,1,75,0,2,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,4,0,6,0,3.0,Pop-Culture and Art,4,1,75,0,2,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,5,1,8,1,3.0,Pop-Culture and Art,2,1,75,0,2,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,6,0,4,0,3.0,Pop-Culture and Art,6,1,75,0,2,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,7,0,4,0,3.0,Pop-Culture and Art,6,1,75,0,2,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,8,0,7,0,3.0,Pop-Culture and Art,3,1,75,0,2,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,9,0,6,0,3.0,Pop-Culture and Art,4,1,75,0,2,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,10,0,9,0,3.0,Pop-Culture and Art,1,1,75,0,2,stereotype,1,0,0,over,Female,US National,1
+oqf1d07l,11,0,4,0,3.0,Pop-Culture and Art,6,1,75,0,2,stereotype,1,0,0,over,Female,US National,1
+q9jar1of,1,0,2,0,11.0,Pop-Culture and Art,8,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,2,0,6,0,11.0,Pop-Culture and Art,4,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,3,0,5,0,11.0,Pop-Culture and Art,5,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,4,0,3,0,11.0,Pop-Culture and Art,7,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,5,0,2,0,11.0,Pop-Culture and Art,8,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,6,0,8,0,11.0,Pop-Culture and Art,2,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,7,0,6,0,11.0,Pop-Culture and Art,4,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,8,0,5,0,11.0,Pop-Culture and Art,5,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,9,0,4,0,11.0,Pop-Culture and Art,6,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,10,0,2,0,11.0,Pop-Culture and Art,8,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,11,0,2,0,11.0,Pop-Culture and Art,8,1,75,1,2,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,1,0,2,2,11.0,Pop-Culture and Art,8,2,75,1,2,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,2,0,6,1,11.0,Pop-Culture and Art,4,2,75,1,2,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,3,0,5,0,11.0,Pop-Culture and Art,5,2,75,1,2,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,4,1,4,1,11.0,Pop-Culture and Art,6,2,75,1,2,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,5,1,3,2,11.0,Pop-Culture and Art,7,2,75,1,2,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,6,1,3,0,11.0,Pop-Culture and Art,7,2,75,1,2,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,7,2,1,1,11.0,Pop-Culture and Art,9,2,75,1,2,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,8,2,2,2,11.0,Pop-Culture and Art,8,2,75,1,2,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,9,2,1,0,11.0,Pop-Culture and Art,9,2,75,1,2,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,10,2,3,0,11.0,Pop-Culture and Art,7,2,75,1,2,stereotype,1,0,0,over,Male,non-US National,1
+uz5m20q1,11,2,2,2,11.0,Pop-Culture and Art,8,2,75,1,2,stereotype,1,0,0,over,Male,non-US National,1
+v3yunf9n,1,0,2,1,9.0,Pop-Culture and Art,8,1,33,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,2,0,6,1,9.0,Pop-Culture and Art,4,1,33,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,3,1,3,2,9.0,Pop-Culture and Art,7,1,33,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,4,0,3,1,9.0,Pop-Culture and Art,7,1,33,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,5,0,2,1,9.0,Pop-Culture and Art,8,1,33,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,6,0,8,1,9.0,Pop-Culture and Art,2,1,33,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,7,1,5,1,9.0,Pop-Culture and Art,5,1,33,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,8,2,2,2,9.0,Pop-Culture and Art,8,1,33,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,9,2,1,2,9.0,Pop-Culture and Art,9,1,33,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,10,2,3,2,9.0,Pop-Culture and Art,7,1,33,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,11,1,2,2,9.0,Pop-Culture and Art,8,1,33,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,1,1,1,0,8.0,Pop-Culture and Art,9,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,2,1,3,0,8.0,Pop-Culture and Art,7,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,3,1,3,0,8.0,Pop-Culture and Art,7,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,4,1,4,0,8.0,Pop-Culture and Art,6,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,5,1,3,0,8.0,Pop-Culture and Art,7,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,6,1,3,0,8.0,Pop-Culture and Art,7,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,7,1,5,0,8.0,Pop-Culture and Art,5,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,8,0,5,0,8.0,Pop-Culture and Art,5,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,9,0,4,1,8.0,Pop-Culture and Art,6,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,10,2,3,1,8.0,Pop-Culture and Art,7,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,11,0,2,1,8.0,Pop-Culture and Art,8,1,75,1,2,stereotype,0,0,1,correct,Female,non-US National,0
+zwzznpo6,1,0,2,0,12.0,Pop-Culture and Art,8,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,2,0,6,0,12.0,Pop-Culture and Art,4,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,3,1,3,0,12.0,Pop-Culture and Art,7,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,4,1,4,0,12.0,Pop-Culture and Art,6,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,5,1,3,0,12.0,Pop-Culture and Art,7,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,6,1,3,0,12.0,Pop-Culture and Art,7,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,7,1,5,0,12.0,Pop-Culture and Art,5,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,8,1,4,1,12.0,Pop-Culture and Art,6,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,9,2,1,2,12.0,Pop-Culture and Art,9,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,10,2,3,2,12.0,Pop-Culture and Art,7,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,11,2,2,2,12.0,Pop-Culture and Art,8,0,33,1,2,stereotype,0,1,0,under,Male,non-US National,-1
+0kxsrg73,1,0,8,1,11.0,Sports and Video Games,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,2,0,4,0,11.0,Sports and Video Games,6,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,3,0,5,2,11.0,Sports and Video Games,5,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,4,2,10,0,11.0,Sports and Video Games,0,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,5,1,8,1,11.0,Sports and Video Games,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,6,2,10,2,11.0,Sports and Video Games,0,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,7,0,3,0,11.0,Sports and Video Games,7,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,8,0,5,0,11.0,Sports and Video Games,5,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,9,0,6,1,11.0,Sports and Video Games,4,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,10,0,8,0,11.0,Sports and Video Games,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,11,1,8,2,11.0,Sports and Video Games,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+1zb27tea,1,2,9,0,7.0,Sports and Video Games,1,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,2,2,8,0,7.0,Sports and Video Games,2,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,3,2,10,0,7.0,Sports and Video Games,0,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,4,0,7,1,7.0,Sports and Video Games,3,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,5,2,10,2,7.0,Sports and Video Games,0,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,6,0,2,2,7.0,Sports and Video Games,8,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,7,0,3,1,7.0,Sports and Video Games,7,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,8,0,5,2,7.0,Sports and Video Games,5,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,9,0,6,1,7.0,Sports and Video Games,4,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,10,0,8,0,7.0,Sports and Video Games,2,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,11,1,8,2,7.0,Sports and Video Games,2,0,33,1,0,stereotype,0,1,0,under,Female,US National,-1
+36b7nxpg,1,0,8,0,7.0,Sports and Video Games,2,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,2,0,4,1,7.0,Sports and Video Games,6,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,3,1,7,2,7.0,Sports and Video Games,3,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,4,1,6,1,7.0,Sports and Video Games,4,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,5,0,8,0,7.0,Sports and Video Games,2,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,6,0,2,2,7.0,Sports and Video Games,8,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,7,1,5,2,7.0,Sports and Video Games,5,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,8,1,6,1,7.0,Sports and Video Games,4,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,9,0,6,0,7.0,Sports and Video Games,4,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,10,0,8,1,7.0,Sports and Video Games,2,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+36b7nxpg,11,1,8,1,7.0,Sports and Video Games,2,0,50,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+3cv0gsso,1,1,9,0,9,Sports and Video Games,1,0,50,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+3cv0gsso,10,0,8,2,9.0,Sports and Video Games,2,0,50,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+3cv0gsso,11,0,6,0,9.0,Sports and Video Games,4,0,50,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+3cv0gsso,2,0,4,0,9.0,Sports and Video Games,6,0,50,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+3cv0gsso,3,2,10,0,9.0,Sports and Video Games,0,0,50,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+3cv0gsso,4,0,7,0,9.0,Sports and Video Games,3,0,50,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+3cv0gsso,5,1,8,1,9.0,Sports and Video Games,2,0,50,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+3cv0gsso,6,2,10,0,9.0,Sports and Video Games,0,0,50,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+3cv0gsso,7,0,3,2,9.0,Sports and Video Games,7,0,50,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+3cv0gsso,8,1,6,2,9.0,Sports and Video Games,4,0,50,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+3cv0gsso,9,2,9,2,9.0,Sports and Video Games,1,0,50,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+4d7lvql9,1,0,9,0,4.0,Sports and Video Games,1,0,50,0,0,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,2,1,9,1,4.0,Sports and Video Games,1,0,50,0,0,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,3,2,9,0,4.0,Sports and Video Games,1,0,50,0,0,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,4,0,10,2,4.0,Sports and Video Games,0,0,50,0,0,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,5,0,6,0,4.0,Sports and Video Games,4,0,50,0,0,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,6,1,9,1,4.0,Sports and Video Games,1,0,50,0,0,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,7,0,7,0,4.0,Sports and Video Games,3,0,50,0,0,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,8,1,9,2,4.0,Sports and Video Games,1,0,50,0,0,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,9,0,9,0,4.0,Sports and Video Games,1,0,50,0,0,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,10,1,10,0,4.0,Sports and Video Games,0,0,50,0,0,stereotype,0,0,1,correct,Female,non-US National,0
+4d7lvql9,11,0,7,0,4.0,Sports and Video Games,3,0,50,0,0,stereotype,0,0,1,correct,Female,non-US National,0
+4kecnisx,1,0,8,0,7.0,Sports and Video Games,2,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,2,1,7,1,7.0,Sports and Video Games,3,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,3,0,5,2,7.0,Sports and Video Games,5,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,4,1,6,2,7.0,Sports and Video Games,4,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,5,2,10,2,7.0,Sports and Video Games,0,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,6,1,8,1,7.0,Sports and Video Games,2,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,7,2,10,1,7.0,Sports and Video Games,0,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,8,1,6,0,7.0,Sports and Video Games,4,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,9,0,6,1,7.0,Sports and Video Games,4,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,10,1,7,1,7.0,Sports and Video Games,3,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,11,2,9,1,7.0,Sports and Video Games,1,0,0,1,0,stereotype,0,1,0,under,Female,US National,-1
 56op1uib,1,1,9,1,14.0,Sports and Video Games,1,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
 56op1uib,2,0,4,1,14.0,Sports and Video Games,6,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
 56op1uib,3,0,5,1,14.0,Sports and Video Games,5,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
@@ -3288,6 +4498,105 @@ ncvtgyzn,11,2,2,1,7.0,Pop-Culture and Art,8,1,50,1,2,stereotype,0,0,1,correct,Fe
 56op1uib,9,0,6,2,14.0,Sports and Video Games,4,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
 56op1uib,10,0,8,2,14.0,Sports and Video Games,2,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
 56op1uib,11,1,8,2,14.0,Sports and Video Games,2,1,75,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,1,0,8,1,15.0,Sports and Video Games,2,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,2,0,4,2,15.0,Sports and Video Games,6,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,3,2,10,1,15.0,Sports and Video Games,0,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,4,1,6,1,15.0,Sports and Video Games,4,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,5,0,8,0,15.0,Sports and Video Games,2,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,6,2,10,0,15.0,Sports and Video Games,0,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,7,0,3,2,15.0,Sports and Video Games,7,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,8,1,6,2,15.0,Sports and Video Games,4,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,9,1,5,1,15.0,Sports and Video Games,5,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,10,0,8,2,15.0,Sports and Video Games,2,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,11,2,9,0,15.0,Sports and Video Games,1,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+6zd6yym2,1,2,10,2,5.0,Sports and Video Games,0,1,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+6zd6yym2,2,2,10,2,5.0,Sports and Video Games,0,1,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+6zd6yym2,3,2,9,1,5.0,Sports and Video Games,1,1,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+6zd6yym2,4,2,10,1,5.0,Sports and Video Games,0,1,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+6zd6yym2,5,2,10,1,5.0,Sports and Video Games,0,1,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+6zd6yym2,6,0,8,1,5.0,Sports and Video Games,2,1,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+6zd6yym2,7,0,7,1,5.0,Sports and Video Games,3,1,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+6zd6yym2,8,0,9,1,5.0,Sports and Video Games,1,1,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+6zd6yym2,9,0,9,0,5.0,Sports and Video Games,1,1,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+6zd6yym2,10,0,9,0,5.0,Sports and Video Games,1,1,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+6zd6yym2,11,0,7,0,5.0,Sports and Video Games,3,1,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+78sdphga,1,0,8,0,6.0,Sports and Video Games,2,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,2,1,7,0,6.0,Sports and Video Games,3,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,3,2,10,0,6.0,Sports and Video Games,0,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,4,0,7,1,6.0,Sports and Video Games,3,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,5,2,10,1,6.0,Sports and Video Games,0,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,6,0,2,2,6.0,Sports and Video Games,8,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,7,0,3,2,6.0,Sports and Video Games,7,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,8,0,5,2,6.0,Sports and Video Games,5,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,9,0,6,2,6.0,Sports and Video Games,4,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,10,1,7,2,6.0,Sports and Video Games,3,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,11,2,9,2,6.0,Sports and Video Games,1,1,50,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+a22g0du7,1,1,9,1,16,Sports and Video Games,1,1,75,2,0,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,10,0,8,0,16.0,Sports and Video Games,2,1,75,2,0,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,11,0,6,1,16.0,Sports and Video Games,4,1,75,2,0,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,2,0,4,0,16.0,Sports and Video Games,6,1,75,2,0,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,3,1,7,0,16.0,Sports and Video Games,3,1,75,2,0,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,4,0,7,0,16.0,Sports and Video Games,3,1,75,2,0,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,5,2,10,0,16.0,Sports and Video Games,0,1,75,2,0,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,6,0,2,0,16.0,Sports and Video Games,8,1,75,2,0,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,7,0,3,0,16.0,Sports and Video Games,7,1,75,2,0,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,8,0,5,0,16.0,Sports and Video Games,5,1,75,2,0,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,9,0,6,0,16.0,Sports and Video Games,4,1,75,2,0,stereotype,0,1,0,under,Female,non-US National,-1
+byf6tjt0,1,0,8,2,12.0,Sports and Video Games,2,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,2,0,4,1,12.0,Sports and Video Games,6,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,3,0,5,0,12.0,Sports and Video Games,5,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,4,1,6,1,12.0,Sports and Video Games,4,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,5,2,10,1,12.0,Sports and Video Games,0,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,6,0,2,1,12.0,Sports and Video Games,8,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,7,0,3,1,12.0,Sports and Video Games,7,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,8,0,5,1,12.0,Sports and Video Games,5,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,9,0,6,1,12.0,Sports and Video Games,4,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,10,0,8,1,12.0,Sports and Video Games,2,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
+byf6tjt0,11,1,8,0,12.0,Sports and Video Games,2,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,1,0,8,1,12.0,Sports and Video Games,2,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,2,1,7,2,12.0,Sports and Video Games,3,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,3,0,5,2,12.0,Sports and Video Games,5,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,4,2,10,1,12.0,Sports and Video Games,0,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,5,0,8,1,12.0,Sports and Video Games,2,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,6,2,10,0,12.0,Sports and Video Games,0,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,7,1,5,0,12.0,Sports and Video Games,5,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,8,0,5,0,12.0,Sports and Video Games,5,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,9,0,6,1,12.0,Sports and Video Games,4,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,10,1,7,1,12.0,Sports and Video Games,3,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,11,0,6,2,12.0,Sports and Video Games,4,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+cl0818oa,1,1,10,1,4.0,Sports and Video Games,0,1,75,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,2,2,10,0,4.0,Sports and Video Games,0,1,75,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,3,1,9,2,4.0,Sports and Video Games,1,1,75,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,4,0,10,0,4.0,Sports and Video Games,0,1,75,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,5,0,6,1,4.0,Sports and Video Games,4,1,75,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,6,1,9,1,4.0,Sports and Video Games,1,1,75,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,7,2,10,1,4.0,Sports and Video Games,0,1,75,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,8,2,10,0,4.0,Sports and Video Games,0,1,75,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,9,1,10,0,4.0,Sports and Video Games,0,1,75,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,10,1,10,1,4.0,Sports and Video Games,0,1,75,0,0,stereotype,1,0,0,over,Male,non-US National,1
+cl0818oa,11,0,7,1,4.0,Sports and Video Games,3,1,75,0,0,stereotype,1,0,0,over,Male,non-US National,1
+dk93ewke,1,1,10,0,5.0,Sports and Video Games,0,2,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,2,0,9,1,5.0,Sports and Video Games,1,2,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,3,2,9,2,5.0,Sports and Video Games,1,2,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,4,0,10,1,5.0,Sports and Video Games,0,2,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,5,0,6,2,5.0,Sports and Video Games,4,2,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,6,0,8,0,5.0,Sports and Video Games,2,2,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,7,1,10,1,5.0,Sports and Video Games,0,2,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,8,0,9,1,5.0,Sports and Video Games,1,2,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,9,2,10,2,5.0,Sports and Video Games,0,2,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,10,0,9,0,5.0,Sports and Video Games,1,2,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+dk93ewke,11,1,9,1,5.0,Sports and Video Games,1,2,75,0,0,stereotype,1,0,0,over,Female,non-US National,1
+ffd2bxk4,1,1,9,1,14.0,Sports and Video Games,1,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,2,0,4,2,14.0,Sports and Video Games,6,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,3,1,7,1,14.0,Sports and Video Games,3,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,4,2,10,0,14.0,Sports and Video Games,0,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,5,0,8,1,14.0,Sports and Video Games,2,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,6,1,8,1,14.0,Sports and Video Games,2,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,7,2,10,0,14.0,Sports and Video Games,0,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,8,0,5,2,14.0,Sports and Video Games,5,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,9,1,5,1,14.0,Sports and Video Games,5,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,10,2,10,1,14.0,Sports and Video Games,0,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
+ffd2bxk4,11,2,9,1,14.0,Sports and Video Games,1,2,100,1,0,stereotype,1,0,0,over,Female,US National,1
 g2p53iqv,1,1,9,2,14,Sports and Video Games,1,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
 g2p53iqv,10,1,7,1,14.0,Sports and Video Games,3,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
 g2p53iqv,11,2,9,2,14.0,Sports and Video Games,1,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
@@ -3299,6 +4608,17 @@ g2p53iqv,6,0,2,1,14.0,Sports and Video Games,8,2,75,1,0,stereotype,1,0,0,over,Fe
 g2p53iqv,7,1,5,1,14.0,Sports and Video Games,5,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
 g2p53iqv,8,0,5,1,14.0,Sports and Video Games,5,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
 g2p53iqv,9,1,5,1,14.0,Sports and Video Games,5,2,75,1,0,stereotype,1,0,0,over,Female,non-US National,1
+idzf7yro,1,1,9,2,8.0,Sports and Video Games,1,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,2,2,8,2,8.0,Sports and Video Games,2,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,3,0,5,0,8.0,Sports and Video Games,5,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,4,1,6,1,8.0,Sports and Video Games,4,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,5,0,8,1,8.0,Sports and Video Games,2,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,6,2,10,1,8.0,Sports and Video Games,0,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,7,0,3,0,8.0,Sports and Video Games,7,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,8,0,5,0,8.0,Sports and Video Games,5,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,9,2,9,0,8.0,Sports and Video Games,1,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,10,0,8,2,8.0,Sports and Video Games,2,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,11,2,9,2,8.0,Sports and Video Games,1,0,33,1,0,stereotype,0,1,0,under,Female,non-US National,-1
 ilooy3i8,1,0,8,1,12,Sports and Video Games,2,2,75,1,0,stereotype,1,0,0,over,Female,US National,1
 ilooy3i8,10,0,8,2,12.0,Sports and Video Games,2,2,75,1,0,stereotype,1,0,0,over,Female,US National,1
 ilooy3i8,11,0,6,2,12.0,Sports and Video Games,4,2,75,1,0,stereotype,1,0,0,over,Female,US National,1
@@ -3321,6 +4641,28 @@ j3r6tuv8,8,0,5,2,14.0,Sports and Video Games,5,1,75,1,0,stereotype,0,0,1,correct
 j3r6tuv8,9,2,9,2,14.0,Sports and Video Games,1,1,75,1,0,stereotype,0,0,1,correct,Female,US National,0
 j3r6tuv8,10,0,8,2,14.0,Sports and Video Games,2,1,75,1,0,stereotype,0,0,1,correct,Female,US National,0
 j3r6tuv8,11,0,6,1,14.0,Sports and Video Games,4,1,75,1,0,stereotype,0,0,1,correct,Female,US National,0
+jk70axat,1,1,9,1,8.0,Sports and Video Games,1,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,2,1,7,1,8.0,Sports and Video Games,3,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,3,0,5,1,8.0,Sports and Video Games,5,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,4,0,7,1,8.0,Sports and Video Games,3,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,5,1,8,2,8.0,Sports and Video Games,2,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,6,0,2,2,8.0,Sports and Video Games,8,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,7,0,3,2,8.0,Sports and Video Games,7,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,8,0,5,2,8.0,Sports and Video Games,5,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,9,0,6,2,8.0,Sports and Video Games,4,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,10,0,8,2,8.0,Sports and Video Games,2,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,11,0,6,2,8.0,Sports and Video Games,4,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,1,0,8,2,8.0,Sports and Video Games,2,2,100,1,0,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,2,1,7,2,8.0,Sports and Video Games,3,2,100,1,0,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,3,2,10,2,8.0,Sports and Video Games,0,2,100,1,0,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,4,1,6,1,8.0,Sports and Video Games,4,2,100,1,0,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,5,2,10,1,8.0,Sports and Video Games,0,2,100,1,0,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,6,0,2,1,8.0,Sports and Video Games,8,2,100,1,0,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,7,0,3,0,8.0,Sports and Video Games,7,2,100,1,0,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,8,0,5,1,8.0,Sports and Video Games,5,2,100,1,0,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,9,1,5,0,8.0,Sports and Video Games,5,2,100,1,0,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,10,0,8,1,8.0,Sports and Video Games,2,2,100,1,0,stereotype,1,0,0,over,Female,non-US National,1
+jka2nr9v,11,2,9,1,8.0,Sports and Video Games,1,2,100,1,0,stereotype,1,0,0,over,Female,non-US National,1
 k43107gm,1,1,9,1,8.0,Sports and Video Games,1,1,33,1,0,stereotype,0,0,1,correct,,,0
 k43107gm,2,0,4,1,8.0,Sports and Video Games,6,1,33,1,0,stereotype,0,0,1,correct,,,0
 k43107gm,3,1,7,0,8.0,Sports and Video Games,3,1,33,1,0,stereotype,0,0,1,correct,,,0
@@ -3332,6 +4674,17 @@ k43107gm,8,0,5,1,8.0,Sports and Video Games,5,1,33,1,0,stereotype,0,0,1,correct,
 k43107gm,9,1,5,1,8.0,Sports and Video Games,5,1,33,1,0,stereotype,0,0,1,correct,,,0
 k43107gm,10,2,10,0,8.0,Sports and Video Games,0,1,33,1,0,stereotype,0,0,1,correct,,,0
 k43107gm,11,1,8,1,8.0,Sports and Video Games,2,1,33,1,0,stereotype,0,0,1,correct,,,0
+ko3jhnbj,1,1,9,1,11,Sports and Video Games,1,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,10,1,7,2,11.0,Sports and Video Games,3,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,11,0,6,1,11.0,Sports and Video Games,4,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,2,1,7,2,11.0,Sports and Video Games,3,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,3,0,5,2,11.0,Sports and Video Games,5,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,4,2,10,2,11.0,Sports and Video Games,0,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,5,0,8,0,11.0,Sports and Video Games,2,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,6,2,10,1,11.0,Sports and Video Games,0,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,7,2,10,2,11.0,Sports and Video Games,0,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,8,0,5,2,11.0,Sports and Video Games,5,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+ko3jhnbj,9,0,6,2,11.0,Sports and Video Games,4,1,33,1,0,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,1,2,9,0,15.0,Sports and Video Games,1,0,75,1,0,stereotype,0,1,0,under,Female,non-US National,-1
 lmiiifw0,2,0,4,0,15.0,Sports and Video Games,6,0,75,1,0,stereotype,0,1,0,under,Female,non-US National,-1
 lmiiifw0,3,0,5,0,15.0,Sports and Video Games,5,0,75,1,0,stereotype,0,1,0,under,Female,non-US National,-1
@@ -3343,6 +4696,17 @@ lmiiifw0,8,0,5,0,15.0,Sports and Video Games,5,0,75,1,0,stereotype,0,1,0,under,F
 lmiiifw0,9,0,6,0,15.0,Sports and Video Games,4,0,75,1,0,stereotype,0,1,0,under,Female,non-US National,-1
 lmiiifw0,10,0,8,0,15.0,Sports and Video Games,2,0,75,1,0,stereotype,0,1,0,under,Female,non-US National,-1
 lmiiifw0,11,0,6,0,15.0,Sports and Video Games,4,0,75,1,0,stereotype,0,1,0,under,Female,non-US National,-1
+n86dcmzu,1,1,9,1,16.0,Sports and Video Games,1,1,75,2,0,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,2,0,4,1,16.0,Sports and Video Games,6,1,75,2,0,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,3,1,7,0,16.0,Sports and Video Games,3,1,75,2,0,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,4,1,6,1,16.0,Sports and Video Games,4,1,75,2,0,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,5,0,8,1,16.0,Sports and Video Games,2,1,75,2,0,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,6,1,8,1,16.0,Sports and Video Games,2,1,75,2,0,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,7,0,3,2,16.0,Sports and Video Games,7,1,75,2,0,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,8,0,5,2,16.0,Sports and Video Games,5,1,75,2,0,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,9,0,6,2,16.0,Sports and Video Games,4,1,75,2,0,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,10,0,8,1,16.0,Sports and Video Games,2,1,75,2,0,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,11,1,8,0,16.0,Sports and Video Games,2,1,75,2,0,stereotype,0,1,0,under,Male,non-US National,-1
 ncvtgyzn,1,2,9,1,7.0,Sports and Video Games,1,1,50,1,0,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,2,0,4,1,7.0,Sports and Video Games,6,1,50,1,0,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,3,0,5,2,7.0,Sports and Video Games,5,1,50,1,0,stereotype,0,0,1,correct,Female,US National,0
@@ -3354,6 +4718,138 @@ ncvtgyzn,8,0,5,0,7.0,Sports and Video Games,5,1,50,1,0,stereotype,0,0,1,correct,
 ncvtgyzn,9,0,6,2,7.0,Sports and Video Games,4,1,50,1,0,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,10,0,8,2,7.0,Sports and Video Games,2,1,50,1,0,stereotype,0,0,1,correct,Female,US National,0
 ncvtgyzn,11,0,6,2,7.0,Sports and Video Games,4,1,50,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,1,1,9,1,8.0,Sports and Video Games,1,1,75,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,2,0,4,2,8.0,Sports and Video Games,6,1,75,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,3,0,5,2,8.0,Sports and Video Games,5,1,75,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,4,0,7,2,8.0,Sports and Video Games,3,1,75,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,5,0,8,2,8.0,Sports and Video Games,2,1,75,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,6,0,2,2,8.0,Sports and Video Games,8,1,75,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,7,0,3,2,8.0,Sports and Video Games,7,1,75,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,8,0,5,2,8.0,Sports and Video Games,5,1,75,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,9,0,6,2,8.0,Sports and Video Games,4,1,75,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,10,0,8,2,8.0,Sports and Video Games,2,1,75,1,0,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,11,0,6,1,8.0,Sports and Video Games,4,1,75,1,0,stereotype,0,0,1,correct,Female,US National,0
+q9jar1of,1,2,9,2,11.0,Sports and Video Games,1,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,2,0,4,0,11.0,Sports and Video Games,6,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,3,2,10,0,11.0,Sports and Video Games,0,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,4,1,6,0,11.0,Sports and Video Games,4,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,5,0,8,0,11.0,Sports and Video Games,2,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,6,0,2,0,11.0,Sports and Video Games,8,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,7,0,3,0,11.0,Sports and Video Games,7,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,8,0,5,0,11.0,Sports and Video Games,5,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,9,1,5,0,11.0,Sports and Video Games,5,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,10,2,10,0,11.0,Sports and Video Games,0,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,11,1,8,2,11.0,Sports and Video Games,2,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,1,0,8,2,7,Sports and Video Games,2,0,75,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+uz5m20q1,10,0,8,2,7.0,Sports and Video Games,2,0,75,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+uz5m20q1,11,0,6,1,7.0,Sports and Video Games,4,0,75,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+uz5m20q1,2,2,8,0,7.0,Sports and Video Games,2,0,75,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+uz5m20q1,3,0,5,2,7.0,Sports and Video Games,5,0,75,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+uz5m20q1,4,0,7,0,7.0,Sports and Video Games,3,0,75,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+uz5m20q1,5,1,8,1,7.0,Sports and Video Games,2,0,75,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+uz5m20q1,6,0,2,1,7.0,Sports and Video Games,8,0,75,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+uz5m20q1,7,0,3,1,7.0,Sports and Video Games,7,0,75,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+uz5m20q1,8,2,10,1,7.0,Sports and Video Games,0,0,75,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+uz5m20q1,9,0,6,1,7.0,Sports and Video Games,4,0,75,1,0,stereotype,0,1,0,under,Male,non-US National,-1
+v3yunf9n,1,1,9,2,8.0,Sports and Video Games,1,2,33,1,0,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,2,0,4,2,8.0,Sports and Video Games,6,2,33,1,0,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,3,1,7,2,8.0,Sports and Video Games,3,2,33,1,0,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,4,0,7,2,8.0,Sports and Video Games,3,2,33,1,0,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,5,0,8,2,8.0,Sports and Video Games,2,2,33,1,0,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,6,1,8,2,8.0,Sports and Video Games,2,2,33,1,0,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,7,1,5,1,8.0,Sports and Video Games,5,2,33,1,0,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,8,1,6,1,8.0,Sports and Video Games,4,2,33,1,0,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,9,0,6,1,8.0,Sports and Video Games,4,2,33,1,0,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,10,1,7,1,8.0,Sports and Video Games,3,2,33,1,0,stereotype,1,0,0,over,Female,non-US National,1
+v3yunf9n,11,0,6,1,8.0,Sports and Video Games,4,2,33,1,0,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,1,1,9,1,9.0,Sports and Video Games,1,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,2,0,4,1,9.0,Sports and Video Games,6,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,3,0,5,1,9.0,Sports and Video Games,5,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,4,2,10,2,9.0,Sports and Video Games,0,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,5,0,8,1,9.0,Sports and Video Games,2,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,6,0,2,0,9.0,Sports and Video Games,8,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,7,0,3,0,9.0,Sports and Video Games,7,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,8,0,5,0,9.0,Sports and Video Games,5,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,9,2,9,0,9.0,Sports and Video Games,1,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,10,2,10,2,9.0,Sports and Video Games,0,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,11,0,6,0,9.0,Sports and Video Games,4,1,75,1,0,stereotype,0,0,1,correct,Female,non-US National,0
+zwzznpo6,1,1,9,1,11.0,Sports and Video Games,1,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,2,0,4,1,11.0,Sports and Video Games,6,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,3,2,10,2,11.0,Sports and Video Games,0,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,4,0,7,2,11.0,Sports and Video Games,3,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,5,2,10,1,11.0,Sports and Video Games,0,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,6,0,2,1,11.0,Sports and Video Games,8,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,7,0,3,1,11.0,Sports and Video Games,7,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,8,0,5,1,11.0,Sports and Video Games,5,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,9,1,5,1,11.0,Sports and Video Games,5,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,10,0,8,0,11.0,Sports and Video Games,2,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+zwzznpo6,11,1,8,0,11.0,Sports and Video Games,2,1,33,1,0,stereotype,0,0,1,correct,Male,non-US National,0
+0kxsrg73,1,0,6,0,11.0,US Geography,4,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,2,0,4,1,11.0,US Geography,6,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,3,1,3,1,11.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,4,2,9,1,11.0,US Geography,1,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,5,2,6,0,11.0,US Geography,4,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,6,1,3,1,11.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,7,2,6,1,11.0,US Geography,4,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,8,0,5,1,11.0,US Geography,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,9,1,5,0,11.0,US Geography,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,10,1,3,2,11.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+0kxsrg73,11,2,5,1,11.0,US Geography,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+1zb27tea,1,1,1,0,8,US Geography,9,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,10,1,3,0,8.0,US Geography,7,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,11,0,6,1,8.0,US Geography,4,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,2,0,4,2,8.0,US Geography,6,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,3,0,4,2,8.0,US Geography,6,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,4,0,7,2,8.0,US Geography,3,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,5,1,4,0,8.0,US Geography,6,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,6,0,2,0,8.0,US Geography,8,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,7,1,5,1,8.0,US Geography,5,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,8,0,5,0,8.0,US Geography,5,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+1zb27tea,9,0,6,2,8.0,US Geography,4,0,33,1,1,stereotype,0,1,0,under,Female,US National,-1
+36b7nxpg,1,1,1,1,8.0,US Geography,9,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,2,2,4,2,8.0,US Geography,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,3,0,4,2,8.0,US Geography,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,4,1,4,2,8.0,US Geography,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,5,0,8,2,8.0,US Geography,2,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,6,1,3,1,8.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,7,2,6,1,8.0,US Geography,4,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,8,0,5,1,8.0,US Geography,5,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,9,1,5,2,8.0,US Geography,5,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,10,0,8,2,8.0,US Geography,2,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+36b7nxpg,11,1,3,1,8.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+3cv0gsso,1,1,1,1,8.0,US Geography,9,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,2,1,3,1,8.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,3,1,3,1,8.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,4,1,4,1,8.0,US Geography,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,5,1,4,1,8.0,US Geography,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,6,1,3,1,8.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,7,1,5,1,8.0,US Geography,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,8,1,4,1,8.0,US Geography,6,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,9,1,5,1,8.0,US Geography,5,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,10,1,3,1,8.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+3cv0gsso,11,1,3,1,8.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+4d7lvql9,1,1,7,1,5.0,US Geography,3,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,2,0,9,1,5.0,US Geography,1,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,3,0,8,0,5.0,US Geography,2,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,4,0,9,2,5.0,US Geography,1,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,5,2,9,1,5.0,US Geography,1,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,6,1,7,2,5.0,US Geography,3,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,7,1,9,0,5.0,US Geography,1,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,8,2,9,0,5.0,US Geography,1,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,9,1,8,1,5.0,US Geography,2,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,10,0,9,1,5.0,US Geography,1,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+4d7lvql9,11,2,6,2,5.0,US Geography,4,1,33,0,1,stereotype,1,0,0,over,Female,non-US National,1
+4kecnisx,1,1,1,1,8.0,US Geography,9,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,2,0,4,1,8.0,US Geography,6,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,3,2,3,1,8.0,US Geography,7,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,4,1,4,1,8.0,US Geography,6,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,5,0,8,1,8.0,US Geography,2,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,6,1,3,2,8.0,US Geography,7,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,7,1,5,0,8.0,US Geography,5,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,8,0,5,2,8.0,US Geography,5,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,9,0,6,1,8.0,US Geography,4,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,10,1,3,1,8.0,US Geography,7,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
+4kecnisx,11,1,3,1,8.0,US Geography,7,0,0,1,1,stereotype,0,1,0,under,Female,US National,-1
 56op1uib,1,1,1,1,13.0,US Geography,9,1,50,1,1,stereotype,0,0,1,correct,Male,non-US National,0
 56op1uib,2,1,3,1,13.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Male,non-US National,0
 56op1uib,3,1,3,1,13.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Male,non-US National,0
@@ -3365,6 +4861,105 @@ ncvtgyzn,11,0,6,2,7.0,Sports and Video Games,4,1,50,1,0,stereotype,0,0,1,correct
 56op1uib,9,1,5,1,13.0,US Geography,5,1,50,1,1,stereotype,0,0,1,correct,Male,non-US National,0
 56op1uib,10,1,3,1,13.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Male,non-US National,0
 56op1uib,11,1,3,1,13.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+6sybrxjn,1,0,6,0,9.0,US Geography,4,0,100,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+6sybrxjn,2,0,4,2,9.0,US Geography,6,0,100,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+6sybrxjn,3,1,3,1,9.0,US Geography,7,0,100,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+6sybrxjn,4,2,9,1,9.0,US Geography,1,0,100,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+6sybrxjn,5,2,6,2,9.0,US Geography,4,0,100,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+6sybrxjn,6,1,3,1,9.0,US Geography,7,0,100,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+6sybrxjn,7,0,2,0,9.0,US Geography,8,0,100,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+6sybrxjn,8,1,4,2,9.0,US Geography,6,0,100,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+6sybrxjn,9,2,5,2,9.0,US Geography,5,0,100,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+6sybrxjn,10,1,3,1,9.0,US Geography,7,0,100,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+6sybrxjn,11,0,6,0,9.0,US Geography,4,0,100,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+6zd6yym2,1,0,6,1,9.0,US Geography,4,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,2,0,4,1,9.0,US Geography,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,3,0,4,1,9.0,US Geography,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,4,0,7,1,9.0,US Geography,3,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,5,0,8,1,9.0,US Geography,2,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,6,0,2,1,9.0,US Geography,8,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,7,0,2,1,9.0,US Geography,8,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,8,0,5,1,9.0,US Geography,5,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,9,0,6,1,9.0,US Geography,4,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,10,0,8,1,9.0,US Geography,2,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+6zd6yym2,11,0,6,1,9.0,US Geography,4,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+78sdphga,1,2,3,0,9.0,US Geography,7,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+78sdphga,2,2,4,0,9.0,US Geography,6,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+78sdphga,3,1,3,0,9.0,US Geography,7,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+78sdphga,4,0,7,0,9.0,US Geography,3,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+78sdphga,5,1,4,0,9.0,US Geography,6,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+78sdphga,6,1,3,0,9.0,US Geography,7,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+78sdphga,7,1,5,0,9.0,US Geography,5,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+78sdphga,8,2,6,0,9.0,US Geography,4,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+78sdphga,9,1,5,0,9.0,US Geography,5,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+78sdphga,10,0,8,0,9.0,US Geography,2,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+78sdphga,11,1,3,0,9.0,US Geography,7,0,50,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,1,0,6,1,16.0,US Geography,4,1,75,2,1,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,2,1,3,0,16.0,US Geography,7,1,75,2,1,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,3,1,3,1,16.0,US Geography,7,1,75,2,1,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,4,1,4,1,16.0,US Geography,6,1,75,2,1,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,5,1,4,1,16.0,US Geography,6,1,75,2,1,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,6,1,3,1,16.0,US Geography,7,1,75,2,1,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,7,1,5,1,16.0,US Geography,5,1,75,2,1,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,8,1,4,1,16.0,US Geography,6,1,75,2,1,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,9,1,5,1,16.0,US Geography,5,1,75,2,1,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,10,1,3,1,16.0,US Geography,7,1,75,2,1,stereotype,0,1,0,under,Female,non-US National,-1
+a22g0du7,11,1,3,1,16.0,US Geography,7,1,75,2,1,stereotype,0,1,0,under,Female,non-US National,-1
+byf6tjt0,1,0,6,1,11.0,US Geography,4,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,2,1,3,1,11.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,3,2,3,1,11.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,4,1,4,1,11.0,US Geography,6,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,5,2,6,1,11.0,US Geography,4,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,6,1,3,1,11.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,7,1,5,1,11.0,US Geography,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,8,1,4,2,11.0,US Geography,6,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,9,1,5,0,11.0,US Geography,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,10,1,3,1,11.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+byf6tjt0,11,1,3,1,11.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+cioxyqvq,1,1,1,2,11.0,US Geography,9,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,2,1,3,1,11.0,US Geography,7,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,3,2,3,1,11.0,US Geography,7,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,4,2,9,2,11.0,US Geography,1,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,5,1,4,2,11.0,US Geography,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,6,1,3,1,11.0,US Geography,7,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,7,0,2,0,11.0,US Geography,8,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,8,1,4,0,11.0,US Geography,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,9,0,6,2,11.0,US Geography,4,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,10,2,3,1,11.0,US Geography,7,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+cioxyqvq,11,1,3,2,11.0,US Geography,7,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+cl0818oa,1,0,6,2,6.0,US Geography,4,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,2,1,3,2,6.0,US Geography,7,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,3,2,3,2,6.0,US Geography,7,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,4,1,4,2,6.0,US Geography,6,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,5,0,8,2,6.0,US Geography,2,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,6,2,4,2,6.0,US Geography,6,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,7,1,5,2,6.0,US Geography,5,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,8,2,6,2,6.0,US Geography,4,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,9,1,5,2,6.0,US Geography,5,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,10,0,8,2,6.0,US Geography,2,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+cl0818oa,11,2,5,1,6.0,US Geography,5,1,100,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+dk93ewke,1,0,6,0,9.0,US Geography,4,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+dk93ewke,2,1,3,0,9.0,US Geography,7,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+dk93ewke,3,2,3,0,9.0,US Geography,7,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+dk93ewke,4,2,9,0,9.0,US Geography,1,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+dk93ewke,5,2,6,1,9.0,US Geography,4,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+dk93ewke,6,0,2,2,9.0,US Geography,8,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+dk93ewke,7,1,5,1,9.0,US Geography,5,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+dk93ewke,8,0,5,2,9.0,US Geography,5,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+dk93ewke,9,1,5,0,9.0,US Geography,5,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+dk93ewke,10,0,8,1,9.0,US Geography,2,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+dk93ewke,11,0,6,2,9.0,US Geography,4,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+ffd2bxk4,1,0,6,1,13,US Geography,4,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,10,1,3,1,13.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,11,1,3,1,13.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,2,1,3,1,13.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,3,2,3,1,13.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,4,1,4,2,13.0,US Geography,6,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,5,1,4,1,13.0,US Geography,6,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,6,1,3,1,13.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,7,0,2,1,13.0,US Geography,8,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,8,2,6,1,13.0,US Geography,4,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
+ffd2bxk4,9,0,6,0,13.0,US Geography,4,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
 g2p53iqv,1,0,6,1,13.0,US Geography,4,1,100,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 g2p53iqv,2,1,3,1,13.0,US Geography,7,1,100,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 g2p53iqv,3,1,3,1,13.0,US Geography,7,1,100,1,1,stereotype,0,0,1,correct,Female,non-US National,0
@@ -3376,6 +4971,17 @@ g2p53iqv,8,0,5,2,13.0,US Geography,5,1,100,1,1,stereotype,0,0,1,correct,Female,n
 g2p53iqv,9,0,6,1,13.0,US Geography,4,1,100,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 g2p53iqv,10,0,8,2,13.0,US Geography,2,1,100,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 g2p53iqv,11,0,6,2,13.0,US Geography,4,1,100,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+idzf7yro,1,1,1,0,8.0,US Geography,9,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,2,0,4,1,8.0,US Geography,6,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,3,2,3,2,8.0,US Geography,7,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,4,0,7,0,8.0,US Geography,3,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,5,2,6,1,8.0,US Geography,4,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,6,2,4,2,8.0,US Geography,6,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,7,0,2,0,8.0,US Geography,8,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,8,1,4,1,8.0,US Geography,6,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,9,2,5,0,8.0,US Geography,5,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,10,1,3,2,8.0,US Geography,7,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
+idzf7yro,11,1,3,2,8.0,US Geography,7,0,33,1,1,stereotype,0,1,0,under,Female,non-US National,-1
 ilooy3i8,1,2,3,2,11.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
 ilooy3i8,2,1,3,2,11.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
 ilooy3i8,3,0,4,2,11.0,US Geography,6,1,33,1,1,stereotype,0,0,1,correct,Female,US National,0
@@ -3398,6 +5004,28 @@ j3r6tuv8,8,1,4,0,9.0,US Geography,6,1,75,1,1,stereotype,0,0,1,correct,Female,US 
 j3r6tuv8,9,1,5,1,9.0,US Geography,5,1,75,1,1,stereotype,0,0,1,correct,Female,US National,0
 j3r6tuv8,10,1,3,2,9.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Female,US National,0
 j3r6tuv8,11,1,3,2,9.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Female,US National,0
+jk70axat,1,0,6,1,11.0,US Geography,4,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,2,1,3,1,11.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,3,2,3,1,11.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,4,1,4,1,11.0,US Geography,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,5,1,4,1,11.0,US Geography,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,6,1,3,1,11.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,7,1,5,1,11.0,US Geography,5,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,8,1,4,1,11.0,US Geography,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,9,1,5,1,11.0,US Geography,5,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,10,1,3,1,11.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jk70axat,11,1,3,1,11.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,1,1,1,1,7.0,US Geography,9,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,2,0,4,1,7.0,US Geography,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,3,2,3,1,7.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,4,0,7,2,7.0,US Geography,3,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,5,1,4,2,7.0,US Geography,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,6,2,4,2,7.0,US Geography,6,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,7,1,5,1,7.0,US Geography,5,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,8,2,6,1,7.0,US Geography,4,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,9,0,6,1,7.0,US Geography,4,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,10,0,8,0,7.0,US Geography,2,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+jka2nr9v,11,1,3,1,7.0,US Geography,7,1,75,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 k43107gm,1,1,1,1,7.0,US Geography,9,1,100,1,1,stereotype,0,0,1,correct,,,0
 k43107gm,2,1,3,1,7.0,US Geography,7,1,100,1,1,stereotype,0,0,1,correct,,,0
 k43107gm,3,1,3,1,7.0,US Geography,7,1,100,1,1,stereotype,0,0,1,correct,,,0
@@ -3409,6 +5037,17 @@ k43107gm,8,0,5,1,7.0,US Geography,5,1,100,1,1,stereotype,0,0,1,correct,,,0
 k43107gm,9,1,5,1,7.0,US Geography,5,1,100,1,1,stereotype,0,0,1,correct,,,0
 k43107gm,10,0,8,1,7.0,US Geography,2,1,100,1,1,stereotype,0,0,1,correct,,,0
 k43107gm,11,1,3,1,7.0,US Geography,7,1,100,1,1,stereotype,0,0,1,correct,,,0
+ko3jhnbj,1,1,1,2,11.0,US Geography,9,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,2,1,3,2,11.0,US Geography,7,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,3,1,3,2,11.0,US Geography,7,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,4,1,4,2,11.0,US Geography,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,5,1,4,2,11.0,US Geography,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,6,0,2,2,11.0,US Geography,8,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,7,2,6,2,11.0,US Geography,4,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,8,1,4,2,11.0,US Geography,6,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,9,0,6,2,11.0,US Geography,4,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,10,1,3,2,11.0,US Geography,7,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
+ko3jhnbj,11,1,3,2,11.0,US Geography,7,2,75,1,1,stereotype,1,0,0,over,Female,non-US National,1
 lmiiifw0,1,1,1,1,11.0,US Geography,9,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,2,1,3,1,11.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,3,1,3,1,11.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
@@ -3420,6 +5059,17 @@ lmiiifw0,8,1,4,1,11.0,US Geography,6,1,50,1,1,stereotype,0,0,1,correct,Female,no
 lmiiifw0,9,1,5,1,11.0,US Geography,5,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,10,1,3,1,11.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
 lmiiifw0,11,1,3,1,11.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+n86dcmzu,1,1,1,1,16.0,US Geography,9,1,75,2,1,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,2,1,3,1,16.0,US Geography,7,1,75,2,1,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,3,1,3,1,16.0,US Geography,7,1,75,2,1,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,4,1,4,1,16.0,US Geography,6,1,75,2,1,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,5,0,8,1,16.0,US Geography,2,1,75,2,1,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,6,2,4,1,16.0,US Geography,6,1,75,2,1,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,7,2,6,1,16.0,US Geography,4,1,75,2,1,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,8,1,4,1,16.0,US Geography,6,1,75,2,1,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,9,1,5,2,16.0,US Geography,5,1,75,2,1,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,10,0,8,2,16.0,US Geography,2,1,75,2,1,stereotype,0,1,0,under,Male,non-US National,-1
+n86dcmzu,11,1,3,0,16.0,US Geography,7,1,75,2,1,stereotype,0,1,0,under,Male,non-US National,-1
 ncvtgyzn,1,0,6,0,8.0,US Geography,4,0,50,1,1,stereotype,0,1,0,under,Female,US National,-1
 ncvtgyzn,2,2,4,0,8.0,US Geography,6,0,50,1,1,stereotype,0,1,0,under,Female,US National,-1
 ncvtgyzn,3,2,3,2,8.0,US Geography,7,0,50,1,1,stereotype,0,1,0,under,Female,US National,-1
@@ -3431,3 +5081,69 @@ ncvtgyzn,8,2,6,2,8.0,US Geography,4,0,50,1,1,stereotype,0,1,0,under,Female,US Na
 ncvtgyzn,9,1,5,2,8.0,US Geography,5,0,50,1,1,stereotype,0,1,0,under,Female,US National,-1
 ncvtgyzn,10,1,3,2,8.0,US Geography,7,0,50,1,1,stereotype,0,1,0,under,Female,US National,-1
 ncvtgyzn,11,1,3,2,8.0,US Geography,7,0,50,1,1,stereotype,0,1,0,under,Female,US National,-1
+oqf1d07l,1,2,3,0,11.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,2,2,4,0,11.0,US Geography,6,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,3,2,3,1,11.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,4,2,9,1,11.0,US Geography,1,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,5,2,6,0,11.0,US Geography,4,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,6,2,4,0,11.0,US Geography,6,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,7,2,6,0,11.0,US Geography,4,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,8,2,6,0,11.0,US Geography,4,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,9,2,5,0,11.0,US Geography,5,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,10,2,3,0,11.0,US Geography,7,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
+oqf1d07l,11,2,5,0,11.0,US Geography,5,1,50,1,1,stereotype,0,0,1,correct,Female,US National,0
+q9jar1of,1,2,3,2,14.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,2,2,4,2,14.0,US Geography,6,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,3,2,3,2,14.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,4,2,9,2,14.0,US Geography,1,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,5,0,8,0,14.0,US Geography,2,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,6,2,4,2,14.0,US Geography,6,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,7,2,6,2,14.0,US Geography,4,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,8,1,4,2,14.0,US Geography,6,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,9,1,5,0,14.0,US Geography,5,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,10,2,3,0,14.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+q9jar1of,11,2,5,0,14.0,US Geography,5,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,1,1,1,1,7.0,US Geography,9,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,2,1,3,2,7.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,3,1,3,0,7.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,4,1,4,1,7.0,US Geography,6,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,5,1,4,2,7.0,US Geography,6,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,6,1,3,0,7.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,7,1,5,0,7.0,US Geography,5,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,8,1,4,0,7.0,US Geography,6,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,9,1,5,2,7.0,US Geography,5,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,10,1,3,1,7.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+uz5m20q1,11,1,3,1,7.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Male,non-US National,0
+v3yunf9n,1,0,6,2,7.0,US Geography,4,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,2,1,3,1,7.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,3,1,3,1,7.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,4,1,4,1,7.0,US Geography,6,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,5,1,4,1,7.0,US Geography,6,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,6,1,3,1,7.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,7,1,5,1,7.0,US Geography,5,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,8,2,6,1,7.0,US Geography,4,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,9,1,5,1,7.0,US Geography,5,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,10,1,3,1,7.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+v3yunf9n,11,1,3,1,7.0,US Geography,7,1,33,1,1,stereotype,0,0,1,correct,Female,non-US National,0
+wursesku,1,0,9,0,4.0,US Geography,1,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,2,0,9,1,4.0,US Geography,1,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,3,2,5,1,4.0,US Geography,5,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,4,1,3,0,4.0,US Geography,7,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,5,1,9,2,4.0,US Geography,1,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,6,2,7,2,4.0,US Geography,3,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,7,0,5,0,4.0,US Geography,5,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,8,1,7,0,4.0,US Geography,3,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,9,0,8,1,4.0,US Geography,2,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,10,1,5,2,4.0,US Geography,5,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+wursesku,11,0,6,1,4.0,US Geography,4,2,75,0,1,stereotype,1,0,0,over,Female,non-US National,1
+zwzznpo6,1,0,6,0,10.0,US Geography,4,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,2,1,3,0,10.0,US Geography,7,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,3,1,3,0,10.0,US Geography,7,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,4,1,4,0,10.0,US Geography,6,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,5,1,4,0,10.0,US Geography,6,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,6,2,4,0,10.0,US Geography,6,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,7,0,2,1,10.0,US Geography,8,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,8,0,5,1,10.0,US Geography,5,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,9,1,5,1,10.0,US Geography,5,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,10,0,8,1,10.0,US Geography,2,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1
+zwzznpo6,11,2,5,1,10.0,US Geography,5,0,50,1,1,stereotype,0,1,0,under,Male,non-US National,-1

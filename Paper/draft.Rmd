@@ -215,30 +215,24 @@ by @Hestermann2021 and is discussed with the results.
 
 ## The Self-Serving Updater
 
-A self-serving bayesian is an agent who uses a biased version of Bayes rule to update his beliefs.He will update his beliefs 
-about the state $\omega$ and his type $\theta$
+A self-serving bayesian is an agent who uses a biased version of Bayes rule to update their beliefs. 
+They will update their beliefs 
+about the state $\omega$ and his type $\theta$ simultaneously
 by over-attributing successes to a high value of $\theta$ and under-estimating the role of higher $\omega$. Similarly,
 he will attribute failure to a low state to a greter degree than an unbiased agent would. 
-To model the self-serving attribution bias, I take the approach of @benjamin2019, where the posterior is given by:
+To model the self-serving attribution bias, I take the approach of @benjamin2019, where the posterior odds are given by:
 
 $$
-p_{t}[\theta_H|\text{outcome}] = 
-\frac{p[\text{outcome}|\theta]^{c_s^{\theta}\mathbb{I}\{\text{success}\}+c_f^{\theta}\mathbb{I}\{\text{failure}\}}p_{t-1}[\theta]}
-{\sum_{\theta'\in\Theta}p[\text{outcome}|\theta']^{c_s^{\theta}\mathbb{I}\{\text{success}\}+c_f^{\theta}\mathbb{I}\{\text{failure}\}}p_{t-1}[\theta']}
+p_{t+1}[\theta, \omega|s_t] =\left(
+\frac{p_t[s_t|\theta, \omega]}
+{p_t[s_t|\theta', \omega']}\right)^{c(\theta, \omega, s_t)}
 $$
 
-$c_s^{\theta}$ and $c_f^{\theta}$ are the self-serving attribution bias parameters for the agent's type $\theta$. 
-If $c_s^{\theta} = c_f^{\theta} = 1$, the agent is unbiased and the update is the same as the Bayesian update. On the other hand, 
-if $c_s^{\theta} > c_f{\theta}$ the agent over-attributes success to their type and under-attributes failure to their type\footnote{
-  notice that the values of $c_s^{\theta}$ and $c_f^{\theta}$ are not restricted to be greater than 1. If they are both equal to 
-  each other but less (more) than one, then the bias is simply underinference (overinference).}.
-
-The update for $\omega$ is analogous but with $c_f^{\omega}$ and $c_s^{\omega}$ instead of $c_f^{\theta}$ and $c_s^{\theta}$ and
-the bias is present whenever $c_f^{\omega} > c_s^{\omega}$. That is, the agent over-attributes failure to a low state relative the 
-higher states and under-attributes success to a low state relative to the higher states.
+Whith $c(\theta, \omega, s_t)$ such that   
+c(\theta, \omega, \s_t) > c(\theta', \omega').
 
 
-# A Unifying Example
+# A Unifying Framework
 The agent can be of one of 3 types: $\theta \in \{\theta_L, \theta_M, \theta_H\}$  with $\theta_H > \theta_M > \theta_L$.
 They face an unknown exogenous success rate
 $\omega \in \{\omega_L, \omega_M, \omega_H\}$ with $\omega_H>\omega_M>\omega_L$. Each of the values of $\omega$ is realized with 

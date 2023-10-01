@@ -29,6 +29,7 @@
 \usepackage{hyperref}
 \usepackage{tikz}
 \usepackage[table]{xcolor}
+\usepackage{colortbl}
 
 \title{Learning with Misspecified Models:\\  
 the case of overconfidence}
@@ -43,7 +44,7 @@ the case of overconfidence}
     \textbf{OVERCONFIDENCE}: Belief that my type is higher than it truly is (``overestimation'' as in Moore and Healy (2008))\\
     \bigskip
     \pause
-    It seems to be persistent in various settings. 
+    Seems to be persistent in various settings. 
     \begin{itemize} 
         \item Excess entry of entrepreneurs (Camerer and Lovallo, 1999)
         \item Suboptimal genetic testing and healthcare (Oster et al. 2013)
@@ -71,33 +72,34 @@ the case of overconfidence}
 \end{frame}
 
 \begin{frame}{Four Theories of Misspecified Learning}
-    In settings with more than 1 unknown parameter:
+    
     \begin{enumerate}
 
-        \item Self-defeating equilibrium (Heidhues et al. (2018)): \\
+        \item \textbf{Self-defeating equilibrium} (Heidhues et al. (2018)): \\
         \begin{itemize}
             \item Bayesian about exogenous parameters
             \item Dogmatic about ego-relevant parameters
         \end{itemize}
         \bigskip
 
-        \item Bayesian Likelihood Ratio test (Schwarstein and Sunderam (2021), Ba (2022)) :\\
+        \item \textbf{Bayesian hypothesis testing} (Schwarstein and Sunderam (2021), Ba (2022)) :\\
         \begin{itemize}
             \item Bayesian about exogenous parameters 
             \item Paradigm shift for ego-relevant parameters
         \end{itemize}
         \bigskip
 
-        \item Motivated Beliefs / Self-Attribution Bias (Brunnermeier and Parker (2005), Benjamin (2019)): \\
+        \item \textbf{Motivated Beliefs / Self-Attribution Bias} (Brunnermeier and Parker (2005), Bracha and Brown (2012)): \\
         \begin{itemize}
             \item Optimally biased updating
             \item Utility from held beliefs 
         \end{itemize}
         \bigskip
 
-        \item Myopic Bayesian (Hestermann and Le Yaouanq, (2021))\\
+        \item \textbf{Myopic Bayesian} (Hestermann and Le Yaouanq, (2021))\\
         \begin{itemize}
-            \item Bayesian about Both 
+            \item Bayesian about both 
+            \item Maximizes flow utility only
         \end{itemize}
 
     \end{enumerate}
@@ -113,25 +115,41 @@ the case of overconfidence}
 
     Is ego-relevance of the parameter a key feature for the misspecification?\\
     \begin{itemize}
-        \item Are ego-relevant misspecifications more likely to persist?
+        \item Are ego-relevant misspecifications more likely to persist than stereotypes?
         \item Can the same theories be used to explain the prevalence of stereotypes?
+        
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Questions}
+    Which of the theories better explains the observed behavior? \\
+    \begin{itemize}
+        \item Do we observe heterogeneity in the use of misspecified models? 
+    \end{itemize}
+    \bigskip
+
+    Is ego-relevance of the parameter a key feature for the misspecification?\\
+    \begin{itemize}
+        \item Are ego-relevant misspecifications more likely to persist than stereotypes? 
+        \item Can the same theories be used to explain the prevalence of stereotypes? 
         
     \end{itemize}
 \end{frame}
 
 
 \begin{frame}{An Example}
-    A student has \textbf{unknown intrinsic ability} $\theta^*$ (\alert{ego-relevant})\\ 
+    A student has unknown \textbf{intrinsic ability} $\theta^*$ (\alert{ego-relevant parameter})\\ 
     \bigskip
-    They choose a level of effort $e\geq 0$. \\
+    They choose a level of \textbf{effort} $e\geq 0$ (\alert{choice}) \\
     \bigskip
-    Effort and ability are evaluated by a grading system $\omega$ (\alert{exogenous})\\
+    Effort and ability are evaluated by a \taxtbf{grading system} $\omega$ (\alert{exogenous parameter})\\
     \bigskip 
-    The student wants to maximize utility\\
-        $$y = (\theta^* + e)\omega-\frac{1}{2}e^2 +\varepsilon$$\\
-    \pause
+    The student wants to maximize:\\
+        $$u(e) = (\theta^* + e)\omega-\frac{1}{2}e^2 +\varepsilon$$\\
+    
     \bigskip
-   \alert{\textbf{Regardless of their own type and of their beliefs about it, they should choose $e^*(\omega)=\omega$}}\\
+   \textbf{Regardless of their own type and of their beliefs about it, they should choose $e^*(\omega)=\omega$}\\
+
 \end{frame}
 
 \begin{frame}{Learning is Possible}
@@ -170,17 +188,17 @@ the case of overconfidence}
 
 \begin{frame}{A Unifying Framework}
 
-Finite type space: $\theta \in \{\theta_H, \theta_M, \theta_L\}$\\
+\textbf{Ego-relevant paremeter}: $\theta \in \{\theta_H, \theta_M, \theta_L\}$\\
 \bigskip
 
-Finite state space: $\omega \in \{\omega_H, \omega_M, \omega_L\}$
+\textbf{Exogenous parameter}: $\omega \in \{\omega_H, \omega_M, \omega_L\}$
 with $p(\omega_k)=1/3$ \\
 \bigskip
 
-Finite action space: $e \in \{e_H, e_M, e_L\}$\\
+\textbf{Choices}: $e \in \{e_H, e_M, e_L\}$\\
 \bigskip
 
-Binary signal: $P\left[Success|e, \omega, \theta\right]$ where p is an order-preserving transformation of $u(x)$
+\textbf{Binary Outcomes}: $s_t \in\{\text{success, failure}\}$ with  $p\left[success|e, \omega, \theta\right]$ and p is an order-preserving transformation of $u(x)$
 
 
 \end{frame}
@@ -376,7 +394,7 @@ Binary signal: $P\left[Success|e, \omega, \theta\right]$ where p is an order-pre
 \end{frame}
 
 
-\begin{frame}{The Self-Confirming Equilibria}
+\begin{frame}{The Self-Defeating Equilibria}
 
     \centering
     \begin{tabular}{ c|c|c|c|}
@@ -468,6 +486,8 @@ Binary signal: $P\left[Success|e, \omega, \theta\right]$ where p is an order-pre
     
 \end{frame}
 
+\section*{Mechanisms and Predictions}
+
 \begin{frame}{The Dogmatic Modeler}
 
     Holds a degenerate belief: type is $\hat{\theta}$ with probability 1\\
@@ -479,13 +499,15 @@ Binary signal: $P\left[Success|e, \omega, \theta\right]$ where p is an order-pre
     \end{itemize}
     \bigskip
     Updates $p_t(\omega)$ using Bayes Rule
+
+    $$p_{t+1}(\omega|s, \hat{\theta}) = \frac{p_t(s_t|\omega, \hat{\theta})p_{t}(\omega)}{\sum_{\omega'}p_t(s_t|\omega', \hat{\theta})p_{t}(\omega')}$$
     
 \end{frame}
 
 \begin{frame}{The Dogmatic Modeler: Mechanism}
-    \begin{itemize}
-        \item A student who dogmatically believes he is $\theta_H$
-    \end{itemize}
+    A student who dogmatically believes he is $\theta_H$ but truly is $\theta_M$\\
+    The exogenos parameter is $\omega_M$\\
+    
     \bigskip
 
     \begin{enumerate}
@@ -495,7 +517,47 @@ Binary signal: $P\left[Success|e, \omega, \theta\right]$ where p is an order-pre
         \bigskip
         \item Eventually chooses $e_L$ and falls into a self-confirming equilibrium
     \end{enumerate}
-        
+
+    \centering
+    \begin{tabular}{ c|c|c|c|}
+    
+    \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{$\omega_M$} & \multicolumn{1}{c}{$\omega_L$}\\
+    \cline{2-4}
+    $e_H$ & 50 & 20 & 2 \\
+    \cline{2-4}
+    $e_M$ & 45 & 30 & 7 \\
+    \cline{2-4}
+    $e_L$ & 40 & 25 & 20 \\
+    \cline{2-4}
+    \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_L$} & \multicolumn{1}{c}{}\\
+    \end{tabular}
+    \hspace{.3cm} % adjust this value to set the space between tables
+    \begin{tabular}{ c|c|c|c|}
+    
+    \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{\tikz[baseline=-0.5ex]{\node[draw=red,circle,inner sep=2pt]{$\omega_M$};}} & \multicolumn{1}{c}{$\omega_L$}\\
+    \cline{2-4}
+    $e_H$ & 80 & \cellcolor{blue!25}50 & 5 \\
+    \cline{2-4}
+    $e_M$ & 69 & \cellcolor{blue!25}65 & 30 \\
+    \cline{2-4}
+    $e_L$ & 65 & \cellcolor[HTML]{9662f0}45 & 40 \\
+    \cline{2-4}
+    \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_M$} & \multicolumn{1}{c}{}\\
+    \end{tabular}
+    \hspace{.3cm} % adjust this value to set the space between tables
+    \begin{tabular}{ c|c|c|c|}
+    
+    \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{$\omega_M$} & \multicolumn{1}{c}{$\omega_L$}\\
+    \cline{2-4}
+    $e_H$ & 98 & 65 & 25 \\
+    \cline{2-4}
+    $e_M$ & 80 & 69 & 35 \\
+    \cline{2-4}
+    $e_L$ & 75 & 55 & \cellcolor[HTML]{9662f0}45 \\
+    \cline{2-4}
+    \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\tikz[baseline=-0.5ex]{\node[draw=red,dashed, circle,inner sep=2pt]{$\theta_H$};}}  & \multicolumn{1}{c}{}\\
+    \end{tabular}
+
     
 \end{frame}
 
@@ -512,11 +574,11 @@ Binary signal: $P\left[Success|e, \omega, \theta\right]$ where p is an order-pre
     \bigskip
     Keeps track of the likelihoods of the two possible paradigms:\\
     \begin{itemize}
-        \item $p(\cdot|h^t)$ for $\hat{\theta}$ and $\theta'$
+        \item $p_t(s_t|\cdot)$ for $\hat{\theta}$ and $\theta'$
     \end{itemize}
     \bigskip
     They swithch to whichever paradigm is morelikely to have generated the signals
-    $$ \frac{p(\theta'|h^t)}{p(\hat{\theta}|h^t)}>\alpha\geq1$$
+    $$ \frac{p_t(s_t|\theta')}{p_t(s_t|\hat{\theta})}>\alpha\geq1$$
     
 \end{frame}
 
@@ -529,9 +591,7 @@ Binary signal: $P\left[Success|e, \omega, \theta\right]$ where p is an order-pre
         \bigskip
         \item Eventually chooses $e_M$ and is disappointed as well $\rightarrow$ adjust belief about $\omega$\\
         \bigskip
-        \item Eventually chooses $e_L$ and falls into a self-confirming equilibrium\\
-        \bigskip
-        \item At some point, the likelihood of $\theta_M$ becomes much larger than that of $\theta_H$ and the agent updates their belief
+        \item Avoids the self-defeating equilibrium if the likelihood of $\theta_M$ becomes larger than that of $\theta_H$
     \end{enumerate}
     
     
@@ -547,13 +607,15 @@ Binary signal: $P\left[Success|e, \omega, \theta\right]$ where p is an order-pre
 
 
 \begin{frame}{Self-Attribution Bias / Optimal Expectations}
-    Start with a diffused prior over $(\theta, \omega)$ but updates with a bias
-    \begin{itemize}
-        \item Success $\rightarrow$ overweight parametrizations with $\theta>\omega$\\
-        \item Failure $\rightarrow$ underweight parametrizations with $\theta<\omega$\\
-    \end{itemize}
 
-    $$ p_{t+1}(\theta, \omega| s_t)=\frac{}{} $$
+    Start with a diffused prior over $(\theta, \omega)$ but updates with a bias
+
+    $$ p_{t+1}(\theta, \omega| s_t)=\frac{p_t(s_t|\theta, \omega)^{c(\theta, \omega, s_t)}p_t(\theta, \omega)}{\sum_{(\theta', \omega')}p_t(s_t|\theta', \omega')^{c(\theta', \omega', s_t)}p_t(\theta', \omega')} $$
+
+    Bias is such that 
+    $$c(\theta_H, \omega, \text{good news}) < c(\theta_M, \omega, \text{good news}) < c(\theta_H, \omega, \text{bad news}) \quad \forall \omega$$
+    And
+    $$c(\theta, \omega_L, \text{good news}) < c(\theta, \omega_M, \text{good news}) < c(\theta, \omega_H, \text{bad news}) \quad \forall \theta$$
     
 
 \end{frame}
@@ -577,9 +639,16 @@ Binary signal: $P\left[Success|e, \omega, \theta\right]$ where p is an order-pre
         \end{figure}
     \end{frame}
 
-\begin{frame}{The Myopic Bayesian}
+    \begin{frame}{Myopic Bayesian}
+
+        Start with a diffused prior over $(\theta, \omega)$ and updates correctly
     
-\end{frame}
+        $$ p_{t+1}(\theta, \omega| s_t)=\frac{p_t(s_t|\theta, \omega)p_t(\theta, \omega)}{\sum_{(\theta', \omega')}p_t(s_t|\theta', \omega')p_t(\theta', \omega')} $$
+    
+        But if they start with a prior that is ``tight" 
+        around a self-defeating equilibrium they will never learn 
+        
+    \end{frame}
 
 
     \begin{frame}{All Models}
@@ -590,6 +659,8 @@ Binary signal: $P\left[Success|e, \omega, \theta\right]$ where p is an order-pre
     \end{figure}     
 
 \end{frame}
+
+
 
 \section*{Experimental Design}
 
@@ -706,45 +777,146 @@ Binary signal: $P\left[Success|e, \omega, \theta\right]$ where p is an order-pre
     
 \end{frame}
 
-
-\begin{frame}{Learning}
-    
-
-\end{frame}
-
 \begin{frame}{Initial Misspecifications}
-    
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.5]{misspecification_hist.png}
+    \end{figure}
 
 \end{frame}
 
 \begin{frame}{The Stereotypes}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.33]{believed_actual_type_heat.png}
+    \end{figure}
+
+\end{frame}
 
 
+\begin{frame}{Learning $\Omega$}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.5]{effort_learning.png}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}{Learning $\Theta$}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.33]{last_button_consistency.png}
+    \end{figure}
+    
+\end{frame}
+
+\begin{frame}{Changes in Misspecifications}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.3]{misspecification_evolution_tratment.png}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Transitions}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.3]{misspecification_transitions_treatment.png}
+    \end{figure}
     
 \end{frame}
 
-\section*{Parameter Estimation}
+\begin{frame}{Good News v. Bad News}
+
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.5]{effort_change_news.png}
+    \end{figure}
+    
+\end{frame}
+
+\section*{Parameters}
 
 \begin{frame}{Identification of $\alpha$}
-    
+
+    Whenever the agent switches from one paradigm to another, they are revealing that \\
+    $$\frac{p_t(s^t|\theta')}{p_t(s^t|\hat{\theta})}=\alpha$$
+
+    \bigskip
+    Notice that this identifies an upper bound for $\alpha$\\
+    \bigskip
+
+    I take the average value of the likelihood ratio when the agent changes their choice of $\theta$
+    to be $\alpha $\\
+    \bigskip
+    I find $\alpha=1.5$ and no difference across treatments\\
+
 
 \end{frame}
 
 \begin{frame}{Estimation of Self-Attribution Bias}
     
+    Simulation on a grid of parameters\\
+    \bigskip
+    For each task take the parameters that minimize the distance between the simulated and the actual effort\\
+    \bigskip
+    Average for each subject\\
+    \bigskip
+    Average across subjects\\
+    
+    \begin{align*}
+        c(\theta_H, \omega, \text{good news}) & =  c(\theta, \omega_L, \text{bad news})= 0.137\\
+        c(\theta_M, \omega, \text{good news}) & =  c(\theta, \omega_M, \text{bad news}) = 0.36\\
+        c(\theta_L, \omega, \text{good news}) & =  c(\theta, \omega_H, \text{bad news}) = 1
+    \end{align*}
     
 \end{frame}
 
-\section*{Results}
+\section*{Heterogeneity}
 
-\begin{frame}{Model Fit}
+\begin{frame}{Model Fit: Distributions}
+
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.5]{model_fit_histogram.png}
+    \end{figure}
     
 \end{frame}
 
-\begin{frame}{Heterogeneity}
+\begin{frame}{Model Fit: Distance}
+
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.5]{model_min_distance.png}
+    \end{figure}
+    
+\end{frame}
+
+\section*{Concluding Remarks}
+
+\begin{frame}{Summary}
+
+\begin{itemize}
+    \item Data is not fully consistent with the model
+    \item Some indications of self-attribution bias
+    \item Fit os Switching is better overall
+    \item Need a better estimation of the parameters
+\end{itemize}
+    
+\end{frame}
+
+\begin{frame}{What is Next}
+    \begin{enumerate}
+        \item Have a better estimation of the attribution bias parameters
+        \begin{itemize}
+            \item Estimate using SMM
+            \item Elicit beliefs within this framework
+        \end{itemize}
+        \item Can the behavior be explained by a model with forward-looking agents?
+        \begin{itemize}
+            \item Hestermann and Le Yaouanq (2021)
+        \end{itemize}
+
+    \end{enumerate}
     
 \end{frame}
 

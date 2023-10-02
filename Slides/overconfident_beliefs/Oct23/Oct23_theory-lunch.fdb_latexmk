@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1696280308 "/Users/jimenagalindo/Documents/Overconfidence/Slides/overconfident_beliefs/Oct23/Oct23_theory-lunch.tex" "Oct23_theory-lunch.pdf" "Oct23_theory-lunch" 1696280314 2
-  "/Users/jimenagalindo/Documents/Overconfidence/Slides/overconfident_beliefs/Oct23/Oct23_theory-lunch.tex" 1696280301 31072 6e9b4b66b01e26ca55309168aa7a2c47 ""
+["pdflatex"] 1696280801 "/Users/jimenagalindo/Documents/Overconfidence/Slides/overconfident_beliefs/Oct23/Oct23_theory-lunch.tex" "Oct23_theory-lunch.pdf" "Oct23_theory-lunch" 1696280807 2
+  "/Users/jimenagalindo/Documents/Overconfidence/Slides/overconfident_beliefs/Oct23/Oct23_theory-lunch.tex" 1696280794 31072 a97ddff376e689147693c6888f04bce3 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcss1000.tfm" 1136768653 1536 293044035fd171bb1d18cf655049b101 ""
@@ -272,10 +272,10 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1695948599 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1695948575 7883454 06c315ec2217be584f4cbaeb6727b331 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Oct23_theory-lunch.aux" 1696280314 12134 49b91f23a7fa057f54e931fbb3e1542f "pdflatex"
-  "Oct23_theory-lunch.nav" 1696280314 7246 a1e20479b5d92a6eb8cbf6efb971f598 "pdflatex"
-  "Oct23_theory-lunch.out" 1696280314 912 a92af5d29d8a466ebd4bc1a30b6189ca "pdflatex"
-  "Oct23_theory-lunch.tex" 1696280301 31072 6e9b4b66b01e26ca55309168aa7a2c47 ""
+  "Oct23_theory-lunch.aux" 1696280806 12134 49b91f23a7fa057f54e931fbb3e1542f "pdflatex"
+  "Oct23_theory-lunch.nav" 1696280806 7246 a1e20479b5d92a6eb8cbf6efb971f598 "pdflatex"
+  "Oct23_theory-lunch.out" 1696280806 912 a92af5d29d8a466ebd4bc1a30b6189ca "pdflatex"
+  "Oct23_theory-lunch.tex" 1696280794 31072 a97ddff376e689147693c6888f04bce3 ""
   "figures2//all_11.png" 1696126918 102093 c0c66e27c0f5cce5af4fb033c1963dbe ""
   "figures2//believed_actual_type_heat.png" 1696124984 279091 818a2f3fe8eb19d89f016558ec5588d9 ""
   "figures2//certainty_by_topic.png" 1696273451 34324 ba8c68157413e20fa453eb5aac725442 ""

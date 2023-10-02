@@ -30,6 +30,7 @@
 \usepackage{tikz}
 \usepackage[table]{xcolor}
 \usepackage{colortbl}
+\usepackage{appendixnumberbeamer}
 
 \title{Learning with Misspecified Models:\\  
 the case of overconfidence}
@@ -47,7 +48,7 @@ the case of overconfidence}
     Seems to be persistent in various settings. 
     \begin{itemize} 
         \item Excess entry of entrepreneurs (Camerer and Lovallo, 1999)
-        \item Suboptimal genetic testing and healthcare (Oster et al. 2013)
+        \item Suboptimal genetic testing and savings (Oster et al. 2013)
         \item  Workers overestimate their productivity (Hoffman and Burks, 2020)
     \end{itemize}
     \bigskip
@@ -75,21 +76,21 @@ the case of overconfidence}
     
     \begin{enumerate}
 
-        \item \textbf{Self-defeating equilibrium} (Heidhues et al. (2018)): \\
+        \item \textbf{Self-defeating equilibrium} (Heidhues et al. (2018)) \\
         \begin{itemize}
             \item Bayesian about exogenous parameters
             \item Dogmatic about ego-relevant parameters
         \end{itemize}
         \bigskip
 
-        \item \textbf{Bayesian hypothesis testing} (Schwarstein and Sunderam (2021), Ba (2022)) :\\
+        \item \textbf{Bayesian hypothesis testing} (Schwarstein and Sunderam (2021), Ba (2022))\\
         \begin{itemize}
             \item Bayesian about exogenous parameters 
             \item Paradigm shift for ego-relevant parameters
         \end{itemize}
         \bigskip
 
-        \item \textbf{Motivated Beliefs / Self-Attribution Bias} (Brunnermeier and Parker (2005), Bracha and Brown (2012)): \\
+        \item \textbf{Motivated Beliefs / Self-Attribution Bias} (Brunnermeier and Parker (2005), Bracha and Brown (2012)) \\
         \begin{itemize}
             \item Optimally biased updating
             \item Utility from held beliefs 
@@ -107,7 +108,7 @@ the case of overconfidence}
 \end{frame}
 
 \begin{frame}{Questions}
-    Which of the proposed theories better explains the observed behavior?\\
+    Which of the proposed features better explain the observed behavior?\\
     \begin{itemize}
         \item Do we observe heterogeneity in the use of misspecified models?
     \end{itemize}
@@ -121,28 +122,13 @@ the case of overconfidence}
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Questions}
-    Which of the theories better explains the observed behavior? \\
-    \begin{itemize}
-        \item Do we observe heterogeneity in the use of misspecified models? 
-    \end{itemize}
-    \bigskip
 
-    Is ego-relevance of the parameter a key feature for the misspecification?\\
-    \begin{itemize}
-        \item Are ego-relevant misspecifications more likely to persist than stereotypes? 
-        \item Can the same theories be used to explain the prevalence of stereotypes? 
-        
-    \end{itemize}
-\end{frame}
-
-
-\begin{frame}{An Example}
+\begin{frame}{An Example (from Heidhues et al. (2018))}
     A student has unknown \textbf{intrinsic ability} $\theta^*$ (\alert{ego-relevant parameter})\\ 
     \bigskip
     They choose a level of \textbf{effort} $e\geq 0$ (\alert{choice}) \\
     \bigskip
-    Effort and ability are evaluated by a \taxtbf{grading system} $\omega$ (\alert{exogenous parameter})\\
+    Effort and ability are evaluated by a \textbf{grading system} $\omega$ (\alert{exogenous parameter})\\
     \bigskip 
     The student wants to maximize:\\
         $$u(e) = (\theta^* + e)\omega-\frac{1}{2}e^2 +\varepsilon$$\\
@@ -394,7 +380,7 @@ with $p(\omega_k)=1/3$ \\
 \end{frame}
 
 
-\begin{frame}{The Self-Defeating Equilibria}
+\begin{frame}{The Stable Beliefs}
 
     \centering
     \begin{tabular}{ c|c|c|c|}
@@ -436,6 +422,8 @@ with $p(\omega_k)=1/3$ \\
     \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_H$} & \multicolumn{1}{c}{}\\
     \end{tabular}
 \end{frame}
+
+\section*{Mechanisms and Predictions}
 
 \begin{frame}{An Example}
     \begin{itemize}
@@ -486,7 +474,6 @@ with $p(\omega_k)=1/3$ \\
     
 \end{frame}
 
-\section*{Mechanisms and Predictions}
 
 \begin{frame}{The Dogmatic Modeler}
 
@@ -613,9 +600,9 @@ with $p(\omega_k)=1/3$ \\
     $$ p_{t+1}(\theta, \omega| s_t)=\frac{p_t(s_t|\theta, \omega)^{c(\theta, \omega, s_t)}p_t(\theta, \omega)}{\sum_{(\theta', \omega')}p_t(s_t|\theta', \omega')^{c(\theta', \omega', s_t)}p_t(\theta', \omega')} $$
 
     Bias is such that 
-    $$c(\theta_H, \omega, \text{good news}) < c(\theta_M, \omega, \text{good news}) < c(\theta_H, \omega, \text{bad news}) \quad \forall \omega$$
+    $$c(\theta_H, \omega, \text{good news}) \leq c(\theta_M, \omega, \text{good news}) \leq c(\theta_L, \omega, \text{good news})\leq1 \quad \forall \omega$$
     And
-    $$c(\theta, \omega_L, \text{good news}) < c(\theta, \omega_M, \text{good news}) < c(\theta, \omega_H, \text{bad news}) \quad \forall \theta$$
+    $$c(\theta, \omega_L, \text{bad news}) \leq c(\theta, \omega_M, \text{bad news}) \leq c(\theta, \omega_H, \text{bad news})\leq1 \quad \forall \theta$$
     
 
 \end{frame}
@@ -624,8 +611,10 @@ with $p(\omega_k)=1/3$ \\
     \begin{enumerate}
         \item Chooses $e$ that maximizes utility according to priors
         \bigskip
-        \item Belief on $\omega$ deteriorates a lot after bad news $\to$ big change in effort
-        \item Belief on $\theta$ increases a lot after good news $\to$ small positive (or negative) change in effort \\
+        \begin{itemize}
+            \item Belief on $\mathbb{E}[\omega]$ deteriorates a lot after bad news $\to$ big change in effort
+            \item Belief on $\mathbb{E}[\theta]$ increases a lot after good news $\to$ small positive (or negative) change in effort \\
+        \end{itemize}
     \end{enumerate}
     
 \end{frame}
@@ -675,11 +664,11 @@ with $p(\omega_k)=1/3$ \\
 
         \item How many questions do you think you answered correctly in each quiz?\\
         \begin{itemize}
-            \item[o] 0 to 5
-            \item 6 to 15 
-            \item 16 or more
+            \item 0 to 5 ($\theta_L$)
+            \item 6 to 15 ($\theta_M$)
+            \item 16 or more ($\theta_H$)
         \end{itemize}
-        \item How sure are you about your choice?
+        \item How sure are you about your guess?
         \begin{itemize}
             \item Random guess $\to 1/3$
             \item Another is equally likely $\to 1/2$
@@ -695,26 +684,11 @@ with $p(\omega_k)=1/3$ \\
     Effort choice and feedback (One topic at a time)\\
     \bigskip
     \begin{itemize}
-        \item Choose an effort
+        \item Choose a gamble: A, B or C (effort)
         \item Receive a sample of 10 signal realizations
     \end{itemize}
     \bigskip
     x 11 per topic
-
-\end{frame}
-
-\begin{frame}{Eliciting Beliefs?}
-    \begin{itemize}
-        \item $E[\omega]$ is revealed by their choice of effort\\
-        \bigskip
-        \item Eliciting beliefs for $\theta$ can incentivize learning in a way that is not consistent with the theory\\
-        \bigskip
-    \end{itemize}
-
-    Allow them to see the success rate matrix for only one type. 
-    \begin{itemize}
-        \item Track the matrices they choose to see in each round
-    \end{itemize}
 
 \end{frame}
 
@@ -737,6 +711,24 @@ with $p(\omega_k)=1/3$ \\
     x 11 per topic
 
 \end{frame}
+
+\begin{frame}{Eliciting Beliefs?}
+    \begin{itemize}
+
+        \item $E[\omega]$ is revealed by their choice of effort\\
+        \bigskip
+        \item Eliciting beliefs for $\theta$ can incentivize learning in a way that is not consistent with the theory\\
+        \bigskip
+        
+    \end{itemize}
+
+    Allow them to see the success rate matrix for only one type. 
+    \begin{itemize}
+        \item Track the matrices they choose to see in each round
+    \end{itemize}
+
+\end{frame}
+
 
 \begin{frame}{Screen}
     \begin{figure}
@@ -778,23 +770,29 @@ with $p(\omega_k)=1/3$ \\
 \end{frame}
 
 \begin{frame}{Initial Misspecifications}
+    \label{initialhist}
     \begin{figure}
         \centering
         \includegraphics[scale=.5]{misspecification_hist.png}
     \end{figure}
+    \action{\hyperlink{certainties}{\beamerbutton{certainties}}}
 
 \end{frame}
 
 \begin{frame}{The Stereotypes}
+    \label{typeheat}
     \begin{figure}
         \centering
-        \includegraphics[scale=.33]{believed_actual_type_heat.png}
+        \includegraphics[scale=.3]{believed_actual_type_heat.png}
     \end{figure}
+
+    %add a hyperlink button to the appendix slide with the misspecification_heat
+    \action{\hyperlink{misspecificationsheat}{\beamerbutton{misspecifications}}} 
 
 \end{frame}
 
 
-\begin{frame}{Learning $\Omega$}
+\begin{frame}{Learning $\omega$}
     \begin{figure}
         \centering
         \includegraphics[scale=.5]{effort_learning.png}
@@ -811,27 +809,30 @@ with $p(\omega_k)=1/3$ \\
 \end{frame}
 
 \begin{frame}{Changes in Misspecifications}
+    \label{misspecificationsroundstypes}
     \begin{figure}
         \centering
         \includegraphics[scale=.3]{misspecification_evolution_tratment.png}
     \end{figure}
+    \action{\hyperlink{misspecificationsrounds}{\beamerbutton{overall}}}
 \end{frame}
 
 \begin{frame}{Transitions}
     \begin{figure}
         \centering
-        \includegraphics[scale=.3]{misspecification_transitions_treatment.png}
+        \includegraphics[scale=.35]{misspecification_transitions_treatment.png}
     \end{figure}
     
 \end{frame}
 
 \begin{frame}{Good News v. Bad News}
-
+    \label{goodvbad}
     \begin{figure}
         \centering
         \includegraphics[scale=.5]{effort_change_news.png}
     \end{figure}
-    
+    \action{\hyperlink{positivevnegative}{\beamerbutton{other}}}
+
 \end{frame}
 
 \section*{Parameters}
@@ -848,12 +849,12 @@ with $p(\omega_k)=1/3$ \\
     I take the average value of the likelihood ratio when the agent changes their choice of $\theta$
     to be $\alpha $\\
     \bigskip
-    I find $\alpha=1.5$ and no difference across treatments\\
+    I find $\alpha=1.48$ and no difference across treatments\\
 
 
 \end{frame}
 
-\begin{frame}{Estimation of Self-Attribution Bias}
+\begin{frame}{Calibration of Bias}
     
     Simulation on a grid of parameters\\
     \bigskip
@@ -883,11 +884,13 @@ with $p(\omega_k)=1/3$ \\
 \end{frame}
 
 \begin{frame}{Model Fit: Distance}
-
+    \label{meandistances}
     \begin{figure}
         \centering
         \includegraphics[scale=.5]{model_min_distance.png}
     \end{figure}
+
+    \action{\hyperlink{pathdistances}{\beamerbutton{paths}}}
     
 \end{frame}
 
@@ -896,10 +899,13 @@ with $p(\omega_k)=1/3$ \\
 \begin{frame}{Summary}
 
 \begin{itemize}
-    \item Data is not fully consistent with the model
-    \item Some indications of self-attribution bias
-    \item Fit os Switching is better overall
+    \item Data is not fully consistent with the models
+    \item Some indications of self-attribution bias and/or paradigm shifts
     \item Need a better estimation of the parameters
+    \item Are subjects experimenting in order to learn?
+    \begin{itemize}
+        \item Hestermann and Le Yaouanq (2021)
+    \end{itemize}
 \end{itemize}
     
 \end{frame}
@@ -911,9 +917,9 @@ with $p(\omega_k)=1/3$ \\
             \item Estimate using SMM
             \item Elicit beliefs within this framework
         \end{itemize}
-        \item Can the behavior be explained by a model with forward-looking agents?
+        \item Can dynamic learning explain the data better?
         \begin{itemize}
-            \item Hestermann and Le Yaouanq (2021)
+            \item This model would predict underconfidence to be more persistent than overconfidence
         \end{itemize}
 
     \end{enumerate}
@@ -925,6 +931,62 @@ with $p(\omega_k)=1/3$ \\
     \large\textbf{Thank you!}
 \end{frame}
 
+\appendix
+
+\begin{frame}{Misspecifications}
+    \label{misspecificationsheat}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.3]{misspecifications_characteristics_treatment.png}
+    \end{figure}
+    \action{\hyperlink{typeheat}{\beamerbutton{Back}}}
+\end{frame}
+
+\begin{frame}{Certainties}
+    \label{certainties}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.4]{certainty_by_topic.png}
+    \end{figure}
+
+    \action{\hyperlink{initialhist}{\beamerbutton{Back}}}
+\end{frame}
+
+\begin{frame}{Misspecification changes by treatment}
+    \label{misspecificationsrounds}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.5]{misspecification_round_tratment.png}
+    \end{figure}
+    \action{\hyperlink{misspecificationsroundstypes}{\beamerbutton{Back}}}
+\end{frame}
+
+\begin{frame}{Positive Signals v. Negative Signals}
+    \label{positivevnegative}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.5]{signalvalue_effort_change.png}
+    \end{figure}
+    \action{\hyperlink{goodvbad}{\beamerbutton{Back}}}
+
+\end{frame}
+
+\begin{frame}{Dogmatic v. Switcher}
+    \label{pathdistances}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.5]{distances_switch_dog.png}
+    \end{figure}
+    \action{\hyperlink{meandistances}{\beamerbutton{Back}}}
+\end{frame}
+
+\begin{frame}{Bayesian v. Self-Attribution}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.5]{distances_bay_ss.png}
+    \end{figure}
+    \action{\hyperlink{meandistances}{\beamerbutton{Back}}}
+\end{frame}
 
 
 \end{document}

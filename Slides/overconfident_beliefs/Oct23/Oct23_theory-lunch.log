@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.28)  30 SEP 2023 23:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.28)  2 OCT 2023 16:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -858,31 +858,31 @@ Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 \everycr=\toks59
 \minrowclearance=\skip87
 \rownum=\count372
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/appendixnumberbeamer/appendixnumberbeamer.sty) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count373
 \l__pdf_internal_box=\box99
 ) (./Oct23_theory-lunch.aux)
 \openout1 = `Oct23_theory-lunch.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -937,60 +937,59 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 39.
- (./Oct23_theory-lunch.out) (./Oct23_theory-lunch.out)
+Package hyperref Info: Link coloring OFF on input line 40.
 \@outlinefile=\write5
 \openout5 = `Oct23_theory-lunch.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 39.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 40.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 39.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 40.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 39.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 39.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 39.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 39.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 40.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 39.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 39.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 39.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 40.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 39.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 39.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 39.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 40.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 39.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 39.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 40.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 39.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 40.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 39.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 39.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 39.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 39.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 39.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 39.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 39.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 40.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 40.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 39.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 40.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 39.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 40.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 39.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 40.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1011,15 +1010,15 @@ Package caption Info: End \AtBeginDocument code.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 39.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 40.
  (./Oct23_theory-lunch.nav)
-Overfull \vbox (44.55656pt too high) detected at line 41
+Overfull \vbox (44.55656pt too high) detected at line 42
  []
 
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 56.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 57.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 ) [2
@@ -1029,40 +1028,28 @@ File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 ] [4
 
 ]
-Overfull \vbox (19.86938pt too high) detected at line 107
+Overfull \vbox (19.86938pt too high) detected at line 108
  []
 
 [5
 
 ] [6
 
-] [7
-
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 153.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 139.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 153.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 139.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 153.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 139.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-)
-/Users/jimenagalindo/Documents/Overconfidence/Slides/overconfident_beliefs/Oct23/Oct23_theory-lunch.tex:153: Undefined control sequence.
-\beamer@doifinframe ...are evaluated by a \taxtbf 
-                                                  {grading system} $\omega $...
-l.153 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+) [7
 
-[8
+] [8
 
 ] [9
 
@@ -1086,69 +1073,69 @@ and I'll forget about whatever was undefined.
 
 ] [19
 
-] [20
+]
+Overfull \vbox (1.12985pt too high) detected at line 549
+ []
+
+[20
 
 ]
-Overfull \vbox (1.12985pt too high) detected at line 562
+<./figures2//dogmatic_over_11.png, id=135, 462.528pt x 346.896pt>
+File: ./figures2//dogmatic_over_11.png Graphic file (type png)
+<use ./figures2//dogmatic_over_11.png>
+Package pdftex.def Info: ./figures2//dogmatic_over_11.png  used on input line 557.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+
+Overfull \vbox (13.81796pt too high) detected at line 557
  []
 
 [21
 
-]
-<./figures2//dogmatic_over_11.png, id=167, 462.528pt x 346.896pt>
-File: ./figures2//dogmatic_over_11.png Graphic file (type png)
-<use ./figures2//dogmatic_over_11.png>
-Package pdftex.def Info: ./figures2//dogmatic_over_11.png  used on input line 570.
-(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+ <./figures2//dogmatic_over_11.png>] [22
 
-Overfull \vbox (13.81796pt too high) detected at line 570
- []
-
-[22
-
- <./figures2//dogmatic_over_11.png>] [23
-
-] [24
+] [23
 
 ]
-<./figures2//switcher_over_11.png, id=186, 462.528pt x 346.896pt>
+<./figures2//switcher_over_11.png, id=154, 462.528pt x 346.896pt>
 File: ./figures2//switcher_over_11.png Graphic file (type png)
 <use ./figures2//switcher_over_11.png>
-Package pdftex.def Info: ./figures2//switcher_over_11.png  used on input line 606.
+Package pdftex.def Info: ./figures2//switcher_over_11.png  used on input line 593.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-Overfull \vbox (13.81796pt too high) detected at line 606
+Overfull \vbox (13.81796pt too high) detected at line 593
  []
 
-[25
+[24
 
- <./figures2//switcher_over_11.png>] [26
+ <./figures2//switcher_over_11.png>] [25
 
-] [27
+] [26
 
 ]
-<./figures2//self-serving_11.png, id=204, 462.528pt x 346.896pt>
+<./figures2//self-serving_11.png, id=174, 462.528pt x 346.896pt>
 File: ./figures2//self-serving_11.png Graphic file (type png)
 <use ./figures2//self-serving_11.png>
-Package pdftex.def Info: ./figures2//self-serving_11.png  used on input line 640.
+Package pdftex.def Info: ./figures2//self-serving_11.png  used on input line 629.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
- [28
+ [27
 
- <./figures2//self-serving_11.png>] [29
+ <./figures2//self-serving_11.png>] [28
 
 ]
-<./figures2//all_11.png, id=216, 1445.4pt x 1084.05pt>
+<./figures2//all_11.png, id=186, 1445.4pt x 1084.05pt>
 File: ./figures2//all_11.png Graphic file (type png)
 <use ./figures2//all_11.png>
-Package pdftex.def Info: ./figures2//all_11.png  used on input line 661.
+Package pdftex.def Info: ./figures2//all_11.png  used on input line 650.
 (pdftex.def)             Requested size: 289.07487pt x 216.80615pt.
 
-Overfull \vbox (30.13206pt too high) detected at line 661
+Overfull \vbox (30.13206pt too high) detected at line 650
  []
 
-[30
+[29
 
- <./figures2//all_11.png>] [31
+ <./figures2//all_11.png>] [30
+
+] [31
 
 ] [32
 
@@ -1156,144 +1143,214 @@ Overfull \vbox (30.13206pt too high) detected at line 661
 
 ] [34
 
-] [35
-
 ]
-<./figures2//screen1.png, id=251, 1025.8325pt x 420.57124pt>
+<./figures2//screen1.png, id=222, 1025.8325pt x 420.57124pt>
 File: ./figures2//screen1.png Graphic file (type png)
 <use ./figures2//screen1.png>
-Package pdftex.def Info: ./figures2//screen1.png  used on input line 746.
+Package pdftex.def Info: ./figures2//screen1.png  used on input line 738.
 (pdftex.def)             Requested size: 410.32574pt x 168.22551pt.
 
-Overfull \hbox (11.98715pt too wide) in paragraph at lines 746--746
+Overfull \hbox (11.98715pt too wide) in paragraph at lines 738--738
+ [] 
+ []
+
+[35
+
+ <./figures2//screen1.png>]
+<./figures2//screen2.png, id=229, 1047.915pt x 421.575pt>
+File: ./figures2//screen2.png Graphic file (type png)
+<use ./figures2//screen2.png>
+Package pdftex.def Info: ./figures2//screen2.png  used on input line 745.
+(pdftex.def)             Requested size: 419.15857pt x 168.627pt.
+
+Overfull \hbox (20.81998pt too wide) in paragraph at lines 745--745
  [] 
  []
 
 [36
 
- <./figures2//screen1.png>]
-<./figures2//screen2.png, id=258, 1047.915pt x 421.575pt>
-File: ./figures2//screen2.png Graphic file (type png)
-<use ./figures2//screen2.png>
-Package pdftex.def Info: ./figures2//screen2.png  used on input line 753.
-(pdftex.def)             Requested size: 419.15857pt x 168.627pt.
-
-Overfull \hbox (20.81998pt too wide) in paragraph at lines 753--753
- [] 
- []
-
-[37
-
- <./figures2//screen2.png>] [38
+ <./figures2//screen2.png>] [37
 
 ]
-Overfull \vbox (5.69946pt too high) detected at line 778
+Overfull \vbox (5.69946pt too high) detected at line 770
  []
 
-[39
+[38
 
 ]
-<./figures2//misspecification_hist.png, id=277, 406.8801pt x 312.4473pt>
+<./figures2//misspecification_hist.png, id=249, 406.8801pt x 312.4473pt>
 File: ./figures2//misspecification_hist.png Graphic file (type png)
 <use ./figures2//misspecification_hist.png>
-Package pdftex.def Info: ./figures2//misspecification_hist.png  used on input line 786.
+Package pdftex.def Info: ./figures2//misspecification_hist.png  used on input line 780.
 (pdftex.def)             Requested size: 203.43954pt x 156.22325pt.
- [40
+ [39
 
  <./figures2//misspecification_hist.png>]
-<./figures2//believed_actual_type_heat.png, id=284, 1228.3491pt x 550.4565pt>
+<./figures2//believed_actual_type_heat.png, id=259, 1228.3491pt x 550.4565pt>
 File: ./figures2//believed_actual_type_heat.png Graphic file (type png)
 <use ./figures2//believed_actual_type_heat.png>
-Package pdftex.def Info: ./figures2//believed_actual_type_heat.png  used on input line 794.
-(pdftex.def)             Requested size: 405.35646pt x 181.6512pt.
-
-Overfull \hbox (7.01787pt too wide) in paragraph at lines 794--794
- [] 
- []
-
-
-Overfull \vbox (10.61703pt too high) detected at line 794
- []
-
-[41
+Package pdftex.def Info: ./figures2//believed_actual_type_heat.png  used on input line 792.
+(pdftex.def)             Requested size: 368.50757pt x 165.13821pt.
+ [40
 
  <./figures2//believed_actual_type_heat.png>]
-<./figures2//effort_learning.png, id=291, 462.528pt x 346.896pt>
+<./figures2//effort_learning.png, id=269, 462.528pt x 346.896pt>
 File: ./figures2//effort_learning.png Graphic file (type png)
 <use ./figures2//effort_learning.png>
-Package pdftex.def Info: ./figures2//effort_learning.png  used on input line 803.
+Package pdftex.def Info: ./figures2//effort_learning.png  used on input line 801.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
- [42
+ [41
 
  <./figures2//effort_learning.png>]
-<./figures2//last_button_consistency.png, id=299, 888.6801pt x 447.8331pt>
+<./figures2//last_button_consistency.png, id=277, 888.6801pt x 447.8331pt>
 File: ./figures2//last_button_consistency.png Graphic file (type png)
 <use ./figures2//last_button_consistency.png>
-Package pdftex.def Info: ./figures2//last_button_consistency.png  used on input line 811.
+Package pdftex.def Info: ./figures2//last_button_consistency.png  used on input line 809.
 (pdftex.def)             Requested size: 293.26534pt x 147.78537pt.
- [43
+ [42
 
  <./figures2//last_button_consistency.png>]
-<./figures2//misspecification_evolution_tratment.png, id=307, 1160.4153pt x 351.4731pt>
+<./figures2//misspecification_evolution_tratment.png, id=285, 1160.4153pt x 351.4731pt>
 File: ./figures2//misspecification_evolution_tratment.png Graphic file (type png)
 <use ./figures2//misspecification_evolution_tratment.png>
 Package pdftex.def Info: ./figures2//misspecification_evolution_tratment.png  used on input line 818.
 (pdftex.def)             Requested size: 348.12727pt x 105.44273pt.
- [44
+ [43
 
  <./figures2//misspecification_evolution_tratment.png>]
-<./figures2//misspecification_transitions_treatment.png, id=315, 866.9991pt x 483.9681pt>
+<./figures2//misspecification_transitions_treatment.png, id=296, 866.9991pt x 483.9681pt>
 File: ./figures2//misspecification_transitions_treatment.png Graphic file (type png)
 <use ./figures2//misspecification_transitions_treatment.png>
 Package pdftex.def Info: ./figures2//misspecification_transitions_treatment.png  used on input line 826.
-(pdftex.def)             Requested size: 260.10173pt x 145.19154pt.
- [45
+(pdftex.def)             Requested size: 303.45424pt x 169.39136pt.
+ [44
 
  <./figures2//misspecification_transitions_treatment.png>]
-<./figures2//effort_change_news.png, id=322, 449.5194pt x 361.35pt>
+<./figures2//effort_change_news.png, id=303, 449.5194pt x 361.35pt>
 File: ./figures2//effort_change_news.png Graphic file (type png)
 <use ./figures2//effort_change_news.png>
-Package pdftex.def Info: ./figures2//effort_change_news.png  used on input line 835.
+Package pdftex.def Info: ./figures2//effort_change_news.png  used on input line 836.
 (pdftex.def)             Requested size: 224.75914pt x 180.67456pt.
- [46
 
- <./figures2//effort_change_news.png>] [47
-
-] [48
-
-]
-Overfull \vbox (5.0771pt too high) detected at line 872
+Overfull \vbox (15.1154pt too high) detected at line 836
  []
 
-[49
+[45
 
-] [50
+ <./figures2//effort_change_news.png>] [46
+
+] [47
 
 ]
-<./figures2//model_fit_histogram.png, id=353, 462.528pt x 346.896pt>
+Overfull \vbox (5.0771pt too high) detected at line 873
+ []
+
+[48
+
+] [49
+
+]
+<./figures2//model_fit_histogram.png, id=339, 462.528pt x 346.896pt>
 File: ./figures2//model_fit_histogram.png Graphic file (type png)
 <use ./figures2//model_fit_histogram.png>
-Package pdftex.def Info: ./figures2//model_fit_histogram.png  used on input line 883.
+Package pdftex.def Info: ./figures2//model_fit_histogram.png  used on input line 884.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
- [51
+ [50
 
  <./figures2//model_fit_histogram.png>]
-<./figures2//model_min_distance.png, id=360, 462.528pt x 346.896pt>
+<./figures2//model_min_distance.png, id=346, 462.528pt x 346.896pt>
 File: ./figures2//model_min_distance.png Graphic file (type png)
 <use ./figures2//model_min_distance.png>
-Package pdftex.def Info: ./figures2//model_min_distance.png  used on input line 892.
+Package pdftex.def Info: ./figures2//model_min_distance.png  used on input line 895.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
- [52
 
- <./figures2//model_min_distance.png>] [53
+Overfull \vbox (7.88841pt too high) detected at line 895
+ []
+
+[51
+
+ <./figures2//model_min_distance.png>] [52
+
+] [53
 
 ] [54
 
 ] [55
 
-] [56
-
 ]
+<./figures2//misspecifications_characteristics_treatment.png, id=379, 1239.9123pt x 586.3506pt>
+File: ./figures2//misspecifications_characteristics_treatment.png Graphic file (type png)
+<use ./figures2//misspecifications_characteristics_treatment.png>
+Package pdftex.def Info: ./figures2//misspecifications_characteristics_treatment.png  used on input line 943.
+(pdftex.def)             Requested size: 371.97656pt x 175.90652pt.
+
+Overfull \vbox (10.34737pt too high) detected at line 943
+ []
+
+[56
+
+ <./figures2//misspecifications_characteristics_treatment.png>]
+<./figures2//certainty_by_topic.png, id=388, 1084.05pt x 361.35pt>
+File: ./figures2//certainty_by_topic.png Graphic file (type png)
+<use ./figures2//certainty_by_topic.png>
+Package pdftex.def Info: ./figures2//certainty_by_topic.png  used on input line 953.
+(pdftex.def)             Requested size: 433.61232pt x 144.53743pt.
+
+Overfull \hbox (35.27373pt too wide) in paragraph at lines 953--953
+ [] 
+ []
+
+[57
+
+ <./figures2//certainty_by_topic.png>]
+<./figures2//misspecification_round_tratment.png, id=396, 424.4658pt x 366.6498pt>
+File: ./figures2//misspecification_round_tratment.png Graphic file (type png)
+<use ./figures2//misspecification_round_tratment.png>
+Package pdftex.def Info: ./figures2//misspecification_round_tratment.png  used on input line 962.
+(pdftex.def)             Requested size: 212.23238pt x 183.32443pt.
+
+Overfull \vbox (17.76527pt too high) detected at line 962
+ []
+
+[58
+
+ <./figures2//misspecification_round_tratment.png>]
+<./figures2//signalvalue_effort_change.png, id=404, 796.4154pt x 361.35pt>
+File: ./figures2//signalvalue_effort_change.png Graphic file (type png)
+<use ./figures2//signalvalue_effort_change.png>
+Package pdftex.def Info: ./figures2//signalvalue_effort_change.png  used on input line 972.
+(pdftex.def)             Requested size: 398.20673pt x 180.67456pt.
+
+Overfull \vbox (15.1154pt too high) detected at line 972
+ []
+
+[59
+
+ <./figures2//signalvalue_effort_change.png>]
+<./figures2//distances_switch_dog.png, id=412, 462.528pt x 346.896pt>
+File: ./figures2//distances_switch_dog.png Graphic file (type png)
+<use ./figures2//distances_switch_dog.png>
+Package pdftex.def Info: ./figures2//distances_switch_dog.png  used on input line 981.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+
+Overfull \vbox (7.88841pt too high) detected at line 981
+ []
+
+[60
+
+ <./figures2//distances_switch_dog.png>]
+<./figures2//distances_bay_ss.png, id=420, 462.528pt x 346.896pt>
+File: ./figures2//distances_bay_ss.png Graphic file (type png)
+<use ./figures2//distances_bay_ss.png>
+Package pdftex.def Info: ./figures2//distances_bay_ss.png  used on input line 989.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+
+Overfull \vbox (7.88841pt too high) detected at line 989
+ []
+
+[61
+
+ <./figures2//distances_bay_ss.png>]
 \tf@nav=\write6
 \openout6 = `Oct23_theory-lunch.nav'.
 
@@ -1304,22 +1361,31 @@ Package pdftex.def Info: ./figures2//model_min_distance.png  used on input line 
 \openout8 = `Oct23_theory-lunch.snm'.
 
  (./Oct23_theory-lunch.aux)
-Package rerunfilecheck Info: File `Oct23_theory-lunch.out' has not changed.
-(rerunfilecheck)             Checksum: C866AD58CA01173E0877F62154E0931D;831.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `Oct23_theory-lunch.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Oct23_theory-lunch.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  A92AF5D29D8A466EBD4BC1A30B6189CA;912.
  ) 
 Here is how much of TeX's memory you used:
- 34295 strings out of 476025
- 729640 string characters out of 5790017
+ 34431 strings out of 476025
+ 733860 string characters out of 5790017
  1874388 words of memory out of 5000000
- 53964 multiletter control sequences out of 15000+600000
+ 54073 multiletter control sequences out of 15000+600000
  526756 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,1966b,910s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on Oct23_theory-lunch.pdf (56 pages, 1595267 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
+Output written on Oct23_theory-lunch.pdf (61 pages, 2202109 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 360 compressed objects within 4 object streams
- 121 named destinations out of 1000 (max. 500000)
- 174 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 538 PDF objects out of 1000 (max. 8388607)
+ 387 compressed objects within 4 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 148 words of extra memory for PDF output out of 10000 (max. 10000000)
 

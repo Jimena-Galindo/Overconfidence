@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.28)  2 OCT 2023 17:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.28)  3 OCT 2023 09:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1036,15 +1036,15 @@ Overfull \vbox (19.86938pt too high) detected at line 108
 ] [6
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 139.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 134.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 139.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 134.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 139.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 134.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [7
@@ -1074,7 +1074,7 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 ] [19
 
 ]
-Overfull \vbox (1.12985pt too high) detected at line 549
+Overfull \vbox (1.12985pt too high) detected at line 544
  []
 
 [20
@@ -1083,10 +1083,10 @@ Overfull \vbox (1.12985pt too high) detected at line 549
 <./figures2//dogmatic_over_11.png, id=135, 462.528pt x 346.896pt>
 File: ./figures2//dogmatic_over_11.png Graphic file (type png)
 <use ./figures2//dogmatic_over_11.png>
-Package pdftex.def Info: ./figures2//dogmatic_over_11.png  used on input line 557.
+Package pdftex.def Info: ./figures2//dogmatic_over_11.png  used on input line 552.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-Overfull \vbox (13.81796pt too high) detected at line 557
+Overfull \vbox (13.81796pt too high) detected at line 552
  []
 
 [21
@@ -1099,10 +1099,10 @@ Overfull \vbox (13.81796pt too high) detected at line 557
 <./figures2//switcher_over_11.png, id=154, 462.528pt x 346.896pt>
 File: ./figures2//switcher_over_11.png Graphic file (type png)
 <use ./figures2//switcher_over_11.png>
-Package pdftex.def Info: ./figures2//switcher_over_11.png  used on input line 593.
+Package pdftex.def Info: ./figures2//switcher_over_11.png  used on input line 588.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-Overfull \vbox (13.81796pt too high) detected at line 593
+Overfull \vbox (13.81796pt too high) detected at line 588
  []
 
 [24
@@ -1115,7 +1115,7 @@ Overfull \vbox (13.81796pt too high) detected at line 593
 <./figures2//self-serving_11.png, id=174, 462.528pt x 346.896pt>
 File: ./figures2//self-serving_11.png Graphic file (type png)
 <use ./figures2//self-serving_11.png>
-Package pdftex.def Info: ./figures2//self-serving_11.png  used on input line 629.
+Package pdftex.def Info: ./figures2//self-serving_11.png  used on input line 624.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
  [27
 
@@ -1125,10 +1125,10 @@ Package pdftex.def Info: ./figures2//self-serving_11.png  used on input line 629
 <./figures2//all_11.png, id=186, 1445.4pt x 1084.05pt>
 File: ./figures2//all_11.png Graphic file (type png)
 <use ./figures2//all_11.png>
-Package pdftex.def Info: ./figures2//all_11.png  used on input line 650.
+Package pdftex.def Info: ./figures2//all_11.png  used on input line 645.
 (pdftex.def)             Requested size: 289.07487pt x 216.80615pt.
 
-Overfull \vbox (30.13206pt too high) detected at line 650
+Overfull \vbox (30.13206pt too high) detected at line 645
  []
 
 [29
@@ -1143,212 +1143,219 @@ Overfull \vbox (30.13206pt too high) detected at line 650
 
 ] [34
 
+] [35
+
 ]
-<./figures2//screen1.png, id=222, 1025.8325pt x 420.57124pt>
+<./figures2//screen1.png, id=227, 1025.8325pt x 420.57124pt>
 File: ./figures2//screen1.png Graphic file (type png)
 <use ./figures2//screen1.png>
-Package pdftex.def Info: ./figures2//screen1.png  used on input line 738.
+Package pdftex.def Info: ./figures2//screen1.png  used on input line 748.
 (pdftex.def)             Requested size: 410.32574pt x 168.22551pt.
 
-Overfull \hbox (11.98715pt too wide) in paragraph at lines 738--738
- [] 
- []
-
-[35
-
- <./figures2//screen1.png>]
-<./figures2//screen2.png, id=229, 1047.915pt x 421.575pt>
-File: ./figures2//screen2.png Graphic file (type png)
-<use ./figures2//screen2.png>
-Package pdftex.def Info: ./figures2//screen2.png  used on input line 745.
-(pdftex.def)             Requested size: 419.15857pt x 168.627pt.
-
-Overfull \hbox (20.81998pt too wide) in paragraph at lines 745--745
+Overfull \hbox (11.98715pt too wide) in paragraph at lines 748--748
  [] 
  []
 
 [36
 
- <./figures2//screen2.png>] [37
+ <./figures2//screen1.png>]
+<./figures2//screen2.png, id=234, 1047.915pt x 421.575pt>
+File: ./figures2//screen2.png Graphic file (type png)
+<use ./figures2//screen2.png>
+Package pdftex.def Info: ./figures2//screen2.png  used on input line 755.
+(pdftex.def)             Requested size: 419.15857pt x 168.627pt.
 
-]
-Overfull \vbox (5.69946pt too high) detected at line 770
+Overfull \hbox (20.81998pt too wide) in paragraph at lines 755--755
+ [] 
  []
 
-[38
+[37
+
+ <./figures2//screen2.png>] [38
 
 ]
-<./figures2//misspecification_hist.png, id=249, 406.8801pt x 312.4473pt>
+Overfull \vbox (5.69946pt too high) detected at line 780
+ []
+
+[39
+
+]
+<./figures2//misspecification_hist.png, id=254, 406.8801pt x 312.4473pt>
 File: ./figures2//misspecification_hist.png Graphic file (type png)
 <use ./figures2//misspecification_hist.png>
-Package pdftex.def Info: ./figures2//misspecification_hist.png  used on input line 780.
+Package pdftex.def Info: ./figures2//misspecification_hist.png  used on input line 790.
 (pdftex.def)             Requested size: 203.43954pt x 156.22325pt.
- [39
-
- <./figures2//misspecification_hist.png>]
-<./figures2//believed_actual_type_heat.png, id=259, 1228.3491pt x 550.4565pt>
-File: ./figures2//believed_actual_type_heat.png Graphic file (type png)
-<use ./figures2//believed_actual_type_heat.png>
-Package pdftex.def Info: ./figures2//believed_actual_type_heat.png  used on input line 792.
-(pdftex.def)             Requested size: 368.50757pt x 165.13821pt.
  [40
 
- <./figures2//believed_actual_type_heat.png>]
-<./figures2//effort_learning.png, id=269, 462.528pt x 346.896pt>
+ <./figures2//misspecification_hist.png>]
+<./figures2//misspecifications_characteristics_treatment.png, id=264, 1239.9123pt x 586.3506pt>
+File: ./figures2//misspecifications_characteristics_treatment.png Graphic file (type png)
+<use ./figures2//misspecifications_characteristics_treatment.png>
+Package pdftex.def Info: ./figures2//misspecifications_characteristics_treatment.png  used on input line 802.
+(pdftex.def)             Requested size: 371.97656pt x 175.90652pt.
+
+Overfull \vbox (10.34737pt too high) detected at line 802
+ []
+
+[41
+
+ <./figures2//misspecifications_characteristics_treatment.png>]
+<./figures2//effort_learning.png, id=274, 462.528pt x 346.896pt>
 File: ./figures2//effort_learning.png Graphic file (type png)
 <use ./figures2//effort_learning.png>
-Package pdftex.def Info: ./figures2//effort_learning.png  used on input line 801.
+Package pdftex.def Info: ./figures2//effort_learning.png  used on input line 811.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
- [41
-
- <./figures2//effort_learning.png>]
-<./figures2//last_button_consistency.png, id=277, 888.6801pt x 447.8331pt>
-File: ./figures2//last_button_consistency.png Graphic file (type png)
-<use ./figures2//last_button_consistency.png>
-Package pdftex.def Info: ./figures2//last_button_consistency.png  used on input line 809.
-(pdftex.def)             Requested size: 293.26534pt x 147.78537pt.
  [42
 
- <./figures2//last_button_consistency.png>]
-<./figures2//misspecification_evolution_tratment.png, id=285, 1160.4153pt x 351.4731pt>
-File: ./figures2//misspecification_evolution_tratment.png Graphic file (type png)
-<use ./figures2//misspecification_evolution_tratment.png>
-Package pdftex.def Info: ./figures2//misspecification_evolution_tratment.png  used on input line 818.
-(pdftex.def)             Requested size: 348.12727pt x 105.44273pt.
+ <./figures2//effort_learning.png>]
+<./figures2//last_button_consistency.png, id=282, 888.6801pt x 447.8331pt>
+File: ./figures2//last_button_consistency.png Graphic file (type png)
+<use ./figures2//last_button_consistency.png>
+Package pdftex.def Info: ./figures2//last_button_consistency.png  used on input line 819.
+(pdftex.def)             Requested size: 293.26534pt x 147.78537pt.
  [43
 
- <./figures2//misspecification_evolution_tratment.png>]
-<./figures2//misspecification_transitions_treatment.png, id=296, 866.9991pt x 483.9681pt>
+ <./figures2//last_button_consistency.png>]
+<./figures2//misspecification_round_tratment.png, id=291, 424.4658pt x 366.6498pt>
+File: ./figures2//misspecification_round_tratment.png Graphic file (type png)
+<use ./figures2//misspecification_round_tratment.png>
+Package pdftex.def Info: ./figures2//misspecification_round_tratment.png  used on input line 828.
+(pdftex.def)             Requested size: 212.23238pt x 183.32443pt.
+
+Overfull \vbox (17.76527pt too high) detected at line 828
+ []
+
+[44
+
+ <./figures2//misspecification_round_tratment.png>]
+<./figures2//misspecification_transitions_treatment.png, id=301, 866.9991pt x 483.9681pt>
 File: ./figures2//misspecification_transitions_treatment.png Graphic file (type png)
 <use ./figures2//misspecification_transitions_treatment.png>
-Package pdftex.def Info: ./figures2//misspecification_transitions_treatment.png  used on input line 826.
+Package pdftex.def Info: ./figures2//misspecification_transitions_treatment.png  used on input line 836.
 (pdftex.def)             Requested size: 303.45424pt x 169.39136pt.
- [44
+ [45
 
  <./figures2//misspecification_transitions_treatment.png>]
-<./figures2//effort_change_news.png, id=303, 449.5194pt x 361.35pt>
+<./figures2//effort_change_news.png, id=308, 449.5194pt x 361.35pt>
 File: ./figures2//effort_change_news.png Graphic file (type png)
 <use ./figures2//effort_change_news.png>
-Package pdftex.def Info: ./figures2//effort_change_news.png  used on input line 836.
+Package pdftex.def Info: ./figures2//effort_change_news.png  used on input line 846.
 (pdftex.def)             Requested size: 224.75914pt x 180.67456pt.
 
-Overfull \vbox (15.1154pt too high) detected at line 836
+Overfull \vbox (15.1154pt too high) detected at line 846
  []
 
-[45
+[46
 
- <./figures2//effort_change_news.png>] [46
+ <./figures2//effort_change_news.png>] [47
 
-] [47
+] [48
 
 ]
-Overfull \vbox (5.0771pt too high) detected at line 873
+Overfull \vbox (5.0771pt too high) detected at line 883
  []
 
-[48
+[49
 
-] [49
+] [50
 
 ]
-<./figures2//model_fit_histogram.png, id=339, 462.528pt x 346.896pt>
+<./figures2//model_fit_histogram.png, id=344, 462.528pt x 346.896pt>
 File: ./figures2//model_fit_histogram.png Graphic file (type png)
 <use ./figures2//model_fit_histogram.png>
-Package pdftex.def Info: ./figures2//model_fit_histogram.png  used on input line 884.
+Package pdftex.def Info: ./figures2//model_fit_histogram.png  used on input line 894.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
- [50
+ [51
 
  <./figures2//model_fit_histogram.png>]
-<./figures2//model_min_distance.png, id=346, 462.528pt x 346.896pt>
+<./figures2//model_min_distance.png, id=351, 462.528pt x 346.896pt>
 File: ./figures2//model_min_distance.png Graphic file (type png)
 <use ./figures2//model_min_distance.png>
-Package pdftex.def Info: ./figures2//model_min_distance.png  used on input line 895.
+Package pdftex.def Info: ./figures2//model_min_distance.png  used on input line 905.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
-Overfull \vbox (7.88841pt too high) detected at line 895
+Overfull \vbox (7.88841pt too high) detected at line 905
  []
 
-[51
+[52
 
- <./figures2//model_min_distance.png>] [52
-
-] [53
+ <./figures2//model_min_distance.png>] [53
 
 ] [54
 
 ] [55
 
+] [56
+
 ]
-<./figures2//misspecifications_characteristics_treatment.png, id=379, 1239.9123pt x 586.3506pt>
-File: ./figures2//misspecifications_characteristics_treatment.png Graphic file (type png)
-<use ./figures2//misspecifications_characteristics_treatment.png>
-Package pdftex.def Info: ./figures2//misspecifications_characteristics_treatment.png  used on input line 943.
-(pdftex.def)             Requested size: 371.97656pt x 175.90652pt.
+<./figures2//believed_actual_type_heat.png, id=384, 1228.3491pt x 550.4565pt>
+File: ./figures2//believed_actual_type_heat.png Graphic file (type png)
+<use ./figures2//believed_actual_type_heat.png>
+Package pdftex.def Info: ./figures2//believed_actual_type_heat.png  used on input line 951.
+(pdftex.def)             Requested size: 368.50757pt x 165.13821pt.
+ [57
 
-Overfull \vbox (10.34737pt too high) detected at line 943
- []
-
-[56
-
- <./figures2//misspecifications_characteristics_treatment.png>]
-<./figures2//certainty_by_topic.png, id=388, 1084.05pt x 361.35pt>
+ <./figures2//believed_actual_type_heat.png>]
+<./figures2//certainty_by_topic.png, id=393, 1084.05pt x 361.35pt>
 File: ./figures2//certainty_by_topic.png Graphic file (type png)
 <use ./figures2//certainty_by_topic.png>
-Package pdftex.def Info: ./figures2//certainty_by_topic.png  used on input line 953.
+Package pdftex.def Info: ./figures2//certainty_by_topic.png  used on input line 961.
 (pdftex.def)             Requested size: 433.61232pt x 144.53743pt.
 
-Overfull \hbox (35.27373pt too wide) in paragraph at lines 953--953
+Overfull \hbox (35.27373pt too wide) in paragraph at lines 961--961
  [] 
- []
-
-[57
-
- <./figures2//certainty_by_topic.png>]
-<./figures2//misspecification_round_tratment.png, id=396, 424.4658pt x 366.6498pt>
-File: ./figures2//misspecification_round_tratment.png Graphic file (type png)
-<use ./figures2//misspecification_round_tratment.png>
-Package pdftex.def Info: ./figures2//misspecification_round_tratment.png  used on input line 962.
-(pdftex.def)             Requested size: 212.23238pt x 183.32443pt.
-
-Overfull \vbox (17.76527pt too high) detected at line 962
  []
 
 [58
 
- <./figures2//misspecification_round_tratment.png>]
-<./figures2//signalvalue_effort_change.png, id=404, 796.4154pt x 361.35pt>
-File: ./figures2//signalvalue_effort_change.png Graphic file (type png)
-<use ./figures2//signalvalue_effort_change.png>
-Package pdftex.def Info: ./figures2//signalvalue_effort_change.png  used on input line 972.
-(pdftex.def)             Requested size: 398.20673pt x 180.67456pt.
+ <./figures2//certainty_by_topic.png>]
+<./figures2//misspecification_evolution_tratment.png, id=401, 1160.4153pt x 351.4731pt>
+File: ./figures2//misspecification_evolution_tratment.png Graphic file (type png)
+<use ./figures2//misspecification_evolution_tratment.png>
+Package pdftex.def Info: ./figures2//misspecification_evolution_tratment.png  used on input line 970.
+(pdftex.def)             Requested size: 464.1579pt x 140.58675pt.
 
-Overfull \vbox (15.1154pt too high) detected at line 972
+Overfull \hbox (65.8193pt too wide) in paragraph at lines 970--970
+ [] 
  []
 
 [59
 
- <./figures2//signalvalue_effort_change.png>]
-<./figures2//distances_switch_dog.png, id=412, 462.528pt x 346.896pt>
-File: ./figures2//distances_switch_dog.png Graphic file (type png)
-<use ./figures2//distances_switch_dog.png>
-Package pdftex.def Info: ./figures2//distances_switch_dog.png  used on input line 981.
-(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+ <./figures2//misspecification_evolution_tratment.png>]
+<./figures2//signalvalue_effort_change.png, id=409, 796.4154pt x 361.35pt>
+File: ./figures2//signalvalue_effort_change.png Graphic file (type png)
+<use ./figures2//signalvalue_effort_change.png>
+Package pdftex.def Info: ./figures2//signalvalue_effort_change.png  used on input line 980.
+(pdftex.def)             Requested size: 398.20673pt x 180.67456pt.
 
-Overfull \vbox (7.88841pt too high) detected at line 981
+Overfull \vbox (15.1154pt too high) detected at line 980
  []
 
 [60
 
- <./figures2//distances_switch_dog.png>]
-<./figures2//distances_bay_ss.png, id=420, 462.528pt x 346.896pt>
-File: ./figures2//distances_bay_ss.png Graphic file (type png)
-<use ./figures2//distances_bay_ss.png>
-Package pdftex.def Info: ./figures2//distances_bay_ss.png  used on input line 989.
+ <./figures2//signalvalue_effort_change.png>]
+<./figures2//distances_switch_dog.png, id=417, 462.528pt x 346.896pt>
+File: ./figures2//distances_switch_dog.png Graphic file (type png)
+<use ./figures2//distances_switch_dog.png>
+Package pdftex.def Info: ./figures2//distances_switch_dog.png  used on input line 989.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
 Overfull \vbox (7.88841pt too high) detected at line 989
  []
 
 [61
+
+ <./figures2//distances_switch_dog.png>]
+<./figures2//distances_bay_ss.png, id=426, 462.528pt x 346.896pt>
+File: ./figures2//distances_bay_ss.png Graphic file (type png)
+<use ./figures2//distances_bay_ss.png>
+Package pdftex.def Info: ./figures2//distances_bay_ss.png  used on input line 997.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+
+Overfull \vbox (7.88841pt too high) detected at line 997
+ []
+
+[62
 
  <./figures2//distances_bay_ss.png>]
 \tf@nav=\write6
@@ -1374,18 +1381,18 @@ Package rerunfilecheck Info: Checksums for `Oct23_theory-lunch.out':
 (rerunfilecheck)             After:  A92AF5D29D8A466EBD4BC1A30B6189CA;912.
  ) 
 Here is how much of TeX's memory you used:
- 34431 strings out of 476025
- 733860 string characters out of 5790017
+ 34435 strings out of 476025
+ 733897 string characters out of 5790017
  1874388 words of memory out of 5000000
- 54073 multiletter control sequences out of 15000+600000
+ 54075 multiletter control sequences out of 15000+600000
  526756 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,1966b,910s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on Oct23_theory-lunch.pdf (61 pages, 2202109 bytes).
+Output written on Oct23_theory-lunch.pdf (62 pages, 2201904 bytes).
 PDF statistics:
- 538 PDF objects out of 1000 (max. 8388607)
- 387 compressed objects within 4 object streams
- 142 named destinations out of 1000 (max. 500000)
+ 543 PDF objects out of 1000 (max. 8388607)
+ 391 compressed objects within 4 object streams
+ 144 named destinations out of 1000 (max. 500000)
  148 words of extra memory for PDF output out of 10000 (max. 10000000)
 

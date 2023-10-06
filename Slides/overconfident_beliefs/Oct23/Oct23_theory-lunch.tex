@@ -41,8 +41,8 @@ The case of overconfidence}
 
 \frame{\titlepage}
 
-\begin{frame}{Overconfidence is Costly}
-    \textbf{OVERCONFIDENCE}: Belief that my type is higher than it truly is (``overestimation'' as in Moore and Healy (2008))\\
+\begin{frame}{Overconfidence}
+    \textbf{OVERCONFIDENCE}: Belief that type is higher than it truly is (``overestimation'' as in Moore and Healy (2008))\\
     \bigskip
     \pause
     Seems to be persistent in various settings. 
@@ -63,7 +63,7 @@ The case of overconfidence}
         \item An \alert{\textbf{Exogenous}} parameter
     \end{itemize}
     \bigskip
-    Some of the features that theory has incorporated to explain overconfidence are:
+    Some of the assumptions that theory has incorporated to rationalize overconfidence are:
     \begin{itemize}
         \item Dogmatism
         \item Paradigm shifts
@@ -108,16 +108,11 @@ The case of overconfidence}
 \end{frame}
 
 \begin{frame}{Questions}
-    Which of the proposed features better explain the observed behavior?\\
-    \begin{itemize}
-        \item Do we observe heterogeneity in the use of misspecified models?
-    \end{itemize}
+    Which of the proposed theories gives a better explanation of behavior?\\
     \bigskip
-
-    Is ego-relevance of the parameter a key feature for the misspecification?\\
+    Do the theories apply only to misspecifications about ego-relevant parameters?\\
     \begin{itemize}
-        \item Are ego-relevant misspecifications more likely to persist than stereotypes?
-        \item Can the same theories be used to explain the prevalence of stereotypes?
+        \item Can the same theories explain the prevalence of stereotypes?
         
     \end{itemize}
 \end{frame}
@@ -151,7 +146,7 @@ The case of overconfidence}
         \item Once $\omega$ is known, $\theta$ can be backed out\\
      \end{itemize}
     \bigskip
-    How come people don't learn their true type and don't choose the optimal effort?
+    Why do people not learn the true values of the parameters?
 \end{frame}
 
 \begin{frame}{Road-map}
@@ -564,7 +559,7 @@ with $p(\omega_k)=1/3$ \\
         \item $p_t(s_t|\cdot)$ for $\hat{\theta}$ and $\theta'$
     \end{itemize}
     \bigskip
-    They swithch to whichever paradigm is morelikely to have generated the signals
+    They switch to whichever paradigm is morelikely to have generated the signals
     $$ \frac{p_t(s_t|\theta')}{p_t(s_t|\hat{\theta})}>\alpha\geq1$$
     
 \end{frame}
@@ -650,8 +645,22 @@ with $p(\omega_k)=1/3$ \\
 \end{frame}
 
 
-
 \section*{Experimental Design}
+
+\begin{frame}{The Experiment}
+
+    Two parts:\\
+    \begin{enumerate}
+        \item Setting the types
+        \item updating
+    \end{enumerate}
+    \bigskip
+    Two treatments:\\
+    \begin{enumerate}
+        \item Ego
+        \item Stereotype
+    \end{enumerate}
+\end{frame}
 
 \begin{frame}{Set the Types}
     \bigskip
@@ -681,9 +690,10 @@ with $p(\omega_k)=1/3$ \\
 
 
 \begin{frame}{Choice and Update}
-    Effort choice and feedback (One topic at a time)\\
+    ``Effort'' choice and feedback (One topic at a time)\\
     \bigskip
     \begin{itemize}
+        \item A success rate is drawn at random (A, B or C)
         \item Choose a gamble: A, B or C (effort)
         \item Receive a sample of 10 signal realizations
     \end{itemize}
@@ -715,7 +725,7 @@ with $p(\omega_k)=1/3$ \\
 \begin{frame}{Eliciting Beliefs?}
     \begin{itemize}
 
-        \item $E[\omega]$ is revealed by their choice of effort\\
+        \item Track their belief about $\omega$ with their choices\\
         \bigskip
         \item Eliciting beliefs for $\theta$ can incentivize learning in a way that is not consistent with the theory\\
         \bigskip
@@ -783,11 +793,11 @@ with $p(\omega_k)=1/3$ \\
     \label{typeheat}
     \begin{figure}
         \centering
-        \includegraphics[scale=.3]{believed_actual_type_heat.png}
+        \includegraphics[scale=.3]{misspecifications_characteristics_treatment.png}
     \end{figure}
 
     %add a hyperlink button to the appendix slide with the misspecification_heat
-    \action{\hyperlink{misspecificationsheat}{\beamerbutton{misspecifications}}} 
+    \action{\hyperlink{misspecificationsheat}{\beamerbutton{types}}} 
 
 \end{frame}
 
@@ -812,7 +822,7 @@ with $p(\omega_k)=1/3$ \\
     \label{misspecificationsroundstypes}
     \begin{figure}
         \centering
-        \includegraphics[scale=.3]{misspecification_evolution_tratment.png}
+        \includegraphics[scale=.5]{misspecification_round_tratment.png}
     \end{figure}
     \action{\hyperlink{misspecificationsrounds}{\beamerbutton{overall}}}
 \end{frame}
@@ -837,7 +847,7 @@ with $p(\omega_k)=1/3$ \\
 
 \section*{Parameters}
 
-\begin{frame}{Identification of $\alpha$}
+\begin{frame}{Calibration of $\alpha$}
 
     Whenever the agent switches from one paradigm to another, they are revealing that \\
     $$\frac{p_t(s^t|\theta')}{p_t(s^t|\hat{\theta})}=\alpha$$
@@ -898,15 +908,13 @@ with $p(\omega_k)=1/3$ \\
 
 \begin{frame}{Summary}
 
-\begin{itemize}
-    \item Data is not fully consistent with the models
-    \item Some indications of self-attribution bias and/or paradigm shifts
-    \item Need a better estimation of the parameters
-    \item Are subjects experimenting in order to learn?
-    \begin{itemize}
-        \item Hestermann and Le Yaouanq (2021)
-    \end{itemize}
-\end{itemize}
+    I develop a framework that nests predictions from several models of overconfidence\\
+    \bigskip
+    I compare the fit of the predictions of these models to behavior in a laboratory experiment\\
+    \bigskip
+    I find that the data is best explained by a model of self-attribution bias or paradigm shifts\\
+    \bigskip
+    The models seem to be able to explain the prevalence of stereotypes as well as overconfidence\\
     
 \end{frame}
 
@@ -919,7 +927,7 @@ with $p(\omega_k)=1/3$ \\
         \end{itemize}
         \item Can dynamic learning explain the data better?
         \begin{itemize}
-            \item This model would predict underconfidence to be more persistent than overconfidence
+            \item Hestermann and Le Yaouanq (2019)
         \end{itemize}
 
     \end{enumerate}
@@ -937,7 +945,7 @@ with $p(\omega_k)=1/3$ \\
     \label{misspecificationsheat}
     \begin{figure}
         \centering
-        \includegraphics[scale=.3]{misspecifications_characteristics_treatment.png}
+        \includegraphics[scale=.3]{believed_actual_type_heat.png}
     \end{figure}
     \action{\hyperlink{typeheat}{\beamerbutton{Back}}}
 \end{frame}
@@ -956,7 +964,7 @@ with $p(\omega_k)=1/3$ \\
     \label{misspecificationsrounds}
     \begin{figure}
         \centering
-        \includegraphics[scale=.5]{misspecification_round_tratment.png}
+        \includegraphics[scale=.4]{misspecification_evolution_tratment.png}
     \end{figure}
     \action{\hyperlink{misspecificationsroundstypes}{\beamerbutton{Back}}}
 \end{frame}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.4)  12 SEP 2023 09:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.5)  7 OCT 2023 15:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -288,14 +288,27 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen160
 \Gm@layoutvoffset=\dimen161
 \Gm@dimlist=\toks25
+) (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+(/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
 )
 \c@assumption=\count286
 \c@proposition=\count287
 (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2023/07/05 v6.0f a miscellany of footnote facilities
 \FN@temptoken=\toks26
-\footnotemargin=\dimen162
-\@outputbox@depth=\dimen163
+\footnotemargin=\dimen164
+\@outputbox@depth=\dimen165
 Package footmisc Info: Declaring symbol style bringhurst on input line 696.
 Package footmisc Info: Declaring symbol style chicago on input line 704.
 Package footmisc Info: Declaring symbol style wiley on input line 713.
@@ -305,17 +318,17 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 765.
 ) (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/07/31 v3.6n Customizing captions (AR)
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen164
-\captionmargin=\dimen165
-\caption@leftmargin=\dimen166
-\caption@rightmargin=\dimen167
-\caption@width=\dimen168
-\caption@indent=\dimen169
-\caption@parindent=\dimen170
-\caption@hangindent=\dimen171
+\caption@tempdima=\dimen166
+\captionmargin=\dimen167
+\caption@leftmargin=\dimen168
+\caption@rightmargin=\dimen169
+\caption@width=\dimen170
+\caption@indent=\dimen171
+\caption@parindent=\dimen172
+\caption@hangindent=\dimen173
 Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count288
@@ -325,36 +338,36 @@ Package caption Info: hyperref package is loaded.
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 ) (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen172
-\lightrulewidth=\dimen173
-\cmidrulewidth=\dimen174
-\belowrulesep=\dimen175
-\belowbottomsep=\dimen176
-\aboverulesep=\dimen177
-\abovetopsep=\dimen178
-\cmidrulesep=\dimen179
-\cmidrulekern=\dimen180
-\defaultaddspace=\dimen181
+\heavyrulewidth=\dimen174
+\lightrulewidth=\dimen175
+\cmidrulewidth=\dimen176
+\belowrulesep=\dimen177
+\belowbottomsep=\dimen178
+\aboverulesep=\dimen179
+\abovetopsep=\dimen180
+\cmidrulesep=\dimen181
+\cmidrulekern=\dimen182
+\defaultaddspace=\dimen183
 \@cmidla=\count290
 \@cmidlb=\count291
-\@aboverulesep=\dimen182
-\@belowrulesep=\dimen183
+\@aboverulesep=\dimen184
+\@belowrulesep=\dimen185
 \@thisruleclass=\count292
 \@lastruleclass=\count293
-\@thisrulewidth=\dimen184
+\@thisrulewidth=\dimen186
 ) (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen185
+\col@sep=\dimen187
 \ar@mcellbox=\box53
-\extrarowheight=\dimen186
+\extrarowheight=\dimen188
 \NC@list=\toks27
 \extratabsurround=\skip54
 \backup@length=\skip55
 \ar@cellbox=\box54
 )
-\rotheadsize=\dimen187
+\rotheadsize=\dimen189
 \c@nlinenum=\count294
 \TeXr@lab=\toks28
 ) (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
@@ -370,25 +383,31 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 ) (./draft.aux)
 \openout1 = `draft.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-Package hyperref Info: Link coloring OFF on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+(/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+(/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package hyperref Info: Link coloring OFF on input line 94.
 (./draft.out) (./draft.out)
 \@outlinefile=\write3
 \openout3 = `draft.out'.
@@ -429,74 +448,111 @@ Package hyperref Info: Link coloring OFF on input line 81.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 83.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 96.
 (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 83.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 96.
 (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 83.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 96.
 (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 83.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 96.
 (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 83.
+(Font)              <14.4> on input line 96.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 83.
+(Font)              <10> on input line 96.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 83.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 83.
+(Font)              <7> on input line 96.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 96.
 (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 83.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 96.
 (/Users/jimenagalindo/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 96.
+(Font)              <12> on input line 119.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 96.
+(Font)              <8> on input line 119.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 96.
+(Font)              <6> on input line 119.
 [1
 
 {/Users/jimenagalindo/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 130.
+(Font)              <5> on input line 154.
 [2] [3] [4] [5] [6] [7{/Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [8] [9]
 
-Package natbib Warning: Citation `chen2016otree' on page 10 undefined on input line 496.
+Package natbib Warning: Citation `chen2016otree' on page 10 undefined on input line 522.
 
-[10] [11] [12] (./draft.bbl [13])
+[10] [11] [12]
+Overfull \hbox (13.36505pt too wide) in paragraph at lines 658--676
+ [][] 
+ []
+
+[13] [14] [15] [16]
+<../figures/misspecification_hist.png, id=248, 406.8801pt x 312.4473pt>
+File: ../figures/misspecification_hist.png Graphic file (type png)
+<use ../figures/misspecification_hist.png>
+Package pdftex.def Info: ../figures/misspecification_hist.png  used on input line 845.
+(pdftex.def)             Requested size: 406.8791pt x 312.44652pt.
+[17] [18 <../figures/misspecification_hist.png>]
+<../figures/misspecifications_characteristics_treatment.png, id=265, 1239.9123pt x 537.4479pt>
+File: ../figures/misspecifications_characteristics_treatment.png Graphic file (type png)
+<use ../figures/misspecifications_characteristics_treatment.png>
+Package pdftex.def Info: ../figures/misspecifications_characteristics_treatment.png  used on input line 865.
+(pdftex.def)             Requested size: 472.02295pt x 204.60136pt.
+[19 <../figures/misspecifications_characteristics_treatment.png>]
+<../figures/effort_learning.png, id=276, 462.528pt x 346.896pt>
+File: ../figures/effort_learning.png Graphic file (type png)
+<use ../figures/effort_learning.png>
+Package pdftex.def Info: ../figures/effort_learning.png  used on input line 904.
+(pdftex.def)             Requested size: 462.54802pt x 346.91101pt.
+<../figures/learning_groups.png, id=278, 462.528pt x 346.896pt>
+File: ../figures/learning_groups.png Graphic file (type png)
+<use ../figures/learning_groups.png>
+Package pdftex.def Info: ../figures/learning_groups.png  used on input line 923.
+(pdftex.def)             Requested size: 462.54802pt x 346.91101pt.
+[20 <../figures/effort_learning.png>] [21 <../figures/learning_groups.png>]
+<../figures/last_button_consistency.png, id=293, 888.6801pt x 447.8331pt>
+File: ../figures/last_button_consistency.png Graphic file (type png)
+<use ../figures/last_button_consistency.png>
+Package pdftex.def Info: ../figures/last_button_consistency.png  used on input line 941.
+(pdftex.def)             Requested size: 472.04234pt x 237.87657pt.
+[22 <../figures/last_button_consistency.png>]
+<../figures/misspecification_transitions.png, id=306, 382.7901pt x 325.6968pt>
+File: ../figures/misspecification_transitions.png Graphic file (type png)
+<use ../figures/misspecification_transitions.png>
+Package pdftex.def Info: ../figures/misspecification_transitions.png  used on input line 984.
+(pdftex.def)             Requested size: 382.79498pt x 325.70096pt.
+[23 <../figures/misspecification_transitions.png>] (./draft.bbl)
 
 Package natbib Warning: There were undefined citations.
 
-[14] (./draft.aux)
+[24] (./draft.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `draft.out' has not changed.
-(rerunfilecheck)             Checksum: BDA02CAF262DE7F7427436F32560A6EB;1912.
+(rerunfilecheck)             Checksum: 9A20023F93704E90E8499ED0E29E64DE;3401.
  ) 
 Here is how much of TeX's memory you used:
- 12580 strings out of 476894
- 196470 string characters out of 5807699
- 1936807 words of memory out of 5000000
- 33632 multiletter control sequences out of 15000+600000
+ 13045 strings out of 476894
+ 205939 string characters out of 5807698
+ 1936791 words of memory out of 5000000
+ 34036 multiletter control sequences out of 15000+600000
  629906 words of font info for 87 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,8n,79p,297b,547s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist, replaced by a fixed one
-
+ 75i,11n,79p,321b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist, replaced by a fixed one
 
@@ -522,10 +578,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on draft.pdf (14 pages, 314938 bytes).
+Output written on draft.pdf (24 pages, 905589 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 435 PDF objects out of 1000 (max. 8388607)
+ 352 compressed objects within 4 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 223 words of extra memory for PDF output out of 10000 (max. 10000000)
 

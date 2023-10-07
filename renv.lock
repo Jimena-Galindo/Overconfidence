@@ -706,7 +706,7 @@
     },
     "languageserver": {
       "Package": "languageserver",
-      "Version": "0.3.15",
+      "Version": "0.3.16",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -726,7 +726,7 @@
         "xml2",
         "xmlparsedata"
       ],
-      "Hash": "fbea0dd12b4f5dedbe3654e4b9cbbddc"
+      "Hash": "f8901f44aedb6d7e7d03b5533986bd97"
     },
     "lattice": {
       "Package": "lattice",

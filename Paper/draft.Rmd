@@ -269,6 +269,7 @@ gets a payoff of $1$ and if it is a success; they get $0$ otherwise.
 The probability of success is increasing in both $\theta$ and $\omega$ and is fully described by the following table:
 
 \begin{table}[htbp]
+\centering
 
 \begin{tabular}{ c|c|c|c|}
   
@@ -352,7 +353,7 @@ the details of how this example was implemented in the lab.
 
 I recruited `r print(unique(updates$code))` undergraduate subjects from the CESS lab at NYU who participated in an in-person experiment. 
 Sessions lasted approximately 
-45 minutes and subjects earned an average payment of $\$22.6$. The experiment was programmed using oTree [@chen2016otree].
+45 minutes and subjects earned an average payment of $\$22.6$. The experiment was programmed using oTree [@otree].
 
 The experiment consisted of 2 treatments: the \emph{ego-relevant} condition and the \emph{stereotype} condition. Subjects participated 
 in only one of the treatments. All subjects within a session participated in the same treatment and the 
@@ -599,7 +600,7 @@ type is tracked by their choice of a matrix in which to enter their effort.
 In order to analyze the learning about the state, I look at the share of optimal choices that are made at each round.
 I find that although subjects seem to be improving in their choices overall, the last choice coincided 
 with the true state only in 52% of the choices in the last round of each task. This is statistically 
-greater than the initial share of optimal choices of 30% ($p<0.01$). However, it is still far from 
+greater than the initial share of optimal choices ($p<0.01$). However, it is still far from 
 complete learning. It is also important to note that learning is similar across treatments. The 
 share of choices that were consistent with the true state for each round is reported in Figure \ref{fig:optimal-choices-by-round}.
 
@@ -610,7 +611,7 @@ sample. Figure \ref{fig:learning-by-groups} shows the share of optimal choices b
 subjects that chose an effort that matched the state in 3 out of the last 4 rounds. It also shows the 
 share of optimal choices for subjects who chose an effort that matched the state in fewer than 3 out of 
 the last 4 rounds. I label the former as learners and the latter as non-learners, with learners making up
-`r round(sum(updates$learner)/nrow(updates), 2)*100`% of the sample.
+`r round(sum(updates$learned)/nrow(updates), 2)*100`% of the sample.
 
 ![Share of optimal choices by round for subjects who learned (their effort in at least 3 out of tha last 4 choices matched the state), and subjects who did not learn](../figures/learning_groups.png){#fig:learning-by-groups}
 
@@ -661,14 +662,148 @@ equilibria allow me to distinguish between the dogmatic modeler and the switcher
 trap and stays there forever, they are more likely to be a dogmatic modeler. If they escape the trap, they
 are more likely to be a switcher or to be updating with some attribution bias.
 
-I look at the subjects who are updating in a task where the combination of $\theta$ and $\omega$ is such that
-there is a self-defeating equilibrium. I then look at how often  
+Overall, it does not seem to be the presence of traps that is preventing learning. Figure \ref{fig:traps}
+shows that the share of subjects who learned in cases where there was a trap is larger than the share of
+subjects who learned in cases where there was no trap. This is true for both treatments. This indicates
+that even in the presence of traps, some people learn.
+
+![Share of subjects who learned in cases where there was a trap and in cases where there was no trap](../figures/learning_trap_presence.png){#fig:traps}
+
+A closer look at the behavior of only the cases in which there were traps reveals that among those who did not
+learn, the choices that support stable beliefs were chosen much more often than among subjects who learned. 
+Figure \ref{fig:traps-choice} shows the share of choices that were consistent with a stable belief for the
+learners and the non-learners. The difference is statistically significant ($p<0.01$). Thus, although the 
+presence of self-defeating equilibria is not the main deterrent to learning, it does seem to be a factor
+in the behavior of those who do not learn. 
+
+![Share of choices that were consistent with a stable belief for the learners and the non-learners](../figures/trap_choice.png){#fig:traps-choice}
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+share_trapped <- round(sum(updates$trapped) / length(updates$trapped),2)
+```
+
+When looking a the behavior in the last 4 rounds of each task, only `r print(share_trapped)*100`% 
+of the subjects  
+were trapped\footnote{I consider a subject to be trapped if 3 out of the last 4 choices were consistent 
+with the self-defeating equilibrium} in a self-defeating equilibrium. These subjects could have been
+dogmatic, switchers for whom the likelihood did not grow fast enough, or Bayesian agents who fell into 
+a self-defeating equilibrium. The rest of the subjects were either updating their beliefs with a bias
+or were switchers.
+
+So far I have accounted for `r share_trapped*100`% subjects as being trapped, and 
+`r round(sum(updates$learned)/nrow(updates), 2)*100`%
+having learned the state correctly. From the remaining `r (1 - share_trapped - round(sum(updates$learned)/nrow(updates), 2))*100`%, 
+`r round(sum(updates$categorized=='neither' & updates$trap==1)/sum(updates$categorized=='neither'), 2)*100`% were prone to traps
+but did not fall into them, therefore they could not have been dogmatic modelers. Alternative explanations
+are that they were switchers who considered an incorrect alternative model, or that they were updating with a bias so large that their effort
+choices were far from optimal.
+
+In the following section, I look at indications of biased updating among all the groups identified so far.
+
 
 ## Reactions to good and bad news
 
+One of the key features of the self-attribution bias is that the agent will react differently to good news and bad news.
+In particular, they will overreact to bad news and underreact to good news. I define good news to be any sample of outcomes
+for which the realized number of successes is greater than the average number of successes so far. Similarly, I define bad news to be
+any sample of outcomes for which the realized number of successes is smaller than the average number of successes so far.
+In addition, I calculate the difference between the realized number of successes and the average number of successes so far and
+call it the news differential.
+Figure \ref{fig:good-bad-news} shows the correlation between change in effort and the news differential, separately for 
+good and bad news. 
+
+The overall pattern is that bad news are associated with a decrease in effort, and a 
+more negative news differential is associated with a larger decrease in effort. On the contrary, good news are associated with 
+a small decrease in effort. As mentioned in the predictions section, this is consistent with the self-attribution bias as well
+as with a change of paradigm. It is not consistent with the dogmatic modeler or the Bayesian. Because 
+I do not directly elicit beliefs, it is not possible to distinguish between the self-attribution bias and the change of 
+paradigm with this data alone.
+Nevertheless, the fact that about a third of the subjects started with a correctly specified belief and ended up overconfident
+is consistent only with the self-attribution bias. Therefore, I conclude that the self-attribution bias is the most likely
+explanation for the behavior of the subjects in the experiment.
+
+![Change in effort by news differential](../figures/effort_change_news.png){#fig:good-bad-news}
+
+A regression analysis of this same data reveals that indeed, the slopes are different for the two types 
+of news and that the difference is statistically significant ($p<0.01$). The regression results are reported in Table \ref{tab:regression}.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE }
+reg <- lm(effort_change ~ good_news + news_diff + news_diff:good_news, data=updates[round_number>1,])
+robust_se <- sqrt(diag(vcovHC(reg)))
+
+# Attach the robust standard errors to the coefficient estimates
+coefs <- coef(reg)
+coefs <- cbind(coefs, robust_se)
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# run the regression only for treatment  = ego
+reg_ego <- lm(effort_change ~ good_news + news_diff + news_diff:good_news, data=updates[round_number>1 & treatment == 'ego',])
+
+# Attach the robust standard errors to the coefficient estimates
+coefs_ego <- coef(reg_ego)
+coefs_ego <- cbind(coefs_ego, robust_se)
+
+# run the regression only for treatment  = stereotype
+reg_stereotype <- lm(effort_change ~ good_news + news_diff + news_diff:good_news, data=updates[round_number>1 & treatment == 'stereotype',])
+
+# Attach the robust standard errors to the coefficient estimates
+coefs_stereotype <- coef(reg_stereotype)
+coefs_stereotype <- cbind(coefs_stereotype, robust_se)
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+# report reg, reg_ego, reg_stereotype in different columns using stargazer
+
+stargazer(reg, reg_ego, reg_stereotype, 
+title='Regression of effort change on news differential', 
+          dep.var.labels='Change in effort', 
+          covariate.labels=c('Good News', 'News differential', 'News Differential * Good News'),
+          column.labels=c('All', 'Ego-relevant', 'Stereotype'), 
+          omit.stat=c('f', 'ser'), 
+          digits=2, 
+          label='tab:regression', 
+          header=FALSE, 
+          se = list(coefs[, 2], coefs_ego[, 2], coefs_stereotype[, 2]))
+```
 
 
+
+
+# Structural estimation
+
+## Model fit
 
 # Conclusion
+
+I  designed a setting in which I can distinguish between the forces of dogmatism, paradigm shifts, and optimal expectations.
+Through a laboratory experiment, I collected data on behavior and infer beliefs from it. I find that 
+the behavior of the subjects is consistent with the self-attribution bias. In particular, I find that 
+subjects decrease their effort in response to bad news as well as to bad news, although the latter decrease 
+is smaller. This is consistent with the self-attribution bias as well as with a change of paradigm. However,
+I also observe that about a third of the subjects started with a correctly specified belief and ended up
+overconfident. This is consistent only with the self-attribution bias. Therefore, I conclude that the
+model that best explains the data is that of optimal expectations. 
+
+I have small or no effects throughout on the ego-relevance of the type. Although the motivation behind the 
+theories does not directly apply to the case of stereotypes, the lack of stark differences suggest that 
+biases arise due to an incorrect updating procedure and not necessarily due to the self-serving motivation 
+behind the bias. The lack of differences in the behavior of the subjects across treatments could also 
+be due to self-censoring of the subjects. In particular, subjects might be initially reluctant to 
+express their true belief about a particular group of people. In addition, as they learn and realize 
+that their beliefs might be incorrect, they might overreact to signals to try to compensate for the initial 
+bias. Such an updating procedure would be consistent with the self-attribution bias for the case of sterotypes.
+I remain agnostic about whether that is truly the case or whether the lack of differences is due to other 
+factors. 
+
+Another bias that has been studied and suggested in the literature is the confirmation bias. In particular,
+it has been suggested that subjects who are overestimate $\theta$ in their prior, will over-attribute 
+successes to a high type and under-attribute them to a low type. Symmetrically, subjects who initially 
+underestimate $\theta$ will over-attribute failures to a low type and under-attribute them to a high type.
+I do not find evidence of such a bias in the data. This is consistent with what @Mobius2022 find in their
+experiment.
+
+I further investigate possible heterogeneity in the underlying models being used by estimating the 
+structural parameters of the models.
 
 # References

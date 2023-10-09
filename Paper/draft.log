@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.5)  7 OCT 2023 15:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.5)  8 OCT 2023 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -489,70 +489,90 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 {/Users/jimenagalindo/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 154.
-[2] [3] [4] [5] [6] [7{/Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [8] [9]
-
-Package natbib Warning: Citation `chen2016otree' on page 10 undefined on input line 522.
-
-[10] [11] [12]
+[2] [3] [4] [5] [6] [7{/Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [8] [9] [10] [11] [12]
 Overfull \hbox (13.36505pt too wide) in paragraph at lines 658--676
  [][] 
  []
 
 [13] [14] [15] [16]
-<../figures/misspecification_hist.png, id=248, 406.8801pt x 312.4473pt>
+<../figures/misspecification_hist.png, id=263, 406.8801pt x 312.4473pt>
 File: ../figures/misspecification_hist.png Graphic file (type png)
 <use ../figures/misspecification_hist.png>
 Package pdftex.def Info: ../figures/misspecification_hist.png  used on input line 845.
 (pdftex.def)             Requested size: 406.8791pt x 312.44652pt.
 [17] [18 <../figures/misspecification_hist.png>]
-<../figures/misspecifications_characteristics_treatment.png, id=265, 1239.9123pt x 537.4479pt>
+<../figures/misspecifications_characteristics_treatment.png, id=280, 1239.9123pt x 537.4479pt>
 File: ../figures/misspecifications_characteristics_treatment.png Graphic file (type png)
 <use ../figures/misspecifications_characteristics_treatment.png>
 Package pdftex.def Info: ../figures/misspecifications_characteristics_treatment.png  used on input line 865.
 (pdftex.def)             Requested size: 472.02295pt x 204.60136pt.
 [19 <../figures/misspecifications_characteristics_treatment.png>]
-<../figures/effort_learning.png, id=276, 462.528pt x 346.896pt>
+<../figures/effort_learning.png, id=291, 462.528pt x 346.896pt>
 File: ../figures/effort_learning.png Graphic file (type png)
 <use ../figures/effort_learning.png>
 Package pdftex.def Info: ../figures/effort_learning.png  used on input line 904.
 (pdftex.def)             Requested size: 462.54802pt x 346.91101pt.
-<../figures/learning_groups.png, id=278, 462.528pt x 346.896pt>
+<../figures/learning_groups.png, id=293, 462.528pt x 346.896pt>
 File: ../figures/learning_groups.png Graphic file (type png)
 <use ../figures/learning_groups.png>
 Package pdftex.def Info: ../figures/learning_groups.png  used on input line 923.
 (pdftex.def)             Requested size: 462.54802pt x 346.91101pt.
 [20 <../figures/effort_learning.png>] [21 <../figures/learning_groups.png>]
-<../figures/last_button_consistency.png, id=293, 888.6801pt x 447.8331pt>
+<../figures/last_button_consistency.png, id=309, 888.6801pt x 447.8331pt>
 File: ../figures/last_button_consistency.png Graphic file (type png)
 <use ../figures/last_button_consistency.png>
 Package pdftex.def Info: ../figures/last_button_consistency.png  used on input line 941.
 (pdftex.def)             Requested size: 472.04234pt x 237.87657pt.
 [22 <../figures/last_button_consistency.png>]
-<../figures/misspecification_transitions.png, id=306, 382.7901pt x 325.6968pt>
+<../figures/misspecification_transitions.png, id=321, 382.7901pt x 325.6968pt>
 File: ../figures/misspecification_transitions.png Graphic file (type png)
 <use ../figures/misspecification_transitions.png>
 Package pdftex.def Info: ../figures/misspecification_transitions.png  used on input line 984.
 (pdftex.def)             Requested size: 382.79498pt x 325.70096pt.
-[23 <../figures/misspecification_transitions.png>] (./draft.bbl)
+[23 <../figures/misspecification_transitions.png>]
+<../figures/learning_trap_presence.png, id=330, 462.528pt x 346.896pt>
+File: ../figures/learning_trap_presence.png Graphic file (type png)
+<use ../figures/learning_trap_presence.png>
+Package pdftex.def Info: ../figures/learning_trap_presence.png  used on input line 1019.
+(pdftex.def)             Requested size: 462.54802pt x 346.91101pt.
+<../figures/trap_choice.png, id=332, 462.528pt x 346.896pt>
+File: ../figures/trap_choice.png Graphic file (type png)
+<use ../figures/trap_choice.png>
+Package pdftex.def Info: ../figures/trap_choice.png  used on input line 1038.
+(pdftex.def)             Requested size: 462.54802pt x 346.91101pt.
+[24] [25 <../figures/learning_trap_presence.png>] [26 <../figures/trap_choice.png>] [27]
+<../figures/effort_change_news.png, id=362, 449.5194pt x 361.35pt>
+File: ../figures/effort_change_news.png Graphic file (type png)
+<use ../figures/effort_change_news.png>
+Package pdftex.def Info: ../figures/effort_change_news.png  used on input line 1098.
+(pdftex.def)             Requested size: 449.51828pt x 361.34912pt.
+[28 <../figures/effort_change_news.png>] [29]
+
+Package natbib Warning: Citation `Mobius2022' on page 30 undefined on input line 1184.
+
+[30] (./draft.bbl)
 
 Package natbib Warning: There were undefined citations.
 
-[24] (./draft.aux)
+[31] (./draft.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `draft.out' has not changed.
-(rerunfilecheck)             Checksum: 9A20023F93704E90E8499ED0E29E64DE;3401.
+(rerunfilecheck)             Checksum: BDDFF862D1D283D7D277EF1D84EDBAF6;3790.
  ) 
 Here is how much of TeX's memory you used:
- 13045 strings out of 476894
- 205939 string characters out of 5807698
+ 13101 strings out of 476894
+ 207211 string characters out of 5807698
  1936791 words of memory out of 5000000
- 34036 multiletter control sequences out of 15000+600000
+ 34070 multiletter control sequences out of 15000+600000
  629906 words of font info for 87 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,11n,79p,321b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist, replaced by a fixed one
 
@@ -578,10 +598,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/jimenagalindo/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on draft.pdf (24 pages, 905589 bytes).
+Output written on draft.pdf (31 pages, 971136 bytes).
 PDF statistics:
- 435 PDF objects out of 1000 (max. 8388607)
- 352 compressed objects within 4 object streams
- 101 named destinations out of 1000 (max. 500000)
- 223 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 508 PDF objects out of 1000 (max. 8388607)
+ 411 compressed objects within 5 object streams
+ 123 named destinations out of 1000 (max. 500000)
+ 262 words of extra memory for PDF output out of 10000 (max. 10000000)
 

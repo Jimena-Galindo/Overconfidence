@@ -43,6 +43,9 @@ The case of overconfidence}
 
 \begin{frame}{Overconfidence}
     \textbf{Overestimation}: Belief that type is higher than it truly is\\
+    \begin{itemize}
+        \item \textit{e.g. Believing you have an IQ of 150 when it is actually 100}
+    \end{itemize}
     \bigskip
     \pause
     Seems to be persistent in various settings. 
@@ -52,7 +55,7 @@ The case of overconfidence}
         \item  Workers overestimate their productivity (Hoffman and Burks, 2020)
     \end{itemize}
     \bigskip
-    \alert{Ultimately it leads to sub-optimal choices}
+    \alert{Ultimately it leads to costly choices}
     
 \end{frame}
 
@@ -62,7 +65,9 @@ The case of overconfidence}
         \item An \alert{\textbf{Ego-Relevant}} parameter
         \item An \alert{\textbf{Exogenous}} parameter
     \end{itemize}
+    \textit{For instance skill and luck when playing a game}\\
     \bigskip
+    \pause
     Some of the assumptions that theory has incorporated to rationalize overconfidence are:
     \begin{itemize}
         \item Dogmatism
@@ -149,7 +154,7 @@ The case of overconfidence}
     Why do people not learn the true values of the parameters?
 \end{frame}
 
-\begin{frame}{Result Preview}
+\begin{frame}{Preview of Results}
 
     From the proposed mechanisms:
     \begin{itemize}
@@ -159,12 +164,12 @@ The case of overconfidence}
         \bigskip
         \item Most evidence supporting \alert{Motivated Beliefs}
         \bigskip
-        \item Some indications of forward-looking behavior
+        \item Biased updating about others (but for potentially different reasons)
     \end{itemize}
 
 \end{frame}
 
-\begin{frame}{Road-map}
+\begin{frame}{Roadmap}
     \begin{enumerate}
         \item Unifying Framework\\
         \bigskip
@@ -290,9 +295,9 @@ with $p(\omega_k)=1/3$ \\
 \begin{frame}{The Data Generating Process}
 \begin{center}
 \begin{tikzpicture}
-  \draw[<-] (1,0) -- (3,0);
-  \draw[<-] (5,0) -- (7,0);
-  \draw[<-] (9,0) -- (11,0);
+  \draw[<-] (2,0) -- (4,0);
+  \draw[<-] (6,0) -- (8,0);
+  \draw[<-] (10,0) -- (12,0);
 \end{tikzpicture}
 \end{center}
 
@@ -500,11 +505,7 @@ with $p(\omega_k)=1/3$ \\
 \end{frame}
 
 \begin{frame}{The Dogmatic Modeler: Mechanism}
-    A student who dogmatically believes he is $\theta_H$ but truly is $\theta_M$\\
-    The exogenos parameter is $\omega_M$\\
-    
-    \bigskip
-
+    A student who dogmatically believes he is $\theta_H$ \\
     \begin{enumerate}
         \item Chooses $e_H$ and is disappointed $\rightarrow$ adjust belief about $\omega$ downward\\
         \bigskip
@@ -513,7 +514,7 @@ with $p(\omega_k)=1/3$ \\
         \item Eventually chooses $e_L$ and falls into a self-confirming equilibrium
     \end{enumerate}
 
-    \centering
+    \begin{center}
     \begin{tabular}{ c|c|c|c|}
     
     \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\omega_H$} & \multicolumn{1}{c}{$\omega_M$} & \multicolumn{1}{c}{$\omega_L$}\\
@@ -552,6 +553,8 @@ with $p(\omega_k)=1/3$ \\
     \cline{2-4}
     \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\tikz[baseline=-0.5ex]{\node[draw=red,dashed, circle,inner sep=2pt]{$\theta_H$};}}  & \multicolumn{1}{c}{}\\
     \end{tabular}
+    \end{center}
+
     \label{dogmatic}
     \action{\hyperlink{dogmaticpath}{\beamerbutton{path}}}
     
@@ -566,7 +569,7 @@ with $p(\omega_k)=1/3$ \\
         \item $p_t(s_t|\cdot)$ for $\hat{\theta}$ and $\theta'$
     \end{itemize}
     \bigskip
-    They switch to whichever paradigm is morelikely to have generated the signals
+    They switch to whichever paradigm is more likely to have generated the signals
     $$ \frac{p_t(s_t|\theta')}{p_t(s_t|\hat{\theta})}>\alpha\geq1$$
     
 \end{frame}
@@ -582,6 +585,9 @@ with $p(\omega_k)=1/3$ \\
         \bigskip
         \item Avoids the self-defeating equilibrium if the likelihood of $\theta_M$ becomes larger than that of $\theta_H$
     \end{enumerate}
+
+    A change in paradigm will often be accompanied with a change in effort in the opposite direction
+    of the signal
 
     \label{switcher}
     \action{\hyperlink{switcherpath}{\beamerbutton{path}}}
@@ -610,8 +616,8 @@ with $p(\omega_k)=1/3$ \\
         \item Chooses $e$ that maximizes utility according to priors
         \bigskip
         \begin{itemize}
-            \item Belief on $\mathbb{E}[\omega]$ deteriorates a lot after bad news $\to$ big change in effort
-            \item Belief on $\mathbb{E}[\theta]$ increases a lot after good news $\to$ small positive (or negative) change in effort \\
+            \item Belief on $\mathbb{E}[\omega]$ deteriorates a lot after bad news $\to$ overreaction in effort
+            \item Belief on $\mathbb{E}[\theta]$ increases a lot after good news $\to$ underreaction in effort (or in opposite direction) \\
         \end{itemize}
     \end{enumerate}
 
@@ -711,7 +717,7 @@ with $p(\omega_k)=1/3$ \\
 
     Observe the characteristics of a participant \\
     \begin{itemize}
-        \item Gender, 
+        \item Gender 
         \item US National or not \\
     \end{itemize}
     \bigskip
@@ -737,9 +743,9 @@ with $p(\omega_k)=1/3$ \\
         
     \end{itemize}
 
-    Allow them to see the success rate matrix for only one type. 
+    Allow them to see the probability matrix for only one type 
     \begin{itemize}
-        \item Track the matrices they choose to see in each round
+        \item Track the matrix they choose to see in each round
     \end{itemize}
 
 \end{frame}
@@ -772,7 +778,7 @@ with $p(\omega_k)=1/3$ \\
     The Sessions:
     \begin{itemize}
         \item 8 sessions 
-        \item 45 minutes on average
+        \item About 45 minutes long
         \item Average payment: $\$23$
         \begin{itemize}
             \item $\$10$ show-up fee
@@ -842,6 +848,23 @@ with $p(\omega_k)=1/3$ \\
 \end{frame}
 
 
+\begin{frame}{Learners, Trapped and Others}
+    So far we have seen that:\\
+    \begin{itemize}
+        \item 40\% of the subjects learn the true state
+        \item About 16\% of the subjects fall into self-defeating equilibria
+        \item 44\% of the subjects don't learn correctly and don't fall into traps
+        \begin{itemize}
+            \item From these 60\% were facing parameters for which there were traps
+        \end{itemize}
+    \end{itemize}
+    \bigskip
+    How did the learners escape the traps?\\
+    \bigskip
+    What is the remaining 44\% doing?\\
+
+\end{frame}
+
 \section*{Misattributions}
 
 \begin{frame}{Initial Misspecifications}
@@ -860,8 +883,7 @@ with $p(\omega_k)=1/3$ \\
         \centering
         \includegraphics[scale=.6]{misspecification_transitions.png}
     \end{figure}
-    \label{transition}
-    \action{\hyperlink{transtreatment}{\beamerbutton{treatments}}}
+
 \end{frame}
 
 
@@ -875,20 +897,25 @@ with $p(\omega_k)=1/3$ \\
 
 \end{frame}
 
-\section*{Other Reasons}
-
-\begin{frame}{Excessive Switching}
+\begin{frame}{Regression Results}
     \begin{figure}
         \centering
-        \includegraphics[scale=.5]{switching.png}
-    \end{figure}
-
-
+        \includegraphics[scale=.3]{regression_table.png}
+    \end{figure}  
 \end{frame}
 
 \section*{Stereotypes}
 
-\begin{frame}{Do misspecifications persist more in the Ego condition?}
+\begin{frame}{Asymmetric Updating in the Stereotype Condition}
+
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.4]{effort_change_news_treatment.png}
+    \end{figure}
+    
+\end{frame}
+
+\begin{frame}{Do misspecifications persist more often in the Ego condition?}
 
         \begin{figure}
             \centering
@@ -896,21 +923,25 @@ with $p(\omega_k)=1/3$ \\
         \end{figure}
 \end{frame}
 
-\begin{frame}{Is the bias more pronounced in the Ego condition?}
-
-    \begin{figure}
-        \centering
-        \includegraphics[scale=.5]{misspecification_round.png}
-    \end{figure}
-\end{frame}
 
 \begin{frame}{Differences across treatments}
     Very slight differences across treatments\\
     \begin{itemize}
         \item Less stickiness in initial beliefs in Stereotype
-        \item More attribution bias in Ego condition
+        \item Attribution bias in Ego condition
+        \item Possible self-censoring in Stereotype
     \end{itemize}
 
+
+\end{frame}
+
+\section*{Other Explanations}
+
+\begin{frame}{Excessive Switching}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=.5]{switching.png}
+    \end{figure}
 
 \end{frame}
 
@@ -985,22 +1016,6 @@ Stereotypes:\\
 
 \end{frame}
 
-\begin{frame}{Dogmatic v. Switcher}
-    \label{pathdistances}
-    \begin{figure}
-        \centering
-        \includegraphics[scale=.5]{distances_switch_dog.png}
-    \end{figure}
-    \action{\hyperlink{meandistances}{\beamerbutton{Back}}}
-\end{frame}
-
-\begin{frame}{Bayesian v. Self-Attribution}
-    \begin{figure}
-        \centering
-        \includegraphics[scale=.5]{distances_bay_ss.png}
-    \end{figure}
-    \action{\hyperlink{meandistances}{\beamerbutton{Back}}}
-\end{frame}
 
 \begin{frame}{The Stereotypes}
     \label{stereotypes}
@@ -1046,16 +1061,9 @@ Stereotypes:\\
     \end{figure}
     \label{ss}
     \action{\hyperlink{sspath}{\beamerbutton{Back}}}
+
 \end{frame}
 
-\begin{frame}{Transitions treatments}
-    \begin{figure}
-        \centering
-        \includegraphics[scale=.35]{misspecification_transitions_treatment.png}
-    \end{figure}
-    \label{transtreatment}
-    \action{\hyperlink{transition}{\beamerbutton{Back}}}    
-\end{frame}
 
 \begin{frame}{Subject categorization}
     \begin{figure}

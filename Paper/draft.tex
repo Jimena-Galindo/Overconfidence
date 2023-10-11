@@ -68,6 +68,7 @@
 \definecolor{mypink}{RGB}{204, 0, 82}
 \newtheorem{assumption}{Assumption}
 \newtheorem{proposition}{Proposition} % Use the 'proposition' counter for numbering
+\usepackage{rotating, graphicx}
 
 \newcommand{\EE}[1]{\mathbb{E}\left[#1\right]}
 \newcommand{\PP}[1]{\mathbb{P}\left(#1\right)}
@@ -89,7 +90,7 @@
 \title{Learning with misspecified models: Overconfidence and
 Stereotypes}
 \author{Jimena Galindo}
-\date{October 09, 2023}
+\date{October 10, 2023}
 
 \begin{document}
 \maketitle
@@ -100,22 +101,71 @@ TBW
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-Overconfidence has been documented in a wide range of settings and has
-been shown to have important economic consequences: \citet{Camerer1999}
-find that overconfidence can explain the excessive entry of
-entrepreneurs into the market; \citet{Hoffman2020} show that workers who
-overestimate their productivity within a firm are less likely to look
-for a new job; \citet{Oster2013} determine that people at high risk of
-Huntington's disease make saving decisions as if they were not at risk.
+A growing body of literature in economics studies the mechanisms through
+which economic agents come to hold incorrect beliefs about a
+fundamental. Most of this literature focuses on the case in which agents
+are passive observers of the world and incorrectly incorporate the
+information they receive into their
+beliefs\footnote{See \citet{benjamin2019} for a review of error in probabilistic thinking}.
+However, in many situations, agents are active participants in the
+process of generating information. In such cases, the information they
+receive is affected by their actions and the way they process it can
+affect their future behavior. I refer to this as an
+\emph{endogenous information} setting. This sort of setting, has been
+shown to explain pehnomena that cannot be rationalized with the
+classical models of biased belief updating (e.g. \citet{Nyarko1991} and
+\citet{Levy2022}). Settings with endogenous information and misspecified
+learning also offer alternative explanations for why certain well known
+biases might persist. I focus on a group of theories that aim to explain
+the prevalence of overconfidence.
 
-Although the bias has been widely studied by economists, the settings in
-which the the belief updating procedure has been studied is narrow in
-scope. In particular, the literature has focused on the cases in which
-the agent updates their beliefs about a single characteristic that they
-might care about. For instance, \citet{Eil2011} study the case in which
-the agent updates their beliefs about their own ability, and their own
-beauty in two separate experiments. Similarly, \citet{Benoit2015} study
-the case in which the agent updates their beliefs about their own IQ.
+Overconfidence has been shown to be a prevalent bias in a variety of
+settongs. \citet{Oster2013} shows that subjects who are at high risk of
+having Huntingtons disease underestimate their probability of having the
+disease and make retirement decisions as if they were not sick. Relating
+to investment decisions, \citet{Hoffman2020} show that workers
+overestimate their productivity in their current employment and are
+unlikely to look for other oportunities. \citet{Camerer1999} find that
+entrepreneurs are overconfident about the quiality of their enterprise,
+which leads to excessive entry and early exit from markets. These are
+only some examples of how holding an incorrect belief about a
+fundamental can lead to costly decisions \footnote{Other examples 
+of overconfidence are }.
+
+I isolate the main forces from 3 different theories of misspecified
+learning. Each of the theories rationalizes the prevalence of
+overconfidence in frameworks where the agents are learning about an
+ego-relevant parameter and an exogenously determined state. The
+interaction between these two parameters together with an endogenous
+information process give rise to two explanaitions for the presistence
+of overconfidence. On one hand, even with bayesian updating, the agent
+may fall into learning traps. Learning traps are misspecified beliefs
+and optimal actions that induce signals that confirm the misspecified
+belief. Once an agent finds themselves in such a situation, the belief
+will be stable and even with a correctly speficified model of learning,
+they will not be able to abandon their icorrect beliefs. On the other
+hand a setting with two variables allows the agent to engage in
+asymmetric updating with respect to good and bad news. When the outcome
+depends on an ego-relevant parameter as well as a state, the agent can
+attribute good news to a high value of the parameter while attributing
+failures to a low value of the exogenous
+parameter\footnote{This is in line with the well known theory 
+in behavioral science of self-attribution bias of which \citet{kelley1980} provides a review.}.
+
+\citet{Heidhues2018} shows that under certain assumptions on the output
+function, learning traps can rationalize the existance of misspecified
+beliefs when agents are dogmatic about the ego-relevant parameter. In a
+more general model \citet{Ba2023} further analyzes this setting and
+characterizes the stuations in which even agents who are not dogmatic
+might become trapped. She allows initi dogmatic agents to consider
+alternative theories and adopt whichever is a better explanation of the
+observed data. They do so by performing Bayesian hypothesis tests that
+compare the likelihood of having observed the outcome under alternative
+paradigms\footnote{A 
+similar mechanism is proposed by \citet{Schwarstein2021} in a setting with persuasion}.
+Although this learning mechanism allows agents to avoid the learning
+traps, there are still situations under which misspecified beliefs may
+persist.
 
 \hypertarget{theoretical-framework}{%
 \section{Theoretical Framework}\label{theoretical-framework}}
@@ -544,18 +594,7 @@ implemented in the lab.
 \hypertarget{experimental-design}{%
 \section{Experimental Design}\label{experimental-design}}
 
-I recruited 0m2xzxgv, 0zs7j0mw, 13f4qqvo, 1c7v4nh9, 1gu1vzgk, 1yeajno3,
-28arcsnx, 32k6klan, 49lqkk00, 72o8c5bk, 73pn8n63, 78jeza78, 7ebbfqqg,
-7h604tn3, 83tbxcch, 8yvmba6x, 9lzz0jai, 9om8jvev, 9rpnegmp, 9w15nflu,
-bj048c8i, d37p2ydy, dxfg6c2i, e44vpjp5, fpvdnkq8, g2yvlu4k, hp19zqeh,
-inak0r18, iomh77xp, j6ftwuzj, nxd05o0f, p1b4dbgv, p1k5rpou, pxz3760k,
-q9icrsb2, qoio0y3d, rp5nv7ut, sfi4nrq8, su9at1s5, szq917jn, vybvjxs2,
-xvmd7coq, y71ca1at, z6bycrw5, zap4p51l, 0kxsrg73, 1zb27tea, 36b7nxpg,
-3cv0gsso, 4d7lvql9, 4kecnisx, 56op1uib, 6sybrxjn, 6zd6yym2, 78sdphga,
-a22g0du7, byf6tjt0, cioxyqvq, cl0818oa, dk93ewke, ffd2bxk4, g2p53iqv,
-idzf7yro, ilooy3i8, j3r6tuv8, jk70axat, jka2nr9v, k43107gm, ko3jhnbj,
-lmiiifw0, n86dcmzu, ncvtgyzn, oqf1d07l, q9jar1of, uz5m20q1, v3yunf9n,
-wursesku, zwzznpo6 undergraduate subjects from the CESS lab at NYU who
+I recruited 78 undergraduate subjects from the CESS lab at NYU who
 participated in an in-person experiment. Sessions lasted approximately
 45 minutes and subjects earned an average payment of \(\$22.6\). The
 experiment was programmed using oTree \citep{otree}.
@@ -1065,8 +1104,8 @@ are in a trap and others}\label{fig:traps-choice}
 }
 \end{figure}
 
-So far I have accounted for 21\% subjects as being trapped, and 39\%
-having learned the state correctly. From the remaining 35\%, 60\% were
+So far I have accounted for 16\% subjects as being trapped, and 39\%
+having learned the state correctly. From the remaining 45\%, 60\% were
 prone to traps but did not fall into them, therefore they could not have
 been dogmatic modelers. Alternative explanations are that they were
 switchers who considered an incorrect alternative model, or that they
@@ -1139,39 +1178,39 @@ who initially underestimated the performance of the other participant might have
 by overestimating it after good news. This is consistent with the data presented here as well as with 
 the data observed in the transition matrix for stereotypes which is reported in the Appendix}
 
-\begin{table}[!htbp] \centering 
-  \caption{Regression of effort change on news differential with robust standard errors} 
+\begin{sidewaystable}[!htbp] \centering 
+  \caption{Regression of effort change on news difference with robust standard errors} 
   \label{tab:regression} 
-\begin{tabular}{@{\extracolsep{5pt}}lcccc} 
+\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
- & \multicolumn{4}{c}{\textit{Dependent variable:}} \\ 
-\cline{2-5} 
-\\[-1.8ex] & \multicolumn{4}{c}{Change in effort} \\ 
- & All & Ego-relevant & Stereotype & Bayesian Simulation \\ 
-\\[-1.8ex] & (1) & (2) & (3) & (4)\\ 
+ & \multicolumn{5}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-6} 
+\\[-1.8ex] & \multicolumn{5}{c}{Change in effort} \\ 
+ & All & Ego-relevant & Stereotype & Bayesian Simulation & Dogmatic Simulation \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5)\\ 
 \hline \\[-1.8ex] 
- Good News & $-$0.12$^{**}$ & $-$0.16$^{***}$ & $-$0.05 & 0.08 \\ 
-  & (0.05) & (0.05) & (0.05) & (0.05) \\ 
-  & & & & \\ 
- News differential & 0.22$^{***}$ & 0.22$^{***}$ & 0.21$^{***}$ & 0.06$^{***}$ \\ 
-  & (0.02) & (0.02) & (0.02) & (0.02) \\ 
-  & & & & \\ 
- News Differential * Good News & $-$0.27$^{***}$ & $-$0.25$^{***}$ & $-$0.29$^{***}$ & $-$0.04 \\ 
-  & (0.02) & (0.02) & (0.02) & (0.02) \\ 
-  & & & & \\ 
- Constant & 0.31$^{***}$ & 0.31$^{***}$ & 0.30$^{***}$ & $-$0.08$^{*}$ \\ 
-  & (0.04) & (0.04) & (0.04) & (0.04) \\ 
-  & & & & \\ 
+ Good news & $-$0.12$^{**}$ & $-$0.16$^{***}$ & $-$0.05 & 0.08 & $-$0.08 \\ 
+  & (0.05) & (0.05) & (0.05) & (0.05) & (0.05) \\ 
+  & & & & & \\ 
+ News difference & 0.22$^{***}$ & 0.22$^{***}$ & 0.21$^{***}$ & 0.06$^{***}$ & 0.10$^{***}$ \\ 
+  & (0.02) & (0.02) & (0.02) & (0.02) & (0.02) \\ 
+  & & & & & \\ 
+ News difference * Good news & $-$0.27$^{***}$ & $-$0.25$^{***}$ & $-$0.29$^{***}$ & $-$0.04 & $-$0.06$^{***}$ \\ 
+  & (0.02) & (0.02) & (0.02) & (0.02) & (0.02) \\ 
+  & & & & & \\ 
+ Constant & 0.31$^{***}$ & 0.31$^{***}$ & 0.30$^{***}$ & $-$0.08$^{*}$ & 0.05 \\ 
+  & (0.04) & (0.04) & (0.04) & (0.04) & (0.04) \\ 
+  & & & & & \\ 
 \hline \\[-1.8ex] 
-Observations & 4,680 & 2,700 & 1,980 & 4,680 \\ 
-R$^{2}$ & 0.04 & 0.04 & 0.04 & 0.05 \\ 
-Adjusted R$^{2}$ & 0.04 & 0.04 & 0.04 & 0.05 \\ 
+Observations & 4,680 & 2,700 & 1,980 & 4,680 & 4,680 \\ 
+R$^{2}$ & 0.04 & 0.04 & 0.04 & 0.05 & 0.06 \\ 
+Adjusted R$^{2}$ & 0.04 & 0.04 & 0.04 & 0.05 & 0.06 \\ 
 \hline 
 \hline \\[-1.8ex] 
-\textit{Note:}  & \multicolumn{4}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\textit{Note:}  & \multicolumn{5}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
 \end{tabular} 
-\end{table}
+\end{sidewaystable}
 
 More convincing evidence against the Switching model is the lack of
 inverse or attenuated correlation between the change in effort and the
@@ -1281,6 +1320,9 @@ consistent with what \citet{Mobius2022} find in their experiment.
 
 I further investigate possible heterogeneity in the underlying models
 being used by estimating the structural parameters of the models.
+
+\hypertarget{references}{%
+\section{References}\label{references}}
 
 \hypertarget{appendix}{%
 \section{Appendix}\label{appendix}}
@@ -1514,7 +1556,6 @@ That is the number of successes and failures for each of your choices.
 The rate will be drawn again for the next task, corresponding to the
 next quiz topic. And you will repeat this process.
 
-\renewcommand\refname{References}
   \bibliography{references.bib}
 
 \end{document}

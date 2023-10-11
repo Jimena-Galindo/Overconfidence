@@ -25,9 +25,11 @@ output:
         includes:
           in_header: extra_header.tex
 
+
 bibliography: references.bib
 fontsize: 12pt 
 geometry: margin=2.5cm
+
 ---
 
 ```{r dependencies, include=FALSE}
@@ -46,18 +48,54 @@ updates <- fread("../Clean/updates_post.csv")
 
 # Introduction
 
-Overconfidence has been documented in a wide range of settings and has been shown to have important economic consequences:
-@Camerer1999 find that overconfidence can explain the excessive entry of entrepreneurs into the market; @Hoffman2020 show that
-workers who overestimate their productivity within a firm are less likely to look for a new job; @Oster2013 determine that 
-people at high risk of Huntington's disease make saving decisions as if they were not at risk. 
- 
-Although the bias has been widely studied by economists, the settings in which 
-the the belief updating procedure has been studied is narrow in scope. In particular, the literature has focused on
-the cases in which the agent updates their beliefs about a single characteristic that they might care about.
-For instance, @Eil2011 study the case in which the agent updates their beliefs about their own ability, and their 
-own beauty in two separate experiments. Similarly, @Benoit2015 study the case in which the agent updates their 
-beliefs about their own IQ.
+A growing body of literature in economics studies the mechanisms through which economic agents come to 
+hold incorrect beliefs about a fundamental. Most of this literature focuses on the case in which agents
+are passive observers of the world and incorrectly incorporate the information they receive into their 
+beliefs\footnote{See \citet{benjamin2019} for a review of error in probabilistic thinking}.
+However, in many situations, agents are active participants in the process of generating information.
+In such cases, the information they receive is affected by their actions and the way they process it
+can affect their future behavior. I refer to this as an \emph{endogenous information} setting.
+This sort of setting, has been shown to explain pehnomena that
+cannot be rationalized with the classical models of biased belief updating (e.g. @Nyarko1991 and 
+@Levy2022). Settings with endogenous information and misspecified learning also offer alternative explanations 
+for why certain well known biases might persist. I focus on a group of theories that aim to explain 
+the prevalence of overconfidence. 
 
+Overconfidence has been shown to be a prevalent bias in a variety of settongs. @Oster2013 shows that 
+subjects who are at high risk of having Huntingtons disease underestimate their probability of 
+having the disease and make retirement decisions as if they were not sick. Relating to investment 
+decisions, @Hoffman2020 show that workers overestimate their productivity in their 
+current employment and are unlikely to look for other oportunities. @Camerer1999 find that 
+entrepreneurs are overconfident about the quiality of their enterprise, 
+which leads to excessive entry and early exit from markets. These are only some examples of how 
+holding an incorrect belief about a fundamental can lead to costly decisions \footnote{Other examples 
+of overconfidence are }.
+
+I isolate the main forces from 3 different theories of misspecified learning. Each of the theories 
+rationalizes the prevalence of overconfidence in frameworks where the agents are learning about 
+an ego-relevant parameter and an exogenously determined state. The interaction between these two 
+parameters together with an endogenous information process give rise to two explanaitions
+for the presistence of overconfidence. On one hand, even with bayesian updating, the agent 
+may fall into learning traps. Learning traps are misspecified beliefs and optimal actions 
+that induce signals that confirm the misspecified belief. Once an agent finds themselves in 
+such a situation, the belief will be stable and even with a correctly speficified model of learning, 
+they will not be able to abandon their icorrect beliefs. On the other hand a setting with two variables allows the agent to engage in asymmetric updating 
+with respect to good and bad news. When the outcome depends on an ego-relevant parameter as well
+as a state, the agent can attribute good news to a high value of the parameter while attributing 
+failures to a low value of the exogenous parameter\footnote{This is in line with the well known theory 
+in behavioral science of self-attribution bias of which \citet{kelley1980} provides a review.}.
+
+@Heidhues2018 shows 
+that under certain assumptions on the output function, learning traps can rationalize the 
+existance of misspecified beliefs when agents are dogmatic about the ego-relevant parameter. 
+In a more general model @Ba2023 further analyzes this setting 
+and characterizes the stuations in which even agents who are not dogmatic might become trapped.
+She allows initi dogmatic agents to consider alternative theories and adopt whichever is a 
+better explanation of the observed data. They do so by performing Bayesian hypothesis tests
+that compare the likelihood of having observed the outcome under alternative paradigms\footnote{A 
+similar mechanism is proposed by \citet{Schwarstein2021} in a setting with persuasion}. Although
+this learning mechanism allows agents to avoid the learning traps, there are still situations under
+which misspecified beliefs may persist. 
 
 
 # Theoretical Framework
@@ -820,18 +858,32 @@ coefs_bayesian <- cbind(coefs_bayesian, robust_se)
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+dogmatic <- updates[, .(round_number, good_news_dogmatic, signal_dogmatic_diff, effort_change_dogmatic)]
+setnames(dogmatic, c('good_news_dogmatic', 'signal_dogmatic_diff', 'effort_change_dogmatic'), c('good_news', 'news_diff', 'effort_change'))
+
+# run the regression for the dogmatic simulation
+reg_dogmatic <- lm(effort_change ~ good_news + news_diff + news_diff:good_news, data=dogmatic[round_number>1])
+
+# Attach the robust standard errors to the coefficient estimates
+coefs_dogmatic <- coef(reg_dogmatic)
+coefs_dogmatic <- cbind(coefs_dogmatic, robust_se)
+
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
 # report reg, reg_ego, reg_stereotype in different columns using stargazer
 
-stargazer(reg, reg_ego, reg_stereotype, reg_bayesian,  
+stargazer(reg, reg_ego, reg_stereotype, reg_bayesian, reg_dogmatic,  
           title='Regression of effort change on news difference with robust standard errors', 
           dep.var.labels='Change in effort', 
           covariate.labels=c('Good news', 'News difference', 'News difference * Good news'),
-          column.labels=c('All', 'Ego-relevant', 'Stereotype', 'Bayesian Simulation'), 
+          column.labels=c('All', 'Ego-relevant', 'Stereotype', 'Bayesian Simulation', 'Dogmatic Simulation'), 
           omit.stat=c('f', 'ser'), 
           digits=2, 
           label='tab:regression', 
-          header=FALSE, 
-          se = list(coefs[, 2], coefs_ego[, 2], coefs_stereotype[, 2], coefs_bayesian[, 2]))
+          header=FALSE,
+          float.env='sidewaystable', 
+          se = list(coefs[, 2], coefs_ego[, 2], coefs_stereotype[, 2], coefs_bayesian[, 2], coefs_dogmatic[, 2]))
 
 ```
 
@@ -911,6 +963,8 @@ experiment.
 
 I further investigate possible heterogeneity in the underlying models being used by estimating the 
 structural parameters of the models.
+
+# References
 
 # Appendix
 
@@ -1056,5 +1110,3 @@ First, you must choose the matrix that you want to see. Whatever matrix you choo
 Then, you must choose a gamble (which corresponds to a row). The computer will draw 10 outcomes for that gamble using the probability in the chosen row and the column corresponding to the rate for this task.
 On the right, you can choose to see either the total count of successes and failures for each gamble or the detailed history. That is the number of successes and failures for each of your choices.
 The rate will be drawn again for the next task, corresponding to the next quiz topic. And you will repeat this process.
-
-# References

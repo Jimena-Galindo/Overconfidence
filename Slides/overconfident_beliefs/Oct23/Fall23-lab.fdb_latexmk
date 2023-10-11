@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1696899834 "/Users/jimenagalindo/Documents/Overconfidence/Slides/overconfident_beliefs/Oct23/Fall23-lab.tex" "Fall23-lab.pdf" "Fall23-lab" 1696899842 2
-  "/Users/jimenagalindo/Documents/Overconfidence/Slides/overconfident_beliefs/Oct23/Fall23-lab.tex" 1696899819 32800 1e1cf8b8437baca0ce9b5c8f29e3ca5b ""
+["pdflatex"] 1696972706 "/Users/jimenagalindo/Documents/Overconfidence/Slides/overconfident_beliefs/Oct23/Fall23-lab.tex" "Fall23-lab.pdf" "Fall23-lab" 1696972714 2
+  "/Users/jimenagalindo/Documents/Overconfidence/Slides/overconfident_beliefs/Oct23/Fall23-lab.tex" 1696946419 32841 3e02d5b2e0bf32860f753637b1db5149 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcss1000.tfm" 1136768653 1536 293044035fd171bb1d18cf655049b101 ""
@@ -273,10 +273,10 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1695948599 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1695948575 7883454 06c315ec2217be584f4cbaeb6727b331 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Fall23-lab.aux" 1696899842 14385 45e543af0c36743a57929764f20ffe1e "pdflatex"
-  "Fall23-lab.nav" 1696899842 8498 56bfc32ae75a2815df513d221b80b7e4 "pdflatex"
-  "Fall23-lab.out" 1696899842 1265 7bd351024a9ffa9d445f00d41b99a5f6 "pdflatex"
-  "Fall23-lab.tex" 1696899819 32800 1e1cf8b8437baca0ce9b5c8f29e3ca5b ""
+  "Fall23-lab.aux" 1696972714 14385 45e543af0c36743a57929764f20ffe1e "pdflatex"
+  "Fall23-lab.nav" 1696972714 8498 56bfc32ae75a2815df513d221b80b7e4 "pdflatex"
+  "Fall23-lab.out" 1696972714 1265 7bd351024a9ffa9d445f00d41b99a5f6 "pdflatex"
+  "Fall23-lab.tex" 1696946419 32841 3e02d5b2e0bf32860f753637b1db5149 ""
   "figures2//believed_actual_type_heat.png" 1696874267 274738 afd6c136c66df064f0ea44c76bb301c1 ""
   "figures2//categorized.png" 1696874322 58791 362963d90b3857fdc49e84eafc711ed1 ""
   "figures2//certainty_by_topic.png" 1696874311 34254 66e2680c5e167b546b1f89e49b5dbb2b ""
@@ -293,7 +293,7 @@
   "figures2//misspecifications_characteristics_treatment.png" 1696874268 294872 ab1b3a2cca282c7bfd296252b1f9bd03 ""
   "figures2//models.png" 1696633242 362634 c1ff9b2f8332ec64156717aeb09e8dfe ""
   "figures2//predictions.png" 1696696990 395718 65b3f6560d2e716075df611517bbb323 ""
-  "figures2//regression_table.png" 1696893573 947605 af0089b2d72462aa275fb283dd0f98c2 ""
+  "figures2//regression_table.png" 1696940209 158292 be8a9b8de9e7a68e133e1847d6725d5c ""
   "figures2//screen1.png" 1695961680 530662 bfa15a40fc11ed45a799c477141219ea ""
   "figures2//screen2.png" 1695961680 577660 6d33df4198fb4f6919ee9531f25d58bb ""
   "figures2//self-serving_11.png" 1696539079 60380 edf072cab56c1fd4c936aceb81da06af ""

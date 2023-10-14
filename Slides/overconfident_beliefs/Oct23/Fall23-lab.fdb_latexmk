@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1696972706 "/Users/jimenagalindo/Documents/Overconfidence/Slides/overconfident_beliefs/Oct23/Fall23-lab.tex" "Fall23-lab.pdf" "Fall23-lab" 1696972714 2
+["pdflatex"] 1697048293 "/Users/jimenagalindo/Documents/Overconfidence/Slides/overconfident_beliefs/Oct23/Fall23-lab.tex" "Fall23-lab.pdf" "Fall23-lab" 1697048301 2
   "/Users/jimenagalindo/Documents/Overconfidence/Slides/overconfident_beliefs/Oct23/Fall23-lab.tex" 1696946419 32841 3e02d5b2e0bf32860f753637b1db5149 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -273,9 +273,9 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1695948599 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1695948575 7883454 06c315ec2217be584f4cbaeb6727b331 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Fall23-lab.aux" 1696972714 14385 45e543af0c36743a57929764f20ffe1e "pdflatex"
-  "Fall23-lab.nav" 1696972714 8498 56bfc32ae75a2815df513d221b80b7e4 "pdflatex"
-  "Fall23-lab.out" 1696972714 1265 7bd351024a9ffa9d445f00d41b99a5f6 "pdflatex"
+  "Fall23-lab.aux" 1697048301 14385 45e543af0c36743a57929764f20ffe1e "pdflatex"
+  "Fall23-lab.nav" 1697048301 8498 56bfc32ae75a2815df513d221b80b7e4 "pdflatex"
+  "Fall23-lab.out" 1697048301 1265 7bd351024a9ffa9d445f00d41b99a5f6 "pdflatex"
   "Fall23-lab.tex" 1696946419 32841 3e02d5b2e0bf32860f753637b1db5149 ""
   "figures2//believed_actual_type_heat.png" 1696874267 274738 afd6c136c66df064f0ea44c76bb301c1 ""
   "figures2//categorized.png" 1696874322 58791 362963d90b3857fdc49e84eafc711ed1 ""

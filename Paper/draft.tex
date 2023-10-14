@@ -37,7 +37,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={Learning with misspecified models: Overconfidence and Stereotypes},
+  pdftitle={Learning with misspecified models: the case of overestimation},
   pdfauthor={Jimena Galindo},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
@@ -87,97 +87,205 @@
 \usepackage[]{natbib}
 \bibliographystyle{plainnat}
 
-\title{Learning with misspecified models: Overconfidence and
-Stereotypes}
+\title{Learning with misspecified models: the case of overestimation}
 \author{Jimena Galindo}
-\date{October 10, 2023}
+\date{October 13, 2023}
 
 \begin{document}
 \maketitle
 \begin{abstract}
-TBW
+I design a framework and laboratory experiment that allows for the
+comparison of multiple theories of misspecified learning. I focus on a
+framework with endogenous information and two complementary
+fundamentals: an ego-relevant parameter and a state. Within this
+framework I study three forces that can lead to misspecified beliefs:
+dogmatism, learning traps and biased updating. I find that biased
+updating is the main driver of misspecifications. In addition, I vary
+the degree of ego-relevance of the parameter by introducing a stereotype
+treatment. The data is consistent with biased updating in both cases but
+for potentially different reasons: subjects attribute successes to their
+own ability and failures to luck. In the stereotype treatment they
+over-compensate for initial negative biases by over-attributing positive
+signals to the ability of others. This translates into similar observed
+choices but different dynamisc in beliefs.
 \end{abstract}
+
+\newpage
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-A growing body of literature in economics studies the mechanisms through
-which economic agents come to hold incorrect beliefs about a
-fundamental. Most of this literature focuses on the case in which agents
-are passive observers of the world and incorrectly incorporate the
-information they receive into their
-beliefs\footnote{See \citet{benjamin2019} for a review of error in probabilistic thinking}.
-However, in many situations, agents are active participants in the
-process of generating information. In such cases, the information they
-receive is affected by their actions and the way they process it can
-affect their future behavior. I refer to this as an
-\emph{endogenous information} setting. This sort of setting, has been
-shown to explain pehnomena that cannot be rationalized with the
-classical models of biased belief updating (e.g. \citet{Nyarko1991} and
-\citet{Levy2022}). Settings with endogenous information and misspecified
-learning also offer alternative explanations for why certain well known
-biases might persist. I focus on a group of theories that aim to explain
-the prevalence of overconfidence.
+A growing body of literature in economics explores how people develop
+incorrect beliefs about fundamentals. Most of this research centers on
+scenarios where agents passively observe the world, and incorrectly
+integrate the received information into their
+beliefs\footnote{See \citet{benjamin2019} for a review of the literature on errors of 
+probabilistic thinking}. However, many real-world situations cast agents
+as active participants in the generation of information. In these cases,
+the information they acquire is influenced by their actions and their
+subsequent behavior is in turn determined by how they incorporate the
+information into their beliefs. This further affects the information
+generating process.
 
-Overconfidence has been shown to be a prevalent bias in a variety of
-settongs. \citet{Oster2013} shows that subjects who are at high risk of
-having Huntingtons disease underestimate their probability of having the
-disease and make retirement decisions as if they were not sick. Relating
-to investment decisions, \citet{Hoffman2020} show that workers
-overestimate their productivity in their current employment and are
-unlikely to look for other oportunities. \citet{Camerer1999} find that
-entrepreneurs are overconfident about the quiality of their enterprise,
-which leads to excessive entry and early exit from markets. These are
-only some examples of how holding an incorrect belief about a
-fundamental can lead to costly decisions \footnote{Other examples 
-of overconfidence are }.
+Consider a student who needs to decide how much effort to put into
+studying for an exam. Their decision will depend on two different
+factors: their belief about their intrinsic ability, and their belief
+about how difficult the exam will be. The outcome that they observe will
+be affected by how much they decide to study. Imagine that the student
+puts in a moderate amout of effort and gets a surprisingly good grade.
+Did they get a good grade because they are smarter than they thought? Or
+because the exam was easier than they had anticipated? Their future exam
+preparation strategy will depend fundamentally on which line of
+reasoning they take; in turn, their performance in the next exam will
+further affect the outcome they observe. This type of feedback loop is
+what I call and \emph{endogenous information 
+setting} and is at the center of the forces that I study.
 
-I isolate the main forces from 3 different theories of misspecified
-learning. Each of the theories rationalizes the prevalence of
-overconfidence in frameworks where the agents are learning about an
-ego-relevant parameter and an exogenously determined state. The
-interaction between these two parameters together with an endogenous
-information process give rise to two explanaitions for the presistence
-of overconfidence. On one hand, even with bayesian updating, the agent
-may fall into learning traps. Learning traps are misspecified beliefs
-and optimal actions that induce signals that confirm the misspecified
-belief. Once an agent finds themselves in such a situation, the belief
-will be stable and even with a correctly speficified model of learning,
-they will not be able to abandon their icorrect beliefs. On the other
-hand a setting with two variables allows the agent to engage in
-asymmetric updating with respect to good and bad news. When the outcome
-depends on an ego-relevant parameter as well as a state, the agent can
-attribute good news to a high value of the parameter while attributing
-failures to a low value of the exogenous
-parameter\footnote{This is in line with the well known theory 
-in behavioral science of self-attribution bias of which \citet{kelley1980} provides a review.}.
+I compare a set of theories that model learning in an endogenous
+information setting and which can rationalize the persistence of
+misspecified beliefs. To do so, I first come up with a unifying
+framework in which each of the theories makes different predictions. I
+then implement this framework in a laboratory experiment. The framework
+that I use features an agent who, in order to make optimal decisions,
+needs to learn a parameter that regards their own characteristics (an
+\emph{ego-relevant} parameter), as well as an exogenously determined
+state---in the case of the student it would be their intrinsic ability
+and the difficulty of the exam.
 
-\citet{Heidhues2018} shows that under certain assumptions on the output
-function, learning traps can rationalize the existance of misspecified
-beliefs when agents are dogmatic about the ego-relevant parameter. In a
-more general model \citet{Ba2023} further analyzes this setting and
-characterizes the stuations in which even agents who are not dogmatic
-might become trapped. She allows initi dogmatic agents to consider
-alternative theories and adopt whichever is a better explanation of the
-observed data. They do so by performing Bayesian hypothesis tests that
-compare the likelihood of having observed the outcome under alternative
-paradigms\footnote{A 
-similar mechanism is proposed by \citet{Schwarstein2021} in a setting with persuasion}.
-Although this learning mechanism allows agents to avoid the learning
-traps, there are still situations under which misspecified beliefs may
-persist.
+Misspecified beliefs about an ego-relevant parameter are often referred
+to as overconfidence and have been documented by behavioral
+science\footnote{\citet{kelley1980} 
+provides a review of the psychology literature.} and
+economics\footnote{See \citet{benjamin2019} 
+for a review of the literature in economics.} in a variety of settings.
+\citet{Oster2013} find that subjects who are at high risk of having
+Huntington's disease overestimate their probability of being healthy and
+make retirement decisions as if they were. \citet{Hoffman2020} show that
+workers overestimate the quality of their match to their current
+employment and are unlikely to look for other opportunities.
+\citet{Camerer1999} find that entrepreneurs are overconfident about the
+quality of their enterprise, which leads to excessive entry and early
+exit from markets.
+
+In all of these examples, holding an incorrect belief about a
+fundamental leads to suboptimal choices with potentially high costs. In
+spite of the abundance of evidence, the scope of the existing research
+is limited in terms of the frameworks it considers. Most of the
+experimental evidence documenting the bias is collected in settings
+where subject are passive learners.\footnote{
+\citet{Gotte2022} and \citet{Ozyilmaz2022} are exceptions that study settings with endogenous information processes.}
+They observe a noisy signal and report their beliefs over subsequent
+rounds.\footnote{\citet{Bracha2012} and 
+\citet{Mobius2022} are some examples}. Although these studies provide
+important insights, they are not flexible enough to incorporate the
+richer theories that have been proposed more recently. In particular,
+they do not allow the studies of endogenous learning or for learning
+about multiple parameters at once.\footnote{\citet{Coutts2020} 
+studies an environment with an ego-relevant parameter and an exogenous state but does not 
+incorporate the endogenous information process.}
+
+In my experiment, I move away from the standard framework to study a
+richer set of underlying mechanisms. In particular, the interaction
+between the two parameters, together with an endogenous information
+process, give rise to three possible explanations for the persistence of
+incorrect beliefs: dogmatism, the existence of learning traps and
+misattribution bias.
+
+Within the first explanation, even with perfect Bayesian updating the
+agent may fall into learning
+traps.\footnote{Conditions under which this happens are detailed in \citet{Hestermann2021}}
+These traps are characterized by a combination of misspecified beliefs
+and optimal actions which produce information that confirms the
+misspecified belief---this is a \emph{self-defeating equilibrium}. Once
+an agent falls into it, the belief will be stable and even with a
+correctly specified model of learning, they will not be able to abandon
+their misspecified beliefs. If, in addition the agent is dogmatic about
+their belief, \citet{Heidhues2018} show that they will inevitably fall
+into a trap and thus will be able to rationalize and sustein their
+initial dogmatically overconfident (or underconfident)
+belief.\footnote{\citet{Gotte2022} study the case of agents with dogmatic initial beliefs in a 
+laboratory experiment.}
+
+\citet{Ba2023} moves away from dogmatism and endows the agents with a
+mechanism through which they can abandon misspecified beliefs; this
+allows them to avoid falling into learning traps. To do so agents
+perform Bayesian hypothesis tests to evaluate which is the more likely
+parameter out of two possibilities. By doing this, she characterizes the
+set of situations in which, even agents who consider alternative
+paradigms, may become trapped.\footnote{A 
+similar mechanism is proposed by \citet{Schwarstein2021} in a setting with persuasion.}
+
+Lastly, misattribution bias is the more classical explanation which has
+been widely studied in behavioral
+science.\footnote{see \citet{kelley1980} for a review.} Agents who
+suffer from misattribution bias will attribute successes to their own
+ability---the ego-relevant parameter---and failures to bad luck---the
+state. Under this model of learning, even an agent who initially has a
+correct initial belief may become overconfident if they observe a
+sequence of successes. In this case, the main driver of the bias is not
+an initial misspecification or the presence of learning traps, it is the
+updating procedure
+itself.\footnote{A more general framework that can be used to model 
+this bias has also been proposed by \citet{Brunnermeier2005} and empirically studied by \citet{Bracha2012}.}
+
+These theories provide the main building blocks for a simplified
+framework that can be directly implemented in a laboratory experiment.
+The goal is primarily to identify the which of the 3 forces---dogmatism,
+the presence of learning traps or missatribution bias---better explains
+the observed behavior. To do so, I compare the behavior predicted by
+each theory to the benchmark given by the fully Bayesian updating
+procedure.
+
+On a secondary level, I also aim to understand if the misspecification
+is inherently linked to the ego-relevance of one of the parameters or if
+it is a more general phenomenon. To do so I vary the degree of
+ego-relevance by introducing a treatment in which subjects learn about
+the ability of another participant. In this treatment, the participants
+know only the gender and nationality of the other, which can induce
+stereotypes---a different type of misspecification.\\
+If correct learning about the parameters happens at higher rates in the
+stereotype treatment, it would suggest that the bias is intrinsically
+linked to the ego-relevance of the parameter. In contrast, if similar
+biased behavior arises in both treatments, it is more likely that the
+main driver of these types of misspecified beliefs is the updating
+procedure itself or the endogenous information process.
+
+I find that, although some agents do fall into learning traps, the
+behavior of most subjects is better explained by misattribution bias. I
+also find that misattribution is no more prevalent in the ego-relevant
+than in the stereotype condition. This suggests that the main driver of
+the misspecification is the updating proceduce. However, the underlying
+mechanism by which the bias is generated may be different in both
+treatments: While in the ego-relevant condition, the intuitive
+explanation behind the bias is that the agent prefers to hold themselves
+in high esteem, in the stereotype condition it seems to be driven by
+some sort of self-censoring---when subjects realize that they
+underestimated the ability of another participant based on their gender
+and nationality, they over-compensate by overestimating their ability.
+
+Finally, I structurally estimate the parameters of the models to study
+heterogeneity in the sample. I find that even at an individual level the
+behavior is better explained by misattribution bias for most subjects.
+There is a smaller group of subjects that can be better explained
+through dogmatic beliefs and hypothesis testing and none of them behave
+in line with the fully Bayesian benchmark.
+
+In what follows I first discuss the theoretical framework and the
+predictions of each of the theories. Then I introduce a unifying example
+and my hypotheses. I then describe the experimental design and the
+results, as well as the estimation of the parameters.
 
 \hypertarget{theoretical-framework}{%
 \section{Theoretical Framework}\label{theoretical-framework}}
 
-I consider multiple theories of belief updating that have been proposed
-in the literature to rationalize the prevalence of misspecified beliefs.
-I focus on two different frameworks and develop a unifying example that
-allows me to compare the predictions of all the theories. In framework 1
-I consider a setting in which the an agent observes a continuous output
-and infers the underlying state. In framework 2, the agent observes a
-binary outcome and infers the underlying probability of success. In both
-frameworks, I consider two nested theories of belief updating.
+The theories that I consider make predictions in two distinct
+frameworks. I first detail each theory within their original framework
+and then develop a unifying example that allows me to compare the
+predictions of all of them. In framework 1 I consider a setting in which
+the an agent observes a continuous output and infers the underlying
+state. In framework 2, the agent observes a binary outcome and infers
+the underlying probability of success. In both frameworks, I consider
+two nested theories of learning.
 
 \hypertarget{framework-1}{%
 \subsection{Framework 1}\label{framework-1}}
@@ -292,7 +400,7 @@ higher grade. In particular, she knows the grade is given by
 
 \emph{The student must choose an effort level \(a\), which determines
 her grade. For whatever the chosen effort level, the student must pay a
-cost \(c(a) = \frac{1}{2}a^2\) and receives a grade of
+cost \(c(a) = \frac{1}{2}a^2\) and observes a grade of
 \((\theta^*+a)\omega^*\). She repeats this process for infinitely many
 periods. Assume also that the student's prior is such that
 \(\mathbb{E}[\omega]= \omega^*\) and she is dogmatic about being of type
@@ -313,9 +421,9 @@ taken with respect to the student's belief at the beginning of period
 will receive an average utility of
 \((\theta^*+a_t^*)\omega^* - \frac{1}{2}a_t^{*2}\) but he was expecting
 an average utility of
-\((\hat{\theta}\theta+a_t^*)\omega^* - \frac{1}{2}a_t^{*2}\). In
-response, she will apply Bayes rule to update his beliefs about
-\(\omega\) to get the posterior belief with
+\((\hat{\theta}+a_t^*)\omega^* - \frac{1}{2}a_t^{*2}\). In response, she
+will apply Bayes rule to update his beliefs about \(\omega\) to get the
+posterior belief with
 \(\mathbb{E}_{t+k}[\omega] = \frac{(\theta^{*} + \omega^{*})\omega^{*}}{\hat{\theta} + \omega^{*}}\)
 which is lower than the initial belief. This will cause the student to
 choose a lower effort at \(t+k\). As a result, she will again receive an
@@ -1165,9 +1273,13 @@ likely explanation for the behavior of the subjects in the experiment.
 \end{figure}
 
 A regression analysis of this same data reveals that indeed, the slopes
-are different for the two types of news and that the difference is
-statistically significant (\(p<0.01\)). The regression results are
-reported in Table \ref{tab:regression}. columns 2 and 3 of the table
+are different for godd and bad news and that the difference is
+statistically
+significant.\footnote{I run a robustness check where I define
+good news to be a net-positive sample (half or more of the outcomes observed in the sample received in that round
+were successful) and bad news to be net-negative sample. I find the same pattern in this alternative regression model
+and the results are reported in the appendix.} The regression results
+are reported in Table \ref{tab:regression}. columns 2 and 3 of the table
 consider the model for each treatment separately. I find no significant
 differences in the parameters across treatment. This is consistent with
 the fact that the bias is not driven by the ego-relevance of
@@ -1216,10 +1328,10 @@ More convincing evidence against the Switching model is the lack of
 inverse or attenuated correlation between the change in effort and the
 news differential. In particular, if the switcher were the underlying
 model, I would expect overconfident subjects who start with an
-overestimation of \(\theta\) to increase their effort in response to bad
-news that were very surprising. This would flatten the slope of the
-regression line for bad news relative to what a Bayesian would do.
-\ref{tab:regression} shows that the slope for bad news for the
+overestimation of \(\theta\) to increase their effort in response to
+surprising bad news. This would flatten the slope of the regression line
+for bad news relative to what a Bayesian would do. \ref{tab:regression}
+shows that the slope for bad news for the
 simulation\footnote{The details on how the data was simulated are explained in the Appendix}
 of the Bayesian updates is much flatter than the slope in the data.
 
@@ -1271,12 +1383,113 @@ data is explained by each of the two likely theories.
 \subsection{Estimation of the switching
 threshold}\label{estimation-of-the-switching-threshold}}
 
+The switching threshold is the parameter that determines the likelihood
+ratio at which the switcher abandons the status quo paradigm and adopts
+the alternative. In order to estimate this parameter, I assume that all
+subjects are switchers and look at the rounds in which they chose to
+reveal a probability matrix that was different from the one they
+revealed in the previous round. I then calculate the likelihood ratio
+for the alternative paradigm to the status quo. I average across all
+such likelihood ratios and use the average as an estimate of the
+switching threshold.
+
+In detail, Let \(b_{t}^\theta\) be the belief about \(\theta\) in period
+\(t\).\footnote{in the experimental data, 
+I use the revealed matrix as a proxy for the belief. I take the matrix revealed in the previous period 
+to be the status-quo and the matrix revealed in period $t$ to be the alternative}.
+And consider a subject for whom
+\(b_{\tau-1}^\theta \neq b_{\tau}^\theta\), where \(b_{t}^\theta\). That
+is, in period \(\tau-1\) they chose to reveal a matrix that was
+different from the one they revealed in period \(\tau\). The matrix
+revealed in period \(\tau-1\) is the status quo paradigm and the matrix
+revealed in period \(\tau\) is the alternative paradigm. The likelihood
+ratio for the alternative paradigm to the status quo is \[
+\ell = \frac{L(\theta | b_{\tau}^\theta)}{L(\theta | b_{\tau-1}^\theta)}=\frac{p_\tau(o_t|b_{\tau}^\theta)}{p_{\tau}(o_t|b_{\tau-1}^\theta)} 
+\]
+
+where \(p_\tau(o_t|b_{\tau}^\theta)\) is the probability of observing
+the signal \(o_t\) when the agent is of type \(b_{\tau}^\theta\).
+
+The estimate of the switching threshold, \(\alpha\), is the average of
+the likelihood ratios across all subjects who switched in the
+experiment, which is given by
+
+\[\hat{\alpha} = \frac{1}{N}\sum_{i=1}^N \ell_{i\tau}\]
+
+Where \(N\) is the number of switches observed in the experiment.
+
+Because the feedback that subjects receive is the equivalent of 10
+signal realizations, the estimate of the parameter is an upper bound of
+the true parameter. A lower bound would be given by the average
+likelihood ratio in the round before the switch happens. I choose to
+estimate the upper bound to impose a harsher test on the theory.
+
+Because the likelihood ratio is a function of the signal, it depends on
+the sequence of signals that subjects observe. This means that in some
+cases, the likelihood ratio increases by a large amount from one period
+to another. Although such cases are not
+common\footnote{In the data, only 1.8% of the 
+observations have a likelihood ratio that exceeds 5.}, a few very large
+values can skew the average. To avoid a biased parameter, I restrict my
+sample to those observations for which the likelihood ratio is less than
+5.\footnote{The full distribution of likelihood ratios is reported in the appendix}
+Under these assumptions, the estimate of the switching threshold is
+1.09.
+
+This means that the evidence supporting the alternative paradigm needs
+to be approximately 10\% more compelling than the evidence supporting
+the status quo paradigm in order for the agent to switch. The estimation
+treatment by treatment is slightly larger for the Ego condition than for
+the Stereotype condition. However, the difference is not statistically
+significant (p-value=0.96).
+
+I then use this estimate to simulate the behavior of the switcher to
+assess the fit of the model. Which is discussed in the next section.
+
 \hypertarget{estimation-of-the-self-attribution-bias}{%
 \subsection{Estimation of the self-attribution
 bias}\label{estimation-of-the-self-attribution-bias}}
 
+Estimation of the parameters of the self-attribution bias is more
+involved than estimation of the switching threshold. In this case, there
+is no obvious identification strategy that provides a simple estimate of
+the parameters. Instead, I use the simulated method of moments to
+estimate the parameters of the model.
+
+In particular, I simulate the behavior of the self-attribution bias for
+each possible prior and over a grid of parameters. I make the
+simplifying assumption that the distortion is symmetric across good and
+bad news. That is, I assume that
+\(c(\theta_H, \omega, \text{good news})=c(\theta, \omega_L, \text{bad news})=:c_g\)
+and that
+\(c(\theta_M, \omega, \text{bad news})=c(\theta, \omega_M, \text{good news})=:c_b\).
+In addition, I normalize the remaining cases to be equal to 1. This
+leaves me with only 2 parameters to estimate.
+
+The moments that I match in the data are the reaction to good news and
+the reaction to bad news. In particular, I match the average change in
+effort in response to good news and the average change in effort in
+response to bad news. That is I match the following moments:
+
+\[
+\bar{G} = \frac{1}{N}\sum_{i=1}^N \frac{1}{T}\sum_{t=1}^T \mathbb{I}\{o_t > \bar{o}\} \cdot (e_t - e_{t-1}) 
+\] \[
+\bar{B} = \frac{1}{N}\sum_{i=1}^N \frac{1}{T}\sum_{t=1}^T \mathbb{I}\{o_t < \bar{o}\} \cdot (e_t - e_{t-1})
+\] where \(N\) is the number of subjects in the sample, \(T\) is the
+number of rounds in the experiment.
+
+I then use the simulated method of moments to estimate the parameters of
+the model. In particular, I simulate the behavior of the model for each
+possible prior and over a grid of parameters. I then calculate the
+average change in effort in response to good news and the average change
+in effort in response to bad news for each possible prior and over the
+grid of parameters and across \(I\) simulated indiviaduals. I then
+minimize the objective function given by the sum of squared differences
+between the simulated moments and the empirical moments. That is, I
+solve the following problem
+
 \hypertarget{model-fit}{%
-\subsection{Model fit}\label{model-fit}}
+\section{Model fit}\label{model-fit}}
 
 \hypertarget{conclusion}{%
 \section{Conclusion}\label{conclusion}}
@@ -1296,7 +1509,7 @@ that best explains the data is that of optimal expectations.
 
 I have small or no effects throughout on the ego-relevance of the type.
 Although the motivation behind the theories does not directly apply to
-the case of stereotypes, the lack of stark differences suggest that
+the case of stereotypes, the lack of stark differences suggests that
 biases arise due to an incorrect updating procedure and not necessarily
 due to the self-serving motivation behind the bias. The lack of
 differences in the behavior of the subjects across treatments could also
@@ -1305,7 +1518,7 @@ be initially reluctant to express their true belief about a particular
 group of people. In addition, as they learn and realize that their
 beliefs might be incorrect, they might overreact to signals to try to
 compensate for the initial bias. Such an updating procedure would be
-consistent with the self-attribution bias for the case of sterotypes. I
+consistent with the self-attribution bias for the case of stereotypes. I
 remain agnostic about whether that is truly the case or whether the lack
 of differences is due to other factors.
 
@@ -1321,11 +1534,11 @@ consistent with what \citet{Mobius2022} find in their experiment.
 I further investigate possible heterogeneity in the underlying models
 being used by estimating the structural parameters of the models.
 
-\hypertarget{references}{%
-\section{References}\label{references}}
+\newpage
+\appendix
 
 \hypertarget{appendix}{%
-\section{Appendix}\label{appendix}}
+\section{appendix}\label{appendix}}
 
 \hypertarget{transition-matrix-by-treatment}{%
 \subsection{Transition matrix by
@@ -1349,6 +1562,27 @@ up in at the end of the updating task}\label{fig:transitions-treatment}
 }
 \end{figure}
 
+\hypertarget{full-distribution-of-likelihood-ratios}{%
+\subsection{Full distribution of likelihood
+ratios}\label{full-distribution-of-likelihood-ratios}}
+
+The likelihood ratios at rounds in which I observe a change in the
+belief about \(\theta\) presents a long right-tail. In particular, 1.8\%
+of the observations have a likelihood ratio that exceeds 5 which would
+mean that the agent requires evidence that is 5 times more compelling in
+favor of the alternative paradigm in order to switch. Figure
+\ref{fig:lr-hist} shows the distribution of likelihood ratios for all
+observations.
+
+\begin{figure}
+\hypertarget{fig:lr-hist}{%
+\centering
+\includegraphics{../figures/lr_hist.png}
+\caption{Distribution of likelihood ratios for all observed belief
+changes}\label{fig:lr-hist}
+}
+\end{figure}
+
 \hypertarget{model-simulation}{%
 \subsection{Model simulation}\label{model-simulation}}
 
@@ -1366,8 +1600,58 @@ the signal and given an initial belief. For the dogmatic modeler and the
 switcher, I use each possible dogmatic belief. For the Bayesian and the
 self-attribution bias, I use a uniform belief on theta.
 
-\hypertarget{experiment-instructions}{%
-\section{Experiment Instructions}\label{experiment-instructions}}
+\hypertarget{reaction-to-good-and-bad-news-robustness-check}{%
+\subsection{Reaction to good and bad news (robustness
+check)}\label{reaction-to-good-and-bad-news-robustness-check}}
+
+I use an alternate definition for good and bad news and check whether
+the results are robust to this. I define a signal to be a net positive
+if the number of successes is equal to or greater than the number of
+failures. I define a signal to be a net negative if the number of
+failures is greater than the number of successes. I now treat net
+positive signals as good news and net negative signals as bad news. I
+then rerun the regression analysis and find that the results are robust
+to this alternative definition. In particular, net negative signals are
+associated with a stark decrease in effort for both treatments. Net
+positive signals are associated with a small decrease in effort for both
+treatments. The results are reported in Table \ref{tab:regression-net}.
+
+\begin{table}[!htbp] \centering 
+  \caption{Regression of effort change on news difference with robust standard errors} 
+  \label{tab:regression-net} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Change in effort} \\ 
+ & All & Ego-relevant & Stereotype \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ Net-positive signal & 0.99$^{***}$ & 0.80$^{***}$ & 1.24$^{***}$ \\ 
+  & (0.05) & (0.05) & (0.05) \\ 
+  & & & \\ 
+ Signal value & 0.21$^{***}$ & 0.22$^{***}$ & 0.21$^{***}$ \\ 
+  & (0.02) & (0.02) & (0.02) \\ 
+  & & & \\ 
+ Signal value * Net-Positive signal & $-$0.28$^{***}$ & $-$0.26$^{***}$ & $-$0.31$^{***}$ \\ 
+  & (0.02) & (0.02) & (0.02) \\ 
+  & & & \\ 
+ Constant & $-$0.49$^{***}$ & $-$0.48$^{***}$ & $-$0.50$^{***}$ \\ 
+  & (0.04) & (0.04) & (0.04) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Observations & 4,680 & 2,700 & 1,980 \\ 
+R$^{2}$ & 0.05 & 0.05 & 0.05 \\ 
+Adjusted R$^{2}$ & 0.05 & 0.04 & 0.05 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table}
+
+\hypertarget{experimental-instructions}{%
+\section{Experimental Instructions}\label{experimental-instructions}}
 
 You are about to participate in an experiment on decision-making. What
 you earn depends partly on your decisions and partly on chance. Please
@@ -1537,10 +1821,10 @@ following: - the actual score (matrix), which you do not know for
 certain, - the gamble (row) that you chose, and - the rate (column),
 which you also don't know.
 
-\emph{the full data generating process is printed in the rear side of
-the instructions and always available to the subjects the matrices are
-labeled with ``if your/the other participant's score is'' depending on
-the treatment}
+\emph{The full data generating process is printed on the rear side of
+the instructions and always available to the subjects throughout part
+2.} \emph{Each of the matrices is labeled with ``if your/the other
+participant's score is\ldots{}'' depending on the treatment}
 
 \textbf{Screen walk-through script:}
 
@@ -1556,6 +1840,9 @@ That is the number of successes and failures for each of your choices.
 The rate will be drawn again for the next task, corresponding to the
 next quiz topic. And you will repeat this process.
 
+\newpage
+
+\renewcommand\refname{References}
   \bibliography{references.bib}
 
 \end{document}

@@ -72,4 +72,48 @@ connection*
 
 # Ignore user-specific system files
 .DS_Store
+
+
+# LaTeX build and auxiliary files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.dvi
+*.pdfsync
+*.xdv
+
+# LaTeX distribution-specific files
+*.run.xml
+*.bcf
+*.synctex(busy)
+*.synctex(busy).gz
+
+# LaTeX editor-specific files
+.vscode/
+.texshop/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore temporary or backup files
+*~
+*.bak
+
+# Ignore backup files created by various editors
+*.swp
+*.swo
+*.swn
+*.synctex.gz(busy)
+
+# Ignore LaTeX editor backup files
+*.bak
+*.backup
+
 Thumbs.db

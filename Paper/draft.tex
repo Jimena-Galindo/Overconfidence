@@ -85,33 +85,34 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={Learning with misspecified models: the case of overestimation},
+  pdftitle={Learning with Misspecified Models: the case of overestimation},
   pdfauthor={Jimena Galindo},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{Learning with misspecified models: the case of overestimation}
+\title{Learning with Misspecified Models: the case of overestimation}
 \author{Jimena Galindo}
 \date{October 14, 2023}
 
 \begin{document}
 \maketitle
 \begin{abstract}
-I design a framework and laboratory experiment that allows for the
+I design a framework and a laboratory experiment that allows for the
 comparison of multiple theories of misspecified learning. I focus on a
-framework with endogenous information and two a data generating process
+framework with endogenous information and a data-generating process
 ruled by two fundamentals: an ego-relevant parameter and a state. Within
 this framework I study three forces that can lead to misspecified
 beliefs: initial misspecifications, learning traps and biased updating.
-I find that biased updating is the main driver of misspecifications. In
-addition, I vary the degree of ego-relevance of the parameter by
-introducing a stereotype treatment. The data is consistent with biased
-updating in both cases but for potentially different reasons: In the
-ego-relevant treatment subjects attribute successes to their own ability
-and failures to luck; in the stereotype treatment they over-compensate
-for initial negative biases by over-attributing positive signals to the
-ability of others. This translates into similar observed choices but
-different dynamic in beliefs.
+I find that biased updating is the main driver of misspecified beliefs
+in the lab. In addition, I vary the degree of ego-relevance of the
+parameter by introducing a stereotype treatment. The data is consistent
+with biased updating in both cases but for potentially different
+reasons: when learning about themselves, subjects attribute successes to
+their own ability and failures to luck. Instead, in the stereotype
+treatment, they compensate for initial negative biases by
+over-attributing positive signals to the ability of others. This
+translates into similar observed choices but different dynamics in
+beliefs.
 \end{abstract}
 
 \newpage
@@ -124,37 +125,37 @@ incorrect beliefs about fundamentals. Most of this research centers on
 scenarios where agents passively observe the world, and incorrectly
 integrate the received information into their
 beliefs.\footnote{See \citet{benjamin2019} for a review of the literature on errors of 
-probabilistic thinking} However, many real-world situations cast agents
+probabilistic thinking.} However, many real-world situations cast agents
 as active participants in the generation of information. In these cases,
-the information they acquire is influenced by their actions and
+the information they observe is influenced by their actions and
 subsequent behavior is in turn determined by how they incorporate the
 information into their beliefs.
 
-Consider a student who needs to decide how much effort to put into
-studying for an exam. Their decision will depend on two factors: their
-belief about their intrinsic ability, and their belief about how
-difficult the exam will be. The outcome they observe will be affected by
-how much they decide to study. Imagine that the student puts in a
-moderate amout of effort and gets a surprisingly good grade. Did they
-get a good grade because they are smarter than they thought? Or because
-the exam was easier than they had anticipated? Their future exam
+As an example consider a student who needs to decide how much effort to
+put into studying for an exam. Their decision will depend on two
+factors: their belief about their intrinsic ability, and their belief
+about how difficult the exam will be. The outcome they observe will be
+affected by how much they decide to study. Imagine that the student puts
+in a moderate amount of effort and gets a surprisingly good grade. Did
+they get a good grade because they are smarter than they thought? Or
+because the exam was easier than they had anticipated? Their future exam
 preparation strategy will depend fundamentally on which line of
-reasoning they take. This feedback loop is refered to as an
+reasoning they take. This feedback loop is referred to as an
 \emph{endogenous information 
-process}.
+process} and is at the center of the forces I study.
 
-I compare a set of theories that model learning in an endogenous
-information setting and which can rationalize the persistence of
-misspecified beliefs. I describe a unifying framework that nests
-multiple theories of model learning and generates testable predictions
-for each of them. I cast this framework in a laboratory experiment
-design and test these predictions to identify which of these theories
-are consistent with the behavior I observe in the lab. The framework
-features an agent who needs to learn two parameters: one that regards
-their own characteristics (an \emph{ego-relevant} parameter), and an
-exogenously determined state. In the context of the student preparing
-for exams, the two parameters would be their intrinsic ability and the
-difficulty of the exam.
+To understand what the main forces at play are, I compare a set of
+theories that model learning in settings with endogenous information,
+and which can rationalize the persistence of misspecified beliefs. I
+develop a unifying framework that nests multiple theories of learning
+and generates testable predictions for each of them. Then I cast this
+framework in a laboratory experiment and test the predictions to
+identify which of the theories are consistent with the behavior I
+observe in the lab. The experiment features an agent who needs to learn
+two parameters: one that pertains their own characteristics (an
+\emph{ego-relevant} parameter), and an exogenously determined state---in
+the context of the student preparing for exams, the two parameters would
+be their intrinsic ability and the difficulty of the exam.
 
 Misspecified beliefs about an ego-relevant parameter are often referred
 to as overconfidence (or underconfidence) and have been documented by
@@ -180,48 +181,48 @@ where subject are passive learners.\footnote{
 \citet{Gotte2022} and \citet{Ozyilmaz2022} are exceptions that study settings with endogenous information processes.}
 They observe a noisy signal and report their beliefs over subsequent
 rounds.\footnote{\citet{Bracha2012} and 
-\citet{Mobius2022} are some examples}. Although these studies provide
+\citet{Mobius2022} are some examples.} Although these studies provide
 important insights, they are not flexible enough to incorporate the
 richer theories that have been proposed more recently. In particular,
-they do not allow the studies of endogenous learning or for learning
-about multiple parameters at once.\footnote{\citet{Coutts2020} 
+they do not allow the study of endogenous learning or for learning about
+multiple parameters at once.\footnote{\citet{Coutts2020} 
 studies an environment with an ego-relevant parameter and an exogenous state but does not 
 incorporate the endogenous information process.}
 
-In my experiment, I move away from the standard framework to study a
-richer set of underlying mechanisms. In particular, the interaction
-between the two parameters, together with an endogenous information
-process, give rise to three possible explanations for the persistence of
-incorrect beliefs: dogmatism, the existence of learning traps and
-misattribution bias.
+In my experiment, I move away from the standard framework of passive
+learning to analyze a richer set of learning mechanisms. In particular,
+the interaction between the two parameters together with an endogenous
+information process gives rise to three possible mechanisms that allow
+for the persistence of incorrect beliefs: the presence of learning
+traps, incorrect initial beliefs, and misattribution bias. The theories
+that I consider incorporate different combinations of these mechanisms.
 
-Within the first explanation, even with perfect Bayesian updating the
-agent may fall into learning
-traps.\footnote{Conditions under which this happens are detailed in \citet{Hestermann2021}}
-These traps are characterized by a combination of misspecified beliefs
-and optimal actions which produce information that confirms the
-misspecified belief---this is a \emph{self-defeating equilibrium}. Once
-an agent falls into it, the belief will be stable and even with a
-correctly specified model of learning, they will not be able to abandon
-their misspecified beliefs. If, in addition the agent is dogmatic about
-their belief, \citet{Heidhues2018} show that they will inevitably fall
-into a trap and thus will be able to rationalize and sustein their
-initial dogmatically overconfident (or underconfident)
+When the setting features learning traps, even an agent who incorporates
+all information correctly, may fall into learning traps as outlined by
+\citet{Hestermann2021}. These traps are characterized by a combination
+of an incorrect belief and an optimal action which produce information
+that confirms the incorrect belief. Once an agent falls into a trap, the
+belief will be stable and even with a correctly specified model of
+learning, they will not be able to abandon their misspecified beliefs.
+If, the agent is dogmatic about their initial belief,
+\citet{Heidhues2018} show that they will inevitably fall into a trap and
+thus will be able to rationalize and sustain their initial
+misspecification
 belief.\footnote{\citet{Gotte2022} study the case of agents with dogmatic initial beliefs in a 
 laboratory experiment.}
 
 \citet{Ba2023} moves away from dogmatism and endows the agents with a
-mechanism through which they can abandon misspecified beliefs; this
-allows them to avoid falling into learning traps. To do so agents
-perform Bayesian hypothesis tests to evaluate which is the more likely
+mechanism through which they can abandon incorrect beliefs; this allows
+them to avoid falling into learning traps. To do so agents perform
+Bayesian hypothesis tests that evaluate which is the more likely
 parameter out of two possibilities. By doing this, she characterizes the
 set of situations in which, even agents who consider alternative
 paradigms, may become trapped.\footnote{A 
 similar mechanism is proposed by \citet{Schwarstein2021} in a setting with persuasion.}
 
-Lastly, misattribution bias is the more classical explanation which has
+Lastly, misattribution bias is the more classical explanation and has
 been widely studied in behavioral
-science.\footnote{see \citet{kelley1980} for a review.} Agents who
+science.\footnote{See \citet{kelley1980} for a review.} Agents who
 suffer from misattribution bias will attribute successes to their own
 ability---the ego-relevant parameter---and failures to bad luck---the
 state. Under this model of learning, even an agent who initially has a
@@ -234,18 +235,22 @@ this bias has also been proposed by \citet{Brunnermeier2005} and empirically stu
 
 These theories provide the main building blocks for a simplified
 framework that can be directly implemented in a laboratory experiment.
-The goal is to identify the which of the 3 forces---the presence of
-learning traps, mispecified initial beliefs, or missatribution
+In the experiment subjects make choices and receive feedback that
+depends on their own ability, an exogenous parameter and the choice they
+made. I track their choices as well as their beliefs about their own
+ability. The goal is to identify which of the 3 forces---the presence of
+learning traps, misspecified initial beliefs, or missatribution
 bias---better explains the observed behavior. To determine the fit of
 the models, I compare the behavior predicted by each theory to the
 benchmark given by the fully Bayesian updating procedure.
 
-I also study whether the misspecification is inherently linked to the
-ego-relevance the parameters or a more general phenomenon. I vary the
-degree of ego-relevance by introducing a treatment in which subjects
-learn about the ability of another participant. In this treatment, the
-participants know only the gender and nationality of the other, which
-can induce stereotypes---a different type of misspecification.\\
+I also study whether the learning mechanism is inherently linked to the
+ego-relevance the parameters or if it is a more general phenomenon. I
+vary the degree of ego-relevance by introducing a treatment in which
+subjects learn about the ability of another participant. In this
+treatment, the participants know only the gender and nationality of the
+other, and thus can induce stereotypes---a different type of
+misspecification.\\
 If correct learning about the parameters happens at higher rates in the
 stereotype treatment, it would suggest that the bias is intrinsically
 linked to the ego-relevance of the parameter. In contrast, if similar
@@ -254,29 +259,32 @@ main driver of these types of misspecified beliefs is the updating
 procedure itself or the endogenous information process.
 
 Although some agents do fall into learning traps, I find that the
-behavior of most subjects is better explained by misattribution bias. I
-also find that misattribution is no more prevalent in the ego-relevant
-than in the stereotype condition. This suggests that the main driver of
-the misspecification is the updating proceduce. However, the underlying
-mechanism by which the bias is generated may be different in both
-treatments: While in the ego-relevant condition, the intuitive
-explanation behind the bias is that the agent prefers to hold themselves
-in high esteem, in the stereotype condition it seems to be driven by
-some sort of self-censoring---when subjects realize that they
-underestimated the ability of another participant based on their gender
-and nationality, they over-compensate by overestimating their ability.
+behavior of most subjects is better explained by misattribution bias:
+good news are treated as signaling high ability, while bad news are
+attributed to a low state. I also find that misattribution is no more
+prevalent in the ego-relevant than in the stereotype condition. This
+suggests that the main driver of the misspecification is the updating
+proceduce; however, the underlying mechanism by which the bias is
+generated may be different in both treatments: While in the ego-relevant
+condition subjects prefer to hold themselves in high esteem, in the
+stereotype condition updating seems to be driven by some sort of bias
+overcorrection---when subjects realize that they underestimated the
+ability of another participant based on their gender and nationality,
+they compensate by overestimating their ability.
 
 Finally, I estimate the structural parameters of the models to study
 model-heterogeneity in the sample. I find that even at an individual
-level the behavior is better explained by misattribution bias for most
-subjects. There is a smaller group of subjects that can be better
-explained through dogmatic beliefs and hypothesis testing and none of
-them behave in line with the fully Bayesian benchmark.
+level the behavior is better explained by a general model of
+misattribution bias for most subjects. There is a smaller group of
+subjects that can be better explained through dogmatic beliefs and
+hypothesis testing and none of them behave in line with the fully
+Bayesian benchmark.
 
 In what follows I first discuss the theoretical framework and the
 predictions of each of the theories. Then I introduce a unifying example
-and my hypotheses. I then describe the experimental design and the
-results, as well as the estimation of the parameters.
+and my hypotheses. In section 4 I describe the experimental design and
+in section 5 I present the data and the results. Section 6 outlines the
+estimation of the parameters and the model fit analysis.
 
 \hypertarget{theoretical-framework}{%
 \section{Theoretical Framework}\label{theoretical-framework}}

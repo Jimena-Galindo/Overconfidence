@@ -5,6 +5,20 @@
 /Data/
 /Clean/
 demo/
+/Lab forms/
+/figures/
+figures2/
+FiguresA/
+
+*.syntex.gz
+*.toc
+*.snm
+*.log
+*.out
+*.nav
+*.fls
+*.fdb_latexmk
+*.aux
 
 # R Markdown HTML output
 *.html

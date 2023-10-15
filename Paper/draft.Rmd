@@ -1,5 +1,5 @@
 ---
-title: "Learning with Misspecified Models: the case of overestimation"  
+title: "Learning with Mental Models: the case of overestimation"  
 date: '`r format(Sys.time(), "%B %d, %Y")`'
 author: "Jimena Galindo"
 abstract: "I design a framework and a laboratory experiment that allows for the comparison of multiple theories of misspecified learning. I focus on a framework with endogenous information and a data-generating process ruled by two fundamentals: an ego-relevant parameter and a state. Within this framework I study three forces that can lead to misspecified beliefs: initial misspecifications, learning traps and biased updating. I find that biased updating is the main driver of misspecified beliefs in the lab. In addition, I vary the degree of ego-relevance of the parameter by introducing a stereotype treatment. The data is consistent with biased updating in both cases but for potentially different reasons: when learning about themselves, subjects attribute successes to their own ability and failures to luck. Instead, in the stereotype treatment, they compensate for initial negative biases by over-attributing positive signals to the ability of others. This translates into similar observed choices but different dynamics in beliefs."
@@ -141,11 +141,11 @@ this bias has also been proposed by \citet{Brunnermeier2005} and empirically stu
 
 These theories provide the main building blocks for a simplified framework that can be directly 
 implemented in a laboratory experiment. In the experiment subjects make choices and receive feedback that depends on their own ability, an exogenous parameter and the choice they made. I track their choices as well as their beliefs about their own ability. The goal is to 
-identify which of the 3 forces---the presence of learning traps, misspecified initial beliefs, or missatribution 
+identify which of the 3 forces---the presence of learning traps, misspecified initial beliefs, or misatribution 
 bias---better explains the observed behavior. To determine the fit of the models, I compare the behavior
 predicted by each theory to the benchmark given by the fully Bayesian updating procedure.
 
-I also study whether the learning mechanism is inherently linked to the ego-relevance the parameters 
+I also study whether the learning mechanism is inherently linked to the ego-relevance of the parameters 
 or if it is a more general phenomenon. I vary the degree of ego-relevance by introducing a 
 treatment in which subjects learn about the ability of another participant.
 In this treatment, the participants know only the gender and nationality of the other, and thus can 
@@ -159,7 +159,7 @@ of misspecified beliefs is the updating procedure itself or the endogenous infor
 Although some agents do fall into learning traps, I find that the behavior of most 
 subjects is better explained by misattribution bias: good news are treated as signaling high ability, while bad news are attributed to a low state. I also find that misattribution is 
 no more prevalent in the ego-relevant than in the stereotype condition. This suggests 
-that the main driver of the misspecification is the updating proceduce; however, the underlying 
+that the main driver of the misspecification is the updating procedure; however, the underlying 
 mechanism by which the bias is generated may be 
 different in both treatments: While in the ego-relevant condition subjects prefer to hold themselves in high esteem, in the stereotype condition
 updating seems to be driven by some sort of bias overcorrection---when subjects realize that they underestimated 
@@ -1061,40 +1061,35 @@ Which is discussed in the next section.
 
 ## Estimation of the self-attribution bias
 
-Estimation of the parameters of the self-attribution bias is more involved than estimation of the switching
-threshold. In this case, there is no obvious identification strategy that provides a simple estimate 
-of the parameters. Instead, I use the simulated method of moments to estimate the parameters of the model.
+I use the simulated method of moments to estimate the distortion parameters of the misattribution bias model. There is a toltal of 6 parameters in the model, however, I assume that the distortion is symmetric for good and bad news. Formally, I assume that
+$c(\theta_H, \omega, \text{good news})=c(\theta, \omega_L, \text{bad news})$, $c(\theta_M, \omega, \text{good news})=c(\theta, \omega_M, \text{bad news})$ and $c(\theta_L, \omega, \text{good news})=c(\theta, \omega_H, \text{bad news})$. 
 
-In particular, I simulate the behavior of the self-attribution bias for each possible prior and over 
-a grid of parameters. I make the simplifying assumption that the distortion is symmetric across good and bad news.
-That is, I assume that $c(\theta_H, \omega, \text{good news})=c(\theta, \omega_L, \text{bad news})=:c_g$ and that 
-$c(\theta_M, \omega, \text{bad news})=c(\theta, \omega_M, \text{good news})=:c_b$. In addition, I normalize the 
-remaining cases to be equal to 1. This leaves me with only 2 parameters to estimate.
+To estimate them I use 4 moment conditions. The moments that I use are the regression coefficients from the reaction to good and bad news. That is: the slope and intercept of the relationship between the number of successes in the last signal sample and the change in effort as a consequence. The slope and intercept are different for good and bad news, which gives 4 moment conditions. To determine good news are samples for which there are more successes than failures. Bad news are outcome samples for which there are more failures than successes. The sample moments are reported in \ref{tab:regression-net} and correspond to the following regression model:
 
-The moments that I match in the data are the reaction to good news and the reaction to bad news. In particular,
-I match the average change in effort in response to good news and the average change in effort in response to bad news.
-That is I match the following moments:
+$$ \Delta effort_{it} = \beta_0 + \beta_1 signal_{i t-1} + \beta_2\mathbb{I}\{good \:news_{i t-1}\} + \beta_3{I}\{good\:news\}*signal_{i t-1} $$
+where $i$ is an individual and task level index (each subject in each of the six tasks in the experiment represents a single observed path) and $t$ is a round_number index that ranges from 1 to 11. The variable $signal_{i t-1}$ is the number of successes observed in round $t-1$, and the change in effort is $\Delta effort_{it}=effort_{it}-effort_{it-1}$. The coefficients $\beta_0$ and $\beta_1$ are the moments that rule the interaction between bad news and effort change, while $\beta_0+\beta_2$ and $\beta_1 +\beta_3$ are the intercept and the slope for the relation between effort change and good news.
 
-$$
-\bar{G} = \frac{1}{N}\sum_{i=1}^N \frac{1}{T}\sum_{t=1}^T \mathbb{I}\{o_t > \bar{o}\} \cdot (e_t - e_{t-1}) 
-$$
-$$
-\bar{B} = \frac{1}{N}\sum_{i=1}^N \frac{1}{T}\sum_{t=1}^T \mathbb{I}\{o_t < \bar{o}\} \cdot (e_t - e_{t-1})
-$$
-where $N$ is the number of subjects in the sample, $T$ is the number of rounds in the experiment.
+In order to find the parameters that correspond to the observed moments I rely on simulation. Rather than theoretically deriving the moments, I simulate what a large number of subjects would have done conditional on parameter values. I do this for a large number of parameter combinations that statisfy the restrictions on them. For each set of parameter values, I compute 
+the simulated moments. These simulations are meant to approximate the population moments conditional on parameters. I then look for the set of parameters that minimize the weighted quadratic distance between the sample moments and the population moments. The weight I place on each of the moments is the inverse of the variance of the moment in the sample.
 
-I then use the simulated method of moments to estimate the parameters of the model. In particular, I
-simulate the behavior of the model for each possible prior and over a grid of parameters. I then
-calculate the average change in effort in response to good news and the average change in effort in
-response to bad news for each possible prior and over the grid of parameters and across $I$ simulated 
-indiviaduals. 
-I then minimize the objective function given by the sum of squared differences between the simulated
-moments and the empirical moments. That is, I solve the following problem
+The model makes deterministic predictions about the choices subjects should make after each possible history of signals. However, in the data I observe significant variation. In order to account for variation in the simulation I introduce a noise parameter $\varepsilon_{it}\sim U[0, 1]$ which introduces a tremble in the choice of subject $i$ in period $t$. If $\varepsilon_{it}<0.1$ the subject chooses an effort level at random. Otherwise they choose the optimal effort as predicted by the model. More details on the simulation can be found in the Appendix. While the estimated parameters are all interior solutions with $\hat{c} = (0.4, 0.7, 1.5)$. 
 
-
-
+Using the estimated parameters I proceed to simulate the deterministic choice paths for each of the models.
 
 # Model fit
+
+I simulate each of the models for each possible combination of type and state $(\theta, \omega)$. I then compute te distance from the observed paths of each subject to each of the simulated paths that match the subjects type and state. I average across all paths for a single subject (each subject participated in 6 distinct effort tasks) and determine which model is a better 
+explanation for that subject's behavior by finding the one that gives the minimal average distance between the observed behavior and the simulation. 
+
+In detail, let $e_{ikt}$ be the effort chosen by subject $i$ in task $k$ at round $t$. And let $\tilde{e}_{t}(\theta, \omega, j)$
+be the simulated choices using model $j$ for a subject of type $\theta$ in state $\omega$. And let $j$ be dogmatic, switcher, attribution or Bayesian. I solve the following problem to determine the best fitting model for each subject $i$.
+
+$$ arg\min_j \sum_k \frac{1}{T}\sum_t{\left[e_{ikt}-\tilde{e}_{t}(\theta, \omega, j)\right]} $$
+The histogram in Figure \ref{fig:best-models} shows the distribution of the best fitting models in the sample. The average fit of each model is reported in the Appendix.
+
+![Distribution of the best fitting models at a subject level in each treatment](../figures/model_fit_histogram.png){#fig:best-models}
+
+
 
 # Conclusion
 
@@ -1151,7 +1146,14 @@ likelihood ratios for all observations.
 
 ![Distribution of likelihood ratios for all observed belief changes](../figures/lr_hist.png){#fig:lr-hist}
 
+## Simulated Method of Moments
 
+I simulate the model on a grid with 3 parameters: $c_1$, $c_2$ and $c_3$ such that $c_1<c_2<c_3$. All parameters on the grid take values between 0.1 and 2 with a distance of 0.1 between them. I simulate 1000 paths of choices of length 11 for each of the possible combinations of parameters. For each set of parameters I compute the moments by estimating the regression model described in section 8.2. Represent the simulated models for parameter vector $c$ by $\tilde{m}(c)$ and the sample moments by $m$. The estimates of the parameters are given by
+
+$$ \hat{c} = arg\min_c (\tilde{m}(c)-m)^T W(\tilde{m}(c)-m)$$
+It is also worth noting that since the randomness if fixed in the experimental data by setting a seed, I do the same in the simulation and use the same seed as in the experimental environment to account for the correlation in observed signals that exists in the sample.
+
+To determine the parameters $\theta$ and $\omega$ in the simulated individuals, I draw from the empirical distribution.
 
 ## Model simulation
 
@@ -1163,6 +1165,12 @@ uses coincide exactly with the signals that a subject would have seen in the exp
 I then use each of the algorithms defined by the models to simulate the path that the agent would have taken
 given the signal and given an initial belief. For the dogmatic modeler and the switcher, I use each possible
 dogmatic belief. For the Bayesian and the self-attribution bias, I use a uniform belief on theta.
+
+## Model fit
+
+The average model fit for each of the simulated models is reported in Figure \ref{fig:model-fit}.
+
+![Average distance of subject behavior to the best fitting model](../figures/model_min_distance.png){#fig:model-fit}
 
 ## Reaction to good and bad news (robustness check)
 

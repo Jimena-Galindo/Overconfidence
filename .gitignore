@@ -20,6 +20,7 @@ FiguresA/
 *.fls
 *.fdb_latexmk
 *.aux
+*.png
 
 # R Markdown HTML output
 *.html

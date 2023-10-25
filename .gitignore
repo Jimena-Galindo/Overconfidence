@@ -121,3 +121,5 @@ connection*
 Thumbs.db
 
 SMM.ipynb
+
+*.png

@@ -120,6 +120,8 @@ connection*
 
 Thumbs.db
 
-SMM.ipynb
+Analysis/SMM.ipynb
 
 *.png
+
+*.sqlite3

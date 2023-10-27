@@ -1,5 +1,8 @@
 ---
-title: "Learning with Mental Models: the case of overestimation"  
+title: |
+  | Learning with Misspecified Models: The Case of Overestimation
+  | \href{https://jimena-galindo.github.io/fileRepo/draft.pdf}{\normalsize Click Here for the Latest Version}
+
 date: '`r format(Sys.time(), "%B %d, %Y")`'
 author: "Jimena Galindo"
 abstract: "I design a framework and a laboratory experiment that allow for the comparison of multiple theories of misspecified learning. I focus on a framework with endogenous information and a data-generating process ruled by two fundamentals: an ego-relevant parameter and a state. Within this framework I study three forces that can lead to misspecified beliefs: initial misspecifications, learning traps and biased updating. I find that biased updating is the main driver of misspecified beliefs in the lab. In addition, I vary the degree of ego-relevance of the parameter by introducing a stereotype treatment. The data is consistent with biased updating in both cases but for potentially different reasons: when learning about themselves, subjects attribute successes to their own ability and failures to luck. Instead, in the stereotype treatment, they compensate for initial negative biases by over-attributing positive signals to the ability of others. This translates into similar observed choices but different dynamics in beliefs."
@@ -31,6 +34,11 @@ output:
 bibliography: references.bib
 fontsize: 12pt 
 geometry: margin=2.5cm
+link-citations: true
+linkcolor: mypink
+filecolor: myblue
+citecolor: mypink
+urlcolor: mypink
 
 ---
 
@@ -49,148 +57,54 @@ updates <- fread("../Clean/updates_post.csv")
 \newpage
 # Introduction
 
-A growing body of literature in economics explores how people develop incorrect beliefs 
-about fundamentals. Most of this research centers on scenarios where agents 
-passively observe the world, and incorrectly integrate the received information into their 
-beliefs.\footnote{See \citet{benjamin2019} for a review of the literature on errors of 
-probabilistic thinking.}
-However, many real-world situations cast agents as active participants in the generation of 
-information. In these cases, the information they observe is influenced by their actions and 
-subsequent behavior is in turn determined by how they incorporate the information 
-into their beliefs.  
+A growing body of literature in economics explores how people develop incorrect beliefs about fundamentals. Most of this research centers on scenarios where agents passively observe the world, and incorrectly integrate the received information into their beliefs.\footnote{See \citet{benjamin2019} for a review of the literature on errors of probabilistic thinking.} However, many real-world situations cast agents as active participants in the generation of information. In these cases, the information they observe is influenced by their actions and subsequent behavior is in turn determined by how they incorporate the information into their beliefs.  
 
-As an example consider a student who needs to decide how much effort to put into 
-studying for an exam. Their decision will depend on two factors: their belief about their intrinsic 
-ability, and their belief about how difficult the exam will be. The outcome 
-they observe will be affected by how much they decide to study. Imagine that the student 
-puts in a moderate amount of effort and gets a surprisingly good grade. Did they get a good grade because 
-they are smarter than they thought? Or because the exam was easier than they had anticipated? 
-Their future exam preparation strategy will depend fundamentally on which line of reasoning they 
-take. This feedback loop is referred to as an \emph{endogenous information 
-process} and is at the center of the forces I study. 
+As an example, consider a student who needs to decide how much effort to put into studying for an exam. Their decision will depend on two factors: their belief about their intrinsic ability and their belief about how difficult the exam will be. The outcome they observe will be affected by how much they decide to study. Imagine that the student exerts a moderate amount of effort and gets a surprisingly good grade. Did they get a good grade because they are smarter than they thought? Or because the exam was easier than they had anticipated? Their future exam-preparation strategy will depend fundamentally on which line of reasoning they take. This feedback loop is referred to as an \emph{endogenous information process} and is at the center of the forces I study. 
 
-To understand what the main forces at play are, I compare a set of theories that model learning in settings with 
-endogenous information, and which can rationalize the persistence of misspecified beliefs. I develop a unifying framework that nests multiple 
-theories of learning and generates testable predictions for each of them. 
-Then I cast this framework in a laboratory experiment and test the predictions to identify which 
-of the theories are consistent with the behavior I observe in the lab.
-The experiment features an agent who needs to 
-learn two parameters: one that pertains their own characteristics 
-(an \emph{ego-relevant} parameter), 
-and an exogenously determined state---in the context of the student preparing for exams, 
-the two parameters  would be their intrinsic ability and the difficulty of the exam. 
+To understand what main forces are at play, I compare a set of theories that model learning in settings with 
+endogenous information and can rationalize the persistence of misspecified beliefs. I develop a unifying framework that nests multiple theories of learning and generates testable predictions for each of them. Then, I cast this framework in a laboratory experiment and test the predictions to identify which of the theories are consistent with the behavior I observe in the lab. The experiment features an agent who needs to learn two parameters: one that pertains to their own characteristics (an \emph{ego-relevant} parameter), and an exogenously determined state. In the context of the student preparing for exams, the two parameters  would be their intrinsic ability and the difficulty of the exam. 
 
-Misspecified beliefs about an ego-relevant parameter are often referred to as overconfidence 
-(or underconfidence) and 
-have been documented by behavioral scientists\footnote{\citet{kelley1980} 
-provides a review of the psychology literature.} and economists\footnote{See \citet{benjamin2019} 
-for a review of the literature in economics.} in a variety of settings.  @Oster2013 find that 
-subjects who are at high risk of having Huntington's disease overestimate their probability of 
-being healthy and make retirement decisions as if they were healthy. @Hoffman2020 show that workers 
-overestimate the quality of their match to their 
-current employment and are unlikely to look for other opportunities. @Camerer1999 find that 
-entrepreneurs are overconfident about the quality of their enterprise, 
-which leads to excessive entry and early exit from markets. 
+Misspecified beliefs about an ego-relevant parameter are often referred to as overconfidence (or underconfidence) and have been documented by behavioral scientists\footnote{\citet{kelley1980} provides a review of the psychology literature.} and economists\footnote{See \citet{benjamin2019} for a review of the literature in economics.} in a variety of settings.  @Oster2013 find subjects who are at high risk of having Huntington's disease overestimate their probability of being healthy, and they make retirement decisions as if they were healthy. @Hoffman2020 show workers overestimate the quality of their match to their current employment and are unlikely to look for other opportunities. @Camerer1999 find entrepreneurs are overconfident about the quality of their enterprise, which leads to excessive entry and early exit from markets. 
 
-In all of these examples,
-holding an incorrect belief about a fundamental leads to suboptimal choices with 
-potentially high costs. In spite of the abundance of evidence, the scope of the existing research 
-is limited in terms of the frameworks it considers. Most of the experimental evidence 
-documenting the bias is collected in settings where subjects are passive learners.\footnote{
-\citet{Gotte2022} and \citet{Ozyilmaz2022} are exceptions that study settings with endogenous information processes.} They 
-observe a noisy signal and report their beliefs over subsequent rounds.\footnote{\citet{Bracha2012} and 
-\citet{Mobius2022} are some examples.} Although these studies provide important insights, they are 
-not flexible enough 
-to incorporate the richer theories that have been proposed more recently. In particular, they 
-do not allow the study of endogenous learning or for learning about multiple parameters at once.\footnote{\citet{Coutts2020} 
-studies an environment with an ego-relevant parameter and an exogenous state but does not 
+In all of these examples, holding an incorrect belief about a fundamental leads to suboptimal choices with potentially high costs. In spite of the abundance of evidence, the scope of the existing research is limited in terms of the frameworks it considers. Most of the experimental evidence documenting the bias is collected in settings where subjects are passive learners.\footnote{\citet{Gotte2022} and \citet{Ozyilmaz2022} are exceptions that study settings with endogenous information processes.} They observe a noisy signal and report their beliefs over subsequent rounds.\footnote{\citet{Bracha2012} and \citet{Mobius2022} are some examples.} Although these studies provide important insights, they are not flexible enough to incorporate the richer theories that have been proposed more recently. In particular, they do not allow the study of endogenous learning or for learning about multiple parameters at once.\footnote{\citet{Coutts2020} studies an environment with an ego-relevant parameter and an exogenous state but does not 
 incorporate the endogenous information process.}  
 
-In my experiment, I move away from the standard framework of passive learning to analyze a richer set of learning mechanisms. In particular, 
-the interaction between the two parameters together with an endogenous information process 
-gives rise to three possible mechanisms that allow
-for the persistence of incorrect beliefs: the presence of learning traps, incorrect initial beliefs, and misattribution bias. The theories that I consider incorporate different combinations of these mechanisms.
+In my experiment, I move away from the standard framework of passive learning to analyze a richer set of learning mechanisms. In particular, the interaction between the two parameters together with an endogenous information process gives rise to three possible mechanisms that allow for the persistence of incorrect beliefs: the presence of learning traps, incorrect initial beliefs, and misattribution bias. The theories that I consider incorporate different combinations of these mechanisms.
 
-When the setting features learning traps, even an agent who incorporates all information correctly, 
-may fall into learning traps as outlined by @Hestermann2021. These traps are characterized by a 
-combination of an incorrect belief and an
-optimal action which produce information that confirms the incorrect belief. 
-Once an agent falls into a trap, the belief will be stable and even with 
-a correctly specified model of learning, they will not be able to abandon their misspecified beliefs. 
-If the agent is 
-dogmatic about their initial belief, @Heidhues2018 show that they will inevitably fall into a trap
-and thus will be able to rationalize and sustain their initial misspecification belief.\footnote{\citet{Gotte2022} study the case of agents with dogmatic initial beliefs in a 
+When the setting features learning traps, even an agent who incorporates all information correctly may fall into learning traps, as outlined by @Hestermann2021. These traps are characterized by a combination of an incorrect belief and an optimal action that produce information that confirms the incorrect belief. Once an agent falls into a trap, the belief will be stable and even with a correctly specified model of learning, they will not be able to abandon their misspecified beliefs. If the agent is dogmatic about their initial belief, @Heidhues2018 show they will inevitably fall into a trap and thus will be able to rationalize and sustain their initial misspecification belief.\footnote{\citet{Gotte2022} study the case of agents with dogmatic initial beliefs in a 
 laboratory experiment.} 
 
-@Ba2023 moves away from dogmatism and endows the agents with a mechanism through which 
-they can abandon incorrect beliefs. This allows them to avoid falling into learning traps. 
-To do so agents perform Bayesian hypothesis tests that evaluate which is the more 
-likely parameter out of two possibilities. By doing this, she characterizes the set of situations 
-in which, even agents who consider alternative paradigms, may become trapped.\footnote{A 
-similar mechanism is proposed by \citet{Schwarstein2021} in a setting with persuasion.}
+@Ba2023 moves away from dogmatism and endows the agents with a mechanism through which they can abandon incorrect beliefs. This allows them to avoid falling into learning traps. To do so, agents perform Bayesian hypothesis tests that evaluate which of two possible parameters is more likely. By doing so, she characterizes the set of situations in which even agents who consider alternative paradigms may become trapped.\footnote{A similar mechanism is proposed by \citet{Schwarstein2021} in a setting with persuasion.}
 
-Lastly, misattribution bias is the more classical explanation and has been widely studied in 
-behavioral science.\footnote{See \citet{kelley1980} for a review.}
-Agents who suffer from misattribution bias will attribute successes to their own ability---the 
-ego-relevant parameter---and failures to bad luck---the state. 
-Under this model of learning, even an agent who initially has a correct initial 
-belief may become overconfident if they observe a sequence of successes. In this case, 
-the main driver of the bias is not an initial misspecification or the presence of learning traps, 
-it is the updating procedure itself.\footnote{A more general framework that can be used to model 
-this bias has also been proposed by \citet{Brunnermeier2005} and empirically studied by \citet{Bracha2012}.} 
+Lastly, misattribution bias is the more classical explanation and has been widely studied in behavioral science.\footnote{See \citet{kelley1980} for a review.} Agents who suffer from misattribution bias will attribute successes to their own ability---the 
+ego-relevant parameter---and their failures to bad luck---the state. Under this model of learning, even an agent who initially has a correct initial belief may become overconfident if they observe a sequence of successes. In this case, the main driver of the bias is not an initial misspecification or the presence of learning traps; it is the updating procedure itself.\footnote{A more general framework that can be used to model this bias has also been proposed by \citet{Brunnermeier2005} and empirically studied by \citet{Bracha2012}.} 
 
-These theories provide the main building blocks for a simplified framework that can be directly 
-implemented in a laboratory experiment. In the experiment subjects make choices and receive feedback that depends on their own ability, an exogenous parameter and the choice they made. I track their choices as well as their beliefs about their own ability. The goal is to 
-identify which of the 3 forces---the presence of learning traps, misspecified initial beliefs, or misatribution 
-bias---better explains the observed behavior. To determine the fit of the models, I compare the behavior
-predicted by each theory to the benchmark given by the fully Bayesian updating procedure.
+These theories provide the main building blocks for a simplified framework that can be directly implemented in a laboratory experiment. In the experiment subjects make choices and receive feedback that depends on their own ability, an exogenous parameter and the choice they made. I track their choices as well as their beliefs about their own ability. The goal is to identify which of the three forces---the presence of learning traps, misspecified initial beliefs, or misatribution bias---better explains the observed behavior. To determine the fit of the models, I compare the behavior predicted by each theory with the benchmark given by the fully-Bayesian updating procedure.
 
-I also study whether the learning mechanism is inherently linked to the ego-relevance of the parameters 
-or if it is a more general phenomenon. I vary the degree of ego-relevance by introducing a 
-treatment in which subjects learn about the ability of another participant.
-In this treatment, the participants know only the gender and nationality of the other, and thus can 
-induce stereotypes---a different type of misspecification.  
-If correct learning about the parameters happens at higher rates in the stereotype treatment, 
-it would suggest that the 
-bias is intrinsically linked to the ego-relevance of the parameter. In contrast, if similar 
-biased behavior arises in both treatments, it is more likely that the main driver of these types 
-of misspecified beliefs is the updating procedure itself or the endogenous information process.
+I also study whether the learning mechanism is inherently linked to the ego-relevance of the parameters or if it is a more general phenomenon. I vary the degree of ego-relevance by introducing a treatment in which subjects learn about the ability of another participant. In this treatment, the participants know only the gender and nationality of the other, and thus can induce stereotypes---a different type of misspecification. If correct learning about the parameters happens at higher rates in the stereotype treatment, this finding would suggest the bias is intrinsically linked to the ego-relevance of the parameter. By contrast, if similar biased behavior arises in both treatments,  the main driver of these types of misspecified beliefs is more likely to be the updating procedure itself or the endogenous information process.
 
-Although some agents do fall into learning traps, I find that the behavior of most 
-subjects is better explained by misattribution bias: good news are treated as signaling high ability, while bad news are attributed to a low state. I also find that misattribution is 
-no more prevalent in the ego-relevant than in the stereotype condition. This suggests 
-that the main driver of the misspecification is the updating procedure; however, the underlying 
-mechanism by which the bias is generated may be 
-different in both treatments: While in the ego-relevant condition subjects prefer to hold themselves in high esteem, in the stereotype condition
-updating seems to be driven by some sort of bias overcorrection---when subjects realize that they underestimated 
-the ability of another participant based on their gender and nationality, they compensate by
-overestimating their ability.
+Although some agents do fall into learning traps, I find the behavior of most subjects is better explained by misattribution bias: good news are treated as signaling high ability, whereas bad news are attributed to a low state. I also find misattribution is no more prevalent in the ego-relevant than in the stereotype condition. This finding suggests the main driver of the misspecification is the updating procedure; however, the underlying mechanism by which the bias is generated may be different in both treatments. Whereas subjects in the ego-relevant condition prefer to hold themselves in high esteem, in the stereotype condition, updating seems to be driven by some sort of bias overcorrection---when subjects realize they underestimated 
+the ability of another participant based on their gender and nationality, they compensate by overestimating their ability.
 
-Finally, I estimate the structural parameters of the models to study model-heterogeneity in the sample.
-I find that even at an individual level the behavior is better explained by a general model of 
-misattribution bias for most
-subjects. There is a smaller group of subjects that can be better explained through dogmatic beliefs
-and hypothesis testing and none of them behave in line with the fully Bayesian benchmark. 
+Finally, I estimate the structural parameters of the models to study model-heterogeneity in the sample. I find that even at an individual level, the behavior is better explained by an average model of misattribution bias for most subjects. A smaller group of subjects exists that can be better explained through dogmatic beliefs and hypothesis testing, and very few of them behave in line with the fully Bayesian benchmark. 
 
-In what follows I first discuss the theoretical framework and the predictions of each of the theories.
-Then I introduce a unifying example and my hypotheses. In section 4 I describe the experimental
-design and in section 5 I present the data and the results. Section 6 outlines the estimation of the parameters
-and the model fit analysis.
+In what follows, I first discuss the theoretical framework and the predictions of each of the theories. Then, I introduce a unifying example and my hypotheses. In section 4, I describe the experimental design, and in section 5, I present the data and the results. Section 6 outlines the estimation of the parameters and the model fit analysis.
 
 # Theoretical Framework
 
-The theories that I consider make predictions in two distinct frameworks. I first detail each theory 
+The theories I consider make predictions in two distinct frameworks. I first detail each theory 
 within their original framework and then develop a unifying example that allows me to
-compare the predictions of all of them. In framework 1 I consider a setting in which the an agent observes
+compare the predictions of all of them. In framework 1, I consider a setting in which an agent observes
 a continuous output and infers the underlying parameters. In framework 2, the agent observes a binary 
-outcome and infers the underlying probability of success, which is related to the parameters. In both frameworks, I consider two nested theories of learning.
+outcome and infers the underlying probability of success, which is related to the parameters.
 
 ## Framework 1
 
-An agent is of type $\theta \in \Theta$ and faces an unknown exogenous state $\omega$ drawn from some 
+An agent of type $\theta \in \Theta$ faces an unknown exogenous state $\omega$ drawn from 
 density $f$ over $\Omega$. The agent knows the 
-distribution of $\omega$ but not its realized value. His belief about the state, 
-$p_0(\omega)$, coincide with the true distribution, $f$; and his belief about the type is $p_0(\theta)$. 
+distribution of $\omega$ but not its realized value. His belief about the state $\omega\in\Omega$ is 
+$p_0(\omega)$ and coincides with the true distribution, $f$. His belief about the type 
+$\theta\in\Theta$ is $p_0(\theta)$. 
 Let the agent's true type be $\theta^{*}$,  and the realized state be $\omega^{*}$.
 
 An agent's belief about the type is \emph{misspecified} if it assigns probability zero to their true type. Furthermore, the agent is 
@@ -199,156 +113,120 @@ agent can be dogmatic and misspecified, in which case $\hat{\theta} \neq \theta^
 
 The agent chooses an action $a\in A$ and observes a noisy outcome $h$. 
 The outcome is a function of the agent's type, the state, and
-the action. In particular $h = h(\theta^*, \omega^*, a) + \varepsilon$ with $h(\cdot)$ increasing in both $\theta^*$ and $\omega^*$, 
+the action. In particular, $h = h(\theta^*, \omega^*, a) + \varepsilon$ with $h(\cdot)$ increasing in both $\theta^*$ and $\omega^*$, 
 and such that conditional on a pair of parameters $(\theta, \omega)$, there is a unique optimal action. 
-Additionally, $\varepsilon\sim N(0, \sigma)$ is noise in the output.  
+Additionally, $\varepsilon\sim N(0, \sigma)$ is noise in the outcome.  
  
-After observing the outcome, the agent updates his beliefs about $\theta$ and $\omega$ using some algorithm and moves on to the next period.
-He repeats this process infinitely many times. I make the simplifying assumption that the agent is myopic and chooses the action 
-that maximizes the payoff in each period. This assumption simplifies the analysis and plays a role in whether an agent who updates their beliefs using Bayes rule would learn the truth or not, however, for the main theory discussed in this section, the results hold even when relaxing this assumption.
+After observing the outcome, the agent updates his beliefs about $\theta$ and $\omega$ using some algorithm and moves on to the next period. He repeats this process infinitely many times. I make the simplifying assumption that the agent is myopic and chooses the action that maximizes the payoff in each period. This assumption simplifies the analysis and plays a role in whether an agent who updates his beliefs using Bayes rule would learn the truth or not, however, for the main theory discussed in this section, the results hold even when relaxing this assumption as shown in @Heidhues2018.
 
 
 A key notion in this setting is that of a self-defeating equilibrium\footnote{This notion is an adaptation of the Berk-Nash equilibrium in \citet{Esponda2016} to this setting with only one agent}. 
-A \emph{self-defeating equilibrium} is a belief and action pair, $(p, a)$, such that the agent's belief about their type is misspecified, and the outcome generated by the action is consistent with the misspecified belief. The agent's belief is said to be \emph{stable} when this happens and the average output is 
+A \emph{self-defeating equilibrium} is a belief and action pair, $(p, a^*)$, such that the agent's belief about his type is misspecified, and the outcome generated by the action is consistent with the misspecified belief. The agent's belief is said to be \emph{stable} when this happens. 
 
-$$\bar{h}(a^*) = h(\hat{\theta}, \hat{\omega}, a)$$
-Where $\hat{\theta}$ and $\hat{\omega}$ is the type-state pair on which the misspecified belief places all probability. That is, the agents belief is $p(\hat{\theta}, \hat{\omega}) = 1$ and $p(\theta, \omega) = 0$ for all other values of the parameter.
+Given the choice that sustains the self-defeating equilibrium, they observe the \emph{average output} given by
+$$\bar{h}(a^*) =\frac{1}{T}\sum_t \left[h(\hat{\theta}, \hat{\omega}, a^*)+\varepsilon_t\right]$$ 
+where $\hat{\theta}$ and $\hat{\omega}$ is the type-state pair on which the misspecified belief places all probability. That is, the agents belief is $p(\hat{\theta}, \hat{\omega}) = 1$ and $p(\theta, \omega) = 0$ for all other values of the parameter.
 
-Within this framework, I consider two nested theories of belief updating: the first one is a dogmatic modeler adapted from @Heidhues2018,The second one is a switcher, as in @Ba2023. The dogmatic modeler can be seen as a switcher with an infinitely sticky initial belief so the two theories are nested. However, outside of the limiting case, they produce different 
+Within this framework, I consider two nested theories of belief updating: the first one is a dogmatic modeler adapted from @Heidhues2018. The second one is a switcher, as in @Ba2023. The dogmatic modeler can be seen as a switcher with an infinitely sticky initial belief so the two theories are nested. However, outside of the limiting case, they produce different 
 predictions about the agent's behavior. I discuss each of them separately in what follows.
 
 ### The Dogmatic Modeler
 
 Take the action space to be the same as the state space $\Omega$ and let $\Omega=A:=[\underline{a}, \infty)$. 
 
-A dogmatic agent is characterized by a learning model where he does not update their beliefs about $\theta$, instead, he holds a degenerate belief that places all probability on $\hat{\theta}$, which is potentially misspecified. 
-In this case, no matter how much information he gathers against being of type $\hat{\theta}$, he will not update his beliefs about it. 
+A dogmatic agent is characterized by a learning model where he does not update his beliefs about $\theta$ and instead, holds a degenerate belief that places all probability on $\hat{\theta}$, which is potentially misspecified. 
+In this case, no matter how much evidence he gathers against being of type $\hat{\theta}$, he will not update the beliefs about his type. 
 Any discrepancies between the observed outcomes and his believed type are incorporated using the Bayes rule to update his beliefs about $\omega$. @Heidhues2018 show that, under certain assumptions on the per-period utility,\footnote{The assumptions are that $u$ is twice continuously differentiable with: (i)$u_{aa}<0$ and $u_a(\underline{a},  \theta, \omega)>0>u_a(\Bar{a}, \theta, \omega)$, (ii) $u_{\theta}, u_{\omega}>0$ and (iii) $u_{a\theta}<0$ and $u_{a\omega}>0$. Where $\underline{a}$ is the
 minimal action and $\Bar{a}$ is the maximal one. The direction of the derivatives is a normalization
-and the results would hold even when the signs are reversed.} a dogmatic modeler will inevitably fall into a self-defeating equilibrium. The equilibrium will be such that the outcomes they observe reinforce their belief on $\omega$ in such a way that as $t\to\infty$ the agent will be sure that the state is some $\omega^{'}$ consistent with their believed type and the observed data. In other words, they will be in a self-defeating equilibrium with a stable belief that places probability one on the incorrect parameters $(\hat{\theta}, \omega_{\infty})$
+and the results would hold even when the signs are reversed.} a dogmatic modeler will inevitably fall into a self-defeating equilibrium. The equilibrium will be such that the outcomes he observes reinforce his belief on $\omega$ in such a way that as $t\to\infty$ the agent will be sure that the state is some $\omega^{'}$ consistent with their believed type and the observed data. In other words, he will be in a self-defeating equilibrium with a stable belief that places probability one on the incorrect parameters $(\hat{\theta}, \omega_{\infty})$
 
-The mechanism by which the dogmatic agent falls into the self-defeating equilibrium is the following: Suppose the agent holds the misspecified belief that they are type $\hat{\theta}>\theta^*$. For any prior over $\omega$, the agent will be disappointed by the outcome. That is: 
-$$\bar{h}(\theta^*, \omega^*, a_t^*) := \frac{1}{T}\sum_t \left[h(\theta^*, \omega^*, a_t^*)+\varepsilon_t\right]<\frac{1}{T}\sum_t \left[h(\hat{\theta}, \mathbb{E}(\omega), a_t^*)+\varepsilon_t\right]$$
-Where the right-hand-side of the inequality represents the average outcome that the agent expected. 
+The mechanism by which the dogmatic agent falls into the self-defeating equilibrium is the following: suppose the agent holds the dogmatic and misspecified belief that they are type $\hat{\theta}>\theta^*$. For any prior over $\omega$, the agent will be disappointed by the outcome. That is: 
+$$\frac{1}{T}\sum_t \left[{h}(\theta^*, \omega^*, a_t^*)+\varepsilon_t\right] <\mathbb{E_w} \left[h(\hat{\theta}, \omega, a_t^*)\right]$$
+where the right-hand-side of the inequality represents the average outcome that the agent expected given his beliefs about their type and the state. The left hand side is what they observed. 
 
-There are two possible sources for the disappointment: the first is that the realized state is lower than the expected state; the second source is that the agent is of type $\theta^*$ and therefore, for all possible states, his gain will be lower than what he expected. 
+There are two possible sources for the disappointment: the first is that the realized state $\omega^*$ is lower than what the agent expected, $\mathbb{E}[\omega]$; the second source is that the agent is of type $\theta^*$ and therefore, for all possible states, his gain will be lower than what he expected when the variance of the error term is low or $T$ is large. That is, when $\frac{1}{T}\sum_t\varepsilon_t$ is close to zero. 
 
-Because the agent is dogmatic, he will not update his beliefs about $\theta$ and as a consequence will attribute the disappointment to the state being lower than expected. He will continue to update in this way until he converges to a belief about $\omega$ that is stable. Such a belief will explain the observed utility perfectly and allow the agent to rationalize his dogmatic belief about $\theta$. Under the assumptions of @Heidhues2018, there is a unique value of $\omega$ at which the belief is stable, I will refer to such value as $\omega_\infty$. This mechanism is illustrated in Example 1.
+Because the agent is dogmatic, he will not update his beliefs about $\theta$ and, as a consequence, will attribute the disappointment to the state being lower than expected. He will continue to update in this way until he converges to a belief about $\omega$ that is stable. Such a belief will explain the observed utility perfectly and allow the agent to rationalize his dogmatic belief about $\theta$. Under the assumptions of @Heidhues2018, there is a unique value of $\omega$ at which the belief is stable, I will refer to such value as $\omega_\infty$. This mechanism is illustrated in Example 1.
 
 **Example 1: ** 
-_Set $A = \Omega=[\underline{a}, \infty)$ and consider a student with intrinsic ability $\theta^*\geq 0$ who faces a grading procedure 
-$\omega^*$ that is unknown to them. 
-The student knows that a higher $\omega^*$ is more likely to yield a higher grade. In particular, she knows the grade is given by 
-$(\theta^*+a)\omega^*$._
+_Set $A = \Omega=[\underline{a}, \infty)$ and consider a student (she) with intrinsic ability $\theta^*\geq 0$ who faces a grading procedure $\omega^*$ that is unknown to her. The student knows that a higher $\omega^*$ is more likely to yield a higher grade. In particular, she knows the grade is given by $(\theta^*+a)\omega^*$._
 
-_The student must choose an effort level $a$, which determines her grade. For whatever the chosen effort level, 
-the student must pay a cost $c(a) = \frac{1}{2}a^2$ and observes a grade of $(\theta^*+a)\omega^*$. She repeats 
-this process for infinitely many periods. 
-Assume also that the student's prior is such that $\mathbb{E}[\omega]= \omega^*$ and she is dogmatic 
-about being of 
-type $\hat{\theta}>\theta^*$.\footnote{The example is illustrated for an overconfident student but 
-the results are symmetric for a dogmatic student who initially 
-places probability one on some $\tilde{\theta}<\theta^*$.}
-Therefore, the student's payoff in period $t$ is given by _
+_The student must choose an effort level $a$, which determines her grade. For whatever the chosen effort level, the student must pay a cost $c(a) = \frac{1}{2}a^2$. She repeats this process for infinitely many periods. Assume also that the student's prior is such that $\mathbb{E}[\omega]= \omega^*$ and she is dogmatic about being of type $\hat{\theta}>\theta^*$.\footnote{The example is illustrated for an overconfident student but the results are symmetric for a dogmatic student who initially places probability one on some $\tilde{\theta}<\theta^*$.} Therefore, the student's payoff in period $t$ is given by _
 
 \begin{equation}
 u_t(a_t; \theta^*, \omega^*) = (\theta^*+a_t)\omega^* - \frac{1}{2}a^2 + \varepsilon_t
 \end{equation}
 
-_Under this specification, the myopic optimal effort level is $a_t^* = \omega^*$. 
-Because the student does not know $\omega^*$,
-he will choose $a_t = \mathbb{E}_t(\omega)$ where the expectation is taken with respect to the 
-student's belief at the beginning of
-period $t$. If she does not revise his effort choice for $k$ periods, she will receive 
-an average utility of 
-$(\theta^*+a_t^*)\omega^* - \frac{1}{2}a_t^{*2}$ but he was expecting an average utility of 
-$(\hat{\theta}+a_t^*)\omega^* - \frac{1}{2}a_t^{*2}$. In response, she will apply Bayes 
-rule to update his beliefs about
-$\omega$ to get the posterior belief with 
-$\mathbb{E}_{t+k}[\omega] = \frac{(\theta^{*} + \omega^{*})\omega^{*}}{\hat{\theta} + \omega^{*}}$
-which is lower than the initial belief. This will cause the student to choose a lower effort at $t+k$. As a result, she will again
-receive an average utility that is lower than what he expected which will cause her belief to drift further down. This process will
-continue until the average utility equals her expected utility under the dogmatic belief that assigns probability 1 to $\hat{\theta}$. 
-At that point, the student will have reached a self-defeating equilibrium and she will continue to choose sub-optimal effort forever. _
+_Under this specification, the myopic optimal effort level is $a_t^* = \omega^*$. Because the student does not know $\omega^*$,
+she will choose $a_t = \mathbb{E}_t(\omega)$ where the expectation is taken with respect to the student's belief at the beginning of
+period $t$. If she does not revise his effort choice for $k$ periods, she will receive an average utility of $(\theta^*+a_t^*)\omega^* - \frac{1}{2}a_t^{*2}$ but was expecting an average utility of $(\hat{\theta}+a_t^*)\omega^* - \frac{1}{2}a_t^{*2}$. In response, she will apply Bayes rule to update his beliefs about $\omega$ to get the posterior belief with $\mathbb{E}_{t+k}[\omega] = \frac{(\theta^{*} + \omega^{*})\omega^{*}}{\hat{\theta} + \omega^{*}}$ which is lower than the initial belief. This will cause the student to choose a lower effort at $t+k$. As a result, she will again receive an average utility that is lower than what he expected which will cause her belief to drift further down. This process will continue until the average utility equals her expected utility under the dogmatic belief that assigns probability 1 to $\hat{\theta}$. At that point, the student will have reached a self-defeating equilibrium and she will continue to choose sub-optimal effort forever._
 
 Although the model of a dogmatic modeler rationalizes the prevalence of overconfident (underconfident) beliefs, the
-assumption that the agent has a degenerate belief and no mechanism through which he can update such 
-belief is very restrictive. An
-alternative approach is proposed by @Ba2023. She proposes an extension of the dogmatic agent who 
-is able to swithch from one dogmatic 
+assumption that the agent has a degenerate belief and no mechanism through which he can update such belief is very restrictive. An alternative approach is proposed by @Ba2023. She proposes an extension of the dogmatic agent who is able to swithch from one dogmatic 
 belief to another. By doing so, the agent can avoid the self-defeating equilibria and end up being dogmatic and correctly specified.
 
 ### The Switcher 
 
-An agent is a \emph{switcher} if they behave as a dogmatic, but are willing to entertain the possibility that they are of a different type. In particular, when they start off as a misspecified dogmatic, they are willing to switch to a different dogmatic belief if the data is convincing enough. Their prior is still degenerate and assigns probability one to a particular type, and zero to all other types. This means that a Bayesian update on $\theta$ does not change their beliefs about the type.
-However, they are willing to entertain two such beliefs and have a mechanism by which they decide which belief to adopt at any period $t$.
+An agent is a \emph{switcher} if they behave as a dogmatic, but are willing to entertain the possibility that they are of a different type. In particular, when they start off as a misspecified dogmatic, they are willing to switch to a different dogmatic belief if the data is convincing enough. Their prior is still degenerate and assigns probability one to a particular type, and zero to all other types. This means that a Bayesian update on $\theta$ does not change their beliefs about the type. However, they are willing to entertain two such beliefs and have a mechanism by which they decide which belief to adopt at any period $t$.
 
 In order to abandon their initial dogmatic belief, the agent needs to observe a sequence of outcomes that are sufficiently unlikely to have happened if they were of the type they initially believed. In order to evaluate if the evidence is convincing enough, they keep track of the likelihood that each of the possible types generated the data. If the likelihood ratio is sufficiently large, the agent will switch to the alternative and behave as if they are dogmatic about the new type.
 
 In particular, for an agent that starts with a dogmatic belief that they are of type $\hat{\theta}$ but is willing to consider
-the alternative explanation that they are of type $\tilde{\theta}$, the agent will switch to the alternative if:
+the alternative explanation that they are of type $\tilde{\theta}$, the agent will switch to the alternative if
 
 $$\frac{p[h^t|\tilde{\theta}]}{p[h^t|\hat{\theta}]} > \alpha\geq 1$$
 
-Where $h^t$ is the history of outcomes up to time $t$, and $\alpha$ is the switching threshold.\footnote{Notice that if $\alpha \to \infty$, the behavior of the switcher will be indistinguishable from that of the Dogmatic modeler. 
+where $h^t$ is the history of outcomes up to time $t$ and $\alpha$ is the switching threshold.\footnote{Notice that if $\alpha \to \infty$, the behavior of the switcher will be indistinguishable from that of the Dogmatic modeler. 
 In this sense, the switcher is a generalization of the dogmatic type.} By keeping track of the 
 likelihood ratio, the agent can perform a \emph{Bayesian hypothesis test} and adopt the Dogmatic belief that best fits 
 the data.\footnote{In a related problem \citet{Schwarstein2021} proposes a similar updating procedure which relies on the Bayesian hypothesis test. However, in their model there is a sender who optimally chooses to propose a model that fits the data}
 
 
 By allowing the agent to keep track of the likelihoods and switching to an alternative type, the switcher can avoid the 
-self-confirming equilibria. However, if the prior belief on $omega$ is sufficiently tight around
+self-confirming equilibria. However, if the prior belief on $\omega$ is sufficiently tight around
 a self-defeating equilibrium, the switcher might look identical to the dogmatic even in a case where $\alpha$ is not too large.
 This happens because under the agent's prior, the likelihood ratio is unlikely to grow as fast as it is needed to escape 
-the self-defeating equilibrium. In such situations, we say that the misspecified belief is persistent. 
+the self-defeating equilibrium. In such situations, we say that the misspecified belief about $\theta$ is \emph{persistent}. 
 
 ## Framework 2
 
-As in framework 1, the agent is of some type $\theta^* \in \Theta$ and the state is $\omega \sim F(\Omega)$. In this case, the agent chooses an action $a\in A$ and observes a binary outcome that is either a success or a failure. Denote the outcome by $o \in \{s,f\}$. The probability of observing a success is increasing in $\theta$ and in $\omega$. Whenever the agent observes a success, he gets a payoff $v>0$ and whenever the outcome is a failure, the payoff is 0.  In addition, the probability of success is such that for each state, there is a unique optimal action that maximizes the agent's expected payoff. Therefore, the probability of success can be seen as a monotone transformation of the utility from Framework 1.
+As in framework 1, the agent is of some type $\theta^* \in \Theta$ and the state is $\omega$ is distributed according to  $F(\Omega)$. In this case, the agent chooses an action $a\in A$ and observes a binary outcome that is either a success or a failure. Denote the outcome by $o \in \{s,f\}$. The probability of observing a success is increasing in $\theta$ and in $\omega$. Whenever the agent observes a success, he gets a payoff $v>0$ and whenever the outcome is a failure, the payoff is 0.  In addition, the probability of success is such that for each state, there is a unique optimal action that maximizes the agent's expected payoff. Therefore, the probability of success can be seen as an order-preserving transformation of the utility from Framework 1.
 
-I focus on two nested theories that have been widely studied within this framework: Full Bayesian updating and self-serving attribution bias. I explain each of these classical models of belief updating in what follows
+I focus on two nested theories that have been widely studied within this framework: full Bayesian updating and self-serving attribution bias. I explain each of these classical models of belief updating in what follows.
 
 
 ### The Bayesian
 
 A Bayesian agent simultaneously updates their beliefs about $\theta$ and $\omega$ by using Bayes' rule. 
-The posterior at period t+1 about $\theta$ after observing outcome $o$ is given by:
+The posterior at period $t+1$ about $\theta$ after observing outcome $o$ is given by:
 $$
 p_{t+1}(\theta, \omega| h^t) = \frac{p[o|\theta, \omega]p_t(\theta, \omega)}{\sum_{(\theta', \omega')}p[o|\theta', \omega']p_t(\theta', \omega')}
 $$
+where $p_{t}$ is the belief at the start of period $t+1$ and includes all the information gathered so far.
 
-Where $p_{t}$ is the belief at the start of period $t+1$ and includes all the information gathered so far.
+Bayesian agents choose the effort level that maximizes their expected flow payoff by taking expectations over $(\theta, \omega)$ using their beliefs at period $t$. Since agents are myopic, there will be instances in which the Bayesian will not learn even with infinite amounts of data. This happens because myopic agents do not internalize the trade-off between flow payoff and learning. This can result in too little experimentation to learn their true type. An approach in which agents intentionally introduce variation in their choices is given by @Hestermann2021 and is discussed in the concluding remarks. Regardless, this approach is useful as a benchmark for the other theories discussed in this paper.
 
-Bayesian agents choose the effort level that maximizes their expected flow payoff by taking expectations over
-their prior beliefs about $\theta$ and $\omega$. Since agents are myopic, even though all the parameters 
-could be identified with enough variation in choices, there will be instances in which the Bayesian will not
-learn even with infinite amounts of data. This happens because, by being myopic, they do not internalize 
-the trade off between flow payoff and learning. This can result in too little experimentation to learn their true type. An alternative to this approach is given by @Hestermann2021 and is discussed in the concluding remarks. Regardless, this approach is useful as a benchmark for the other theories discussed in this paper.
-
-Also notice that if a fully Bayesian agent has a dogmatic prior, they will never update their beliefs about the parameter that they are dogmatic about. This will imply that they are prone to the same types of errors as the dogmatic modeler in framework 1.
+Notice that if a fully Bayesian agent has a dogmatic prior, they will never update their beliefs about the parameter that they are dogmatic about. This will imply that they are prone to the same types of errors as the dogmatic modeler in framework 1.
 
 ### The Self-Serving Updater
 
-A Self-Serving Bayesian is an agent who uses a biased version of Bayes rule to update their beliefs. They will update their beliefs about the state $\omega$ and his type $\theta$ simultaneously by over-attributing successes to a high value of $\theta$ and under-estimating the role of higher $\omega$. Similarly, he will attribute failure to a low state to a greater degree than an unbiased agent would. This sort of biased updating is referred to as \emph{misattribution bias}. 
+A Self-Serving Bayesian is an agent who uses a biased version of Bayes rule to update his beliefs. He will update his beliefs about the state $\omega$ and his type $\theta$ simultaneously by over-attributing successes to a high value of $\theta$ and under-estimating the role of higher $\omega$. Similarly, he will attribute failure to a low state to a greater degree than an unbiased agent would. For instance, if the student from the example attributed a high grade to being of high ability while attributing low grades to a harsh grading system. This sort of biased updating is referred to as \emph{misattribution bias}. 
 
 To model the misattribution bias, I take the approach of @benjamin2019, where the posterior odds are given by:
-
 $$
 p_{t+1}(\theta, \omega| h^t) = \frac{p[h^t|\theta, \omega]^{c(\theta, \omega, o_t)}p_t(\theta, \omega)}{\sum_{(\theta', \omega')}p[h^t|\theta', \omega']^{c(\theta, \omega, o_t)}p_t(\theta', \omega')}
 $$
+with $c(\theta, \omega, o)$ decreasing in $\theta$ and increasing in $\omega$. $h_t$ is the history of signal realizations observed up to period $t$.
 
-with $c(\theta_H, \omega, o)<c(\theta_M, \omega, o)<c(\theta_L, \omega, o)$
-and $c(\theta, \omega_L, o)<c(\theta, \omega_M, o)<c(\theta, \omega_H, o)$. And where $h_t$ is the history of signal realizations observed up to period t.
+This formulation allows the bias to be introduced by distorting the perceived likelihood that the signal was generated by either high values of $\theta$ when it is a success, or by low values of $\omega$ when it is a failure.  The parameter $c$ determines the degree of bias and imposes enough restrictions to ensure that the model is still falsifiable.
 
-This formulation of the bias means that the agent will over-attribute successes to a high type and under-attribute them to a low type Whereas they will over-attribute failures to a low state and under-attribute them to a high state. The bias is introduced by distorting the perceived likelihood that the signal was generated by either high values of $\theta$ when it is a success, or by low values of $\omega$ when it is a failure.  The parameter $c$ determines the degree of bias and imposes enough restrictions to ensure that the model is still falsifiable.
-
-Define the distortion in the likelihood by $\Delta_c p(h^t|\theta, \omega) = p(h^t|\theta, \omega)^{c(\theta, \omega, o_t)} - p(h^t|\theta, \omega)$. Notice that because $p(h^t|\theta, \omega)<1$, if $c(\cdot)<1$, a smaller exponent $c$ implies a larger distortion upwards for fixed $h^t$, and fixed parameters $\theta$ and $omega$. While a $c(\cdot)>1$ implies a distortion downwards and it is larger when $c(\cdot)$ is larger. 
+Define the distortion in the likelihood by $\Delta_c p(h^t|\theta, \omega) = p(h^t|\theta, \omega)^{c(\theta, \omega, o_t)} - p(h^t|\theta, \omega)$. Notice that because $p(h^t|\theta, \omega)<1$, if $c(\cdot)<1$, a smaller exponent $c$ implies a larger distortion upward for a fixed $h^t$, and fixed parameters $\theta$ and $\omega$. While a $c(\cdot)>1$ implies a distortion downward and it is larger when $c(\cdot)$ is larger. 
 
 
 
 # A Unifying Example
 
-In order to compare the predictions of the theories discussed above, I develop a unifying example where the forces behind each of the theories can be isolated. The example is a modified from @Heidhues2018 and is adapted to be implementable in the lab.
+In order to compare the predictions of the theories discussed above, I develop a unifying example where the forces behind each of the theories can be isolated. The example is modified from @Heidhues2018 and is adapted to be implementable in the lab.
 
 The agent can be of one of 3 types: $\theta \in \{\theta_L, \theta_M, \theta_H\}$  with $\theta_H > \theta_M > \theta_L$.
 They face an unknown exogenous success rate
@@ -356,10 +234,10 @@ $\omega \in \{\omega_L, \omega_M, \omega_H\}$ with $\omega_H>\omega_M>\omega_L$.
 
 Denote the true type by $\theta^*$ and the true state by $\omega^*$. The agent holds some prior belief about 
 $\theta$\footnote{which is potentially misspecified as in the dogmatic and switcher cases discussed above} 
-and chooses gamble $e in \{e_L, e_M, e_H\}$. The agent observes whether the gamble is a success or a failure and 
-gets a payoff of $1$ and if it is a success; they get $0$ otherwise. 
+and chooses gamble $e \in \{e_L, e_M, e_H\}$. The agent observes whether the gamble is a success or a failure and 
+gets a payoff of $1$ if it is a success; they get $0$ otherwise. 
 
-The probability of success is increasing in both $\theta$ and $\omega$ and is fully described by the Table \ref{tab:DGP}
+The probability of success is increasing in both $\theta$ and $\omega$ and is fully described in Table \ref{tab:DGP}
 
 \begin{table}[htbp]
 \centering
@@ -404,89 +282,62 @@ The probability of success is increasing in both $\theta$ and $\omega$ and is fu
   \multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$\theta_H$} & \multicolumn{1}{c}{}\\
 \end{tabular}
 
-\caption{Probability of success for each type, gamble and effort level}
+\caption{Probability of success for each type $\theta$, gamble $\omega$, and effort level $e$}
 \label{tab:DGP}
 \end{table}
 
-Conditional on a type, the agent's flow payoff is maximized by choosing the gamble that 
+For each type, the agent's flow payoff is maximized by choosing the gamble that 
 matches the state. For example, if the value of $\omega$ is $\omega_H$, the agent's flow payoff is maximized by 
 choosing $e_H$ and if the state is $\omega_L$ the flow payoff is maximized by choosing gamble $e_L$, regardless of the value of $\theta$. The agent myopically chooses gambles every period to maximize the flow payoff for $T<\infty$ periods. 
 
 After observing the outcome of each gamble, the agent updates their beliefs using some procedure and moves on to the next period.
 
 Notice that both $\theta$ and $\omega$ can be identified from the outcomes if enough variation in the effort choices exists.
-This can be seen by confirming that there is no pair of $\theta$ and $\omega$ such that the probability of success is the same for all effort choices. Thus, by changing the effort choice, the agent can learn both their type and the state if they observe enough outcomes.
+This can be seen by confirming that there are no two pairs of $\theta$ and $\omega$ such that produce the same the probability of success for all effort choices. Thus, by changing the effort choice, the agent can learn both their type and the state if they observe enough outcomes.
 
 In this example, for an agent with a dogmatic belief about their type, a self-defeating equilibrium is one in which the agent 
 chooses an effort level that, under the true $\theta$, yields a frequency of success that is consistent with the agent's 
-misspecified belief. That is $P[\text{sucess}|\theta^*, e^*] = P[\text{sucess}|\hat{\theta}, e^*]$ where $e^*$ is the agent's 
-myopic optimal choice.
+misspecified belief. That is $P[\text{sucess}|\theta^*, \omega^*, e^*] = P[\text{sucess}|\hat{\theta}, \hat{\omega}, e^*]$ where $e^*$ is the agent's myopic optimal choice.
 
-In the data-generating process described above, there are five such equilibria. For example, if the agent is of type $\theta_M$ but mistakenly believes that he is of type $\hat{\theta}=\theta_H$ and the and $\omega^* = \omega_M$, when the effort chosen is $e_L$, the agent will observe a success with 45% chance. Because the agent dogmatically believes that their type is high, they will erroneously conclude that the rate is $\omega_L$. Under this belief, the optimal action is $e_L$ which will continue to generate successes with $45%$ probability, further reinforcing the incorrect belief. By doing so, the agent forgoes the payoff from gamble $e_M$ which would yield a success with $65\%$ chance.
+In the data-generating process described above, there are five such equilibria. For example, if the agent is of type $\theta_M$ but mistakenly believes that he is of type $\hat{\theta}=\theta_H$ and that $\omega^* = \omega_M$, when the effort chosen is $e_L$, the agent will observe a success with 45% chance. Because the agent dogmatically believes that their type is high, they will erroneously conclude that the rate is $\omega_L$. Under this belief, the optimal action is $e_L$ which will continue to generate successes with a $45%$ probability, further reinforcing the incorrect belief. By doing so, the agent forgoes the payoff from gamble $e_M$ which would yield a success with $65\%$ chance.
 
-By including self-confirming equilibria, the example captures the forces from each of the updating mechanisms discussed in the 
-previous section and allows for the comparison of the main forces behind the theories. For realizations of $(\theta, \omega)$ for which there are self-confirming equilibria, the dogmatic agent will fall into the trap whereas the switcher will be able to escape it. Similarly, an agent with self-attribution bias will update their beliefs differently from an unbiased Bayesian, leading them to choose different gambles. I exploit such cases in order to test which model is a better fit for how subjects behave in a laboratory experiment.\footnote{because the setting does not match that of @Heidhues2018, there will be situations for which the theory does not provide a prediction. If such cases arise in the lab, they will not be used for the analysis. However, whether a misspecified belief persists or not for the switcher, depends highly on the realized history of signals that he gets.} In what follows I explain the details of how this example was implemented in the lab.
+By including self-defeating equilibria, the example captures the forces from each of the updating mechanisms discussed in the 
+previous section and allows for the comparison of the main forces behind the theories. This is because the self-defeating equilibria in a discretized setting acptures the main forces from the dogmatic and Switcher models. Furthermore, the data generating process has been designed to satisfy the main assumptions of both frameworks. For realizations of $(\theta, \omega)$ for which there are self-confirming equilibria, the dogmatic agent will fall into the trap whereas the switcher will be able to escape it. Similarly, an agent with self-attribution bias will update their beliefs differently from an unbiased Bayesian, leading them to choose different gambles. I exploit such cases in order to test which model is a better fit for how subjects behave in a laboratory experiment. In what follows I explain the details of how this example was implemented in the lab and the predictions that each model makes.
 
 # Experimental Design
 
-I recruited `r length(unique(updates$code))` undergraduate subjects from the CESS lab at NYU who participated in an in-person experiment. 
-Sessions lasted approximately 
-45 minutes and subjects earned an average payment of $\$22.6$. The experiment was programmed using oTree [@otree].
+I recruited `r length(unique(updates$code))` undergraduate subjects from the CESS lab at NYU who participated in an in-person experiment. Sessions lasted approximately 45 minutes and subjects earned an average payment of $\$22.6$. The experiment was programmed using oTree [@otree].
 
-The experiment consisted of 2 treatments: the \emph{ego-relevant} condition and the \emph{stereotype} condition. Subjects participated 
-in only one of the treatments. All subjects within a session participated in the same treatment and the 
-first 4 treatments were assigned the ego-relevant condition; the rest were assigned to the stereotype treatment. 
-The tasks were identical across treatments, 
-except for parameter $\theta$. In the ego-relevant condition $\theta$ is the subject's own performance in a quiz, while in the 
-stereotype condition, it is the performance of a randomly selected subject from another session.
+The experiment consisted of 2 treatments: the \emph{ego-relevant} condition and the \emph{stereotype} condition. Subjects participated in only one of the treatments. All subjects within a session participated in the same treatment and the first 4 sessions were assigned the ego-relevant condition; the rest were assigned to the stereotype treatment. The tasks were identical across treatments. In the ego-relevant condition, $\theta$ is the subject's own performance in a quiz. In the stereotype condition, it is the performance of a randomly selected subject from another session.
 
-The experiment had 3 parts. In Part 1 subjects had 2 minutes to answer as many multiple-choice questions as they could from a 
-20-question quiz. They did this for quizzes on 6 different topics. The topics were: Math, Verbal 
-Reasoning, Pop-culture and Art, Science and Technology, US Geography, and Sports and Video Games. 
-In this part, they did not know how many questions were available and they were given no feedback.
+The experiment had three parts. In Part 1 subjects had two minutes to answer as many multiple-choice questions as they could from a 20-question quiz. They did this for quizzes on 6 different topics. The topics were: Math, Verbal Reasoning, Pop-culture and Art, Science and Technology, US Geography, and Sports and Video Games. In this part, they did not know how many questions were available and they were given no feedback.
 
 After taking all 6 quizzes, they proceeded to part 2 where they were asked to guess their score on each of them. 
-In the stereotype 
-treatment they were additionally asked to guess the score of a randomly drawn participant from a previous session. 
+In the stereotype treatment, they were additionally asked to guess the score of a randomly drawn participant from a previous session. 
 All they knew about the other participant was their gender identity and whether they were US nationals or not.
 For each guess, they had three score options: Low-Score (5 or fewer correct answers), Mid-Score (between 6 and 15 correct answers), 
 High-Score (16 or more). Each of the score categories corresponded to $\theta_L$, $\theta_M$, and $\theta_H$ respectively. 
-They were also asked to say how confident they felt about their choices. They had 4 possible answers: "it was a random guess", 
-"there is another equally likely score", "I am pretty sure", "I am completely sure". 
-These 4 answers are mapped to priors that place probabilities 
-.33, .50, .75, and 1 to the chosen type. The remaining probability is split equally among the other two types. 
-Questions in Part 2
-were not incentivized, but subjects were told that providing an accurate answer would increase their chances of earning more money in 
-the last part of the experiment.
+They were also asked to say how confident they felt about their choices. They had 4 possible answers: "it was a random guess," 
+"there is another equally likely score," "I am pretty sure," "I am completely sure."
+I mapped these four answers to priors that place probabilities .33, .50, .75, and 1 to the chosen type. The remaining probability is split equally among the other two types. Questions in Part 2 were not incentivized, but subjects were told that providing an accurate answer would increase their chances of earning more money in the last part of the experiment.
 
 The purpose of Part 2 is to classify subjects into overconfident, underconfident and correctly specified. If a subject 
 guesses their score to be in a higher (lower) category than their true score, they are overconfident (underconfident); if they 
 guess their score to be in the same category as their true score, they are correctly specified. 
 This classification is done for each of the 6 topics separately.
 
-Finally, in Part 3, subjects completed a belief updating task for each of the quizzes. Before starting the task they were reminded of their guess
-for the score. In the ego-relevant treatment, they were reminded of their guess about themselves and in the stereotype treatment they were reminded
-of their guess about the other participant. In the stereotype treatment, they were also reminded of the characteristics of the other participant.
+Finally, in Part 3, subjects completed a belief updating task for each of the quizzes. Before starting the task they were reminded of their guess for the score. In the ego-relevant treatment, they were reminded of their guess about themselves and in the stereotype treatment they were reminded of their guess about the other participant. In the stereotype treatment, they were also reminded of the characteristics of the other participant.
 
-For one topic at a time and in random order,
-they were presented with the three gambles from the example above and were asked to choose one of them. 
-The probability of success was 
-determined by their own score in the ego-relevant condition, and by the score of the other participant in the stereotype condition. 
-Subjects had access to the three probability
-tables in the printout of the instructions at all times and the meaning of each cell was explained in detail. 
+For one topic at a time and in random order, they were presented with the three gambles from the unifying example and were asked to choose one of them. The probability of success was determined by their own score in the ego-relevant condition, and by the score of the other participant in the stereotype condition. Subjects had access to the three probability tables in the printout of the instructions at all times and the meaning of each cell was explained in detail. 
 
-In the interphase, they had to choose which of the 3 tables they wanted to see before entering their choice in it. This was done as 
+In the interfase, they had to choose which of the 3 tables they wanted to see before entering their choice in it. This was done as 
 an alternative to a belief elicitation in each round. I take their choice of table to be indicative of their beliefs about
-the underlying type. I chose not to elicit the beliefs at each round to stay true to the forces in framework 1.
+the underlying type. I chose not to elicit the beliefs at each round to stay true to the forces in framework 1. The agent's tas kin Framework 1 is to learn the exogenous parameter and match it with their choice. By eliciting the beliefs about their type in each round and rewarding it for it, I add an incentive to additionally learn their type correctly. This can lead them to take actions that  reveal their type when they wouldn's have done so in the case where there is no additional incentive.
 
 Once they have entered their choice, they observe a sample of 10 outcomes from the gamble they chose. After observing the outcomes, 
-they returned to the choice screen and entered a new choice. In the choice screen 
-subjects had access to the entire history of gambles and outcomes for that task as well as a summary of the outcomes so far. 
-Once they entered 11 gambles (and observed 110 outcomes), they moved on to 
-the next topic and repeated the same procedure. They all did this for all 6 topics. 
+they returned to the choice screen and entered a new choice. In the choice screen subjects had access to the entire history of gambles and outcomes for that task as well as a summary of the outcomes so far. Once they entered 11 gambles (and observed 110 outcomes), they moved on to the next topic and repeated the same procedure. They all did this for all 6 topics. 
 
-At the end of the experiment, one of the 6 topics was randomly selected to determine the payment. 
-They earned $\$0.20$ for each 
+At the end of the experiment, one of the 6 topics was randomly selected to determine the payment. They earned $\$0.20$ for each 
 correct answer in the quiz, and for each success in the task in Part 3 for the selected topic.
 
 Randomness is controlled throughout the experiment and sessions by setting a seed at the beginning of the
@@ -500,35 +351,62 @@ updating procedure, they should be choosing the same gambles.
 
 # Predictions
 
-In this section, I outline the behavior that is predicted by each of the theories discussed above. Some of the predictions are made relative to the Bayesian benchmark. In particular, the reaction to good and bad news is very informative of which model is most likely to be underlying the behavior. Define \emph{good news} to be a sample of signal realizations such that the number of successes in the sample is larger than the average number of successes observed so far. i.e. if 
+In this section, I outline the behavior that is predicted by each of the theories discussed above. Some of the predictions are made relative to the Bayesian benchmark. In particular, the reaction to good and bad news is very informative of which model is most likely to be underlying the behavior. Denote the sample size by $I$ and define \emph{good news} to be a sample of signal realizations such that the number of successes in the sample is larger than the average number of successes observed so far. i.e. if 
 
-$$ \sum_i \mathbb{I}\{o_{iT}=success\} \geq \frac{1}{T} \sum_{t=0}^T\sum_i \mathbb{I}\{o_{it}=success\}$$
-where T is the current period and $o_{t}=[o_{it}]_{i=1}^I$ is the sample observed at period $t$. \emph{Bad news} are any other kind of signal realization. Denote the set of good news at period t by $\mathcal{G}_t$ and let $s_t$ be the number of successes in $o_t$.
+$$ \sum_{i=1}^I \mathbb{I}\{o_{iT}=success\} \geq \frac{1}{T} \sum_{t=0}^T\sum_{i=1}^I \mathbb{I}\{o_{it}=success\}$$
+where $T$ is the current period and $o_{t}=[o_{it}]_{i=1}^I$ is the sample observed at period $t$. Denote the set of good news at period t by $\mathcal{G}_t$ and let $s_t$ be the number of successes in $o_t$.\emph{Bad news} are any other kind of samples of signal realizations.
 
-Given the definition of good and bad news, the reaction of the agent to each kind of news is the change in their choice, conditional on the signal realization. Therefore, what we are interested are the coefficients of the following regression model, where the actions are those that a bayesian agent would choose:
+Given the definition of good and bad news, the reaction of the agent to each kind of news is the change in their choice conditional on the signal realization. Therefore, what we are interested in are the coefficients of the following regression model
 
-$$ \Delta a = \beta_0 + \beta_1\mathbb{I}\{o_t\in \mathcal{G}_t\} + \beta_2(s_{t} - s_{t-1}) + \beta_3\mathbb{I}\{o_t\in \mathcal{G}_t\}(s_{t} - s_{t-1})  $$
+$$ \Delta a = \beta_0 + \beta_1\mathbb{I}\{o_t\in \mathcal{G}_t\} + \beta_2(s_{t} - s_{t-1}) + \beta_3\mathbb{I}\{o_t\in \mathcal{G}_t\}(s_{t} - s_{t-1}) +\varepsilon_t $$
+where $(s_{t} - s_{t-1})$ is the size of the surprise\footnote{The surpries eis the difference between the number of successes in the sample observed at time t and the average number of successes in previous samples.} and $\Delta a = a_{t+1}-a_t$ is the change in action as a reaction after observing the latest sample. $\beta_2$ is the reaction of the agent to bad news with surprise $(s_{t} - s_{t-1})$. And $\beta_2 + \beta_3$ is the reaction to good news with surprise $(s_{t} - s_{t-1})$. $\varepsilon_t\sim N(0, \sigma)$ is variation in the action choices that is not explained by the sample of signal realizations.
 
-Where $(s_{t} - s_{t-1})$ is the size of the surprise and $\Delta a$ is the change in action. $\beta_2$ is the reaction of the agent to bad news with surprise $(s_{t} - s_{t-1})$. And $\beta_2 + \beta_3$ is the reaction to good news with surprise $(s_{t} - s_{t-1})$. Notice that for a dogmatic modeler $\beta_2\geq0$ and $\beta_2+\beta_3\geq 0$ as more successes are always indicative of a better state.
+## Self-Attribution Bias
+
+The key feature of Self-attribution bias is the asymmetric treatment of good news and bad news. 
+In particular, the agent will over-attribute successes to a high type and under-attribute them to a low type.
+Similarly, they will over-attribute failures to a low state and under-attribute them to a high state.
+This implies that, after observing a failure, the agent will adjust their effort downwards by more than 
+what an unbiased Bayesian would have done. In contrast, after observing a success, the agent will adjust 
+their effort upwards by less than a Bayesian would have done and if the bias is large enough, it could
+be that the agent will not adjust their effort upwards at all, or even decrease their effort in response to a success.
+
+This is in stark contrast with what a Dogmatic modeler would do. A dogmatic modeler always attributes
+any variation in the outcome to the state and never updates their beliefs about $\theta$. Therefore,
+they will always increase their effort choices after a surprising success and decrease it after a failure.
+
+On the other hand, the biased behavior can be in line with the behavior of a switcher. In particular,
+if the agent starts with a misspecified belief on $\hat{\theta}$, and is willing to switch to a belief with 
+$\theta'>\hat{\theta}$, whenever the paradigm shift happens, it will likely be in response to a surprising 
+streak of successes. In this case, when they adjust their belief about $\theta$, they will also 
+adjust their effort choice. Since they were initially underconfident, they had been choosing an effort that was
+too high relative to the true state, and therefore, the effort is likely to fall in response to a 
+surprising streak of success.
+
+Let $\beta^A$ be the coefficients of the regression model when the agent updates with misattribution bias. Let $\beta^B$ be tha coefficients of the same regression model but when the agent is Bayesian.
+
+**Prediction 1A:** _After observing a failure, the agent will adjust their effort downwards by more than a Bayesian would have done. After observing a success, the agent will adjust their effort upwards by less than a Bayesian would have done. If the bias is large enough, the agent might not adjust their effort upwards at all, or even decrease their effort in response to a success. That is $\beta_2^A > \beta_2^B$ and $\beta_2^A + \beta_3^A<\beta_2^B + \beta_3^B$_
+
+In addition to their behavior, there is an additional characteristic feature of misattribution bias that is not present in other models. This is the only model in which an agent could start off with a correct belief and become more overconfident. In the long-run.
+
+**Prediction 2A:** _After observing a streak of successes, the agent will update their belief about $\theta$ upwards even when they started with a correct initial belief._
+
+
 
 ## Dogmatic Modeler
 
-Since the domain of the problem is discrete and finite in the example, the predictions of the original theory apply only to 
-the combinations of parameters and initial beliefs for which there is a self-defeating equilibrium. In the example, there are 5 such 
-combinations. For each of them, the dogmatic modeler predicts that the agent will fall into the self-defeating equilibrium and will 
-be able to sustain the misspecified belief forever. 
+Since the domain of the problem is discrete and finite in the example, the predictions of the original theory of @Heidhues2018 apply only to the combinations of parameters and initial beliefs for which there is a self-defeating equilibrium. In the unifying example, there are 5 such combinations. For each of them, the dogmatic model predicts that the agent will fall into the self-defeating equilibrium and will be able to sustain the dogmatic misspecified belief forever. 
 
-Table \ref{tab:table-dog} describes the 5 self-defeating equilibria and the effort choices that sustain them. The first columns describe the
-combination of parameters and initial beliefs. The last column describes the effort choice that the agent will make in the long run. It is 
-only for these combinations of parameter values and beliefs that the dogmatic model makes predictions within the Unifying example. 
+Table \ref{tab:table-dog} describes the 5 self-defeating equilibria and the effort choices that sustain them. The first columns describe the combination of parameters and initial beliefs. The last column describes the effort choice that the agent will make in the long run. It is only for these combinations of parameter values and beliefs that the dogmatic model makes predictions within the Unifying example. Otherwise, the agent is not able to sustain the dogmatic belief and  will be forced to use a different updating procedure to rationalize the signals that he observed.
 
 **Prediction 1D:** _Whenever an agent is of a type $\theta^*$ but mistakenly believes that they are of a type $\hat{\theta}$, 
-and $(\theta^*, \omega^*, \hat{\theta})$ are such that there is s self-defeating equilibrium, the agent will fall into the
-trap and choose the effort level that sustains the misspecified belief forever._
+and $(\theta^*, \omega^*, \hat{\theta})$ are such that there is a self-defeating equilibrium, the agent will choose the effort level that sustains the misspecified belief forever._
 
-In term of the dogmatic's reagtion to good and bad news, let $\beta^D$ denote the coefficients of the regression model above when the actions are those predicted by the dogmatic model.
+In term of the dogmatic's reaction to good and bad news, let $\beta^D$ denote the coefficients of the regression model above when the actions are those predicted by the dogmatic model.
 
 **Prediction 2D:** _Before falling into a trap, the dogmatic modeler reacts more to good and bad news than the Bayesian would. i.e. $\beta_2^D>\beta_2$ and $\beta_3^D > \beta_3$._
+
+**Prediction 3D:** _A dogmatic modeler never updates their belief about $\theta$._
 
 The model does not make predictions about what happens in cases where there is no stable belief. I assume that because there is no stable belief, the agent will eventually have to use some procedure to revise their belief about $\theta$. In such cases, I aim to determine which of the alternative explanations provided by the other theories is a better fit for the data.
 
@@ -561,59 +439,30 @@ Although the dogmatic model does not apply to all possible parametrizations and 
 fall into the self-defeating equilibria or not is still informative of the updating procedure that they are using.
 Understanding if the presence of traps is a key feature preventing subjects from learning the optimal action is important
 for understanding the prevalence of overconfidence. Similarly, gaining insight into what happens 
-when there are no traps is important for understanding what are the other reasons why overconfidence 
+when there are no traps is important for understanding the other reasons why overconfidence 
 might arise and prevail.
 
 ## Switcher 
 
-Since the switcher starts as the same dogmatic agent, the initial behavior of both types of agents is identical, 
-however, because the switcher is keeping track of the likelihood ratio, they will be able to escape the self-defeating
-equilibrium if the evidence is convincing enough. Therefore there is a positive probability that the switcher will
+Since the switcher starts as the same dogmatic agent, the initial behavior of both types of agents is identical. 
+However, because the switcher keeps track of the likelihood ratio, they will be able to escape the self-defeating
+equilibria if the evidence is convincing enough. Therefore there is positive probability that the switcher will
 adjust their initially misspecified belief about $\theta$ and learn the true state. 
 
-**Prediction 1S:** _With positive probability, the switcher will escape the self-defeating equilibrium and learn the true state._
+**Prediction 1S:** _With positive probability, the switcher will escape the self-defeating equilibria and learn the true state._
 
 Let $\beta^S$ be the coefficients of the regresion model when the actions are those taken by a switcher. 
 
-**Prediction 2S:** _When there is no change of paradigm, the switcher behaves as the dogmatic. When there is a change in paradigm, the reaction to good and bad news is attenuated or even in the opposite direction of what a Bayesian would have done. that is $\beta_2^S<\beta_2$ and $\beta_2^S + \beta_3^S<\beta_2+\beta_3$_
+**Prediction 2S:** _When there is no change of paradigm, the switcher behaves as the dogmatic. When there is a change in paradigm, the reaction to good and bad news is attenuated or even in the opposite direction of what a Bayesian would have done. that is $\beta_2^S<\beta_2^B$ and $\beta_2^S + \beta_3^S<\beta_2^B+\beta_3^B$_
 
 One caveat is that when the switcher and the dogmatic agent both start with a correctly specified belief, neither of them 
 will fall into the self-defeating equilibria and thus will look identical even in the long run. This means that
 in order to distinguish between the two theories, I need to look at cases where the agent starts with a misspecified belief and the switcher changes paradigm.
+**Prediction 3S:** _Correctly specified switchers do not update their beliefs about $\theta$_
 
-The probability that the switcher will escape the self-defeating equilibrium depends on the prior belief about $\omega$.
-If the prior is sufficiently tight around the self-defeating equilibrium, the likelihood ratio will not grow fast enough, however, 
-in the example above, the prior is uniform over the states and therefore, the likelihood ratio is more likely to grow fast enough.
-
-## Self-Attribution Bias
-
-The key feature of Self-attribution bias is the asymmetric treatment of good news and bad news. 
-In particular, the agent will over-attribute successes to a high type and under-attribute them to a low type.
-Similarly, they will over-attribute failures to a low state and under-attribute them to a high state.
-This implies that, after observing a failure, the agent will adjust their effort downwards by more than 
-what an unbiased Bayesian would have done. In contrast, after observing a success, the agent will adjust 
-their effort upwards by less than a Bayesian would have done and if the bias is large enough, it could
-be that the agent will not adjust their effort upwards at all, or even decrease their effort in response to a success.
-
-This is in stark contrast with what a Dogmatic modeler would do. A dogmatic modeler always attributes
-any variation in the outcome to the state and never updates their beliefs about $\theta$. Therefore,
-they will always increase their effort choices after a surprising success and decrease it after a failure.
-
-On the other hand, the biased behavior can be in line with the behavior of a switcher. In particular,
-if the agent starts with a misspecified belief on $\hat{\theta}$, and is willing to switch to a belief with 
-$\theta'>\hat{\theta}$, whenever the paradigm shift happens, it will likely be in response to a surprising 
-streak of successes. In this case, when they adjust their belief about $\theta$, they will also 
-adjust their effort choice. Since they were initially underconfident, they had been choosing an effort that was
-too high relative to the true state, and therefore, the effort is likely to fall in response to a 
-surprising streak of success.
-
-Let $\beta^A$ be the coefficients of the regression model when the agent updates with misattribution bias. 
-
-**Prediction 1A:** _After observing a failure, the agent will adjust their effort downwards by more than a Bayesian would have done. After observing a success, the agent will adjust their effort upwards by less than a Bayesian would have done. If the bias is large enough, the agent might not adjust their effort upwards at all, or even decrease their effort in response to a success. That is $\beta_2^A > \beta_2$ and $\beta_2^A + \beta_3^A<\beta_2 + \beta_3$_
-
-In addition to their behavior, there is an additional characteristic feature of misattribution bias that is not present in other models. This is the only model in which an agent could start off with a correct belief and become more overconfident. In the long-run.
-
-**Prediction 2A:** _After observing a streak of successes, the agent will update their belief about $\theta$ upwards. This will lead to the possibility of observing subjects who start correctly specified and become overconfident._
+The probability that the switcher will escape the self-defeating equilibria depends on the prior belief about $\omega$.
+If the prior is sufficiently tight around a self-defeating equilibrium, the likelihood ratio will not grow fast enough.
+In the unifying example, the prior is uniform over the states and therefore, the likelihood ratio is more likely to grow fast enough.
 
 
 # Stereotypes
@@ -624,7 +473,7 @@ of stereotypes. An agent can have a dogmatic belief about the ability of a parti
 the associated parameter. Similarly, they can be willing to switch between two dogmatic beliefs about their ability as a switcher would.
 Finally, they can have a biased updating procedure in which they treat good news and bad news asymmetrically.
 
-As such, all the predictions discussed above apply to the case of Stereotypes as well. My analysis of 
+All the predictions discussed above apply to the case of Stereotypes as well. My analysis of 
 stereotypes will focus only on the degree to which ego-relevance of the type affects the updating procedure and not on the 
 motivations behind the bias. I am particularly interested in whether the explanatory power of the models 
 differs with the degree of ego-relevance of the type.
@@ -638,21 +487,21 @@ when the agent starts with a misspecified belief. Figure \ref{fig:misspecificati
 distribution of misspecifications by treatment. The histogram considers the difference between the subject's 
 true score in the quiz and their guess about their score. If their guess is in a higher category than their true score,
 they are overconfident; if it is in a lower category, they are underconfident; and if it is in the same category, 
-they are correctly specified. Overall, `r round(sum(updates$misspecification != 'correct')/nrow(updates), 2)` of the 
+they are correctly specified. Overall, `r round(sum(updates$misspecification != 'correct')/nrow(updates), 2)*100`% of the 
 guesses made in the questionnaire were misspecified. The rest of the guesses coincided with the true score. 
 And the distribution of misspecifications is similar across treatments.
 
-![Initial misspecifications by treatment](../figures/misspecification_hist.png){#fig:misspecification-hist}
+![Initial specifications by treatment](../figures/misspecification_hist.png){#fig:misspecification-hist}
 
 Although the overall distribution is similar for both treatments, the misspecifications arise for different 
 combinations of characteristics in each treatment. Figure \ref{fig:misspecification-by-treatment} shows a heatmap 
-of the misspecifications that arose in each treatment. In the stereotype treatment, subjects are most underconfident 
+of the specifications that arose in each treatment. In the stereotype treatment, subjects are most underconfident 
 about the performance 
 of other non-American females in Sports and Video Games. In contrast, they are most overconfident about the performance 
 of American men in Verbal Reasoning. In the ego-relevant treatment, subjects are most underconfident about their own
 performance in pop culture and art, while most overconfident about their performance in Verbal Reasoning.
 
-![Initial misspecifications by treatment and characteristics](../figures/misspecifications_characteristics_treatment.png){#fig:misspecification-by-treatment} 
+![Initial misspecifications by treatment and characteristics. a -1 corresponds to all subjects being underconfident while 1 corresponds to all subjects being overconfidence. All subjects being correctly specified is assigned a value of zero.](../figures/misspecifications_characteristics_treatment.png){#fig:misspecification-by-treatment} 
 
 Having widespread misspecifications in both treatments is important for the analysis because it allows me to distinguish between the
 dogmatic modeler and the switcher. If there were no misspecifications, the two models would be indistinguishable.
@@ -693,13 +542,9 @@ they develop an incorrect belief about the type.
 ![Matrix choices by round](../figures/last_button_consistency.png){#fig:matrix-choices-by-round}
 
 Since the elicitation of the belief about the type was not incentivized and not elicited in a standard way, 
-I first need to confirm that subjects were not just randomly choosing a matrix in which to enter their effort.
+I first need to confirm that subjects were not randomly choosing a matrix in which to enter their effort.
 The left panel of Figure \ref{fig:matrix-choices-by-round} shows the share of subjects who chose a matrix 
-consistent with their initial reported belief. In round 1, `r round(nrow(updates[round_number == 1 & last_button_consistent == 1])/ nrow(updates[round_number==1]), 2)*100`% 
-of the subjects chose a matrix that was consistent with their initial belief. This indicates that subjects
-were not just randomly choosing a matrix in which to enter their effort. From round 2 onwards, the share
-steadily declines, but still not as far as to indicate a random choice of matrices. This is consistent with
-the subjects moving away from their starting belief through some updating procedure. 
+consistent with their initial reported belief. In round 1, `r round(nrow(updates[round_number == 1 & last_button_consistent == 1])/ nrow(updates[round_number==1]), 2)*100`% of the subjects chose a matrix that was consistent with their initial belief. This indicates that subjects were not randomly choosing a matrix in which to enter their effort. From round 2 onwards, the share declines, but not as far as to indicate a random choice of matrices. This is consistent with the subjects moving away from their starting belief through some updating procedure. 
 
 On the right panel of Figure \ref{fig:matrix-choices-by-round} I show the share of subjects who chose a matrix
 that is consistent with their true type. Unlike the left panel, there is no clear trend, which indicates that
@@ -707,24 +552,17 @@ although they are moving away from their initial belief, they are not moving tow
 means that overall, misspecification is not decreasing. A closer look at the data reveals a good amount of
 heterogeneity in the underlying behavior. 
 
-Figure \ref{fig:transitions} shows the transition matrix for subjects who started in each of the 
-3 possible starting specifications and the specifications that they ended up in at the end of the updating task.
-The two things to note are that the initial belief is the most likely end belief. This is consistent with 
-some degree of stickiness of the misspecifications as the switcher and dogmatic models would predict. However, 
-the data also presents a lot of subjects who started with a correct belief of the type and ended up 
-overestimating it. This is consistent only with the self-attribution bias. Lastly, the subjects who
-initially overestimate the score, are the least likely to learn their true type.
+Figure \ref{fig:transitions} shows the transition matrix for subjects who started in each of the three possible starting specifications and the specifications that they ended up in at the end of the updating task. The two things to note are that the initial belief is the most likely end belief. This is consistent with some degree of stickiness of the misspecifications as the switcher and dogmatic models would predict. However, the data also presents a lot of subjects who started with a correct belief of the type and ended up overestimating it. This is consistent only with self-attribution bias. Lastly, subjects who initially overestimate the score, are the least likely to learn their true type.
 
 ![Transition matrix for subjects who started in each of the 3 possible starting specifications and the specification that they ended up in at the end of the updating task](../figures/misspecification_transitions.png){#fig:transitions}
 
 The transition matrix points towards the presence of self-attribution bias in the data. However, it is
 still possible that there is heterogeneity in the updating procedure across subjects. In the next section
-I will look at the role of self-defeating equilibria in preventing learning. I find that the presence of
-self-defeating equilibria does not seem to be the main deterrent to learning.
+I will look at the role of self-defeating equilibria in preventing learning.
 
 ## Learning traps
 
-As described above, the presence of stable misspecified beliefs act as learning traps. If an agent falls 
+As described in Framework 1, the presence of stable misspecified beliefs act as learning traps in this setting. If an agent falls 
 into one of these traps, bayesian updating will lead them to choose the same effort forever. These self-defeating 
 equilibria allow me to distinguish between the dogmatic modeler and the switcher. If the agent falls into a
 trap and stays there forever, they are more likely to be a dogmatic modeler. If they escape the trap, they
@@ -752,7 +590,7 @@ Overall, it does not seem to be the presence of traps that is preventing learnin
 shows that the share of subjects who learned in cases where there was a trap is larger than the share of
 subjects who learned in cases where there was no trap. This is true for both treatments. This indicates
 that even in the presence of traps, `r share_learned*100`% of subjects learn. From the share that 
-did not learn when there was a trap. A remaining `r share_trapped*100`% can be accounted for as being 
+did not learn when there was a trap, `r share_trapped*100`% can be accounted for as being 
 trapped.\footnote{A subject is considered trapped when 3 out of their last 4 choices are consistent with 
 a self-defeating equilibrium.} 
 While the rest of the subjects neither learned nor were trapped.
@@ -774,11 +612,11 @@ having learned the state correctly. From the remaining `r (1 - round(sum(updates
 but did not fall into them, therefore they could not have been dogmatic modelers. Alternative explanations
 are that they were switchers who considered an incorrect alternative model, or that they were updating with a bias so large that their effort
 choices were far from optimal. Behavior that is not consistent with either of these falls outside of the 
-scope of the theories discussed above. 
+scope of the theories discussed here. 
 
-My results are consistent with the findings of @Hestermann2021. In a laboratory experiment that
+My results are consistent with the findings of @Gotte2022. In a laboratory experiment that
 stays true to Framework 1, they test the predictions of the dogmatic modeler. They find that the average
-pattern in behavior is in the direction of the dogmatic modeler, however, subjects do not fully act as dogmatics as
+pattern in behavior is in the direction of the dogmatic modeler, however, subjects do not fully act as dogmatics since
 their actions do not go as far as to fully support the self-defeating equilibrium. A lot of 
 the differences between the observed behavior in their experiment and the model can be attributed 
 to subjects avoiding the self-defeating equilibria and learning the true state. In contrast to their study, I can 
@@ -791,36 +629,14 @@ In particular, they will overreact to bad news and underreact to good news. I de
 for which the realized number of successes is greater than the average number of successes so far. Similarly, I define bad news to be
 any sample of outcomes for which the realized number of successes is smaller than the average number of successes so far.
 In addition, I calculate the difference between the realized number of successes and the average number of successes so far and
-call it the news differential.
-Figure \ref{fig:reaction-news} shows the correlation between change in effort and the news differential, separately for 
-good and bad news. 
+call it the news differential but can be thought of as the "size'' of the surprise. Figure \ref{fig:reaction-news} shows the correlation between change in effort and the news differential, separately for good and bad news. 
 
-The overall pattern is that bad news are associated with a decrease in effort, and a 
-more negative news differential is associated with a larger decrease in effort. On the contrary, good news are associated with 
-a small decrease in effort. As mentioned in the predictions section, this is consistent with the self-attribution bias as well
-as with a change of paradigm. It is not consistent with the dogmatic modeler or the Bayesian. Because 
-I do not directly elicit beliefs, it is not possible to distinguish between the self-attribution bias and the change of 
-paradigm with this data alone.
-Nevertheless, the fact that about a third of the subjects started with a correctly specified belief and ended up overconfident
-is consistent only with the self-attribution bias. this points towards the fact that 
-misattribution bias is the most likely explanation for the behavior of the subjects in the experiment.
+The overall pattern is that bad news are associated with a decrease in effort, and a more negative news differential is associated with a larger decrease in effort. On the contrary, good news are associated with a small decrease in effort. As mentioned in the predictions section, this is consistent with the self-attribution bias as well as with a change of paradigm. It is not consistent with the dogmatic modeler or the Bayesian. In addition, the fact that about a third of the subjects started with a correctly specified belief and ended up overconfident is consistent only with the self-attribution bias. This points towards the fact that misattribution bias is the most likely explanation for the aggregate behavior of the subjects in the experiment.
 
 ![Change in effort by news differential](../figures/effort_change_news.png){#fig:reaction-news}
 
-A regression analysis of this same data reveals that indeed, the slopes are different for godd and bad
-news and that the difference is statistically significant.\footnote{I run a robustness check where I define
-good news to be a net-positive sample (half or more of the outcomes observed in the sample received in that round
-were successful) and bad news to be net-negative sample. I find the same pattern in this alternative regression model
-and the results are reported in the appendix.} 
-The regression results are reported in Table \ref{tab:regression}.
-columns 2 and 3 of the table consider the model for each treatment separately. I find no significant differences in 
-the parameters across treatment. This is consistent with the fact that the bias is not driven by the ego-relevance 
-of $\theta$.\footnote{The ego-relevance of $\theta$ is the motivation behind the self-attribution bias, 
-however, the bias itself is due to an incorrect updating procedure in response to good and bad news. The presence of 
-asymmetric updating in the stereotype condition can be due to self-censoring of the subjects. In particular, subjects 
-who initially underestimated the performance of the other participant might have realized their mistake and 
-by overestimating it after good news. This is consistent with the data presented here as well as with 
-the data observed in the transition matrix for stereotypes which is reported in the Appendix} 
+A regression analysis of this same data reveals that indeed, the slopes are different for good and bad news and that the difference is statistically significant.\footnote{I run a robustness check where I define good news to be a net-positive sample (half or more of the outcomes observed in the sample received in that round were successful) and bad news to be net-negative sample. I find the same pattern in this alternative regression model and the results are reported in the appendix.} 
+The regression results are reported in Table \ref{tab:regression}. columns 2 and 3 of the table consider the model for each treatment separately. I find no significant differences in the parameters across treatment. This is consistent with the fact that the bias is not driven by the ego-relevance of $\theta$.\footnote{The ego-relevance of $\theta$ is the motivation behind the self-attribution bias, however, the bias itself is due to an incorrect updating procedure in response to good and bad news. The presence of asymmetric updating in the stereotype condition can be due to self-censoring of the subjects. In particular, subjects who initially underestimated the performance of the other participant might have realized their mistake and by overestimating it after good news. This is consistent with the data presented here as well as with the data observed in the transition matrix for stereotypes which is reported in the Appendix} 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE }
 reg <- lm(effort_change ~ good_news + news_diff + news_diff:good_news, data=updates[round_number>1,])
@@ -895,7 +711,7 @@ More convincing evidence against the Switching model is the lack of inverse or a
 the change in effort and the news differential. In particular, if the switcher were the underlying model,
 I would expect overconfident subjects who start with an overestimation of $\theta$ to increase their effort
 in response to surprising bad news. This would flatten the slope of the regression line 
-for bad news relative to what a Bayesian would do. \ref{tab:regression} shows that the slope for bad news for
+for bad news relative to what a Bayesian would do. Table \ref{tab:regression} shows that the slope for bad news for
 the simulation\footnote{The details on how the data was simulated are explained in the Appendix} 
 of the Bayesian updates is much flatter than the slope in the data. 
 
@@ -903,12 +719,12 @@ of the Bayesian updates is much flatter than the slope in the data.
 ## Stereotypes and ego-relevance
 
 Throughout the experiment, there is little difference in the behavior of subjects across treatments.
-Two of the main differences are that subjects in the ego-relevant treatment are more likely to become 
-overconfident when they start with a correct belief. And that subjects in the stereotype treatment are
+Two of the main differences are, first that subjects in the ego-relevant treatment are more likely to become 
+overconfident when they start with a correct belief; and second, that subjects in the stereotype treatment are
 more likely to overreact to good news when they start by underestimating the performance of the other
 participant.
 
-These two differences present as consistent with the self-attribution bias. However, the pattern in the
+These two differences present as consistent with the self-attribution bias, however, the pattern in the
 stereotype treatment could also be due to self-censoring of the subjects. In particular, subjects who
 initially underestimated the performance of the other participant might have realized their mistake and
 over-compensated their mistake by overestimating it after good news. This is consistent with the data
@@ -946,7 +762,7 @@ where $b_{t}^\theta$. That is, in period $\tau-1$ they chose to reveal a matrix 
 revealed in period $\tau$. The matrix revealed in period $\tau-1$ is the status quo paradigm and the matrix revealed in
 period $\tau$ is the alternative paradigm. The likelihood ratio for the alternative paradigm to the status quo is
 $$
-\ell = \frac{L(\theta | b_{\tau}^\theta)}{L(\theta | b_{\tau-1}^\theta)}=\frac{p_\tau(o_t|b_{\tau}^\theta)}{p_{\tau}(o_t|b_{\tau-1}^\theta)} 
+\ell = \frac{L(\theta | b_{\tau}^\theta)}{L(\theta | b_{\tau-1}^\theta)}=\frac{p_\tau(o_t|b_{\tau}^\theta)}{p_{\tau}(o_t|b_{\tau-1}^\theta)},
 $$
 
 where $p_\tau(o_t|b_{\tau}^\theta)$ is the probability of observing the signal $o_t$ when the agent is of type $b_{\tau}^\theta$.
@@ -954,9 +770,9 @@ where $p_\tau(o_t|b_{\tau}^\theta)$ is the probability of observing the signal $
 The estimate of the switching threshold, $\alpha$, is the average of the likelihood ratios across all subjects who switched
 in the experiment, which is given by
 
-$$\hat{\alpha} = \frac{1}{N}\sum_{i=1}^N \ell_{i\tau}$$
+$$\hat{\alpha} = \frac{1}{N}\sum_{i=1}^N \ell_{i\tau},$$
 
-Where $N$ is the number of switches observed in the experiment.
+where $N$ is the number of switches observed in the experiment.
 
 Because the feedback that subjects receive is the equivalent of 10 signal realizations, the estimate 
 of the parameter is an upper bound of the true parameter. A lower bound would be given by the
@@ -985,8 +801,7 @@ I use the simulated method of moments to estimate the distortion parameters of t
 $c(\theta_H, \omega, \text{good news})=c(\theta, \omega_L, \text{bad news})$, $c(\theta_M, \omega, \text{good news})=c(\theta, \omega_M, \text{bad news})$ and $c(\theta_L, \omega, \text{good news})=c(\theta, \omega_H, \text{bad news})$. 
 
 To estimate them I use 4 moment conditions. The moments that I use are the regression coefficients from the reaction to good and bad news. That is: the slope and intercept of the relationship between the number of successes in the last signal sample and the change in effort as a consequence. The slope and intercept are different for good and bad news, which gives 4 moment conditions. To determine good news are samples for which there are more successes than failures. Bad news are outcome samples for which there are more failures than successes. The sample moments are reported in \ref{tab:regression-net} and correspond to the following regression model:
-
-$$ \Delta effort_{it} = \beta_0 + \beta_1 signal_{i t-1} + \beta_2\mathbb{I}\{good \:news_{i t-1}\} + \beta_3{I}\{good\:news\}*signal_{i t-1} $$
+$$ \Delta effort_{it} = \beta_0 + \beta_1 signal_{i t-1} + \beta_2\mathbb{I}\{good \:news_{i t-1}\} + \beta_3{I}\{good\:news\}*signal_{i t-1}, $$
 where $i$ is an individual and task level index (each subject in each of the six tasks in the experiment represents a single observed path) and $t$ is a round_number index that ranges from 1 to 11. The variable $signal_{i t-1}$ is the number of successes observed in round $t-1$, and the change in effort is $\Delta effort_{it}=effort_{it}-effort_{it-1}$. The coefficients $\beta_0$ and $\beta_1$ are the moments that rule the interaction between bad news and effort change, while $\beta_0+\beta_2$ and $\beta_1 +\beta_3$ are the intercept and the slope for the relation between effort change and good news.
 
 In order to find the parameters that correspond to the observed moments I rely on simulation. Rather than theoretically deriving the moments, I simulate what a large number of subjects would have done conditional on parameter values. I do this for a large number of parameter combinations that statisfy the restrictions on them. For each set of parameter values, I compute 

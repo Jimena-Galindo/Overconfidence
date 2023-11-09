@@ -97,7 +97,7 @@
 \title{Learning with Misspecified Models: The Case of Overestimation\\
 \href{https://jimena-galindo.github.io/fileRepo/draft.pdf}{\normalsize Click Here for the Latest Version}}
 \author{Jimena Galindo}
-\date{October 26, 2023}
+\date{November 08, 2023}
 
 \begin{document}
 \maketitle
@@ -221,6 +221,9 @@ Bayesian hypothesis tests that evaluate which of two possible parameters
 is more likely. By doing so, she characterizes the set of situations in
 which even agents who consider alternative paradigms may become
 trapped.\footnote{A similar mechanism is proposed by \citet{Schwarstein2021} in a setting with persuasion.}
+A more general model in this spirit is also illustrated by
+\citet{Ortoleva2012}, where the agent has a prior over priors and acts
+according to the most likely belief.
 
 Lastly, misattribution bias is the more classical explanation and has
 been widely studied in behavioral
@@ -508,6 +511,18 @@ large. This happens because under the agent's prior, the likelihood
 ratio is unlikely to grow as fast as it is needed to escape the
 self-defeating equilibrium. In such situations, we say that the
 misspecified belief about \(\theta\) is \emph{persistent}.
+
+A more general model that can be considered here is that of
+\citet{Ortoleva2012}. In his model agents have a prior over priors and
+choose a single prior to act according to. If this prior over priors
+only considers degenerate beliefs, the model will essentially reduce to
+the setting described here. The main difference is that in order to
+determine if there is a paradigm shift, the agent does not compare the
+likelihoods of two models, he simply looks at the likelihood of the
+current model and decides to switch paradigms if the likelihood is below
+a certain threshold. In this model the agent thus considers all possible
+theories and has a more flexible rule for that allows for paradigm
+shifts.
 
 \hypertarget{framework-2}{%
 \subsection{Framework 2}\label{framework-2}}
@@ -1305,15 +1320,16 @@ separately for good and bad news.
 The overall pattern is that bad news are associated with a decrease in
 effort, and a more negative news differential is associated with a
 larger decrease in effort. On the contrary, good news are associated
-with a small decrease in effort. As mentioned in the predictions
-section, this is consistent with the self-attribution bias as well as
-with a change of paradigm. It is not consistent with the dogmatic
-modeler or the Bayesian. In addition, the fact that about a third of the
-subjects started with a correctly specified belief and ended up
-overconfident is consistent only with the self-attribution bias. This
-points towards the fact that misattribution bias is the most likely
-explanation for the aggregate behavior of the subjects in the
-experiment.
+with a small decrease in
+effort.\footnote{This asymmetric treatment of good and bad news has also been recently documented by \citet{Coutts2019} and @Barron2021}
+As mentioned in the predictions section, this is consistent with the
+self-attribution bias as well as with a change of paradigm. It is not
+consistent with the dogmatic modeler or the Bayesian. In addition, the
+fact that about a third of the subjects started with a correctly
+specified belief and ended up overconfident is consistent only with the
+self-attribution bias. This points towards the fact that misattribution
+bias is the most likely explanation for the aggregate behavior of the
+subjects in the experiment.
 
 \begin{figure}
 \hypertarget{fig:reaction-news}{%
@@ -1398,7 +1414,11 @@ underestimated the performance of the other participant might have
 realized their mistake and over-compensated their mistake by
 overestimating it after good news. This is consistent with the data and
 offers a more intuitive explanation for why this pattern arises in the
-stereotype treatment.
+stereotype treatment. It is also consistent with the findings of
+\citet{Bohren2019}, where they find that subjects initially
+underestimate the ability of women, however, after a sequence of good
+news for a woman, the attitude reverts and subjects evaluate that
+particlar woman to be better than men.
 
 Furthermore, I find no evidence of confirmation bias which is something
 that has been suggested in the literature of biased
